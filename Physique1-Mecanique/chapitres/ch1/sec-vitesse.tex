@@ -289,3 +289,31 @@ Sur un graphique position-temps $x(t)$, la vitesse instantan\'ee \`a un instant 
 
 Nous approfondirons cette interpr\'etation dans la section sur les graphiques.
 \end{remarque}
+
+% =============================================================================
+\subsection{Vitesse surface et vitesse fond}
+% =============================================================================
+
+En navigation, on distingue deux vitesses importantes :
+
+\begin{definition}[title=Vitesse surface et vitesse fond]
+\begin{itemize}
+    \item La \textbf{vitesse surface} est la vitesse du navire \textbf{par rapport \`a l'eau}. C'est ce qu'affiche le \textbf{loch}.
+    \item La \textbf{vitesse fond} est la vitesse du navire \textbf{par rapport au sol}. C'est ce qu'affiche le \textbf{GPS}.
+\end{itemize}
+
+Ces deux vitesses diff\`erent lorsqu'il y a du \textbf{courant}. La relation est \textbf{vectorielle} :
+\begin{equationimportante}
+\begin{equation}
+\vec{v}_{fond} = \vec{v}_{surface} + \vec{v}_{courant}
+\end{equation}
+\end{equationimportante}
+\end{definition}
+
+\begin{exemple}{Travers\'ee avec courant favorable}{}
+Un navire affiche $\SI{12}{n\oe{}uds}$ au loch. Le courant de $\SI{2}{n\oe{}uds}$ pousse dans le m\^eme sens.
+
+Vitesse fond : $v_{fond} = 12 + 2 = \SI{14}{n\oe{}uds}$
+
+C'est cette vitesse qui d\'etermine l'heure d'arriv\'ee.
+\end{exemple}
