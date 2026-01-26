@@ -1,0 +1,409 @@
+% =============================================================================
+% CHAPITRE 1 - CINÉMATIQUE
+% Partie 1 : Introduction, position et déplacement
+% Version maritime pour l'IMQ
+% =============================================================================
+
+\chapter{Cinématique}
+
+% =============================================================================
+\section{Introduction : qu'est-ce que la cinématique?}
+% =============================================================================
+
+La \textbf{cinématique} est la branche de la mécanique qui se consacre à la \textbf{description du mouvement} des corps. Cette description peut être :
+
+\begin{itemize}
+    \item \textbf{Qualitative} : « Le navire s'approche du quai en ralentissant. »
+    \item \textbf{Math\'ematique} : \guillemotleft~Le navire se d\'eplace \`a $\SI{5}{n\oe{}uds}$ avec une d\'ec\'el\'eration\footnote{En physique, la \textit{d\'ec\'el\'eration} correspond simplement \`a une acc\'el\'eration dont le vecteur est oppos\'e au vecteur vitesse. On parle aussi d'\textit{acc\'el\'eration n\'egative}.} de $\SI{0,2}{m/s^2}$.~\guillemotright
+\end{itemize}
+
+\begin{attention}[title=Ce que la cinématique ne fait PAS]
+La cinématique \textbf{décrit} le mouvement, mais elle ne cherche pas à l'\textbf{expliquer}. Les questions comme « Pourquoi le navire accélère-t-il? » ou « Quelle force est nécessaire pour freiner? » relèvent de la \textbf{dynamique}, que nous étudierons au chapitre suivant.
+
+En cinématique, on répond aux questions : \textit{Où? Quand? À quelle vitesse? Avec quelle accélération?}
+\end{attention}
+
+Pour décrire complètement un mouvement, la cinématique utilise trois grandeurs fondamentales :
+\begin{enumerate}
+    \item La \textbf{position} (et le \textbf{déplacement})
+    \item La \textbf{vitesse}
+    \item L'\textbf{accélération}
+\end{enumerate}
+
+Ces grandeurs sont reliées entre elles et dépendent toutes du \textbf{temps}. La description cinématique peut se faire de plusieurs façons : par des \textbf{équations mathématiques}, par des \textbf{graphiques} ou par des \textbf{tableaux de valeurs}.
+
+\begin{remarque}[title=La cinématique dans le contexte maritime]
+Pour un officier de navigation, la cinématique est omniprésente :
+\begin{itemize}
+    \item Calculer le temps d'arrivée à partir de la vitesse et de la distance
+    \item Prévoir la distance de freinage lors d'une man\oe{}uvre d'accostage
+    \item Estimer la trajectoire d'un navire en approche pour éviter une collision
+    \item Planifier une man\oe{}uvre d'homme à la mer
+\end{itemize}
+La maîtrise de ces concepts vous permettra de prendre des décisions éclairées en mer.
+\end{remarque}
+
+\begin{remarque}[title=L'universalité de la cinématique]
+Les concepts de la cinématique sont \textbf{universels} : ils s'appliquent aussi bien à un navire qu'à une voiture, un avion, un ballon de soccer ou même une molécule. Les mêmes équations décrivent le mouvement d'un pétrolier de 300 000 tonnes et celui d'un électron dans un fil électrique!
+
+Dans ce cours, nous utiliserons principalement des exemples maritimes, mais gardez en tête que ces principes s'appliquent à \textbf{tout objet en mouvement}.
+\end{remarque}
+
+\subsection{Le modèle de la particule}
+
+L'observation de phénomènes physiques nous permet de constater qu'un mouvement correspond à une variation continue de la position d'un objet. Néanmoins, il est parfois possible de simplifier l'étude de ces mouvements en négligeant les dimensions de l'objet.
+
+\begin{definition}[title=Modèle de la particule]
+Lorsqu'on ne tient pas compte des dimensions d'un objet et qu'on néglige sa rotation sur lui-même, on peut considérer que toute sa masse est concentrée en un point unique : son \textbf{centre de masse}. L'objet est alors traité comme une \textbf{particule}.
+\end{definition}
+
+\begin{exemple}{Quand utiliser le modèle de la particule?}{}
+Un vraquier de $\SI{200}{m}$ de long navigue en haute mer à $\SI{12}{n\oe{}uds}$. Pour calculer son temps de traversée sur une distance de $\SI{500}{milles nautiques}$, on peut traiter le navire comme une particule : ses dimensions ($\SI{200}{m}$) sont négligeables par rapport à la distance parcourue ($\SI{926}{km}$).
+
+Par contre, pour une manœuvre d'accostage, les dimensions du navire deviennent importantes et le modèle de la particule n'est plus approprié.
+\end{exemple}
+
+% =============================================================================
+\section{Position et déplacement}
+% =============================================================================
+
+\subsection{Système de référence}
+
+Pour décrire le mouvement d'un objet, il faut d'abord établir un \textbf{système de référence} (ou référentiel) composé de :
+\begin{itemize}
+    \item Un \textbf{point d'origine} O
+    \item Un ou plusieurs \textbf{axes orientés} (un axe en 1D, deux axes en 2D, trois axes en 3D)
+    \item Une \textbf{unité de mesure} (généralement le mètre)
+\end{itemize}
+
+En navigation, on travaille généralement en \textbf{deux dimensions} (la surface de l'eau). Nous utiliserons donc un système d'axes $x$ et $y$ perpendiculaires.
+
+\begin{center}
+\begin{tikzpicture}[scale=0.9]
+% Fond de carte (mer)
+\fill[blue!10] (-1,-1) rectangle (8,6);
+% Axes
+\draw[axe, very thick, ->] (0,0) -- (7.5,0) node[right] {$x$ (Est)};
+\draw[axe, very thick, ->] (0,0) -- (0,5.5) node[above] {$y$ (Nord)};
+% Origine
+\fill (0,0) circle (3pt);
+\node[below left] at (0,0) {O (origine)};
+% Graduations
+\foreach \x in {1,2,3,4,5,6,7} {
+    \draw (\x,0.1) -- (\x,-0.1) node[below] {\small \x};
+}
+\foreach \y in {1,2,3,4,5} {
+    \draw (0.1,\y) -- (-0.1,\y) node[left] {\small \y};
+}
+% Point P
+\fill[red] (5,3) circle (4pt);
+\node[above right] at (5,3) {P};
+% Vecteur position
+\draw[vecteur rouge, very thick] (0,0) -- (5,3) node[midway, above left] {$\vect{r}$};
+% Composantes
+\draw[dashed, gray] (5,0) -- (5,3);
+\draw[dashed, gray] (0,3) -- (5,3);
+% Annotations composantes
+\draw[thick, blue, ->] (0,0) -- (5,0) node[midway, below] {$x = 5$};
+\draw[thick, green!60!black, ->] (5,0) -- (5,3) node[midway, right] {$y = 3$};
+\end{tikzpicture}
+\end{center}
+
+\subsection{Vecteur position}
+
+\begin{definition}[title=Vecteur position]
+Le \textbf{vecteur position} $\vect{r}$ d'une particule est le vecteur qui va de l'origine O du système de référence jusqu'à la position de la particule.
+
+En deux dimensions, le vecteur position est caractérisé par ses \textbf{deux composantes} :
+\begin{equationimportante}
+\begin{equation}
+\vect{r} = (x, y)
+\end{equation}
+\end{equationimportante}
+où $x$ est la coordonnée horizontale et $y$ est la coordonnée verticale.
+
+L'unité SI de la position est le \textbf{mètre} (m).
+\end{definition}
+
+\begin{remarque}[title=Module du vecteur position]
+Le \textbf{module} (ou norme) du vecteur position représente la distance entre l'origine et la particule :
+\[ |\vect{r}| = \sqrt{x^2 + y^2} \]
+\end{remarque}
+
+\begin{exemple}{Position d'un navire en mer}{}
+Un navire se trouve à $\SI{4}{km}$ à l'est et $\SI{3}{km}$ au nord d'un phare pris comme origine.
+
+\textbf{Vecteur position :}
+\[ \vect{r} = (\SI{4}{km}, \SI{3}{km}) \]
+
+\textbf{Distance au phare :}
+\[ |\vect{r}| = \sqrt{4^2 + 3^2} = \sqrt{16 + 9} = \sqrt{25} = \SI{5}{km} \]
+
+\begin{center}
+\begin{tikzpicture}[scale=0.8]
+% Mer
+\fill[blue!10] (-0.5,-0.5) rectangle (6,5);
+% Axes
+\draw[axe, thick, ->] (0,0) -- (5.5,0) node[right] {Est (km)};
+\draw[axe, thick, ->] (0,0) -- (0,4.5) node[above] {Nord (km)};
+% Phare
+\fill[orange] (0,0) circle (5pt);
+\node[below left] at (0,0) {Phare};
+% Navire
+\fill[blue!70!black] (4,3) circle (4pt);
+\node[above right] at (4,3) {Navire};
+% Vecteur position
+\draw[vecteur rouge, very thick] (0,0) -- (4,3);
+\node[red] at (1.5,2) {$\vect{r}$};
+% Composantes
+\draw[dashed, gray] (4,0) -- (4,3);
+\draw[dashed, gray] (0,3) -- (4,3);
+\node[below] at (2,0) {$x = \SI{4}{km}$};
+\node[left] at (0,1.5) {$y = \SI{3}{km}$};
+% Distance
+\node[red, right] at (2.5,1) {$|\vect{r}| = \SI{5}{km}$};
+\end{tikzpicture}
+\end{center}
+\end{exemple}
+
+\subsection{Cas particulier : mouvement en une dimension}
+
+Lorsque le mouvement se fait le long d'une seule direction (par exemple, un navire dans un chenal rectiligne), on peut simplifier en utilisant \textbf{un seul axe}. La position devient alors un simple nombre algébrique $x$ (positif ou négatif selon le côté de l'origine).
+
+\begin{exemple}{Position d'un navire dans un chenal}{}
+Un chenal maritime est balisé par des bouées. On établit l'origine au niveau de la bouée d'entrée, avec l'axe $x$ positif vers l'intérieur du port.
+
+\begin{center}
+\begin{tikzpicture}[scale=0.8]
+% Axe
+\draw[axe, thick] (-1,0) -- (10,0) node[right] {$x$ (m)};
+% Origine
+\fill (0,0) circle (3pt) node[below=5pt] {$0$};
+\node[above] at (0,0.3) {Bouée d'entrée};
+% Graduations
+\foreach \x in {2,4,6,8} {
+    \draw (\x,0.1) -- (\x,-0.1) node[below] {$\x 00$};
+}
+% Navire
+\node[above] at (5,0.5) {\textbf{Navire}};
+\draw[thick, blue] (4.5,0.3) -- (5.5,0.3) -- (5.7,0.5) -- (5.5,0.7) -- (4.5,0.7) -- cycle;
+\draw[vecteur rouge] (0,0.5) -- (5,0.5) node[midway, above] {$x = \SI{500}{m}$};
+\end{tikzpicture}
+\end{center}
+
+La position du navire est $x = \SI{+500}{m}$ (positif car dans le sens de l'axe).
+\end{exemple}
+
+\subsection{Vecteur déplacement}
+
+\begin{definition}[title=Vecteur déplacement]
+Le \textbf{vecteur déplacement} $\Delta\vect{r}$ est la variation du vecteur position entre deux instants. C'est le vecteur qui va de la position initiale à la position finale :
+\begin{equationimportante}
+\begin{equation}
+\Delta\vect{r} = \vect{r}_f - \vect{r}_i
+\end{equation}
+\end{equationimportante}
+
+En composantes, cela donne :
+\begin{equationimportante}
+\begin{align}
+\Delta\vect{r} &= (\Delta x, \Delta y) \\[0.3cm]
+\text{où} \quad \Delta x &= x_f - x_i \quad \text{et} \quad \Delta y = y_f - y_i
+\end{align}
+\end{equationimportante}
+\end{definition}
+
+\begin{remarque}[title=Module du déplacement]
+Le \textbf{module du déplacement} représente la distance en ligne droite entre la position initiale et la position finale :
+\[ |\Delta\vect{r}| = \sqrt{(\Delta x)^2 + (\Delta y)^2} \]
+\end{remarque}
+
+\begin{exemple}{Déplacement d'un cargo entre deux ports}{}
+Un cargo quitte Rimouski (position initiale) pour se rendre à Sept-Îles (position finale). En prenant Rimouski comme origine :
+\begin{itemize}
+    \item Position initiale : $\vect{r}_i = (\SI{0}{km}, \SI{0}{km})$
+    \item Position finale : $\vect{r}_f = (\SI{280}{km}, \SI{95}{km})$ (Sept-Îles est à l'est-nord-est)
+\end{itemize}
+
+\begin{center}
+\begin{tikzpicture}[scale=0.022]
+% Mer
+\fill[blue!10] (-20,-20) rectangle (320,140);
+% Côte schématique
+\fill[brown!20] (-20,-20) -- (-20,30) -- (50,10) -- (100,25) -- (150,15) -- (200,40) -- (280,80) -- (320,75) -- (320,-20) -- cycle;
+% Axes
+\draw[axe, thick, ->] (0,0) -- (310,0) node[right] {$x$ (km)};
+\draw[axe, thick, ->] (0,0) -- (0,130) node[above] {$y$ (km)};
+% Graduations
+\foreach \x in {100,200,300} {
+    \draw (\x,3) -- (\x,-3) node[below] {\small \x};
+}
+\foreach \y in {50,100} {
+    \draw (3,\y) -- (-3,\y) node[left] {\small \y};
+}
+% Rimouski
+\fill[red] (0,0) circle (8pt);
+\node[below left] at (0,0) {\textbf{Rimouski}};
+% Sept-Îles
+\fill[red] (280,95) circle (8pt);
+\node[above right] at (280,95) {\textbf{Sept-Îles}};
+% Vecteur déplacement
+\draw[vecteur rouge, very thick] (0,0) -- (280,95);
+\node[red] at (120,70) {$\Delta\vect{r}$};
+% Composantes
+\draw[dashed, blue, thick] (0,0) -- (280,0) node[midway, below] {$\Delta x = \SI{280}{km}$};
+\draw[dashed, green!60!black, thick] (280,0) -- (280,95) node[midway, right] {$\Delta y = \SI{95}{km}$};
+\end{tikzpicture}
+\end{center}
+
+\textbf{Vecteur déplacement :}
+\[ \Delta\vect{r} = \vect{r}_f - \vect{r}_i = (280 - 0, 95 - 0) = (\SI{280}{km}, \SI{95}{km}) \]
+
+\textbf{Module du déplacement} (distance en ligne droite) :
+\[ |\Delta\vect{r}| = \sqrt{280^2 + 95^2} = \sqrt{78400 + 9025} = \sqrt{87425} \approx \SI{296}{km} \]
+
+En milles nautiques : $296 \text{ km} \times \dfrac{1 \text{ NM}}{1,852 \text{ km}} \approx \SI{160}{NM}$
+\end{exemple}
+
+\begin{pratiqueautonome}
+Un navire de recherche part d'une plateforme pétrolière située à l'origine et effectue deux déplacements successifs :
+\begin{itemize}
+    \item Premier déplacement : $\SI{12}{km}$ vers l'est
+    \item Deuxième déplacement : $\SI{5}{km}$ vers le nord
+\end{itemize}
+
+\begin{enumerate}[label=\alph*)]
+    \item Écrivez le vecteur déplacement total en composantes : $\Delta\vect{r} = (\Delta x, \Delta y)$
+    \item Calculez le module du déplacement total $|\Delta\vect{r}|$.
+    \item Quelle est la distance totale parcourue $d$?
+\end{enumerate}
+
+\espaceresolution[5cm]
+\reponsepratique{a) $\Delta\vect{r} = (\SI{12}{km}, \SI{5}{km})$ \quad b) $|\Delta\vect{r}| = \SI{13}{km}$ \quad c) $d = \SI{17}{km}$}
+\end{pratiqueautonome}
+
+\subsection{Déplacement vs distance parcourue}
+
+\begin{attention}[title=Ne jamais confondre ces deux grandeurs!]
+\begin{center}
+\renewcommand{\arraystretch}{1.4}
+\begin{tabular}{|L{6cm}|L{6cm}|}
+\hline
+\rowcolor{bleuclair}
+\textbf{Déplacement} $\Delta\vect{r}$ & \textbf{Distance parcourue} $d$ \\
+\hline
+Dépend uniquement des positions initiale et finale & Dépend du trajet emprunté \\
+\hline
+Grandeur \textbf{vectorielle} (a une direction) & Grandeur \textbf{scalaire} (pas de direction) \\
+\hline
+Le module peut être nul même si l'objet a bougé & Toujours positive ou nulle \\
+\hline
+$|\Delta\vect{r}| = \sqrt{(\Delta x)^2 + (\Delta y)^2}$ & $d \geq |\Delta\vect{r}|$ toujours \\
+\hline
+\end{tabular}
+\end{center}
+\end{attention}
+
+\begin{definition}[title=Distance parcourue]
+La \textbf{distance parcourue} $d$ est la longueur totale du trajet suivi par l'objet, mesurée le long de sa trajectoire.
+
+\begin{itemize}
+    \item C'est une grandeur \textbf{scalaire} (toujours positive ou nulle)
+    \item Elle ne contient aucune information sur la direction
+    \item Elle est toujours supérieure ou égale au module du déplacement : $d \geq |\Delta\vect{r}|$
+    \item L'égalité $d = |\Delta\vect{r}|$ n'est vraie que si le mouvement est en ligne droite \textbf{sans demi-tour}
+\end{itemize}
+\end{definition}
+
+\begin{exemple}{Manœuvre d'un remorqueur (cas 1D)}{}
+Un remorqueur effectue une manœuvre dans un port. Il part du quai A (position $x_i = \SI{0}{m}$), se rend au quai B (position $x = \SI{800}{m}$), puis revient au quai C (position $x_f = \SI{300}{m}$).
+
+\begin{center}
+\begin{tikzpicture}[scale=0.7]
+% Axe
+\draw[axe, thick] (-0.5,0) -- (10,0) node[right] {$x$ (m)};
+% Points
+\fill (0,0) circle (3pt) node[below=5pt] {A ($0$)};
+\fill (8,0) circle (3pt) node[below=5pt] {B ($800$)};
+\fill (3,0) circle (3pt) node[below=5pt] {C ($300$)};
+% Trajets
+\draw[->, thick, blue] (0,0.5) -- (8,0.5) node[midway, above] {$\SI{800}{m}$};
+\draw[->, thick, red] (8,1.2) -- (3,1.2) node[midway, above] {$\SI{500}{m}$};
+\end{tikzpicture}
+\end{center}
+
+\textbf{Distance parcourue :}
+\[ d = \SI{800}{m} + \SI{500}{m} = \SI{1300}{m} \]
+
+\textbf{Déplacement :}
+\[ \Delta x = x_f - x_i = \SI{300}{m} - \SI{0}{m} = \SI{+300}{m} \]
+
+Le déplacement ne représente que le changement \textit{net} de position, peu importe le trajet.
+\end{exemple}
+
+\begin{pratiqueautonome}
+Un traversier part du quai A (position $x_i = \SI{0}{m}$), se rend à la bouée B située à $x = \SI{600}{m}$, puis continue jusqu'au quai C situé à $x = \SI{200}{m}$.
+
+\begin{enumerate}[label=\alph*)]
+    \item Calculez le déplacement total $\Delta x$.
+    \item Calculez la distance parcourue $d$.
+\end{enumerate}
+
+\espaceresolution[5cm]
+\reponsepratique{a) $\Delta x = +\SI{200}{m}$ \quad b) $d = \SI{1000}{m}$}
+\end{pratiqueautonome}
+
+\begin{exemple}{Patrouille maritime -- trajectoire fermée (cas 2D)}{}
+Un patrouilleur des garde-côtes part de sa base (point B), effectue une ronde de surveillance autour d'une zone de pêche en passant par les points P1, P2 et P3, puis revient à sa base après $\SI{4}{heures}$.
+
+\begin{center}
+\begin{tikzpicture}[scale=0.9]
+% Fond de carte (mer)
+\fill[blue!10] (-1,-1) rectangle (8,6);
+% Axes
+\draw[axe, thick, ->] (-0.5,0) -- (7.5,0) node[right] {$x$ (NM)};
+\draw[axe, thick, ->] (0,-0.5) -- (0,5.5) node[above] {$y$ (NM)};
+% Côte
+\fill[brown!30] (-1,-1) -- (-1,2) -- (0,1.5) -- (0.5,2) -- (0,-1) -- cycle;
+\draw[thick, brown!60!black] (-1,2) -- (0,1.5) -- (0.5,2);
+% Base
+\fill[red!70!black] (0.3,1) circle (4pt);
+\node[left] at (0,1) {\textbf{Base (B)}};
+\node[below right] at (0.3,0.8) {\small $(0,3; 1)$};
+% Points de passage
+\fill[blue!70!black] (3,4) circle (3pt) node[above] {P1};
+\fill[blue!70!black] (6,3) circle (3pt) node[right] {P2};
+\fill[blue!70!black] (5,0.5) circle (3pt) node[below] {P3};
+% Trajectoire
+\draw[very thick, blue!70!black, ->] (0.3,1) -- (3,4);
+\draw[very thick, blue!70!black, ->] (3,4) -- (6,3);
+\draw[very thick, blue!70!black, ->] (6,3) -- (5,0.5);
+\draw[very thick, blue!70!black, ->] (5,0.5) -- (0.3,1);
+% Distances
+\node[blue!50!black] at (1.3,2.8) {\small 15 NM};
+\node[blue!50!black] at (4.8,3.8) {\small 12 NM};
+\node[blue!50!black] at (6,1.5) {\small 10 NM};
+\node[blue!50!black] at (2.5,0.3) {\small 11 NM};
+% Zone de pêche (cercle en pointillés)
+\draw[dashed, orange, thick] (4,2.5) circle (1.8);
+\node[orange] at (4,2.5) {\small Zone de pêche};
+\end{tikzpicture}
+\end{center}
+
+\textbf{Distance parcourue :} 
+\[ d = \SI{15}{NM} + \SI{12}{NM} + \SI{10}{NM} + \SI{11}{NM} = \SI{48}{NM} \]
+
+\textbf{Déplacement :} 
+
+Position initiale = Position finale (retour à la base), donc :
+\[ \Delta\vect{r} = \vect{r}_f - \vect{r}_i = \vect{0} \quad \Rightarrow \quad |\Delta\vect{r}| = \SI{0}{NM} \]
+
+\begin{attention}
+Ce résultat illustre une différence fondamentale :
+\begin{itemize}
+    \item La \textbf{distance parcourue} ($\SI{48}{NM}$) reflète l'effort réel du patrouilleur (carburant consommé, temps de navigation)
+    \item Le \textbf{déplacement} (nul) indique seulement que le navire est revenu à son point de départ
+\end{itemize}
+Ces deux grandeurs répondent à des questions différentes!
+\end{attention}
+\end{exemple}

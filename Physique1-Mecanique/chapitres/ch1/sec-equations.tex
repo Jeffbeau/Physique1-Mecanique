@@ -1,0 +1,458 @@
+% =============================================================================
+% CHAPITRE 1 - CINÉMATIQUE
+% Partie 6 : Description mathématique du mouvement (MRU et MRUA)
+% Version maritime pour l'IMQ
+% =============================================================================
+
+% =============================================================================
+\section{Description math\'ematique du mouvement}
+% =============================================================================
+
+\subsection{Introduction : la puissance des \'equations}
+
+Jusqu'\`a pr\'esent, nous avons d\'ecrit le mouvement de deux fa\c{c}ons :
+\begin{itemize}
+    \item \textbf{Qualitativement} : en utilisant des mots (acc\'el\'eration, freinage, repos...)
+    \item \textbf{Graphiquement} : en tra\c{c}ant des courbes $x(t)$, $v(t)$, $a(t)$
+\end{itemize}
+
+Ces approches sont utiles, mais elles ont leurs limites. Pour faire des \textbf{pr\'edictions pr\'ecises} --- comme calculer exactement o\`u sera un navire dans 2 heures, ou quelle distance de freinage est n\'ecessaire --- nous avons besoin d'un outil plus puissant : les \textbf{\'equations de la cin\'ematique}.
+
+\begin{remarque}[title=Pourquoi des \'equations?]
+Les \'equations permettent de :
+\begin{itemize}
+    \item Calculer des valeurs \textbf{num\'eriques pr\'ecises}
+    \item Faire des \textbf{pr\'edictions} sur le mouvement futur
+    \item R\'esoudre des probl\`emes \textbf{inverses} (ex: quelle vitesse initiale pour atteindre une cible?)
+    \item Analyser des situations \textbf{complexes} impliquant plusieurs objets
+\end{itemize}
+\end{remarque}
+
+Dans cette section, nous allons d\'evelopper les \'equations pour deux types de mouvement fondamentaux :
+\begin{enumerate}
+    \item Le \textbf{Mouvement Rectiligne Uniforme} (MRU) : vitesse constante
+    \item Le \textbf{Mouvement Rectiligne Uniform\'ement Acc\'el\'er\'e} (MRUA) : acc\'el\'eration constante
+\end{enumerate}
+
+Ces deux mod\`eles permettent de d\'ecrire la grande majorit\'e des situations rencontr\'ees en navigation.
+
+% =============================================================================
+\subsection{Mouvement Rectiligne Uniforme (MRU)}
+% =============================================================================
+
+\begin{definition}[title=Mouvement rectiligne uniforme (MRU)]
+Un \textbf{mouvement rectiligne uniforme} est un mouvement en ligne droite \`a \textbf{vitesse constante}.
+
+Dans un MRU :
+\begin{itemize}
+    \item La vitesse ne change pas : $v = \text{constante}$
+    \item L'acc\'el\'eration est nulle : $a = 0$
+    \item Le graphique $x(t)$ est une \textbf{droite}
+    \item Le graphique $v(t)$ est une \textbf{droite horizontale}
+\end{itemize}
+\end{definition}
+
+\subsubsection{D\'erivation de l'\'equation du MRU}
+
+Partons de la d\'efinition de la vitesse moyenne :
+\[ v = \frac{\Delta x}{\Delta t} \]
+
+Puisque la vitesse est constante dans un MRU, on peut isoler le d\'eplacement :
+
+\begin{equationimportante}
+\textbf{\'Equation du MRU}
+\begin{equation}
+\Delta x = v \cdot \Delta t \qquad \text{ou} \qquad x_f = x_i + v \cdot \Delta t
+\end{equation}
+\end{equationimportante}
+
+\begin{remarque}[title=Interpr\'etation intuitive]
+L'\'equation dit simplement : \guillemotleft~la distance parcourue est \'egale \`a la vitesse multipli\'ee par le temps~\guillemotright. C'est la formule que tout le monde utilise intuitivement pour calculer, par exemple, le temps d'un trajet en voiture.
+\end{remarque}
+
+\begin{exemple}{Cargo en MRU}{}
+Un cargo navigue en ligne droite \`a $\SI{12}{n\oe{}uds}$ ($\SI{6,17}{m/s}$). Quelle distance parcourt-il en 3 heures?
+
+\textbf{Solution :}
+\[ \Delta x = v \cdot \Delta t = 12 \times 3 = \SI{36}{NM} \]
+
+Ou en SI : $\Delta x = 6,17 \times (3 \times 3600) = \SI{66\,636}{m} \approx \SI{66,6}{km}$
+\end{exemple}
+
+\begin{exemple}{Temps de travers\'ee}{}
+Un traversier doit parcourir $\SI{25}{km}$ \`a une vitesse de $\SI{15}{n\oe{}uds}$. Combien de temps durera la travers\'ee?
+
+\textbf{Solution :}
+
+Conversion : $v = 15 \times 1,852 = \SI{27,8}{km/h}$
+
+\[ \Delta t = \frac{\Delta x}{v} = \frac{25}{27,8} = \SI{0,90}{h} = \SI{54}{min} \]
+\end{exemple}
+
+\begin{remarque}[title=Le MRU est un cas id\'eal]
+En pratique, un mouvement parfaitement uniforme est rare. Un navire subit des variations de vitesse dues aux vagues, au vent, aux courants. Le MRU est un \textbf{mod\`ele simplifi\'e} qui donne de bonnes approximations lorsque ces variations sont faibles.
+\end{remarque}
+
+% =============================================================================
+\subsection{Mouvement Rectiligne Uniform\'ement Acc\'el\'er\'e (MRUA)}
+% =============================================================================
+
+Le MRU d\'ecrit les situations o\`u la vitesse est constante. Mais que se passe-t-il quand un navire \textbf{acc\'el\`ere} ou \textbf{freine}? C'est l\`a qu'intervient le MRUA.
+
+\begin{definition}[title=Mouvement rectiligne uniform\'ement acc\'el\'er\'e (MRUA)]
+Un \textbf{mouvement rectiligne uniform\'ement acc\'el\'er\'e} est un mouvement en ligne droite o\`u l'\textbf{acc\'el\'eration est constante} :
+\[ a = \text{constante} \neq 0 \]
+
+Dans un MRUA :
+\begin{itemize}
+    \item L'acc\'el\'eration ne change pas au cours du temps
+    \item La vitesse varie \textbf{lin\'eairement} avec le temps
+    \item Le graphique $v(t)$ est une \textbf{droite inclin\'ee}
+    \item Le graphique $x(t)$ est une \textbf{parabole}
+\end{itemize}
+\end{definition}
+
+\begin{remarque}[title=Pourquoi \'etudier le MRUA?]
+Le MRUA est le mod\`ele le plus simple pour d\'ecrire :
+\begin{itemize}
+    \item Les phases de \textbf{d\'emarrage} (acc\'el\'eration positive)
+    \item Les phases de \textbf{freinage} (acc\'el\'eration n\'egative)
+    \item La \textbf{chute libre} (acc\'el\'eration = $g$)
+\end{itemize}
+C'est un mod\`ele fondamental qui s'applique \`a de tr\`es nombreuses situations!
+\end{remarque}
+
+\subsubsection{D\'erivation des \'equations du MRUA}
+
+L'id\'ee cl\'e est de \textbf{partir des d\'efinitions de base} et de les combiner pour obtenir des \'equations utiles. Proc\'edons \'etape par \'etape.
+
+\textbf{\'Equation 1 : Vitesse en fonction du temps}
+
+Par d\'efinition de l'acc\'el\'eration :
+\[ a = \frac{\Delta v}{\Delta t} = \frac{v_f - v_i}{\Delta t} \]
+
+En isolant $v_f$ :
+\begin{equationimportante}
+\begin{equation}
+\boxed{v_f = v_i + a \cdot \Delta t}
+\label{eq:mrua1}
+\end{equation}
+\textit{Interpr\'etation : La vitesse finale \'egale la vitesse initiale plus le \guillemotleft~gain de vitesse~\guillemotright{} ($a \cdot \Delta t$).}
+\end{equationimportante}
+
+\textbf{\'Equation 2 : Vitesse moyenne dans un MRUA}
+
+Puisque la vitesse varie lin\'eairement (le graphique $v(t)$ est une droite), la vitesse moyenne est simplement la \textbf{moyenne arithm\'etique} des vitesses initiale et finale :
+\begin{equationimportante}
+\begin{equation}
+\boxed{v_{moy} = \frac{v_i + v_f}{2}}
+\label{eq:mrua2}
+\end{equation}
+\textit{Cette formule n'est valide QUE pour un MRUA!}
+\end{equationimportante}
+
+\textbf{\'Equation 3 : D\'eplacement en fonction des vitesses}
+
+Par d\'efinition de la vitesse moyenne : $\Delta x = v_{moy} \cdot \Delta t$
+
+En rempla\c{c}ant $v_{moy}$ par l'\'equation \ref{eq:mrua2} :
+\begin{equationimportante}
+\begin{equation}
+\boxed{\Delta x = \frac{v_i + v_f}{2} \cdot \Delta t}
+\label{eq:mrua3}
+\end{equation}
+\textit{Utile quand on conna\^it les deux vitesses et le temps.}
+\end{equationimportante}
+
+\textbf{\'Equation 4 : D\'eplacement en fonction de $a$ et $t$}
+
+Substituons l'\'equation \ref{eq:mrua1} dans l'\'equation \ref{eq:mrua3} :
+\begin{align*}
+\Delta x &= \frac{v_i + (v_i + a\Delta t)}{2} \cdot \Delta t \\
+&= \frac{2v_i + a\Delta t}{2} \cdot \Delta t \\
+&= v_i \Delta t + \frac{1}{2}a(\Delta t)^2
+\end{align*}
+
+\begin{equationimportante}
+\begin{equation}
+\boxed{\Delta x = v_i \Delta t + \frac{1}{2}a(\Delta t)^2}
+\label{eq:mrua4}
+\end{equation}
+\textit{La formule la plus utilis\'ee! Elle donne la position \`a tout instant.}
+\end{equationimportante}
+
+\textbf{\'Equation 5 : L'\'equation sans le temps}
+
+Parfois, on ne conna\^it pas le temps et on ne veut pas le calculer. On peut \'eliminer $\Delta t$ entre les \'equations \ref{eq:mrua1} et \ref{eq:mrua3}.
+
+De l'\'equation \ref{eq:mrua1} : $\Delta t = \dfrac{v_f - v_i}{a}$
+
+En substituant dans l'\'equation \ref{eq:mrua3} :
+\begin{align*}
+\Delta x &= \frac{v_i + v_f}{2} \cdot \frac{v_f - v_i}{a} = \frac{v_f^2 - v_i^2}{2a}
+\end{align*}
+
+En r\'earrangeant :
+\begin{equationimportante}
+\begin{equation}
+\boxed{v_f^2 = v_i^2 + 2a\Delta x}
+\label{eq:mrua5}
+\end{equation}
+\end{equationimportante}
+
+\begin{remarque}[title=Interpr\'etation intuitive de l'\'equation \ref{eq:mrua5}]
+Cette \'equation est particuli\`ere car elle relie directement la vitesse au d\'eplacement, \textbf{sans passer par le temps}. 
+
+\textbf{Pourquoi $v^2$ et pas $v$?}
+
+Imaginons deux situations de freinage :
+\begin{itemize}
+    \item Voiture A : $v_i = \SI{50}{km/h}$, freine jusqu'\`a l'arr\^et
+    \item Voiture B : $v_i = \SI{100}{km/h}$ (le double), freine avec la m\^eme d\'ec\'el\'eration
+\end{itemize}
+
+Intuitivement, on pourrait penser que B n\'ecessite le double de distance pour s'arr\^eter. \textbf{Faux!} L'\'equation nous dit que $\Delta x \propto v_i^2$, donc B n\'ecessite \textbf{quatre fois} plus de distance!
+
+C'est parce que :
+\begin{enumerate}
+    \item B roule deux fois plus vite, donc parcourt plus de distance \`a chaque seconde
+    \item B met aussi deux fois plus de temps \`a s'arr\^eter (car $\Delta t = v_i/|a|$)
+\end{enumerate}
+
+L'effet se \textbf{multiplie} : $2 \times 2 = 4$. D'o\`u le $v^2$.
+
+\textbf{Applications typiques :}
+\begin{itemize}
+    \item Calculer une \textbf{distance de freinage} (trouver $\Delta x$ quand $v_f = 0$)
+    \item Trouver la \textbf{vitesse finale} apr\`es un certain d\'eplacement
+    \item D\'eterminer l'\textbf{acc\'el\'eration n\'ecessaire} pour atteindre une vitesse sur une distance donn\'ee
+\end{itemize}
+
+\textbf{Lien avec l'\'energie :} En multipliant par $\frac{1}{2}m$, on obtient le th\'eor\`eme de l'\'energie cin\'etique : $\frac{1}{2}mv_f^2 = \frac{1}{2}mv_i^2 + (ma)\Delta x$, soit : \'energie cin\'etique finale = \'energie cin\'etique initiale + travail de la force. Cette connexion sera approfondie au chapitre 2.
+\end{remarque}
+
+\subsubsection{Tableau r\'ecapitulatif}
+
+\begin{center}
+\renewcommand{\arraystretch}{2.0}
+\begin{tabular}{|c|c|c|c|}
+\hline
+\rowcolor{bleuclair}
+\textbf{No} & \textbf{\'Equation} & \textbf{Variables pr\'esentes} & \textbf{Variable absente} \\
+\hline
+1 & $v_f = v_i + a\Delta t$ & $v_f$, $v_i$, $a$, $\Delta t$ & $\Delta x$ \\
+\hline
+2 & $v_{moy} = \dfrac{v_i + v_f}{2}$ & $v_{moy}$, $v_i$, $v_f$ & $a$, $\Delta t$, $\Delta x$ \\
+\hline
+3 & $\Delta x = \dfrac{v_i + v_f}{2}\Delta t$ & $\Delta x$, $v_i$, $v_f$, $\Delta t$ & $a$ \\
+\hline
+4 & $\Delta x = v_i \Delta t + \dfrac{1}{2}a(\Delta t)^2$ & $\Delta x$, $v_i$, $a$, $\Delta t$ & $v_f$ \\
+\hline
+5 & $v_f^2 = v_i^2 + 2a\Delta x$ & $v_f$, $v_i$, $a$, $\Delta x$ & $\Delta t$ \\
+\hline
+\end{tabular}
+\end{center}
+
+\begin{remarque}[title=Strat\'egie de r\'esolution]
+Pour choisir la bonne \'equation :
+\begin{enumerate}
+    \item Identifier les \textbf{donn\'ees} du probl\`eme (ce qu'on conna\^it)
+    \item Identifier l'\textbf{inconnue} recherch\'ee (ce qu'on cherche)
+    \item Choisir l'\'equation qui contient l'inconnue et les donn\'ees, mais \textbf{pas} la variable qu'on ne conna\^it pas
+\end{enumerate}
+\end{remarque}
+
+\subsection{Applications du MRUA}
+
+\begin{exemple}{Distance de freinage d'un cargo}{}
+Un cargo navigue \`a $\SI{12}{n\oe{}uds}$ lorsque le capitaine ordonne l'arr\^et des machines. Le navire d\'ec\'el\`ere \`a $\SI{0,005}{m/s^2}$. Quelle distance parcourt-il avant de s'immobiliser?
+
+\textbf{Donn\'ees :}
+\begin{itemize}
+    \item $v_i = \SI{12}{n\oe{}uds} \times \dfrac{\SI{0,5144}{m/s}}{\SI{1}{n\oe{}ud}} = \SI{6,17}{m/s}$
+    \item $v_f = \SI{0}{m/s}$ (arr\^et)
+    \item $a = \SI{-0,005}{m/s^2}$ (freinage)
+\end{itemize}
+
+\textbf{Inconnue :} $\Delta x = ?$
+
+\textbf{Choix de l'\'equation :} On cherche $\Delta x$, on conna\^it $v_i$, $v_f$, $a$, mais pas $\Delta t$ $\Rightarrow$ \'Equation 5
+
+\textbf{Solution :}
+\begin{align*}
+v_f^2 &= v_i^2 + 2a\Delta x \\
+(\SI{0}{m/s})^2 &= (\SI{6,17}{m/s})^2 + 2(\SI{-0,005}{m/s^2})\Delta x \\
+\SI{0,01}{m/s^2} \cdot \Delta x &= \SI{38,07}{m^2/s^2} \\
+\Delta x &= \SI{3807}{m} \approx \SI{3,8}{km}
+\end{align*}
+
+Conversion en milles nautiques : $\Delta x = \SI{3,8}{km} \times \dfrac{\SI{1}{NM}}{\SI{1,852}{km}} \approx \SI{2,1}{NM}$
+
+\begin{attention}
+Cette distance de freinage \'enorme explique pourquoi les officiers de navigation doivent anticiper les man\oe{}uvres bien \`a l'avance!
+
+\textbf{Comparaison :} Une voiture \`a $\SI{90}{km/h}$ s'arr\^ete en $\sim\SI{40}{m}$. Un cargo \`a la m\^eme vitesse s'arr\^ete en $\sim\SI{3800}{m}$, soit \textbf{100 fois plus loin}!
+\end{attention}
+\end{exemple}
+
+\begin{pratiqueautonome}
+Un traversier navigue à $\SI{18}{n\oe{}uds}$ lorsque le capitaine ordonne l'arrêt des machines. La décélération est de $\SI{0,01}{m/s^2}$.
+
+\begin{enumerate}[label=\alph*)]
+    \item Quelle distance parcourt-il avant de s'immobiliser?
+    \item Combien de temps dure le freinage?
+\end{enumerate}
+
+\textit{Indice : Choisissez l'équation du MRUA qui ne contient pas la variable inconnue que vous ne cherchez pas.}
+
+\espaceresolution[7cm]
+\reponsepratique{a) $\Delta x \approx \SI{4,3}{km}$ \quad b) $\Delta t \approx \SI{15,4}{min}$}
+\end{pratiqueautonome}
+
+\begin{exemple}{Acc\'el\'eration d'un traversier}{}
+Un traversier quitte le quai et atteint sa vitesse de croisi\`ere de $\SI{18}{n\oe{}uds}$ apr\`es avoir parcouru $\SI{500}{m}$. Calculez :
+\begin{enumerate}[label=\alph*)]
+    \item Son acc\'el\'eration
+    \item Le temps n\'ecessaire pour atteindre cette vitesse
+\end{enumerate}
+
+\textbf{Donn\'ees :}
+\begin{itemize}
+    \item $v_i = \SI{0}{m/s}$ (d\'epart du repos)
+    \item $v_f = \SI{18}{n\oe{}uds} \times \dfrac{\SI{0,5144}{m/s}}{\SI{1}{n\oe{}ud}} = \SI{9,26}{m/s}$
+    \item $\Delta x = \SI{500}{m}$
+\end{itemize}
+
+\textbf{Solution a) :} \'Equation 5 (on ne conna\^it pas $\Delta t$)
+\begin{align*}
+v_f^2 &= v_i^2 + 2a\Delta x \\
+(\SI{9,26}{m/s})^2 &= (\SI{0}{m/s})^2 + 2a(\SI{500}{m}) \\
+a &= \frac{\SI{85,75}{m^2/s^2}}{\SI{1000}{m}} = \SI{0,086}{m/s^2}
+\end{align*}
+
+\textbf{Solution b) :} \'Equation 1 (maintenant qu'on conna\^it $a$)
+\begin{align*}
+v_f &= v_i + a\Delta t \\
+9,26 &= 0 + 0,086 \cdot \Delta t \\
+\Delta t &= \frac{9,26}{0,086} = \SI{108}{s} \approx \SI{1,8}{min}
+\end{align*}
+
+\textbf{R\'eponses :} a) $a = \SI{0,086}{m/s^2}$ \quad b) $\Delta t \approx \SI{1}{min}$ $\SI{48}{s}$
+\end{exemple}
+
+\begin{exemple}{Chargement par grue}{}
+Une grue portuaire soul\`eve un conteneur. Le conteneur part du repos et atteint une vitesse de $\SI{0,5}{m/s}$ apr\`es $\SI{4}{s}$, puis continue \`a vitesse constante.
+
+\begin{enumerate}[label=\alph*)]
+    \item Quelle est l'acc\'el\'eration pendant la phase de d\'emarrage?
+    \item Quelle hauteur le conteneur a-t-il atteinte apr\`es $\SI{4}{s}$?
+    \item Quelle hauteur atteint-il apr\`es $\SI{10}{s}$ au total?
+\end{enumerate}
+
+\textbf{Solution a) :}
+\[ a = \frac{v_f - v_i}{\Delta t} = \frac{0,5 - 0}{4} = \SI{0,125}{m/s^2} \]
+
+\textbf{Solution b) :} Phase acc\'el\'er\'ee (MRUA)
+\[ \Delta y_1 = v_i \Delta t + \frac{1}{2}a(\Delta t)^2 = 0 + \frac{1}{2}(0,125)(4)^2 = \SI{1}{m} \]
+
+\textbf{Solution c) :} Phase \`a vitesse constante (MRU) : $\SI{6}{s}$ \`a $\SI{0,5}{m/s}$
+\[ \Delta y_2 = v \cdot \Delta t = 0,5 \times 6 = \SI{3}{m} \]
+
+Hauteur totale : $\Delta y = 1 + 3 = \SI{4}{m}$
+\end{exemple}
+
+\begin{exemple}{Man\oe{}uvre d'\'evitement -- Situation critique}{}
+Deux navires naviguent l'un vers l'autre dans un chenal \'etroit. Le navire A (cargo) se d\'eplace vers l'est \`a $\SI{10}{n\oe{}uds}$. Le navire B (p\'etrolier) se d\'eplace vers l'ouest \`a $\SI{8}{n\oe{}uds}$. Ils sont initialement s\'epar\'es de $\SI{1500}{m}$.
+
+Au m\^eme instant, les deux capitaines ordonnent le freinage :
+\begin{itemize}
+    \item Navire A : d\'ec\'el\'eration $a_A = \SI{0,008}{m/s^2}$
+    \item Navire B : d\'ec\'el\'eration $a_B = \SI{0,005}{m/s^2}$ (plus lourd)
+\end{itemize}
+
+\textbf{Questions :}
+\begin{enumerate}[label=\alph*)]
+    \item Les navires vont-ils entrer en collision?
+    \item Si oui, \`a quelle vitesse? Si non, quelle sera la distance minimale entre eux?
+\end{enumerate}
+
+\textbf{Strat\'egie :} Choisissons un r\'ef\'erentiel avec l'origine au point de d\'epart de A, l'axe $x$ positif vers l'est. Calculons la distance de freinage de chaque navire.
+
+\textbf{Conversion des vitesses en m/s :}
+\begin{align*}
+v_{A,i} &= \SI{+10}{n\oe{}uds} \times \frac{\SI{0,5144}{m/s}}{\SI{1}{n\oe{}ud}} = \SI{+5,14}{m/s} \quad \text{(vers l'est)} \\[0.2cm]
+v_{B,i} &= \SI{-8}{n\oe{}uds} \times \frac{\SI{0,5144}{m/s}}{\SI{1}{n\oe{}ud}} = \SI{-4,12}{m/s} \quad \text{(vers l'ouest)}
+\end{align*}
+
+\textbf{Donn\'ees compl\`etes :}
+\begin{itemize}
+    \item Navire A : $x_{A,i} = \SI{0}{m}$, $v_{A,i} = \SI{+5,14}{m/s}$, $a_A = \SI{-0,008}{m/s^2}$
+    \item Navire B : $x_{B,i} = \SI{1500}{m}$, $v_{B,i} = \SI{-4,12}{m/s}$, $a_B = \SI{+0,005}{m/s^2}$
+\end{itemize}
+
+\textbf{Note :} L'acc\'el\'eration de B est positive car elle s'oppose \`a sa vitesse n\'egative (freinage).
+
+\textbf{Distance de freinage de A :} (\'Equation 5 avec $v_f = 0$)
+\begin{align*}
+0 &= v_{A,i}^2 + 2a_A \Delta x_A \\
+\Delta x_A &= -\frac{v_{A,i}^2}{2a_A} = -\frac{(\SI{5,14}{m/s})^2}{2 \times (\SI{-0,008}{m/s^2})} = \SI{1653}{m}
+\end{align*}
+
+Position finale de A : $x_{A,f} = \SI{0}{m} + \SI{1653}{m} = \SI{1653}{m}$
+
+\textbf{Distance de freinage de B :}
+\begin{align*}
+0 &= v_{B,i}^2 + 2a_B \Delta x_B \\
+\Delta x_B &= -\frac{v_{B,i}^2}{2a_B} = -\frac{(\SI{-4,12}{m/s})^2}{2 \times (\SI{0,005}{m/s^2})} = \SI{-1698}{m}
+\end{align*}
+
+Position finale de B : $x_{B,f} = \SI{1500}{m} + (\SI{-1698}{m}) = \SI{-198}{m}$
+
+\textbf{Analyse :}
+
+Si les deux navires pouvaient freiner compl\`etement sans se rencontrer :
+\begin{itemize}
+    \item A s'arr\^eterait \`a $x = \SI{1653}{m}$
+    \item B s'arr\^eterait \`a $x = \SI{-198}{m}$
+\end{itemize}
+
+Mais A doit atteindre $x = \SI{1653}{m}$ tandis que B, partant de $x = \SI{1500}{m}$, reculerait jusqu'\`a $x = \SI{-198}{m}$. Les trajectoires se croisent!
+
+\textbf{a) R\'eponse :} \textbf{Oui, collision in\'evitable.}
+
+\textbf{b) Position et instant de collision :}
+
+Pour trouver quand ils se rencontrent, on \'ecrit $x_A(t) = x_B(t)$ :
+\begin{align*}
+v_{A,i}t + \frac{1}{2}a_A t^2 &= x_{B,i} + v_{B,i}t + \frac{1}{2}a_B t^2 \\
+5,14t - 0,004t^2 &= 1500 - 4,12t + 0,0025t^2 \\
+-0,0065t^2 + 9,26t - 1500 &= 0
+\end{align*}
+
+Par la formule quadratique : $t = \frac{-9,26 \pm \sqrt{9,26^2 - 4(-0,0065)(-1500)}}{2(-0,0065)}$
+
+$t = \frac{-9,26 \pm \sqrt{85,75 - 39}}{-0,013} = \frac{-9,26 \pm 6,84}{-0,013}$
+
+$t = \SI{186}{s}$ (l'autre solution est n\'egative)
+
+\textbf{Vitesses \`a l'impact :}
+\begin{align*}
+v_A &= v_{A,i} + a_A t = \SI{5,14}{m/s} + (\SI{-0,008}{m/s^2})(\SI{186}{s}) = \SI{3,65}{m/s} \\
+v_B &= v_{B,i} + a_B t = \SI{-4,12}{m/s} + (\SI{0,005}{m/s^2})(\SI{186}{s}) = \SI{-3,19}{m/s}
+\end{align*}
+
+Conversion en n\oe{}uds :
+\begin{align*}
+v_A &= \SI{3,65}{m/s} \times \frac{\SI{1}{n\oe{}ud}}{\SI{0,5144}{m/s}} = \SI{7,1}{n\oe{}uds} \\
+v_B &= \SI{-3,19}{m/s} \times \frac{\SI{1}{n\oe{}ud}}{\SI{0,5144}{m/s}} = \SI{-6,2}{n\oe{}uds}
+\end{align*}
+
+\textbf{Vitesse relative d'impact :} 
+\[ |v_A - v_B| = |\SI{3,65}{m/s} - (\SI{-3,19}{m/s})| = \SI{6,84}{m/s} \times \frac{\SI{1}{n\oe{}ud}}{\SI{0,5144}{m/s}} = \SI{13,3}{n\oe{}uds} \]
+
+\begin{attention}
+Cette vitesse d'impact de $\SI{13,3}{n\oe{}uds}$ (soit $\SI{13,3}{n\oe{}uds} \times \frac{\SI{1,852}{km/h}}{\SI{1}{n\oe{}ud}} \approx \SI{25}{km/h}$) peut sembler faible, mais pour des navires de plusieurs milliers de tonnes, l'\'energie cin\'etique impliqu\'ee est consid\'erable et les d\'eg\^ats seraient majeurs.
+
+\textbf{Le\c{c}on :} M\^eme avec un freinage imm\'ediat, la distance de freinage des gros navires est telle qu'une collision peut \^etre in\'evitable si la d\'etection est trop tardive. C'est pourquoi les r\`egles de navigation imposent des distances de s\'ecurit\'e et une veille radar constante.
+\end{attention}
+\end{exemple}

@@ -1,0 +1,588 @@
+% =============================================================================
+\section*{Exercices}
+\addcontentsline{toc}{section}{Exercices}
+% =============================================================================
+
+\begin{remarque}[title=Niveaux de difficulté]
+\begin{itemize}
+    \item[$\star$] Application directe d'une formule
+    \item[$\star\star$] Problème à plusieurs étapes ou avec conversion
+    \item[$\star\star\star$] Problème complexe ou piège conceptuel
+\end{itemize}
+\end{remarque}
+
+% -----------------------------------------------------------------------------
+\subsection*{Position et déplacement}
+% -----------------------------------------------------------------------------
+
+\begin{enumerate}
+\item[$\star$] \textbf{1.} Un navire-citerne part du terminal A (position $x = 0$), se rend au terminal B situé à $\SI{15}{km}$ à l'est, puis revient au terminal C situé à $\SI{8}{km}$ à l'est de A.
+\begin{enumerate}[label=\alph*)]
+    \item Quelle est la distance totale parcourue?
+    \item Quel est le déplacement du navire?
+\end{enumerate}
+
+\item[$\star$] \textbf{2.} Un remorqueur effectue les déplacements suivants dans un port : $\SI{200}{m}$ vers l'est, $\SI{150}{m}$ vers l'ouest, puis $\SI{300}{m}$ vers l'est. Calculez la distance parcourue et le déplacement net.
+
+\item[$\star\star$] \textbf{3.} Un patrouilleur part de sa base, navigue $\SI{12}{km}$ vers l'est puis $\SI{5}{km}$ vers le nord.
+\begin{enumerate}[label=\alph*)]
+    \item Quelle est la distance totale parcourue?
+    \item Quel est le module du déplacement? (Utilisez le théorème de Pythagore)
+\end{enumerate}
+
+\item[$\star\star\star$] \textbf{4.} \textbf{Vrai ou faux?} Justifiez chaque réponse.
+\begin{enumerate}[label=\alph*)]
+    \item Le déplacement est toujours inférieur ou égal à la distance parcourue.
+    \item Si un navire revient à son point de départ, sa vitesse moyenne est nulle mais sa vitesse scalaire moyenne ne l'est pas.
+    \item Le déplacement dépend du trajet emprunté.
+\end{enumerate}
+\end{enumerate}
+
+% -----------------------------------------------------------------------------
+\subsection*{Vitesse moyenne et scalaire}
+% -----------------------------------------------------------------------------
+
+\begin{enumerate}[resume]
+\item[$\star$] \textbf{5.} Un traversier effectue la traversée Rimouski--Forestville ($\SI{25}{km}$) en $\SI{55}{min}$. Calculez sa vitesse moyenne en km/h, en m/s et en n\oe{}uds.
+
+\item[$\star$] \textbf{6.} Un cargo parcourt $\SI{450}{milles nautiques}$ en 30 heures. Quelle est sa vitesse moyenne en n\oe{}uds et en m/s?
+
+\item[$\star\star$] \textbf{7.} Un patrouilleur des garde-côtes part de sa base, parcourt $\SI{40}{NM}$ vers le nord à $\SI{20}{n\oe{}uds}$, puis revient à sa base à $\SI{15}{n\oe{}uds}$.
+\begin{enumerate}[label=\alph*)]
+    \item Quel est le temps total de la patrouille?
+    \item Quelle est la vitesse moyenne sur l'ensemble du trajet?
+    \item Quelle est la vitesse scalaire moyenne?
+\end{enumerate}
+
+\item[$\star\star$] \textbf{8.} Un vraquier effectue un trajet de $\SI{1200}{NM}$. Il navigue à $\SI{12}{n\oe{}uds}$ pendant les 20 premières heures, puis à $\SI{15}{n\oe{}uds}$ pour le reste du trajet. Quelle est sa vitesse scalaire moyenne?
+
+\item[$\star\star\star$] \textbf{9.} \textbf{Question piège!} Un navire parcourt la \textit{première moitié} d'un trajet à $\SI{10}{n\oe{}uds}$ et la \textit{seconde moitié} à $\SI{20}{n\oe{}uds}$. 
+\begin{enumerate}[label=\alph*)]
+    \item Quelle est sa vitesse scalaire moyenne? 
+    \item Expliquez pourquoi ce n'est \textbf{pas} $\SI{15}{n\oe{}uds}$.
+\end{enumerate}
+
+\item[$\star\star\star$] \textbf{10.} Un autre navire parcourt la \textit{première moitié du temps} à $\SI{10}{n\oe{}uds}$ et la \textit{seconde moitié du temps} à $\SI{20}{n\oe{}uds}$. Quelle est sa vitesse scalaire moyenne? Comparez avec l'exercice précédent.
+\end{enumerate}
+
+% -----------------------------------------------------------------------------
+\subsection*{Graphiques}
+% -----------------------------------------------------------------------------
+
+\begin{enumerate}[resume]
+\item[$\star\star$] \textbf{11.} Le graphique suivant montre la position d'un navire en fonction du temps :
+
+\begin{center}
+\begin{tikzpicture}[scale=0.6]
+\draw[axe, thick] (0,0) -- (8,0) node[right] {$t$ (h)};
+\draw[axe, thick] (0,0) -- (0,5) node[above] {$x$ (NM)};
+\foreach \x in {1,2,3,4,5,6,7} {\draw (\x,0.1) -- (\x,-0.1) node[below] {\x};}
+\foreach \y in {1,2,3,4} {\draw (0.1,\y) -- (-0.1,\y) node[left] {\pgfmathparse{int(\y*20)}\pgfmathresult};}
+\draw[very thick, blue] (0,0) -- (2,2) -- (4,2) -- (7,4);
+\end{tikzpicture}
+\end{center}
+
+\begin{enumerate}[label=\alph*)]
+    \item Décrivez qualitativement le mouvement du navire.
+    \item Calculez la vitesse entre $t = 0$ et $t = 2$ h.
+    \item Le navire est-il à l'arrêt à un certain moment? Si oui, quand?
+    \item Quelle est la vitesse moyenne sur l'ensemble du trajet (0 à 7 h)?
+\end{enumerate}
+
+\item[$\star\star$] \textbf{12.} Le graphique suivant montre la vitesse d'un cargo en fonction du temps :
+
+\begin{center}
+\begin{tikzpicture}[scale=0.6]
+\draw[axe, thick] (0,0) -- (8,0) node[right] {$t$ (min)};
+\draw[axe, thick] (0,0) -- (0,5) node[above] {$v$ (m/s)};
+\foreach \x in {2,4,6,8,10,12,14} {\draw (\x/2,0.1) -- (\x/2,-0.1) node[below] {\x};}
+\foreach \y in {1,2,3,4} {\draw (0.1,\y) -- (-0.1,\y) node[left] {\y};}
+\draw[very thick, blue] (0,0) -- (2,4) -- (5,4) -- (7,0);
+\end{tikzpicture}
+\end{center}
+
+\begin{enumerate}[label=\alph*)]
+    \item Calculez l'accélération pendant les 4 premières minutes.
+    \item Pendant quelle phase le navire est-il en MRU?
+    \item Calculez la distance totale parcourue (aire sous la courbe).
+\end{enumerate}
+
+\item[$\star\star\star$] \textbf{13.} \textbf{Expliquez} pourquoi, sur un graphique position-temps $x(t)$, une pente négative signifie que l'objet se déplace dans le sens négatif, et non pas qu'il recule nécessairement.
+\end{enumerate}
+
+% -----------------------------------------------------------------------------
+\subsection*{Accélération et MRUA}
+% -----------------------------------------------------------------------------
+
+\begin{enumerate}[resume]
+\item[$\star$] \textbf{14.} Un porte-conteneurs passe de $\SI{5}{n\oe{}uds}$ à $\SI{18}{n\oe{}uds}$ en $\SI{12}{min}$. Calculez son accélération moyenne en m/s².
+
+\item[$\star$] \textbf{15.} Un pétrolier naviguant à $\SI{14}{n\oe{}uds}$ freine et s'arrête après $\SI{25}{min}$. Quelle est sa décélération moyenne?
+
+\item[$\star\star$] \textbf{16.} Un traversier part du repos et accélère à $\SI{0,08}{m/s^2}$ jusqu'à atteindre $\SI{12}{n\oe{}uds}$.
+\begin{enumerate}[label=\alph*)]
+    \item Combien de temps dure la phase d'accélération?
+    \item Quelle distance parcourt-il pendant cette phase?
+\end{enumerate}
+
+\item[$\star\star$] \textbf{17.} Un cargo navigue à $\SI{15}{n\oe{}uds}$. Le capitaine ordonne le freinage avec $a = \SI{-0,006}{m/s^2}$.
+\begin{enumerate}[label=\alph*)]
+    \item Quelle est la distance de freinage?
+    \item Combien de temps faut-il pour s'arrêter?
+\end{enumerate}
+
+\item[$\star\star$] \textbf{18.} Une voiture roule à $\SI{90}{km/h}$ et freine avec $a = \SI{-8}{m/s^2}$. Calculez sa distance de freinage. Comparez avec un cargo à la même vitesse qui freine avec $a = \SI{-0,006}{m/s^2}$.
+
+\item[$\star\star\star$] \textbf{19.} Un navire doit s'arrêter exactement à un quai situé à $\SI{800}{m}$. Il arrive à $\SI{8}{n\oe{}uds}$.
+\begin{enumerate}[label=\alph*)]
+    \item Quelle décélération constante doit-il appliquer?
+    \item Combien de temps dure la manœuvre?
+    \item Si le capitaine applique plutôt $a = \SI{-0,015}{m/s^2}$, à quelle distance du quai le navire s'arrêtera-t-il?
+\end{enumerate}
+
+\item[$\star\star\star$] \textbf{20.} \textbf{Vrai ou faux?} Justifiez.
+\begin{enumerate}[label=\alph*)]
+    \item Si l'accélération est négative, l'objet ralentit toujours.
+    \item Un objet peut avoir une vitesse nulle et une accélération non nulle.
+    \item Si la vitesse et l'accélération ont le même signe, l'objet accélère.
+\end{enumerate}
+
+\item[$\star\star\star$] \textbf{21.} Un remorqueur navigue vers l'est à vitesse constante de $\SI{8}{n\oe{}uds}$. Un cargo, initialement à $\SI{500}{m}$ derrière lui (à l'ouest), démarre du repos et accélère à $\SI{0,015}{m/s^2}$ dans la même direction.
+\begin{enumerate}[label=\alph*)]
+    \item Après combien de temps le cargo rattrape-t-il le remorqueur?
+    \item Quelle distance chacun a-t-il parcourue à ce moment?
+    \item Quelle est la vitesse du cargo au moment du rattrapage?
+\end{enumerate}
+\end{enumerate}
+
+% -----------------------------------------------------------------------------
+\subsection*{Chute libre}
+% -----------------------------------------------------------------------------
+
+\begin{enumerate}[resume]
+\item[$\star$] \textbf{22.} Un matelot échappe un outil du haut d'un mât situé à $\SI{18}{m}$ au-dessus du pont.
+\begin{enumerate}[label=\alph*)]
+    \item Combien de temps l'outil met-il pour atteindre le pont?
+    \item À quelle vitesse frappe-t-il le pont?
+\end{enumerate}
+
+\item[$\star\star$] \textbf{23.} Un marin sur un pont à $\SI{8}{m}$ au-dessus de l'eau lance une bouée de sauvetage verticalement vers le bas avec une vitesse initiale de $\SI{3}{m/s}$.
+\begin{enumerate}[label=\alph*)]
+    \item Combien de temps la bouée met-elle pour atteindre l'eau?
+    \item À quelle vitesse entre-t-elle dans l'eau?
+\end{enumerate}
+
+\item[$\star\star$] \textbf{24.} Une fusée éclairante est lancée verticalement vers le haut depuis le pont d'un navire ($y_0 = \SI{5}{m}$) avec une vitesse de $\SI{25}{m/s}$.
+\begin{enumerate}[label=\alph*)]
+    \item Quelle hauteur maximale atteint-elle au-dessus de l'eau?
+    \item Combien de temps reste-t-elle en l'air avant de retomber à l'eau ($y = 0$)?
+\end{enumerate}
+
+\item[$\star\star\star$] \textbf{25.} \textbf{Question contre-intuitive.} Un marin sur un mât laisse tomber une balle A. Au même instant, un autre marin au sol lance une balle B verticalement vers le haut. Les deux balles se croisent à mi-hauteur. 
+
+Laquelle des deux balles a la plus grande vitesse au moment où elles se croisent? \textit{Justifiez sans calcul.}
+\end{enumerate}
+
+% -----------------------------------------------------------------------------
+\subsection*{Mouvement en 2D et projectile}
+% -----------------------------------------------------------------------------
+
+\begin{enumerate}[resume]
+\item[$\star$] \textbf{26.} Un navire navigue à $\SI{18}{n\oe{}uds}$ avec un cap de $40°$ nord de l'est.
+\begin{enumerate}[label=\alph*)]
+    \item Quelle est la composante est-ouest de sa vitesse?
+    \item Quelle est la composante nord-sud de sa vitesse?
+\end{enumerate}
+
+\item[$\star\star$] \textbf{27.} Un lance-amarre projette une ligne à $\SI{25}{m/s}$ avec un angle de $40°$ depuis une hauteur de $\SI{6}{m}$.
+\begin{enumerate}[label=\alph*)]
+    \item Calculez les composantes $v_{0x}$ et $v_{0y}$.
+    \item Quelle est la portée horizontale?
+\end{enumerate}
+
+\item[$\star\star$] \textbf{28.} Un conteneur tombe d'une grue qui se déplace horizontalement à $\SI{2}{m/s}$. Le conteneur est à $\SI{15}{m}$ de hauteur. À quelle distance horizontale (par rapport au point directement sous le largage) le conteneur touche-t-il le sol?
+
+\item[$\star\star\star$] \textbf{29.} Une fusée éclairante est lancée à $\SI{40}{m/s}$ avec un angle de $60°$ depuis le niveau de l'eau.
+\begin{enumerate}[label=\alph*)]
+    \item Quelle hauteur maximale atteint-elle?
+    \item Quelle est sa portée horizontale?
+    \item À quel angle faudrait-il la lancer pour maximiser la portée? (Sans calcul)
+\end{enumerate}
+
+\item[$\star\star\star$] \textbf{30.} \textbf{Expliquez} pourquoi un objet lancé horizontalement et un objet lâché au même instant depuis la même hauteur touchent le sol en même temps.
+\end{enumerate}
+
+% -----------------------------------------------------------------------------
+\subsection*{Cinématique de rotation}
+% -----------------------------------------------------------------------------
+
+\begin{enumerate}[resume]
+\item[$\star$] \textbf{31.} Convertissez : a) $270°$ en radians \quad b) $\frac{3\pi}{4}$~rad en degrés \quad c) $\SI{90}{RPM}$ en rad/s
+
+\item[$\star$] \textbf{32.} Une hélice de navire tourne à $\SI{150}{RPM}$. Si le rayon de l'hélice est de $\SI{2}{m}$, quelle est la vitesse linéaire en bout de pale (en m/s et km/h)?
+
+\item[$\star\star$] \textbf{33.} Un treuil de rayon $\SI{15}{cm}$ doit enrouler $\SI{8}{m}$ de câble.
+\begin{enumerate}[label=\alph*)]
+    \item Combien de tours doit-il effectuer?
+    \item S'il tourne à $\SI{25}{RPM}$, combien de temps faut-il?
+\end{enumerate}
+
+\item[$\star\star$] \textbf{34.} L'hélice d'un navire passe de $\SI{0}{RPM}$ à $\SI{120}{RPM}$ en $\SI{20}{s}$ avec une accélération angulaire constante.
+\begin{enumerate}[label=\alph*)]
+    \item Quelle est l'accélération angulaire en rad/s²?
+    \item Combien de tours l'hélice effectue-t-elle pendant cette phase?
+\end{enumerate}
+
+\item[$\star\star\star$] \textbf{35.} Un cabestan de rayon $\SI{20}{cm}$ tourne à $\SI{45}{RPM}$. On applique les freins et il s'arrête après 8 tours.
+\begin{enumerate}[label=\alph*)]
+    \item Quelle est la décélération angulaire?
+    \item Quelle longueur de câble a été halée pendant le freinage?
+    \item Combien de temps a duré le freinage?
+\end{enumerate}
+\end{enumerate}
+
+% =============================================================================
+\subsection*{Problèmes de synthèse}
+% =============================================================================
+
+Ces problèmes intègrent plusieurs concepts du chapitre. Ils sont représentatifs du niveau attendu lors des évaluations.
+
+\begin{enumerate}[resume]
+\item[\textbf{S1.}] \textbf{Manœuvre d'accostage}
+
+Un cargo de haute mer arrive au port de Montréal. À $\SI{2}{km}$ du quai, il navigue à $\SI{10}{n\oe{}uds}$. Le pilote du port ordonne une première phase de freinage avec $a_1 = \SI{-0,005}{m/s^2}$ jusqu'à atteindre $\SI{3}{n\oe{}uds}$, puis une seconde phase avec $a_2 = \SI{-0,008}{m/s^2}$ jusqu'à l'arrêt complet.
+
+\begin{enumerate}[label=\alph*)]
+    \item Quelle distance parcourt le navire pendant la première phase?
+    \item Quelle distance parcourt-il pendant la seconde phase?
+    \item Le navire s'arrête-t-il avant le quai? Si non, à quelle distance du quai aurait-il dû commencer à freiner?
+\end{enumerate}
+
+\item[\textbf{S2.}] \textbf{Homme à la mer}
+
+Un marin tombe d'un navire qui se déplace à $\SI{14}{n\oe{}uds}$. L'équipage met $\SI{45}{s}$ avant de réagir (temps de réaction), puis le navire freine avec une décélération de $\SI{0,015}{m/s^2}$ jusqu'à l'arrêt.
+
+\begin{enumerate}[label=\alph*)]
+    \item Quelle distance le navire parcourt-il pendant le temps de réaction?
+    \item Quelle distance parcourt-il pendant le freinage?
+    \item À quelle distance totale du point de chute le navire s'arrête-t-il?
+    \item Si le marin dérive à $\SI{1}{n\oe{}ud}$ dans le sens opposé au navire, à quelle distance du navire se trouve-t-il quand celui-ci s'arrête?
+\end{enumerate}
+
+\item[\textbf{S3.}] \textbf{Lance-amarre tactique}
+
+Un officier doit envoyer une amarre sur un quai situé à $\SI{60}{m}$ horizontalement. Le pont du navire est à $\SI{8}{m}$ au-dessus du niveau du quai. Le lance-amarre peut projeter la ligne à $\SI{30}{m/s}$.
+
+\begin{enumerate}[label=\alph*)]
+    \item À quel angle minimal doit-il tirer pour atteindre le quai?
+    \item Si le vent souffle vers le navire et réduit la portée de 15\%, peut-il encore atteindre le quai?
+    \item Quel serait l'angle optimal pour maximiser la portée dans les conditions normales?
+\end{enumerate}
+
+\item[\textbf{S4.}] \textbf{Opération de levage}
+
+Une grue portuaire soulève un conteneur de $\SI{20}{tonnes}$. Le treuil (rayon $\SI{25}{cm}$) accélère de 0 à $\SI{30}{RPM}$ en $\SI{5}{s}$, puis maintient cette vitesse constante.
+
+\begin{enumerate}[label=\alph*)]
+    \item Quelle est l'accélération angulaire pendant la phase d'accélération?
+    \item À quelle vitesse linéaire le conteneur monte-t-il en régime permanent?
+    \item Quelle hauteur le conteneur atteint-il après $\SI{5}{s}$?
+    \item Si le câble casse à une hauteur de $\SI{12}{m}$, combien de temps le conteneur met-il pour toucher le sol?
+\end{enumerate}
+
+\item[\textbf{S5.}] \textbf{Situation de collision}
+
+Deux navires se font face dans un chenal étroit. Le navire A ($\SI{12}{n\oe{}uds}$ vers l'est) et le navire B ($\SI{8}{n\oe{}uds}$ vers l'ouest) sont séparés de $\SI{2000}{m}$.
+
+\begin{enumerate}[label=\alph*)]
+    \item Dans combien de temps se croiseront-ils si aucun ne freine?
+    \item Les deux capitaines freinent simultanément : $a_A = \SI{-0,006}{m/s^2}$ et $a_B = \SI{-0,004}{m/s^2}$. Calculez la distance de freinage de chaque navire.
+    \item Y a-t-il collision? Si oui, calculez la vitesse relative d'impact.
+\end{enumerate}
+
+\item[\textbf{S6.}] \textbf{Analyse de navigation}
+
+Un cargo quitte Sept-Îles à 6h00 pour Rimouski ($\SI{180}{NM}$). Il navigue d'abord à $\SI{12}{n\oe{}uds}$ pendant 8 heures, puis accélère à $\SI{0,002}{m/s^2}$ jusqu'à atteindre $\SI{16}{n\oe{}uds}$, vitesse qu'il maintient jusqu'à destination.
+
+\begin{enumerate}[label=\alph*)]
+    \item Quelle distance a-t-il parcourue pendant les 8 premières heures?
+    \item Combien de temps dure la phase d'accélération?
+    \item À quelle heure arrive-t-il à Rimouski?
+    \item Tracez le graphique $v(t)$ de ce voyage.
+\end{enumerate}
+\end{enumerate}
+
+% =============================================================================
+\subsection*{Défis intégrateurs}
+% =============================================================================
+
+Ces problèmes demandent de combiner plusieurs concepts et de développer une stratégie de résolution. Ils représentent le niveau attendu pour bien maîtriser la cinématique.
+
+\begin{enumerate}
+\item[\textbf{D1.}] \textbf{Sauvetage héliporté} $(\star\star\star\star)$
+
+Un hélicoptère de la Garde côtière vole horizontalement vers l'est à $\SI{90}{km/h}$ à une altitude de $\SI{40}{m}$ au-dessus de l'eau. Il doit larguer une bouée de sauvetage pour qu'elle tombe exactement sur un naufragé.
+
+\begin{enumerate}[label=\alph*)]
+    \item À quelle distance horizontale \textbf{avant} le naufragé l'hélicoptère doit-il larguer la bouée?
+    \item Avec quelle vitesse (module et direction) la bouée touche-t-elle l'eau?
+    \item Si le naufragé dérive vers l'est à $\SI{2}{m/s}$ (même direction que l'hélicoptère), comment cela modifie-t-il la distance de largage?
+    \item L'hélicoptère décide plutôt de lancer la bouée vers le bas avec une vitesse initiale de $\SI{5}{m/s}$. Recalculez la distance de largage.
+\end{enumerate}
+
+\item[\textbf{D2.}] \textbf{Rendez-vous en mer} $(\star\star\star\star)$
+
+Deux navires doivent se rejoindre pour un transfert de personnel. À $t = 0$ :
+\begin{itemize}
+    \item Le navire A est à l'origine, immobile, et commence à accélérer vers l'est à $\SI{0,02}{m/s^2}$
+    \item Le navire B est à $\SI{5}{km}$ à l'est, navigue vers l'ouest à $\SI{8}{n\oe{}uds}$ et maintient cette vitesse
+\end{itemize}
+
+\begin{enumerate}[label=\alph*)]
+    \item Écrivez les équations de position $x_A(t)$ et $x_B(t)$ pour chaque navire.
+    \item À quel instant et à quelle position les navires se rencontrent-ils?
+    \item Quelle est la vitesse du navire A au moment du rendez-vous?
+    \item Quelle est la vitesse \textbf{relative} du navire A par rapport au navire B à cet instant? Interprétez physiquement.
+    \item Si le navire A doit s'arrêter au point de rendez-vous avec une décélération de $\SI{0,015}{m/s^2}$, à quel moment doit-il commencer à freiner?
+\end{enumerate}
+
+\item[\textbf{D3.}] \textbf{Lance-amarre en conditions réelles} $(\star\star\star\star)$
+
+Un officier sur le gaillard d'avant (hauteur $h_1 = \SI{8}{m}$) doit envoyer une amarre sur un quai situé à $\SI{25}{m}$ horizontalement. Le quai est à une hauteur $h_2 = \SI{3}{m}$ au-dessus de l'eau. Le lance-amarre propulse la ligne à $v_0 = \SI{30}{m/s}$.
+
+\begin{enumerate}[label=\alph*)]
+    \item Quelle est la différence de hauteur $\Delta y$ entre le point de tir et le point d'arrivée?
+    \item Déterminez l'angle minimal $\theta_{min}$ permettant d'atteindre le quai. \textit{(Indice : vous devrez résoudre une équation du second degré en $\tan\theta$)}
+    \item Pour cet angle minimal, calculez le temps de vol de l'amarre.
+    \item Il existe un deuxième angle $\theta_{max}$ qui permet aussi d'atteindre la cible. Lequel des deux angles est préférable en pratique? Justifiez.
+    \item Si le navire s'approche du quai à $\SI{0,5}{m/s}$ pendant le vol de l'amarre, de combien la portée effective est-elle réduite?
+\end{enumerate}
+
+\item[\textbf{D4.}] \textbf{Analyse complète d'une manœuvre} $(\star\star\star\star)$
+
+Un vraquier de $\SI{200}{m}$ de long effectue la manœuvre suivante dans le chenal :
+\begin{itemize}
+    \item Phase 1 : Accélération de $\SI{0}{n\oe{}ud}$ à $\SI{6}{n\oe{}uds}$ avec $a_1 = \SI{0,01}{m/s^2}$
+    \item Phase 2 : Vitesse constante de $\SI{6}{n\oe{}uds}$ pendant $\SI{15}{min}$
+    \item Phase 3 : Accélération de $\SI{6}{n\oe{}uds}$ à $\SI{12}{n\oe{}uds}$ avec $a_3 = \SI{0,008}{m/s^2}$
+    \item Phase 4 : Vitesse constante de $\SI{12}{n\oe{}uds}$ jusqu'à destination
+\end{itemize}
+
+La destination est à $\SI{10}{km}$ du point de départ.
+
+\begin{enumerate}[label=\alph*)]
+    \item Calculez la durée et la distance parcourue pendant chaque phase (1, 2 et 3).
+    \item Quelle distance reste-t-il à parcourir en phase 4? Combien de temps dure cette phase?
+    \item Calculez le temps total de la manœuvre.
+    \item Tracez les graphiques $v(t)$ et $x(t)$ à l'échelle, en identifiant clairement chaque phase.
+    \item Calculez la vitesse moyenne sur l'ensemble du trajet. Comparez avec la moyenne arithmétique des vitesses (6 et 12 nœuds).
+\end{enumerate}
+
+\item[\textbf{D5.}] \textbf{Système de treuils coordonnés} $(\star\star\star\star)$
+
+Lors d'une opération de chargement, deux treuils travaillent en coordination :
+\begin{itemize}
+    \item Treuil A (rayon $r_A = \SI{20}{cm}$) : part du repos, accélère à $\alpha_A = \SI{0,5}{rad/s^2}$ pendant $\SI{4}{s}$, puis maintient sa vitesse
+    \item Treuil B (rayon $r_B = \SI{30}{cm}$) : tourne à vitesse constante $\omega_B = \SI{2}{rad/s}$ dès $t = 0$
+\end{itemize}
+
+Les deux treuils enroulent des câbles reliés au même conteneur par un système de poulies (le conteneur monte à la moyenne des vitesses linéaires des deux câbles).
+
+\begin{enumerate}[label=\alph*)]
+    \item Calculez la vitesse angulaire finale du treuil A et sa vitesse linéaire en bout de tambour.
+    \item Calculez la vitesse linéaire du câble B.
+    \item À $t = \SI{4}{s}$, à quelle vitesse monte le conteneur?
+    \item Quelle longueur de câble le treuil A a-t-il enroulée pendant les 4 premières secondes?
+    \item Quelle longueur de câble le treuil B a-t-il enroulée pendant le même temps?
+    \item De quelle hauteur le conteneur est-il monté pendant ces $\SI{4}{s}$? \textit{(Attention : la vitesse de montée varie!)}
+\end{enumerate}
+
+\item[\textbf{D6.}] \textbf{Poursuite et interception} $(\star\star\star\star\star)$
+
+Un navire de patrouille P détecte un navire suspect S à $\SI{8}{km}$ au nord. Au moment de la détection :
+\begin{itemize}
+    \item Le navire S navigue vers l'est à $\SI{15}{n\oe{}uds}$ (vitesse constante)
+    \item Le navire P est immobile mais peut atteindre $\SI{25}{n\oe{}uds}$ avec une accélération de $\SI{0,03}{m/s^2}$
+\end{itemize}
+
+Le capitaine de P veut intercepter S en naviguant en ligne droite vers un point d'interception.
+
+\begin{enumerate}[label=\alph*)]
+    \item Si P navigue directement vers la position actuelle de S, expliquez pourquoi il ne l'interceptera jamais.
+    \item Supposons que P navigue vers un point situé à un angle $\theta$ est du nord. Écrivez les équations de position de P et S en fonction du temps.
+    \item Pour une interception, les positions doivent coïncider. Établissez les deux équations (en $x$ et en $y$) qui doivent être satisfaites.
+    \item Par essai-erreur ou graphiquement, estimez l'angle $\theta$ optimal et le temps d'interception. \textit{(La solution analytique exacte dépasse le cadre du cours.)}
+    \item Quelle distance totale le navire P parcourt-il jusqu'à l'interception?
+\end{enumerate}
+
+\item[\textbf{D7.}] \textbf{Chute d'un conteneur en mouvement} $(\star\star\star\star)$
+
+Une grue portuaire déplace un conteneur horizontalement à $\SI{3}{m/s}$ à une hauteur de $\SI{20}{m}$. Le câble casse et le conteneur tombe.
+
+\begin{enumerate}[label=\alph*)]
+    \item Combien de temps le conteneur met-il pour toucher le sol?
+    \item À quelle distance horizontale du point de rupture le conteneur atterrit-il?
+    \item Avec quelle vitesse (module) le conteneur frappe-t-il le sol?
+    \item Un travailleur se trouve à $\SI{8}{m}$ horizontalement du point de rupture (dans la direction du mouvement). A-t-il le temps de s'écarter s'il lui faut $\SI{1,5}{s}$ pour réagir et courir $\SI{3}{m}$?
+    \item Le conteneur a des dimensions $\SI{6}{m} \times \SI{2,4}{m}$ (longueur $\times$ largeur). En supposant qu'il ne tourne pas pendant la chute, quelle est la \og zone de danger \fg{} au sol (rectangle où le conteneur pourrait tomber)?
+\end{enumerate}
+
+\item[\textbf{D8.}] \textbf{Navigation avec courant variable} $(\star\star\star\star\star)$
+
+Un navire doit traverser un détroit de $\SI{4}{km}$ de large (direction nord-sud). Le courant dans le détroit varie linéairement :
+\begin{itemize}
+    \item Au bord sud : courant nul
+    \item Au centre : courant maximal de $\SI{3}{n\oe{}uds}$ vers l'est
+    \item Au bord nord : courant nul
+\end{itemize}
+
+Le navire part du bord sud et navigue à $\SI{10}{n\oe{}uds}$ (vitesse surface) cap au nord.
+
+\begin{enumerate}[label=\alph*)]
+    \item Exprimez le courant $v_c(y)$ en fonction de la position $y$ (où $y = 0$ au sud et $y = \SI{4}{km}$ au nord).
+    \item Expliquez qualitativement pourquoi le navire dérivera vers l'est, puis reviendra partiellement.
+    \item À quelle distance à l'est de sa ligne de départ le navire se trouvera-t-il quand il atteindra le bord nord? \textit{(Indice : divisez la traversée en petits segments et sommez les dérives, ou utilisez l'intégration si vous la connaissez.)}
+    \item Combien de temps dure la traversée?
+    \item Quel cap initial (ouest du nord) le capitaine devrait-il prendre pour arriver exactement au point visé? \textit{(Question ouverte -- une réponse approximative est acceptable.)}
+\end{enumerate}
+
+\end{enumerate}
+
+\bigskip
+\begin{remarque}[title=Conseils pour les défis]
+\begin{itemize}
+    \item \textbf{Dessinez toujours} un schéma avec les axes, les positions initiales et les directions.
+    \item \textbf{Identifiez les phases} du mouvement (MRU, MRUA, chute libre...) pour chaque objet.
+    \item \textbf{Listez les inconnues} et comptez vos équations -- vous devez avoir autant d'équations que d'inconnues.
+    \item \textbf{Le temps est souvent le lien} entre les composantes $x$ et $y$, ou entre deux objets.
+    \item \textbf{Vérifiez vos unités} à chaque étape et la cohérence de vos réponses (ordres de grandeur).
+\end{itemize}
+\end{remarque}
+
+% =============================================================================
+\subsection*{Réponses}
+% =============================================================================
+
+\textbf{Position et déplacement}
+
+\textbf{1.} a) $\SI{22}{km}$ \quad b) $\SI{+8}{km}$ vers l'est
+
+\textbf{2.} $d = \SI{650}{m}$, $\Delta x = \SI{+350}{m}$ vers l'est
+
+\textbf{3.} a) $\SI{17}{km}$ \quad b) $|\Delta\vec{r}| = \SI{13}{km}$
+
+\textbf{4.} a) Faux (égalité si ligne droite sans demi-tour) \quad b) Vrai \quad c) Faux (ne dépend que des positions initiale et finale)
+
+\medskip
+\textbf{Vitesse moyenne et scalaire}
+
+\textbf{5.} $\SI{27,3}{km/h}$ ; $\SI{7,58}{m/s}$ ; $\SI{14,7}{n\oe{}uds}$
+
+\textbf{6.} $\SI{15}{n\oe{}uds}$ ; $\SI{7,72}{m/s}$
+
+\textbf{7.} a) $\SI{4,67}{h}$ \quad b) $\SI{0}{n\oe{}ud}$ \quad c) $\SI{17,1}{n\oe{}uds}$
+
+\textbf{8.} $\SI{13,3}{n\oe{}uds}$
+
+\textbf{9.} a) $\SI{13,3}{n\oe{}uds}$ \quad b) Le temps passé à chaque vitesse n'est pas égal
+
+\textbf{10.} $\SI{15}{n\oe{}uds}$ (moyenne arithmétique car temps égaux)
+
+\medskip
+\textbf{Graphiques}
+
+\textbf{11.} a) MRU, repos, MRU \quad b) $\SI{20}{NM/h}$ \quad c) Oui, entre 2h et 4h \quad d) $\SI{11,4}{NM/h}$
+
+\textbf{12.} a) $\SI{1}{m/s/min} = \SI{0,017}{m/s^2}$ \quad b) Entre 4 et 10 min \quad c) $\SI{1680}{m}$
+
+\textbf{13.} Le signe dépend du choix de l'axe; une pente négative indique un mouvement vers les $x$ décroissants
+
+\medskip
+\textbf{Accélération et MRUA}
+
+\textbf{14.} $\SI{0,0093}{m/s^2}$
+
+\textbf{15.} $\SI{-0,0048}{m/s^2}$
+
+\textbf{16.} a) $\SI{77}{s}$ \quad b) $\SI{238}{m}$
+
+\textbf{17.} a) $\SI{4940}{m} \approx \SI{2,7}{NM}$ \quad b) $\SI{1286}{s} \approx \SI{21}{min}$
+
+\textbf{18.} Voiture : $\SI{39}{m}$ ; Cargo : $\SI{52\,000}{m}$ (1300 fois plus!)
+
+\textbf{19.} a) $\SI{-0,0106}{m/s^2}$ \quad b) $\SI{389}{s}$ \quad c) $\SI{234}{m}$ avant le quai
+
+\textbf{20.} a) Faux (dépend du signe de $v$) \quad b) Vrai (ex: balle au sommet) \quad c) Vrai
+
+\textbf{21.} a) $\SI{651}{s} \approx \SI{10,9}{min}$ \quad b) Remorqueur : $\SI{2,68}{km}$ ; Cargo : $\SI{3,18}{km}$ \quad c) $\SI{9,8}{m/s} \approx \SI{19}{n\oe{}uds}$
+
+\medskip
+\textbf{Chute libre}
+
+\textbf{22.} a) $\SI{1,92}{s}$ \quad b) $\SI{18,8}{m/s}$
+
+\textbf{23.} a) $\SI{1,05}{s}$ \quad b) $\SI{13,3}{m/s}$
+
+\textbf{24.} a) $\SI{36,9}{m}$ \quad b) $\SI{5,3}{s}$
+
+\textbf{25.} La balle B (lancée) a une plus grande vitesse car elle a eu le temps d'accélérer depuis le sol
+
+\medskip
+\textbf{Mouvement en 2D et projectile}
+
+\textbf{26.} a) $\SI{13,8}{n\oe{}uds}$ \quad b) $\SI{11,6}{n\oe{}uds}$
+
+\textbf{27.} a) $v_{0x} = \SI{19,2}{m/s}$, $v_{0y} = \SI{16,1}{m/s}$ \quad b) $\SI{69}{m}$
+
+\textbf{28.} $\SI{3,5}{m}$
+
+\textbf{29.} a) $\SI{61,2}{m}$ \quad b) $\SI{141}{m}$ \quad c) $45°$
+
+\textbf{30.} Le mouvement vertical est indépendant du mouvement horizontal; les deux subissent la même accélération $g$
+
+\medskip
+\textbf{Cinématique de rotation}
+
+\textbf{31.} a) $\frac{3\pi}{2} \approx \SI{4,71}{rad}$ \quad b) $135°$ \quad c) $\SI{9,42}{rad/s}$
+
+\textbf{32.} $\SI{31,4}{m/s} \approx \SI{113}{km/h}$
+
+\textbf{33.} a) $8,5$ tours \quad b) $\SI{20,4}{s}$
+
+\textbf{34.} a) $\SI{0,628}{rad/s^2}$ \quad b) $20$ tours
+
+\textbf{35.} a) $\SI{-0,221}{rad/s^2}$ \quad b) $\SI{10,1}{m}$ \quad c) $\SI{21,3}{s}$
+
+\medskip
+\textbf{Problèmes de synthèse}
+
+\textbf{S1.} a) $\SI{1890}{m}$ \quad b) $\SI{118}{m}$ \quad c) Non, s'arrête à $\SI{8}{m}$ avant; aurait dû commencer à $\SI{2008}{m}$
+
+\textbf{S2.} a) $\SI{324}{m}$ \quad b) $\SI{173}{m}$ \quad c) $\SI{497}{m}$ \quad d) $\SI{521}{m}$
+
+\textbf{S3.} a) $\approx 25°$ \quad b) Oui (portée réduite à $\SI{59}{m}$, suffisant) \quad c) $\approx 40°$ (car lancé d'une hauteur)
+
+\textbf{S4.} a) $\SI{0,628}{rad/s^2}$ \quad b) $\SI{0,785}{m/s}$ \quad c) $\SI{0,98}{m}$ \quad d) $\SI{1,56}{s}$
+
+\textbf{S5.} a) $\SI{194}{s} \approx \SI{3,2}{min}$ \quad b) $A$: $\SI{1764}{m}$, $B$: $\SI{2117}{m}$ \quad c) Oui, collision; $v_{rel} \approx \SI{4,6}{m/s}$
+
+\textbf{S6.} a) $\SI{96}{NM}$ \quad b) $\SI{1029}{s} \approx \SI{17}{min}$ \quad c) $\approx$ 17h30 \quad d) Graphique trapézoïdal
+
+\medskip
+\textbf{Défis intégrateurs}
+
+\textbf{D1.} a) $\SI{71,4}{m}$ \quad b) $v = \SI{37,5}{m/s}$ à $41,8°$ sous l'horizontale \quad c) Réduit de $\SI{5,7}{m}$ (larguer à $\SI{65,7}{m}$) \quad d) $\SI{63,9}{m}$
+
+\textbf{D2.} a) $x_A = \frac{1}{2}(0,02)t^2$; $x_B = 5000 - 4,12t$ \quad b) $t = \SI{650}{s}$, $x = \SI{4220}{m}$ \quad c) $\SI{13}{m/s} = \SI{25,3}{n\oe{}uds}$ \quad d) $v_{A/B} = \SI{17,1}{m/s}$ vers l'est (A s'approche rapidement de B) \quad e) Commencer à freiner à $t = \SI{217}{s}$
+
+\textbf{D3.} a) $\Delta y = \SI{+5}{m}$ (tire vers le bas) \quad b) $\theta_{min} \approx 28°$ \quad c) $t \approx \SI{1,4}{s}$ \quad d) $\theta_{min}$ préférable (trajectoire plus tendue, moins affectée par le vent) \quad e) Portée réduite de $\SI{0,7}{m}$
+
+\textbf{D4.} a) Phase 1: $\SI{309}{s}$, $\SI{476}{m}$; Phase 2: $\SI{900}{s}$, $\SI{2778}{m}$; Phase 3: $\SI{386}{s}$, $\SI{1736}{m}$ \quad b) $\SI{5010}{m}$ restants, $\SI{811}{s}$ \quad c) $\SI{2406}{s} \approx \SI{40}{min}$ \quad d) Voir graphique \quad e) $v_{moy} = \SI{15,0}{km/h} = \SI{8,1}{n\oe{}uds}$ (inférieure à $\SI{9}{n\oe{}uds}$, moyenne arithmétique)
+
+\textbf{D5.} a) $\omega_A = \SI{2}{rad/s}$, $v_A = \SI{0,4}{m/s}$ \quad b) $v_B = \SI{0,6}{m/s}$ \quad c) $v_{cont} = \SI{0,5}{m/s}$ \quad d) $L_A = \SI{0,8}{m}$ \quad e) $L_B = \SI{2,4}{m}$ \quad f) $h = \SI{1,33}{m}$ (intégration de la vitesse moyenne)
+
+\textbf{D6.} a) S se déplace; quand P atteint la position initiale de S, celui-ci est déjà ailleurs \quad b) $x_P = v_P(t)\sin\theta \cdot t$; $y_P = v_P(t)\cos\theta \cdot t$; $x_S = 7,72t$; $y_S = 8000$ \quad c) $x_P = x_S$ et $y_P = y_S$ \quad d) $\theta \approx 50°$ est du nord, $t \approx \SI{620}{s}$ \quad e) $\approx \SI{6,2}{km}$
+
+\textbf{D7.} a) $\SI{2,02}{s}$ \quad b) $\SI{6,06}{m}$ \quad c) $\SI{20,0}{m/s}$ \quad d) Non! Le conteneur atterrit à $\SI{6,06}{m}$, le travailleur à $\SI{8}{m}$ est en sécurité même sans bouger \quad e) Zone de $\SI{6}{m} \times \SI{2,4}{m}$ centrée à $\SI{6,06}{m}$ du point de rupture (de $\SI{3,06}{m}$ à $\SI{9,06}{m}$)
+
+\textbf{D8.} a) $v_c(y) = \SI{3}{nd} \times \sin\left(\frac{\pi y}{\SI{4}{km}}\right)$ ou approximation triangulaire \quad b) Dérive maximale au centre où le courant est maximal, puis le courant diminue mais ne ramène pas le navire \quad c) $\approx \SI{780}{m}$ vers l'est \quad d) $\SI{24}{min}$ \quad e) $\approx 5°$ à $7°$ ouest du nord (solution itérative)

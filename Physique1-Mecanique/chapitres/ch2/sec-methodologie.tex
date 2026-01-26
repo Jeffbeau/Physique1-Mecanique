@@ -1,0 +1,162 @@
+% =============================================================================
+% SECTION 3 - MÉTHODOLOGIE
+% =============================================================================
+
+\section{Méthodologie de résolution}
+\label{sec:methodologie}
+
+Résoudre un problème de dynamique ou de statique n'est pas une question d'intuition ou de chance. C'est un processus \textbf{systématique} qui, lorsqu'il est suivi rigoureusement, mène presque toujours à la solution.
+
+Cette section présente la méthode que vous devez suivre pour \textbf{tous} les problèmes de mécanique. Même si un problème vous semble simple, suivez ces étapes — elles vous éviteront des erreurs et vous prépareront aux problèmes plus complexes.
+
+% -----------------------------------------------------------------------------
+\subsection{Le diagramme de corps libre (DCL)}
+\label{subsec:dcl}
+% -----------------------------------------------------------------------------
+
+L'outil fondamental de la mécanique est le \textbf{diagramme de corps libre} (DCL). C'est la première chose à faire dans \textit{tout} problème.
+
+\begin{definition}[title=Diagramme de corps libre (DCL)]
+Un \textbf{diagramme de corps libre} est un schéma qui représente un objet isolé de son environnement, avec toutes les forces qui agissent \textbf{sur} cet objet — et seulement celles-là.
+\end{definition}
+
+\begin{attention}[title=Règles pour un bon DCL]
+Un DCL complet et correct doit inclure :
+\begin{enumerate}
+    \item \textbf{L'objet isolé} — représenté simplement (souvent par un point ou un rectangle)
+    \item \textbf{Toutes les forces} qui agissent sur cet objet
+    \item \textbf{Un système de coordonnées} — axes $x$ et $y$ clairement indiqués
+    \item \textbf{Les angles pertinents} — entre les forces et les axes
+\end{enumerate}
+
+\textbf{Erreurs courantes à éviter :}
+\begin{itemize}
+    \item Inclure des forces exercées \textit{par} l'objet (elles agissent sur d'autres objets!)
+    \item Oublier le poids (la Terre attire toujours l'objet)
+    \item Confondre la normale et le poids (ce ne sont pas des paires action-réaction!)
+    \item Dessiner une « force du mouvement » dans le sens du déplacement (le mouvement n'est pas une force!)
+    \item Oublier le frottement quand il y a contact entre surfaces
+\end{itemize}
+\end{attention}
+
+% -----------------------------------------------------------------------------
+\subsection{L'algorithme de résolution}
+\label{subsec:algorithme}
+% -----------------------------------------------------------------------------
+
+\begin{algorithme}[title=Les 4 étapes pour résoudre tout problème de mécanique]
+
+\textbf{Étape 1 — SCHÉMA et DCL}
+\begin{enumerate}[label=\alph*)]
+    \item Dessiner un schéma de la situation physique
+    \item Isoler l'objet d'intérêt (ou les objets, s'il y en a plusieurs)
+    \item Tracer le DCL : représenter \textbf{toutes} les forces agissant sur l'objet
+    \item Identifier les forces connues et inconnues
+\end{enumerate}
+
+\vspace{0.5em}
+\textbf{Étape 2 — AXES}
+\begin{enumerate}[label=\alph*)]
+    \item Choisir un système de coordonnées $(x, y)$ adapté au problème
+    \item \textit{Conseil :} Aligner un axe avec l'accélération (si connue) ou avec la surface de contact
+    \item Sur un plan incliné : $x$ parallèle à la pente, $y$ perpendiculaire
+    \item Indiquer clairement la direction positive de chaque axe
+\end{enumerate}
+
+\vspace{0.5em}
+\textbf{Étape 3 — ÉQUATIONS DE NEWTON}
+\begin{enumerate}[label=\alph*)]
+    \item Décomposer chaque force selon les axes $x$ et $y$
+    \item Appliquer la deuxième loi de Newton (ou les conditions d'équilibre) :
+    \begin{align*}
+        \sum F_x &= ma_x \qquad \text{(ou } = 0 \text{ si équilibre)} \\
+        \sum F_y &= ma_y \qquad \text{(ou } = 0 \text{ si équilibre)}
+    \end{align*}
+    \item Écrire les équations explicitement avec les symboles des forces
+\end{enumerate}
+
+\vspace{0.5em}
+\textbf{Étape 4 — ALGÈBRE}
+\begin{enumerate}[label=\alph*)]
+    \item Compter les équations et les inconnues (il faut autant d'équations que d'inconnues!)
+    \item Résoudre le système d'équations algébriquement
+    \item Substituer les valeurs numériques \textit{à la fin}
+    \item Vérifier : unités correctes? Ordre de grandeur raisonnable? Signe cohérent?
+\end{enumerate}
+
+\end{algorithme}
+
+% -----------------------------------------------------------------------------
+\subsection{Conseils pratiques}
+\label{subsec:conseils}
+% -----------------------------------------------------------------------------
+
+\subsubsection*{Choix des axes}
+
+Le choix du système de coordonnées est libre, mais certains choix simplifient grandement les calculs :
+
+\begin{itemize}
+    \item \textbf{Mouvement horizontal :} $x$ horizontal (dans le sens du mouvement), $y$ vertical vers le haut.
+    
+    \item \textbf{Plan incliné :} $x$ parallèle à la pente (positif vers le bas de la pente), $y$ perpendiculaire à la pente (positif vers l'extérieur). Ainsi, l'accélération est uniquement selon $x$, et $a_y = 0$.
+    
+    \item \textbf{Mouvement circulaire :} Un axe radial (vers le centre), un axe tangentiel.
+    
+    \item \textbf{Équilibre :} Souvent, aligner un axe avec une des forces inconnues simplifie les équations.
+\end{itemize}
+
+\subsubsection*{Décomposition des forces}
+
+Si une force $\vect{F}$ fait un angle $\theta$ avec l'axe $x$ :
+\begin{align*}
+    F_x &= F \cos\theta \\
+    F_y &= F \sin\theta
+\end{align*}
+
+\textbf{Attention aux signes!} Si la composante pointe dans le sens négatif de l'axe, elle doit être négative dans l'équation.
+
+\subsubsection*{Résolution symbolique d'abord}
+
+Résistez à la tentation de substituer les valeurs numériques dès le début. Travaillez avec des symboles ($m$, $g$, $\theta$, $\mu$, etc.) aussi longtemps que possible. Cela permet de :
+\begin{itemize}
+    \item Repérer plus facilement les erreurs algébriques
+    \item Vérifier que les unités sont cohérentes
+    \item Comprendre comment la réponse dépend des paramètres
+    \item Réutiliser la solution pour d'autres valeurs numériques
+\end{itemize}
+
+\subsubsection*{Vérification finale}
+
+Une fois la réponse obtenue, posez-vous ces questions :
+\begin{itemize}
+    \item Les unités sont-elles correctes?
+    \item L'ordre de grandeur est-il raisonnable?
+    \item Le signe est-il cohérent avec la direction attendue?
+    \item Dans les cas limites (par exemple $\theta = 0$ ou $\mu = 0$), la formule donne-t-elle le résultat attendu?
+\end{itemize}
+
+% -----------------------------------------------------------------------------
+% PRATIQUE AUTONOME - Section 3
+% -----------------------------------------------------------------------------
+
+\begin{pratiqueautonome}[title=Pratique autonome 2.10 — Choix des axes et décomposition]
+Pour chaque situation, indiquez le meilleur choix d'axes et décomposez le poids selon ces axes.
+
+\begin{enumerate}
+    \item Un bloc glisse sur un plan incliné à 40° vers la droite.
+    \item Un pendule est à 25° de la verticale, tiré vers la gauche.
+    \item Une voiture accélère horizontalement vers la droite.
+    \item Une balle de masse $m$ est lancée à 60° au-dessus de l'horizontale (analysez au point de lancer).
+\end{enumerate}
+
+\vspace{2cm}
+
+\tcblower
+\textit{Réponses suggérées :}
+\begin{enumerate}
+    \item Axes : $x$ // pente (+ vers le bas), $y$ $\perp$ pente (+ vers l'extérieur). $F_{gx} = mg\sin 40°$, $F_{gy} = -mg\cos 40°$
+    \item Axes : $x$ // fil (+ vers le bas), $y$ $\perp$ fil. $F_{gx} = mg\cos 25°$, $F_{gy} = -mg\sin 25°$
+    \item Axes standard : $x$ horizontal (+$\to$), $y$ vertical (+$\uparrow$). $F_{gx} = 0$, $F_{gy} = -mg$
+    \item Axes standard : $x$ horizontal, $y$ vertical. $F_{gx} = 0$, $F_{gy} = -mg$ (le poids ne dépend pas de l'angle de lancer!)
+\end{enumerate}
+\end{pratiqueautonome}
