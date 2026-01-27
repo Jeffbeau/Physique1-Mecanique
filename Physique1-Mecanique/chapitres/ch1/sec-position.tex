@@ -78,6 +78,19 @@ Pour décrire le mouvement d'un objet, il faut d'abord établir un \textbf{syst�
 
 En navigation, on travaille généralement en \textbf{deux dimensions} (la surface de l'eau). Nous utiliserons donc un système d'axes $x$ et $y$ perpendiculaires.
 
+\begin{remarque}[title=Le choix de l'origine est arbitraire]
+Le choix du point d'origine est \textbf{complètement arbitraire} et peut être modifié selon le problème. Par exemple :
+\begin{itemize}
+    \item Pour une man\oe{}uvre d'accostage, on peut placer l'origine \textbf{au quai} (ainsi $x = 0$ correspond à l'objectif)
+    \item Pour une traversée, on peut placer l'origine \textbf{au port de départ}
+    \item Pour un problème de collision, on peut placer l'origine \textbf{sur l'un des navires}
+\end{itemize}
+
+Un bon choix d'origine peut \textbf{simplifier considérablement} les calculs. N'hésitez pas à repositionner l'origine selon ce qui rend le problème plus simple!
+
+\textbf{Important :} Quelle que soit l'origine choisie, les \textbf{grandeurs physiques} (déplacement, vitesse, accélération) restent les mêmes. Seules les \textbf{coordonnées} changent.
+\end{remarque}
+
 \begin{center}
 \begin{tikzpicture}[scale=0.9]
 % Fond de carte (mer)

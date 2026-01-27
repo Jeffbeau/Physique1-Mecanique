@@ -43,37 +43,60 @@ En prenant l'est comme direction positive :
 Le navire avance effectivement \`a $\SI{9}{n\oe{}uds}$ par rapport au fond.
 \end{exemple}
 
-\begin{exemple}{Travers\'ee avec courant lat\'eral}{}
-Un traversier doit rejoindre un quai situ\'e exactement au nord, \`a $\SI{2}{km}$. Sa vitesse propre est de $\SI{10}{n\oe{}uds}$, mais un courant de $\SI{3}{n\oe{}uds}$ porte vers l'est.
+\begin{exemple}{Travers\'ee avec courant lat\'eral --- Décomposition vectorielle}{}
+Un traversier doit rejoindre un quai situ\'e exactement au nord, \`a $\SI{2}{km}$. Sa vitesse propre (surface) est de $\SI{10}{n\oe{}uds}$, mais un courant de $\SI{3}{n\oe{}uds}$ porte vers l'est.
+
+\textbf{Problème :} Si le capitaine pointe directement vers le nord, le navire dérivera vers l'est. Pour atteindre le quai, il doit \textbf{compenser} en pointant légèrement vers l'ouest.
 
 \begin{center}
-\begin{tikzpicture}[scale=0.8]
+\begin{tikzpicture}[scale=0.9]
 % Axes
-\draw[gray, ->] (0,0) -- (4,0) node[right] {Est};
-\draw[gray, ->] (0,0) -- (0,4) node[above] {Nord};
-% Courant
-\draw[very thick, blue, ->] (0,0) -- (1.5,0) node[below] {$\vec{v}_{courant}$};
-\node[blue, below] at (0.75,-0.3) {\small $\SI{3}{nd}$};
-% Vitesse surface (inclinée pour compenser)
-\draw[very thick, red, ->] (0,0) -- (-0.9,2.4) node[left] {$\vec{v}_{surface}$};
-\node[red, left] at (-0.6,1.2) {\small $\SI{10}{nd}$};
+\draw[gray, ->] (-2.5,0) -- (4,0) node[right] {Est ($x$)};
+\draw[gray, ->] (0,-0.5) -- (0,4.5) node[above] {Nord ($y$)};
+% Courant (horizontal vers l'est)
+\draw[very thick, blue, ->] (0,0) -- (1.8,0);
+\node[blue, below] at (0.9,-0.1) {$\vec{v}_{courant}$};
+\node[blue, below] at (0.9,-0.5) {\small $\SI{3}{nd}$};
+% Vitesse surface (inclinée pour compenser) - angle θ ouest du nord
+% sin(17.46°) = 0.3, cos(17.46°) = 0.954
+\draw[very thick, red, ->] (0,0) -- ({-3*sin(17.46)},{3*cos(17.46)}) node[left] {$\vec{v}_{surface}$};
+\node[red, left] at (-0.7,1.8) {\small $\SI{10}{nd}$};
+% Composantes de la vitesse surface (en pointillés)
+\draw[red, dashed, thick, ->] (0,0) -- ({-3*sin(17.46)},0);
+\node[red, below] at ({-0.5*3*sin(17.46)},-0.1) {\small $v_{sx}$};
+\draw[red, dashed, thick, ->] ({-3*sin(17.46)},0) -- ({-3*sin(17.46)},{3*cos(17.46)});
+\node[red, left] at ({-3*sin(17.46)-0.1},1.4) {\small $v_{sy}$};
 % Vitesse fond (résultante vers le nord)
-\draw[very thick, green!60!black, ->] (0,0) -- (0,2.4) node[right] {$\vec{v}_{fond}$};
+\draw[very thick, green!60!black, ->] (0,0) -- (0,{3*cos(17.46)}) node[right] {$\vec{v}_{fond}$};
+\node[green!60!black, right] at (0.2,1.5) {\small $\SI{9,5}{nd}$};
 % Angle
-\draw[thick] (0,0.8) arc (90:110:0.8);
-\node at (-0.3,1.1) {\small $\theta$};
+\draw[thick, red] (0,1.2) arc (90:107.46:1.2);
+\node[red] at (-0.4,1.5) {\small $\theta$};
 % Point d'arrivée
-\fill (0,3.5) circle (3pt) node[right] {Quai};
+\fill (0,4) circle (3pt) node[right] {Quai};
+% Légende
+\node[align=left, anchor=west] at (2,3) {\small \textcolor{red}{$\vec{v}_{surface}$} = vitesse loch\\
+\small \textcolor{blue}{$\vec{v}_{courant}$} = courant\\
+\small \textcolor{green!60!black}{$\vec{v}_{fond}$} = vitesse GPS};
 \end{tikzpicture}
 \end{center}
 
-Pour que la vitesse fond soit dirig\'ee exactement vers le nord, le capitaine doit orienter son navire l\'eg\`erement vers l'ouest (cap correcteur).
+\textbf{Analyse par décomposition vectorielle :}
 
-\textbf{Angle de correction :}
-\[ \sin\theta = \frac{v_{courant}}{v_{surface}} = \frac{3}{10} = 0,3 \quad \Rightarrow \quad \theta = 17{,}5° \text{ ouest du nord} \]
+Pour que $\vec{v}_{fond}$ soit dirigée exactement vers le nord, sa composante $x$ doit être nulle :
+\begin{align*}
+v_{fond,x} &= v_{surface,x} + v_{courant,x} = 0 \\
+-v_{surface}\sin\theta + v_{courant} &= 0
+\end{align*}
 
-\textbf{Vitesse fond r\'esultante :}
-\[ v_{fond} = v_{surface} \cos\theta = 10 \times \cos(17{,}5°) = \SI{9,5}{n\oe{}uds} \]
+D'où l'\textbf{angle de compensation} :
+\[ \sin\theta = \frac{v_{courant}}{v_{surface}} = \frac{3}{10} = 0{,}3 \quad \Rightarrow \quad \boxed{\theta = 17{,}5° \text{ ouest du nord}} \]
+
+\textbf{Vitesse fond r\'esultante} (composante $y$) :
+\[ v_{fond} = v_{fond,y} = v_{surface}\cos\theta = 10 \times \cos(17{,}5°) = \boxed{\SI{9{,}5}{n\oe{}uds}} \]
+
+\textbf{Vérification} par le théorème de Pythagore :
+\[ v_{surface}^2 = v_{fond}^2 + v_{courant}^2 \quad \Rightarrow \quad 10^2 = 9{,}5^2 + 3^2 = 90{,}25 + 9 = 99{,}25 \approx 100 \quad \checkmark \]
 \end{exemple}
 
 \begin{attention}

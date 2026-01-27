@@ -294,26 +294,40 @@ Nous approfondirons cette interpr\'etation dans la section sur les graphiques.
 \subsection{Vitesse surface et vitesse fond}
 % =============================================================================
 
-En navigation, on distingue deux vitesses importantes :
+En navigation, on distingue deux vitesses fondamentales qui peuvent différer significativement :
 
-\begin{definition}[title=Vitesse surface et vitesse fond]
+\begin{definition}[title=Vitesse surface (STW) et vitesse fond (SOG)]
 \begin{itemize}
-    \item La \textbf{vitesse surface} est la vitesse du navire \textbf{par rapport \`a l'eau}. C'est ce qu'affiche le \textbf{loch}.
-    \item La \textbf{vitesse fond} est la vitesse du navire \textbf{par rapport au sol}. C'est ce qu'affiche le \textbf{GPS}.
+    \item La \textbf{vitesse surface} (en anglais : \textit{Speed Through Water}, \textbf{STW}) est la vitesse du navire \textbf{par rapport à l'eau} environnante. C'est ce que mesure le \textbf{loch} (speedomètre du navire).
+
+    \item La \textbf{vitesse fond} (en anglais : \textit{Speed Over Ground}, \textbf{SOG}) est la vitesse du navire \textbf{par rapport au fond marin} (ou à la Terre). C'est ce qu'affiche le \textbf{GPS}.
 \end{itemize}
 
-Ces deux vitesses diff\`erent lorsqu'il y a du \textbf{courant}. La relation est \textbf{vectorielle} :
+Ces deux vitesses diff\`erent lorsqu'il y a du \textbf{courant}. La relation fondamentale est \textbf{vectorielle} :
 \begin{equationimportante}
 \begin{equation}
 \vec{v}_{fond} = \vec{v}_{surface} + \vec{v}_{courant}
 \end{equation}
 \end{equationimportante}
+ou en notation alternative : $\text{SOG} = \text{STW} + \text{courant}$ (vectoriellement)
 \end{definition}
 
-\begin{exemple}{Travers\'ee avec courant favorable}{}
-Un navire affiche $\SI{12}{n\oe{}uds}$ au loch. Le courant de $\SI{2}{n\oe{}uds}$ pousse dans le m\^eme sens.
+\begin{remarque}[title=Importance pratique en navigation]
+\begin{itemize}
+    \item La \textbf{vitesse surface (STW)} détermine le comportement hydrodynamique du navire (gouvernabilité, résistance de l'eau, consommation de carburant).
+    \item La \textbf{vitesse fond (SOG)} détermine le temps réel pour atteindre une destination et doit être utilisée pour calculer l'\textbf{heure d'arrivée estimée} (ETA).
+    \item Un navire peut afficher $\SI{10}{n\oe{}uds}$ au loch mais n'avancer que de $\SI{7}{n\oe{}uds}$ par rapport au fond s'il navigue contre un courant de $\SI{3}{n\oe{}uds}$.
+\end{itemize}
+\end{remarque}
 
-Vitesse fond : $v_{fond} = 12 + 2 = \SI{14}{n\oe{}uds}$
+\begin{exemple}{Effet du courant sur la navigation}{}
+Un cargo affiche $\SI{12}{n\oe{}uds}$ au loch (vitesse surface). Il navigue dans le fleuve Saint-Laurent où le courant est de $\SI{2}{n\oe{}uds}$.
 
-C'est cette vitesse qui d\'etermine l'heure d'arriv\'ee.
+\textbf{Cas 1 : Courant favorable (même sens que le navire)}
+\[ v_{fond} = 12 + 2 = \SI{14}{n\oe{}uds} \]
+
+\textbf{Cas 2 : Courant contraire (sens opposé)}
+\[ v_{fond} = 12 - 2 = \SI{10}{n\oe{}uds} \]
+
+Dans le premier cas, le navire arrivera \textbf{plus tôt} que prévu. Dans le second cas, \textbf{plus tard}. C'est la vitesse fond (GPS) qui détermine l'heure d'arrivée réelle.
 \end{exemple}
