@@ -1,79 +1,299 @@
 % =============================================================================
-% RÉSUMÉ, COMPÉTENCES ET EXERCICES
+% SECTION 6 - RÉSUMÉ ET SYNTHÈSE
+% Bloc 8 (intégré) - Semaine 8
 % =============================================================================
 
-\section*{Résumé}
-\addcontentsline{toc}{section}{Résumé}
+\section{Résumé du chapitre}
+\label{sec:resume}
+
+% =============================================================================
+\subsection{Les trois lois de Newton}
+\label{subsec:resume-lois}
+% =============================================================================
 
 \begin{center}
-\renewcommand{\arraystretch}{2.0}
-\begin{tabular}{|p{4.5cm}|p{9.5cm}|}
+\renewcommand{\arraystretch}{2.2}
+\begin{tabular}{|c|L{5.5cm}|L{6cm}|}
 \hline
-\rowcolor{bleuclair}
-\textbf{Concept} & \textbf{Description / Formule} \\
+\rowcolor{bleuimq} \textcolor{white}{\textbf{Loi}} & \textcolor{white}{\textbf{Énoncé}} & \textcolor{white}{\textbf{Formulation mathématique}} \\
 \hline
-\textbf{Inertie} & Tendance naturelle de la matière à résister aux changements de vitesse. L'inertie n'est \textbf{pas} une force. \\
+\textbf{1\textsuperscript{re} loi} \newline (Inertie) & 
+Un objet reste au repos ou en MRU si aucune force résultante n'agit sur lui. & 
+$\displaystyle \sum \vec{F} = \vec{0} \Leftrightarrow \vec{a} = \vec{0}$ \newline (équilibre) \\
 \hline
-\textbf{Masse} & Mesure quantitative de l'inertie. Unité : kg \\
+\textbf{2\textsuperscript{e} loi} \newline (Fondamentale) & 
+L'accélération est proportionnelle à la force résultante et inversement proportionnelle à la masse. & 
+$\displaystyle \sum \vec{F} = m\vec{a}$ \newline
+En composantes : \newline
+$\sum F_x = ma_x$ \quad $\sum F_y = ma_y$ \\
 \hline
-\textbf{1\textsuperscript{re} loi de Newton} & Un objet libre de toute force reste au repos ou en MRU. \\
-\hline
-\textbf{2\textsuperscript{e} loi de Newton} & $\displaystyle\sum \vect{F} = m\vect{a}$ \\
-\hline
-\textbf{3\textsuperscript{e} loi de Newton} & $\vect{F}_{A \to B} = -\vect{F}_{B \to A}$ \\
-\hline
-\textbf{Équilibre} & $\sum F_x = 0$ et $\sum F_y = 0$ (cas particulier de la 1\textsuperscript{re} loi) \\
-\hline
-\textbf{Gravitation universelle} & $\displaystyle F_g = G\frac{m_1 m_2}{r^2}$ \\
-\hline
-\textbf{Poids} & $F_g = mg$ \quad où $g = 9{,}81$~m/s² (toujours vers le bas) \\
-\hline
-\textbf{Tension} & Force exercée par une corde, parallèle à celle-ci \\
-\hline
-\textbf{Normale} & Force perpendiculaire à une surface (réaction passive) \\
-\hline
-\textbf{Frottement statique} & $f_s \leq \mu_s N$ \\
-\hline
-\textbf{Frottement cinétique} & $f_c = \mu_c N$ \\
-\hline
-\textbf{Force centripète} & $\displaystyle F_c = m\frac{v^2}{r} = m\omega^2 r$ \quad (vers le centre) \\
+\textbf{3\textsuperscript{e} loi} \newline (Action-réaction) & 
+Toute force exercée par A sur B s'accompagne d'une force égale et opposée de B sur A. & 
+$\displaystyle \vec{F}_{A \to B} = -\vec{F}_{B \to A}$ \newline
+(même module, sens opposés, \newline objets différents) \\
 \hline
 \end{tabular}
 \end{center}
 
-\vspace{1em}
+% =============================================================================
+\subsection{Catalogue des forces}
+\label{subsec:resume-forces}
+% =============================================================================
 
-\begin{algorithme}[title=Rappel : Algorithme de résolution]
+\begin{center}
+\renewcommand{\arraystretch}{1.8}
+\begin{tabular}{|L{2.2cm}|C{2.8cm}|L{4cm}|L{4.5cm}|}
+\hline
+\rowcolor{bleuimq} \textcolor{white}{\textbf{Force}} & \textcolor{white}{\textbf{Formule}} & \textcolor{white}{\textbf{Direction}} & \textcolor{white}{\textbf{Remarques}} \\
+\hline
+\textbf{Poids} & $F_g = mg$ & Verticale, vers le bas & Toujours présente! \\
+\hline
+\textbf{Normale} & À déterminer & $\perp$ à la surface, vers l'extérieur & $N \neq mg$ en général \\
+\hline
+\textbf{Tension} & À déterminer & // à la corde, tire l'objet & Corde idéale : $T$ uniforme \\
+\hline
+\textbf{Frottement statique} & $f_s \leq \mu_s N$ & // à la surface, oppose la tendance & Inégalité! Force adaptative \\
+\hline
+\textbf{Frottement cinétique} & $f_c = \mu_c N$ & // à la surface, oppose le mouvement & Égalité, $\mu_c < \mu_s$ \\
+\hline
+\textbf{Centripète} & $F_c = \dfrac{mv^2}{r}$ & Vers le centre du cercle & Ce n'est PAS une nouvelle force! \\
+\hline
+\end{tabular}
+\end{center}
+
+% =============================================================================
+\subsection{L'algorithme de résolution}
+\label{subsec:resume-algorithme}
+% =============================================================================
+
+\begin{center}
+\begin{tikzpicture}[
+    node distance=0.8cm,
+    box/.style={rectangle, draw=bleuimq, fill=bleuclair, thick, text width=10cm, minimum height=1.2cm, align=left, font=\small},
+    arrow/.style={-{Stealth[length=3mm]}, thick, bleuimq}
+]
+
+% Étape 1
+\node[box] (e1) {
+    \textbf{ÉTAPE 1 --- SCHÉMA et DCL}
+    \begin{itemize}[leftmargin=*, topsep=0pt, itemsep=0pt]
+        \item Dessiner la situation physique
+        \item Isoler l'objet d'intérêt
+        \item Tracer le DCL : représenter \textbf{toutes} les forces
+        \item Identifier les grandeurs connues et inconnues
+    \end{itemize}
+};
+
+% Étape 2
+\node[box, below=of e1] (e2) {
+    \textbf{ÉTAPE 2 --- AXES}
+    \begin{itemize}[leftmargin=*, topsep=0pt, itemsep=0pt]
+        \item Choisir un système $(x, y)$ adapté
+        \item Plan incliné? $\rightarrow$ $x$ // pente, $y$ $\perp$ pente
+        \item Indiquer clairement les directions positives
+    \end{itemize}
+};
+
+% Étape 3
+\node[box, below=of e2] (e3) {
+    \textbf{ÉTAPE 3 --- ÉQUATIONS DE NEWTON}
+    \begin{itemize}[leftmargin=*, topsep=0pt, itemsep=0pt]
+        \item Décomposer chaque force selon $x$ et $y$
+        \item Écrire : $\sum F_x = ma_x$ et $\sum F_y = ma_y$
+        \item Équilibre? $\rightarrow$ $\sum F_x = 0$ et $\sum F_y = 0$
+    \end{itemize}
+};
+
+% Étape 4
+\node[box, below=of e3] (e4) {
+    \textbf{ÉTAPE 4 --- ALGÈBRE}
+    \begin{itemize}[leftmargin=*, topsep=0pt, itemsep=0pt]
+        \item Résoudre \textbf{algébriquement} (avec symboles)
+        \item Substituer les valeurs numériques à la fin
+        \item Vérifier : unités? ordre de grandeur? signes?
+    \end{itemize}
+};
+
+% Flèches
+\draw[arrow] (e1) -- (e2);
+\draw[arrow] (e2) -- (e3);
+\draw[arrow] (e3) -- (e4);
+
+\end{tikzpicture}
+\end{center}
+
+% =============================================================================
+\subsection{Formules essentielles}
+\label{subsec:resume-formules}
+% =============================================================================
+
+\subsubsection*{Équilibre (statique ou MRU)}
+
+\begin{equationimportante}
+\begin{align}
+    \sum F_x &= 0 \\
+    \sum F_y &= 0
+\end{align}
+\end{equationimportante}
+
+\subsubsection*{Dynamique (mouvement accéléré)}
+
+\begin{equationimportante}
+\begin{align}
+    \sum F_x &= ma_x \\
+    \sum F_y &= ma_y
+\end{align}
+\end{equationimportante}
+
+\subsubsection*{Plan incliné}
+
+\begin{center}
+\begin{tikzpicture}[scale=0.8]
+    % Plan incliné
+    \fill[gray!15] (0, 0) -- (5, 0) -- (5, 2.5) -- cycle;
+    \draw[thick] (0, 0) -- (5, 2.5);
+    \draw[thick] (0, 0) -- (5, 0);
+    
+    % Angle
+    \draw[thick] (1.2, 0) arc (0:26.57:1.2);
+    \node at (1.6, 0.35) {$\theta$};
+    
+    % Bloc
+    \begin{scope}[rotate=26.57, shift={(2, 0)}]
+        \draw[thick, fill=blue!20] (0, 0) rectangle (0.8, 0.6);
+    \end{scope}
+    
+    % Axes
+    \draw[-{Stealth}, thick, bleuimq] (1.5, 0.75) -- ({1.5 + 1.5*cos(26.57)}, {0.75 + 1.5*sin(26.57)}) node[right] {$x$};
+    \draw[-{Stealth}, thick, bleuimq] (1.5, 0.75) -- ({1.5 - 0.8*sin(26.57)}, {0.75 + 0.8*cos(26.57)}) node[above] {$y$};
+    
+    % Formules
+    \node[right, text width=6cm] at (6, 2) {
+        \textbf{Avec axes // et $\perp$ à la pente :}
+        \begin{align*}
+            N &= mg\cos\theta \\[0.3em]
+            F_{g,x} &= mg\sin\theta \\[0.3em]
+            f_{s,max} &= \mu_s mg\cos\theta \\[0.3em]
+            f_c &= \mu_c mg\cos\theta
+        \end{align*}
+    };
+\end{tikzpicture}
+\end{center}
+
+\subsubsection*{Mouvement circulaire}
+
+\begin{equationimportante}
+\[
+    F_c = \frac{mv^2}{r} = m\omega^2 r \qquad \text{(dirigée vers le centre)}
+\]
+\end{equationimportante}
+
+\subsubsection*{Angle limite de glissement}
+
+\begin{equationimportante}
+\[
+    \theta_{max} = \arctan(\mu_s)
+\]
+\end{equationimportante}
+
+% =============================================================================
+\subsection{Pièges à éviter}
+\label{subsec:resume-pieges}
+% =============================================================================
+
+\begin{attention}[title=Les erreurs les plus fréquentes]
+
 \begin{enumerate}
-    \item \textbf{SCHÉMA et DCL} — Dessiner toutes les forces sur l'objet isolé
-    \item \textbf{AXES} — Choisir un système de coordonnées adapté
-    \item \textbf{ÉQUATIONS DE NEWTON} — $\sum F_x = ma_x$ et $\sum F_y = ma_y$
-    \item \textbf{ALGÈBRE} — Résoudre, puis substituer les valeurs numériques
+    \item \textbf{Dessiner l'accélération sur le DCL}
+    
+    L'accélération n'est \textbf{pas} une force! Elle est la \textit{conséquence} des forces.
+    
+    \item \textbf{Dessiner l'inertie ou la « force du mouvement »}
+    
+    L'inertie est une propriété, pas une force. Un objet n'a pas besoin de force pour maintenir sa vitesse.
+    
+    \item \textbf{Confondre $N$ et $mg$}
+    
+    $N = mg$ seulement sur surface horizontale sans autres forces verticales. En général, $N$ se calcule!
+    
+    \item \textbf{Oublier le poids}
+    
+    La Terre attire toujours l'objet. Le poids est \textbf{toujours} présent!
+    
+    \item \textbf{Ajouter $F_c$ comme force supplémentaire}
+    
+    La force centripète est le \textbf{nom} de la résultante vers le centre, pas une force additionnelle.
+    
+    \item \textbf{Confondre paires action-réaction}
+    
+    Les forces d'une paire action-réaction agissent sur des objets \textbf{différents}.
+    
+    \item \textbf{Se tromper de sens pour le frottement}
+    
+    Le frottement s'oppose au \textbf{mouvement} (ou à la tendance), pas à la force appliquée.
+    
+    \item \textbf{Utiliser $f_s = \mu_s N$ au lieu de $f_s \leq \mu_s N$}
+    
+    Le frottement statique est une inégalité! Il prend la valeur \textit{nécessaire}, jusqu'au maximum.
 \end{enumerate}
-\end{algorithme}
+\end{attention}
 
 % =============================================================================
-% COMPÉTENCES
+\subsection{Auto-évaluation des compétences}
+\label{subsec:resume-competences}
 % =============================================================================
 
-\section*{Compétences}
-\addcontentsline{toc}{section}{Compétences}
+Cochez les compétences que vous maîtrisez :
 
-À la fin de ce chapitre, vous devriez être capable de :
+\begin{center}
+\renewcommand{\arraystretch}{1.6}
+\begin{tabular}{|L{11cm}|c|c|c|}
+\hline
+\rowcolor{bleuclair} \textbf{Compétence} & \textbf{Acquis} & \textbf{En cours} & \textbf{À revoir} \\
+\hline
+Je peux énoncer et expliquer les trois lois de Newton. & $\square$ & $\square$ & $\square$ \\
+\hline
+Je peux identifier toutes les forces sur un objet et tracer un DCL correct. & $\square$ & $\square$ & $\square$ \\
+\hline
+Je peux appliquer l'algorithme en 4 étapes pour résoudre un problème. & $\square$ & $\square$ & $\square$ \\
+\hline
+Je peux résoudre un problème d'équilibre (statique). & $\square$ & $\square$ & $\square$ \\
+\hline
+Je peux résoudre un problème de dynamique à une dimension. & $\square$ & $\square$ & $\square$ \\
+\hline
+Je peux résoudre un problème sur plan incliné (avec ou sans frottement). & $\square$ & $\square$ & $\square$ \\
+\hline
+Je peux analyser un système de deux objets reliés (Atwood, poulie). & $\square$ & $\square$ & $\square$ \\
+\hline
+Je peux appliquer le concept de force centripète au mouvement circulaire. & $\square$ & $\square$ & $\square$ \\
+\hline
+Je peux expliquer pourquoi la « force centrifuge » n'est pas une vraie force. & $\square$ & $\square$ & $\square$ \\
+\hline
+\end{tabular}
+\end{center}
 
-\begin{itemize}
-    \item Expliquer pourquoi la physique d'Aristote est incorrecte et comment Galilée et Newton l'ont réfutée
-    \item Définir l'inertie et expliquer pourquoi ce n'est pas une force
-    \item Expliquer la différence entre masse et poids
-    \item Énoncer et appliquer les trois lois de Newton
-    \item Identifier les paires action-réaction dans une situation donnée
-    \item Expliquer l'origine de la normale (répulsion des nuages électroniques)
-    \item Utiliser la loi de la gravitation universelle et montrer comment on obtient $P = mg$
-    \item Tracer un diagramme de corps libre (DCL) complet et correct
-    \item Appliquer l'algorithme de résolution en 4 étapes à tout problème de mécanique
-    \item Résoudre des problèmes de dynamique à une et deux dimensions
-    \item Calculer les forces de frottement statique et cinétique
-    \item Calculer la force centripète nécessaire pour un mouvement circulaire
-    \item Expliquer pourquoi la « force centrifuge » n'est pas une vraie force newtonienne
-    \item Résoudre des problèmes d'équilibre (statique du point)
-\end{itemize}
+% =============================================================================
+\subsection{Ce qu'il faut retenir}
+\label{subsec:resume-essentiel}
+% =============================================================================
+
+\begin{remarque}[title=L'essentiel du chapitre en quelques phrases]
+
+\begin{enumerate}
+    \item \textbf{La dynamique répond au « pourquoi »} : Les forces causent les accélérations, pas les vitesses.
+    
+    \item \textbf{L'inertie explique la résistance au changement} : Plus un objet est massif, plus il est difficile de modifier son mouvement.
+    
+    \item \textbf{Le DCL est votre meilleur outil} : Un DCL correct et complet garantit presque une solution correcte.
+    
+    \item \textbf{L'algorithme en 4 étapes fonctionne toujours} : Schéma $\rightarrow$ Axes $\rightarrow$ Équations $\rightarrow$ Algèbre.
+    
+    \item \textbf{La normale se calcule, ne se devine pas} : $N = mg$ n'est vrai que dans des cas particuliers.
+    
+    \item \textbf{Le frottement s'oppose au mouvement relatif} : Pas à la force appliquée, pas à la vitesse absolue.
+    
+    \item \textbf{La force centripète est une résultante} : Ce n'est pas une nouvelle force à ajouter.
+    
+    \item \textbf{Résolvez algébriquement d'abord} : Les symboles révèlent la physique, les chiffres la cachent.
+\end{enumerate}
+\end{remarque}

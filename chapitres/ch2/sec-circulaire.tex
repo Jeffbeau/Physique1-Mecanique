@@ -1,0 +1,580 @@
+% =============================================================================
+% SECTION 5 - DYNAMIQUE DU MOUVEMENT CIRCULAIRE
+% Bloc 7 (2 heures - Semaine 8)
+% =============================================================================
+
+\section{Dynamique du mouvement circulaire}
+\label{sec:circulaire}
+
+% =============================================================================
+\subsection{Retour sur l'accélération centripète}
+\label{subsec:rappel-centripete}
+% =============================================================================
+
+Au chapitre précédent, nous avons découvert un résultat surprenant : un objet qui se déplace en cercle à vitesse \textit{constante} possède quand même une accélération! Cette accélération, appelée \textbf{centripète}, est dirigée vers le centre du cercle.
+
+\begin{definition}[title=Rappel : accélération centripète]
+Un objet en mouvement circulaire uniforme (vitesse constante en module) possède une accélération dirigée vers le centre :
+
+\begin{equationimportante}
+\begin{equation}
+    a_c = \frac{v^2}{r} = \omega^2 r
+    \label{eq:accel-centripete}
+\end{equation}
+\end{equationimportante}
+
+où :
+\begin{itemize}
+    \item $v$ est la vitesse (tangentielle) de l'objet
+    \item $r$ est le rayon de la trajectoire circulaire
+    \item $\omega$ est la vitesse angulaire (en rad/s)
+\end{itemize}
+\end{definition}
+
+\begin{remarque}[title=Pourquoi une accélération si la vitesse est constante?]
+Souvenez-vous : l'accélération mesure le \textbf{changement de vitesse}, et la vitesse est un \textbf{vecteur}. Un vecteur peut changer de deux façons :
+\begin{itemize}
+    \item En \textbf{module} (la « grandeur » change) $\rightarrow$ accélération tangentielle
+    \item En \textbf{direction} (l'orientation change) $\rightarrow$ accélération centripète
+\end{itemize}
+
+Dans un mouvement circulaire uniforme, seule la direction change. La vitesse « tourne » constamment, ce qui constitue un changement, donc une accélération.
+\end{remarque}
+
+% =============================================================================
+\subsection{La force centripète : cause de l'accélération}
+\label{subsec:force-centripete}
+% =============================================================================
+
+Maintenant, appliquons la deuxième loi de Newton. S'il y a une accélération vers le centre, alors il \textit{doit} y avoir une force résultante vers le centre!
+
+\begin{definition}[title=Force centripète]
+La \textbf{force centripète} est la force résultante nécessaire pour maintenir un objet sur une trajectoire circulaire :
+
+\begin{equationimportante}
+\begin{equation}
+    \boxed{F_c = ma_c = m\frac{v^2}{r} = m\omega^2 r}
+    \label{eq:force-centripete-def}
+\end{equation}
+\end{equationimportante}
+
+Cette force est \textbf{toujours dirigée vers le centre} de la trajectoire circulaire.
+\end{definition}
+
+\begin{attention}[title=Point crucial : la force centripète n'est PAS une nouvelle force!]
+C'est l'erreur la plus fréquente dans ce chapitre. La force centripète n'est \textbf{pas} un nouveau type de force à ajouter sur votre DCL!
+
+C'est simplement le \textbf{nom} qu'on donne à la composante de la force résultante qui pointe vers le centre du cercle. Cette force peut être fournie par :
+
+\begin{center}
+\renewcommand{\arraystretch}{1.4}
+\begin{tabular}{|l|l|}
+\hline
+\rowcolor{bleuclair} \textbf{Situation} & \textbf{Force qui fournit $F_c$} \\
+\hline
+Balle au bout d'une ficelle & Tension de la ficelle \\
+\hline
+Voiture dans un virage plat & Frottement des pneus \\
+\hline
+Satellite en orbite & Gravité \\
+\hline
+Passager dans un manège & Normale du siège \\
+\hline
+Eau dans un seau qu'on fait tourner & Normale du fond du seau \\
+\hline
+Lune autour de la Terre & Attraction gravitationnelle \\
+\hline
+\end{tabular}
+\end{center}
+
+\textbf{Sur un DCL, on dessine la vraie force (tension, frottement, normale...), jamais « $F_c$ » comme force séparée!}
+\end{attention}
+
+\begin{center}
+\begin{tikzpicture}[scale=1.0]
+    % Titre
+    \node[font=\bfseries] at (0, 3.5) {Trois situations, même principe};
+    
+    % Situation 1 : Balle sur ficelle
+    \begin{scope}[xshift=-4cm]
+        % Trajectoire
+        \draw[dashed, gray] (0, 0) circle (1.5);
+        \fill (0, 0) circle (2pt);
+        
+        % Ficelle et balle
+        \draw[thick, brown] (0, 0) -- (1.06, 1.06);
+        \shade[ball color=blue!50] (1.06, 1.06) circle (0.15);
+        
+        % Tension (vers le centre)
+        \draw[-{Stealth[length=3mm]}, very thick, orange] (1.06, 1.06) -- (0.35, 0.35);
+        \node[orange, below left] at (0.6, 0.6) {$\vec{T}$};
+        
+        % Vitesse (tangente)
+        \draw[-{Stealth[length=2.5mm]}, thick, purple] (1.06, 1.06) -- (0.36, 1.76);
+        \node[purple, above] at (0.6, 1.5) {$\vec{v}$};
+        
+        \node[below, text width=2.5cm, align=center] at (0, -2) {\small Balle sur ficelle \\ $F_c = T$};
+    \end{scope}
+    
+    % Situation 2 : Voiture dans virage
+    \begin{scope}[xshift=0cm]
+        % Route (arc)
+        \draw[thick, gray, fill=gray!20] (-1.8, -0.3) arc (180:90:1.8) -- (0.3, 1.5) arc (90:180:2.1) -- cycle;
+        
+        % Centre du virage
+        \fill (0, 0) circle (2pt);
+        \node[below] at (0, -0.2) {\tiny centre};
+        
+        % Voiture (rectangle)
+        \begin{scope}[rotate=135, shift={(1.5, 0)}]
+            \draw[thick, fill=blue!30, rounded corners=1pt] (-0.2, -0.1) rectangle (0.2, 0.1);
+        \end{scope}
+        
+        % Frottement (vers le centre)
+        \draw[-{Stealth[length=3mm]}, very thick, green!60!black] (-1.06, 1.06) -- (-0.35, 0.35);
+        \node[green!60!black, above right] at (-0.6, 0.6) {$\vec{f}$};
+        
+        % Vitesse
+        \draw[-{Stealth[length=2.5mm]}, thick, purple] (-1.06, 1.06) -- (-1.76, 0.36);
+        \node[purple, left] at (-1.5, 0.6) {$\vec{v}$};
+        
+        \node[below, text width=2.5cm, align=center] at (0, -2) {\small Voiture en virage \\ $F_c = f$};
+    \end{scope}
+    
+    % Situation 3 : Satellite
+    \begin{scope}[xshift=4cm]
+        % Terre
+        \shade[ball color=blue!40] (0, 0) circle (0.5);
+        
+        % Orbite
+        \draw[dashed, gray] (0, 0) circle (1.5);
+        
+        % Satellite
+        \draw[thick, fill=gray!50] (0, 1.4) rectangle (0.3, 1.6);
+        \draw[thick, fill=blue!30] (-0.3, 1.45) rectangle (0, 1.55);
+        \draw[thick, fill=blue!30] (0.3, 1.45) rectangle (0.6, 1.55);
+        
+        % Gravité (vers le centre)
+        \draw[-{Stealth[length=3mm]}, very thick, red] (0.15, 1.5) -- (0.15, 0.7);
+        \node[red, right] at (0.2, 1.1) {$\vec{F}_g$};
+        
+        % Vitesse
+        \draw[-{Stealth[length=2.5mm]}, thick, purple] (0.15, 1.5) -- (0.85, 1.5);
+        \node[purple, above] at (0.5, 1.6) {$\vec{v}$};
+        
+        \node[below, text width=2.5cm, align=center] at (0, -2) {\small Satellite en orbite \\ $F_c = F_g$};
+    \end{scope}
+\end{tikzpicture}
+\end{center}
+
+% =============================================================================
+\subsection{La « force centrifuge » : un mirage}
+\label{subsec:force-centrifuge}
+% =============================================================================
+
+Vous avez certainement ressenti cette sensation d'être « poussé vers l'extérieur » dans un virage serré ou sur un manège. Cette sensation est si forte qu'on lui a donné un nom : la « force centrifuge ». Mais existe-t-elle vraiment?
+
+\begin{attention}[title=La force centrifuge n'existe pas!]
+Dans un référentiel inertiel (comme le sol), \textbf{aucune force} ne vous pousse vers l'extérieur d'un virage.
+
+Ce que vous ressentez, c'est votre \textbf{inertie} : votre corps tend à continuer en ligne droite (première loi de Newton), tandis que la voiture tourne sous vous. C'est le siège et la ceinture qui vous \textit{tirent} vers l'intérieur pour vous faire tourner avec la voiture.
+
+\textbf{Résumé :} La « force centrifuge » est une \textbf{sensation}, pas une force réelle. Elle n'apparaît que si vous analysez le mouvement depuis un référentiel \textit{non inertiel} (comme l'intérieur de la voiture qui tourne), ce que nous ne faisons pas dans ce cours.
+\end{attention}
+
+\begin{remarque}[title=Analogie pour comprendre]
+Imaginez que vous êtes debout dans un autobus qui freine brusquement. Vous avez l'impression d'être « poussé vers l'avant ». Mais personne ne vous pousse! C'est simplement que votre corps continue tout droit (inertie) pendant que l'autobus ralentit sous vos pieds.
+
+C'est exactement la même chose dans un virage : vous continuez « tout droit » pendant que la voiture tourne.
+\end{remarque}
+
+% =============================================================================
+\subsection{Méthode de résolution}
+\label{subsec:methode-circulaire}
+% =============================================================================
+
+Pour résoudre des problèmes de mouvement circulaire, on applique le même algorithme qu'avant, avec une particularité : on choisit un axe pointant \textbf{vers le centre} du cercle.
+
+\begin{definition}[title=Algorithme pour le mouvement circulaire]
+
+\textbf{Étape 1 --- DCL}
+\begin{itemize}
+    \item Identifier toutes les forces \textbf{réelles} (poids, normale, tension, frottement...)
+    \item Ne \textbf{jamais} ajouter « $F_c$ » comme force séparée!
+\end{itemize}
+
+\textbf{Étape 2 --- Axes}
+\begin{itemize}
+    \item Un axe vers le \textbf{centre} du cercle (direction de $\vec{a}_c$)
+    \item Un axe perpendiculaire (souvent vertical ou tangentiel)
+\end{itemize}
+
+\textbf{Étape 3 --- Équations de Newton}
+\begin{itemize}
+    \item Selon l'axe vers le centre : $\displaystyle\sum F_{\to centre} = ma_c = m\frac{v^2}{r}$
+    \item Selon l'autre axe : $\sum F_\perp = 0$ (ou $ma_\perp$ s'il y a accélération)
+\end{itemize}
+
+\textbf{Étape 4 --- Résolution algébrique}
+\end{definition}
+
+% =============================================================================
+\subsection{Applications}
+\label{subsec:applications-circulaire}
+% =============================================================================
+
+% -----------------------------------------------------------------------------
+\subsubsection{Virage horizontal (non bancé)}
+% -----------------------------------------------------------------------------
+
+\begin{exemple}{Voiture dans un virage}{voiture-virage}
+Une voiture de masse $m = \SI{1200}{kg}$ prend un virage horizontal de rayon $r = \SI{50}{m}$. Le coefficient de frottement statique entre les pneus et la route est $\mu_s = 0{,}8$.
+
+Quelle est la vitesse maximale à laquelle la voiture peut négocier ce virage sans déraper?
+
+\tcblower
+
+\textbf{\underline{Analyse physique}}
+
+Pour que la voiture tourne, il faut une force centripète dirigée vers le centre du virage. Sur une route horizontale, cette force est fournie par le \textbf{frottement statique} entre les pneus et la route.
+
+Si la voiture va trop vite, le frottement nécessaire dépasse le frottement maximal disponible $\rightarrow$ la voiture dérape vers l'extérieur.
+
+\textbf{\underline{DCL (vue de derrière la voiture)}}
+
+\begin{center}
+\begin{tikzpicture}[scale=0.9]
+    % Route
+    \fill[gray!30] (-2.5, 0) rectangle (2.5, -0.2);
+    \draw[thick] (-2.5, 0) -- (2.5, 0);
+    
+    % Voiture (vue de derrière, simplifiée)
+    \draw[thick, fill=blue!20, rounded corners=2pt] (-0.8, 0) rectangle (0.8, 0.8);
+    \draw[thick, fill=gray!50] (-0.7, -0.05) rectangle (-0.4, 0.15); % roue gauche
+    \draw[thick, fill=gray!50] (0.4, -0.05) rectangle (0.7, 0.15); % roue droite
+    
+    % Centre de masse
+    \fill[blue!50] (0, 0.4) circle (3pt);
+    
+    % Forces
+    % Poids
+    \draw[-{Stealth[length=3mm]}, very thick, red] (0, 0.4) -- (0, -0.8);
+    \node[red, right] at (0.1, -0.2) {$\vec{F}_g$};
+    
+    % Normale
+    \draw[-{Stealth[length=3mm]}, very thick, green!60!black] (0, 0.4) -- (0, 1.6);
+    \node[green!60!black, right] at (0.1, 1.0) {$\vec{N}$};
+    
+    % Frottement (vers le centre = vers la gauche sur ce schéma)
+    \draw[-{Stealth[length=3mm]}, very thick, orange] (0, 0.4) -- (-1.5, 0.4);
+    \node[orange, above] at (-0.75, 0.5) {$\vec{f}_s$};
+    
+    % Indication du centre
+    \draw[dashed] (-2.5, 0.4) -- (-1.8, 0.4);
+    \node[left] at (-2.5, 0.4) {\small Centre du virage};
+    
+    % Axes
+    \draw[-{Stealth}, thick] (1.5, 0.4) -- (1.5, 1.5) node[right] {$y$};
+    \draw[-{Stealth}, thick] (1.5, 0.4) -- (0.5, 0.4) node[below] {$x$};
+    \node[font=\scriptsize] at (0.8, 0.15) {(vers centre)};
+\end{tikzpicture}
+\end{center}
+
+\textbf{\underline{Équations}}
+
+Selon $y$ (vertical) : $\sum F_y = 0$
+\[
+    N - mg = 0 \quad \Rightarrow \quad N = mg
+\]
+
+Selon $x$ (vers le centre) : $\sum F_x = ma_c$
+\[
+    f_s = m\frac{v^2}{r}
+\]
+
+\textbf{\underline{Condition de non-dérapage}}
+
+Pour que la voiture ne dérape pas, il faut $f_s \leq f_{s,max} = \mu_s N = \mu_s mg$.
+
+À la vitesse maximale, $f_s = f_{s,max}$ :
+\[
+    \mu_s mg = m\frac{v_{max}^2}{r}
+\]
+
+Les masses s'annulent (la vitesse maximale ne dépend pas de la masse!) :
+\[
+    v_{max} = \sqrt{\mu_s g r}
+\]
+
+\textbf{\underline{Application numérique}}
+\[
+    v_{max} = \sqrt{0{,}8 \times 9{,}81 \times 50} = \sqrt{392{,}4} = \SI{19{,}8}{m/s} \approx \boxed{\SI{71}{km/h}}
+\]
+
+\textbf{Remarques importantes :}
+\begin{itemize}
+    \item La vitesse maximale ne dépend \textbf{pas} de la masse du véhicule.
+    \item Sur route mouillée ($\mu_s \approx 0{,}5$) : $v_{max} \approx \SI{56}{km/h}$.
+    \item Sur glace ($\mu_s \approx 0{,}1$) : $v_{max} \approx \SI{25}{km/h}$!
+\end{itemize}
+\end{exemple}
+
+% -----------------------------------------------------------------------------
+\subsubsection{Application maritime : cargaison dans un virage}
+% -----------------------------------------------------------------------------
+
+Lorsqu'un navire effectue un virage, une force centripète doit être exercée pour le maintenir sur sa trajectoire circulaire. D'où vient cette force?
+
+\begin{remarque}[title=Origine de la force centripète sur un navire]
+Contrairement à une voiture qui utilise le frottement des pneus, un navire utilise principalement le \textbf{safran} (gouvernail) pour virer :
+
+\begin{center}
+\begin{tikzpicture}[scale=0.7]
+    % Vue de dessus du navire
+    \draw[thick, fill=gray!20] (-0.5, -2) -- (0.5, -2) -- (0.6, 0) -- (0.3, 1.5) -- (0, 1.8) -- (-0.3, 1.5) -- (-0.6, 0) -- cycle;
+    \node at (0, -0.5) {\small Navire};
+    
+    % Safran (à l'arrière, incliné)
+    \draw[very thick, blue!70] (0, -2) -- (0.5, -2.5);
+    \node[blue!70, right] at (0.5, -2.3) {\small Safran};
+    
+    % Vitesse du navire (vers l'avant)
+    \draw[-{Stealth}, very thick, purple] (0, 1.8) -- (0, 3);
+    \node[purple, above] at (0, 3) {$\vec{v}$};
+    
+    % Force de l'eau sur le safran
+    \draw[-{Stealth}, very thick, orange] (0.25, -2.25) -- (1.5, -2.25);
+    \node[orange, right] at (1.5, -2.25) {\small Force de l'eau};
+    
+    % Résultante : force centripète sur le navire (vers le centre du virage)
+    \draw[-{Stealth}, very thick, red] (0, 0) -- (2, 0);
+    \node[red, above] at (1.5, 0.1) {$\vec{F}_c$};
+    
+    % Centre du virage
+    \node at (4, 0) {$\bullet$};
+    \node[below] at (4, -0.2) {\small Centre};
+    
+    % Trajectoire courbée
+    \draw[dashed, gray] (0, 1.8) arc (90:60:4);
+\end{tikzpicture}
+\end{center}
+
+Quand le safran est braqué, il dévie l'écoulement de l'eau. Par réaction (3\textsuperscript{e} loi de Newton), l'eau exerce une force latérale sur le safran, qui se transmet à tout le navire. Cette force, combinée à la pression latérale de l'eau sur la coque, fournit la force centripète nécessaire au virage.
+\end{remarque}
+
+\begin{exemple}{Cargaison sur le pont d'un navire virant}{navire-virage}
+Un navire de masse $m = \SI{5000}{tonnes}$ effectue un virage de rayon $r = \SI{500}{m}$ à une vitesse de $v = \SI{10}{m/s}$ (environ 20 nœuds).
+
+a) Quelle force centripète est nécessaire pour le navire?
+
+b) Une caisse de $\SI{200}{kg}$ est posée sur le pont. Le coefficient de frottement statique est $\mu_s = 0{,}4$. La caisse glisse-t-elle?
+
+\tcblower
+
+\textbf{\underline{Schéma de situation}}
+
+\begin{center}
+\begin{tikzpicture}[scale=0.7]
+    % Vue de dessus - trajectoire courbe
+    \draw[dashed, gray] (0, 0) arc (180:120:4);
+    \node[gray] at (-0.5, 2) {\small trajectoire};
+    
+    % Navire (rectangle simplifié, vu de dessus)
+    \begin{scope}[rotate=30, shift={(2.5, 2)}]
+        \draw[thick, fill=gray!20, rounded corners=2pt] (-0.4, -1) rectangle (0.4, 1);
+        % Caisse sur le pont
+        \draw[thick, fill=blue!30] (-0.15, 0.2) rectangle (0.15, 0.5);
+        \node[font=\tiny] at (0, 0.35) {$m$};
+    \end{scope}
+    
+    % Centre du virage
+    \fill (4, 0) circle (2pt);
+    \node[below] at (4, -0.2) {\small Centre};
+    
+    % Rayon
+    \draw[thick, <->] (4, 0) -- (2.3, 2.3);
+    \node at (3.5, 1.4) {$r$};
+\end{tikzpicture}
+\end{center}
+
+\textbf{a) Force centripète nécessaire pour le navire}
+\[
+    F_c = m\frac{v^2}{r} = \SI{5e6}{kg} \times \frac{(10)^2}{500} = \SI{5e6}{kg} \times \SI{0{,}2}{m/s^2} = \boxed{\SI{1e6}{N} = \SI{1}{MN}}
+\]
+
+Cette force est fournie par l'action du safran et la pression latérale de l'eau sur la coque.
+
+\textbf{b) Glissement de la caisse}
+
+L'accélération centripète subie par la caisse est :
+\[
+    a_c = \frac{v^2}{r} = \frac{100}{500} = \SI{0{,}2}{m/s^2}
+\]
+
+Force centripète nécessaire pour la caisse :
+\[
+    F_{c,caisse} = m_{caisse} \times a_c = 200 \times 0{,}2 = \SI{40}{N}
+\]
+
+Frottement maximal disponible :
+\[
+    f_{s,max} = \mu_s m_{caisse} g = 0{,}4 \times 200 \times 9{,}81 = \SI{785}{N}
+\]
+
+Comme $\SI{40}{N} \ll \SI{785}{N}$, le frottement est largement suffisant. \textbf{La caisse ne glisse pas.}
+
+\textbf{Remarque :} Lors de manœuvres d'urgence (virage serré à haute vitesse), $a_c$ peut devenir beaucoup plus grand, d'où l'importance critique de l'arrimage de la cargaison! Une caisse mal arrimée qui glisse peut causer des dommages ou déstabiliser le navire.
+\end{exemple}
+
+% -----------------------------------------------------------------------------
+\subsubsection{Câble de grue en rotation}
+% -----------------------------------------------------------------------------
+
+\begin{exemple}{Charge suspendue à une grue qui pivote}{grue-pivot}
+Une grue de navire pivote pour déplacer une charge de $m = \SI{500}{kg}$. Le câble fait un angle $\theta$ avec la verticale pendant la rotation. Si le rayon de rotation est $r = \SI{8}{m}$ et la période de rotation est $T = \SI{10}{s}$, quel angle fait le câble avec la verticale?
+
+\tcblower
+
+\textbf{\underline{Analyse}}
+
+Pendant la rotation, la charge décrit un cercle horizontal. La tension dans le câble doit :
+\begin{itemize}
+    \item Compenser le poids (composante verticale)
+    \item Fournir la force centripète (composante horizontale)
+\end{itemize}
+
+\begin{center}
+\begin{tikzpicture}[scale=0.9]
+    % Axe de rotation (mât de grue)
+    \draw[very thick, gray] (0, 3) -- (0, 0);
+    \fill[gray] (0, 3) circle (3pt);
+    
+    % Câble (à angle theta)
+    \draw[thick, brown] (0, 3) -- (2, 0.5);
+    
+    % Verticale de référence
+    \draw[dashed, gray] (0, 3) -- (0, 0.5);
+    
+    % Angle
+    \draw[thick] (0, 2.2) arc (270:255:0.8);
+    \node at (-0.4, 2.0) {$\theta$};
+    
+    % Charge
+    \draw[thick, fill=blue!30] (1.7, 0.1) rectangle (2.3, 0.5);
+    \node at (2, 0.3) {\small $m$};
+    
+    % DCL (à droite)
+    \begin{scope}[xshift=5cm, yshift=1cm]
+        \fill[blue!50] (0, 0) circle (4pt);
+        
+        % Tension
+        \draw[-{Stealth[length=3mm]}, very thick, orange] (0, 0) -- ({-1.5*sin(25)}, {1.5*cos(25)});
+        \node[orange, above left] at (-0.4, 1.2) {$\vec{T}$};
+        
+        % Composantes de T
+        \draw[dashed, orange] ({-1.5*sin(25)}, {1.5*cos(25)}) -- (0, {1.5*cos(25)});
+        \draw[dashed, orange] ({-1.5*sin(25)}, {1.5*cos(25)}) -- ({-1.5*sin(25)}, 0);
+        \node[orange, font=\scriptsize, right] at (0, 0.9) {$T\cos\theta$};
+        \node[orange, font=\scriptsize, below] at (-0.45, 0) {$T\sin\theta$};
+        
+        % Poids
+        \draw[-{Stealth[length=3mm]}, very thick, red] (0, 0) -- (0, -1.2);
+        \node[red, right] at (0.1, -0.6) {$m\vec{g}$};
+        
+        % Axes
+        \draw[-{Stealth}, thick] (1.5, 0) -- (1.5, 1.2) node[right] {$y$};
+        \draw[-{Stealth}, thick] (1.5, 0) -- (0.5, 0) node[below] {$x$};
+        \node[font=\scriptsize] at (0.8, -0.3) {(vers centre)};
+    \end{scope}
+    
+    % Trajectoire circulaire (vue de dessus, schématique)
+    \draw[dashed, gray] (0, 0.3) ellipse (2cm and 0.3cm);
+    \node[gray, font=\scriptsize] at (0, -0.3) {trajectoire};
+\end{tikzpicture}
+\end{center}
+
+\textbf{\underline{Calculs préliminaires}}
+
+Vitesse angulaire :
+\[
+    \omega = \frac{2\pi}{T} = \frac{2\pi}{10} = \SI{0{,}628}{rad/s}
+\]
+
+\textbf{\underline{Équations}}
+
+Selon $y$ (vertical) : $\sum F_y = 0$
+\[
+    T\cos\theta - mg = 0 \quad \Rightarrow \quad T\cos\theta = mg
+\]
+
+Selon $x$ (vers le centre, horizontal) : $\sum F_x = ma_c$
+\[
+    T\sin\theta = m\omega^2 r
+\]
+
+\textbf{\underline{Résolution}}
+
+Divisons :
+\[
+    \frac{T\sin\theta}{T\cos\theta} = \frac{m\omega^2 r}{mg}
+\]
+\[
+    \tan\theta = \frac{\omega^2 r}{g} = \frac{(0{,}628)^2 \times 8}{9{,}81} = \frac{3{,}15}{9{,}81} = 0{,}321
+\]
+\[
+    \theta = \arctan(0{,}321) = \boxed{17{,}8°}
+\]
+
+\textbf{Tension dans le câble :}
+\[
+    T = \frac{mg}{\cos\theta} = \frac{500 \times 9{,}81}{\cos 17{,}8°} = \frac{4905}{0{,}952} = \boxed{\SI{5150}{N}}
+\]
+
+La tension est légèrement supérieure au poids ($\SI{4905}{N}$) à cause de la composante centripète.
+\end{exemple}
+
+\begin{pratiqueautonome}[title=Passager sur le pont d'un traversier]
+Un traversier effectue un virage de rayon $r = \SI{300}{m}$ à une vitesse de $v = \SI{8}{m/s}$ (environ 16 nœuds). Un passager de $\SI{70}{kg}$ se tient debout sur le pont.
+
+\begin{enumerate}
+    \item Quelle est l'accélération centripète subie par le passager?
+    \item Quelle force horizontale le pont doit-il exercer sur les pieds du passager?
+    \item Si le coefficient de frottement statique entre ses chaussures et le pont est $\mu_s = 0{,}6$, risque-t-il de glisser?
+    \item À quelle vitesse le passager commencerait-il à glisser?
+\end{enumerate}
+
+\espaceresolution[5cm]
+
+\tcblower
+\textbf{Réponses :}
+\begin{enumerate}
+    \item $a_c = \dfrac{v^2}{r} = \dfrac{64}{300} = \SI{0{,}213}{m/s^2}$
+    \item $F_c = ma_c = 70 \times 0{,}213 = \SI{14{,}9}{N}$ (frottement statique)
+    \item $f_{s,max} = \mu_s mg = 0{,}6 \times 70 \times 9{,}81 = \SI{412}{N}$. Comme $\SI{14{,}9}{N} \ll \SI{412}{N}$, \textbf{non}, il ne glisse pas.
+    \item $v_{max} = \sqrt{\mu_s g r} = \sqrt{0{,}6 \times 9{,}81 \times 300} = \SI{42}{m/s} \approx 82$ nœuds (impossible pour un traversier!)
+\end{enumerate}
+\end{pratiqueautonome}
+
+% =============================================================================
+\subsection{Résumé : mouvement circulaire}
+\label{subsec:resume-circulaire}
+% =============================================================================
+
+\begin{center}
+\begin{tikzpicture}
+    % Boîte principale
+    \node[draw=bleuimq, fill=bleuclair, rounded corners=5pt, text width=14cm, align=left, inner sep=10pt] {
+        \textbf{\large Points clés du mouvement circulaire} \\[0.5em]
+        
+        \textbf{1. L'accélération centripète existe toujours} en mouvement circulaire : $a_c = \dfrac{v^2}{r}$ \\[0.5em]
+        
+        \textbf{2. La force centripète} est la force \textit{résultante} vers le centre : $F_c = ma_c = m\dfrac{v^2}{r}$ \\[0.5em]
+        
+        \textbf{3. Ce n'est PAS une nouvelle force!} C'est le nom donné à la composante centripète des forces réelles (tension, frottement, normale, gravité...) \\[0.5em]
+        
+        \textbf{4. La « force centrifuge » n'existe pas} dans un référentiel inertiel. C'est l'effet de l'inertie. \\[0.5em]
+        
+        \textbf{5. Méthode :} Choisir un axe vers le centre, puis $\sum F_{\to centre} = m\dfrac{v^2}{r}$
+    };
+\end{tikzpicture}
+\end{center}

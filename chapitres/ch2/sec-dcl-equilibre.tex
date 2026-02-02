@@ -1,0 +1,706 @@
+% =============================================================================
+% SECTION 3 - LE DIAGRAMME DE CORPS LIBRE ET L'ÉQUILIBRE
+% Blocs 3 et 4 (4 heures - Semaine 6)
+% =============================================================================
+
+\section{Le diagramme de corps libre et l'équilibre}
+\label{sec:dcl-equilibre}
+
+% =============================================================================
+\subsection{Le diagramme de corps libre (DCL)}
+\label{subsec:dcl}
+% =============================================================================
+
+Le \textbf{diagramme de corps libre} (DCL) est l'outil le plus important pour résoudre des problèmes de mécanique. Avant de pouvoir appliquer les lois de Newton, vous devez identifier \textbf{toutes} les forces qui agissent sur l'objet étudié --- et le DCL est la méthode systématique pour y parvenir.
+
+\begin{definition}[title=Diagramme de corps libre (DCL)]
+Un \textbf{diagramme de corps libre} est un schéma simplifié montrant :
+\begin{itemize}
+    \item L'objet étudié, représenté de façon isolée (souvent par un point ou une forme simple)
+    \item \textbf{Toutes} les forces extérieures agissant sur cet objet, représentées par des vecteurs
+    \item Un système de coordonnées approprié
+\end{itemize}
+
+Le DCL ne montre \textbf{que} les forces sur l'objet étudié, pas les forces qu'il exerce sur d'autres objets.
+\end{definition}
+
+\begin{remarque}[title=Pourquoi le DCL est-il si important?]
+Le DCL est à la mécanique ce que la liste d'épicerie est aux courses : on peut parfois s'en sortir sans, mais on oublie souvent quelque chose d'important!
+
+Sans un DCL correct et complet :
+\begin{itemize}
+    \item Vous risquez d'oublier des forces
+    \item Vous risquez d'ajouter des forces qui n'existent pas
+    \item Vous ne pourrez pas écrire correctement les équations de Newton
+    \item Votre solution sera probablement fausse
+\end{itemize}
+
+Investir du temps dans un bon DCL, c'est s'assurer une résolution correcte.
+\end{remarque}
+
+% -----------------------------------------------------------------------------
+\subsubsection{Les cinq règles d'or du DCL}
+\label{subsubsec:regles-dcl}
+% -----------------------------------------------------------------------------
+
+\begin{enumerate}
+    \item \textbf{Isoler l'objet} --- Dessinez l'objet étudié \textit{seul}, séparé de son environnement. Représentez-le par un point ou une forme simple.
+    
+    \item \textbf{Représenter TOUTES les forces} --- Passez en revue mentalement toutes les forces possibles :
+    \begin{itemize}
+        \item[$\checkmark$] Le poids (toujours présent!)
+        \item[$\checkmark$] La normale (s'il y a contact avec une surface)
+        \item[$\checkmark$] La tension (s'il y a une corde ou un câble)
+        \item[$\checkmark$] Le frottement (s'il y a contact et mouvement ou tendance au mouvement)
+        \item[$\checkmark$] Toute autre force appliquée
+    \end{itemize}
+    
+    \item \textbf{Partir du centre de masse} --- Dessinez toutes les forces comme partant du centre de l'objet (ou d'un point représentant l'objet).
+    
+    \item \textbf{Respecter les directions} --- Chaque force doit pointer dans la bonne direction :
+    \begin{itemize}
+        \item Poids : vers le bas (vertical)
+        \item Normale : perpendiculaire à la surface
+        \item Tension : le long de la corde, tirant l'objet
+        \item Frottement : parallèle à la surface, opposé au mouvement
+    \end{itemize}
+    
+    \item \textbf{Ne JAMAIS dessiner l'accélération} --- L'accélération n'est \textbf{pas} une force! Elle est la \textit{conséquence} des forces, pas une force elle-même.
+\end{enumerate}
+
+\begin{attention}[title=Erreurs fréquentes à éviter]
+\begin{center}
+\renewcommand{\arraystretch}{1.5}
+\begin{tabular}{|L{6cm}|L{7cm}|}
+\hline
+\rowcolor{red!10} \textbf{Erreur} & \textbf{Correction} \\
+\hline
+Dessiner une « force du mouvement » & Le mouvement n'est pas une force! Un objet en MRU n'a pas besoin de force pour maintenir sa vitesse. \\
+\hline
+Dessiner l'inertie comme une force & L'inertie est une propriété, pas une force. \\
+\hline
+Oublier le poids & La Terre attire \textbf{toujours} l'objet. Le poids est toujours présent! \\
+\hline
+Confondre normale et poids & Ce sont deux forces distinctes. $N = mg$ seulement dans des cas particuliers. \\
+\hline
+Dessiner les forces sur d'autres objets & Le DCL ne montre que les forces \textbf{sur} l'objet étudié. \\
+\hline
+Oublier le frottement & S'il y a contact et mouvement (ou tendance), il y a frottement. \\
+\hline
+\end{tabular}
+\end{center}
+\end{attention}
+
+% -----------------------------------------------------------------------------
+\subsubsection{Construction d'un DCL : progression guidée}
+\label{subsubsec:construction-dcl}
+% -----------------------------------------------------------------------------
+
+Voyons comment construire un DCL correct dans des situations de complexité croissante.
+
+\paragraph{Niveau 1 : Objet au repos sur surface horizontale}
+
+\begin{center}
+\begin{tikzpicture}[scale=1.0]
+    % Schéma de situation (gauche)
+    \begin{scope}[xshift=-4cm]
+        \node[above, font=\bfseries] at (0, 2.2) {Situation};
+        
+        % Table
+        \fill[brown!30] (-1.5, 0) rectangle (1.5, -0.2);
+        \draw[thick] (-1.5, 0) -- (1.5, 0);
+        \fill[pattern=north east lines, pattern color=brown] (-1.5, -0.2) rectangle (1.5, -0.4);
+        
+        % Livre
+        \draw[thick, fill=blue!20] (-0.6, 0) rectangle (0.6, 0.4);
+        \node at (0, 0.2) {\small Livre};
+    \end{scope}
+    
+    % DCL (droite)
+    \begin{scope}[xshift=2cm]
+        \node[above, font=\bfseries] at (0, 2.2) {DCL du livre};
+        
+        % Point représentant le livre
+        \fill[blue!50] (0, 0.8) circle (5pt);
+        
+        % Axes
+        \draw[-{Stealth}, thick] (0, 0.8) -- (2, 0.8) node[right] {$x$};
+        \draw[-{Stealth}, thick] (0, 0.8) -- (0, 2.5) node[above] {$y$};
+        
+        % Poids
+        \draw[-{Stealth[length=3mm]}, very thick, red] (0, 0.8) -- (0, -0.5);
+        \node[red, right] at (0.1, 0.1) {$\vect{F}_g = m\vect{g}$};
+        
+        % Normale
+        \draw[-{Stealth[length=3mm]}, very thick, green!60!black] (0, 0.8) -- (0, 2.1);
+        \node[green!60!black, right] at (0.1, 1.5) {$\vect{N}$};
+    \end{scope}
+\end{tikzpicture}
+\end{center}
+
+\textbf{Forces identifiées :}
+\begin{itemize}
+    \item Poids $\vect{F}_g$ : vers le bas
+    \item Normale $\vect{N}$ : vers le haut (perpendiculaire à la table)
+\end{itemize}
+
+\textbf{Équilibre :} $\sum F_y = N - mg = 0 \Rightarrow N = mg$
+
+\paragraph{Niveau 2 : Objet tiré par une corde}
+
+\begin{center}
+\begin{tikzpicture}[scale=1.0]
+    % Schéma de situation (gauche)
+    \begin{scope}[xshift=-4cm]
+        \node[above, font=\bfseries] at (0, 2.2) {Situation};
+        
+        % Sol
+        \fill[gray!20] (-2, 0) rectangle (2, -0.2);
+        \draw[thick] (-2, 0) -- (2, 0);
+        
+        % Caisse
+        \draw[thick, fill=blue!20] (-0.5, 0) rectangle (0.5, 0.6);
+        \node at (0, 0.3) {\small $m$};
+        
+        % Corde
+        \draw[thick, brown] (0.5, 0.5) -- (1.8, 1.3);
+        
+        % Angle
+        \draw[thick] (1.0, 0.5) arc (0:30:0.5);
+        \node at (1.3, 0.7) {\small $\theta$};
+        
+        % Flèche mouvement
+        \draw[-{Stealth}, thick, purple] (-0.8, 0.3) -- (-1.5, 0.3);
+        \node[purple, above] at (-1.15, 0.4) {\small $\vect{v}$};
+    \end{scope}
+    
+    % DCL (droite)
+    \begin{scope}[xshift=2.5cm]
+        \node[above, font=\bfseries] at (0, 2.2) {DCL de la caisse};
+        
+        % Point
+        \fill[blue!50] (0, 0.8) circle (5pt);
+        
+        % Axes
+        \draw[-{Stealth}, thick] (0, 0.8) -- (2.5, 0.8) node[right] {$x$};
+        \draw[-{Stealth}, thick] (0, 0.8) -- (0, 2.5) node[above] {$y$};
+        
+        % Poids
+        \draw[-{Stealth[length=3mm]}, very thick, red] (0, 0.8) -- (0, -0.4);
+        \node[red, left] at (-0.1, 0.2) {$\vect{F}_g$};
+        
+        % Normale
+        \draw[-{Stealth[length=3mm]}, very thick, green!60!black] (0, 0.8) -- (0, 1.9);
+        \node[green!60!black, left] at (-0.1, 1.4) {$\vect{N}$};
+        
+        % Tension
+        \draw[-{Stealth[length=3mm]}, very thick, orange] (0, 0.8) -- ({1.3*cos(30)}, {0.8 + 1.3*sin(30)});
+        \node[orange, above right] at (0.8, 1.3) {$\vect{T}$};
+        
+        % Frottement
+        \draw[-{Stealth[length=3mm]}, very thick, blue] (0, 0.8) -- (-1.0, 0.8);
+        \node[blue, above] at (-0.5, 0.9) {$\vect{f}$};
+        
+        % Angle de la tension
+        \draw[thick] (0.5, 0.8) arc (0:30:0.5);
+        \node at (0.7, 1.0) {\small $\theta$};
+    \end{scope}
+\end{tikzpicture}
+\end{center}
+
+\textbf{Forces identifiées :}
+\begin{itemize}
+    \item Poids $\vect{F}_g$ : vers le bas
+    \item Normale $\vect{N}$ : vers le haut
+    \item Tension $\vect{T}$ : le long de la corde, à l'angle $\theta$
+    \item Frottement $\vect{f}$ : opposé au mouvement (vers la gauche)
+\end{itemize}
+
+\textbf{Note :} Ici, $N \neq mg$ car la tension a une composante verticale!
+
+\paragraph{Niveau 3 : Objet sur plan incliné}
+
+\begin{center}
+\begin{tikzpicture}[scale=1.0]
+    % Schéma de situation (gauche)
+    \begin{scope}[xshift=-4cm]
+        \node[above, font=\bfseries] at (0.5, 2.5) {Situation};
+        
+        % Plan incliné
+        \fill[gray!20] (0, 0) -- (3, 0) -- (3, 1.5) -- cycle;
+        \draw[thick] (0, 0) -- (3, 1.5);
+        \draw[thick] (0, 0) -- (3, 0);
+        
+        % Angle
+        \draw[thick] (0.8, 0) arc (0:26.57:0.8);
+        \node at (1.1, 0.2) {\small $\theta$};
+        
+        % Bloc
+        \begin{scope}[rotate=26.57, shift={(1.2, 0)}]
+            \draw[thick, fill=blue!20] (0, 0) rectangle (0.6, 0.5);
+            \node at (0.3, 0.25) {\small $m$};
+        \end{scope}
+    \end{scope}
+    
+    % DCL (droite) - axes standards pour l'instant
+    \begin{scope}[xshift=2.5cm]
+        \node[above, font=\bfseries] at (0, 2.5) {DCL du bloc};
+        
+        % Point
+        \fill[blue!50] (0, 0.8) circle (5pt);
+        
+        % Poids (vertical vers le bas)
+        \draw[-{Stealth[length=3mm]}, very thick, red] (0, 0.8) -- (0, -0.6);
+        \node[red, right] at (0.1, 0.1) {$\vect{F}_g$};
+        
+        % Normale (perpendiculaire au plan)
+        \draw[-{Stealth[length=3mm]}, very thick, green!60!black] (0, 0.8) -- ({-1.1*sin(26.57)}, {0.8 + 1.1*cos(26.57)});
+        \node[green!60!black, above left] at (-0.3, 1.6) {$\vect{N}$};
+        
+        % Frottement (parallèle au plan, vers le haut)
+        \draw[-{Stealth[length=3mm]}, very thick, blue] (0, 0.8) -- ({-0.8*cos(26.57)}, {0.8 - 0.8*sin(26.57)});
+        \node[blue, below left] at (-0.5, 0.5) {$\vect{f}$};
+    \end{scope}
+\end{tikzpicture}
+\end{center}
+
+\textbf{Forces identifiées :}
+\begin{itemize}
+    \item Poids $\vect{F}_g$ : vertical vers le bas
+    \item Normale $\vect{N}$ : perpendiculaire au plan (vers l'extérieur)
+    \item Frottement $\vect{f}$ : parallèle au plan, vers le haut (oppose la tendance à glisser)
+\end{itemize}
+
+\textbf{Note :} Le choix judicieux des axes et la décomposition des forces seront présentés dans les exemples de résolution.
+
+% =============================================================================
+\subsection{L'algorithme de résolution}
+\label{subsec:algorithme}
+% =============================================================================
+
+Voici la méthode systématique pour résoudre \textbf{tout} problème de mécanique --- qu'il s'agisse d'équilibre (statique) ou de mouvement (dynamique).
+
+\begin{definition}[title=Algorithme de résolution en 4 étapes]
+
+\textbf{Étape 1 — SCHÉMA et DCL}
+\begin{enumerate}[label=\alph*)]
+    \item Dessiner un schéma de la situation physique
+    \item Isoler l'objet d'intérêt (ou chaque objet, s'il y en a plusieurs)
+    \item Tracer le DCL : représenter \textbf{toutes} les forces agissant sur l'objet
+    \item Identifier les forces connues et inconnues
+\end{enumerate}
+
+\textbf{Étape 2 — AXES}
+\begin{enumerate}[label=\alph*)]
+    \item Choisir un système de coordonnées $(x, y)$ adapté au problème
+    \item \textit{Conseil :} Aligner un axe avec l'accélération (si connue) ou avec la surface de contact
+    \item Indiquer clairement la direction positive de chaque axe
+\end{enumerate}
+
+\textbf{Étape 3 — ÉQUATIONS DE NEWTON}
+\begin{enumerate}[label=\alph*)]
+    \item Décomposer chaque force selon les axes $x$ et $y$
+    \item Appliquer la deuxième loi de Newton (ou les conditions d'équilibre) :
+    \begin{align*}
+        \sum F_x &= ma_x \qquad \text{(ou } = 0 \text{ si équilibre)} \\
+        \sum F_y &= ma_y \qquad \text{(ou } = 0 \text{ si équilibre)}
+    \end{align*}
+    \item Écrire les équations explicitement avec les symboles des forces
+\end{enumerate}
+
+\textbf{Étape 4 — ALGÈBRE}
+\begin{enumerate}[label=\alph*)]
+    \item Compter les équations et les inconnues (il faut autant d'équations que d'inconnues!)
+    \item Résoudre le système d'équations \textbf{algébriquement} (avec des symboles)
+    \item Substituer les valeurs numériques \textit{à la fin}
+    \item Vérifier : unités correctes? Ordre de grandeur raisonnable? Signe cohérent?
+\end{enumerate}
+\end{definition}
+
+\begin{remarque}[title=Pourquoi résoudre algébriquement d'abord?]
+Résoudre avec des symboles avant de substituer les nombres présente plusieurs avantages :
+\begin{itemize}
+    \item On peut vérifier les \textbf{unités} de la réponse finale
+    \item On peut analyser les \textbf{cas limites} (que se passe-t-il si $\theta \to 0$? si $m \to \infty$?)
+    \item On évite les erreurs de calcul intermédiaires
+    \item La solution est \textbf{réutilisable} pour d'autres valeurs numériques
+\end{itemize}
+\end{remarque}
+
+% -----------------------------------------------------------------------------
+\subsubsection{Conseils pour le choix des axes}
+\label{subsubsec:choix-axes}
+% -----------------------------------------------------------------------------
+
+Le choix du système de coordonnées est libre, mais certains choix simplifient grandement les calculs :
+
+\begin{center}
+\renewcommand{\arraystretch}{1.5}
+\begin{tabular}{|L{4cm}|L{9cm}|}
+\hline
+\rowcolor{bleuclair} \textbf{Situation} & \textbf{Choix recommandé} \\
+\hline
+Mouvement horizontal & $x$ horizontal (sens du mouvement), $y$ vertical vers le haut \\
+\hline
+Plan incliné & $x$ parallèle à la pente, $y$ perpendiculaire à la pente \\
+\hline
+Objet suspendu & $x$ horizontal, $y$ vertical vers le haut \\
+\hline
+Mouvement circulaire & Un axe vers le centre du cercle \\
+\hline
+\end{tabular}
+\end{center}
+
+\begin{remarque}[title=Peu importe le choix, la physique est la même]
+Vous pouvez toujours choisir n'importe quel système d'axes --- la réponse finale sera la même. Mais un bon choix réduit le nombre de forces à décomposer et simplifie les équations.
+
+Sur un plan incliné, si vous choisissez des axes horizontaux/verticaux, vous devrez décomposer \textbf{trois} forces ($\vect{N}$, $\vect{f}$, et $\vect{F}_g$). Avec des axes parallèles/perpendiculaires à la pente, seul le poids doit être décomposé.
+\end{remarque}
+
+% =============================================================================
+\subsection{Applications : problèmes d'équilibre (statique)}
+\label{subsec:applications-statique}
+% =============================================================================
+
+Appliquons maintenant l'algorithme à des problèmes de statique, où $\vect{a} = \vect{0}$.
+
+% -----------------------------------------------------------------------------
+\begin{exemple}{Conteneur suspendu par deux câbles}{conteneur-cables}
+
+Un conteneur de masse $m = \SI{2000}{kg}$ est suspendu dans la cale d'un navire par deux câbles. Le câble de bâbord fait un angle de $\alpha = 30°$ avec l'horizontale, celui de tribord fait un angle de $\beta = 45°$ avec l'horizontale. Déterminer les tensions $T_1$ et $T_2$ dans chaque câble.
+
+\tcblower
+
+\textbf{\underline{Étape 1 — SCHÉMA et DCL}}
+
+\begin{center}
+\begin{tikzpicture}[scale=0.9]
+    % Schéma de situation (gauche)
+    \begin{scope}[xshift=-4.5cm]
+        % Supports
+        \fill[gray!50] (-2.5, 2.5) rectangle (-2, 3);
+        \fill[gray!50] (2, 2.5) rectangle (2.5, 3);
+        
+        % Câbles
+        \draw[thick, brown] (-2.25, 2.5) -- (0, 0.8);
+        \draw[thick, brown] (2.25, 2.5) -- (0, 0.8);
+        
+        % Conteneur
+        \draw[thick, fill=blue!20] (-0.6, 0) rectangle (0.6, 0.8);
+        \node at (0, 0.4) {\small $m$};
+        
+        % Angles
+        \draw[thick] (-1.5, 2.5) arc (0:-30:0.75);
+        \node at (-1.1, 2.2) {\small $\alpha$};
+        \draw[thick] (1.5, 2.5) arc (180:225:0.75);
+        \node at (1.1, 2.2) {\small $\beta$};
+        
+        % Labels
+        \node[above left] at (-1.2, 1.7) {\small Câble 1};
+        \node[above right] at (1.2, 1.7) {\small Câble 2};
+        
+        \node[below] at (0, -0.5) {\textit{Schéma de situation}};
+    \end{scope}
+    
+    % DCL (droite)
+    \begin{scope}[xshift=3cm]
+        % Point
+        \fill[blue!50] (0, 0) circle (5pt);
+        
+        % Axes
+        \draw[-{Stealth}, thick] (0, 0) -- (2.5, 0) node[right] {$x$};
+        \draw[-{Stealth}, thick] (0, 0) -- (0, 2.5) node[above] {$y$};
+        
+        % Poids
+        \draw[-{Stealth[length=3mm]}, very thick, red] (0, 0) -- (0, -1.5);
+        \node[red, right] at (0.1, -0.8) {$\vect{F}_g$};
+        
+        % Tension 1
+        \draw[-{Stealth[length=3mm]}, very thick, orange] (0, 0) -- ({-1.5*cos(30)}, {1.5*sin(30)});
+        \node[orange, above left] at (-0.9, 0.6) {$\vect{T}_1$};
+        
+        % Tension 2
+        \draw[-{Stealth[length=3mm]}, very thick, green!60!black] (0, 0) -- ({1.5*cos(45)}, {1.5*sin(45)});
+        \node[green!60!black, above right] at (0.8, 0.9) {$\vect{T}_2$};
+        
+        % Angles
+        \draw[thick] ({-0.5*cos(30)}, {0.5*sin(30)}) arc (150:180:0.5);
+        \node at (-0.65, 0.15) {\small $\alpha$};
+        \draw[thick] ({0.5*cos(45)}, {0.5*sin(45)}) arc (45:0:0.5);
+        \node at (0.65, 0.15) {\small $\beta$};
+        
+        \node[below] at (0, -2.0) {\textit{DCL du conteneur}};
+    \end{scope}
+\end{tikzpicture}
+\end{center}
+
+\textbf{Forces sur le conteneur :}
+\begin{itemize}
+    \item Poids : $F_g = mg$ (vers le bas)
+    \item Tension 1 : $T_1$ (vers le câble de bâbord, à l'angle $\alpha$ au-dessus de l'horizontale)
+    \item Tension 2 : $T_2$ (vers le câble de tribord, à l'angle $\beta$ au-dessus de l'horizontale)
+\end{itemize}
+
+\textbf{\underline{Étape 2 — MÉTHODE GÉOMÉTRIQUE (Triangle de forces)}}
+
+Puisque le conteneur est en équilibre, la somme vectorielle des trois forces est nulle :
+\[
+    \vect{T}_1 + \vect{T}_2 + \vect{F}_g = \vect{0}
+\]
+
+Cela signifie que si on place les trois vecteurs bout à bout, ils forment un \textbf{triangle fermé}.
+
+\begin{center}
+\begin{tikzpicture}[scale=0.8]
+    % Triangle de forces
+    % On part du poids (vers le bas), puis T1, puis T2 qui revient au point de départ
+    
+    % Poids (vers le bas)
+    \draw[-{Stealth[length=3mm]}, very thick, red] (0, 2) -- (0, 0);
+    \node[red, left] at (-0.1, 1) {$\vect{F}_g = mg$};
+    
+    % T1 (fait un angle alpha avec l'horizontale)
+    \draw[-{Stealth[length=3mm]}, very thick, orange] (0, 0) -- ({2.5*cos(30)}, {2.5*sin(30)});
+    \node[orange, below] at (1.2, 0.5) {$\vect{T}_1$};
+    
+    % T2 (revient au point de départ)
+    \draw[-{Stealth[length=3mm]}, very thick, green!60!black] ({2.5*cos(30)}, {2.5*sin(30)}) -- (0, 2);
+    \node[green!60!black, above right] at (1.4, 1.8) {$\vect{T}_2$};
+    
+    % Angles dans le triangle
+    % Angle au sommet bas (entre Fg et T1) = 90° + alpha
+    \draw[thick] (0, 0.5) arc (90:30:0.5);
+    \node at (0.4, 0.7) {\small $90°{-}\alpha$};
+    
+    % Angle au sommet droit (entre T1 et T2) = 180° - alpha - beta
+    \draw[thick] ({2.5*cos(30) - 0.4*cos(30+60)}, {2.5*sin(30) + 0.4*sin(30+60)}) arc (120:180-15:0.4);
+    
+    % Angle au sommet haut (entre T2 et Fg) = 90° - beta
+    \draw[thick] (0, 1.5) arc (270:270+45:0.5);
+    \node at (0.35, 1.3) {\small $90°{-}\beta$};
+    
+    % Annotation
+    \node[text width=5cm, align=left] at (5.5, 1) {
+        Les angles du triangle sont :
+        \begin{itemize}
+            \item En bas : $90° - \alpha$
+            \item En haut : $90° - \beta$
+            \item À droite : $\alpha + \beta$
+        \end{itemize}
+    };
+\end{tikzpicture}
+\end{center}
+
+\textbf{\underline{Étape 3 — LOI DES SINUS}}
+
+Dans un triangle, la loi des sinus stipule que le rapport entre un côté et le sinus de l'angle opposé est constant :
+\[
+    \frac{T_1}{\sin(90° - \beta)} = \frac{T_2}{\sin(90° - \alpha)} = \frac{mg}{\sin(\alpha + \beta)}
+\]
+
+En utilisant $\sin(90° - \theta) = \cos\theta$ :
+\[
+    \frac{T_1}{\cos\beta} = \frac{T_2}{\cos\alpha} = \frac{mg}{\sin(\alpha + \beta)}
+\]
+
+\textbf{\underline{Étape 4 — CALCULS}}
+
+\textbf{Application numérique :}
+
+Avec $m = \SI{2000}{kg}$, $\alpha = 30°$, $\beta = 45°$ :
+
+\[
+    \sin(\alpha + \beta) = \sin(75°) = 0{,}966
+\]
+
+\[
+    T_1 = \frac{mg \cos\beta}{\sin(\alpha + \beta)} = \frac{2000 \times 9{,}81 \times \cos 45°}{\sin 75°} = \frac{19\,620 \times 0{,}707}{0{,}966} = \boxed{\SI{14{,}4}{kN}}
+\]
+
+\[
+    T_2 = \frac{mg \cos\alpha}{\sin(\alpha + \beta)} = \frac{2000 \times 9{,}81 \times \cos 30°}{\sin 75°} = \frac{19\,620 \times 0{,}866}{0{,}966} = \boxed{\SI{17{,}6}{kN}}
+\]
+
+\textbf{Vérification :}
+\begin{itemize}
+    \item $T_2 > T_1$ : logique car le câble de tribord est plus vertical ($45° > 30°$), il supporte une plus grande partie du poids.
+    \item On peut vérifier : $T_1 \sin\alpha + T_2 \sin\beta = 14\,400 \times 0{,}5 + 17\,600 \times 0{,}707 = 7\,200 + 12\,440 \approx mg$ ✓
+\end{itemize}
+
+\begin{remarque}[title=Avantage de la méthode géométrique]
+La méthode du triangle de forces avec la loi des sinus donne directement les tensions sans avoir à résoudre un système d'équations. Elle est particulièrement efficace quand on a exactement trois forces en équilibre.
+\end{remarque}
+\end{exemple}
+
+\begin{pratiqueautonome}[title=Feu de navigation suspendu]
+
+Un feu de navigation de masse $m = \SI{15}{kg}$ est suspendu entre deux mâts par deux câbles. Le câble de bâbord fait un angle de $\alpha = 35°$ avec l'horizontale, celui de tribord fait un angle de $\beta = 50°$ avec l'horizontale.
+
+\begin{enumerate}
+    \item Dessinez le DCL du feu de navigation.
+    \item Écrivez les équations d'équilibre.
+    \item Calculez les tensions $T_1$ et $T_2$ dans chaque câble.
+\end{enumerate}
+
+\espaceresolution[6cm]
+
+\tcblower
+\textbf{Réponses :}
+
+Équation (1) : $-T_1\cos 35° + T_2\cos 50° = 0$
+
+Équation (2) : $T_1\sin 35° + T_2\sin 50° - mg = 0$
+
+$T_1 = \SI{106}{N}$ ; $T_2 = \SI{135}{N}$
+\end{pratiqueautonome}
+
+% -----------------------------------------------------------------------------
+\begin{exemple}{Bloc sur plan incliné à l'équilibre}{bloc-plan-equilibre}
+
+Un bloc de masse $m = \SI{20}{kg}$ est posé sur un plan incliné à $\theta = 20°$ par rapport à l'horizontale. Le bloc reste immobile. Le coefficient de frottement statique est $\mu_s = 0{,}5$.
+
+a) Calculer la force de frottement statique qui maintient le bloc en équilibre.
+
+b) Quel est l'angle maximal avant que le bloc ne commence à glisser?
+
+\tcblower
+
+\textbf{\underline{Étape 1 — SCHÉMA et DCL}}
+
+\begin{center}
+\begin{tikzpicture}[scale=0.85]
+    % Schéma de situation (gauche)
+    \begin{scope}[xshift=-4.5cm]
+        % Plan incliné (20°)
+        \fill[gray!20] (0, 0) -- (4, 0) -- (4, 1.46) -- cycle;
+        \draw[thick] (0, 0) -- (4, 1.46);
+        \draw[thick] (0, 0) -- (4, 0);
+        
+        % Angle
+        \draw[thick] (1, 0) arc (0:20:1);
+        \node at (1.4, 0.2) {\small $20°$};
+        
+        % Bloc
+        \begin{scope}[rotate=20, shift={(1.5, 0)}]
+            \draw[thick, fill=blue!20] (0, 0) rectangle (0.8, 0.6);
+            \node at (0.4, 0.3) {\small $m$};
+        \end{scope}
+        
+        % Sol
+        \fill[pattern=north east lines] (-0.2, -0.2) rectangle (4.2, 0);
+        
+        \node[below] at (2, -0.6) {\textit{Schéma de situation}};
+    \end{scope}
+    
+    % DCL (droite)
+    \begin{scope}[xshift=3cm]
+        % Point
+        \fill[blue!50] (0, 0) circle (5pt);
+        
+        % Axes inclinés
+        \draw[-{Stealth}, thick] (0, 0) -- ({2.3*cos(20)}, {2.3*sin(20)}) node[right] {$x$};
+        \draw[-{Stealth}, thick] (0, 0) -- ({-1.8*sin(20)}, {1.8*cos(20)}) node[above] {$y$};
+        \node[below right, font=\scriptsize] at (1.7, 0.6) {(+ vers bas)};
+        
+        % Poids (vertical)
+        \draw[-{Stealth[length=3mm]}, very thick, red] (0, 0) -- (0, -1.8);
+        \node[red, right] at (0.1, -1.0) {$\vect{F}_g$};
+        
+        % Normale
+        \draw[-{Stealth[length=3mm]}, very thick, green!60!black] (0, 0) -- ({-1.56*sin(20)}, {1.56*cos(20)});
+        \node[green!60!black, above left] at (-0.3, 1.3) {$\vect{N}$};
+        
+        % Frottement (vers le haut de la pente = -x)
+        \draw[-{Stealth[length=3mm]}, very thick, blue] (0, 0) -- ({-0.9*cos(20)}, {-0.9*sin(20)});
+        \node[blue, below left] at (-0.7, -0.1) {$\vect{f}_s$};
+        
+        \node[below] at (0, -2.3) {\textit{DCL du bloc}};
+    \end{scope}
+\end{tikzpicture}
+\end{center}
+
+\textbf{Forces sur le bloc :}
+\begin{itemize}
+    \item Poids : $F_g = mg$ (vertical vers le bas)
+    \item Normale : $N$ (perpendiculaire au plan, vers l'extérieur)
+    \item Frottement statique : $f_s$ (parallèle au plan, vers le haut --- s'oppose à la tendance à glisser)
+\end{itemize}
+
+\textbf{\underline{Étape 2 — AXES}}
+
+$x$ : parallèle à la pente, positif vers le bas
+
+$y$ : perpendiculaire à la pente, positif vers l'extérieur
+
+Ce choix est stratégique : seul le poids doit être décomposé.
+
+\textbf{\underline{Étape 3 — ÉQUATIONS DE NEWTON}}
+
+\textbf{Décomposition du poids :}
+\begin{align*}
+    F_{g,x} &= mg\sin\theta \quad \text{(vers le bas de la pente)} \\
+    F_{g,y} &= -mg\cos\theta \quad \text{(vers la pente)}
+\end{align*}
+
+\textbf{Équilibre selon $y$ :} $\sum F_y = 0$
+\begin{equation}
+    N - mg\cos\theta = 0 \quad \Rightarrow \quad N = mg\cos\theta \tag{1}
+\end{equation}
+
+\textbf{Équilibre selon $x$ :} $\sum F_x = 0$
+\begin{equation}
+    mg\sin\theta - f_s = 0 \quad \Rightarrow \quad f_s = mg\sin\theta \tag{2}
+\end{equation}
+
+\textbf{\underline{Étape 4 — ALGÈBRE}}
+
+\textbf{a) Force de frottement :}
+\[
+    f_s = mg\sin\theta = 20 \times 9{,}81 \times \sin 20° = 196{,}2 \times 0{,}342 = \boxed{\SI{67{,}1}{N}}
+\]
+
+\textbf{Vérification que le bloc peut rester en équilibre :}
+
+Le frottement maximal possible est :
+\[
+    f_{s,max} = \mu_s N = \mu_s mg\cos\theta = 0{,}5 \times 20 \times 9{,}81 \times \cos 20° = 0{,}5 \times 196{,}2 \times 0{,}940 = \SI{92{,}2}{N}
+\]
+
+Comme $f_s = \SI{67{,}1}{N} < f_{s,max} = \SI{92{,}2}{N}$, le bloc reste bien en équilibre. ✓
+
+\textbf{b) Angle maximal :}
+
+Le bloc commence à glisser quand $f_s = f_{s,max}$, c'est-à-dire quand :
+\[
+    mg\sin\theta_{max} = \mu_s mg\cos\theta_{max}
+\]
+\[
+    \tan\theta_{max} = \mu_s
+\]
+\[
+    \theta_{max} = \arctan(\mu_s) = \arctan(0{,}5) = \boxed{26{,}6°}
+\]
+
+\textbf{Remarque :} L'angle limite de glissement ne dépend que de $\mu_s$, pas de la masse!
+\end{exemple}
+
+\begin{pratiqueautonome}[title=Caisse sur rampe de chargement]
+
+Une caisse de $\SI{150}{kg}$ est posée sur une rampe de chargement inclinée à $25°$. Le coefficient de frottement statique entre la caisse et la rampe est $\mu_s = 0{,}6$.
+
+\begin{enumerate}
+    \item La caisse reste-t-elle en place ou glisse-t-elle?
+    \item Si elle reste en place, quelle est la force de frottement?
+    \item Quel angle maximal la rampe pourrait-elle avoir avant que la caisse ne glisse?
+\end{enumerate}
+
+\espaceresolution[5cm]
+
+\tcblower
+\textbf{Réponses :}
+\begin{enumerate}
+    \item $\tan 25° = 0{,}466 < \mu_s = 0{,}6$, donc la caisse \textbf{reste en place}.
+    \item $f_s = mg\sin 25° = 150 \times 9{,}81 \times 0{,}423 = \SI{622}{N}$
+    \item $\theta_{max} = \arctan(0{,}6) = 31{,}0°$
+\end{enumerate}
+\end{pratiqueautonome}

@@ -1,261 +1,504 @@
 % =============================================================================
-% SECTION 1 - LES FONDEMENTS
+% SECTION 1 - LES FONDEMENTS DE LA DYNAMIQUE
+% Blocs 1 et 2 (4 heures - Semaine 5)
 % =============================================================================
 
 \section{Les fondements de la dynamique}
 \label{sec:fondements}
 
-% -----------------------------------------------------------------------------
+% =============================================================================
 \subsection{Introduction : pourquoi étudier la dynamique?}
-\label{subsec:intro}
-% -----------------------------------------------------------------------------
+\label{subsec:intro-dynamique}
+% =============================================================================
+
+Au chapitre précédent, nous avons appris à \textbf{décrire} le mouvement : position, vitesse, accélération. Mais nous n'avons jamais posé la question fondamentale : \textit{pourquoi} les objets bougent-ils? Qu'est-ce qui \textit{cause} le mouvement?
+
+C'est exactement ce que la \textbf{dynamique} cherche à expliquer.
+
+\begin{definition}[title=Dynamique]
+La \textbf{dynamique} est la branche de la mécanique qui étudie les \textbf{causes} du mouvement. Elle répond aux questions :
+\begin{itemize}
+    \item Pourquoi un objet accélère-t-il?
+    \item Quelle force faut-il pour produire un mouvement donné?
+    \item Pourquoi certains objets restent-ils immobiles?
+\end{itemize}
+\end{definition}
 
 \subsubsection*{La dynamique au cœur du métier d'officier de marine}
 
-En tant que futur officier de navigation, vous serez responsable de navires dont la masse peut atteindre des centaines de milliers de tonnes. Contrairement à une automobile qui peut s'arrêter en quelques mètres, un pétrolier lancé à pleine vitesse peut nécessiter plusieurs kilomètres pour s'immobiliser. Pourquoi? La réponse se trouve dans ce chapitre.
+En tant que futur officier de navigation, vous serez responsable de navires dont la masse peut atteindre des centaines de milliers de tonnes. Contrairement à une automobile qui peut s'arrêter en quelques mètres, un pétrolier lancé à pleine vitesse peut nécessiter \textbf{plusieurs kilomètres} pour s'immobiliser.
 
-La dynamique — l'étude des causes du mouvement — vous permettra de comprendre :
+Pourquoi une telle différence? La réponse se trouve dans ce chapitre.
+
+\begin{remarque}[title=Questions auxquelles vous saurez répondre]
+À la fin de ce chapitre, vous pourrez expliquer :
 \begin{itemize}
     \item Pourquoi un navire met si longtemps à s'arrêter ou à changer de cap
     \item Comment calculer les forces dans les amarres qui retiennent votre navire au quai
-    \item Pourquoi la cargaison non arrimée se déplace dangereusement lors des manœuvres
+    \item Pourquoi la cargaison mal arrimée se déplace dangereusement lors des manœuvres
     \item Les forces en jeu lorsque votre navire affronte une tempête
-    \item La physique derrière les vents et les courants que vous utiliserez pour naviguer
+    \item Pourquoi un virage serré peut faire chavirer un navire
 \end{itemize}
-
-Mais avant d'aborder les lois qui gouvernent le mouvement, il est essentiel de comprendre pourquoi notre intuition nous trompe si souvent en physique.
-
-\subsubsection*{D'Aristote à Newton : une révolution de la pensée}
-
-Pendant près de deux mille ans, la physique occidentale a été dominée par les idées d'Aristote (384--322 av. J.-C.). Sa vision du mouvement, bien que fausse, correspond remarquablement bien à notre intuition quotidienne. C'est précisément pour cette raison qu'elle est si difficile à abandonner.
-
-\begin{remarque}[title=La physique d'Aristote]
-Selon Aristote, le mouvement « naturel » des objets terrestres est de tomber vers le centre de la Terre (leur « lieu naturel »), puis de s'y immobiliser. Tout autre mouvement est « violent » et nécessite une cause permanente : \textbf{pour qu'un objet continue de bouger, il faut continuellement exercer une force sur lui}.
-
-Cette vision semble logique! Quand vous poussez une boîte sur le plancher et que vous arrêtez de pousser, la boîte s'arrête. Quand vous pédalez sur un vélo et que vous arrêtez, le vélo ralentit puis s'immobilise. Il semble bien qu'il faille une force pour maintenir le mouvement.
 \end{remarque}
 
-Le problème avec la physique aristotélicienne, c'est qu'elle confond deux choses : le mouvement lui-même et les forces de friction qui s'opposent au mouvement. Aristote ne pouvait pas facilement éliminer la friction de ses expériences, alors il l'a intégrée inconsciemment dans sa théorie.
+% =============================================================================
+\subsection{D'Aristote à Newton : une révolution de la pensée}
+\label{subsec:aristote-newton}
+% =============================================================================
 
-C'est Galilée (1564--1642) qui a eu l'intuition géniale de se demander : « Que se passerait-il si on pouvait éliminer complètement la friction? » En étudiant des billes roulant sur des plans inclinés de plus en plus lisses, il a conclu qu'un objet en mouvement sur une surface parfaitement horizontale et sans friction continuerait indéfiniment à la même vitesse.
+Avant d'énoncer les lois du mouvement, il est essentiel de comprendre pourquoi notre intuition nous trompe si souvent en physique. Pendant près de deux mille ans, la physique occidentale a été dominée par les idées d'Aristote --- et ces idées correspondent remarquablement bien à ce que nous observons au quotidien.
 
-\begin{definition}[title=Le mouvement naturel selon Galilée et Newton]
-Contrairement à ce qu'Aristote pensait, le mouvement « naturel » d'un objet libre de toute force n'est pas le repos, mais le \textbf{mouvement rectiligne uniforme} — c'est-à-dire en ligne droite et à vitesse constante. Un objet au repos est simplement un cas particulier où cette vitesse constante est nulle.
-\end{definition}
+\subsubsection*{La physique d'Aristote (384--322 av. J.-C.)}
 
-Cette idée révolutionnaire est au cœur de la mécanique newtonienne que nous allons étudier.
+\begin{remarque}[title=La vision aristotélicienne du mouvement]
+Selon Aristote, le mouvement « naturel » des objets terrestres est de tomber vers le centre de la Terre (leur « lieu naturel »), puis de s'y immobiliser. Tout autre mouvement est « violent » et nécessite une cause permanente.
 
-% -----------------------------------------------------------------------------
-\subsection{La masse et l'inertie}
-\label{subsec:masse_inertie}
-% -----------------------------------------------------------------------------
-
-Vous avez certainement remarqué qu'il est plus difficile de pousser une voiture qu'une bicyclette, même sur une surface parfaitement lisse. Cette résistance au changement de vitesse porte un nom : l'\textbf{inertie}.
-
-\begin{definition}[title=L'inertie]
-L'\textbf{inertie} est la tendance naturelle de tout objet matériel à résister aux changements de son état de mouvement. Un objet au repos tend à rester au repos. Un objet en mouvement tend à continuer en ligne droite à la même vitesse.
-
-L'inertie n'est pas une force — c'est une \textbf{propriété fondamentale de la matière}.
-\end{definition}
-
-\begin{attention}[title=L'inertie n'est PAS une force!]
-C'est une erreur très répandue de parler de « force d'inertie ». Quand vous êtes dans un autobus qui freine brusquement et que vous vous sentez « projeté » vers l'avant, \textbf{aucune force ne vous pousse}. 
-
-Ce qui se passe réellement : l'autobus ralentit (une force de freinage agit sur lui), mais votre corps, lui, veut continuer à la même vitesse qu'avant — c'est son inertie. Vous n'êtes pas poussé vers l'avant; c'est l'autobus qui ralentit pendant que vous continuez tout droit. La « force » que vous ressentez n'est qu'une illusion due au fait que vous observez le monde depuis un référentiel (l'autobus) qui est en train d'accélérer.
-\end{attention}
-
-% -----------------------------------------------------------------------------
-\subsection{La masse et l'inertie}
-\label{subsec:masse_inertie}
-% -----------------------------------------------------------------------------
-
-Vous avez certainement remarqué qu'il est plus difficile de pousser une voiture qu'une bicyclette, même sur une surface parfaitement lisse. Cette résistance au changement de vitesse porte un nom : l'\textbf{inertie}.
-
-\begin{definition}[title=L'inertie]
-L'\textbf{inertie} est la tendance naturelle de tout objet matériel à résister aux changements de son état de mouvement. Un objet au repos tend à rester au repos. Un objet en mouvement tend à continuer en ligne droite à la même vitesse.
-
-L'inertie n'est pas une force — c'est une \textbf{propriété fondamentale de la matière}.
-\end{definition}
-
-\begin{attention}[title=L'inertie n'est PAS une force!]
-C'est une erreur très répandue de parler de « force d'inertie ». Quand vous êtes dans un autobus qui freine brusquement et que vous vous sentez « projeté » vers l'avant, \textbf{aucune force ne vous pousse}. 
-
-Ce qui se passe réellement : l'autobus ralentit (une force de freinage agit sur lui), mais votre corps, lui, veut continuer à la même vitesse qu'avant — c'est son inertie. Vous n'êtes pas poussé vers l'avant; c'est l'autobus qui ralentit pendant que vous continuez tout droit. La « force » que vous ressentez n'est qu'une illusion due au fait que vous observez le monde depuis un référentiel (l'autobus) qui est en train d'accélérer.
-\end{attention}
-
-\subsubsection*{La masse : mesure de l'inertie}
-
-Comment quantifier l'inertie d'un objet? C'est le rôle de la \textbf{masse}.
-
-\begin{definition}[title=La masse]
-La \textbf{masse} $m$ d'un objet est la mesure quantitative de son inertie — c'est-à-dire de sa résistance aux changements de vitesse. Plus un objet est massif, plus il est difficile de modifier sa vitesse.
-
-L'unité de masse dans le système international est le \textbf{kilogramme} (kg).
-\end{definition}
-
-La masse est une propriété \textbf{intrinsèque} d'un objet : elle ne dépend pas de l'endroit où l'objet se trouve. Votre masse est la même sur Terre, sur la Lune, ou dans l'espace. En revanche, votre \textit{poids} (que nous définirons plus loin) varie selon l'intensité de la gravité locale.
-
-% -----------------------------------------------------------------------------
-\subsection{Les trois lois de Newton}
-\label{subsec:lois_newton}
-% -----------------------------------------------------------------------------
-
-En 1687, Isaac Newton publia son œuvre majeure, les \textit{Philosophiae Naturalis Principia Mathematica} (Principes mathématiques de la philosophie naturelle). Dans cet ouvrage, il énonça trois lois qui décrivent avec une précision remarquable le mouvement de tous les objets, de la pomme qui tombe à la Lune qui orbite autour de la Terre.
-
-\begin{remarque}[title=Des lois empiriques]
-Les trois lois de Newton ne sont pas des vérités mathématiques qu'on peut démontrer. Ce sont des \textbf{lois empiriques}, c'est-à-dire des énoncés basés sur l'observation minutieuse de la nature et vérifiés expérimentalement d'innombrables fois.
-
-Depuis plus de 300 ans, ces lois ont été testées dans des contextes extraordinairement variés : chute des corps, mouvement des planètes, collision de particules, fonctionnement des moteurs, trajectoire des projectiles... Elles fonctionnent remarquablement bien pour décrire tous les phénomènes de la vie quotidienne et de la navigation maritime.
-
-Ce n'est qu'aux échelles extrêmes (très grandes vitesses proches de celle de la lumière, ou très petites dimensions subatomiques) que des corrections deviennent nécessaires. Pour tout ce qui concerne la navigation, les lois de Newton sont parfaitement adéquates.
+\textbf{Conclusion d'Aristote :} Pour qu'un objet continue de bouger, il faut continuellement exercer une force sur lui.
 \end{remarque}
 
-% --- PREMIÈRE LOI ---
-
-\begin{loinewton}[title=Première loi de Newton -- Principe d'inertie]
-\textit{Tout objet persévère dans son état de repos ou de mouvement rectiligne uniforme, à moins qu'une force résultante non nulle ne le contraigne à changer d'état.}
-\end{loinewton}
-
-Cette loi nous dit que le mouvement « par défaut » d'un objet — en l'absence de toute force — est le mouvement rectiligne uniforme (MRU). Le repos n'est qu'un cas particulier du MRU, celui où la vitesse est nulle.
-
-\subsubsection*{Pourquoi cette loi n'est-elle pas évidente?}
-
-Dans notre expérience quotidienne, les objets en mouvement finissent toujours par s'arrêter. Une balle qui roule sur le sol ralentit puis s'immobilise. Un navire dont on coupe les moteurs finit par s'arrêter. Cela semble contredire la première loi!
-
-La clé, c'est que ces objets ne sont \textbf{jamais} libres de toute force. La friction de l'air, la résistance de l'eau, le frottement avec le sol — ces forces s'opposent constamment au mouvement. C'est pourquoi les objets ralentissent. Mais si on pouvait éliminer toutes ces forces, l'objet continuerait indéfiniment à la même vitesse.
-
-\begin{exemple}[title=L'outil qui tombe du mât]
-Imaginez un navire qui avance à 10 nœuds (environ 5~m/s). Un matelot au sommet du mât, à 30 mètres de hauteur, échappe accidentellement une clé à molette. Où va-t-elle tomber?
-
-Notre intuition aristotélicienne pourrait nous faire croire que la clé tombera à l'arrière du navire, puisque le navire « avance » pendant que la clé tombe. Mais ce n'est pas ce qui se passe!
-
-La clé tombe \textbf{au pied du mât}, exactement comme si le navire était immobile.
-
-Pourquoi? Avant d'être lâchée, la clé se déplaçait déjà avec le navire à 10 nœuds. Quand le matelot la lâche, aucune force horizontale n'agit sur elle (négligeons la résistance de l'air). Selon la première loi de Newton, elle conserve donc sa vitesse horizontale de 10 nœuds pendant toute sa chute. Le navire avance à 10 nœuds, la clé aussi — ils restent synchronisés.
-
-C'est Galilée qui a compris ce phénomène, réfutant ainsi un argument courant contre le mouvement de la Terre.
-\end{exemple}
-
-\begin{exemple}[title=Le canon vers l'est et vers l'ouest]
-Un argument historique contre la rotation de la Terre allait comme suit : si la Terre tourne vers l'est, alors un boulet de canon tiré vers l'ouest devrait aller plus loin (la cible « s'enfuit »), tandis qu'un boulet tiré vers l'est devrait aller moins loin (la cible « vient vers nous »).
-
-Or, l'expérience montre que les deux boulets parcourent la même distance!
-
-L'explication est similaire : le canon, le boulet et la cible partagent tous la même vitesse due à la rotation de la Terre. Le boulet conserve cette vitesse (première loi) en plus de la vitesse que le canon lui communique. Tout le système est cohérent.
-\end{exemple}
-
-\subsubsection*{Vers la notion de référentiel inertiel}
-
-La première loi de Newton fait plus que décrire le comportement des objets : elle définit implicitement ce qu'est un « bon » référentiel pour faire de la physique.
-
-\begin{definition}[title=Référentiel inertiel]
-Un \textbf{référentiel inertiel} est un référentiel dans lequel la première loi de Newton est valide — c'est-à-dire un référentiel où tout objet libre de forces se déplace en mouvement rectiligne uniforme (ou reste au repos).
-\end{definition}
-
-Un référentiel attaché à la Terre est approximativement inertiel pour la plupart des applications pratiques. Un référentiel attaché à un manège en rotation ne l'est pas : dans ce référentiel, les objets semblent dévier de leur trajectoire rectiligne sans qu'aucune force « réelle » ne les y contraigne.
-
-% --- DEUXIÈME LOI ---
-
-\begin{loinewton}[title=Deuxième loi de Newton -- Principe fondamental de la dynamique]
-\textit{L'accélération d'un objet est directement proportionnelle à la force résultante qui agit sur lui et inversement proportionnelle à sa masse.}
-\begin{equation}
-    \boxed{\sum \vect{F} = m\vect{a}}
-    \label{eq:newton2}
-\end{equation}
-\end{loinewton}
-
-Nous savons maintenant que la tendance naturelle d'un objet est de conserver sa vitesse (première loi). La question suivante est donc : \textbf{que se passe-t-il quand une force agit sur un objet?}
-
-La réponse est simple et puissante : une force change la vitesse de l'objet. Elle lui communique une \textbf{accélération}.
-
-Cette équation est \textbf{vectorielle}. Cela signifie que :
+Cette vision semble parfaitement logique! Observez autour de vous :
 \begin{itemize}
-    \item L'accélération $\vect{a}$ a la même direction que la force résultante $\sum\vect{F}$.
-    \item Si vous poussez un objet vers le nord, il accélère vers le nord.
-    \item Si plusieurs forces agissent simultanément, c'est leur \textit{somme vectorielle} qui détermine l'accélération.
+    \item Quand vous poussez une boîte et que vous arrêtez de pousser, la boîte s'arrête.
+    \item Quand vous pédalez sur un vélo et que vous arrêtez, le vélo ralentit puis s'immobilise.
+    \item Un navire dont on coupe les moteurs finit par s'arrêter.
 \end{itemize}
 
-En pratique, on décompose souvent cette équation selon les axes $x$ et $y$ :
-\begin{align}
-    \sum F_x &= ma_x \\
-    \sum F_y &= ma_y
-\end{align}
+Il semble bien qu'il faille une force pour \textit{maintenir} le mouvement, n'est-ce pas?
 
-% --- TROISIÈME LOI ---
+\subsubsection*{Le problème caché : le frottement}
 
-\begin{loinewton}[title=Troisième loi de Newton -- Principe d'action-réaction]
-\textit{Lorsqu'un objet A exerce une force sur un objet B, l'objet B exerce simultanément sur l'objet A une force de même module et de direction opposée.}
+Le problème avec la physique aristotélicienne, c'est qu'elle \textbf{confond deux choses} : le mouvement lui-même et les forces de friction qui s'opposent au mouvement. Aristote ne pouvait pas facilement éliminer la friction de ses expériences, alors il l'a intégrée inconsciemment dans sa théorie.
+
+\begin{center}
+\begin{tikzpicture}[scale=1.0]
+    % Titre
+    \node[font=\bfseries] at (0, 3.2) {Ce qu'Aristote voyait};
+    \node[font=\bfseries] at (7, 3.2) {Ce qui se passe réellement};
+    
+    % Gauche : vision d'Aristote
+    \begin{scope}[xshift=0cm]
+        % Sol
+        \fill[gray!20] (-2, 0) rectangle (2, -0.3);
+        \draw[thick] (-2, 0) -- (2, 0);
+        
+        % Boîte
+        \draw[thick, fill=blue!20] (-0.5, 0) rectangle (0.5, 0.8);
+        \node at (0, 0.4) {$m$};
+        
+        % Force de poussée
+        \draw[-{Stealth[length=3mm]}, very thick, red] (-1.5, 0.4) -- (-0.6, 0.4);
+        \node[red, above] at (-1.05, 0.5) {$\vec{F}$};
+        
+        % Mouvement
+        \draw[-{Stealth[length=2mm]}, thick, purple] (0.6, 0.4) -- (1.4, 0.4);
+        \node[purple, above] at (1.0, 0.5) {$\vec{v}$};
+        
+        % Texte
+        \node[text width=4cm, align=center] at (0, -1.2) {\small « La force cause le mouvement »};
+    \end{scope}
+    
+    % Droite : réalité
+    \begin{scope}[xshift=7cm]
+        % Sol rugueux
+        \fill[gray!20] (-2, 0) rectangle (2, -0.3);
+        \draw[thick] (-2, 0) -- (2, 0);
+        \foreach \x in {-1.8, -1.4, -1.0, -0.6, -0.2, 0.2, 0.6, 1.0, 1.4, 1.8} {
+            \draw[gray] (\x, 0) -- (\x+0.15, -0.15);
+        }
+        
+        % Boîte
+        \draw[thick, fill=blue!20] (-0.5, 0) rectangle (0.5, 0.8);
+        \node at (0, 0.4) {$m$};
+        
+        % Force de poussée
+        \draw[-{Stealth[length=3mm]}, very thick, red] (-1.5, 0.4) -- (-0.6, 0.4);
+        \node[red, above] at (-1.05, 0.5) {$\vec{F}$};
+        
+        % Frottement (opposé au mouvement)
+        \draw[-{Stealth[length=3mm]}, very thick, orange] (0.5, 0.15) -- (-0.3, 0.15);
+        \node[orange, below] at (0.1, 0.1) {$\vec{f}$};
+        
+        % Mouvement
+        \draw[-{Stealth[length=2mm]}, thick, purple] (0.6, 0.6) -- (1.4, 0.6);
+        \node[purple, above] at (1.0, 0.7) {$\vec{v}$};
+        
+        % Texte
+        \node[text width=4cm, align=center] at (0, -1.2) {\small La force $\vec{F}$ compense le frottement $\vec{f}$};
+    \end{scope}
+\end{tikzpicture}
+\end{center}
+
+\subsubsection*{Galilée et l'expérience de pensée}
+
+Au début du XVIIe siècle, Galilée (1564--1642) a eu une idée révolutionnaire : \textit{et si on pouvait éliminer le frottement?}
+
+Il a imaginé une bille roulant sur un plan incliné parfaitement lisse. Si on lance la bille vers le bas d'une pente, elle accélère. Si on la lance vers le haut, elle décélère. Mais si le plan est parfaitement horizontal et sans friction... la bille devrait continuer indéfiniment à la même vitesse!
+
+\begin{center}
+\begin{tikzpicture}[scale=0.9]
+    % Plan incliné descendant
+    \begin{scope}[xshift=-4cm]
+        \draw[thick, fill=gray!10] (0, 2) -- (3, 0) -- (3, -0.2) -- (0, 1.8) -- cycle;
+        \shade[ball color=blue!50] (1.0, 1.55) circle (0.2);
+        \draw[-{Stealth}, thick, purple] (1.2, 1.45) -- (2.0, 0.92);
+        \node[below] at (1.5, -0.5) {\small Descente : accélère};
+    \end{scope}
+    
+    % Plan horizontal
+    \begin{scope}[xshift=0cm]
+        \draw[thick, fill=gray!10] (0, 0) rectangle (3, -0.2);
+        \shade[ball color=blue!50] (0.8, 0.4) circle (0.2);
+        \draw[-{Stealth}, thick, purple] (1.0, 0.4) -- (2.2, 0.4);
+        \node[below] at (1.5, -0.5) {\small Horizontal : vitesse constante!};
+    \end{scope}
+    
+    % Plan incliné montant
+    \begin{scope}[xshift=4cm]
+        \draw[thick, fill=gray!10] (0, 0) -- (3, 2) -- (3, 1.8) -- (0, -0.2) -- cycle;
+        \shade[ball color=blue!50] (1.0, 0.87) circle (0.2);
+        \draw[-{Stealth}, thick, purple] (1.2, 1.0) -- (2.0, 1.53);
+        \node[below] at (1.5, -0.5) {\small Montée : décélère};
+    \end{scope}
+\end{tikzpicture}
+\end{center}
+
+\begin{attention}[title=La révolution galiléenne]
+Galilée a compris que \textbf{le mouvement à vitesse constante ne nécessite aucune force}. Une force est nécessaire uniquement pour \textbf{changer} la vitesse (accélérer ou décélérer), pas pour la maintenir.
+
+Quand vous poussez une boîte et qu'elle s'arrête après que vous cessez de pousser, ce n'est pas parce que « le mouvement a besoin d'une force » --- c'est parce que le \textbf{frottement} exerce une force qui décélère la boîte!
+\end{attention}
+
+% =============================================================================
+\subsection{L'inertie}
+\label{subsec:inertie}
+% =============================================================================
+
+La découverte de Galilée a mené à un concept fondamental : l'\textbf{inertie}.
+
+\begin{definition}[title=Inertie]
+L'\textbf{inertie} est la tendance naturelle d'un objet à \textbf{résister aux changements} de son état de mouvement.
+
+\begin{itemize}
+    \item Un objet au repos tend à rester au repos.
+    \item Un objet en mouvement tend à continuer en ligne droite à vitesse constante.
+\end{itemize}
+\end{definition}
+
+L'inertie explique de nombreux phénomènes quotidiens :
+
+\begin{itemize}
+    \item Quand un autobus freine brusquement, les passagers sont « projetés » vers l'avant --- en réalité, ils continuent simplement tout droit pendant que l'autobus décélère sous eux.
+    
+    \item Quand un navire vire à tribord, la cargaison non arrimée glisse vers bâbord --- elle tend à continuer en ligne droite.
+    
+    \item Un pétrolier de 300\,000 tonnes met plusieurs kilomètres à s'arrêter --- son énorme inertie résiste au changement de vitesse.
+\end{itemize}
+
+\begin{attention}[title=L'inertie n'est PAS une force!]
+Erreur très fréquente : considérer l'inertie comme une « force » qui pousse les objets. 
+
+\textbf{L'inertie n'est pas une force.} C'est une \textbf{propriété} de la matière. Dire qu'un passager est « poussé » vers l'avant quand l'autobus freine est incorrect : personne ne le pousse, il continue simplement tout droit par inertie pendant que l'autobus ralentit.
+
+Dans un diagramme de corps libre, on ne dessine \textbf{jamais} l'inertie comme une force!
+\end{attention}
+
+\begin{pratiqueautonome}[title=Démystifier nos intuitions]
+
+\textbf{Vrai ou Faux?} Pour chaque énoncé, indiquez s'il est vrai ou faux selon la physique newtonienne (pas selon l'intuition aristotélicienne!). Justifiez brièvement.
+
+\begin{enumerate}
+    \item Pour qu'un objet se déplace à vitesse constante, il faut exercer une force constante sur lui.
+    
+    \item Un objet qui avance est nécessairement soumis à une force qui le pousse.
+    
+    \item L'inertie est une force qui s'oppose au mouvement.
+    
+    \item Un passager « projeté vers l'avant » quand l'autobus freine est poussé par une force.
+    
+    \item Plus un objet est massif, plus il est difficile de changer sa vitesse.
+    
+    \item Un navire qui avance à 15 nœuds en ligne droite subit nécessairement une force résultante non nulle.
+\end{enumerate}
+
+\tcblower
+\textbf{Réponses :}
+\begin{enumerate}
+    \item \textbf{FAUX} — À vitesse constante, la force résultante est nulle. Si vous devez pousser pour maintenir la vitesse, c'est pour compenser le frottement.
+    \item \textbf{FAUX} — Un objet peut continuer à avancer par inertie, sans qu'aucune force ne le pousse. C'est exactement ce que Galilée a compris!
+    \item \textbf{FAUX} — L'inertie est une propriété, pas une force. On ne la dessine jamais sur un DCL.
+    \item \textbf{FAUX} — Aucune force ne le pousse. Il continue tout droit par inertie pendant que l'autobus décélère.
+    \item \textbf{VRAI} — C'est la définition même de l'inertie : plus la masse est grande, plus la résistance au changement est grande.
+    \item \textbf{FAUX} — Vitesse constante en ligne droite = MRU = force résultante nulle.
+\end{enumerate}
+\end{pratiqueautonome}
+
+% =============================================================================
+\subsection{La masse : mesure de l'inertie}
+\label{subsec:masse}
+% =============================================================================
+
+Si l'inertie est la tendance à résister au changement, comment la quantifier? C'est là qu'intervient la \textbf{masse}.
+
+\begin{definition}[title=Masse]
+La \textbf{masse} est la mesure quantitative de l'inertie d'un objet. Plus un objet est massif, plus il résiste aux changements de son état de mouvement.
+
+\begin{itemize}
+    \item Symbole : $m$
+    \item Unité SI : le \textbf{kilogramme} (kg)
+    \item La masse est un \textbf{scalaire} (toujours positif)
+    \item La masse est une propriété \textbf{intrinsèque} : elle ne dépend pas du lieu
+\end{itemize}
+\end{definition}
+
+\begin{remarque}[title=Masse vs poids : première distinction]
+La \textbf{masse} et le \textbf{poids} sont deux concepts différents :
+\begin{itemize}
+    \item La \textbf{masse} mesure l'inertie. Elle est la même partout dans l'univers.
+    \item Le \textbf{poids} est la force gravitationnelle exercée sur un objet. Il dépend du lieu.
+\end{itemize}
+
+Un astronaute de masse $m = \SI{80}{kg}$ a la même masse sur Terre, sur la Lune ou dans l'espace. Mais son poids est différent à chaque endroit!
+
+Nous reviendrons en détail sur cette distinction dans la section sur les forces.
+\end{remarque}
+
+% =============================================================================
+\subsection{Les trois lois de Newton}
+\label{subsec:lois-newton}
+% =============================================================================
+
+Isaac Newton (1642--1727) a synthétisé les travaux de Galilée et ses propres découvertes en trois lois fondamentales, publiées en 1687 dans les \textit{Principia Mathematica}. Ces trois lois constituent le fondement de toute la mécanique classique.
+
+% -----------------------------------------------------------------------------
+\subsubsection{Première loi de Newton (principe d'inertie)}
+\label{subsubsec:premiere-loi}
+% -----------------------------------------------------------------------------
+
+\begin{definition}[title=Première loi de Newton]
+\textbf{Tout objet persévère dans son état de repos ou de mouvement rectiligne uniforme, à moins qu'une force extérieure n'agisse sur lui.}
+
+En d'autres termes : si la somme des forces sur un objet est nulle, alors :
+\begin{itemize}
+    \item S'il était au repos, il reste au repos.
+    \item S'il était en mouvement, il continue en ligne droite à vitesse constante.
+\end{itemize}
+
+\begin{equationimportante}
+\begin{equation}
+    \sum \vect{F} = \vect{0} \quad \Longleftrightarrow \quad \vect{a} = \vect{0} \quad \text{(repos ou MRU)}
+\end{equation}
+\end{equationimportante}
+\end{definition}
+
+Cette loi formalise ce que Galilée avait compris : le mouvement à vitesse constante est l'état « naturel » d'un objet libre de toute force. Il n'y a pas besoin de force pour maintenir le mouvement --- seulement pour le \textit{changer}.
+
+\begin{remarque}[title=Référentiels inertiels]
+La première loi n'est valide que dans certains référentiels appelés \textbf{référentiels inertiels} (ou galiléens). Un référentiel inertiel est un référentiel dans lequel un objet libre de toute force reste au repos ou en MRU.
+
+Pour nos applications, la surface de la Terre est une bonne approximation d'un référentiel inertiel (les effets de la rotation terrestre sont négligeables à notre échelle).
+\end{remarque}
+
+% -----------------------------------------------------------------------------
+\subsubsection{Deuxième loi de Newton (loi fondamentale)}
+\label{subsubsec:deuxieme-loi}
+% -----------------------------------------------------------------------------
+
+La première loi nous dit ce qui se passe quand la force résultante est nulle. Mais que se passe-t-il quand elle ne l'est pas?
+
+\begin{definition}[title=Deuxième loi de Newton]
+\textbf{L'accélération d'un objet est directement proportionnelle à la force résultante qui s'exerce sur lui, et inversement proportionnelle à sa masse.}
+
+\begin{equationimportante}
+\begin{equation}
+    \boxed{\sum \vect{F} = m \vect{a}}
+    \label{eq:deuxieme-loi}
+\end{equation}
+\end{equationimportante}
+
+où :
+\begin{itemize}
+    \item $\sum \vect{F}$ est la somme vectorielle de toutes les forces (en newtons, N)
+    \item $m$ est la masse de l'objet (en kilogrammes, kg)
+    \item $\vect{a}$ est l'accélération résultante (en m/s²)
+\end{itemize}
+\end{definition}
+
+Cette équation est probablement la plus importante de toute la mécanique. Elle établit le lien quantitatif entre force, masse et accélération :
+
+\begin{itemize}
+    \item Plus la force est grande, plus l'accélération est grande (proportionnalité directe).
+    \item Plus la masse est grande, plus l'accélération est petite (proportionnalité inverse).
+\end{itemize}
+
+\begin{remarque}[title=Le newton]
+L'unité de force, le \textbf{newton} (N), est définie à partir de la deuxième loi :
+\[
+    \SI{1}{N} = \SI{1}{kg \cdot m/s^2}
+\]
+
+Un newton est la force nécessaire pour donner à une masse de 1 kg une accélération de 1 m/s².
+
+\textbf{Ordre de grandeur :} Une pomme pèse environ 1 N. Un humain de 70 kg pèse environ 700 N.
+\end{remarque}
+
+\begin{exemple}{Accélération d'un navire}{accel-navire}
+Un remorqueur de masse $m = \SI{500}{tonnes} = \SI{5,0e5}{kg}$ est propulsé par une force de poussée $F = \SI{100}{kN}$. En négligeant la résistance de l'eau au démarrage, quelle est son accélération initiale?
+
+\textbf{Solution :}
+
+On applique la deuxième loi de Newton :
+\[
+    a = \frac{F}{m} = \frac{\SI{100e3}{N}}{\SI{5,0e5}{kg}} = \SI{0,20}{m/s^2}
+\]
+
+\textbf{Interprétation :} Le remorqueur gagne $\SI{0,20}{m/s}$ de vitesse chaque seconde. Pour atteindre $\SI{10}{m/s}$ (environ 20 nœuds), il lui faudrait $t = \frac{\SI{10}{m/s}}{\SI{0,20}{m/s^2}} = \SI{50}{s}$ en l'absence de résistance.
+
+En réalité, la résistance de l'eau augmente avec la vitesse et limite la vitesse maximale atteignable.
+\end{exemple}
+
+% -----------------------------------------------------------------------------
+\subsubsection{Troisième loi de Newton (action-réaction)}
+\label{subsubsec:troisieme-loi}
+% -----------------------------------------------------------------------------
+
+\begin{definition}[title=Troisième loi de Newton]
+\textbf{Quand un objet A exerce une force sur un objet B, l'objet B exerce simultanément sur l'objet A une force égale en module mais de sens opposé.}
+
+\begin{equationimportante}
 \begin{equation}
     \boxed{\vect{F}_{A \to B} = -\vect{F}_{B \to A}}
-    \label{eq:newton3}
+    \label{eq:troisieme-loi}
 \end{equation}
-\end{loinewton}
+\end{equationimportante}
+\end{definition}
 
-La troisième loi de Newton est peut-être la moins bien comprise des trois, car elle défie souvent notre intuition.
+Les forces d'action et de réaction possèdent les caractéristiques suivantes :
 
-\begin{remarque}[title=Seul dans un univers vide]
-Imaginez que vous flottez seul dans un univers complètement vide. Pas de sol sous vos pieds. Pas d'air autour de vous. Pas d'étoiles, pas de planètes, rien. Juste vous, immobile dans le vide infini.
+\begin{enumerate}
+    \item Elles ont le \textbf{même module} (même « force »).
+    \item Elles ont la \textbf{même direction} (même ligne d'action).
+    \item Elles ont des \textbf{sens opposés}.
+    \item Elles agissent sur des \textbf{objets différents}.
+    \item Elles apparaissent et disparaissent \textbf{simultanément}.
+\end{enumerate}
 
-Comment pourriez-vous vous mettre en mouvement?
+\begin{center}
+\begin{tikzpicture}[scale=1.0]
+    % Navire (simplifié)
+    \begin{scope}[xshift=0cm]
+        \draw[thick, fill=gray!30, rounded corners=2pt] (-1.5, 0) -- (2, 0) -- (2.5, 0.3) -- (2, 0.6) -- (-1.5, 0.6) -- (-1.8, 0.3) -- cycle;
+        \node at (0.3, 0.3) {\small Navire};
+        
+        % Hélice
+        \draw[thick, fill=blue!20] (-1.8, 0.15) -- (-2.3, 0.3) -- (-1.8, 0.45) -- cycle;
+    \end{scope}
+    
+    % Forces
+    \draw[-{Stealth[length=4mm]}, very thick, red] (-2.3, 0.3) -- (-4, 0.3);
+    \node[red, above] at (-3.15, 0.4) {$\vect{F}_{\text{hélice} \to \text{eau}}$};
+    
+    \draw[-{Stealth[length=4mm]}, very thick, blue] (-1.5, 0.3) -- (0.5, 0.3);
+    \node[blue, below] at (-0.5, 0.2) {$\vect{F}_{\text{eau} \to \text{navire}}$};
+    
+    % Eau (vagues symboliques)
+    \draw[thick, blue!50] (-4.5, -0.3) sin (-4, -0.1) cos (-3.5, -0.3) sin (-3, -0.1) cos (-2.5, -0.3);
+    \draw[thick, blue!50] (2.5, -0.3) sin (3, -0.1) cos (3.5, -0.3) sin (4, -0.1) cos (4.5, -0.3);
+    
+    % Annotation
+    \node[text width=8cm, align=center] at (0, -1.2) {\small L'hélice pousse l'eau vers l'arrière; en réaction, l'eau pousse le navire vers l'avant.};
+\end{tikzpicture}
+\end{center}
 
-La réponse est troublante : \textbf{vous ne pouvez pas}. Il vous est absolument impossible de changer votre vitesse. Vous n'avez rien sur quoi pousser, rien à lancer, rien avec quoi interagir.
+\begin{exemple}{Propulsion d'un navire}{propulsion}
+Comment un navire avance-t-il? L'hélice, en tournant, pousse l'eau vers l'arrière. Par la troisième loi de Newton, l'eau exerce une force égale et opposée sur l'hélice (donc sur le navire), le propulsant vers l'avant.
 
-Cette expérience de pensée illustre un fait fondamental : \textbf{pour exercer une force, il faut deux objets}. Une force est toujours le résultat d'une interaction entre deux corps.
-\end{remarque}
+La force exercée par l'hélice sur l'eau est exactement égale à la force exercée par l'eau sur le navire. Mais l'eau, ayant accès à tout l'océan, ne semble pas accélérer de façon perceptible, tandis que le navire, lui, avance.
 
-Et voici le point crucial : si deux objets interagissent, cette interaction est \textbf{nécessairement réciproque}. Vous ne pouvez pas pousser sur quelque chose sans que ce quelque chose vous pousse en retour.
-
-Caractéristiques essentielles d'une paire action-réaction :
-\begin{itemize}
-    \item Les deux forces ont \textbf{exactement le même module}.
-    \item Les deux forces ont des \textbf{directions exactement opposées}.
-    \item Les deux forces agissent sur des \textbf{objets différents}.
-    \item Les deux forces sont de \textbf{même nature} (toutes deux gravitationnelles, toutes deux de contact, etc.).
-    \item Les deux forces existent \textbf{simultanément} — l'une n'existe pas sans l'autre.
-\end{itemize}
-
-\subsubsection*{Pourquoi notre intuition nous trompe}
-
-\begin{exemple}[title=Le camion et la voiture]
-Un camion de 10 tonnes percute une voiture de 1 tonne. La voiture est complètement détruite, tandis que le camion n'a qu'une bosse sur le pare-chocs. Il semble évident que le camion a frappé la voiture plus fort que la voiture n'a frappé le camion, non?
-
-\textbf{Faux!} Les deux forces sont exactement égales en module : $F_{\text{camion} \to \text{voiture}} = F_{\text{voiture} \to \text{camion}}$.
-
-Alors pourquoi la voiture est-elle plus endommagée? Parce que les \textit{accélérations} sont différentes! Selon la deuxième loi : $a = F/m$. Avec la même force $F$, la voiture (masse plus petite) subit une accélération 10 fois plus grande que le camion. C'est cette accélération violente qui cause les dégâts, pas une différence de force.
+C'est le même principe pour la marche : vous poussez le sol vers l'arrière avec votre pied, et le sol vous pousse vers l'avant.
 \end{exemple}
 
-\begin{exemple}[title=Comment un navire avance-t-il?]
-Les hélices d'un navire poussent l'eau vers l'arrière. Par la troisième loi, l'eau pousse les hélices (et donc le navire) vers l'avant. C'est cette réaction de l'eau qui propulse le navire!
+\begin{attention}[title=Le poids et la force de la table ne forment PAS une paire action-réaction]
+Quand un livre est posé sur une table, deux forces agissent \textbf{sur le livre} : son poids (vers le bas) et la force que la table exerce sur lui (vers le haut). Ces deux forces sont égales en module et opposées en direction, donc le livre reste immobile.
 
-La force exercée par les hélices sur l'eau est exactement égale à la force exercée par l'eau sur le navire. Mais l'eau, ayant accès à tout l'océan, ne semble pas accélérer de façon perceptible, tandis que le navire, lui, avance.
-\end{exemple}
+\textbf{Mais ces deux forces ne forment PAS une paire action-réaction!}
 
-\begin{attention}[title=Le poids et la normale ne forment PAS une paire action-réaction]
-Quand un livre est posé sur une table, deux forces agissent sur le livre : son poids (vers le bas) et la normale de la table (vers le haut). Ces deux forces sont égales en module et opposées en direction, donc le livre est en équilibre.
+Elles agissent toutes les deux sur le \textbf{même objet} (le livre), ce qui viole la caractéristique fondamentale des paires action-réaction (qui doivent agir sur des objets \textit{différents}).
 
-Mais attention! Ces deux forces ne forment \textbf{pas} une paire action-réaction. Elles agissent toutes les deux sur le \textit{même objet} (le livre), ce qui viole une des caractéristiques des paires action-réaction.
+\begin{center}
+\begin{tikzpicture}[scale=0.9]
+    % Table
+    \fill[brown!30] (-2, 0) rectangle (2, -0.3);
+    \draw[thick] (-2, 0) -- (2, 0);
+    \fill[pattern=north east lines, pattern color=brown!50] (-2, -0.3) rectangle (2, -0.5);
+    
+    % Livre
+    \draw[thick, fill=blue!20] (-0.8, 0) rectangle (0.8, 0.5);
+    \node at (0, 0.25) {\small Livre};
+    
+    % Forces sur le livre
+    \draw[-{Stealth[length=3mm]}, very thick, red] (0, 0.25) -- (0, -1.0);
+    \node[red, right] at (0.1, -0.4) {$\vect{F}_g$ (poids)};
+    
+    \draw[-{Stealth[length=3mm]}, very thick, green!60!black] (0, 0.25) -- (0, 1.5);
+    \node[green!60!black, right] at (0.1, 0.9) {$\vect{F}_{\text{table}}$};
+    
+    % Annotation
+    \node[text width=6cm, align=center] at (0, -1.8) {\small Ces deux forces agissent sur le \textbf{même objet}. Ce ne sont \textbf{pas} des forces action-réaction!};
+\end{tikzpicture}
+\end{center}
 
-Les vraies paires action-réaction sont :
+Les \textbf{vraies} paires action-réaction sont :
 \begin{itemize}
     \item Le poids du livre (Terre $\to$ livre) et l'attraction du livre sur la Terre (livre $\to$ Terre)
-    \item La normale de la table sur le livre (table $\to$ livre) et la force du livre sur la table (livre $\to$ table)
+    \item La force de la table sur le livre (table $\to$ livre) et la force du livre sur la table (livre $\to$ table)
 \end{itemize}
 \end{attention}
 
-% -----------------------------------------------------------------------------
+\begin{pratiqueautonome}[title=Identifier les paires action-réaction]
+
+Pour chaque situation, identifiez la paire action-réaction associée à la force mentionnée.
+
+\begin{enumerate}
+    \item La Terre attire une pomme vers le bas.
+    
+    \item Un joueur de hockey frappe la rondelle avec son bâton.
+    
+    \item Un remorqueur tire un navire avec un câble.
+    
+    \item Les roues d'une voiture poussent le sol vers l'arrière.
+    
+    \item Un plongeur pousse sur le tremplin vers le bas.
+\end{enumerate}
+
+\tcblower
+\textbf{Réponses :}
+\begin{enumerate}
+    \item La pomme attire la Terre vers le haut (avec la même force!).
+    \item La rondelle exerce une force sur le bâton (c'est pourquoi on « sent » le choc).
+    \item Le navire tire le remorqueur vers l'arrière (via le même câble).
+    \item Le sol pousse les roues (donc la voiture) vers l'avant.
+    \item Le tremplin pousse le plongeur vers le haut (c'est ce qui le propulse).
+\end{enumerate}
+\end{pratiqueautonome}
+
+% =============================================================================
 \subsection{L'équilibre : un cas particulier de la première loi}
-\label{subsec:equilibre}
-% -----------------------------------------------------------------------------
+\label{subsec:equilibre-intro}
+% =============================================================================
 
 La première loi de Newton nous dit qu'un objet reste au repos (ou en MRU) si aucune force résultante n'agit sur lui. Mais que se passe-t-il si \textit{plusieurs} forces agissent sur un objet, mais que leur somme vectorielle est nulle? L'objet reste également en équilibre!
 
 \begin{definition}[title=Équilibre de translation]
 Un objet est en \textbf{équilibre de translation} si et seulement si la somme vectorielle de toutes les forces qui agissent sur lui est nulle :
+
+\begin{equationimportante}
 \begin{equation}
     \boxed{\sum \vect{F} = \vect{0}}
     \label{eq:equilibre}
 \end{equation}
-En composantes :
+\end{equationimportante}
+
+En composantes cartésiennes :
 \begin{align}
     \sum F_x &= 0 \\
     \sum F_y &= 0
@@ -264,32 +507,18 @@ En composantes :
 
 Un objet en équilibre peut être :
 \begin{itemize}
-    \item \textbf{Au repos} — et il restera au repos (équilibre statique)
-    \item \textbf{En mouvement rectiligne uniforme} — et il continuera ainsi (équilibre dynamique)
+    \item \textbf{Au repos} — et il restera au repos (\textbf{équilibre statique})
+    \item \textbf{En mouvement rectiligne uniforme} — et il continuera ainsi (\textbf{équilibre dynamique})
 \end{itemize}
 
-\begin{remarque}
-L'équilibre ne signifie pas « immobile »! Un navire qui avance en ligne droite à vitesse constante est en équilibre : la poussée des moteurs est exactement compensée par la résistance de l'eau. Un parachutiste en chute à vitesse terminale est aussi en équilibre : son poids est compensé par la résistance de l'air.
+\begin{remarque}[title=L'équilibre ne signifie pas « immobile »]
+Un navire qui avance en ligne droite à vitesse constante est en équilibre : la poussée des moteurs est exactement compensée par la résistance de l'eau.
+
+Un parachutiste en chute à vitesse terminale est aussi en équilibre : son poids est compensé par la résistance de l'air.
+
+Dans les deux cas, $\sum \vect{F} = \vect{0}$ même si l'objet est en mouvement!
 \end{remarque}
 
 L'étude des systèmes en équilibre statique (au repos) s'appelle la \textbf{statique}. C'est un cas particulier de la dynamique où l'accélération est nulle. Les conditions d'équilibre ($\sum F_x = 0$ et $\sum F_y = 0$) nous permettent de calculer des forces inconnues dans des systèmes comme les câbles de suspension, les amarres de navire, ou les structures en général.
 
-% -----------------------------------------------------------------------------
-% PRATIQUE AUTONOME - Section 1
-% -----------------------------------------------------------------------------
-
-\begin{pratiqueautonome}[title=Pratique autonome 2.1 — Les lois de Newton]
-\textbf{Vrai ou Faux.} Justifiez brièvement vos réponses.
-
-\begin{enumerate}
-    \item Un objet au repos est nécessairement en équilibre.
-    \item Un objet en mouvement est nécessairement soumis à une force résultante non nulle.
-    \item L'inertie est une force qui s'oppose au mouvement.
-    \item Dans une collision entre un camion et une voiture, le camion exerce une plus grande force sur la voiture que l'inverse.
-    \item Le poids d'un objet et la normale exercée par une table sur cet objet forment une paire action-réaction.
-    \item Un passager « projeté vers l'avant » dans un autobus qui freine est poussé par une force.
-\end{enumerate}
-
-\tcblower
-\textit{Réponses :} 1) V \quad 2) F \quad 3) F \quad 4) F \quad 5) F \quad 6) F
-\end{pratiqueautonome}
+Nous approfondirons l'équilibre et la résolution de problèmes de statique après avoir étudié les différents types de forces.

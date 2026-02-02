@@ -1,212 +1,332 @@
 % =============================================================================
-% SECTION 2 - LA BOÎTE À OUTILS DES FORCES
+% SECTION 2 - LES FORCES
+% Blocs 2 et 3 (suite) - Semaine 5
 % =============================================================================
 
-\section{La « boîte à outils » des forces}
+\section{Les forces}
 \label{sec:forces}
 
-Maintenant que nous comprenons les trois lois de Newton, nous devons identifier les forces courantes que nous rencontrerons dans les problèmes de mécanique. Ces forces sont des manifestations macroscopiques d'interactions fondamentales entre les particules qui constituent la matière.
+Maintenant que nous comprenons les lois de Newton, il est temps de dresser l'inventaire des forces que nous rencontrerons en mécanique. Connaître ces forces --- leur origine, leur direction, leur formule --- est essentiel pour résoudre tout problème de dynamique ou de statique.
 
-Avant de détailler chaque force, rappelons ce qu'est une force.
+% =============================================================================
+\subsection{Le poids et la gravitation}
+\label{subsec:poids}
+% =============================================================================
 
-\begin{definition}[title=La force]
-Une \textbf{force} est une action exercée par un objet sur un autre, qui se manifeste par une poussée ou une traction. Une force tend à modifier l'état de mouvement d'un objet ou à le déformer.
+\subsubsection{La gravitation universelle}
 
-Les forces sont \textbf{invisibles}. On ne peut pas voir une force, la toucher ou la peser directement. Ce qu'on observe, ce sont les \textit{effets} des forces : un objet qui accélère, qui ralentit, qui change de direction, ou qui se déforme.
-
-L'unité de force dans le système international est le \textbf{newton} (N).
-\end{definition}
-
-Les forces sont des \textbf{grandeurs vectorielles}. Une force possède :
-\begin{itemize}
-    \item Un \textbf{module} (son intensité) — combien de newtons
-    \item Une \textbf{direction} — vers où elle pointe
-    \item Un \textbf{point d'application} — où elle s'exerce sur l'objet
-\end{itemize}
-
-La somme de toutes les forces agissant sur un objet s'appelle la \textbf{force résultante} :
-\begin{equation}
-    \vect{F}_{\text{rés}} = \sum \vect{F} = \vect{F}_1 + \vect{F}_2 + \vect{F}_3 + \cdots
-\end{equation}
-
-% -----------------------------------------------------------------------------
-\subsection{La gravité et le poids}
-\label{subsec:gravite}
-% -----------------------------------------------------------------------------
-
-\subsubsection*{La loi de la gravitation universelle}
-
-L'une des plus grandes réalisations de Newton fut de comprendre que la force qui fait tomber une pomme est \textit{la même} que celle qui maintient la Lune en orbite autour de la Terre. Avant Newton, on pensait que les « lois célestes » étaient différentes des « lois terrestres ». Newton unifia ces deux mondes en une seule loi.
+En 1687, Newton a proposé une loi décrivant l'attraction gravitationnelle entre deux masses quelconques :
 
 \begin{definition}[title=Loi de la gravitation universelle]
 Deux objets de masses $m_1$ et $m_2$, séparés par une distance $r$ (mesurée entre leurs centres), s'attirent mutuellement avec une force :
+
+\begin{equationimportante}
 \begin{equation}
-    \boxed{F_g = G\frac{m_1 m_2}{r^2}}
+    F_g = G \frac{m_1 m_2}{r^2}
     \label{eq:gravitation}
 \end{equation}
-où $G = 6{,}67 \times 10^{-11}~\text{N}\cdot\text{m}^2/\text{kg}^2$ est la \textbf{constante de gravitation universelle}.
+\end{equationimportante}
+
+où $G = \SI{6,674e-11}{N \cdot m^2/kg^2}$ est la \textbf{constante gravitationnelle universelle}.
 \end{definition}
 
-Cette loi est remarquable à plusieurs égards :
-\begin{itemize}
-    \item Elle est \textbf{universelle} : elle s'applique à tous les objets possédant une masse, des pommes aux galaxies.
-    \item La force est \textbf{attractive} : les masses s'attirent toujours, jamais ne se repoussent.
-    \item La force décroît avec le carré de la distance : si on double la distance, la force est divisée par 4.
-    \item Elle respecte la troisième loi de Newton : $m_1$ attire $m_2$ avec la même force que $m_2$ attire $m_1$.
-\end{itemize}
+Cette loi explique aussi bien la chute d'une pomme que le mouvement des planètes autour du Soleil. C'est une force \textbf{toujours attractive} : les masses s'attirent, elles ne se repoussent jamais.
 
-\begin{remarque}[title=Newton et Kepler]
-Avec cette loi et ses trois lois du mouvement, Newton put démontrer mathématiquement les trois lois empiriques que Kepler avait découvertes en observant les planètes. C'est l'un des plus grands triomphes de la physique : des phénomènes aussi différents que la chute d'une pierre et l'orbite de Mars s'expliquent par les mêmes principes fondamentaux.
-\end{remarque}
+\subsubsection{Le poids : cas particulier près de la Terre}
 
-\subsubsection*{Le poids : la gravité près de la surface terrestre}
-
-Considérons un objet de masse $m$ situé près de la surface de la Terre. La Terre (masse $M_T = 5{,}97 \times 10^{24}$~kg, rayon $R_T = 6{,}37 \times 10^6$~m) attire cet objet avec une force :
-\[
-F_g = G\frac{M_T \cdot m}{R_T^2} = \left(G\frac{M_T}{R_T^2}\right) \cdot m
-\]
-
-Le terme entre parenthèses ne dépend que des propriétés de la Terre. On le note $g$ :
-\[
-g = G\frac{M_T}{R_T^2} = 6{,}67 \times 10^{-11} \times \frac{5{,}97 \times 10^{24}}{(6{,}37 \times 10^6)^2} = 9{,}81~\text{m/s}^2
-\]
-
-C'est l'\textbf{accélération gravitationnelle} à la surface de la Terre.
+Près de la surface de la Terre, la distance $r$ entre un objet et le centre de la Terre est approximativement constante (le rayon terrestre $R_T \approx \SI{6371}{km}$). On peut alors simplifier l'expression de la force gravitationnelle :
 
 \begin{definition}[title=Le poids]
-Le \textbf{poids} $\vect{F}_g$ (ou $\vect{P}$) est la force gravitationnelle exercée par la Terre sur un objet situé près de sa surface :
+Le \textbf{poids} d'un objet est la force gravitationnelle exercée par la Terre sur cet objet :
+
+\begin{equationimportante}
 \begin{equation}
-    \boxed{F_g = mg \qquad \text{où} \quad g = 9{,}81~\text{m/s}^2}
+    \boxed{F_g = mg}
     \label{eq:poids}
 \end{equation}
-Cette force est appliquée au centre de masse de l'objet et est toujours dirigée vers le centre de la Terre (c'est-à-dire vers le bas).
+\end{equationimportante}
+
+où :
+\begin{itemize}
+    \item $m$ est la masse de l'objet (en kg)
+    \item $g = \SI{9,81}{m/s^2}$ est l'accélération gravitationnelle près de la surface terrestre
+    \item $F_g$ est exprimé en newtons (N)
+\end{itemize}
+
+\textbf{Direction :} Le poids est \textbf{toujours dirigé vers le centre de la Terre}, c'est-à-dire verticalement vers le bas.
 \end{definition}
 
-\begin{attention}[title=Masse et poids : ne pas confondre!]
+\begin{remarque}[title=D'où vient $g = \SI{9,81}{m/s^2}$?]
+En combinant la loi de la gravitation universelle avec $F_g = mg$, on obtient :
+\[
+    g = \frac{G M_T}{R_T^2} = \frac{(\SI{6,674e-11}{}) \times (\SI{5,972e24}{kg})}{(\SI{6,371e6}{m})^2} \approx \SI{9,81}{m/s^2}
+\]
+
+La valeur de $g$ varie légèrement selon l'altitude et la latitude :
+\begin{itemize}
+    \item Au niveau de la mer à l'équateur : $g \approx \SI{9,78}{m/s^2}$
+    \item Au niveau de la mer aux pôles : $g \approx \SI{9,83}{m/s^2}$
+    \item À $\SI{10}{km}$ d'altitude : $g \approx \SI{9,78}{m/s^2}$
+\end{itemize}
+
+Pour nos calculs, nous utiliserons $g = \SI{9,81}{m/s^2}$ ou $g \approx \SI{10}{m/s^2}$ pour les estimations rapides.
+\end{remarque}
+
+\begin{attention}[title=Masse vs Poids : la distinction fondamentale]
 \begin{center}
-\renewcommand{\arraystretch}{1.5}
-\begin{tabular}{|l|c|c|}
+\renewcommand{\arraystretch}{1.4}
+\begin{tabular}{|L{6cm}|C{4cm}|C{4cm}|}
 \hline
 \rowcolor{bleuclair} & \textbf{Masse} & \textbf{Poids} \\
 \hline
 Nature & Propriété intrinsèque & Force \\
 \hline
-Mesure & L'inertie & L'attraction gravitationnelle \\
+Symbole & $m$ & $F_g$ ou $P$ \\
 \hline
 Unité SI & kilogramme (kg) & newton (N) \\
 \hline
-Varie-t-elle selon le lieu? & Non & Oui \\
+Dépend du lieu? & Non & Oui \\
+\hline
+Type de grandeur & Scalaire & Vecteur \\
 \hline
 \end{tabular}
 \end{center}
 
-Un astronaute de 80~kg a une masse de 80~kg partout dans l'univers. Sur Terre, son poids est $80 \times 9{,}81 = 785$~N. Sur la Lune, où $g \approx 1{,}6~\text{m/s}^2$, son poids n'est que de 128~N. Dans l'espace loin de tout astre, son poids est essentiellement nul — mais sa masse reste 80~kg.
+Un astronaute de $\SI{80}{kg}$ a toujours une masse de $\SI{80}{kg}$, que ce soit sur Terre, sur la Lune ou dans l'espace. Mais son poids est :
+\begin{itemize}
+    \item Sur Terre : $F_g = 80 \times 9,81 = \SI{785}{N}$
+    \item Sur la Lune : $F_g = 80 \times 1,62 = \SI{130}{N}$
+    \item En orbite (« apesanteur ») : $F_g \approx \SI{0}{N}$ (en chute libre)
+\end{itemize}
 \end{attention}
 
-% -----------------------------------------------------------------------------
+% =============================================================================
+\subsection{La force normale}
+\label{subsec:normale}
+% =============================================================================
+
+Quand un objet est en contact avec une surface, cette surface exerce une force sur l'objet. La composante de cette force qui est \textbf{perpendiculaire} à la surface s'appelle la \textbf{force normale}.
+
+\begin{definition}[title=Force normale]
+La \textbf{force normale} $\vect{N}$ est la force exercée par une surface sur un objet en contact avec elle.
+
+\begin{itemize}
+    \item \textbf{Direction :} Toujours \textbf{perpendiculaire} à la surface
+    \item \textbf{Sens :} Vers l'\textbf{extérieur} de la surface (pousse l'objet, ne le tire pas)
+    \item \textbf{Module :} À déterminer par les conditions d'équilibre ou la 2e loi
+\end{itemize}
+\end{definition}
+
+\begin{center}
+\begin{tikzpicture}[scale=1.0]
+    % Surface horizontale
+    \begin{scope}[xshift=-4cm]
+        \fill[gray!20] (-1.5, 0) rectangle (1.5, -0.3);
+        \draw[thick] (-1.5, 0) -- (1.5, 0);
+        
+        % Bloc
+        \draw[thick, fill=blue!20] (-0.5, 0) rectangle (0.5, 0.7);
+        \node at (0, 0.35) {\small $m$};
+        
+        % Normale
+        \draw[-{Stealth[length=3mm]}, very thick, green!60!black] (0, 0.35) -- (0, 1.5);
+        \node[green!60!black, right] at (0.1, 1.0) {$\vect{N}$};
+        
+        % Poids
+        \draw[-{Stealth[length=3mm]}, very thick, red] (0, 0.35) -- (0, -0.8);
+        \node[red, right] at (0.1, -0.3) {$\vect{F}_g$};
+        
+        \node[below] at (0, -1.3) {\small Surface horizontale};
+        \node[below] at (0, -1.8) {\small $N = mg$};
+    \end{scope}
+    
+    % Surface inclinée
+    \begin{scope}[xshift=0cm]
+        % Plan incliné
+        \fill[gray!20] (-1.5, 0) -- (1.5, 0) -- (1.5, 1.5) -- cycle;
+        \draw[thick] (-1.5, 0) -- (1.5, 1.5);
+        
+        % Angle
+        \draw[thick] (-0.8, 0) arc (0:26.57:0.7);
+        \node at (-0.4, 0.2) {\small $\theta$};
+        
+        % Bloc (sur la pente)
+        \begin{scope}[rotate=26.57, shift={(0, 0.35)}]
+            \draw[thick, fill=blue!20] (-0.35, 0) rectangle (0.35, 0.5);
+            \node at (0, 0.25) {\small $m$};
+        \end{scope}
+        
+        % Normale (perpendiculaire à la pente)
+        \draw[-{Stealth[length=3mm]}, very thick, green!60!black] (-0.15, 0.75) -- (-0.75, 1.95);
+        \node[green!60!black, above left] at (-0.5, 1.4) {$\vect{N}$};
+        
+        % Poids (vertical vers le bas)
+        \draw[-{Stealth[length=3mm]}, very thick, red] (-0.15, 0.75) -- (-0.15, -0.45);
+        \node[red, right] at (-0.05, 0.1) {$\vect{F}_g$};
+        
+        \node[below] at (0, -1.3) {\small Plan incliné};
+        \node[below] at (0, -1.8) {\small $N = mg\cos\theta$};
+    \end{scope}
+    
+    % Mur vertical
+    \begin{scope}[xshift=4cm]
+        % Mur
+        \fill[gray!20] (0.5, -0.5) rectangle (0.8, 2);
+        \draw[thick] (0.5, -0.5) -- (0.5, 2);
+        
+        % Bloc poussé contre le mur
+        \draw[thick, fill=blue!20] (-0.2, 0.5) rectangle (0.5, 1.2);
+        \node at (0.15, 0.85) {\small $m$};
+        
+        % Force appliquée
+        \draw[-{Stealth[length=3mm]}, very thick, purple] (-1.0, 0.85) -- (-0.3, 0.85);
+        \node[purple, above] at (-0.65, 0.9) {$\vect{F}$};
+        
+        % Normale (horizontale, vers la gauche)
+        \draw[-{Stealth[length=3mm]}, very thick, green!60!black] (0.15, 0.85) -- (-0.65, 0.85);
+        \node[green!60!black, below] at (-0.25, 0.75) {$\vect{N}$};
+        
+        \node[below] at (0.15, -1.3) {\small Mur vertical};
+        \node[below] at (0.15, -1.8) {\small $N = F$};
+    \end{scope}
+\end{tikzpicture}
+\end{center}
+
+\subsubsection*{L'origine physique de la normale}
+
+À l'échelle microscopique, la force normale provient de la \textbf{répulsion électromagnétique} entre les nuages électroniques des atomes. Quand vous posez un livre sur une table, les électrons du livre repoussent les électrons de la table --- c'est cette répulsion qui empêche le livre de traverser la table!
+
+\begin{attention}[title=La normale n'est pas toujours égale au poids!]
+Sur une surface horizontale sans autres forces verticales, on a effectivement $N = mg$. Mais ce n'est \textbf{pas} une formule générale!
+
+\begin{itemize}
+    \item Sur un plan incliné : $N = mg\cos\theta < mg$
+    \item Si on pousse l'objet vers le bas : $N > mg$
+    \item Si on tire l'objet vers le haut : $N < mg$
+    \item Dans un ascenseur qui accélère vers le haut : $N > mg$
+\end{itemize}
+
+\textbf{La normale est toujours déterminée par les équations de Newton}, jamais par une formule mémorisée.
+\end{attention}
+
+% =============================================================================
 \subsection{La tension}
 \label{subsec:tension}
-% -----------------------------------------------------------------------------
+% =============================================================================
 
-\begin{definition}[title=La tension]
-La \textbf{tension} $\vect{T}$ est la force exercée par une corde, un câble, une chaîne ou une amarre sur un objet auquel elle est attachée. La tension est :
+\begin{definition}[title=Tension]
+La \textbf{tension} $\vect{T}$ est la force exercée par une corde, un câble, une chaîne ou tout objet flexible sur un objet auquel il est attaché.
+
 \begin{itemize}
-    \item Appliquée au point d'attache
-    \item Toujours parallèle à la corde
-    \item Dirigée de l'objet vers la corde (elle « tire » sur l'objet, jamais ne pousse)
+    \item \textbf{Direction :} Parallèle à la corde, le long de celle-ci
+    \item \textbf{Sens :} La tension \textbf{tire} toujours l'objet (une corde ne peut pas pousser!)
+    \item \textbf{Module :} À déterminer par les conditions d'équilibre ou la 2e loi
 \end{itemize}
 \end{definition}
 
-Dans les situations idéalisées (corde de masse négligeable, sans friction dans les poulies), la tension est la même en tout point de la corde. On dit que la corde « transmet » la force d'un bout à l'autre.
+\begin{center}
+\begin{tikzpicture}[scale=1.0]
+    % Support
+    \fill[gray!50] (-0.3, 2.5) rectangle (0.3, 3);
+    \draw[thick] (-0.5, 2.5) -- (0.5, 2.5);
+    
+    % Corde
+    \draw[thick, brown] (0, 2.5) -- (0, 1);
+    
+    % Masse suspendue
+    \draw[thick, fill=blue!20] (-0.4, 0.3) rectangle (0.4, 1);
+    \node at (0, 0.65) {\small $m$};
+    
+    % Tension sur la masse
+    \draw[-{Stealth[length=3mm]}, very thick, orange] (0, 0.65) -- (0, 1.8);
+    \node[orange, right] at (0.1, 1.3) {$\vect{T}$};
+    
+    % Poids
+    \draw[-{Stealth[length=3mm]}, very thick, red] (0, 0.65) -- (0, -0.5);
+    \node[red, right] at (0.1, 0.0) {$\vect{F}_g$};
+    
+    % Annotation
+    \node[text width=5cm, align=center] at (0, -1.5) {\small La corde tire la masse vers le haut avec une tension $T = mg$ (équilibre)};
+\end{tikzpicture}
+\end{center}
 
-\begin{exemple}
-Sur un navire à quai, les amarres exercent des tensions sur le navire et sur les bollards du quai. Si une amarre exerce une tension de 50~kN sur le navire, elle exerce également une tension de 50~kN sur le bollard (troisième loi de Newton). La corde est « sous tension » de 50~kN.
-\end{exemple}
+\subsubsection*{Hypothèse de la corde idéale}
 
-% -----------------------------------------------------------------------------
-\subsection{La normale}
-\label{subsec:normale}
-% -----------------------------------------------------------------------------
+Dans ce cours, nous considérerons généralement des cordes \textbf{idéales} :
 
-Quand vous posez un livre sur une table, pourquoi ne traverse-t-il pas la table? Quelque chose doit s'opposer au poids du livre et le maintenir en place. Cette force s'appelle la \textbf{normale}.
-
-\begin{definition}[title=La normale]
-La \textbf{normale} $\vect{N}$ est la force exercée par une surface sur un objet en contact avec elle. Cette force :
 \begin{itemize}
-    \item Est toujours \textbf{perpendiculaire} à la surface de contact (d'où son nom)
-    \item Est dirigée vers l'extérieur de la surface
-    \item Empêche les objets solides de se traverser mutuellement
+    \item \textbf{Masse négligeable} : La corde elle-même ne contribue pas à l'inertie du système.
+    \item \textbf{Inextensible} : La corde ne s'étire pas sous la tension.
+    \item \textbf{Tension uniforme} : La tension est la même partout dans la corde.
 \end{itemize}
-\end{definition}
 
-\subsubsection*{L'origine microscopique de la normale}
+\begin{remarque}[title=Application maritime : les amarres]
+Les amarres d'un navire sont soumises à des tensions considérables. Un navire de croisière de 100\,000 tonnes amarré dans un port peut exercer des forces de plusieurs centaines de kilonewtons sur ses amarres lors de vents forts ou de courants.
 
-À l'échelle atomique, les surfaces solides sont constituées d'atomes dont les électrons forment des « nuages » chargés négativement. Quand deux surfaces s'approchent, leurs nuages électroniques se repoussent mutuellement par répulsion électrostatique.
-
-\begin{remarque}[title=Vous ne touchez jamais vraiment rien!]
-Quand vous posez votre main sur une table, vos atomes ne « touchent » jamais vraiment les atomes de la table. Les nuages électroniques de votre main et de la table se repoussent avant de se toucher réellement. Vous « flottez » à une distance d'environ $10^{-10}$~m (un dixième de nanomètre) au-dessus de la table!
-
-Ce que vous percevez comme le « contact » est en fait cette répulsion électromagnétique entre les électrons des deux surfaces.
+La connaissance des tensions dans les amarres est essentielle pour :
+\begin{itemize}
+    \item Choisir des cordages de résistance appropriée
+    \item Répartir les amarres de façon à équilibrer les forces
+    \item Éviter la rupture des amarres (danger mortel!)
+\end{itemize}
 \end{remarque}
 
-\subsubsection*{La normale est une force de réaction passive}
-
-Un point crucial à comprendre : la normale n'est pas une force « active » que la surface décide d'exercer. C'est une force de \textbf{réaction passive} qui s'ajuste automatiquement pour empêcher la pénétration.
-
-\begin{itemize}
-    \item Si vous posez un livre de 1~kg sur une table, la normale est d'environ 9{,}8~N.
-    \item Si vous posez un livre de 2~kg, la normale devient environ 19{,}6~N.
-    \item Si vous appuyez sur le livre avec votre main (disons 10~N supplémentaires), la normale augmente de 10~N pour compenser.
-\end{itemize}
-
-La normale « fait ce qu'il faut » pour empêcher les objets de se traverser, ni plus, ni moins.
-
-\begin{attention}
-Sur un plan incliné, la normale n'est \textbf{pas} égale au poids! Elle est égale à la composante du poids perpendiculaire à la surface, soit :
-\[ N = mg\cos\theta \]
-où $\theta$ est l'angle d'inclinaison du plan par rapport à l'horizontale.
-\end{attention}
-
-% -----------------------------------------------------------------------------
+% =============================================================================
 \subsection{Le frottement}
 \label{subsec:frottement}
-% -----------------------------------------------------------------------------
+% =============================================================================
 
-\begin{definition}[title=La force de frottement]
-Le \textbf{frottement} $\vect{f}$ est la force qui s'oppose au glissement (ou à la tendance au glissement) entre deux surfaces en contact. Cette force est :
+Quand deux surfaces sont en contact, une force s'oppose au glissement (ou à la tendance au glissement) de l'une sur l'autre : c'est le \textbf{frottement}.
+
+\begin{definition}[title=Force de frottement]
+La \textbf{force de frottement} $\vect{f}$ est une force qui s'oppose au mouvement relatif (ou à la tendance au mouvement) entre deux surfaces en contact.
+
 \begin{itemize}
-    \item Toujours \textbf{parallèle} à la surface de contact
-    \item Toujours \textbf{opposée} au mouvement (ou à la tendance au mouvement)
+    \item \textbf{Direction :} Parallèle à la surface de contact
+    \item \textbf{Sens :} Opposé au mouvement (ou à la tendance au mouvement)
 \end{itemize}
 \end{definition}
-
-Le frottement a également une origine électromagnétique : les aspérités microscopiques des deux surfaces s'accrochent les unes aux autres, et les liaisons chimiques temporaires qui se forment doivent être brisées pour permettre le glissement.
 
 On distingue deux types de frottement sec :
 
-\subsubsection*{Le frottement statique}
+\subsubsection{Le frottement statique}
 
-Le frottement statique agit entre deux surfaces qui ne glissent \textbf{pas} l'une sur l'autre. C'est une force « adaptative » qui s'ajuste pour empêcher le glissement, jusqu'à une valeur maximale :
+Le frottement \textbf{statique} agit entre deux surfaces qui \textbf{ne glissent pas} l'une sur l'autre. C'est une force « adaptative » : elle s'ajuste pour empêcher le glissement, jusqu'à une valeur maximale.
+
+\begin{equationimportante}
 \begin{equation}
     \boxed{f_s \leq \mu_s N}
-    \label{eq:frottement_stat}
+    \label{eq:frottement-statique}
 \end{equation}
-où $\mu_s$ est le \textbf{coefficient de frottement statique} (sans dimension) et $N$ la normale.
+\end{equationimportante}
 
-\subsubsection*{Le frottement cinétique}
+où :
+\begin{itemize}
+    \item $\mu_s$ est le \textbf{coefficient de frottement statique} (sans dimension)
+    \item $N$ est la force normale
+    \item L'inégalité signifie que $f_s$ prend la valeur \textit{nécessaire} pour empêcher le glissement, jusqu'à un maximum de $\mu_s N$
+\end{itemize}
 
-Le frottement cinétique agit entre deux surfaces qui glissent l'une sur l'autre. Son module est essentiellement constant :
+\subsubsection{Le frottement cinétique}
+
+Le frottement \textbf{cinétique} (ou dynamique) agit entre deux surfaces qui \textbf{glissent} l'une sur l'autre. Son module est essentiellement constant :
+
+\begin{equationimportante}
 \begin{equation}
     \boxed{f_c = \mu_c N}
-    \label{eq:frottement_cin}
+    \label{eq:frottement-cinetique}
 \end{equation}
+\end{equationimportante}
+
 où $\mu_c$ est le \textbf{coefficient de frottement cinétique}.
 
-\begin{remarque}
-En général, $\mu_s > \mu_c$ : il est plus difficile de mettre un objet en mouvement que de le maintenir en mouvement. C'est pourquoi un objet qu'on pousse semble « partir » brusquement une fois qu'il commence à glisser — on passe soudainement d'un frottement statique maximal à un frottement cinétique plus faible.
+\begin{remarque}[title=Relation entre $\mu_s$ et $\mu_c$]
+En général, $\mu_s > \mu_c$ : il est plus difficile de \textit{mettre} un objet en mouvement que de le \textit{maintenir} en mouvement.
+
+C'est pourquoi un objet qu'on pousse semble « partir » brusquement une fois qu'il commence à glisser --- on passe soudainement d'un frottement statique maximal à un frottement cinétique plus faible.
 \end{remarque}
 
-Les coefficients de frottement dépendent de la nature des deux surfaces en contact (acier sur acier, caoutchouc sur asphalte, etc.), mais pas de l'aire de contact ni de la vitesse de glissement (en première approximation).
+\subsubsection*{Coefficients de frottement typiques}
 
 \begin{center}
 \renewcommand{\arraystretch}{1.3}
@@ -216,113 +336,172 @@ Les coefficients de frottement dépendent de la nature des deux surfaces en cont
 \hline
 Acier sur acier (sec) & 0,74 & 0,57 \\
 \hline
+Acier sur acier (lubrifié) & 0,15 & 0,06 \\
+\hline
 Caoutchouc sur asphalte (sec) & 0,9 & 0,7 \\
+\hline
+Caoutchouc sur asphalte (mouillé) & 0,7 & 0,5 \\
 \hline
 Bois sur bois & 0,5 & 0,3 \\
 \hline
 Glace sur glace & 0,1 & 0,03 \\
 \hline
+Téflon sur acier & 0,04 & 0,04 \\
+\hline
 \end{tabular}
 \end{center}
 
-% -----------------------------------------------------------------------------
-\subsection{La force centripète}
-\label{subsec:force_centripete}
-% -----------------------------------------------------------------------------
-
-Au chapitre précédent, nous avons vu qu'un objet qui se déplace sur une trajectoire circulaire possède une accélération centripète dirigée vers le centre du cercle, même si sa vitesse (en module) reste constante. Selon la deuxième loi de Newton, cette accélération doit être causée par une force.
-
-\begin{definition}[title=La force centripète]
-La \textbf{force centripète} est la force résultante nécessaire pour maintenir un objet sur une trajectoire circulaire. Elle est toujours dirigée vers le centre de la trajectoire et a pour module :
-\begin{equation}
-    \boxed{F_c = ma_c = m\frac{v^2}{r} = m\omega^2 r}
-    \label{eq:force_centripete}
-\end{equation}
-\end{definition}
-
-Il est crucial de comprendre que la force centripète n'est \textbf{pas} un nouveau type de force. C'est simplement le nom qu'on donne à la composante de la force résultante dirigée vers le centre du cercle. Cette force peut être fournie par :
+\begin{remarque}[title=Ce dont le frottement ne dépend PAS]
+En première approximation (modèle de Coulomb), le frottement :
 \begin{itemize}
-    \item La tension d'une corde (balle attachée qu'on fait tourner)
-    \item Le frottement (voiture dans un virage)
-    \item La gravité (satellite en orbite, Lune autour de la Terre)
-    \item La normale (manège, mur d'un cylindre en rotation)
-    \item Une combinaison de plusieurs forces
+    \item \textbf{Ne dépend pas de l'aire de contact} : Une brique posée à plat ou sur la tranche a le même frottement.
+    \item \textbf{Ne dépend pas de la vitesse de glissement} (pour le frottement cinétique).
 \end{itemize}
 
-\subsubsection*{La « force centrifuge » : ce qu'elle est vraiment}
+Ces approximations sont valables pour le « frottement sec ». Le frottement dans les fluides (air, eau) obéit à des lois différentes.
+\end{remarque}
 
-Quand vous êtes passager dans une voiture qui prend un virage serré, vous avez la sensation d'être « poussé » vers l'extérieur du virage. Cette sensation est souvent attribuée à une « force centrifuge ». Mais cette force existe-t-elle vraiment?
+% =============================================================================
+\subsection{La force centripète}
+\label{subsec:force-centripete}
+% =============================================================================
 
-\begin{attention}[title=La force centrifuge n'est pas une force newtonienne]
-La « force centrifuge » n'est \textbf{pas} une force au sens de Newton. Aucun objet extérieur ne vous pousse vers l'extérieur du virage.
+Au chapitre précédent, nous avons vu qu'un objet en mouvement circulaire possède une \textbf{accélération centripète} dirigée vers le centre du cercle, même si sa vitesse (en module) reste constante. Selon la deuxième loi de Newton, cette accélération \textit{doit} être causée par une force.
 
-Ce que vous ressentez, c'est votre \textbf{inertie}. Selon la première loi de Newton, votre corps veut continuer en ligne droite. Mais la voiture tourne, et le siège vous force à tourner avec elle en exerçant une force centripète sur vous (vers le centre du virage).
+\begin{definition}[title=Force centripète]
+La \textbf{force centripète} est la force résultante nécessaire pour maintenir un objet sur une trajectoire circulaire. Elle est toujours dirigée \textbf{vers le centre} de la trajectoire.
 
-Depuis votre point de vue (référentiel de la voiture), vous semblez être poussé vers l'extérieur. Mais depuis le point de vue d'un observateur immobile sur le bord de la route (référentiel inertiel), c'est simplement la voiture qui tourne autour de vous pendant que vous tentez d'aller tout droit.
+\begin{equationimportante}
+\begin{equation}
+    \boxed{F_c = ma_c = m\frac{v^2}{r} = m\omega^2 r}
+    \label{eq:force-centripete}
+\end{equation}
+\end{equationimportante}
+\end{definition}
 
-La « force centrifuge » est une manifestation de l'inertie observée depuis un référentiel non inertiel.
+\begin{attention}[title=La force centripète n'est PAS un nouveau type de force!]
+La force centripète n'est \textbf{pas} une force supplémentaire à ajouter sur un diagramme de corps libre. C'est simplement le \textbf{nom} qu'on donne à la composante de la force résultante qui est dirigée vers le centre du cercle.
+
+Cette force peut être fournie par :
+\begin{itemize}
+    \item La \textbf{tension} d'une corde (balle au bout d'une ficelle)
+    \item Le \textbf{frottement} (voiture dans un virage)
+    \item La \textbf{gravité} (satellite en orbite)
+    \item La \textbf{normale} (dans un virage bancé)
+    \item Une \textbf{combinaison} de forces
+\end{itemize}
 \end{attention}
 
-\begin{exemple}[title=Cargaison dans un virage]
-Un navire effectue un virage serré. Une caisse mal arrimée sur le pont glisse vers l'extérieur du virage. Que s'est-il passé?
+\begin{center}
+\begin{tikzpicture}[scale=0.9]
+    % Cercle de la trajectoire
+    \draw[dashed, gray] (0,0) circle (2.5);
+    
+    % Centre
+    \fill (0,0) circle (2pt);
+    \node[below] at (0, -0.2) {\small Centre};
+    
+    % Voiture (rectangle)
+    \begin{scope}[rotate=45, shift={(2.5, 0)}]
+        \draw[thick, fill=blue!30, rounded corners=1pt] (-0.3, -0.15) rectangle (0.3, 0.15);
+    \end{scope}
+    
+    % Vitesse (tangente)
+    \draw[-{Stealth[length=3mm]}, very thick, purple] (1.77, 1.77) -- (0.77, 2.77);
+    \node[purple, above] at (1.1, 2.4) {$\vect{v}$};
+    
+    % Force centripète (vers le centre)
+    \draw[-{Stealth[length=3mm]}, very thick, red] (1.77, 1.77) -- (0.6, 0.6);
+    \node[red, below left] at (1.1, 1.1) {$\vect{F}_c$};
+    
+    % Rayon
+    \draw[thick] (0,0) -- (1.77, 1.77);
+    \node at (0.6, 1.1) {$r$};
+    
+    % Annotation
+    \node[text width=6cm, align=center] at (0, -3.5) {\small La force centripète est toujours perpendiculaire à la vitesse et dirigée vers le centre.};
+\end{tikzpicture}
+\end{center}
+
+\subsubsection*{Et la « force centrifuge »?}
+
+Vous avez certainement ressenti cette sensation d'être « poussé vers l'extérieur » dans un virage serré. Pourtant, aucune force ne vous pousse réellement vers l'extérieur!
+
+\begin{remarque}[title=La force centrifuge n'existe pas (dans un référentiel inertiel)]
+Ce que vous ressentez comme une « force centrifuge » est en réalité votre \textbf{inertie} : votre corps tend à continuer en ligne droite, tandis que la voiture tourne sous vous.
+
+Du point de vue du sol (référentiel inertiel), aucune force ne vous pousse vers l'extérieur. C'est le siège et la ceinture qui vous \textit{tirent} vers l'intérieur pour vous faire tourner avec la voiture.
+
+La « force centrifuge » n'apparaît que si vous analysez le mouvement depuis la voiture (référentiel non inertiel), ce que nous n'avons pas besoin de faire dans ce cours.
+\end{remarque}
+
+\begin{exemple}{Cargaison dans un virage}{cargaison-virage}
+Un navire effectue un virage à vitesse constante. Une caisse mal arrimée sur le pont glisse vers l'extérieur du virage. Que s'est-il passé?
 
 \textbf{Analyse incorrecte :} « La force centrifuge a poussé la caisse vers l'extérieur. »
 
-\textbf{Analyse correcte :} Le navire tourne, ce qui nécessite une force centripète pour tout ce qui est à bord. Pour la caisse, cette force devrait être fournie par le frottement avec le pont. Mais si le frottement est insuffisant (caisse mal arrimée, pont glissant), la caisse ne peut pas tourner avec le navire. Selon la première loi de Newton, elle continue donc en ligne droite — ce qui, vu depuis le navire qui tourne, ressemble à un mouvement vers l'extérieur.
+\textbf{Analyse correcte :} Le navire tourne, ce qui nécessite une force centripète pour tout ce qui est à bord. Pour la caisse, cette force devrait être fournie par le \textbf{frottement} avec le pont. Mais si le frottement est insuffisant (caisse mal arrimée, pont glissant), la caisse ne peut pas tourner avec le navire. Selon la première loi de Newton, elle \textbf{continue donc en ligne droite} --- ce qui, vu depuis le navire qui tourne, ressemble à un mouvement vers l'extérieur.
 
-\textbf{Morale :} La cargaison doit être correctement arrimée pour que les forces de friction puissent fournir la force centripète nécessaire lors des manœuvres!
+\textbf{Leçon :} La cargaison doit être correctement arrimée pour que les forces de friction puissent fournir la force centripète nécessaire lors des manœuvres!
 \end{exemple}
 
-% -----------------------------------------------------------------------------
+% =============================================================================
 \subsection{Tableau récapitulatif des forces}
-\label{subsec:tableau_forces}
-% -----------------------------------------------------------------------------
+\label{subsec:tableau-forces}
+% =============================================================================
 
 \begin{center}
-\renewcommand{\arraystretch}{1.8}
-\begin{tabular}{|L{2.8cm}|C{3.5cm}|L{7cm}|}
+\renewcommand{\arraystretch}{2.0}
+\begin{tabular}{|L{2.5cm}|C{3.5cm}|L{7.5cm}|}
 \hline
 \rowcolor{bleuclair} \textbf{Force} & \textbf{Formule} & \textbf{Direction et caractéristiques} \\
 \hline
-Poids & $F_g = mg$ & Toujours vers le bas (centre de la Terre) \\
+\textbf{Poids} & $F_g = mg$ & Toujours verticale, vers le bas (centre de la Terre) \\
 \hline
-Tension & $T$ (à déterminer) & Parallèle à la corde, tire sur l'objet \\
+\textbf{Normale} & $N$ (à déterminer) & Perpendiculaire à la surface, vers l'extérieur \\
 \hline
-Normale & $N$ (à déterminer) & Perpendiculaire à la surface, vers l'extérieur \\
+\textbf{Tension} & $T$ (à déterminer) & Parallèle à la corde, tire sur l'objet \\
 \hline
-Frottement statique & $f_s \leq \mu_s N$ & Parallèle à la surface, oppose la tendance au glissement \\
+\textbf{Frottement statique} & $f_s \leq \mu_s N$ & Parallèle à la surface, oppose la tendance au glissement \\
 \hline
-Frottement cinétique & $f_c = \mu_c N$ & Parallèle à la surface, oppose le mouvement \\
+\textbf{Frottement cinétique} & $f_c = \mu_c N$ & Parallèle à la surface, oppose le mouvement \\
 \hline
-Force centripète & $F_c = m\dfrac{v^2}{r}$ & Vers le centre de la trajectoire circulaire \\
+\textbf{Force centripète} & $F_c = \dfrac{mv^2}{r}$ & Vers le centre de la trajectoire circulaire \\
 \hline
 \end{tabular}
 \end{center}
 
-% -----------------------------------------------------------------------------
-% PRATIQUE AUTONOME - Section 2
-% -----------------------------------------------------------------------------
+\begin{pratiqueautonome}[title=Identification des forces]
 
-\begin{pratiqueautonome}[title=Pratique autonome 2.2 — Identification des forces]
-Pour chaque situation, identifiez \textbf{toutes} les forces agissant sur l'objet indiqué et dessinez un DCL approximatif.
+Pour chaque situation, identifiez \textbf{toutes} les forces agissant sur l'objet indiqué en gras. Précisez la direction de chaque force.
 
 \begin{enumerate}
-    \item Un livre posé sur une table horizontale.
-    \item Une caisse tirée sur le sol par une corde faisant un angle de 30° avec l'horizontale.
-    \item Un bloc immobile sur un plan incliné à 25°.
-    \item Un bloc glissant vers le bas d'un plan incliné à 25° (avec frottement).
-    \item Une voiture prenant un virage horizontal à vitesse constante.
-    \item Un conteneur suspendu par deux câbles faisant des angles différents avec l'horizontale.
+    \item Un \textbf{livre} posé sur une table horizontale.
+    
+    \item Une \textbf{caisse} tirée sur le sol par une corde faisant un angle de 30° avec l'horizontale.
+    
+    \item Un \textbf{bloc} immobile sur un plan incliné à 25°.
+    
+    \item Un \textbf{bloc} glissant vers le bas d'un plan incliné (avec frottement).
+    
+    \item Une \textbf{voiture} prenant un virage horizontal à vitesse constante.
+    
+    \item Un \textbf{conteneur} suspendu par deux câbles faisant des angles différents avec l'horizontale.
 \end{enumerate}
 
 \tcblower
-\textit{Forces à identifier :}
+\textbf{Réponses :}
 \begin{enumerate}
-    \item Poids (bas), Normale (haut)
-    \item Poids (bas), Normale (haut), Tension (30° vers le haut), Frottement (opposé au mouvement)
-    \item Poids (bas), Normale ($\perp$ plan), Frottement statique (// plan, vers le haut)
-    \item Poids (bas), Normale ($\perp$ plan), Frottement cinétique (// plan, vers le haut)
-    \item Poids (bas), Normale (haut), Frottement statique (vers le centre du virage)
-    \item Poids (bas), Tension 1 (vers le câble 1), Tension 2 (vers le câble 2)
+    \item Poids (vers le bas), Normale (vers le haut)
+    
+    \item Poids (vers le bas), Normale (vers le haut), Tension (30° vers le haut-avant), Frottement (opposé au mouvement)
+    
+    \item Poids (vertical, vers le bas), Normale (perpendiculaire au plan), Frottement statique (parallèle au plan, vers le haut)
+    
+    \item Poids (vertical, vers le bas), Normale (perpendiculaire au plan), Frottement cinétique (parallèle au plan, vers le haut)
+    
+    \item Poids (vers le bas), Normale (vers le haut), Frottement statique (horizontal, vers le centre du virage)
+    
+    \item Poids (vers le bas), Tension 1 (vers le câble 1), Tension 2 (vers le câble 2)
 \end{enumerate}
 \end{pratiqueautonome}
