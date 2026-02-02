@@ -1,0 +1,542 @@
+% =============================================================================
+\chapter{Notions fondamentales}
+\label{chap:notions}
+% =============================================================================
+
+% =============================================================================
+\section{Système international d'unités}
+\label{sec:SI}
+% =============================================================================
+
+Le système international d'unités (SI) est le système d'unités le plus largement utilisé dans le monde. Officiellement, seulement trois pays ne l'ont pas adopté : les États-Unis, le Liberia et la Birmanie (Myanmar). Le système international est issu du système métrique, lequel est apparu pendant la Révolution française. Le français demeure à ce jour la langue officielle du système international, ce qui se dénote notamment par l'acronyme « SI », utilisé dans la plupart des langues.
+
+La force du système international est qu'il couvre l'ensemble des domaines tout en étant simple à comprendre et à utiliser, grâce à sa structure qui tire profit de la numération décimale et qui est construite autour de sept unités de base.
+
+% -----------------------------------------------------------------------------
+\subsection{Pourquoi un système d'unités universel?}
+% -----------------------------------------------------------------------------
+
+L'histoire regorge d'exemples où l'absence d'un référent commun a mené à des erreurs coûteuses. Avant la Révolution française, chaque région avait ses propres unités : la « toise » de Paris ne correspondait pas à celle de Bordeaux, et le « pied » variait d'un pays à l'autre. Cette confusion rendait le commerce difficile et les calculs scientifiques hasardeux.
+
+\begin{attention}
+\textbf{La catastrophe du Mars Climate Orbiter (1999)}
+
+Le 23 septembre 1999, la sonde spatiale \textit{Mars Climate Orbiter} de la NASA s'est désintégrée dans l'atmosphère de Mars. Coût de la mission : 125 millions de dollars américains.
+
+La cause? Une erreur de conversion d'unités. L'équipe de Lockheed Martin, qui avait construit la sonde, transmettait les données de poussée des moteurs en \textbf{livre-force par seconde} (lbf$\cdot$s), une unité du système impérial. L'équipe de navigation de la NASA, elle, attendait ces données en \textbf{newton-seconde} (N$\cdot$s), l'unité du système international.
+
+Personne n'a remarqué l'incompatibilité. Pendant des mois, les corrections de trajectoire ont été calculées avec les mauvaises unités. Résultat : au lieu de passer à \SI{150}{\kilo\meter} d'altitude pour se mettre en orbite, la sonde est descendue à \SI{57}{\kilo\meter} et s'est consumée dans l'atmosphère martienne.
+
+Cette catastrophe illustre parfaitement pourquoi, en sciences et en ingénierie, \textbf{l'utilisation rigoureuse du système international est non négociable}.
+\end{attention}
+
+% -----------------------------------------------------------------------------
+\subsection{Grandeur, valeur et unité}
+% -----------------------------------------------------------------------------
+
+Commençons par distinguer trois termes importants :
+
+\begin{definition}
+\begin{itemize}
+    \item \textbf{Grandeur} : une propriété physique qui peut être mesurée ou calculée \textit{(ex.: la longueur, la force, la masse, l'énergie, l'angle)}.
+    
+    \item \textbf{Valeur} : le nombre obtenu pour quantifier la grandeur mesurée ou calculée.
+    
+    \item \textbf{Unité} : accompagne la valeur afin d'expliciter le système de mesures utilisé et la nature de la grandeur.
+\end{itemize}
+\end{definition}
+
+Il est important de toujours accompagner une valeur de son unité lorsque l'on exprime une grandeur, sans quoi elle perd tout son sens. Les grandeurs ($l$, $m$, $g$) sont en italique, alors que les unités associées ne le sont pas. Cela permet d'éviter toute confusion.
+
+% -----------------------------------------------------------------------------
+\subsection{Unités de base du SI}
+% -----------------------------------------------------------------------------
+
+Toutes les unités au sein du SI sont définies à partir de sept \textbf{unités de base}, elles-mêmes définies à partir de constantes fondamentales de la nature depuis la révision de 2019 par le Bureau international des poids et mesures (BIPM).
+
+\begin{table}[H]
+\centering
+\begin{tabular}{@{}llll@{}}
+\toprule
+\textbf{Grandeur} & \textbf{Unité} & \textbf{Symbole} & \textbf{Définition basée sur} \\
+\midrule
+Longueur & mètre & m & vitesse de la lumière ($c = \SI{299792458}{m/s}$) \\
+Masse & kilogramme & kg & constante de Planck ($h$) \\
+Temps & seconde & s & fréquence de l'atome de césium 133 \\
+Courant électrique & ampère & A & charge élémentaire ($e$) \\
+Température & kelvin & K & constante de Boltzmann ($k$) \\
+Quantité de matière & mole & mol & nombre d'Avogadro ($N_A = 6{,}02 \times 10^{23}$) \\
+Intensité lumineuse & candela & cd & efficacité lumineuse \\
+\bottomrule
+\end{tabular}
+\caption{Les sept unités de base du SI}
+\end{table}
+
+\begin{remarque}
+L'unité de base de la masse est le kilogramme et non le gramme ; c'est la seule unité du SI à posséder un préfixe dans sa version de base. Dans ce cours, nous utiliserons principalement le \textbf{mètre}, le \textbf{kilogramme} et la \textbf{seconde}.
+\end{remarque}
+
+Les équations utilisées en physique sont basées sur le SI. Il est donc toujours préférable de convertir les unités dans le système international avant de les insérer dans une équation.
+
+% -----------------------------------------------------------------------------
+\subsection{La notation scientifique}
+% -----------------------------------------------------------------------------
+
+En sciences, on travaille souvent avec des nombres extrêmement grands ou extrêmement petits. Par exemple, la distance Terre-Soleil est d'environ \SI{150000000000}{\meter}, tandis que le diamètre d'un atome est d'environ \SI{0,0000000001}{\meter}. Écrire ces nombres en notation décimale est peu pratique et source d'erreurs.
+
+\begin{definition}
+La \textbf{notation scientifique} exprime un nombre sous la forme :
+\[
+    a \times 10^n
+\]
+où $a$ est la \textbf{mantisse} (un nombre entre 1 et 10) et $n$ est l'\textbf{exposant} (un entier positif ou négatif).
+
+\textbf{Exemples :}
+\begin{itemize}
+    \item Distance Terre-Soleil : $\SI{150000000000}{\meter} = 1{,}50 \times 10^{11}$ m
+    \item Masse d'un électron : $9{,}11 \times 10^{-31}$ kg
+    \item Nombre d'Avogadro : $N_A = 6{,}02 \times 10^{23}$
+\end{itemize}
+\end{definition}
+
+% -----------------------------------------------------------------------------
+\subsection{Les préfixes SI}
+% -----------------------------------------------------------------------------
+
+Le système de préfixes permet de simplifier l'écriture des nombres extrêmement petits ou grands. Chaque préfixe est associé à une puissance de dix. \textbf{L'utilisation des préfixes SI est obligatoire dans ce cours.}
+
+\begin{table}[H]
+\centering
+\small
+\begin{tabular}{@{}lcclcc@{}}
+\toprule
+\textbf{Préfixe} & \textbf{Symbole} & \textbf{Facteur} & \textbf{Préfixe} & \textbf{Symbole} & \textbf{Facteur} \\
+\midrule
+téra  & T & $10^{12}$  & milli & m & $10^{-3}$ \\
+giga  & G & $10^{9}$   & micro & µ & $10^{-6}$ \\
+méga  & M & $10^{6}$   & nano  & n & $10^{-9}$ \\
+kilo  & k & $10^{3}$   & pico  & p & $10^{-12}$ \\
+hecto & h & $10^{2}$   & centi & c & $10^{-2}$ \\
+déca  & da & $10^{1}$  & déci  & d & $10^{-1}$ \\
+\bottomrule
+\end{tabular}
+\caption{Préfixes des multiples et sous-multiples décimaux du SI}
+\label{tab:prefixes}
+\end{table}
+
+\begin{exemple}
+\textbf{Passage entre notation scientifique et préfixes SI}
+
+\begin{enumerate}
+    \item \textbf{De la notation scientifique vers le préfixe :}
+    
+    $d = 3{,}50 \times 10^{6}$ m $\rightarrow$ Exposant 6 = méga $\rightarrow$ $d = \SI{3,50}{\mega\meter}$ (ou \SI{3500}{\kilo\meter})
+    
+    \item \textbf{Du préfixe vers la notation scientifique :}
+    
+    $m = \SI{45,0}{\micro\gram}$ $\rightarrow$ micro = $10^{-6}$ $\rightarrow$ $m = 45{,}0 \times 10^{-6}$ g $= 4{,}50 \times 10^{-5}$ g
+    
+    \item \textbf{Conversion entre préfixes :}
+    
+    $P = \SI{2,35}{\giga\watt}$ en kilowatts?
+    
+    G = $10^9$ et k = $10^3$, donc G = $10^6 \times$ k
+    
+    $P = 2{,}35 \times 10^6$ kW $= \SI{2,35e6}{\kilo\watt}$
+\end{enumerate}
+\end{exemple}
+
+% -----------------------------------------------------------------------------
+\subsection{Équivalences utiles}
+% -----------------------------------------------------------------------------
+
+\begin{table}[H]
+\centering
+\small
+\begin{tabular}{@{}llcl@{}}
+\toprule
+\textbf{Grandeur} & \textbf{Unité} & \textbf{Symbole} & \textbf{Équivalence} \\
+\midrule
+\multirow{4}{*}{Distance} 
+    & mètre        & m   & -- \\
+    & pouce        & po  & 1 po = 0,0254 m \\
+    & pied         & pi  & 1 pi = 0,3048 m \\
+    & mille marin  & NM  & 1 NM = 1852 m \\
+\midrule
+\multirow{2}{*}{Vitesse}
+    & mètre/seconde & m/s & -- \\
+    & nœud         & kn  & 1 kn = 1 NM/h = 0,5144 m/s \\
+\midrule
+\multirow{2}{*}{Masse}
+    & kilogramme   & kg  & -- \\
+    & livre-masse  & lb  & 1 lb $\approx$ 0,4536 kg \\
+\midrule
+\multirow{2}{*}{Force}
+    & newton       & N   & 1 N = 1 kg$\cdot$m/s$^2$ \\
+    & livre-force  & lbf & 1 lbf $\approx$ 4,448 N \\
+\midrule
+\multirow{2}{*}{Pression}
+    & pascal       & Pa  & 1 Pa = 1 N/m$^2$ \\
+    & psi          & psi & 1 psi $\approx$ 6895 Pa \\
+\bottomrule
+\end{tabular}
+\caption{Équivalences courantes entre unités SI et autres systèmes}
+\label{tab:equivalences}
+\end{table}
+
+% -----------------------------------------------------------------------------
+\subsection{Unités dérivées du SI}
+% -----------------------------------------------------------------------------
+
+\begin{table}[H]
+\centering
+\small
+\begin{tabular}{@{}llll@{}}
+\toprule
+\textbf{Unité} & \textbf{Symbole} & \textbf{Grandeur} & \textbf{Équivalence} \\
+\midrule
+radian      & rad  & angle plan              & m/m \\
+hertz       & Hz   & fréquence               & s$^{-1}$ \\
+newton      & N    & force                   & kg$\cdot$m/s$^2$ \\
+pascal      & Pa   & pression                & N/m$^2$ \\
+joule       & J    & énergie, travail        & N$\cdot$m \\
+watt        & W    & puissance               & J/s \\
+coulomb     & C    & charge électrique       & s$\cdot$A \\
+volt        & V    & tension                 & W/A \\
+ohm         & $\Omega$ & résistance électrique & V/A \\
+\bottomrule
+\end{tabular}
+\caption{Unités dérivées du SI utilisées dans le cours}
+\end{table}
+
+% =============================================================================
+\section{Conversions d'unités}
+\label{sec:conversions}
+% =============================================================================
+
+Dans votre formation, vous aurez souvent à convertir des unités :
+\begin{itemize}
+    \item milles nautiques en kilomètres
+    \item nœuds en mètres par seconde
+    \item tours par minute (RPM) en radians par seconde
+    \item livres par pouce carré en pascals
+    \item pieds cubes en mètres cubes
+\end{itemize}
+
+Les équations que nous verrons sont basées sur le SI et il faudra convertir toute grandeur dans ce système avant de l'insérer dans une équation.
+
+% -----------------------------------------------------------------------------
+\subsection{Les facteurs de conversion}
+% -----------------------------------------------------------------------------
+
+Afin de convertir les unités d'une grandeur, il faut multiplier par le \textbf{facteur de conversion}. Les facteurs de conversion sont des quantités égales à 1, obtenues à partir des équivalences entre unités (voir Tableau~\ref{tab:equivalences}).
+
+\begin{equationimportante}
+\textbf{Procédure de conversion d'unités}
+\begin{enumerate}
+    \item \textbf{Écrire} la grandeur avec sa valeur et son unité de départ
+    \item \textbf{Trouver} le(s) facteur(s) de conversion nécessaire(s) dans le Tableau~\ref{tab:equivalences}
+    \item \textbf{Placer} les facteurs de sorte que les unités à éliminer s'annulent (unité à éliminer en haut $\rightarrow$ la mettre en bas, et vice versa)
+    \item \textbf{Calculer} en multipliant les valeurs numériques
+\end{enumerate}
+\end{equationimportante}
+
+\begin{exemple}
+La distance entre Rimouski et Sept-Îles est de \SI{150}{NM}. Convertir en kilomètres.
+
+\textbf{Étape 1 :} Écrire la grandeur
+\[
+    d = \SI{150}{NM}
+\]
+
+\textbf{Étape 2 :} Trouver le facteur de conversion (Tableau~\ref{tab:equivalences})
+\begin{itemize}
+    \item $\SI{1}{NM} = \SI{1852}{\meter} = \SI{1,852}{\kilo\meter}$
+\end{itemize}
+
+\textbf{Étape 3 :} Placer le facteur (NM en haut $\rightarrow$ NM en bas)
+\[
+    d = \SI{150}{NM} \cdot \frac{\SI{1,852}{\kilo\meter}}{\SI{1}{NM}}
+\]
+
+\textbf{Étape 4 :} Calculer
+\[
+    d = 150 \times 1{,}852\,\si{\kilo\meter} = \SI{278}{\kilo\meter}
+\]
+\end{exemple}
+
+% -----------------------------------------------------------------------------
+\subsection{Conversion d'unités composées}
+% -----------------------------------------------------------------------------
+
+Lorsque l'unité à convertir est composée de plusieurs unités (comme une vitesse), il faut convertir \textbf{chaque unité séparément}.
+
+\begin{exemple}
+Convertir une vitesse de $v = \SI{90}{\kilo\meter/\hour}$ en \si{\meter/\second}.
+
+\textbf{Étape 1 :} Écrire la grandeur
+\[
+    v = \SI{90}{\kilo\meter/\hour} = 90 \cdot \frac{\SI{1}{\kilo\meter}}{\SI{1}{\hour}}
+\]
+
+\textbf{Étape 2 :} Trouver les facteurs de conversion
+\begin{itemize}
+    \item $\SI{1}{\kilo\meter} = \SI{1000}{\meter}$
+    \item $\SI{1}{\hour} = \SI{3600}{\second}$
+\end{itemize}
+
+\textbf{Étape 3 :} Placer les facteurs (km en haut $\rightarrow$ km en bas ; h en bas $\rightarrow$ h en haut)
+\[
+    v = 90 \cdot \frac{\SI{1}{\kilo\meter}}{\SI{1}{\hour}} \cdot \frac{\SI{1000}{\meter}}{\SI{1}{\kilo\meter}} \cdot \frac{\SI{1}{\hour}}{\SI{3600}{\second}}
+\]
+
+\textbf{Étape 4 :} Calculer
+\[
+    v = 90 \cdot \frac{1000}{3600}\,\si{\meter/\second} = \SI{25,0}{\meter/\second}
+\]
+\end{exemple}
+
+\begin{exemple}
+Convertir une vitesse de \SI{25}{kn} en \si{\kilo\meter/\hour}.
+
+\textbf{Étape 1 :} Écrire la grandeur (rappel : $\SI{1}{kn} = \SI{1}{NM/h}$)
+\[
+    v = \SI{25}{kn} = 25 \cdot \frac{\SI{1}{NM}}{\SI{1}{\hour}}
+\]
+
+\textbf{Étape 2 :} Trouver le facteur de conversion (Tableau~\ref{tab:equivalences})
+\begin{itemize}
+    \item $\SI{1}{NM} = \SI{1,852}{\kilo\meter}$
+\end{itemize}
+
+\textbf{Étape 3 :} Placer le facteur
+\[
+    v = 25 \cdot \frac{\SI{1}{NM}}{\SI{1}{\hour}} \cdot \frac{\SI{1,852}{\kilo\meter}}{\SI{1}{NM}}
+\]
+
+\textbf{Étape 4 :} Calculer
+\[
+    v = 25 \times 1{,}852\,\si{\kilo\meter/\hour} = \SI{46,3}{\kilo\meter/\hour}
+\]
+\end{exemple}
+
+\begin{exemple}
+Convertir une pression de $p = \SI{32,0}{psi}$ en kilopascals (\si{\kilo\pascal}).
+
+\textbf{Étape 1 :} Écrire la grandeur (rappel : $\SI{1}{psi} = \SI{1}{lbf/po^2}$)
+\[
+    p = \SI{32,0}{psi} = 32{,}0 \cdot \frac{\SI{1}{lbf}}{\SI{1}{po^2}}
+\]
+
+\textbf{Étape 2 :} Trouver les facteurs de conversion (Tableau~\ref{tab:equivalences})
+\begin{itemize}
+    \item $\SI{1}{lbf} = \SI{4,448}{\newton}$
+    \item $\SI{1}{po} = \SI{0,0254}{\meter}$, donc $\SI{1}{po^2} = (\SI{0,0254}{\meter})^2$
+\end{itemize}
+
+\textbf{Étape 3 :} Placer les facteurs
+\[
+    p = 32{,}0 \cdot \frac{\SI{1}{lbf}}{\SI{1}{po^2}} \cdot \frac{\SI{4,448}{\newton}}{\SI{1}{lbf}} \cdot \frac{\SI{1}{po^2}}{(\SI{0,0254}{\meter})^2}
+\]
+
+\textbf{Étape 4 :} Calculer
+\[
+    p = 32{,}0 \cdot \frac{4{,}448}{0{,}0254^2}\,\si{\newton/\meter^2} = \SI{221}{\kilo\pascal}
+\]
+\end{exemple}
+
+% -----------------------------------------------------------------------------
+\subsection{Unités avec exposant}
+% -----------------------------------------------------------------------------
+
+Lorsqu'une unité porte un exposant (aires, volumes), il faut se rappeler que cet exposant signifie que l'unité est \textbf{multipliée par elle-même}.
+
+\begin{equationimportante}
+\[
+    \SI{1}{\meter^2} = \SI{1}{\meter} \times \SI{1}{\meter}
+    \qquad\text{et}\qquad
+    \SI{1}{\meter^3} = \SI{1}{\meter} \times \SI{1}{\meter} \times \SI{1}{\meter}
+\]
+Par conséquent, le facteur de conversion doit aussi être élevé à la même puissance !
+\end{equationimportante}
+
+\begin{exemple}
+L'aire d'une écoutille est de $A = \SI{1500}{\centi\meter^2}$. Convertir en \si{\meter^2}.
+
+Puisque $\si{\centi\meter^2} = \si{\centi\meter} \times \si{\centi\meter}$, on doit appliquer le facteur de conversion \textbf{deux fois} :
+\begin{align*}
+    A &= \SI{1500}{\centi\meter^2} = 1500 \cdot (\SI{1}{\centi\meter}) \cdot (\SI{1}{\centi\meter}) \\[0.5em]
+      &= 1500 \cdot \left(\SI{1}{\centi\meter} \cdot \frac{\SI{1}{\meter}}{\SI{100}{\centi\meter}}\right) \cdot \left(\SI{1}{\centi\meter} \cdot \frac{\SI{1}{\meter}}{\SI{100}{\centi\meter}}\right) \\[0.5em]
+      &= 1500 \cdot \frac{1}{100} \cdot \frac{1}{100}\,\si{\meter^2} = \SI{0,150}{\meter^2}
+\end{align*}
+
+\textbf{Raccourci :} On peut directement élever le facteur de conversion au carré :
+\[
+    A = \SI{1500}{\centi\meter^2} \cdot \left(\frac{\SI{1}{\meter}}{\SI{100}{\centi\meter}}\right)^2 = 1500 \cdot \frac{1}{100^2}\,\si{\meter^2} = \SI{0,150}{\meter^2}
+\]
+\end{exemple}
+
+\begin{exemple}
+Convertir un volume de $V = \SI{8,50}{pi^3}$ (pieds cubes) en \si{\meter^3}.
+
+Sachant que $\SI{1}{pi} = \SI{0,3048}{\meter}$ (Tableau~\ref{tab:equivalences}) :
+\begin{align*}
+    V &= \SI{8,50}{pi^3} \cdot \left(\frac{\SI{0,3048}{\meter}}{\SI{1}{pi}}\right)^3 \\[0.5em]
+      &= 8{,}50 \cdot (0{,}3048)^3\,\si{\meter^3} \\[0.5em]
+      &= 8{,}50 \cdot 0{,}02832\,\si{\meter^3} = \SI{0,241}{\meter^3}
+\end{align*}
+\end{exemple}
+
+% -----------------------------------------------------------------------------
+\subsection*{Pratique autonome — Conversions d'unités}
+% -----------------------------------------------------------------------------
+
+\begin{pratiqueautonome}
+Un cargo voyage à une vitesse de 18 nœuds. Convertir cette vitesse en mètres par seconde (\si{\meter/\second}).
+
+\espaceresolution[6cm]
+
+\reponsepratique{\SI{9,26}{\meter/\second}}
+\end{pratiqueautonome}
+
+\begin{pratiqueautonome}
+La surface du pont principal d'un navire est de \SI{450}{\meter^2}. Convertir cette aire en pieds carrés (\si{pi^2}).
+
+\textit{Indice : Le facteur de conversion doit être appliqué deux fois (une fois par dimension).}
+
+\espaceresolution[6cm]
+
+\reponsepratique{\SI{4840}{pi^2}}
+\end{pratiqueautonome}
+
+\begin{pratiqueautonome}
+La consommation de carburant d'un moteur marin est de \SI{85}{\liter/\hour}. Convertir en gallons américains par minute (\si{gal(US)/min}).
+
+\textit{Rappel : \SI{1}{gal(US)} = \SI{3,785}{\liter}}
+
+\espaceresolution[7cm]
+
+\reponsepratique{\SI{0,374}{gal(US)/min}}
+\end{pratiqueautonome}
+
+% =============================================================================
+\section{Homogénéité des équations}
+\label{sec:homogeneite}
+% =============================================================================
+
+En physique, les équations relient des grandeurs physiques entre elles. Pour qu'une équation soit valide, elle doit respecter une règle fondamentale : l'\textbf{homogénéité dimensionnelle}.
+
+\begin{definition}
+Une équation est \textbf{homogène} si les deux côtés de l'égalité ont les \textbf{mêmes unités} (ou dimensions). 
+
+Autrement dit : on ne peut égaler, additionner ou soustraire que des grandeurs \textbf{de même nature}.
+\end{definition}
+
+\begin{attention}
+\textbf{Règles fondamentales :}
+\begin{itemize}
+    \item On ne peut \textbf{pas additionner} des mètres et des secondes : $\SI{5}{m} + \SI{3}{s}$ n'a aucun sens!
+    \item On ne peut \textbf{pas égaler} une vitesse et une accélération : $v = a$ est impossible.
+    \item Les deux côtés d'une équation \textbf{doivent avoir les mêmes unités}.
+\end{itemize}
+\end{attention}
+
+% -----------------------------------------------------------------------------
+\subsection{Pourquoi vérifier l'homogénéité?}
+% -----------------------------------------------------------------------------
+
+Vérifier l'homogénéité d'une équation est un outil puissant pour :
+
+\begin{enumerate}
+    \item \textbf{Détecter des erreurs} : Si votre réponse n'a pas les bonnes unités, il y a forcément une erreur quelque part dans votre calcul.
+    
+    \item \textbf{Vérifier une formule} : Avant d'utiliser une équation, vous pouvez vérifier qu'elle est dimensionnellement correcte.
+    
+    \item \textbf{Retrouver une formule oubliée} : L'analyse dimensionnelle peut vous aider à reconstruire une équation dont vous avez oublié la forme exacte.
+\end{enumerate}
+
+% -----------------------------------------------------------------------------
+\subsection{Comment vérifier l'homogénéité}
+% -----------------------------------------------------------------------------
+
+Pour vérifier l'homogénéité d'une équation, on remplace chaque grandeur par ses \textbf{unités de base} (m, kg, s) et on simplifie.
+
+\begin{exemple}
+Vérifions que l'équation de l'énergie cinétique $E_c = \frac{1}{2}mv^2$ est homogène.
+
+\textbf{Côté gauche :} L'énergie se mesure en joules.
+\[
+    [E_c] = \si{\joule} = \si{\newton\cdot\meter} = \si{\kilogram\cdot\meter\per\second\squared\cdot\meter} = \si{\kilogram\cdot\meter^2\per\second^2}
+\]
+
+\textbf{Côté droit :} La masse est en kg, la vitesse en m/s.
+\[
+    \left[\frac{1}{2}mv^2\right] = \si{\kilogram} \cdot \left(\si{\meter\per\second}\right)^2 = \si{\kilogram\cdot\meter^2\per\second^2}
+\]
+
+Les deux côtés ont les mêmes unités $\rightarrow$ \textbf{l'équation est homogène} $\checkmark$
+\end{exemple}
+
+\begin{exemple}
+Un étudiant propose la formule $v = \frac{1}{2}at^2$ pour la vitesse. Est-elle homogène?
+
+\textbf{Côté gauche :} $[v] = \si{\meter\per\second}$
+
+\textbf{Côté droit :} 
+\[
+    \left[\frac{1}{2}at^2\right] = \si{\meter\per\second^2} \cdot \si{\second^2} = \si{\meter}
+\]
+
+Le côté gauche est en m/s, le côté droit est en m $\rightarrow$ \textbf{l'équation n'est PAS homogène} $\times$
+
+La formule correcte est $v = at$ (ou $x = \frac{1}{2}at^2$ pour la position).
+\end{exemple}
+
+\begin{equationimportante}
+\textbf{Méthode de vérification}
+\begin{enumerate}
+    \item Écrire les unités de chaque grandeur en unités de base (m, kg, s)
+    \item Simplifier les unités de chaque côté de l'équation
+    \item Comparer : si les unités sont identiques, l'équation est homogène
+\end{enumerate}
+
+\textbf{Attention :} Une équation homogène n'est pas nécessairement correcte (il pourrait manquer un facteur numérique), mais une équation \textbf{non homogène est toujours fausse}.
+\end{equationimportante}
+
+% -----------------------------------------------------------------------------
+\subsection*{Pratique autonome — Homogénéité des équations}
+% -----------------------------------------------------------------------------
+
+\begin{pratiqueautonome}
+L'énergie cinétique de rotation d'un objet est donnée par $E_r = \frac{1}{2}I\omega^2$, où $I$ est le moment d'inertie (en \si{\kilogram\cdot\meter^2}) et $\omega$ est la vitesse angulaire (en \si{rad/\second}).
+
+Vérifier que cette équation est homogène. \textit{(Rappel : l'énergie se mesure en joules, où \SI{1}{\joule} = \SI{1}{\kilogram\cdot\meter^2/\second^2})}
+
+\espaceresolution[6cm]
+
+\reponsepratique{Homogène : les deux côtés donnent \si{\kilogram\cdot\meter^2/\second^2}}
+\end{pratiqueautonome}
+
+\begin{pratiqueautonome}
+Un étudiant propose la formule $t = \dfrac{v}{2a^2}$ pour calculer un temps, où $v$ est une vitesse (\si{\meter/\second}) et $a$ est une accélération (\si{\meter/\second^2}).
+
+Cette formule est-elle homogène? Justifier.
+
+\espaceresolution[6cm]
+
+\reponsepratique{Non homogène : côté droit donne \si{\second^3/\meter}, pas des secondes}
+\end{pratiqueautonome}
+
+\begin{pratiqueautonome}
+La période d'oscillation $T$ d'un pendule simple dépend de sa longueur $L$ et de l'accélération gravitationnelle $g$. On propose la formule :
+\[
+    T = 2\pi \sqrt{\frac{L^n}{g}}
+\]
+où $n$ est un exposant inconnu. En utilisant l'analyse dimensionnelle, déterminer la valeur de $n$ pour que l'équation soit homogène.
+
+\textit{Indice : La période $T$ est en secondes, $L$ en mètres, et $g$ en \si{\meter/\second^2}.}
+
+\espaceresolution[7cm]
+
+\reponsepratique{$n = 1$}
+\end{pratiqueautonome}

@@ -1,0 +1,82 @@
+\documentclass[aspectratio=169]{beamer}
+
+% Langue et encodage
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[french, provide=*]{babel}
+
+% Maths et unités
+\usepackage{amsmath, amssymb}
+\usepackage{siunitx}
+\sisetup{
+    locale = FR,
+    inter-unit-product = \ensuremath{{}\cdot{}},
+    per-mode = symbol,
+    group-separator = {\,},
+    output-decimal-marker = {,}
+}
+
+% Figures
+\usepackage{graphicx}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta, positioning, calc}
+
+% Couleurs (reprises du cours)
+\usepackage{xcolor}
+\definecolor{bleuimq}{RGB}{0, 82, 147}
+\definecolor{orangeimq}{RGB}{232, 119, 34}
+\definecolor{grisimq}{RGB}{128, 130, 133}
+\definecolor{bleuclair}{RGB}{230, 242, 255}
+\definecolor{grisclair}{RGB}{245, 245, 245}
+\definecolor{rougealerte}{RGB}{178, 34, 34}
+
+% Styles TikZ utilisés dans les exercices
+\tikzset{
+    vecteur/.style={-{Stealth[length=3mm, width=2mm]}, thick, blue},
+    vecteur rouge/.style={-{Stealth[length=3mm, width=2mm]}, thick, red},
+    vecteur vert/.style={-{Stealth[length=3mm, width=2mm]}, thick, green!60!black},
+    axe/.style={-{Stealth[length=2mm]}, thin},
+    pointille/.style={dashed, gray},
+}
+
+% Boîtes (remarque) utilisées dans ex-ch1/ex-ch2
+\usepackage{tcolorbox}
+\tcbuselibrary{skins, breakable}
+\newtcolorbox{remarque}[1][]{
+    colback=white,
+    colframe=orangeimq,
+    fonttitle=\bfseries,
+    title=Remarque,
+    #1
+}
+
+% Thème Beamer
+\usetheme{Madrid}
+\usecolortheme[named=bleuimq]{structure}
+\setbeamertemplate{navigation symbols}{}
+
+\title{Physique 1 -- Mécanique\\Exemples à faire en classe}
+\author{Institut Maritime du Québec}
+\date{Hiver 2026}
+
+\begin{document}
+
+\begin{frame}
+  \titlepage
+\end{frame}
+
+\begin{frame}{Plan}
+  \tableofcontents
+\end{frame}
+
+\section{Chapitre 1 -- Cinématique}
+\begin{frame}[allowframebreaks]{Exercices (chapitre 1)}
+  \input{exercices/ex-ch1}
+\end{frame}
+
+\section{Chapitre 2 -- Dynamique et statique}
+\begin{frame}[allowframebreaks]{Exercices (chapitre 2)}
+  \input{exercices/ex-ch2}
+\end{frame}
+
+\end{document}
