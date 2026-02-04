@@ -231,57 +231,7 @@ Le cargo part du repos ($v_0 = 0$).
     \item \textbf{Tracez} le graphique $v(t)$ correspondant à ce mouvement.
 \end{enumerate}
 
-\item[$\star\star\star$] \textbf{19B. Défi -- lecture croisée $x(t)$ et $v(t)$.} On étudie un traversier se déplaçant le long d'un axe $x$ (vers l'est positif). Voici les deux graphiques :
-
-\begin{center}
-\begin{tikzpicture}[scale=0.55]
-% Graphique x(t)
-\begin{scope}[xshift=0cm]
-\draw[axe, thick] (0,0) -- (10,0) node[right] {$t$ (min)};
-\draw[axe, thick] (0,0) -- (0,6) node[above] {$x$ (m)};
-\foreach \x in {0,2,4,6,8} {\draw (\x,0.1) -- (\x,-0.1) node[below] {\small\x};}
-\foreach \y in {0,2,4} {\draw (0.1,\y) -- (-0.1,\y) node[left] {\pgfmathparse{int(\y*275)}\pgfmathresult};}
-% Phase 1 : accélération (0 à 2 min)
-\draw[very thick, blue, domain=0:2, samples=40] plot (\x, {0.5*\x*\x});
-% Phase 2 : MRU (2 à 6 min)
-\draw[very thick, blue] (2,2) -- (6,4.55);
-% Phase 3 : freinage (6 à 9 min)
-\draw[very thick, blue, domain=6:9, samples=40] plot (\x, {4.55 + 0.64*(\x-6) - 0.107*(\x-6)*(\x-6)});
-\fill[blue] (0,0) circle (2pt);
-\fill[blue] (2,2) circle (2pt);
-\fill[blue] (6,4.55) circle (2pt);
-\fill[blue] (9,5.5) circle (2pt);
-\node[below] at (5,-1.5) {\textbf{Graphique A : $x(t)$}};
-\end{scope}
-
-% Graphique v(t)
-\begin{scope}[xshift=12cm]
-\draw[axe, thick] (0,0) -- (10,0) node[right] {$t$ (min)};
-\draw[axe, thick] (0,0) -- (0,4) node[above] {$v$ (m/s)};
-\foreach \x in {0,2,4,6,8} {\draw (\x,0.1) -- (\x,-0.1) node[below] {\small\x};}
-\foreach \y in {0,1,2,3} {\draw (0.1,\y) -- (-0.1,\y) node[left] {\small\y};}
-% Phase 1 : accélération linéaire
-\draw[very thick, blue] (0,0) -- (2,2.5);
-% Phase 2 : vitesse constante
-\draw[very thick, blue] (2,2.5) -- (6,2.5);
-% Phase 3 : décélération linéaire
-\draw[very thick, blue] (6,2.5) -- (9,0);
-\fill[blue] (0,0) circle (2pt);
-\fill[blue] (2,2.5) circle (2pt);
-\fill[blue] (6,2.5) circle (2pt);
-\fill[blue] (9,0) circle (2pt);
-\node[below] at (5,-1.5) {\textbf{Graphique B : $v(t)$}};
-\end{scope}
-\end{tikzpicture}
-\end{center}
-
-\begin{enumerate}[label=\alph*)]
-    \item Sur le graphe $x(t)$, à quel(s) instant(s) l'accélération est-elle nulle? Justifiez.
-    \item Sur le graphe $v(t)$, indiquez les intervalles où l'accélération est positive, nulle et négative.
-    \item Les deux graphes sont-ils compatibles? Donnez deux arguments (pentes et aires).
-    \item Sans calculs détaillés, pendant quel intervalle le traversier parcourt-il la plus grande distance : $[0,2]$, $[2,6]$ ou $[6,9]$? Justifiez.
-    \item À $t=6$ min, comparez la vitesse instantanée (pente de $x(t)$) et la vitesse moyenne sur $[0,6]$.
-\end{enumerate}
+%
 
 \end{enumerate}
 
@@ -661,7 +611,7 @@ Une grue portuaire déplace un conteneur horizontalement à $\SI{3}{m/s}$ à une
     \item À quelle distance horizontale du point de rupture le conteneur atterrit-il?
     \item Avec quelle vitesse (module) le conteneur frappe-t-il le sol?
     \item Un travailleur se trouve à $\SI{8}{m}$ horizontalement du point de rupture (dans la direction du mouvement). A-t-il le temps de s'écarter s'il lui faut $\SI{1,5}{s}$ pour réagir et courir $\SI{3}{m}$?
-    \item Le conteneur a des dimensions $\SI{6}{m} \times \SI{2,4}{m}$ (longueur $\times$ largeur). En supposant qu'il ne tourne pas pendant la chute, quelle est la  zone de danger au sol (rectangle où le conteneur pourrait tomber)?
+    \item Le conteneur a des dimensions $\SI{6}{m} \times \SI{2,4}{m}$ (longueur $\times$ largeur). En supposant qu'il ne tourne pas pendant la chute, quelle est la \og zone de danger \fg{} au sol (rectangle où le conteneur pourrait tomber)?
 \end{enumerate}
 
 \item[\textbf{D7.}] \textbf{Navigation avec courant variable} $(\star\star\star\star\star)$
@@ -763,6 +713,13 @@ Un traversier doit rejoindre un quai situé à exactement $\SI{2}{km}$. Pour le 
 \textbf{15.} a) $\SI{1}{m/s/min} = \SI{0,017}{m/s^2}$ \quad b) Entre 4 et 10 min \quad c) $\SI{2400}{m}$
 
 \textbf{16.} Le signe dépend du choix de l'axe; une pente négative indique un mouvement vers les $x$ décroissants
+
+\textbf{17.} a) MRU, accélération, MRU, freinage \quad b) $\SI{0,0042}{m/s^2}$ \quad c) $\SI{-0,011}{m/s^2}$ \quad d) $\SI{3240}{m}$
+
+\textbf{18.} a) $\SI{4,8}{m/s}$ \quad b) $\SI{4,8}{m/s}$ \quad c) $\SI{3,6}{m/s}$
+
+\textbf{19.} a) Accélération, MRU, freinage \quad b) $\SI{5}{m/s}$ \quad c) Oui (pentes nulles aux extrémités)
+
 
 \medskip
 \textbf{Accélération et MRUA}
