@@ -84,13 +84,13 @@ Un remorqueur de masse $m = \SI{800}{tonnes}$ démarre du repos. Ses moteurs fou
         
         % Forces
         \draw[-{Stealth[length=3mm]}, very thick, red] (0, 0) -- (0, -1.2);
-        \node[red, right] at (0.1, -0.6) {$\vect{F}_g$};
+        \node[red, left] at (-0.1, -0.6) {$\vect{F}_g$};
         
         \draw[-{Stealth[length=3mm]}, very thick, green!60!black] (0, 0) -- (0, 1.2);
-        \node[green!60!black, right] at (0.1, 0.6) {$\vect{F}_A$};
+        \node[green!60!black, left] at (-0.1, 0.6) {$\vect{F}_A$};
         
         \draw[-{Stealth[length=3mm]}, very thick, purple] (0, 0) -- (2, 0);
-        \node[purple, above] at (1, 0.1) {$\vect{F}$};
+        \node[purple, above] at (1.2, 0.15) {$\vect{F}$};
     \end{scope}
 \end{tikzpicture}
 \end{center}
@@ -164,16 +164,16 @@ Une caisse de $m = \SI{50}{kg}$ est poussée sur un plancher horizontal avec une
         
         % Forces
         \draw[-{Stealth[length=3mm]}, very thick, red] (0, 0) -- (0, -1.2);
-        \node[red, left] at (-0.1, -0.6) {$\vect{F}_g$};
+        \node[red, right] at (0.1, -0.6) {$\vect{F}_g$};
         
         \draw[-{Stealth[length=3mm]}, very thick, green!60!black] (0, 0) -- (0, 1.2);
-        \node[green!60!black, left] at (-0.1, 0.6) {$\vect{N}$};
+        \node[green!60!black, right] at (0.1, 0.6) {$\vect{N}$};
         
         \draw[-{Stealth[length=3mm]}, very thick, purple] (0, 0) -- (2, 0);
-        \node[purple, above] at (1, 0.1) {$\vect{F}$};
+        \node[purple, above] at (1.2, 0.15) {$\vect{F}$};
         
         \draw[-{Stealth[length=3mm]}, very thick, orange] (0, 0) -- (-1.2, 0);
-        \node[orange, above] at (-0.6, 0.1) {$\vect{f}_c$};
+        \node[orange, below] at (-0.6, -0.15) {$\vect{f}_c$};
     \end{scope}
 \end{tikzpicture}
 \end{center}
@@ -280,15 +280,15 @@ Une caisse de $m = \SI{40}{kg}$ est tirée sur un plancher horizontal par une co
         
         % Poids
         \draw[-{Stealth[length=3mm]}, very thick, red] (0, 0) -- (0, -1.5);
-        \node[red, left] at (-0.1, -0.8) {$\vect{F}_g$};
+        \node[red, right] at (0.1, -0.8) {$\vect{F}_g$};
         
         % Normale
         \draw[-{Stealth[length=3mm]}, very thick, green!60!black] (0, 0) -- (0, 1.3);
-        \node[green!60!black, left] at (-0.1, 0.7) {$\vect{N}$};
+        \node[green!60!black, right] at (0.1, 0.7) {$\vect{N}$};
         
         % Tension (à angle)
         \draw[-{Stealth[length=3mm]}, very thick, orange] (0, 0) -- ({2*cos(25)}, {2*sin(25)});
-        \node[orange, above] at (1.5, 0.7) {$\vect{T}$};
+        \node[orange, above right] at (1.4, 0.65) {$\vect{T}$};
         
         % Composantes de T (pointillés)
         \draw[dashed, orange] ({2*cos(25)}, {2*sin(25)}) -- ({2*cos(25)}, 0);
@@ -302,7 +302,7 @@ Une caisse de $m = \SI{40}{kg}$ est tirée sur un plancher horizontal par une co
         
         % Frottement
         \draw[-{Stealth[length=3mm]}, very thick, blue] (0, 0) -- (-1.3, 0);
-        \node[blue, above] at (-0.65, 0.1) {$\vect{f}_c$};
+        \node[blue, below] at (-0.65, -0.15) {$\vect{f}_c$};
     \end{scope}
 \end{tikzpicture}
 \end{center}
@@ -702,6 +702,61 @@ Déterminez l'accélération du système et la tension dans la corde.
     
     \draw[-{Stealth}, thick, purple] (5.3, 0) -- (5.3, -0.6);
     \node[purple, right] at (5.4, -0.3) {\small $\vec{a}$};
+\end{tikzpicture}
+\end{center}
+
+\textbf{DCL des deux masses :}
+
+\begin{center}
+\begin{tikzpicture}[scale=0.8]
+    % DCL m1 (sur plan incliné)
+    \begin{scope}[xshift=0cm]
+        \node[above, font=\bfseries] at (0, 2.5) {DCL de $m_1$};
+        
+        % Point
+        \fill[blue!30] (0, 0) circle (5pt);
+        
+        % Axes inclinés (x parallèle à la pente, vers le haut)
+        \draw[-{Stealth}, thick] (0, 0) -- ({2*cos(30)}, {2*sin(30)}) node[right] {$x$};
+        \draw[-{Stealth}, thick] (0, 0) -- ({-1.5*sin(30)}, {1.5*cos(30)}) node[above] {$y$};
+        \node[font=\scriptsize, below right] at ({1.5*cos(30)}, {1.5*sin(30)}) {(+ vers haut)};
+        
+        % Poids (vertical vers le bas)
+        \draw[-{Stealth[length=3mm]}, very thick, red] (0, 0) -- (0, -1.8);
+        \node[red, right] at (0.1, -1.0) {$m_1\vect{g}$};
+        
+        % Normale (perpendiculaire au plan)
+        \draw[-{Stealth[length=3mm]}, very thick, green!60!black] (0, 0) -- ({-1.3*sin(30)}, {1.3*cos(30)});
+        \node[green!60!black, above left] at (-0.4, 1.0) {$\vect{N}$};
+        
+        % Tension (vers le haut du plan)
+        \draw[-{Stealth[length=3mm]}, very thick, orange] (0, 0) -- ({1.2*cos(30)}, {1.2*sin(30)});
+        \node[orange, above right] at (0.7, 0.6) {$\vect{T}$};
+        
+        % Composantes du poids en pointillés
+        \draw[dashed, red!50] (0, -1.8) -- ({1.8*sin(30)*cos(30)}, {-1.8 + 1.8*sin(30)*sin(30)});
+        \draw[dashed, red!50] (0, -1.8) -- ({-1.8*cos(30)*sin(30)}, {-1.8*cos(30)*cos(30)});
+    \end{scope}
+    
+    % DCL m2 (suspendue)
+    \begin{scope}[xshift=6cm]
+        \node[above, font=\bfseries] at (0, 2.5) {DCL de $m_2$};
+        
+        % Point
+        \fill[blue!20] (0, 0) circle (5pt);
+        
+        % Axe vertical (+ vers le bas)
+        \draw[-{Stealth}, thick] (0, 0) -- (0, -2) node[below] {$+$};
+        \node[font=\scriptsize, right] at (0.2, -1.5) {(+ vers bas)};
+        
+        % Poids
+        \draw[-{Stealth[length=3mm]}, very thick, red] (0, 0) -- (0, -1.5);
+        \node[red, right] at (0.1, -0.8) {$m_2\vect{g}$};
+        
+        % Tension (vers le haut)
+        \draw[-{Stealth[length=3mm]}, very thick, orange] (0, 0) -- (0, 1.2);
+        \node[orange, right] at (0.1, 0.6) {$\vect{T}$};
+    \end{scope}
 \end{tikzpicture}
 \end{center}
 
