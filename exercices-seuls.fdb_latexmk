@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1770666774.88744 "c:/Users/jfbeaudo/OneDrive - Collège de Rimouski/Hiver-2026/Materiel_JFB/Notes de cours/Notes_git/Physique1-Mecanique/main.tex" "main.pdf" "main" 1770666780.89332 2
+["pdflatex"] 1770670217.48098 "c:/Users/jfbeaudo/OneDrive - Collège de Rimouski/Hiver-2026/Materiel_JFB/Notes de cours/Notes_git/Physique1-Mecanique/exercices-seuls.tex" "exercices-seuls.pdf" "exercices-seuls" 1770670221.74177 2
   "C:/Users/jfbeaudo/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1770047446 13334938 678b1e0a1ba97aafb1d64d0d0677a701 ""
   "C:/Users/jfbeaudo/AppData/Local/Programs/MiKTeX/fonts/tfm/jknappen/ec/ecrm1095.tfm" 993062124 3172 eb6efaa83c6c52473a1c403f376eab0f ""
   "C:/Users/jfbeaudo/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmr10.tfm" 1136765053 1296 45809c5a464d5f32c8f98ba97c1bb47f ""
@@ -174,13 +174,13 @@
   "C:/Users/jfbeaudo/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "C:/Users/jfbeaudo/AppData/Local/Programs/MiKTeX/tex/latex/wrapfig/wrapfig.sty" 1044403200 26220 3701aebf80ccdef248c0c20dd062fea9 ""
   "C:/Users/jfbeaudo/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1729265222 55384 b454dec21c2d9f45ec0b793f0995b992 ""
-  "c:/Users/jfbeaudo/OneDrive - Collège de Rimouski/Hiver-2026/Materiel_JFB/Notes de cours/Notes_git/Physique1-Mecanique/main.tex" 1770218575 1414 01103f28eb19921841681ad951974b64 ""
-  "main.aux" 1770666780 144 2e94f97a2d186c723fab140109894155 "pdflatex"
-  "main.tex" 1770218575 1414 01103f28eb19921841681ad951974b64 ""
+  "c:/Users/jfbeaudo/OneDrive - Collège de Rimouski/Hiver-2026/Materiel_JFB/Notes de cours/Notes_git/Physique1-Mecanique/exercices-seuls.tex" 1770218575 475 1fe2fa8269cfbc9d5574cdd91670a685 ""
+  "exercices-seuls.aux" 1770670220 144 2e94f97a2d186c723fab140109894155 "pdflatex"
+  "exercices-seuls.tex" 1770218575 475 1fe2fa8269cfbc9d5574cdd91670a685 ""
   "preamble.tex" 1770218575 8837 5742b3e1021aafc2e11d84a1a4811576 ""
   (generated)
-  "main.aux"
-  "main.log"
-  "main.out"
-  "main.pdf"
+  "exercices-seuls.aux"
+  "exercices-seuls.log"
+  "exercices-seuls.out"
+  "exercices-seuls.pdf"
   (rewritten before read)
