@@ -349,8 +349,8 @@ Selon $x$ :
 \subsubsection{Plan incliné avec mouvement}
 % -----------------------------------------------------------------------------
 
-\begin{exemple}{Bloc glissant sur un plan incliné}{bloc-glisse}
-Un bloc de $m = \SI{10}{kg}$ est lâché du haut d'un plan incliné à $\theta = 35°$. Le coefficient de frottement cinétique est $\mu_c = 0{,}20$. Calculez l'accélération du bloc.
+\begin{exemple}{Bloc lancé vers le haut d'un plan incliné}{bloc-pousse}
+Un bloc de $m = \SI{10}{kg}$ est lancé vers le haut d'un plan incliné à $\theta = 35°$ avec une vitesse initiale de $\SI{4{,}0}{m/s}$. Le coefficient de frottement cinétique est $\mu_c = 0{,}20$. Calculez la décélération du bloc pendant sa montée.
 
 \tcblower
 
@@ -361,10 +361,14 @@ Un bloc de $m = \SI{10}{kg}$ est lâché du haut d'un plan incliné à $\theta =
     % Point
     \fill[blue!50] (0, 0) circle (5pt);
     
-    % Axes inclinés
+    % Axes inclinés (x positif vers le haut de la pente = sens du mouvement)
     \draw[-{Stealth}, thick] (0, 0) -- ({2.5*cos(35)}, {2.5*sin(35)}) node[right] {$x$};
     \draw[-{Stealth}, thick] (0, 0) -- ({-1.8*sin(35)}, {1.8*cos(35)}) node[above] {$y$};
-    \node[font=\scriptsize] at (2.2, 0.7) {(+ vers bas)};
+    \node[font=\scriptsize] at (2.4, 0.7) {(+ vers haut)};
+    
+    % Vitesse initiale (vers le haut de la pente)
+    \draw[-{Stealth[length=3mm]}, thick, purple, dashed] (0, 0) -- ({1.2*cos(35)}, {1.2*sin(35)});
+    \node[purple, font=\scriptsize, above] at ({1.2*cos(35)}, {1.2*sin(35)}) {$\vect{v}_0$};
     
     % Poids (vertical)
     \draw[-{Stealth[length=3mm]}, very thick, red] (0, 0) -- (0, -1.8);
@@ -374,7 +378,7 @@ Un bloc de $m = \SI{10}{kg}$ est lâché du haut d'un plan incliné à $\theta =
     \draw[-{Stealth[length=3mm]}, very thick, green!60!black] (0, 0) -- ({-1.5*sin(35)}, {1.5*cos(35)});
     \node[green!60!black, above left] at (-0.6, 1.0) {$\vect{N}$};
     
-    % Frottement (vers le haut de la pente)
+    % Frottement (vers le BAS de la pente = oppose le mouvement vers le haut)
     \draw[-{Stealth[length=3mm]}, very thick, blue] (0, 0) -- ({-1.0*cos(35)}, {-1.0*sin(35)});
     \node[blue, below left] at (-0.6, -0.3) {$\vect{f}_c$};
     
@@ -386,9 +390,11 @@ Un bloc de $m = \SI{10}{kg}$ est lâché du haut d'un plan incliné à $\theta =
 
 \textbf{\underline{Étape 2 — Axes}}
 
-$x$ : parallèle à la pente, positif vers le bas (sens du mouvement)
+$x$ : parallèle à la pente, positif vers le haut (sens de la vitesse initiale)
 
 $y$ : perpendiculaire à la pente, positif vers l'extérieur
+
+\textbf{Le frottement est vers le bas de la pente}, car il s'oppose au mouvement du bloc qui monte.
 
 \textbf{\underline{Étape 3 — Équations de Newton}}
 
@@ -397,28 +403,35 @@ Selon $y$ (pas de mouvement perpendiculaire à la pente) :
     N - mg\cos\theta = 0 \quad \Rightarrow \quad N = mg\cos\theta
 \]
 
-Selon $x$ :
+Selon $x$ (attention : les deux forces sont dans le sens $-x$) :
 \[
-    mg\sin\theta - f_c = ma
+    -mg\sin\theta - f_c = ma
 \]
 
 Avec $f_c = \mu_c N = \mu_c mg\cos\theta$ :
 \[
-    mg\sin\theta - \mu_c mg\cos\theta = ma
+    -mg\sin\theta - \mu_c mg\cos\theta = ma
 \]
 \[
-    a = g(\sin\theta - \mu_c\cos\theta)
+    a = -g(\sin\theta + \mu_c\cos\theta)
 \]
 
 \textbf{\underline{Étape 4 — Calcul}}
 \begin{align*}
-    a &= 9{,}81 \times (\sin 35° - 0{,}20 \times \cos 35°) \\
-    &= 9{,}81 \times (0{,}574 - 0{,}20 \times 0{,}819) \\
-    &= 9{,}81 \times (0{,}574 - 0{,}164) \\
-    &= 9{,}81 \times 0{,}410 = \boxed{\SI{4{,}02}{m/s^2}}
+    a &= -9{,}81 \times (\sin 35° + 0{,}20 \times \cos 35°) \\
+    &= -9{,}81 \times (0{,}574 + 0{,}20 \times 0{,}819) \\
+    &= -9{,}81 \times (0{,}574 + 0{,}164) \\
+    &= -9{,}81 \times 0{,}738 = \boxed{\SI{-7{,}24}{m/s^2}}
 \end{align*}
 
-\textbf{Vérification :} Sans frottement, $a = g\sin\theta = 9{,}81 \times 0{,}574 = \SI{5{,}63}{m/s^2}$. Le frottement réduit l'accélération d'environ 29\%.
+Le signe négatif confirme que l'accélération est dirigée vers le bas de la pente : le bloc décélère.
+
+\textbf{Vérification :} Comparons avec le cas sans frottement : $a = -g\sin\theta = \SI{-5{,}63}{m/s^2}$. Le frottement \textit{augmente} la décélération de 29\%, ce qui est logique puisque frottement et gravité agissent \textbf{tous les deux} vers le bas de la pente.
+
+\textbf{Distance parcourue avant l'arrêt :}
+\[
+    v^2 = v_0^2 + 2a\Delta x \quad \Rightarrow \quad \Delta x = \frac{-v_0^2}{2a} = \frac{-(4{,}0)^2}{2 \times (-7{,}24)} = \SI{1{,}10}{m}
+\]
 \end{exemple}
 
 \begin{attention}[title=Sens du frottement sur un plan incliné]
@@ -697,8 +710,8 @@ Déterminez l'accélération du système et la tension dans la corde.
     \node at (5.3, 0.6) {$m_2$};
     
     % Flèches
-    \draw[-{Stealth}, thick, purple] (1.3, 1.2) -- (2.3, 1.78);
-    \node[purple, above left] at (1.8, 1.5) {\small $\vec{a}$};
+    \draw[-{Stealth}, thick, purple] (2.3, 2.2) -- (3.3, 2.78);
+    \node[purple, above left] at (2.8, 2.5) {\small $\vec{a}$};
     
     \draw[-{Stealth}, thick, purple] (5.3, 0) -- (5.3, -0.6);
     \node[purple, right] at (5.4, -0.3) {\small $\vec{a}$};
