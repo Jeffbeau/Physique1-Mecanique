@@ -100,6 +100,38 @@ Conversion en m/s : $v_{moy} = \dfrac{-100}{60} = \SI{-1,67}{m/s}$
 Le signe négatif indique que le navire se déplace vers les $x$ décroissants (vers le quai). En valeur absolue, c'est environ $\SI{3,2}{n\oe{}uds}$, une vitesse typique pour une approche finale.
 \end{exemple}
 
+\begin{pratiqueautonome}
+Le graphique suivant montre la position d'un remorqueur dans un port pendant $\SI{10}{min}$ :
+
+\begin{center}
+\begin{tikzpicture}[scale=0.8]
+% Axes
+\draw[axe, thick] (0,0) -- (8,0) node[right] {$t$ (min)};
+\draw[axe, thick] (0,-1.5) -- (0,4.5) node[above] {$x$ (m)};
+% Graduations
+\foreach \x in {1,2,...,7} {\draw (\x,0.1) -- (\x,-0.1) node[below] {\small\pgfmathparse{int(\x+3)}\pgfmathresult};}
+\foreach \y in {-1,0,1,2,3,4} {\draw (0.1,\y) -- (-0.1,\y) node[left] {\small\pgfmathparse{int(\y*100)}\pgfmathresult};}
+% Courbe
+\draw[very thick, blue] (0,0) -- (2,3) -- (4,3) -- (7,-1);
+% Points
+\fill[blue] (0,0) circle (3pt) node[above left] {A};
+\fill[blue] (2,3) circle (3pt) node[above right] {B};
+\fill[blue] (4,3) circle (3pt) node[above right] {C};
+\fill[blue] (7,-1) circle (3pt) node[below right] {D};
+\end{tikzpicture}
+\end{center}
+
+\begin{enumerate}[label=\alph*)]
+    \item Décrivez qualitativement le mouvement du remorqueur pour chaque phase (AB, BC, CD).
+    \item Calculez la vitesse moyenne pendant la phase AB.
+    \item Calculez la vitesse moyenne pendant la phase CD.
+    \item Calculez la vitesse moyenne sur l'ensemble du trajet (A à D).
+\end{enumerate}
+
+\espaceresolution[7cm]
+\reponsepratique{a) AB : MRU vers les $x$ positifs; BC : immobile; CD : MRU vers les $x$ négatifs \quad b) $v_{AB} = \SI{+150}{m/min} = \SI{+2,5}{m/s}$ \quad c) $v_{CD} = \SI{-133}{m/min} = \SI{-2,2}{m/s}$ \quad d) $v_{moy} = \SI{-14,3}{m/min} = \SI{-0,24}{m/s}$}
+\end{pratiqueautonome}
+
 \subsection{Interprétation de la forme de la courbe}
 
 La forme de la courbe $x(t)$ nous renseigne sur le type de mouvement :
@@ -346,3 +378,201 @@ Voici le graphique $v(t)$ d'un traversier lors de son accostage :
 \textbf{Calcul de l'accélération pendant le freinage :}
 \[ a = \frac{\Delta v}{\Delta t} = \frac{0 - 4}{120 - 40} = \frac{-4}{80} = \SI{-0,05}{m/s^2} \]
 \end{exemple}
+
+% =============================================================================
+\subsection{L'aire sous la courbe}
+% =============================================================================
+
+Nous avons vu que la \textbf{pente} d'un graphique permet d'obtenir le taux de variation d'une grandeur (la vitesse \`a partir de $x(t)$, l'acc\'el\'eration \`a partir de $v(t)$). L'\textbf{aire sous la courbe} permet de faire l'op\'eration \textbf{inverse}.
+
+\subsubsection{Aire sous la courbe $v(t)$ : le d\'eplacement}
+
+\begin{definition}[title=Aire sous la courbe vitesse-temps]
+Sur un graphique $v(t)$, l'\textbf{aire} entre la courbe et l'axe horizontal (l'axe $t$) repr\'esente le \textbf{d\'eplacement} de l'objet :
+\begin{equationimportante}
+\begin{equation}
+\Delta x = \text{aire sous la courbe } v(t)
+\end{equation}
+\end{equationimportante}
+
+\textbf{Convention de signe :}
+\begin{itemize}
+    \item L'aire \textbf{au-dessus} de l'axe $t$ (quand $v > 0$) contribue \textbf{positivement} au d\'eplacement
+    \item L'aire \textbf{en dessous} de l'axe $t$ (quand $v < 0$) contribue \textbf{n\'egativement} au d\'eplacement
+\end{itemize}
+\end{definition}
+
+\begin{remarque}[title=Pourquoi l'aire donne-t-elle le d\'eplacement?]
+L'intuition est simple : si un objet se d\'eplace \`a $\SI{4}{m/s}$ pendant $\SI{3}{s}$, il parcourt $4 \times 3 = \SI{12}{m}$. Or, $4 \times 3$ est exactement l'aire du rectangle de hauteur $v = 4$ et de largeur $\Delta t = 3$ sur le graphique $v(t)$.
+
+Ce raisonnement se g\'en\'eralise \`a toute forme de courbe : on \guillemotleft~d\'ecoupe~\guillemotright{} l'aire en petits rectangles infiniment fins, ce qui donne le d\'eplacement total.
+\end{remarque}
+
+\begin{exemple}{Man\oe{}uvre d'accostage -- d\'eplacement par l'aire}{}
+Reprenons le graphique $v(t)$ du traversier lors de son accostage :
+
+\begin{center}
+\begin{tikzpicture}[scale=0.9]
+% Axes
+\draw[axe, thick] (0,0) -- (8,0) node[right] {$t$ (s)};
+\draw[axe, thick] (0,0) -- (0,4.5) node[above] {$v$ (m/s)};
+% Graduations
+\foreach \x in {20,40,60,80,100,120} {\draw (\x/20,0.1) -- (\x/20,-0.1) node[below] {\tiny\x};}
+\foreach \y in {1,2,3,4} {\draw (0.1,\y) -- (-0.1,\y) node[left] {\y};}
+% Aires colori\'ees
+\fill[blue!15] (0,0) rectangle (2,4);
+\fill[red!15] (2,0) -- (2,4) -- (6,0) -- cycle;
+% Courbe
+\draw[very thick, blue] (0,4) -- (2,4) -- (6,0);
+% Points
+\fill[blue] (0,4) circle (3pt);
+\fill[blue] (2,4) circle (3pt);
+\fill[blue] (6,0) circle (3pt);
+% Annotations d'aire
+\node at (1,2) {$A_1$};
+\node at (3,1.3) {$A_2$};
+\end{tikzpicture}
+\end{center}
+
+Le d\'eplacement total est la somme des deux aires :
+
+\textbf{Aire $A_1$ (rectangle, 0 \`a 40 s) :}
+\[ A_1 = \text{base} \times \text{hauteur} = \SI{40}{s} \times \SI{4}{m/s} = \SI{160}{m} \]
+
+\textbf{Aire $A_2$ (triangle, 40 \`a 120 s) :}
+\[ A_2 = \frac{1}{2} \times \text{base} \times \text{hauteur} = \frac{1}{2} \times \SI{80}{s} \times \SI{4}{m/s} = \SI{160}{m} \]
+
+\textbf{D\'eplacement total :}
+\[ \Delta x = A_1 + A_2 = 160 + 160 = \SI{320}{m} \]
+
+Le traversier a parcouru $\SI{320}{m}$ entre le d\'ebut de la man\oe{}uvre et l'arr\^et complet.
+\end{exemple}
+
+\begin{exemple}{Man\oe{}uvre aller-retour d'un remorqueur}{}
+Un remorqueur effectue une man\oe{}uvre dans un port. Son graphique $v(t)$ est le suivant :
+
+\begin{center}
+\begin{tikzpicture}[scale=0.75]
+% Axes
+\draw[axe, thick] (0,-2.5) -- (0,3.5) node[above] {$v$ (m/s)};
+\draw[axe, thick] (0,0) -- (9,0) node[right] {$t$ (min)};
+% Graduations
+\foreach \x in {1,2,...,8} {\draw (\x,0.1) -- (\x,-0.1) node[below] {\small\x};}
+\foreach \y in {-2,-1,1,2,3} {\draw (0.1,\y) -- (-0.1,\y) node[left] {\small\y};}
+% Aires colori\'ees
+\fill[blue!15] (0,0) rectangle (4,2);
+\fill[red!15] (4,0) rectangle (8,-2);
+% Courbe
+\draw[very thick, blue] (0,2) -- (4,2) -- (4,-2) -- (8,-2);
+% Annotations
+\node[blue] at (2,1) {\large $A_1$};
+\node[red] at (6,-1) {\large $A_2$};
+% Annotations des valeurs
+\node[blue, right] at (4.2,2) {\small vers l'est};
+\node[red, right] at (8.2,-2) {\small vers l'ouest};
+\end{tikzpicture}
+\end{center}
+
+\textbf{Aire $A_1$ (au-dessus de l'axe, 0 \`a 4 min) :}
+\[ A_1 = 4 \times 60 \times 2 = +\SI{480}{m} \]
+
+\textbf{Aire $A_2$ (en dessous de l'axe, 4 \`a 8 min) :}
+\[ A_2 = 4 \times 60 \times (-2) = -\SI{480}{m} \]
+
+\textbf{D\'eplacement total :}
+\[ \Delta x = A_1 + A_2 = 480 + (-480) = \SI{0}{m} \]
+
+\textbf{Distance parcourue :}
+\[ d = |A_1| + |A_2| = 480 + 480 = \SI{960}{m} \]
+
+\begin{attention}
+Le d\'eplacement est nul (retour au point de d\'epart), mais la distance parcourue est de $\SI{960}{m}$. C'est exactement la distinction entre d\'eplacement et distance que nous avons vue \`a la section pr\'ec\'edente, mais retrouv\'ee ici par la m\'ethode graphique!
+\end{attention}
+\end{exemple}
+
+\begin{pratiqueautonome}
+Le graphique $v(t)$ suivant montre la vitesse d'un cargo pendant une man\oe{}uvre de $\SI{6}{min}$ :
+
+\begin{center}
+\begin{tikzpicture}[scale=0.8]
+% Axes
+\draw[axe, thick] (0,0) -- (7,0) node[right] {$t$ (min)};
+\draw[axe, thick] (0,0) -- (0,5) node[above] {$v$ (m/s)};
+% Graduations
+\foreach \x in {1,2,...,6} {\draw (\x,0.1) -- (\x,-0.1) node[below] {\small\x};}
+\foreach \y in {1,2,3,4} {\draw (0.1,\y) -- (-0.1,\y) node[left] {\small\y};}
+% Courbe
+\draw[very thick, blue] (0,0) -- (2,4) -- (4,4) -- (6,0);
+% Points
+\fill[blue] (0,0) circle (3pt);
+\fill[blue] (2,4) circle (3pt);
+\fill[blue] (4,4) circle (3pt);
+\fill[blue] (6,0) circle (3pt);
+\end{tikzpicture}
+\end{center}
+
+\begin{enumerate}[label=\alph*)]
+    \item Calculez l'acc\'el\'eration pendant chaque phase du mouvement.
+    \item Calculez le d\'eplacement total en utilisant l'aire sous la courbe.
+    \item V\'erifiez votre r\'eponse en b) \`a l'aide des \'equations du MRUA.
+\end{enumerate}
+
+\textit{Indice : D\'ecomposez l'aire en formes g\'eom\'etriques simples (triangles et rectangles).}
+
+\espaceresolution[7cm]
+\reponsepratique{a) $a_I = \SI{+0,033}{m/s^2}$, $a_{II} = 0$, $a_{III} = \SI{-0,033}{m/s^2}$ \quad b) $\Delta x = \SI{960}{m}$ (triangle + rectangle + triangle = $240 + 480 + 240$) \quad c) V\'erification : $\Delta x_I = 240$, $\Delta x_{II} = 480$, $\Delta x_{III} = 240$, total = $\SI{960}{m}$ \checkmark}
+\end{pratiqueautonome}
+
+\subsubsection{Aire sous la courbe $a(t)$ : la variation de vitesse}
+
+Le m\^eme raisonnement s'applique au graphique $a(t)$ :
+
+\begin{definition}[title=Aire sous la courbe acc\'el\'eration-temps]
+Sur un graphique $a(t)$, l'\textbf{aire} entre la courbe et l'axe horizontal repr\'esente la \textbf{variation de vitesse} :
+\begin{equationimportante}
+\begin{equation}
+\Delta v = v_f - v_i = \text{aire sous la courbe } a(t)
+\end{equation}
+\end{equationimportante}
+\end{definition}
+
+\begin{exemple}{Variation de vitesse par l'aire sous $a(t)$}{}
+Reprenons l'exemple du d\'epart d'un navire du port (vu pr\'ec\'edemment). Le graphique $a(t)$ montre une acc\'el\'eration constante de $\SI{0,03}{m/s^2}$ pendant les 3 premi\`eres minutes, puis une acc\'el\'eration nulle.
+
+Quelle est la vitesse du navire \`a $t = \SI{3}{min}$, sachant que $v_i = \SI{0}{m/s}$?
+
+\textbf{Aire sous $a(t)$ de 0 \`a 3 min :}
+\[ \Delta v = a \times \Delta t = \SI{0,03}{m/s^2} \times (\SI{3}{min} \times \SI{60}{s/min}) = \SI{5,4}{m/s} \]
+
+Donc : $v_f = v_i + \Delta v = 0 + 5,4 = \SI{5,4}{m/s} \approx \SI{10,5}{n\oe{}uds}$
+
+C'est bien la vitesse de croisi\`ere atteinte apr\`es la phase d'acc\'el\'eration.
+\end{exemple}
+
+% =============================================================================
+\subsection{R\'esum\'e : pente et aire}
+% =============================================================================
+
+\begin{attention}[title=Les deux outils fondamentaux de l'analyse graphique]
+\begin{center}
+\renewcommand{\arraystretch}{1.8}
+\begin{tabular}{|c|c|c|}
+\hline
+\rowcolor{bleuclair}
+\textbf{Graphique} & \textbf{Pente} donne... & \textbf{Aire} donne... \\
+\hline
+$x(t)$ & Vitesse $v$ & --- \\
+\hline
+$v(t)$ & Acc\'el\'eration $a$ & D\'eplacement $\Delta x$ \\
+\hline
+$a(t)$ & --- & Variation de vitesse $\Delta v$ \\
+\hline
+\end{tabular}
+\end{center}
+
+Retenez le sch\'ema :
+\[ x(t) \xrightarrow{\text{pente}} v(t) \xrightarrow{\text{pente}} a(t) \]
+\[ x(t) \xleftarrow{\text{aire}} v(t) \xleftarrow{\text{aire}} a(t) \]
+
+La pente et l'aire sont des op\'erations \textbf{inverses} : la pente \guillemotleft~descend~\guillemotright{} d'un niveau (position $\to$ vitesse $\to$ acc\'el\'eration), tandis que l'aire \guillemotleft~remonte~\guillemotright{} d'un niveau (acc\'el\'eration $\to$ vitesse $\to$ position).
+\end{attention}

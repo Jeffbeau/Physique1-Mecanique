@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.2.2)  5 FEB 2026 11:46
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.2.2)  9 FEB 2026 09:24
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -775,7 +775,122 @@ Package: lipsum 2021-09-20 v2.7 150 paragraphs of Lorem Ipsum dummy text
 \l__lipsum_b_int=\count381
  (C:\Users\jfbeaudo\AppData\Local\Programs\MiKTeX\tex/latex/lipsum\lipsum.ltd.tex)) (C:\Users\jfbeaudo\AppData\Local\Programs\MiKTeX\tex/latex/cancel\cancel.sty
 Package: cancel 2013/04/12 v2.2 Cancel math terms
-)) (main.aux)
+)) (main.aux
+
+LaTeX Warning: Label `ex:o' multiply defined.
+
+
+LaTeX Warning: Label `ex:o@cref' multiply defined.
+
+
+LaTeX Warning: Label `ex:o' multiply defined.
+
+
+LaTeX Warning: Label `ex:o@cref' multiply defined.
+
+
+LaTeX Warning: Label `ex:o' multiply defined.
+
+
+LaTeX Warning: Label `ex:o@cref' multiply defined.
+
+main.aux:57: Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.57 ...ex:Ã}{{0.8}{18}{V}{tcb@cnt@exemple.0.8}{}}
+                                                  
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+main.aux:57: Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.57 ...ex:Ã}{{0.8}{18}{V}{tcb@cnt@exemple.0.8}{}}
+                                                  
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+main.aux:58: Missing \endcsname inserted.
+<to be read again> 
+                   \let 
+l.58 ...cnt@exemple][8][0]0.8}{[1][18][]18}{}{}{}}
+                                                  
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+
+LaTeX Warning: Label `ex:Ã@cref' multiply defined.
+
+
+LaTeX Warning: Label `ex:o' multiply defined.
+
+
+LaTeX Warning: Label `ex:o@cref' multiply defined.
+
+
+LaTeX Warning: Label `ex:o' multiply defined.
+
+
+LaTeX Warning: Label `ex:o@cref' multiply defined.
+
+main.aux:100: Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.100 ...Ã}{{0.15}{31}{D}{tcb@cnt@exemple.0.15}{}}
+                                                  
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+main.aux:100: Missing \endcsname inserted.
+<to be read again> 
+                   \relax 
+l.100 ...Ã}{{0.15}{31}{D}{tcb@cnt@exemple.0.15}{}}
+                                                  
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+main.aux:101: Missing \endcsname inserted.
+<to be read again> 
+                   \let 
+l.101 ...@exemple][15][0]0.15}{[1][31][]31}{}{}{}}
+                                                  
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+
+LaTeX Warning: Label `ex:Ã@cref' multiply defined.
+
+
+LaTeX Warning: Label `ex:n' multiply defined.
+
+
+LaTeX Warning: Label `ex:n@cref' multiply defined.
+
+
+LaTeX Warning: Label `ex:o' multiply defined.
+
+
+LaTeX Warning: Label `ex:o@cref' multiply defined.
+
+
+LaTeX Warning: Label `ex:o' multiply defined.
+
+
+LaTeX Warning: Label `ex:o@cref' multiply defined.
+
+
+LaTeX Warning: Label `ex:a' multiply defined.
+
+
+LaTeX Warning: Label `ex:a@cref' multiply defined.
+
+
+LaTeX Warning: Label `subsec:force-centripete' multiply defined.
+
+
+LaTeX Warning: Label `subsec:force-centripete@cref' multiply defined.
+
+)
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 10.
@@ -854,6 +969,7 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
 Package hyperref Info: Link coloring ON on input line 10.
+ (main.out) (main.out)
 \@outlinefile=\write4
 \openout4 = `main.out'.
 
@@ -869,56 +985,39 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 {C:/Users/jfbeaudo/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}] [2
 
-]
-No file main.toc.
+] (main.toc
+Underfull \vbox (badness 1019) has occurred while \output is active []
+
+ [3] [4]
+Underfull \vbox (badness 2799) has occurred while \output is active []
+
+ [5] [6])
 \tf@toc=\write5
 \openout5 = `main.toc'.
 
-[3] (chapitres/ch0/ch0-main.tex (chapitres/ch0/sec-unites-SI.tex [4
+ [7] (chapitres/ch0/ch0-main.tex (chapitres/ch0/sec-unites-SI.tex [8
 
 ]
 \bbl@ensure@french {Chapitre} 0.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [5]
+ [9]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [6] [7]
+ [10] [11]
 Underfull \vbox (badness 3354) has occurred while \output is active []
 
- [8]
-
-LaTeX Warning: Reference `tab:equivalences' on page 9 undefined on input line 232.
-
-
-LaTeX Warning: Reference `tab:equivalences' on page 9 undefined on input line 238.
-
-
-LaTeX Warning: Reference `tab:equivalences' on page 9 undefined on input line 252.
-
-[9]
-
-LaTeX Warning: Reference `tab:equivalences' on page 10 undefined on input line 307.
-
-[10]
-
-LaTeX Warning: Reference `tab:equivalences' on page 11 undefined on input line 331.
-
-
+ [12] [13] [14]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [11]
-
-LaTeX Warning: Reference `tab:equivalences' on page 12 undefined on input line 382.
-
-
+ [15]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [12]
+ [16]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [13]
+ [17]
 
 chapitres/ch0/sec-unites-SI.tex:465: LaTeX Error: Invalid UTF-8 byte "A9.
 
@@ -934,19 +1033,19 @@ or specify an encoding such as \usepackage [latin1]{inputenc}
 in the document preamble.
 Alternatively, save the file in UTF-8 using your editor or another tool
 
-[14]
+[18]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [15]
+ [19]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [16]) (chapitres/ch0/sec-conversions.tex [17]
+ [20]) (chapitres/ch0/sec-conversions.tex [21]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [18]
+ [22]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [19] [20]) (chapitres/ch0/sec-chiffres-sig.tex [21]
+ [23] [24]) (chapitres/ch0/sec-chiffres-sig.tex [25]
 
 LaTeX Warning: Command \textdegree invalid in math mode on input line 46.
 
@@ -968,7 +1067,7 @@ LaTeX Warning: Command \textdegree invalid in math mode on input line 53.
 LaTeX Warning: Command \textdegree invalid in math mode on input line 53.
 
 Missing character: There is no ° in font cmr10!
-[22]
+[26]
 
 LaTeX Warning: Command \textdegree invalid in math mode on input line 86.
 
@@ -1005,26 +1104,16 @@ LaTeX Warning: Command \textdegree invalid in math mode on input line 103.
 
 Missing character: There is no ° in font cmr9!
 
-LaTeX Warning: Reference `fig:vecteur-A' on page 23 undefined on input line 123.
-
-
 LaTeX Warning: Command \textdegree invalid in math mode on input line 123.
 
 
 LaTeX Warning: Command \textdegree invalid in math mode on input line 123.
 
 Missing character: There is no ° in font cmr10!
-
-LaTeX Warning: Reference `fig:vecteur-A' on page 23 undefined on input line 134.
-
-[23]
-
-LaTeX Warning: Reference `fig:vecteur-A' on page 24 undefined on input line 171.
-
-
+[27]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [24]
+ [28]
 
 LaTeX Warning: Command \textdegree invalid in math mode on input line 231.
 
@@ -1046,7 +1135,7 @@ LaTeX Warning: Command \textdegree invalid in math mode on input line 233.
 LaTeX Warning: Command \textdegree invalid in math mode on input line 233.
 
 Missing character: There is no ° in font cmr10!
-[25]
+[29]
 
 LaTeX Warning: Command \textdegree invalid in math mode on input line 238.
 
@@ -1204,7 +1293,7 @@ Missing character: There is no ° in font cmr10!
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [26]
+ [30]
 
 LaTeX Warning: Command \textdegree invalid in math mode on input line 318.
 
@@ -1385,171 +1474,171 @@ LaTeX Warning: Command \textdegree invalid in math mode on input line 383.
 LaTeX Warning: Command \textdegree invalid in math mode on input line 383.
 
 Missing character: There is no ° in font cmr10!
-[27]
-
-LaTeX Warning: Command \textdegree invalid in math mode on input line 393.
-
-
-LaTeX Warning: Command \textdegree invalid in math mode on input line 393.
-
-Missing character: There is no ° in font cmr10!
-
-LaTeX Warning: Command \textdegree invalid in math mode on input line 401.
-
-
-LaTeX Warning: Command \textdegree invalid in math mode on input line 401.
-
-Missing character: There is no ° in font cmr10!
-
-LaTeX Warning: Command \textdegree invalid in math mode on input line 419.
-
-
-LaTeX Warning: Command \textdegree invalid in math mode on input line 419.
-
-Missing character: There is no ° in font cmr10!
-[28] [29]
-
-LaTeX Warning: Command \textdegree invalid in math mode on input line 493.
-
-
-LaTeX Warning: Command \textdegree invalid in math mode on input line 493.
-
-Missing character: There is no ° in font cmr10!
-
-LaTeX Warning: Command \textdegree invalid in math mode on input line 493.
-
-
-LaTeX Warning: Command \textdegree invalid in math mode on input line 493.
-
-Missing character: There is no ° in font cmr10!
-[30]
-
-LaTeX Warning: Command \textdegree invalid in math mode on input line 536.
-
-
-LaTeX Warning: Command \textdegree invalid in math mode on input line 536.
-
-Missing character: There is no ° in font cmr10!
-
-LaTeX Warning: Command \textdegree invalid in math mode on input line 546.
-
-
-LaTeX Warning: Command \textdegree invalid in math mode on input line 546.
-
-Missing character: There is no ° in font cmr10!
-
-LaTeX Warning: Command \textdegree invalid in math mode on input line 546.
-
-
-LaTeX Warning: Command \textdegree invalid in math mode on input line 546.
-
-Missing character: There is no ° in font cmr10!
-
-LaTeX Warning: Command \textdegree invalid in math mode on input line 555.
-
-
-LaTeX Warning: Command \textdegree invalid in math mode on input line 555.
-
-Missing character: There is no ° in font cmr10!
-
-LaTeX Warning: Command \textdegree invalid in math mode on input line 563.
-
-
-LaTeX Warning: Command \textdegree invalid in math mode on input line 563.
-
-Missing character: There is no ° in font cmr10!
-
-LaTeX Warning: Command \textdegree invalid in math mode on input line 573.
-
-
-LaTeX Warning: Command \textdegree invalid in math mode on input line 573.
-
-
-LaTeX Warning: Command \textdegree invalid in math mode on input line 573.
-
-
-LaTeX Warning: Command \textdegree invalid in math mode on input line 573.
-
-
-LaTeX Warning: Command \textdegree invalid in math mode on input line 573.
-
-
-LaTeX Warning: Command \textdegree invalid in math mode on input line 573.
-
-Missing character: There is no ° in font cmr10!
-Missing character: There is no ° in font cmr10!
-Missing character: There is no ° in font cmr10!
-
-LaTeX Warning: Command \textdegree invalid in math mode on input line 577.
-
-
-LaTeX Warning: Command \textdegree invalid in math mode on input line 577.
-
-
-LaTeX Warning: Command \textdegree invalid in math mode on input line 577.
-
-
-LaTeX Warning: Command \textdegree invalid in math mode on input line 577.
-
-
-LaTeX Warning: Command \textdegree invalid in math mode on input line 577.
-
-
-LaTeX Warning: Command \textdegree invalid in math mode on input line 577.
-
-Missing character: There is no ° in font cmr10!
-Missing character: There is no ° in font cmr10!
-Missing character: There is no ° in font cmr10!
-
-LaTeX Warning: Command \textdegree invalid in math mode on input line 587.
-
-
-LaTeX Warning: Command \textdegree invalid in math mode on input line 587.
-
-Missing character: There is no ° in font cmr10!
-
-LaTeX Warning: Command \textdegree invalid in math mode on input line 600.
-
-
-LaTeX Warning: Command \textdegree invalid in math mode on input line 600.
-
-Missing character: There is no ° in font cmr10!
-
-LaTeX Warning: Command \textdegree invalid in math mode on input line 603.
-
-
-LaTeX Warning: Command \textdegree invalid in math mode on input line 603.
-
-Missing character: There is no ° in font cmr10!
-
-LaTeX Warning: Command \textdegree invalid in math mode on input line 608.
-
-
-LaTeX Warning: Command \textdegree invalid in math mode on input line 608.
-
-
-LaTeX Warning: Command \textdegree invalid in math mode on input line 608.
-
-
-LaTeX Warning: Command \textdegree invalid in math mode on input line 608.
-
-
-LaTeX Warning: Command \textdegree invalid in math mode on input line 608.
-
-
-LaTeX Warning: Command \textdegree invalid in math mode on input line 608.
-
-Missing character: There is no ° in font cmr10!
-Missing character: There is no ° in font cmr10!
-Missing character: There is no ° in font cmr10!
-
-LaTeX Warning: Command \textdegree invalid in math mode on input line 611.
-
-
-LaTeX Warning: Command \textdegree invalid in math mode on input line 611.
-
-Missing character: There is no ° in font cmr10!
 [31]
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 393.
+
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 393.
+
+Missing character: There is no ° in font cmr10!
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 401.
+
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 401.
+
+Missing character: There is no ° in font cmr10!
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 419.
+
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 419.
+
+Missing character: There is no ° in font cmr10!
+[32] [33]
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 493.
+
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 493.
+
+Missing character: There is no ° in font cmr10!
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 493.
+
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 493.
+
+Missing character: There is no ° in font cmr10!
+[34]
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 536.
+
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 536.
+
+Missing character: There is no ° in font cmr10!
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 546.
+
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 546.
+
+Missing character: There is no ° in font cmr10!
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 546.
+
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 546.
+
+Missing character: There is no ° in font cmr10!
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 555.
+
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 555.
+
+Missing character: There is no ° in font cmr10!
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 563.
+
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 563.
+
+Missing character: There is no ° in font cmr10!
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 573.
+
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 573.
+
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 573.
+
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 573.
+
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 573.
+
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 573.
+
+Missing character: There is no ° in font cmr10!
+Missing character: There is no ° in font cmr10!
+Missing character: There is no ° in font cmr10!
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 577.
+
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 577.
+
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 577.
+
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 577.
+
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 577.
+
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 577.
+
+Missing character: There is no ° in font cmr10!
+Missing character: There is no ° in font cmr10!
+Missing character: There is no ° in font cmr10!
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 587.
+
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 587.
+
+Missing character: There is no ° in font cmr10!
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 600.
+
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 600.
+
+Missing character: There is no ° in font cmr10!
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 603.
+
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 603.
+
+Missing character: There is no ° in font cmr10!
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 608.
+
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 608.
+
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 608.
+
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 608.
+
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 608.
+
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 608.
+
+Missing character: There is no ° in font cmr10!
+Missing character: There is no ° in font cmr10!
+Missing character: There is no ° in font cmr10!
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 611.
+
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 611.
+
+Missing character: There is no ° in font cmr10!
+[35]
 
 LaTeX Warning: Command \textdegree invalid in math mode on input line 643.
 
@@ -1560,7 +1649,7 @@ Missing character: There is no ° in font cmr10!
 
 Underfull \vbox (badness 3884) has occurred while \output is active []
 
- [32]
+ [36]
 
 LaTeX Warning: Command \textdegree invalid in math mode on input line 665.
 
@@ -1655,7 +1744,7 @@ Missing character: There is no ° in font cmr10!
 
 Underfull \vbox (badness 1478) has occurred while \output is active []
 
- [33]
+ [37]
 
 LaTeX Warning: Command \textdegree invalid in math mode on input line 723.
 
@@ -1687,7 +1776,7 @@ Missing character: There is no ° in font cmr10!
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [34]
+ [38]
 
 LaTeX Warning: Command \textdegree invalid in math mode on input line 761.
 
@@ -1733,10 +1822,10 @@ Missing character: There is no ° in font cmr10!
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [35]) (chapitres/ch0/sec-vecteurs.tex
+ [39]) (chapitres/ch0/sec-vecteurs.tex
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [36] [37] [38]
+ [40] [41] [42]
 
 LaTeX Warning: Command \textdegree invalid in math mode on input line 154.
 
@@ -1793,7 +1882,7 @@ LaTeX Warning: Command \textdegree invalid in math mode on input line 221.
 LaTeX Warning: Command \textdegree invalid in math mode on input line 221.
 
 Missing character: There is no ° in font cmr10!
-[39]
+[43]
 
 chapitres/ch0/sec-vecteurs.tex:258: Package pgfkeys Error: I do not know the key '/tikz/vecteur orange' and I am going to ignore it. Perhaps you misspelled it.
 
@@ -1836,7 +1925,7 @@ Missing character: There is no ° in font cmr10!
 
 Underfull \vbox (badness 4328) has occurred while \output is active []
 
- [40]
+ [44]
 
 LaTeX Warning: Command \textdegree invalid in math mode on input line 269.
 
@@ -1895,7 +1984,7 @@ Overfull \hbox (119.5749pt too wide) in paragraph at lines 350--351
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [41])) (chapitres/ch1/ch1-main.tex (chapitres/ch1/sec-position.tex [42]
+ [45])) (chapitres/ch1/ch1-main.tex (chapitres/ch1/sec-position.tex [46]
 \bbl@ensure@french {Chapitre} 1.
 
 LaTeX Warning: Command \oe invalid in math mode on input line 17.
@@ -1904,7 +1993,7 @@ Missing character: There is no ÷ in font cmr10!
 
 Underfull \vbox (badness 2111) has occurred while \output is active []
 
- [43
+ [47
 
 ]
 
@@ -1914,22 +2003,22 @@ Missing character: There is no ÷ in font cmr10!
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [44]
+ [48]
 Underfull \vbox (badness 4353) has occurred while \output is active []
 
- [45] [46]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [47]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [48]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [49] [50]) (chapitres/ch1/sec-vitesse.tex
+ [49] [50]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [51]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [52]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [53] [54]) (chapitres/ch1/sec-vitesse.tex
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [55]
 
 LaTeX Warning: Command \oe invalid in math mode on input line 74.
 
@@ -1946,17 +2035,17 @@ LaTeX Warning: Command \oe invalid in math mode on input line 95.
 
 Missing character: There is no ÷ in font cmr10!
 Missing character: There is no ÷ in font cmr10!
-[52]
+[56]
 
 LaTeX Warning: Command \oe invalid in math mode on input line 138.
 
 Missing character: There is no ÷ in font cmr10!
-[53]
+[57]
 
 LaTeX Warning: Command \oe invalid in math mode on input line 149.
 
 Missing character: There is no ÷ in font cmr10!
-[54]
+[58]
 
 LaTeX Warning: Command \oe invalid in math mode on input line 212.
 
@@ -2016,7 +2105,7 @@ Missing character: There is no ÷ in font cmr10!
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [55]
+ [59]
 
 LaTeX Warning: Command \oe invalid in math mode on input line 239.
 
@@ -2036,7 +2125,7 @@ Missing character: There is no ÷ in font cmr10!
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [56]
+ [60]
 
 LaTeX Warning: Command \' invalid in math mode on input line 271.
 
@@ -2060,7 +2149,7 @@ Missing character: There is no ÷ in font cmr10!
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [57]
+ [61]
 
 LaTeX Warning: Command \oe invalid in math mode on input line 319.
 
@@ -2092,10 +2181,10 @@ Missing character: There is no ÷ in font cmr10!
 ) (chapitres/ch1/sec-acceleration.tex
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [58]
+ [62]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [59]
+ [63]
 
 LaTeX Warning: Command \oe invalid in math mode on input line 113.
 
@@ -2103,7 +2192,7 @@ Missing character: There is no ÷ in font cmr10!
 
 Underfull \vbox (badness 3128) has occurred while \output is active []
 
- [60]
+ [64]
 
 LaTeX Warning: Command \oe invalid in math mode on input line 142.
 
@@ -2128,7 +2217,7 @@ LaTeX Warning: Command \oe invalid in math mode on input line 149.
 
 Missing character: There is no ÷ in font cmr10!
 Missing character: There is no ÷ in font cmr10!
-[61]
+[65]
 
 LaTeX Warning: Command \oe invalid in math mode on input line 158.
 
@@ -2156,13 +2245,13 @@ Missing character: There is no ÷ in font cmr10!
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [62]
+ [66]
 Underfull \vbox (badness 7558) has occurred while \output is active []
 
- [63]) (chapitres/ch1/sec-graphiques.tex
+ [67]) (chapitres/ch1/sec-graphiques.tex
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [64] [65]
+ [68] [69]
 
 LaTeX Warning: Command \oe invalid in math mode on input line 100.
 
@@ -2170,25 +2259,45 @@ Missing character: There is no ÷ in font cmr10!
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [66]
-Overfull \hbox (13.4784pt too wide) in paragraph at lines 183--184
- [] 
- []
-
-
-Overfull \hbox (27.5636pt too wide) in paragraph at lines 190--200
- [] 
- []
-
-
-Overfull \hbox (10.78392pt too wide) in paragraph at lines 277--278
- [] 
- []
-
-[67]
+ [70]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [68]) (chapitres/ch1/sec-equations.tex [69] [70]
+ [71]
+Overfull \hbox (13.4784pt too wide) in paragraph at lines 215--216
+ [] 
+ []
+
+
+Overfull \hbox (27.5636pt too wide) in paragraph at lines 222--232
+ [] 
+ []
+
+
+Overfull \hbox (10.78392pt too wide) in paragraph at lines 309--310
+ [] 
+ []
+
+[72]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [73]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [74] [75]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [76]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [77]
+
+LaTeX Warning: Command \oe invalid in math mode on input line 547.
+
+Missing character: There is no ÷ in font cmr10!
+) (chapitres/ch1/sec-equations.tex
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [78] [79]
 
 LaTeX Warning: Command \oe invalid in math mode on input line 74.
 
@@ -2201,42 +2310,16 @@ Missing character: There is no ÷ in font cmr10!
 LaTeX Warning: Command \oe invalid in math mode on input line 118.
 
 Missing character: There is no ÷ in font cmr10!
-[71]
+[80]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [72]
+ [81]
+Underfull \vbox (badness 2261) has occurred while \output is active []
 
-LaTeX Warning: Reference `eq:mrua2' on page 73 undefined on input line 233.
-
-
-LaTeX Warning: Reference `eq:mrua1' on page 73 undefined on input line 244.
-
-
-LaTeX Warning: Reference `eq:mrua3' on page 73 undefined on input line 244.
-
-[73]
-
-LaTeX Warning: Reference `eq:mrua1' on page 74 undefined on input line 261.
-
-
-LaTeX Warning: Reference `eq:mrua3' on page 74 undefined on input line 261.
-
-
-LaTeX Warning: Reference `eq:mrua1' on page 74 undefined on input line 263.
-
-
-LaTeX Warning: Reference `eq:mrua3' on page 74 undefined on input line 265.
-
-
-LaTeX Warning: Reference `eq:mrua5' on page 74 undefined on input line 278.
-
-
+ [82] [83]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [74]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [75]
+ [84]
 
 LaTeX Warning: Command \oe invalid in math mode on input line 367.
 
@@ -2252,7 +2335,7 @@ Missing character: There is no ÷ in font cmr10!
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [76]
+ [85]
 
 LaTeX Warning: Command \oe invalid in math mode on input line 398.
 
@@ -2269,7 +2352,7 @@ LaTeX Warning: Command \oe invalid in math mode on input line 442.
 
 Missing character: There is no ÷ in font cmr10!
 Missing character: There is no ÷ in font cmr10!
-[77] [78]
+[86] [87]
 
 LaTeX Warning: Command \oe invalid in math mode on input line 539.
 
@@ -2278,7 +2361,7 @@ Missing character: There is no ÷ in font cmr10!
 LaTeX Warning: Command \oe invalid in math mode on input line 572.
 
 Missing character: There is no ÷ in font cmr10!
-[79]
+[88]
 
 LaTeX Warning: Command \oe invalid in math mode on input line 619.
 
@@ -2359,16 +2442,16 @@ Missing character: There is no ÷ in font cmr10!
 LaTeX Warning: Command \oe invalid in math mode on input line 708.
 
 Missing character: There is no ÷ in font cmr10!
-[80] [81]) (chapitres/ch1/sec-chute-libre.tex [82] [83]
+[89] [90]) (chapitres/ch1/sec-chute-libre.tex [91] [92]
 Underfull \vbox (badness 8189) has occurred while \output is active []
 
- [84]
+ [93]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [85] [86]
+ [94] [95]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [87]) (chapitres/ch1/sec-mouvement-2D.tex [88] [89]
+ [96]) (chapitres/ch1/sec-mouvement-2D.tex [97] [98]
 
 LaTeX Warning: Command \oe invalid in math mode on input line 142.
 
@@ -2431,16 +2514,16 @@ Missing character: There is no ÷ in font cmr10!
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [90]) (chapitres/ch1/sec-projectile.tex
+ [99]) (chapitres/ch1/sec-projectile.tex
 Underfull \vbox (badness 2662) has occurred while \output is active []
 
- [91]
+ [100]
 Underfull \vbox (badness 1152) has occurred while \output is active []
 
- [92] [93]
+ [101] [102]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [94]
+ [103]
 
 LaTeX Warning: Command \textdegree invalid in math mode on input line 226.
 
@@ -2451,7 +2534,7 @@ Missing character: There is no ° in font cmr10!
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [95]
+ [104]
 
 LaTeX Warning: Command \textdegree invalid in math mode on input line 262.
 
@@ -2480,7 +2563,7 @@ LaTeX Warning: Command \textdegree invalid in math mode on input line 273.
 LaTeX Warning: Command \textdegree invalid in math mode on input line 273.
 
 Missing character: There is no ° in font cmr10!
-[96]
+[105]
 
 LaTeX Warning: Command \textdegree invalid in math mode on input line 301.
 
@@ -2509,7 +2592,7 @@ LaTeX Warning: Command \textdegree invalid in math mode on input line 310.
 LaTeX Warning: Command \textdegree invalid in math mode on input line 310.
 
 Missing character: There is no ° in font cmr10!
-[97]
+[106]
 
 LaTeX Warning: Command \textdegree invalid in math mode on input line 336.
 
@@ -2539,55 +2622,7 @@ Missing character: There is no ÷ in font cmr10!
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [98]
-
-LaTeX Warning: Command \textdegree invalid in math mode on input line 416.
-
-
-LaTeX Warning: Command \textdegree invalid in math mode on input line 416.
-
-
-LaTeX Warning: Command \textdegree invalid in math mode on input line 416.
-
-
-LaTeX Warning: Command \textdegree invalid in math mode on input line 416.
-
-Missing character: There is no ° in font cmr10!
-Missing character: There is no ° in font cmr10!
-
-LaTeX Warning: Command \textdegree invalid in math mode on input line 418.
-
-
-LaTeX Warning: Command \textdegree invalid in math mode on input line 418.
-
-Missing character: There is no ° in font cmr10!
-
-LaTeX Warning: Command \textdegree invalid in math mode on input line 418.
-
-
-LaTeX Warning: Command \textdegree invalid in math mode on input line 418.
-
-Missing character: There is no ° in font cmr10!
-
-LaTeX Warning: Command \textdegree invalid in math mode on input line 420.
-
-
-LaTeX Warning: Command \textdegree invalid in math mode on input line 420.
-
-Missing character: There is no ° in font cmr10!
-
-LaTeX Warning: Command \textdegree invalid in math mode on input line 420.
-
-
-LaTeX Warning: Command \textdegree invalid in math mode on input line 420.
-
-Missing character: There is no ° in font cmr10!
-
-LaTeX Warning: Command \textdegree invalid in math mode on input line 421.
-
-
-LaTeX Warning: Command \textdegree invalid in math mode on input line 421.
-
+ [107]
 
 LaTeX Warning: Command \textdegree invalid in math mode on input line 421.
 
@@ -2602,130 +2637,175 @@ LaTeX Warning: Command \textdegree invalid in math mode on input line 421.
 
 Missing character: There is no ° in font cmr10!
 Missing character: There is no ° in font cmr10!
-Missing character: There is no ° in font cmr10!
 
-LaTeX Warning: Command \textdegree invalid in math mode on input line 421.
-
-
-LaTeX Warning: Command \textdegree invalid in math mode on input line 421.
-
-Missing character: There is no ° in font cmr10!
-
-LaTeX Warning: Command \textdegree invalid in math mode on input line 432.
+LaTeX Warning: Command \textdegree invalid in math mode on input line 423.
 
 
-LaTeX Warning: Command \textdegree invalid in math mode on input line 432.
+LaTeX Warning: Command \textdegree invalid in math mode on input line 423.
 
 Missing character: There is no ° in font cmr10!
 
-LaTeX Warning: Command \textdegree invalid in math mode on input line 436.
+LaTeX Warning: Command \textdegree invalid in math mode on input line 423.
 
 
-LaTeX Warning: Command \textdegree invalid in math mode on input line 436.
-
-Missing character: There is no ° in font cmr10!
-
-LaTeX Warning: Command \textdegree invalid in math mode on input line 448.
-
-
-LaTeX Warning: Command \textdegree invalid in math mode on input line 448.
+LaTeX Warning: Command \textdegree invalid in math mode on input line 423.
 
 Missing character: There is no ° in font cmr10!
 
-LaTeX Warning: Command \textdegree invalid in math mode on input line 448.
+LaTeX Warning: Command \textdegree invalid in math mode on input line 425.
 
 
-LaTeX Warning: Command \textdegree invalid in math mode on input line 448.
-
-Missing character: There is no ° in font cmr10!
-
-LaTeX Warning: Command \textdegree invalid in math mode on input line 451.
-
-
-LaTeX Warning: Command \textdegree invalid in math mode on input line 451.
+LaTeX Warning: Command \textdegree invalid in math mode on input line 425.
 
 Missing character: There is no ° in font cmr10!
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [99] [100]
-
-LaTeX Warning: Command \textdegree invalid in math mode on input line 469.
+LaTeX Warning: Command \textdegree invalid in math mode on input line 425.
 
 
-LaTeX Warning: Command \textdegree invalid in math mode on input line 469.
+LaTeX Warning: Command \textdegree invalid in math mode on input line 425.
 
 Missing character: There is no ° in font cmr10!
 
-LaTeX Warning: Command \textdegree invalid in math mode on input line 477.
+LaTeX Warning: Command \textdegree invalid in math mode on input line 426.
 
 
-LaTeX Warning: Command \textdegree invalid in math mode on input line 477.
-
-Missing character: There is no ° in font cmr10!
-[101]) (chapitres/ch1/sec-rotation.tex [102]
-
-LaTeX Warning: Command \textdegree invalid in math mode on input line 71.
+LaTeX Warning: Command \textdegree invalid in math mode on input line 426.
 
 
-LaTeX Warning: Command \textdegree invalid in math mode on input line 71.
-
-Missing character: There is no ° in font cmr10!
-
-LaTeX Warning: Command \textdegree invalid in math mode on input line 73.
+LaTeX Warning: Command \textdegree invalid in math mode on input line 426.
 
 
-LaTeX Warning: Command \textdegree invalid in math mode on input line 73.
+LaTeX Warning: Command \textdegree invalid in math mode on input line 426.
+
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 426.
+
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 426.
 
 Missing character: There is no ° in font cmr10!
-
-LaTeX Warning: Command \textdegree invalid in math mode on input line 75.
-
-
-LaTeX Warning: Command \textdegree invalid in math mode on input line 75.
-
+Missing character: There is no ° in font cmr10!
 Missing character: There is no ° in font cmr10!
 
-LaTeX Warning: Command \textdegree invalid in math mode on input line 77.
+LaTeX Warning: Command \textdegree invalid in math mode on input line 426.
 
 
-LaTeX Warning: Command \textdegree invalid in math mode on input line 77.
+LaTeX Warning: Command \textdegree invalid in math mode on input line 426.
 
 Missing character: There is no ° in font cmr10!
 
-LaTeX Warning: Command \textdegree invalid in math mode on input line 79.
+LaTeX Warning: Command \textdegree invalid in math mode on input line 437.
 
 
-LaTeX Warning: Command \textdegree invalid in math mode on input line 79.
-
-Missing character: There is no ° in font cmr10!
-
-LaTeX Warning: Command \textdegree invalid in math mode on input line 81.
-
-
-LaTeX Warning: Command \textdegree invalid in math mode on input line 81.
+LaTeX Warning: Command \textdegree invalid in math mode on input line 437.
 
 Missing character: There is no ° in font cmr10!
 
-LaTeX Warning: Command \textdegree invalid in math mode on input line 83.
+LaTeX Warning: Command \textdegree invalid in math mode on input line 441.
 
 
-LaTeX Warning: Command \textdegree invalid in math mode on input line 83.
+LaTeX Warning: Command \textdegree invalid in math mode on input line 441.
 
 Missing character: There is no ° in font cmr10!
 
-Underfull \vbox (badness 5374) has occurred while \output is active []
+LaTeX Warning: Command \textdegree invalid in math mode on input line 453.
 
- [103] [104]
-Underfull \vbox (badness 1946) has occurred while \output is active []
 
- [105] [106] [107]
+LaTeX Warning: Command \textdegree invalid in math mode on input line 453.
+
+Missing character: There is no ° in font cmr10!
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 453.
+
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 453.
+
+Missing character: There is no ° in font cmr10!
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 456.
+
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 456.
+
+Missing character: There is no ° in font cmr10!
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [108] [109]
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 474.
+
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 474.
+
+Missing character: There is no ° in font cmr10!
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 482.
+
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 482.
+
+Missing character: There is no ° in font cmr10!
+[110]) (chapitres/ch1/sec-rotation.tex [111] [112]
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 71.
+
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 71.
+
+Missing character: There is no ° in font cmr10!
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 73.
+
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 73.
+
+Missing character: There is no ° in font cmr10!
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 75.
+
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 75.
+
+Missing character: There is no ° in font cmr10!
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 77.
+
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 77.
+
+Missing character: There is no ° in font cmr10!
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 79.
+
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 79.
+
+Missing character: There is no ° in font cmr10!
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 81.
+
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 81.
+
+Missing character: There is no ° in font cmr10!
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 83.
+
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 83.
+
+Missing character: There is no ° in font cmr10!
+[113]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [114] [115] [116]
+Underfull \vbox (badness 5260) has occurred while \output is active []
+
+ [117] [118]
 Underfull \vbox (badness 2035) has occurred while \output is active []
 
- [110]) (chapitres/ch1/sec-vitesse-relative.tex
+ [119]) (chapitres/ch1/sec-vitesse-relative.tex
 
 LaTeX Warning: Command \oe invalid in math mode on input line 29.
 
@@ -2776,32 +2856,32 @@ LaTeX Warning: Command \oe invalid in math mode on input line 96.
 
 Missing character: There is no ÷ in font cmr10!
 Missing character: There is no ° in font cmr10!
-[111]) (chapitres/ch1/sec-resume.tex
+[120]) (chapitres/ch1/sec-resume.tex
 
 LaTeX Warning: Command \oe invalid in math mode on input line 58.
 
 Missing character: There is no ÷ in font cmr10!
-[112]
-chapitres/ch1/sec-resume.tex:85: ignored error: Infinite glue shrinkage found in box being split [113]
+[121]
+chapitres/ch1/sec-resume.tex:85: ignored error: Infinite glue shrinkage found in box being split [122]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [114])) (chapitres/ch2/ch2-main.tex [115] [116
-
-]
+ [123])) (chapitres/ch2/ch2-main.tex [124]
 \bbl@ensure@french {Chapitre} 2.
 (chapitres/ch2/sec-fondements.tex
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [117] [118]
+ [125
+
+] [126]
 Underfull \vbox (badness 2310) has occurred while \output is active []
 
- [119] [120]
+ [127] [128]
 Underfull \vbox (badness 3826) has occurred while \output is active []
 
- [121] [122] [123] [124] [125]) (chapitres/ch2/sec-forces.tex
+ [129] [130] [131] [132] [133]) (chapitres/ch2/sec-forces.tex
 Underfull \vbox (badness 6063) has occurred while \output is active []
 
- [126]
+ [134]
 chapitres/ch2/sec-forces.tex:59: Missing $ inserted.
 <inserted text> 
                 $
@@ -2813,31 +2893,31 @@ you left one out. Proceed, with fingers crossed.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [127]
+ [135]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [128]
+ [136]
 Underfull \vbox (badness 5637) has occurred while \output is active []
 
- [129] [130]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [131]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [132]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [133] [134]) (chapitres/ch2/sec-dcl-equilibre.tex [135] [136]
-Underfull \vbox (badness 4819) has occurred while \output is active []
-
- [137]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [138]
+ [137] [138]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [139]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [140]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [141] [142]) (chapitres/ch2/sec-dcl-equilibre.tex [143] [144]
+Underfull \vbox (badness 4819) has occurred while \output is active []
+
+ [145]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [146]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [147]
 
 chapitres/ch2/sec-dcl-equilibre.tex:354: Package pgfkeys Error: I do not know the key '/tcb/la physique est la mÃªme' and I am going to ignore it. Perhaps you misspelled it.
 
@@ -2988,7 +3068,7 @@ l.527 ...{,}707 = 7\,200 + 12\,440 \approx mg$ âœ“
 You may provide a definition with
 \DeclareUnicodeCharacter 
 
-[140] [141]
+[148] [149]
 
 LaTeX Warning: Command \textdegree invalid in math mode on input line 537.
 
@@ -3082,7 +3162,7 @@ Missing character: There is no ° in font cmr10!
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [142] [143
+ [150] [151
 pdfTeX warning (ext4): destination with the same identifier (name{equation.2.12}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
@@ -3131,7 +3211,7 @@ l.16 ...in{remarque}[title=Maintenant, Ã§a bouge!]
 
 Underfull \vbox (badness 5970) has occurred while \output is active []
 
- [144] [145] [146]
+ [152] [153] [154]
 
 LaTeX Warning: Command \textdegree invalid in math mode on input line 238.
 
@@ -3170,7 +3250,7 @@ Missing character: There is no ° in font cmr10!
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [147]
+ [155]
 
 LaTeX Warning: Command \textdegree invalid in math mode on input line 353.
 
@@ -3209,10 +3289,10 @@ Missing character: There is no ° in font cmr10!
 
 Underfull \vbox (badness 3861) has occurred while \output is active []
 
- [148]
+ [156]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [149]
+ [157]
 
 chapitres/ch2/sec-dynamique.tex:530: LaTeX Error: Unicode character âœ“ (U+2713)
                not set up for use with LaTeX.
@@ -3283,79 +3363,79 @@ You may provide a definition with
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [150]
+ [158]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [151]
+ [159]
 
 LaTeX Warning: Command \textdegree invalid in math mode on input line 664.
 
 
 LaTeX Warning: Command \textdegree invalid in math mode on input line 664.
-
-Missing character: There is no ° in font cmr10!
-[152]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [153]) (chapitres/ch2/sec-circulaire.tex
-pdfTeX warning (ext4): destination with the same identifier (name{equation.2.12}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.20 \begin{equation}
-                     
-pdfTeX warning (ext4): destination with the same identifier (name{equation.2.12}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.20 \begin{equation}
-                     
-pdfTeX warning (ext4): destination with the same identifier (name{equation.2.12}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.20 \begin{equation}
-                     
-pdfTeX warning (ext4): destination with the same identifier (name{equation.2.12}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.20 \begin{equation}
-                     
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [154]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [155] [156] [157]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [158] [159]
-
-LaTeX Warning: Command \textdegree invalid in math mode on input line 525.
-
-
-LaTeX Warning: Command \textdegree invalid in math mode on input line 525.
-
-Missing character: There is no ° in font cmr10!
-
-LaTeX Warning: Command \textdegree invalid in math mode on input line 530.
-
-
-LaTeX Warning: Command \textdegree invalid in math mode on input line 530.
 
 Missing character: There is no ° in font cmr10!
 [160]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [161]) (chapitres/ch2/sec-resume.tex
+ [161]) (chapitres/ch2/sec-circulaire.tex
+pdfTeX warning (ext4): destination with the same identifier (name{equation.2.12}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.20 \begin{equation}
+                     
+pdfTeX warning (ext4): destination with the same identifier (name{equation.2.12}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.20 \begin{equation}
+                     
+pdfTeX warning (ext4): destination with the same identifier (name{equation.2.12}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.20 \begin{equation}
+                     
+pdfTeX warning (ext4): destination with the same identifier (name{equation.2.12}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.20 \begin{equation}
+                     
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [162]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [163] [164] [165]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [166] [167]
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 525.
+
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 525.
+
+Missing character: There is no ° in font cmr10!
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 530.
+
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 530.
+
+Missing character: There is no ° in font cmr10!
+[168]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [169]) (chapitres/ch2/sec-resume.tex
 Overfull \hbox (3.05823pt too wide) in paragraph at lines 16--36
  [] 
  []
 
-[162]
+[170]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [163] [164]
+ [171] [172]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [165]
+ [173]
 Overfull \hbox (21.28337pt too wide) in paragraph at lines 250--273
  [] 
  []
@@ -3363,11 +3443,11 @@ Overfull \hbox (21.28337pt too wide) in paragraph at lines 250--273
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [166])) [167] (main.aux
+ [174])) [175] (main.aux
 main.aux:57: Missing \endcsname inserted.
 <to be read again> 
                    \def 
-l.57 ...ex:Ã}{{0.8}{14}{V}{tcb@cnt@exemple.0.8}{}}
+l.57 ...ex:Ã}{{0.8}{18}{V}{tcb@cnt@exemple.0.8}{}}
                                                   
 The control sequence marked <to be read again> should
 not appear between \csname and \endcsname.
@@ -3375,7 +3455,7 @@ not appear between \csname and \endcsname.
 main.aux:100: Missing \endcsname inserted.
 <to be read again> 
                    \def 
-l.100 ...Ã}{{0.15}{27}{D}{tcb@cnt@exemple.0.15}{}}
+l.100 ...Ã}{{0.15}{31}{D}{tcb@cnt@exemple.0.15}{}}
                                                   
 The control sequence marked <to be read again> should
 not appear between \csname and \endcsname.
@@ -3387,32 +3467,23 @@ L3 programming layer <2025-12-24>
  ***********
 
 
-LaTeX Warning: There were undefined references.
+LaTeX Warning: There were multiply-defined labels.
 
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-
-Package rerunfilecheck Warning: File `main.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `main.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  00512211378918C881C664DC8B89A3B7;27383.
+Package rerunfilecheck Info: File `main.out' has not changed.
+(rerunfilecheck)             Checksum: B6CC144E289F24C381695FB28AFC7EE4;27751.
  ) 
 Here is how much of TeX's memory you used:
- 39813 strings out of 467871
- 849932 string characters out of 5416925
- 1332137 words of memory out of 5000000
- 67260 multiletter control sequences out of 15000+600000
+ 40008 strings out of 467871
+ 853454 string characters out of 5416925
+ 1331137 words of memory out of 5000000
+ 67425 multiletter control sequences out of 15000+600000
  659443 words of font info for 112 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  89i,25n,107p,722b,1502s stack positions out of 10000i,1000n,20000p,200000b,200000s
- <C:\Users\jfbeaudo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx0800.pk> <C:\Users\jfbeaudo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1095.pk> <C:\Users\jfbeaudo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti0600.pk> <C:\Users\jfbeaudo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti0900.pk> <C:\Users\jfbeaudo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0600.pk> <C:\Users\jfbeaudo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbi1095.pk> <C:\Users\jfbeaudo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti0800.pk> <C:\Users\jfbeaudo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0700.pk> <C:\Users\jfbeaudo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0800.pk> <C:\Users\jfbeaudo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1000.pk> <C:\Users\jfbeaudo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0900.pk> <C:\Users\jfbeaudo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcbx1095.pk> <C:\Users\jfbeaudo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1000.pk> <C:\Users\jfbeaudo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1000.pk> <C:\Users\jfbeaudo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1000.pk> <C:\Users\jfbeaudo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1095.pk> <C:\Users\jfbeaudo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1095.pk> <C:\Users\jfbeaudo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1095.pk> <C:\Users\jfbeaudo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1200.pk> <C:\Users\jfbeaudo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1440.pk> <C:\Users\jfbeaudo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx2074.pk> <C:\Users\jfbeaudo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1095.pk> <C:\Users\jfbeaudo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx2488.pk> <C:\Users\jfbeaudo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1200.pk> <C:\Users\jfbeaudo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1440.pk> <C:\Users\jfbeaudo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1728.pk><C:/Users/jfbeaudo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/jfbeaudo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/jfbeaudo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/jfbeaudo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/jfbeaudo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/jfbeaudo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/jfbeaudo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi9.pfb><C:/Users/jfbeaudo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/jfbeaudo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/jfbeaudo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/jfbeaudo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/jfbeaudo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/jfbeaudo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/jfbeaudo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/jfbeaudo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/jfbeaudo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy9.pfb><C:/Users/jfbeaudo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on main.pdf (167 pages, 1144773 bytes).
+ <C:\Users\jfbeaudo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx0800.pk> <C:\Users\jfbeaudo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1095.pk> <C:\Users\jfbeaudo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti0600.pk> <C:\Users\jfbeaudo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti0900.pk> <C:\Users\jfbeaudo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0600.pk> <C:\Users\jfbeaudo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbi1095.pk> <C:\Users\jfbeaudo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti0800.pk> <C:\Users\jfbeaudo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0700.pk> <C:\Users\jfbeaudo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0800.pk> <C:\Users\jfbeaudo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1000.pk> <C:\Users\jfbeaudo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0900.pk> <C:\Users\jfbeaudo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcbx1095.pk> <C:\Users\jfbeaudo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1000.pk> <C:\Users\jfbeaudo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1000.pk> <C:\Users\jfbeaudo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1000.pk> <C:\Users\jfbeaudo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1095.pk> <C:\Users\jfbeaudo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1095.pk> <C:\Users\jfbeaudo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1200.pk> <C:\Users\jfbeaudo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1440.pk> <C:\Users\jfbeaudo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx2074.pk> <C:\Users\jfbeaudo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1095.pk> <C:\Users\jfbeaudo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1095.pk> <C:\Users\jfbeaudo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx2488.pk> <C:\Users\jfbeaudo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1200.pk> <C:\Users\jfbeaudo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1440.pk> <C:\Users\jfbeaudo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1728.pk><C:/Users/jfbeaudo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/jfbeaudo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/jfbeaudo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/jfbeaudo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/jfbeaudo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/jfbeaudo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/jfbeaudo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi9.pfb><C:/Users/jfbeaudo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/jfbeaudo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/jfbeaudo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/jfbeaudo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/jfbeaudo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/jfbeaudo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/jfbeaudo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/jfbeaudo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/jfbeaudo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy9.pfb><C:/Users/jfbeaudo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb>
+Output written on main.pdf (175 pages, 1258955 bytes).
 PDF statistics:
- 2481 PDF objects out of 2487 (max. 8388607)
- 796 named destinations out of 1000 (max. 500000)
- 29 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 3090 PDF objects out of 3580 (max. 8388607)
+ 820 named destinations out of 1000 (max. 500000)
+ 1101 words of extra memory for PDF output out of 10000 (max. 10000000)
 
