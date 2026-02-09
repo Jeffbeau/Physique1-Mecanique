@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.2.2)  9 FEB 2026 09:41
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.2.2)  9 FEB 2026 09:43
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -775,7 +775,8 @@ Package: lipsum 2021-09-20 v2.7 150 paragraphs of Lorem Ipsum dummy text
 \l__lipsum_b_int=\count381
  (C:\Users\jfbeaudo\AppData\Local\Programs\MiKTeX\tex/latex/lipsum\lipsum.ltd.tex)) (C:\Users\jfbeaudo\AppData\Local\Programs\MiKTeX\tex/latex/cancel\cancel.sty
 Package: cancel 2013/04/12 v2.2 Cancel math terms
-)) (exercices-seuls.aux)
+))
+No file exercices-seuls.aux.
 \openout1 = `exercices-seuls.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 8.
@@ -796,7 +797,6 @@ LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 8.
 LaTeX Font Info:    ... okay on input line 8.
 LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 8.
 LaTeX Font Info:    ... okay on input line 8.
-
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -854,7 +854,6 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
 Package hyperref Info: Link coloring ON on input line 8.
- (exercices-seuls.out) (exercices-seuls.out)
 \@outlinefile=\write4
 \openout4 = `exercices-seuls.out'.
 
@@ -870,11 +869,12 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 {C:/Users/jfbeaudo/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}] [2
 
-] (exercices-seuls.toc)
+]
+No file exercices-seuls.toc.
 \tf@toc=\write5
 \openout5 = `exercices-seuls.toc'.
 
- [3] [4
+[3] [4
 
 ]
 \bbl@ensure@french {Chapitre} 1.
@@ -915,312 +915,337 @@ Missing character: There is no ÷ in font cmr10!
 LaTeX Warning: Command \oe invalid in math mode on input line 65.
 
 Missing character: There is no ÷ in font cmr10!
-[6] [7] [8]
+[6] [7]
 
-LaTeX Warning: Command \oe invalid in math mode on input line 293.
-
-Missing character: There is no ÷ in font cmr10!
-
-LaTeX Warning: Command \oe invalid in math mode on input line 293.
+LaTeX Warning: Command \oe invalid in math mode on input line 243.
 
 Missing character: There is no ÷ in font cmr10!
 
-Overfull \hbox (1.1368pt too wide) in paragraph at lines 293--294
+LaTeX Warning: Command \oe invalid in math mode on input line 243.
+
+Missing character: There is no ÷ in font cmr10!
+
+Overfull \hbox (1.1368pt too wide) in paragraph at lines 243--244
 []\T1/cmr/bx/n/10.95 20. \T1/cmr/m/n/10.95 Un porte-conteneurs passe de $\OT1/cmr/m/n/10.95 5 []$ \T1/cmr/m/n/10.95 à $\OT1/cmr/m/n/10.95 18 []$ \T1/cmr/m/n/10.95 en $\OT1/cmr/m/n/10.95 12 []$\T1/cmr/m/n/10.95 . Cal-cu-lez son ac-cé-lé-ra-tion moyenne
  []
 
+[8]
 
-LaTeX Warning: Command \oe invalid in math mode on input line 297.
-
-Missing character: There is no ÷ in font cmr10!
-
-LaTeX Warning: Command \oe invalid in math mode on input line 303.
+LaTeX Warning: Command \oe invalid in math mode on input line 247.
 
 Missing character: There is no ÷ in font cmr10!
 
-LaTeX Warning: Command \oe invalid in math mode on input line 311.
+LaTeX Warning: Command \oe invalid in math mode on input line 253.
+
+Missing character: There is no ÷ in font cmr10!
+
+LaTeX Warning: Command \oe invalid in math mode on input line 261.
+
+Missing character: There is no ÷ in font cmr10!
+
+LaTeX Warning: Command \oe invalid in math mode on input line 275.
 
 Missing character: There is no ÷ in font cmr10!
 [9]
 
-LaTeX Warning: Command \oe invalid in math mode on input line 325.
+LaTeX Warning: Command \oe invalid in math mode on input line 330.
 
 Missing character: There is no ÷ in font cmr10!
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 330.
+
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 330.
+
+Missing character: There is no ° in font cmr10!
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 336.
+
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 336.
+
+Missing character: There is no ° in font cmr10!
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 342.
+
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 342.
+
+Missing character: There is no ° in font cmr10!
 [10]
 
-LaTeX Warning: Command \oe invalid in math mode on input line 380.
-
-Missing character: There is no ÷ in font cmr10!
-
-LaTeX Warning: Command \textdegree invalid in math mode on input line 380.
+LaTeX Warning: Command \textdegree invalid in math mode on input line 350.
 
 
-LaTeX Warning: Command \textdegree invalid in math mode on input line 380.
+LaTeX Warning: Command \textdegree invalid in math mode on input line 350.
 
 Missing character: There is no ° in font cmr10!
 
-LaTeX Warning: Command \textdegree invalid in math mode on input line 386.
+LaTeX Warning: Command \textdegree invalid in math mode on input line 365.
 
 
-LaTeX Warning: Command \textdegree invalid in math mode on input line 386.
-
-Missing character: There is no ° in font cmr10!
-
-LaTeX Warning: Command \textdegree invalid in math mode on input line 392.
-
-
-LaTeX Warning: Command \textdegree invalid in math mode on input line 392.
-
-Missing character: There is no ° in font cmr10!
-
-LaTeX Warning: Command \textdegree invalid in math mode on input line 400.
-
-
-LaTeX Warning: Command \textdegree invalid in math mode on input line 400.
-
-Missing character: There is no ° in font cmr10!
-
-LaTeX Warning: Command \textdegree invalid in math mode on input line 415.
-
-
-LaTeX Warning: Command \textdegree invalid in math mode on input line 415.
+LaTeX Warning: Command \textdegree invalid in math mode on input line 365.
 
 Missing character: There is no ° in font cmr10!
 [11]
 
-LaTeX Warning: Command \oe invalid in math mode on input line 455.
+LaTeX Warning: Command \oe invalid in math mode on input line 405.
 
 Missing character: There is no ÷ in font cmr10!
 
-LaTeX Warning: Command \oe invalid in math mode on input line 455.
+LaTeX Warning: Command \oe invalid in math mode on input line 405.
 
 Missing character: There is no ÷ in font cmr10!
 
-LaTeX Warning: Command \oe invalid in math mode on input line 465.
+LaTeX Warning: Command \oe invalid in math mode on input line 415.
 
 Missing character: There is no ÷ in font cmr10!
 
-LaTeX Warning: Command \oe invalid in math mode on input line 471.
+LaTeX Warning: Command \oe invalid in math mode on input line 421.
 
 Missing character: There is no ÷ in font cmr10!
-[12] [13]
+[12]
 
-LaTeX Warning: Command \oe invalid in math mode on input line 530.
-
-Missing character: There is no ÷ in font cmr10!
-
-LaTeX Warning: Command \oe invalid in math mode on input line 530.
+LaTeX Warning: Command \oe invalid in math mode on input line 480.
 
 Missing character: There is no ÷ in font cmr10!
 
-LaTeX Warning: Command \textdegree invalid in math mode on input line 541.
+LaTeX Warning: Command \oe invalid in math mode on input line 480.
+
+Missing character: There is no ÷ in font cmr10!
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 491.
 
 
-LaTeX Warning: Command \textdegree invalid in math mode on input line 541.
+LaTeX Warning: Command \textdegree invalid in math mode on input line 491.
 
 Missing character: There is no ° in font cmr10!
-
-Overfull \hbox (15.48518pt too wide) in paragraph at lines 547--548
+[13]
+Overfull \hbox (15.48518pt too wide) in paragraph at lines 497--498
 []\T1/cmr/m/n/10.95 Si l'ath-lète pou-vait aug-men-ter sa vi-tesse de lan-cer de 10%, de com-bien la por-tée augmenterait-
  []
 
 
-LaTeX Warning: Command \oe invalid in math mode on input line 552.
+LaTeX Warning: Command \oe invalid in math mode on input line 502.
 
 Missing character: There is no ÷ in font cmr10!
 
-LaTeX Warning: Command \oe invalid in math mode on input line 552.
+LaTeX Warning: Command \oe invalid in math mode on input line 502.
+
+Missing character: There is no ÷ in font cmr10!
+
+LaTeX Warning: Command \oe invalid in math mode on input line 537.
 
 Missing character: There is no ÷ in font cmr10!
 [14]
 
-LaTeX Warning: Command \oe invalid in math mode on input line 587.
+LaTeX Warning: Command \oe invalid in math mode on input line 552.
 
 Missing character: There is no ÷ in font cmr10!
 
-LaTeX Warning: Command \oe invalid in math mode on input line 602.
+LaTeX Warning: Command \oe invalid in math mode on input line 552.
 
 Missing character: There is no ÷ in font cmr10!
 
-LaTeX Warning: Command \oe invalid in math mode on input line 602.
+LaTeX Warning: Command \oe invalid in math mode on input line 553.
 
 Missing character: There is no ÷ in font cmr10!
 
-LaTeX Warning: Command \oe invalid in math mode on input line 603.
+LaTeX Warning: Command \oe invalid in math mode on input line 554.
 
 Missing character: There is no ÷ in font cmr10!
 
-LaTeX Warning: Command \oe invalid in math mode on input line 604.
+LaTeX Warning: Command \oe invalid in math mode on input line 554.
 
 Missing character: There is no ÷ in font cmr10!
 
-LaTeX Warning: Command \oe invalid in math mode on input line 604.
+LaTeX Warning: Command \oe invalid in math mode on input line 555.
 
 Missing character: There is no ÷ in font cmr10!
 
-LaTeX Warning: Command \oe invalid in math mode on input line 605.
+LaTeX Warning: Command \oe invalid in math mode on input line 591.
 
 Missing character: There is no ÷ in font cmr10!
 [15]
 
-LaTeX Warning: Command \oe invalid in math mode on input line 641.
+LaTeX Warning: Command \oe invalid in math mode on input line 592.
+
+Missing character: There is no ÷ in font cmr10!
+exercices/ex-ch1.tex:614: Undefined control sequence.
+l.614 ...e pas pendant la chute, quelle est la \og
+                                                   zone de danger \fg{} au s...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+exercices/ex-ch1.tex:614: Undefined control sequence.
+\fg ->\ERROR 
+             
+l.614 ...ute, quelle est la \og zone de danger \fg
+                                                  {} au sol (rectangle oÃ¹ l...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+LaTeX Warning: Command \oe invalid in math mode on input line 622.
 
 Missing character: There is no ÷ in font cmr10!
 
-LaTeX Warning: Command \oe invalid in math mode on input line 642.
+LaTeX Warning: Command \oe invalid in math mode on input line 626.
 
 Missing character: There is no ÷ in font cmr10!
 [16]
 
-LaTeX Warning: Command \oe invalid in math mode on input line 672.
+LaTeX Warning: Command \oe invalid in math mode on input line 638.
 
 Missing character: There is no ÷ in font cmr10!
 
-LaTeX Warning: Command \oe invalid in math mode on input line 676.
+LaTeX Warning: Command \oe invalid in math mode on input line 638.
 
 Missing character: There is no ÷ in font cmr10!
 
-LaTeX Warning: Command \oe invalid in math mode on input line 688.
-
-Missing character: There is no ÷ in font cmr10!
-
-LaTeX Warning: Command \oe invalid in math mode on input line 688.
-
-Missing character: There is no ÷ in font cmr10!
-
-LaTeX Warning: Command \textdegree invalid in math mode on input line 693.
+LaTeX Warning: Command \textdegree invalid in math mode on input line 643.
 
 
-LaTeX Warning: Command \textdegree invalid in math mode on input line 693.
+LaTeX Warning: Command \textdegree invalid in math mode on input line 643.
 
 Missing character: There is no ° in font cmr10!
-[17] [18]
 
-LaTeX Warning: Command \oe invalid in math mode on input line 740.
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-Missing character: There is no ÷ in font cmr10!
+ [17]
 
-LaTeX Warning: Command \oe invalid in math mode on input line 742.
-
-Missing character: There is no ÷ in font cmr10!
-
-LaTeX Warning: Command \oe invalid in math mode on input line 744.
+LaTeX Warning: Command \oe invalid in math mode on input line 690.
 
 Missing character: There is no ÷ in font cmr10!
 
-LaTeX Warning: Command \oe invalid in math mode on input line 744.
+LaTeX Warning: Command \oe invalid in math mode on input line 692.
 
 Missing character: There is no ÷ in font cmr10!
 
-LaTeX Warning: Command \oe invalid in math mode on input line 746.
+LaTeX Warning: Command \oe invalid in math mode on input line 694.
 
 Missing character: There is no ÷ in font cmr10!
 
-LaTeX Warning: Command \oe invalid in math mode on input line 748.
+LaTeX Warning: Command \oe invalid in math mode on input line 694.
 
 Missing character: There is no ÷ in font cmr10!
 
-LaTeX Warning: Command \oe invalid in math mode on input line 750.
+LaTeX Warning: Command \oe invalid in math mode on input line 696.
 
 Missing character: There is no ÷ in font cmr10!
 
-LaTeX Warning: Command \oe invalid in math mode on input line 784.
+LaTeX Warning: Command \oe invalid in math mode on input line 698.
 
 Missing character: There is no ÷ in font cmr10!
+
+LaTeX Warning: Command \oe invalid in math mode on input line 700.
+
+Missing character: There is no ÷ in font cmr10!
+[18]
+
+LaTeX Warning: Command \oe invalid in math mode on input line 741.
+
+Missing character: There is no ÷ in font cmr10!
+
+LaTeX Warning: Command \oe invalid in math mode on input line 761.
+
+Missing character: There is no ÷ in font cmr10!
+
+LaTeX Warning: Command \oe invalid in math mode on input line 761.
+
+Missing character: There is no ÷ in font cmr10!
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 769.
+
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 769.
+
+Missing character: There is no ° in font cmr10!
 [19]
 
-LaTeX Warning: Command \oe invalid in math mode on input line 804.
+LaTeX Warning: Command \textdegree invalid in math mode on input line 776.
+
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 776.
+
+Missing character: There is no ° in font cmr10!
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 795.
+
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 795.
+
+Missing character: There is no ° in font cmr10!
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 807.
+
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 807.
+
+Missing character: There is no ° in font cmr10!
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 814.
+
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 814.
+
+Missing character: There is no ° in font cmr10!
+
+LaTeX Warning: Command \oe invalid in math mode on input line 816.
 
 Missing character: There is no ÷ in font cmr10!
 
-LaTeX Warning: Command \oe invalid in math mode on input line 804.
+LaTeX Warning: Command \oe invalid in math mode on input line 818.
 
 Missing character: There is no ÷ in font cmr10!
 
-LaTeX Warning: Command \textdegree invalid in math mode on input line 812.
+LaTeX Warning: Command \oe invalid in math mode on input line 818.
+
+Missing character: There is no ÷ in font cmr10!
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 822.
 
 
-LaTeX Warning: Command \textdegree invalid in math mode on input line 812.
-
-Missing character: There is no ° in font cmr10!
-
-LaTeX Warning: Command \textdegree invalid in math mode on input line 819.
-
-
-LaTeX Warning: Command \textdegree invalid in math mode on input line 819.
-
-Missing character: There is no ° in font cmr10!
-
-LaTeX Warning: Command \textdegree invalid in math mode on input line 838.
-
-
-LaTeX Warning: Command \textdegree invalid in math mode on input line 838.
-
-Missing character: There is no ° in font cmr10!
-
-LaTeX Warning: Command \textdegree invalid in math mode on input line 850.
-
-
-LaTeX Warning: Command \textdegree invalid in math mode on input line 850.
+LaTeX Warning: Command \textdegree invalid in math mode on input line 822.
 
 Missing character: There is no ° in font cmr10!
 [20]
 
-LaTeX Warning: Command \textdegree invalid in math mode on input line 857.
+LaTeX Warning: Command \textdegree invalid in math mode on input line 826.
 
 
-LaTeX Warning: Command \textdegree invalid in math mode on input line 857.
-
-Missing character: There is no ° in font cmr10!
-
-LaTeX Warning: Command \oe invalid in math mode on input line 859.
-
-Missing character: There is no ÷ in font cmr10!
-
-LaTeX Warning: Command \oe invalid in math mode on input line 861.
-
-Missing character: There is no ÷ in font cmr10!
-
-LaTeX Warning: Command \oe invalid in math mode on input line 861.
-
-Missing character: There is no ÷ in font cmr10!
-
-LaTeX Warning: Command \textdegree invalid in math mode on input line 865.
-
-
-LaTeX Warning: Command \textdegree invalid in math mode on input line 865.
+LaTeX Warning: Command \textdegree invalid in math mode on input line 826.
 
 Missing character: There is no ° in font cmr10!
 
-LaTeX Warning: Command \textdegree invalid in math mode on input line 869.
+LaTeX Warning: Command \textdegree invalid in math mode on input line 826.
 
 
-LaTeX Warning: Command \textdegree invalid in math mode on input line 869.
-
-Missing character: There is no ° in font cmr10!
-
-LaTeX Warning: Command \textdegree invalid in math mode on input line 869.
-
-
-LaTeX Warning: Command \textdegree invalid in math mode on input line 869.
+LaTeX Warning: Command \textdegree invalid in math mode on input line 826.
 
 Missing character: There is no ° in font cmr10!
 
-LaTeX Warning: Command \textdegree invalid in math mode on input line 871.
+LaTeX Warning: Command \textdegree invalid in math mode on input line 828.
 
 
-LaTeX Warning: Command \textdegree invalid in math mode on input line 871.
-
-Missing character: There is no ° in font cmr10!
-
-LaTeX Warning: Command \textdegree invalid in math mode on input line 871.
-
-
-LaTeX Warning: Command \textdegree invalid in math mode on input line 871.
+LaTeX Warning: Command \textdegree invalid in math mode on input line 828.
 
 Missing character: There is no ° in font cmr10!
 
-LaTeX Warning: Command \oe invalid in math mode on input line 873.
+LaTeX Warning: Command \textdegree invalid in math mode on input line 828.
+
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 828.
+
+Missing character: There is no ° in font cmr10!
+
+LaTeX Warning: Command \oe invalid in math mode on input line 830.
 
 Missing character: There is no ÷ in font cmr10!
 ) [21] [22
@@ -1322,21 +1347,28 @@ Missing character: There is no é in font cmr8!
 LaTeX2e <2025-11-01>
 L3 programming layer <2025-12-24>
  ***********
-Package rerunfilecheck Info: File `exercices-seuls.out' has not changed.
-(rerunfilecheck)             Checksum: D7FD0A5EFD619111F52B96EFFFCAD1FE;729.
+
+
+Package rerunfilecheck Warning: File `exercices-seuls.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `exercices-seuls.out':
+(rerunfilecheck)             Before: <no file>
+(rerunfilecheck)             After:  D7FD0A5EFD619111F52B96EFFFCAD1FE;729.
  ) 
 Here is how much of TeX's memory you used:
- 37515 strings out of 467871
- 803193 string characters out of 5416925
- 1317144 words of memory out of 5000000
- 65533 multiletter control sequences out of 15000+600000
+ 37354 strings out of 467871
+ 799505 string characters out of 5416925
+ 1313144 words of memory out of 5000000
+ 65385 multiletter control sequences out of 15000+600000
  648163 words of font info for 90 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  89i,12n,107p,640b,1333s stack positions out of 10000i,1000n,20000p,200000b,200000s
- <C:\Users\jfbeaudo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcti1095.pk> <C:\Users\jfbeaudo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0900.pk> <C:\Users\jfbeaudo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1095.pk> <C:\Users\jfbeaudo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1000.pk> <C:\Users\jfbeaudo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1095.pk> <C:\Users\jfbeaudo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1200.pk> <C:\Users\jfbeaudo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1440.pk> <C:\Users\jfbeaudo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx2074.pk> <C:\Users\jfbeaudo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1095.pk> <C:\Users\jfbeaudo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1095.pk> <C:\Users\jfbeaudo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx2488.pk> <C:\Users\jfbeaudo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1200.pk> <C:\Users\jfbeaudo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1440.pk> <C:\Users\jfbeaudo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1728.pk><C:/Users/jfbeaudo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/jfbeaudo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/jfbeaudo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/jfbeaudo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/jfbeaudo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/jfbeaudo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/jfbeaudo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/jfbeaudo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on exercices-seuls.pdf (30 pages, 357527 bytes).
+ <C:\Users\jfbeaudo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcti1095.pk> <C:\Users\jfbeaudo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0900.pk> <C:\Users\jfbeaudo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1095.pk> <C:\Users\jfbeaudo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1000.pk> <C:\Users\jfbeaudo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1095.pk> <C:\Users\jfbeaudo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1200.pk> <C:\Users\jfbeaudo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1095.pk> <C:\Users\jfbeaudo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1440.pk> <C:\Users\jfbeaudo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx2074.pk> <C:\Users\jfbeaudo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1095.pk> <C:\Users\jfbeaudo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx2488.pk> <C:\Users\jfbeaudo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1200.pk> <C:\Users\jfbeaudo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1440.pk> <C:\Users\jfbeaudo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1728.pk><C:/Users/jfbeaudo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/jfbeaudo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/jfbeaudo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/jfbeaudo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/jfbeaudo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/jfbeaudo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/jfbeaudo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/jfbeaudo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
+Output written on exercices-seuls.pdf (30 pages, 350146 bytes).
 PDF statistics:
- 972 PDF objects out of 1000 (max. 8388607)
- 308 named destinations out of 1000 (max. 500000)
- 49 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 947 PDF objects out of 1000 (max. 8388607)
+ 303 named destinations out of 1000 (max. 500000)
+ 17 words of extra memory for PDF output out of 10000 (max. 10000000)
 

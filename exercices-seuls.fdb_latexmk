@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1770648100.11986 "c:/Users/jfbeaudo/OneDrive - Collège de Rimouski/Hiver-2026/Materiel_JFB/Notes de cours/Notes_git/Physique1-Mecanique/exercices-seuls.tex" "exercices-seuls.pdf" "exercices-seuls" 1770648108.19596 0
+["pdflatex"] 1770648227.83407 "c:/Users/jfbeaudo/OneDrive - Collège de Rimouski/Hiver-2026/Materiel_JFB/Notes de cours/Notes_git/Physique1-Mecanique/exercices-seuls.tex" "exercices-seuls.pdf" "exercices-seuls" 1770648237.49698 2
   "C:/Users/jfbeaudo/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1770214729 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
   "C:/Users/jfbeaudo/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/ecbx1095.pk" 1770049867 28976 e3944b5aaaad485c813257450ddf4b9a ""
   "C:/Users/jfbeaudo/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/ecbx1200.pk" 1770049869 31952 1222e06ed6460a705778d13c2ca5a499 ""
@@ -236,11 +236,11 @@
   "C:/Users/jfbeaudo/AppData/Local/Programs/MiKTeX/tex/latex/wrapfig/wrapfig.sty" 1044403200 26220 3701aebf80ccdef248c0c20dd062fea9 ""
   "C:/Users/jfbeaudo/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1729265222 55384 b454dec21c2d9f45ec0b793f0995b992 ""
   "c:/Users/jfbeaudo/OneDrive - Collège de Rimouski/Hiver-2026/Materiel_JFB/Notes de cours/Notes_git/Physique1-Mecanique/exercices-seuls.tex" 1770218575 475 1fe2fa8269cfbc9d5574cdd91670a685 ""
-  "exercices-seuls.aux" 1770648107 895 7088ad7069dba392c0cb0abffdd34650 "pdflatex"
-  "exercices-seuls.out" 1770648107 729 d7fd0a5efd619111f52b96efffcad1fe "pdflatex"
+  "exercices-seuls.aux" 1770648236 895 7088ad7069dba392c0cb0abffdd34650 "pdflatex"
+  "exercices-seuls.out" 1770648236 729 d7fd0a5efd619111f52b96efffcad1fe "pdflatex"
   "exercices-seuls.tex" 1770218575 475 1fe2fa8269cfbc9d5574cdd91670a685 ""
-  "exercices-seuls.toc" 1770648107 328 5f7cc8820ccce1e657105d5a317c5c87 "pdflatex"
-  "exercices/ex-ch1.tex" 1770648088 51262 b5dc02cb15a9ca583e8e232ac6dffe6e ""
+  "exercices-seuls.toc" 1770648236 328 5f7cc8820ccce1e657105d5a317c5c87 "pdflatex"
+  "exercices/ex-ch1.tex" 1770648174 49007 da16a5f8f48516cebd0e73b16bec3120 ""
   "exercices/ex-ch2.tex" 1770218575 29543 a1f59b584b8c26f200e3250af6b77f5c ""
   "preamble.tex" 1770218575 8837 5742b3e1021aafc2e11d84a1a4811576 ""
   (generated)

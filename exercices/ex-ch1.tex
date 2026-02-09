@@ -231,57 +231,7 @@ Le cargo part du repos ($v_0 = 0$).
     \item \textbf{Tracez} le graphique $v(t)$ correspondant à ce mouvement.
 \end{enumerate}
 
-\item[$\star\star\star$] \textbf{19B. Défi -- lecture croisée $x(t)$ et $v(t)$.} On étudie un traversier se déplaçant le long d'un axe $x$ (vers l'est positif). Voici les deux graphiques :
-
-\begin{center}
-\begin{tikzpicture}[scale=0.55]
-% Graphique x(t)
-\begin{scope}[xshift=0cm]
-\draw[axe, thick] (0,0) -- (10,0) node[right] {$t$ (min)};
-\draw[axe, thick] (0,0) -- (0,6) node[above] {$x$ (m)};
-\foreach \x in {0,2,4,6,8} {\draw (\x,0.1) -- (\x,-0.1) node[below] {\small\x};}
-\foreach \y in {0,2,4} {\draw (0.1,\y) -- (-0.1,\y) node[left] {\pgfmathparse{int(\y*275)}\pgfmathresult};}
-% Phase 1 : accélération (0 à 2 min)
-\draw[very thick, blue, domain=0:2, samples=40] plot (\x, {0.5*\x*\x});
-% Phase 2 : MRU (2 à 6 min)
-\draw[very thick, blue] (2,2) -- (6,4.55);
-% Phase 3 : freinage (6 à 9 min)
-\draw[very thick, blue, domain=6:9, samples=40] plot (\x, {4.55 + 0.64*(\x-6) - 0.107*(\x-6)*(\x-6)});
-\fill[blue] (0,0) circle (2pt);
-\fill[blue] (2,2) circle (2pt);
-\fill[blue] (6,4.55) circle (2pt);
-\fill[blue] (9,5.5) circle (2pt);
-\node[below] at (5,-1.5) {\textbf{Graphique A : $x(t)$}};
-\end{scope}
-
-% Graphique v(t)
-\begin{scope}[xshift=12cm]
-\draw[axe, thick] (0,0) -- (10,0) node[right] {$t$ (min)};
-\draw[axe, thick] (0,0) -- (0,4) node[above] {$v$ (m/s)};
-\foreach \x in {0,2,4,6,8} {\draw (\x,0.1) -- (\x,-0.1) node[below] {\small\x};}
-\foreach \y in {0,1,2,3} {\draw (0.1,\y) -- (-0.1,\y) node[left] {\small\y};}
-% Phase 1 : accélération linéaire
-\draw[very thick, blue] (0,0) -- (2,2.5);
-% Phase 2 : vitesse constante
-\draw[very thick, blue] (2,2.5) -- (6,2.5);
-% Phase 3 : décélération linéaire
-\draw[very thick, blue] (6,2.5) -- (9,0);
-\fill[blue] (0,0) circle (2pt);
-\fill[blue] (2,2.5) circle (2pt);
-\fill[blue] (6,2.5) circle (2pt);
-\fill[blue] (9,0) circle (2pt);
-\node[below] at (5,-1.5) {\textbf{Graphique B : $v(t)$}};
-\end{scope}
-\end{tikzpicture}
-\end{center}
-
-\begin{enumerate}[label=\alph*)]
-    \item Sur le graphe $x(t)$, à quel(s) instant(s) l'accélération est-elle nulle? Justifiez.
-    \item Sur le graphe $v(t)$, indiquez les intervalles où l'accélération est positive, nulle et négative.
-    \item Les deux graphes sont-ils compatibles? Donnez deux arguments (pentes et aires).
-    \item Sans calculs détaillés, pendant quel intervalle le traversier parcourt-il la plus grande distance : $[0,2]$, $[2,6]$ ou $[6,9]$? Justifiez.
-    \item À $t=6$ min, comparez la vitesse instantanée (pente de $x(t)$) et la vitesse moyenne sur $[0,6]$.
-\end{enumerate}
+%
 
 \end{enumerate}
 
@@ -462,7 +412,7 @@ Un cargo de haute mer arrive au port de Montréal. À $\SI{2}{km}$ du quai, il n
 
 \item[\textbf{S2.}] \textbf{Homme à la mer}
 
-Un marin tombe d'un navire qui se déplace à $\SI{14}{n\oe{}uds}$. L'équipage met $\SI{45}{s}$ avant de réagir (temps de réaction), puis le navire freine avec une décélération de $\SI{0,015}{m/s^2}$ jusqu'à l'arrêt.
+Un marin tombe d'un navire qui se déplace à $\SI{14}{n\oe{}uds}$. L'équipage met $\SI{45}{s}$ avant de réagir (temps de réaction), puis le navire freine avec une décélération de $\SI{0,15}{m/s^2}$ jusqu'à l'arrêt.
 
 \begin{enumerate}[label=\alph*)]
     \item Quelle distance le navire parcourt-il pendant le temps de réaction?
@@ -533,7 +483,7 @@ Deux navires se font face dans un chenal. Le navire A ($\SI{14}{n\oe{}uds}$ vers
     \item Calculez le temps et la distance de freinage de chaque navire.
     \item Les navires s'arrêtent-ils avant de se percuter?
     \item Si collision il y a, calculez la position de l'impact et les vitesses des navires à ce moment.
-    \item Quelle décélération minimale le navire A aurait-il dû appliquer pour éviter la collision (B gardant la même décélération)?
+    \item Quelle décélération minimale \textbf{identique} les deux navires auraient-ils dû appliquer pour éviter la collision?
 \end{enumerate}
 
 \item[\textbf{S9.}] \textbf{Lancer du poids}
@@ -661,7 +611,7 @@ Une grue portuaire déplace un conteneur horizontalement à $\SI{3}{m/s}$ à une
     \item À quelle distance horizontale du point de rupture le conteneur atterrit-il?
     \item Avec quelle vitesse (module) le conteneur frappe-t-il le sol?
     \item Un travailleur se trouve à $\SI{8}{m}$ horizontalement du point de rupture (dans la direction du mouvement). A-t-il le temps de s'écarter s'il lui faut $\SI{1,5}{s}$ pour réagir et courir $\SI{3}{m}$?
-    \item Le conteneur a des dimensions $\SI{6}{m} \times \SI{2,4}{m}$ (longueur $\times$ largeur). En supposant qu'il ne tourne pas pendant la chute, quelle est la  zone de danger au sol (rectangle où le conteneur pourrait tomber)?
+    \item Le conteneur a des dimensions $\SI{6}{m} \times \SI{2,4}{m}$ (longueur $\times$ largeur). En supposant qu'il ne tourne pas pendant la chute, quelle est la \og zone de danger \fg{} au sol (rectangle où le conteneur pourrait tomber)?
 \end{enumerate}
 
 \item[\textbf{D7.}] \textbf{Navigation avec courant variable} $(\star\star\star\star\star)$
@@ -764,6 +714,13 @@ Un traversier doit rejoindre un quai situé à exactement $\SI{2}{km}$. Pour le 
 
 \textbf{16.} Le signe dépend du choix de l'axe; une pente négative indique un mouvement vers les $x$ décroissants
 
+\textbf{17.} a) MRU, accélération, MRU, freinage \quad b) $\SI{0,0042}{m/s^2}$ \quad c) $\SI{-0,011}{m/s^2}$ \quad d) $\SI{3240}{m}$
+
+\textbf{18.} a) $\SI{4,8}{m/s}$ \quad b) $\SI{4,8}{m/s}$ \quad c) $\SI{3,6}{m/s}$
+
+\textbf{19.} a) Accélération, MRU, freinage \quad b) $\SI{5}{m/s}$ \quad c) Oui (pentes nulles aux extrémités)
+
+
 \medskip
 \textbf{Accélération et MRUA}
 
@@ -790,13 +747,13 @@ Un traversier doit rejoindre un quai situé à exactement $\SI{2}{km}$. Pour le 
 
 \textbf{29.} a) $\SI{2,26}{s}$ \quad b) $\SI{22,1}{m/s}$
 
-\textbf{30.} a) $\SI{1,05}{s}$ \quad b) $\SI{13,3}{m/s}$
+\textbf{30.} a) $\SI{1,01}{s}$ \quad b) $\SI{12,9}{m/s}$
 
 \textbf{31.} a) $\SI{36,9}{m}$ \quad b) $\SI{5,3}{s}$
 
 \textbf{32.} a) $\SI{5,27}{m}$ \quad b) $\SI{1,85}{s}$
 
-\textbf{33.} La balle B (lancée) a une plus grande vitesse car elle a eu le temps d'accélérer depuis le sol
+\textbf{33.} La balle A (lâchée) a la plus grande vitesse; la balle B est à son apogée ($v_B = 0$) au point de croisement
 
 \medskip
 \textbf{Mouvement en 2D et projectile}
@@ -833,19 +790,19 @@ Un traversier doit rejoindre un quai situé à exactement $\SI{2}{km}$. Pour le 
 
 \textbf{S1.} a) $\SI{2400}{m}$ \quad b) $\SI{148}{m}$ \quad c) Non, s'arrête à $\SI{548}{m}$ après le quai; aurait dû commencer à $\SI{2548}{m}$
 
-\textbf{S2.} a) $\SI{324}{m}$ \quad b) $\SI{173}{m}$ \quad c) $\SI{497}{m}$ \quad d) $\SI{521}{m}$
+\textbf{S2.} a) $\SI{324}{m}$ \quad b) $\SI{173}{m}$ \quad c) $\SI{497}{m}$ \quad d) $\SI{545}{m}$
 
-\textbf{S3.} a) $\SI{71,4}{m}$ \quad b) $v = \SI{37,5}{m/s}$ à $41,8°$ sous l'horizontale \quad c) Réduit de $\SI{5,7}{m}$ (larguer à $\SI{65,7}{m}$) \quad d) $\SI{63,9}{m}$
+\textbf{S3.} a) $\SI{71,4}{m}$ \quad b) $v = \SI{37,5}{m/s}$ à $48,2°$ sous l'horizontale \quad c) Réduit de $\SI{5,7}{m}$ (larguer à $\SI{65,7}{m}$) \quad d) $\SI{59,8}{m}$
 
-\textbf{S4.} a) $\SI{0,628}{rad/s^2}$ \quad b) $\SI{0,785}{m/s}$ \quad c) $\SI{0,98}{m}$ \quad d) $\SI{1,56}{s}$
+\textbf{S4.} a) $\SI{0,628}{rad/s^2}$ \quad b) $\SI{0,785}{m/s}$ \quad c) $\SI{1,96}{m}$ \quad d) $\SI{1,65}{s}$
 
-\textbf{S5.} a) $\SI{24,4}{m}$ \quad b) $\SI{52}{m}$ \quad c) Oui, s'arrête à $\SI{3,6}{m}$ de l'obstacle \quad d) $\SI{19,4}{m/s} \approx \SI{70}{km/h}$
+\textbf{S5.} a) $\SI{24,4}{m}$ \quad b) $\SI{52}{m}$ \quad c) Oui, s'arrête à $\SI{3,6}{m}$ de l'obstacle
 
 \textbf{S6.} a) $\SI{4,9}{m/s}$ \quad b) $\SI{1,23}{m}$ \quad c) $\SI{0,33}{s}$ \quad d) $\SI{12,97}{m}$ (s'arrête à environ $\SI{13}{m}$)
 
-\textbf{S7.} a) $\SI{66,7}{m}$ \quad b) $\SI{11,1}{s}$ \quad c) $t \approx \SI{38}{s}$ \quad d) Police : $\SI{1270}{m}$ ; Fuyard : $\SI{1270}{m}$
+\textbf{S7.} a) $\SI{66,7}{m}$ \quad b) $\SI{11,1}{s}$ \quad c) $t \approx \SI{30}{s}$ \quad d) Police : $\SI{1007}{m}$ ; Fuyard : $\SI{1007}{m}$
 
-\textbf{S8.} a) $A$: $t = \SI{901}{s}$, $d = \SI{3246}{m}$ ; $B$: $t = \SI{1029}{s}$, $d = \SI{2646}{m}$ \quad b) Non, collision \quad c) Position $\approx \SI{940}{m}$ de A; $v_A \approx \SI{4,6}{m/s}$, $v_B \approx \SI{3,2}{m/s}$ \quad d) $a_A \geq \SI{-0,035}{m/s^2}$
+\textbf{S8.} a) $A$: $t = \SI{900}{s}$, $d = \SI{3241}{m}$ ; $B$: $t = \SI{1029}{s}$, $d = \SI{2646}{m}$ \quad b) Non, collision \quad c) Position $\approx \SI{872}{m}$ de A; $v_A \approx \SI{6,2}{m/s}$, $v_B \approx \SI{4,5}{m/s}$ \quad d) $a \geq \SI{0,026}{m/s^2}$
 
 \textbf{S9.} a) $\SI{5,55}{m}$ \quad b) $\SI{17,8}{m}$ \quad c) $\approx 42°$ (légèrement moins que 45° car lancé en hauteur) \quad d) Portée augmente de $\approx 21\%$ (proportionnel à $v^2$)
 
