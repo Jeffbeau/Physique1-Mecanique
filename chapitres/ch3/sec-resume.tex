@@ -1,0 +1,301 @@
+% =============================================================================
+% RÉSUMÉ ET COMPÉTENCES
+% Chapitre 3 - Énergie et travail
+% =============================================================================
+
+\section{Résumé du chapitre}
+\label{sec:resume_ch3}
+% =============================================================================
+
+% =============================================================================
+\subsection{Tableau récapitulatif des formules}
+\label{subsec:resume-formules}
+% =============================================================================
+
+\begin{center}
+\renewcommand{\arraystretch}{1.5}
+\begin{tabular}{|p{4cm}|p{5cm}|p{4cm}|}
+\hline
+\rowcolor{bleuclair}
+\textbf{Concept} & \textbf{Formule} & \textbf{Unité SI} \\
+\hline
+Travail d'une force constante & $W = Fd\cos\theta$ & Joule (J) \\
+\hline
+Travail de la gravité & $W_g = -mg\Delta y$ & Joule (J) \\
+\hline
+Travail d'un ressort & $W_R = \frac{1}{2}kx_i^2 - \frac{1}{2}kx_f^2$ & Joule (J) \\
+\hline
+Énergie cinétique & $K = \frac{1}{2}mv^2$ & Joule (J) \\
+\hline
+Énergie potentielle gravitationnelle & $U_g = mgy$ & Joule (J) \\
+\hline
+Énergie potentielle élastique & $U_e = \frac{1}{2}kx^2$ & Joule (J) \\
+\hline
+Théorème de l'énergie cinétique & $W_{\text{total}} = \Delta K$ & -- \\
+\hline
+Énergie mécanique & $E = K + U$ & Joule (J) \\
+\hline
+Conservation (sans frottement) & $K_i + U_i = K_f + U_f$ & -- \\
+\hline
+Avec forces non-conservatives & $K_i + U_i + W_{nc} = K_f + U_f$ & -- \\
+\hline
+Puissance moyenne & $P = W/\Delta t$ & Watt (W) \\
+\hline
+Puissance instantanée & $P = Fv$ & Watt (W) \\
+\hline
+\multicolumn{3}{|l|}{\cellcolor{gray!20}\textbf{Quantité de mouvement et collisions}} \\
+\hline
+Quantité de mouvement & $\vect{p} = m\vect{v}$ & $\SI{}{kg \cdot m/s}$ \\
+\hline
+Impulsion & $\vect{J} = \vect{F}_{moy} \cdot \Delta t$ & $\SI{}{N \cdot s}$ \\
+\hline
+Théorème de l'impulsion & $\vect{J} = \Delta \vect{p} = m\vect{v}_f - m\vect{v}_i$ & -- \\
+\hline
+Conservation de $\vect{p}$ & $m_1 v_{1i} + m_2 v_{2i} = m_1 v_{1f} + m_2 v_{2f}$ & -- \\
+\hline
+Collision parf. inélastique & $v_f = \dfrac{m_1 v_{1i} + m_2 v_{2i}}{m_1 + m_2}$ & -- \\
+\hline
+Collision élastique (vit. rel.) & $v_{1i} - v_{2i} = -(v_{1f} - v_{2f})$ & -- \\
+\hline
+Coefficient de restitution & $e = \dfrac{|v_{2f} - v_{1f}|}{|v_{1i} - v_{2i}|}$ & -- \\
+\hline
+\end{tabular}
+\end{center}
+
+% =============================================================================
+\subsection{L'algorithme de résolution}
+\label{subsec:resume-algorithme}
+% =============================================================================
+
+\begin{center}
+\begin{tikzpicture}[
+    node distance=0.8cm,
+    box/.style={rectangle, draw=bleuimq, fill=bleuclair, thick, text width=10cm, minimum height=1.2cm, align=left, font=\small},
+    arrow/.style={-{Stealth[length=3mm]}, thick, bleuimq}
+]
+
+% Étape 1
+\node[box] (e1) {
+    \textbf{ÉTAPE 1 --- SCHÉMA et ÉTATS}
+    \begin{itemize}[leftmargin=*, topsep=0pt, itemsep=0pt]
+        \item Dessiner la situation physique
+        \item Identifier l'état \textbf{initial} (i) et l'état \textbf{final} (f)
+        \item Choisir le niveau de référence ($y = 0$)
+        \item Inscrire les grandeurs connues et inconnues ($v$, $y$, $x$)
+    \end{itemize}
+};
+
+% Étape 2
+\node[box, below=of e1] (e2) {
+    \textbf{ÉTAPE 2 --- BILAN ÉNERGÉTIQUE}
+    \begin{itemize}[leftmargin=*, topsep=0pt, itemsep=0pt]
+        \item Lister les énergies présentes : $K$, $U_g$, $U_e$ à chaque état
+        \item Identifier les forces non-conservatives : $W_{nc}$?
+        \item Pas de $W_{nc}$? $\rightarrow$ Conservation : $E_i = E_f$
+        \item $W_{nc} \neq 0$? $\rightarrow$ Bilan : $E_i + W_{nc} = E_f$
+    \end{itemize}
+};
+
+% Étape 3
+\node[box, below=of e2] (e3) {
+    \textbf{ÉTAPE 3 --- ÉQUATION D'ÉNERGIE}
+    \begin{itemize}[leftmargin=*, topsep=0pt, itemsep=0pt]
+        \item Écrire : $K_i + U_{gi} + U_{ei} + W_{nc} = K_f + U_{gf} + U_{ef}$
+        \item Éliminer les termes nuls
+        \item Remplacer par les expressions : $\frac{1}{2}mv^2$, $mgy$, $\frac{1}{2}kx^2$, $fd\cos\theta$
+    \end{itemize}
+};
+
+% Étape 4
+\node[box, below=of e3] (e4) {
+    \textbf{ÉTAPE 4 --- ALGÈBRE}
+    \begin{itemize}[leftmargin=*, topsep=0pt, itemsep=0pt]
+        \item Isoler l'inconnue \textbf{algébriquement} (avec symboles)
+        \item Substituer les valeurs numériques à la fin
+        \item Vérifier : unités? ordre de grandeur? signes?
+    \end{itemize}
+};
+
+% Flèches
+\draw[arrow] (e1.south) -- (e2.north);
+\draw[arrow] (e2.south) -- (e3.north);
+\draw[arrow] (e3.south) -- (e4.north);
+
+\end{tikzpicture}
+\end{center}
+
+% =============================================================================
+\subsection{Erreurs fréquentes}
+\label{subsec:resume-erreurs}
+% =============================================================================
+
+\begin{attention}[title=Pièges à éviter]
+\begin{enumerate}
+    \item \textbf{Oublier de définir le niveau de référence ($y = 0$)}
+    
+    L'énergie potentielle gravitationnelle dépend du choix de $y = 0$. Ce choix est libre, mais il \textbf{doit} être explicite. Un bon choix simplifie les calculs (souvent : $y = 0$ au point le plus bas).
+    
+    \item \textbf{Confondre le travail de la gravité et l'énergie potentielle}
+    
+    $W_g = -\Delta U_g$. Le travail de la gravité et la variation d'énergie potentielle sont liés mais de \textbf{signes opposés}. Si un objet descend : $W_g > 0$ mais $\Delta U_g < 0$.
+    
+    \item \textbf{Oublier le travail des forces non-conservatives}
+    
+    Le frottement est presque toujours présent dans la réalité. Son travail est \textbf{toujours négatif} ($W_f = -f_c \cdot d$, car $\theta = 180°$).
+    
+    \item \textbf{Utiliser $E_i = E_f$ quand il y a du frottement}
+    
+    La conservation \textbf{simple} ne s'applique que sans forces non-conservatives. Avec frottement, il faut utiliser le bilan complet : $E_i + W_{nc} = E_f$.
+    
+    \item \textbf{Confondre puissance et énergie}
+    
+    L'énergie est une \textbf{quantité} (en joules); la puissance est un \textbf{taux} (en watts = joules/seconde). Un moteur peut fournir beaucoup d'énergie s'il travaille longtemps, même avec une faible puissance.
+    
+    \item \textbf{Oublier de convertir les unités}
+    
+    Les nœuds en m/s, les tonnes en kg, les chevaux-vapeur en watts, les kWh en joules --- \textbf{avant} de substituer dans les équations.
+    
+    \item \textbf{Oublier les signes des vitesses dans les collisions}
+    
+    Si deux objets se déplacent en sens opposés, leurs vitesses ont des signes \textbf{contraires}. Une erreur de signe change complètement le résultat.
+    
+    \item \textbf{Supposer que $K$ est conservée dans toute collision}
+    
+    L'énergie cinétique n'est conservée que dans les collisions \textbf{élastiques}. En revanche, la quantité de mouvement est \textbf{toujours} conservée dans un système isolé.
+    
+    \item \textbf{Appliquer la conservation de $\vect{p}$ sur les modules en 2D}
+    
+    On ne peut \textbf{pas} écrire $m_1 v_1 + m_2 v_2 = (m_1+m_2)v_f$ avec les modules. Il faut conserver $p_x$ et $p_y$ \textbf{séparément}.
+\end{enumerate}
+\end{attention}
+
+% =============================================================================
+\subsection{Auto-évaluation des compétences}
+\label{subsec:resume-competences}
+% =============================================================================
+
+Cochez les compétences que vous maîtrisez :
+
+\begin{center}
+\renewcommand{\arraystretch}{1.6}
+\begin{tabular}{|L{11cm}|c|c|c|}
+\hline
+\rowcolor{bleuclair} \textbf{Compétence} & \textbf{Acquis} & \textbf{En cours} & \textbf{À revoir} \\
+\hline
+\multicolumn{4}{|l|}{\cellcolor{gray!20}\textbf{Travail}} \\
+\hline
+Calculer le travail d'une force constante ($W = Fd\cos\theta$). & $\square$ & $\square$ & $\square$ \\
+\hline
+Interpréter le signe du travail (positif, négatif, nul). & $\square$ & $\square$ & $\square$ \\
+\hline
+Déterminer le travail effectué par la gravité ($W_g = -mg\Delta y$). & $\square$ & $\square$ & $\square$ \\
+\hline
+Déterminer le travail effectué par un ressort. & $\square$ & $\square$ & $\square$ \\
+\hline
+Calculer le travail total effectué par plusieurs forces. & $\square$ & $\square$ & $\square$ \\
+\hline
+\multicolumn{4}{|l|}{\cellcolor{gray!20}\textbf{Énergie cinétique}} \\
+\hline
+Calculer l'énergie cinétique d'un objet. & $\square$ & $\square$ & $\square$ \\
+\hline
+Appliquer le théorème de l'énergie cinétique ($W_{\text{total}} = \Delta K$). & $\square$ & $\square$ & $\square$ \\
+\hline
+Déterminer une vitesse ou une distance à l'aide du théorème. & $\square$ & $\square$ & $\square$ \\
+\hline
+\multicolumn{4}{|l|}{\cellcolor{gray!20}\textbf{Énergie potentielle}} \\
+\hline
+Choisir un niveau de référence approprié ($y = 0$). & $\square$ & $\square$ & $\square$ \\
+\hline
+Calculer l'énergie potentielle gravitationnelle ($U_g = mgy$). & $\square$ & $\square$ & $\square$ \\
+\hline
+Calculer l'énergie potentielle élastique ($U_e = \frac{1}{2}kx^2$). & $\square$ & $\square$ & $\square$ \\
+\hline
+Expliquer le lien entre travail d'une force conservative et $\Delta U$. & $\square$ & $\square$ & $\square$ \\
+\hline
+\multicolumn{4}{|l|}{\cellcolor{gray!20}\textbf{Conservation de l'énergie}} \\
+\hline
+Distinguer une force conservative d'une force non-conservative. & $\square$ & $\square$ & $\square$ \\
+\hline
+Appliquer la conservation de l'énergie mécanique ($E_i = E_f$). & $\square$ & $\square$ & $\square$ \\
+\hline
+Résoudre un problème avec forces non-conservatives ($E_i + W_{nc} = E_f$). & $\square$ & $\square$ & $\square$ \\
+\hline
+Appliquer l'algorithme de résolution en 4 étapes (méthode énergétique). & $\square$ & $\square$ & $\square$ \\
+\hline
+\multicolumn{4}{|l|}{\cellcolor{gray!20}\textbf{Puissance}} \\
+\hline
+Calculer la puissance moyenne ($P = W/\Delta t$). & $\square$ & $\square$ & $\square$ \\
+\hline
+Calculer la puissance instantanée ($P = Fv$). & $\square$ & $\square$ & $\square$ \\
+\hline
+Convertir entre watts, kilowatts, chevaux-vapeur et kWh. & $\square$ & $\square$ & $\square$ \\
+\hline
+\multicolumn{4}{|l|}{\cellcolor{gray!20}\textbf{Applications}} \\
+\hline
+Résoudre un problème complet combinant travail, conservation et puissance. & $\square$ & $\square$ & $\square$ \\
+\hline
+Appliquer les concepts d'énergie dans un contexte maritime. & $\square$ & $\square$ & $\square$ \\
+\hline
+\multicolumn{4}{|l|}{\cellcolor{gray!20}\textbf{Quantité de mouvement et impulsion}} \\
+\hline
+Calculer la quantité de mouvement d'un objet ($\vect{p} = m\vect{v}$). & $\square$ & $\square$ & $\square$ \\
+\hline
+Calculer l'impulsion d'une force ($\vect{J} = \vect{F} \cdot \Delta t$). & $\square$ & $\square$ & $\square$ \\
+\hline
+Appliquer le théorème de l'impulsion ($\vect{J} = \Delta \vect{p}$). & $\square$ & $\square$ & $\square$ \\
+\hline
+Déterminer une force moyenne à partir du temps de contact. & $\square$ & $\square$ & $\square$ \\
+\hline
+Appliquer la conservation de la quantité de mouvement. & $\square$ & $\square$ & $\square$ \\
+\hline
+Identifier un système isolé et distinguer forces internes/externes. & $\square$ & $\square$ & $\square$ \\
+\hline
+\multicolumn{4}{|l|}{\cellcolor{gray!20}\textbf{Collisions}} \\
+\hline
+Classifier une collision (parf. inélastique, inélastique, élastique). & $\square$ & $\square$ & $\square$ \\
+\hline
+Résoudre une collision parfaitement inélastique. & $\square$ & $\square$ & $\square$ \\
+\hline
+Résoudre une collision élastique (méthode des vitesses relatives). & $\square$ & $\square$ & $\square$ \\
+\hline
+Utiliser le coefficient de restitution. & $\square$ & $\square$ & $\square$ \\
+\hline
+Résoudre une collision en 2D (conservation de $p_x$ et $p_y$). & $\square$ & $\square$ & $\square$ \\
+\hline
+Calculer la perte d'énergie cinétique lors d'une collision. & $\square$ & $\square$ & $\square$ \\
+\hline
+\end{tabular}
+\end{center}
+
+% =============================================================================
+\subsection{Ce qu'il faut retenir}
+\label{subsec:resume-essentiel}
+% =============================================================================
+
+\begin{remarque}[title=L'essentiel du chapitre en quelques phrases]
+\begin{enumerate}
+    \item \textbf{Le travail est un transfert d'énergie} : une force qui agit sur un objet en mouvement lui transfère (ou lui retire) de l'énergie.
+    
+    \item \textbf{L'énergie mécanique a deux formes} : l'énergie cinétique (mouvement) et l'énergie potentielle (position). Leur somme est l'énergie mécanique.
+    
+    \item \textbf{Les forces conservatives stockent l'énergie de façon réversible} : la gravité et le ressort permettent des échanges $K \leftrightarrow U$ sans perte.
+    
+    \item \textbf{Les forces non-conservatives dissipent l'énergie} : le frottement transforme l'énergie mécanique en chaleur --- cette énergie est perdue pour le système.
+    
+    \item \textbf{L'algorithme en 4 étapes fonctionne toujours} : Schéma/États $\rightarrow$ Bilan énergétique $\rightarrow$ Équation d'énergie $\rightarrow$ Algèbre.
+    
+    \item \textbf{La méthode énergétique est souvent plus simple que Newton} : pas de décomposition vectorielle, pas besoin de connaître la trajectoire en détail.
+    
+    \item \textbf{La puissance mesure le rythme} : ce n'est pas la quantité d'énergie qui compte, mais la vitesse à laquelle elle est transférée.
+    
+    \item \textbf{Convertissez toujours en SI} : nœuds $\rightarrow$ m/s, tonnes $\rightarrow$ kg, chevaux-vapeur $\rightarrow$ watts, kWh $\rightarrow$ joules.
+    
+    \item \textbf{La quantité de mouvement est toujours conservée} dans un système isolé : c'est une conséquence directe de la 3\textsuperscript{e} loi de Newton.
+    
+    \item \textbf{L'impulsion relie force et temps} : pour une même $\Delta p$, augmenter le temps de contact réduit la force (principe des systèmes d'amortissement).
+    
+    \item \textbf{L'énergie cinétique n'est conservée que dans les collisions élastiques} : dans la réalité, une partie de l'énergie est toujours transformée en déformation et chaleur.
+    
+    \item \textbf{En 2D, conservez $\vect{p}$ composante par composante} : $p_x$ et $p_y$ se conservent indépendamment.
+\end{enumerate}
+\end{remarque}

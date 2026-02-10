@@ -1,0 +1,520 @@
+% =============================================================================
+% SECTION - LES COLLISIONS
+% Chapitre 3 - Énergie, travail et quantité de mouvement
+% Semaine 12
+% =============================================================================
+
+\section{Les collisions}
+\label{sec:collisions}
+
+% =============================================================================
+\subsection{Introduction : qu'est-ce qu'une collision?}
+\label{subsec:intro-collisions}
+% =============================================================================
+
+En physique, une \textbf{collision} désigne toute interaction brève entre deux (ou plusieurs) objets pendant laquelle les forces internes sont beaucoup plus grandes que les forces externes. Les objets n'ont pas nécessairement besoin de se toucher physiquement --- par exemple, deux aimants qui se repoussent subissent une « collision magnétique ».
+
+Lors de toute collision dans un système isolé :
+\begin{itemize}
+    \item La quantité de mouvement totale est \textbf{toujours conservée} ($\vect{p}_i = \vect{p}_f$)
+    \item L'énergie cinétique totale n'est \textbf{pas nécessairement conservée}
+\end{itemize}
+
+C'est précisément le comportement de l'énergie cinétique qui permet de \textbf{classifier} les collisions.
+
+% =============================================================================
+\subsection{Classification des collisions}
+\label{subsec:classification}
+% =============================================================================
+
+\begin{definition}[title=Types de collisions]
+\begin{enumerate}
+    \item \textbf{Collision parfaitement inélastique} : les objets \textbf{restent collés} après la collision. La perte d'énergie cinétique est \textbf{maximale} (mais pas totale).
+    
+    \item \textbf{Collision inélastique} : les objets se \textbf{séparent} après la collision, mais une partie de l'énergie cinétique est transformée en déformation, chaleur ou son. C'est le cas le plus \textbf{courant} dans la réalité.
+    
+    \item \textbf{Collision élastique} : les objets se séparent et l'énergie cinétique totale est \textbf{conservée}. Aucune énergie n'est perdue en déformation. C'est un cas \textbf{idéal}, approché par les collisions entre billes dures ou particules subatomiques.
+\end{enumerate}
+\end{definition}
+
+\begin{center}
+\renewcommand{\arraystretch}{1.5}
+\begin{tabular}{|L{3.5cm}|C{3.5cm}|C{3.5cm}|C{3.5cm}|}
+\hline
+\rowcolor{bleuclair}
+& \textbf{Parf. inélastique} & \textbf{Inélastique} & \textbf{Élastique} \\
+\hline
+\textbf{Après la collision} & Objets collés & Objets séparés & Objets séparés \\
+\hline
+\textbf{$\vect{p}$ conservée?} & Oui & Oui & Oui \\
+\hline
+\textbf{$K$ conservée?} & Non (perte max.) & Non (perte partielle) & Oui \\
+\hline
+\textbf{Équations} & 1 ($\vect{p}$) & 1 ($\vect{p}$) + info & 2 ($\vect{p}$ + $K$) \\
+\hline
+\textbf{Exemple maritime} & Abordage (navires soudés) & Accostage avec rebond & Billes de billard \\
+\hline
+\end{tabular}
+\end{center}
+
+% --- DIAGRAMME À CRÉER ---
+% TikZ : Schéma comparatif en 3 colonnes montrant les 3 types de collision.
+% Pour chaque type, deux lignes : "Avant" et "Après".
+% Colonne 1 (Parf. inélastique) :
+%   Avant : Objet A (grand, bleu) → et Objet B (petit, rouge) au repos
+%   Après : Un seul objet (A+B collés, violet) → plus lent
+% Colonne 2 (Inélastique) :
+%   Avant : idem
+%   Après : A (bleu) → lent et B (rouge) → rapide, avec annotation "K perdue"
+% Colonne 3 (Élastique) :
+%   Avant : idem
+%   Après : A (bleu) → très lent et B (rouge) → rapide, annotation "K conservée"
+% Chaque colonne montre les vecteurs vitesse (flèches proportionnelles)
+
+\begin{remarque}[title=Dans la réalité]
+La grande majorité des collisions dans le monde réel sont \textbf{inélastiques}. Les collisions élastiques sont un cas idéal rarement atteint à l'échelle macroscopique. Les collisions parfaitement inélastiques sont un autre cas limite qui se produit lorsque les objets se déforment suffisamment pour rester en contact (accostage brutal, abordage).
+\end{remarque}
+
+% =============================================================================
+\subsection{Collision parfaitement inélastique}
+\label{subsec:collision-parf-inelastique}
+% =============================================================================
+
+C'est le type de collision le plus simple à analyser, car les deux objets ont la \textbf{même vitesse finale}.
+
+\begin{definition}[title=Collision parfaitement inélastique]
+Après une collision parfaitement inélastique, les objets restent collés et se déplacent ensemble à la vitesse $v_f$ :
+
+\begin{equationimportante}
+\begin{equation}
+m_1 v_{1i} + m_2 v_{2i} = (m_1 + m_2) v_f
+\label{eq:collision_parf_inelastique}
+\end{equation}
+\end{equationimportante}
+
+D'où :
+\begin{equation}
+v_f = \frac{m_1 v_{1i} + m_2 v_{2i}}{m_1 + m_2}
+\label{eq:vf_parf_inelastique}
+\end{equation}
+\end{definition}
+
+\begin{remarque}[title=Perte d'énergie cinétique]
+Même si la quantité de mouvement est conservée, l'énergie cinétique \textbf{diminue} lors d'une collision parfaitement inélastique. L'énergie « perdue » est transformée en :
+\begin{itemize}
+    \item Déformation des structures (coque, pare-chocs)
+    \item Chaleur (échauffement des matériaux)
+    \item Son (bruit de l'impact)
+\end{itemize}
+
+La perte d'énergie cinétique se calcule par :
+\[ \Delta K = K_f - K_i = \frac{1}{2}(m_1 + m_2)v_f^2 - \left(\frac{1}{2}m_1 v_{1i}^2 + \frac{1}{2}m_2 v_{2i}^2\right) \]
+\end{remarque}
+
+\begin{exemple}{Abordage entre deux navires}{abordage}
+Un cargo de masse $m_1 = \SI{30000}{tonnes}$ naviguant à $v_{1i} = \SI{5}{m/s}$ vers l'est percute un vraquier de masse $m_2 = \SI{20000}{tonnes}$ naviguant à $v_{2i} = \SI{-3}{m/s}$ (vers l'ouest). Les deux navires restent soudés après l'impact.
+
+% --- DIAGRAMME À CRÉER ---
+% TikZ : Deux panneaux (Avant / Après)
+% Panneau "Avant" : Cargo (grand rectangle bleu, label m₁) avec flèche v₁ᵢ vers droite
+%   et vraquier (rectangle rouge, label m₂) avec flèche v₂ᵢ vers gauche
+%   Axe x positif vers la droite, avec "est" indiqué
+% Panneau "Après" : Un seul grand rectangle (violet, label m₁+m₂) avec flèche v_f vers droite
+%   (plus courte que v₁ᵢ)
+
+\textbf{Données :}
+\begin{itemize}
+    \item $m_1 = \SI{30e6}{kg}$, $v_{1i} = \SI{+5}{m/s}$ (est = positif)
+    \item $m_2 = \SI{20e6}{kg}$, $v_{2i} = \SI{-3}{m/s}$ (ouest = négatif)
+\end{itemize}
+
+\textbf{Conservation de $\vect{p}$ :}
+\begin{align*}
+v_f &= \frac{m_1 v_{1i} + m_2 v_{2i}}{m_1 + m_2} \\
+    &= \frac{\SI{30e6}{} \times 5 + \SI{20e6}{} \times (-3)}{\SI{30e6}{} + \SI{20e6}{}} \\
+    &= \frac{\SI{150e6}{} - \SI{60e6}{}}{\SI{50e6}{}} = \frac{\SI{90e6}{}}{\SI{50e6}{}} = \SI{+1,8}{m/s}
+\end{align*}
+
+Les navires se déplacent vers l'est à $\SI{1,8}{m/s}$ ($\approx \SI{3,5}{n\oe uds}$).
+
+\textbf{Perte d'énergie cinétique :}
+\begin{align*}
+K_i &= \frac{1}{2}(30 \times 10^6)(5)^2 + \frac{1}{2}(20 \times 10^6)(3)^2 = 375 + 90 = \SI{465}{MJ} \\
+K_f &= \frac{1}{2}(50 \times 10^6)(1{,}8)^2 = \SI{81}{MJ} \\
+\Delta K &= 81 - 465 = \SI{-384}{MJ}
+\end{align*}
+
+Plus de \textbf{80\%} de l'énergie cinétique initiale a été transformée en déformation des coques, chaleur et son. C'est la réalité des abordages : la destruction est massive.
+\end{exemple}
+
+\begin{pratiqueautonome}
+Un pendule balistique est un dispositif classique pour mesurer la vitesse d'un projectile. Un boulet de canon de masse $m = \SI{10}{kg}$, tiré horizontalement, s'enfonce dans un bloc de bois de masse $M = \SI{50}{kg}$ suspendu par des câbles. Après l'impact, le bloc (avec le boulet) s'élève de $h = \SI{0,8}{m}$.
+
+\begin{enumerate}[label=\alph*)]
+    \item En utilisant la conservation de l'énergie, calculez la vitesse du bloc+boulet juste après l'impact.
+    \item En utilisant la conservation de la quantité de mouvement, calculez la vitesse initiale du boulet.
+    \item Calculez le pourcentage d'énergie cinétique perdue lors de l'impact.
+\end{enumerate}
+
+\espaceresolution[7cm]
+\reponsepratique{a) $v_f = \sqrt{2gh} = \SI{3,96}{m/s}$ \quad b) $v_{boulet} = \dfrac{(m+M)v_f}{m} = \SI{23,8}{m/s}$ \quad c) $K_i = \SI{2822}{J}$, $K_f = \SI{470}{J}$, perte $= 83\%$}
+\end{pratiqueautonome}
+
+% =============================================================================
+\subsection{Collision élastique}
+\label{subsec:collision-elastique}
+% =============================================================================
+
+Dans une collision élastique, \textbf{deux} grandeurs sont conservées simultanément :
+
+\begin{definition}[title=Collision élastique]
+Lors d'une collision élastique entre deux objets, on a conservation de la quantité de mouvement \textbf{et} de l'énergie cinétique :
+
+\begin{equationimportante}
+\begin{align}
+m_1 v_{1i} + m_2 v_{2i} &= m_1 v_{1f} + m_2 v_{2f} \label{eq:elastic_p} \\[0.3em]
+\frac{1}{2}m_1 v_{1i}^2 + \frac{1}{2}m_2 v_{2i}^2 &= \frac{1}{2}m_1 v_{1f}^2 + \frac{1}{2}m_2 v_{2f}^2 \label{eq:elastic_K}
+\end{align}
+\end{equationimportante}
+
+Ce système de deux équations à deux inconnues ($v_{1f}$ et $v_{2f}$) se résout algébriquement.
+\end{definition}
+
+\begin{remarque}[title=Résolution simplifiée]
+On peut montrer (en combinant les équations~\ref{eq:elastic_p} et~\ref{eq:elastic_K}) que la conservation de l'énergie cinétique dans une collision élastique est \textbf{équivalente} à dire que la \textbf{vitesse relative} d'approche est égale à la vitesse relative de séparation :
+
+\begin{equationimportante}
+\begin{equation}
+v_{1i} - v_{2i} = -(v_{1f} - v_{2f})
+\label{eq:vitesse_relative}
+\end{equation}
+\end{equationimportante}
+
+Cette relation est souvent plus facile à utiliser que l'équation d'énergie cinétique, car elle est \textbf{linéaire} (pas de termes au carré).
+\end{remarque}
+
+\begin{remarque}[title=Démonstration de l'équation des vitesses relatives]
+En partant de la conservation de $K$ :
+\[ m_1(v_{1i}^2 - v_{1f}^2) = m_2(v_{2f}^2 - v_{2i}^2) \]
+
+En factorisant ($a^2 - b^2 = (a+b)(a-b)$) :
+\[ m_1(v_{1i} - v_{1f})(v_{1i} + v_{1f}) = m_2(v_{2f} - v_{2i})(v_{2f} + v_{2i}) \quad \text{(I)} \]
+
+De la conservation de $\vect{p}$ :
+\[ m_1(v_{1i} - v_{1f}) = m_2(v_{2f} - v_{2i}) \quad \text{(II)} \]
+
+En divisant (I) par (II) :
+\[ v_{1i} + v_{1f} = v_{2f} + v_{2i} \]
+
+Ce qui se réarrange en : $v_{1i} - v_{2i} = -(v_{1f} - v_{2f})$
+
+\textbf{Interprétation :} les objets s'éloignent l'un de l'autre aussi vite qu'ils se sont approchés.
+\end{remarque}
+
+\subsubsection{Méthode de résolution pour une collision élastique}
+
+Pour résoudre une collision élastique en 1D, on utilise le système de deux équations \textbf{linéaires} :
+
+\begin{enumerate}
+    \item Conservation de $\vect{p}$ : $m_1 v_{1i} + m_2 v_{2i} = m_1 v_{1f} + m_2 v_{2f}$
+    \item Vitesses relatives : $v_{1i} - v_{2i} = -(v_{1f} - v_{2f})$
+\end{enumerate}
+
+Ce système est plus simple à résoudre que le système avec $K$ (pas de termes quadratiques).
+
+\subsubsection{Cas particuliers importants}
+
+\begin{definition}[title=Cas particulier : cible au repos ($v_{2i} = 0$)]
+Si l'objet 2 est initialement au repos, les vitesses finales d'une collision élastique sont :
+
+\begin{align}
+v_{1f} &= \frac{m_1 - m_2}{m_1 + m_2} \cdot v_{1i} \label{eq:elastic_v1f} \\[0.3em]
+v_{2f} &= \frac{2m_1}{m_1 + m_2} \cdot v_{1i} \label{eq:elastic_v2f}
+\end{align}
+\end{definition}
+
+Ces formules révèlent trois situations physiquement intéressantes :
+
+\begin{center}
+\renewcommand{\arraystretch}{1.6}
+\begin{tabular}{|L{3.5cm}|C{3cm}|C{3cm}|L{4cm}|}
+\hline
+\rowcolor{bleuclair}
+\textbf{Situation} & \textbf{$v_{1f}$} & \textbf{$v_{2f}$} & \textbf{Interprétation} \\
+\hline
+$m_1 = m_2$ (masses égales) & $0$ & $v_{1i}$ & L'objet 1 s'arrête, l'objet 2 repart avec toute la vitesse. \\
+\hline
+$m_1 \gg m_2$ (boule de bowling $\to$ bille) & $\approx v_{1i}$ & $\approx 2v_{1i}$ & L'objet lourd continue presque inchangé; le léger repart à $2\times$ la vitesse. \\
+\hline
+$m_1 \ll m_2$ (bille $\to$ mur) & $\approx -v_{1i}$ & $\approx 0$ & L'objet léger rebondit; le lourd ne bouge presque pas. \\
+\hline
+\end{tabular}
+\end{center}
+
+% --- DIAGRAMME À CRÉER ---
+% TikZ : Trois sous-figures côte à côte montrant les 3 cas particuliers.
+% Pour chaque cas, panneau "Avant" et "Après" avec des cercles de tailles
+% proportionnelles aux masses et des flèches proportionnelles aux vitesses.
+% Cas 1 (m₁ = m₂) : Deux cercles égaux. Avant : ○→ ○. Après : ○ ○→
+% Cas 2 (m₁ >> m₂) : Grand cercle + petit cercle. Avant : ●→ ○. Après : ●→ ○→→
+% Cas 3 (m₁ << m₂) : Petit cercle + grand cercle. Avant : ○→ ●. Après : ←○ ●
+
+\begin{exemple}{Collision élastique entre deux bateaux-jouets}{elastique-bateaux}
+Dans un bassin d'essai, un bateau-jouet A ($m_A = \SI{2}{kg}$, $v_{Ai} = \SI{3}{m/s}$) frappe un bateau-jouet B ($m_B = \SI{1}{kg}$, au repos) dans une collision élastique.
+
+\textbf{Méthode : système de 2 équations linéaires}
+
+\textbf{Conservation de $\vect{p}$ :}
+\begin{align}
+m_A v_{Ai} + m_B v_{Bi} &= m_A v_{Af} + m_B v_{Bf} \nonumber \\
+2 \times 3 + 0 &= 2 v_{Af} + 1 \times v_{Bf} \nonumber \\
+6 &= 2v_{Af} + v_{Bf} \quad \text{(I)} \label{eq:ex_elastic_1}
+\end{align}
+
+\textbf{Vitesses relatives :}
+\begin{align}
+v_{Ai} - v_{Bi} &= -(v_{Af} - v_{Bf}) \nonumber \\
+3 - 0 &= -(v_{Af} - v_{Bf}) \nonumber \\
+3 &= v_{Bf} - v_{Af} \quad \text{(II)} \label{eq:ex_elastic_2}
+\end{align}
+
+\textbf{Résolution :} De (II) : $v_{Bf} = v_{Af} + 3$. En substituant dans (I) :
+\begin{align*}
+6 &= 2v_{Af} + (v_{Af} + 3) = 3v_{Af} + 3 \\
+v_{Af} &= \SI{1}{m/s} \\
+v_{Bf} &= 1 + 3 = \SI{4}{m/s}
+\end{align*}
+
+\textbf{Vérification} (conservation de $K$) :
+\begin{align*}
+K_i &= \tfrac{1}{2}(2)(3)^2 = \SI{9}{J} \\
+K_f &= \tfrac{1}{2}(2)(1)^2 + \tfrac{1}{2}(1)(4)^2 = 1 + 8 = \SI{9}{J} \quad \checkmark
+\end{align*}
+\end{exemple}
+
+\begin{pratiqueautonome}
+Un neutron ($m_n = \SI{1}{u}$) se déplaçant à $v_i = \SI{2,0e6}{m/s}$ frappe un noyau de carbone-12 ($m_C = \SI{12}{u}$) au repos dans une collision élastique frontale. (L'unité de masse atomique $u$ se simplifie dans les rapports.)
+
+\begin{enumerate}[label=\alph*)]
+    \item Calculez les vitesses finales du neutron et du noyau de carbone.
+    \item Quel pourcentage de l'énergie cinétique du neutron est transféré au noyau?
+    \item Expliquez pourquoi les réacteurs nucléaires utilisent de l'eau (contenant de l'hydrogène, $m \approx \SI{1}{u}$) plutôt que du carbone comme modérateur.
+\end{enumerate}
+
+\espaceresolution[7cm]
+\reponsepratique{a) $v_{nf} = \dfrac{1-12}{1+12} \times 2{,}0 \times 10^6 = \SI{-1,69e6}{m/s}$ (rebondit), $v_{Cf} = \dfrac{2 \times 1}{13} \times 2{,}0 \times 10^6 = \SI{3,08e5}{m/s}$ \quad b) $\approx 28\%$ \quad c) Avec $m_H \approx m_n$, le transfert est de presque $100\%$ (masses égales)}
+\end{pratiqueautonome}
+
+% =============================================================================
+\subsection{Collision inélastique}
+\label{subsec:collision-inelastique}
+% =============================================================================
+
+La plupart des collisions réelles ne sont ni parfaitement inélastiques ni élastiques --- elles sont \textbf{inélastiques}. La quantité de mouvement est conservée, mais une fraction de l'énergie cinétique est perdue.
+
+\begin{definition}[title=Collision inélastique]
+Lors d'une collision inélastique :
+\begin{itemize}
+    \item $\vect{p}$ est conservée : $m_1 v_{1i} + m_2 v_{2i} = m_1 v_{1f} + m_2 v_{2f}$
+    \item $K$ n'est \textbf{pas} conservée : $K_f < K_i$
+\end{itemize}
+
+On dispose alors d'une seule équation (conservation de $\vect{p}$) pour deux inconnues ($v_{1f}$ et $v_{2f}$). Il faut donc une \textbf{information supplémentaire} fournie par l'énoncé, par exemple :
+\begin{itemize}
+    \item La vitesse finale de l'un des objets
+    \item Le pourcentage d'énergie cinétique perdue
+    \item Le \textbf{coefficient de restitution} $e$
+\end{itemize}
+\end{definition}
+
+\begin{definition}[title=Coefficient de restitution]
+Le \textbf{coefficient de restitution} $e$ caractérise l'élasticité de la collision :
+
+\begin{equationimportante}
+\begin{equation}
+e = \frac{|v_{2f} - v_{1f}|}{|v_{1i} - v_{2i}|} = \frac{\text{vitesse relative de séparation}}{\text{vitesse relative d'approche}}
+\label{eq:coeff_restitution}
+\end{equation}
+\end{equationimportante}
+
+\begin{itemize}
+    \item $e = 1$ : collision \textbf{élastique} (pas de perte)
+    \item $0 < e < 1$ : collision \textbf{inélastique} (perte partielle)
+    \item $e = 0$ : collision \textbf{parfaitement inélastique} (les objets restent collés)
+\end{itemize}
+\end{definition}
+
+\begin{exemple}{Accostage avec coefficient de restitution}{accostage-restitution}
+Un traversier de masse $m_1 = \SI{4000}{tonnes}$ arrive au quai ($m_2 \to \infty$, le quai ne bouge pas) à $v_{1i} = \SI{0,8}{m/s}$. Les défenses en caoutchouc ont un coefficient de restitution $e = 0{,}4$.
+
+À quelle vitesse le traversier rebondit-il?
+
+\textbf{Puisque le quai ne bouge pas} ($v_{2i} = v_{2f} = 0$) :
+\begin{align*}
+e &= \frac{|v_{2f} - v_{1f}|}{|v_{1i} - v_{2i}|} = \frac{|0 - v_{1f}|}{|0{,}8 - 0|} \\
+0{,}4 &= \frac{|v_{1f}|}{0{,}8} \\
+|v_{1f}| &= 0{,}4 \times 0{,}8 = \SI{0,32}{m/s}
+\end{align*}
+
+Le traversier rebondit à $\SI{0,32}{m/s}$ (dans la direction opposée).
+
+\textbf{Énergie perdue :}
+\begin{align*}
+K_i &= \tfrac{1}{2}(\SI{4e6}{})(0{,}8)^2 = \SI{1280}{kJ} \\
+K_f &= \tfrac{1}{2}(\SI{4e6}{})(0{,}32)^2 = \SI{204,8}{kJ} \\
+\text{Perte} &= 1 - \frac{K_f}{K_i} = 1 - e^2 = 1 - 0{,}16 = 84\%
+\end{align*}
+
+\textbf{Résultat important :} la fraction d'énergie cinétique conservée dans un rebond contre un mur est $e^2$. Les $84\%$ restants sont absorbés par les défenses (déformation élastique du caoutchouc, chaleur).
+\end{exemple}
+
+\begin{remarque}[title=Relation entre $e$ et la perte d'énergie]
+Pour une collision contre un objet infiniment massif (mur, quai) :
+\[ \frac{K_f}{K_i} = e^2 \]
+
+Pour une collision entre deux objets de masses finies, la relation est plus complexe, mais le principe reste le même : plus $e$ est petit, plus la perte d'énergie est grande.
+\end{remarque}
+
+\begin{pratiqueautonome}
+Une balle de caoutchouc de $\SI{0,2}{kg}$ est lâchée d'une hauteur de $\SI{2}{m}$ et rebondit à une hauteur de $\SI{1,5}{m}$.
+
+\begin{enumerate}[label=\alph*)]
+    \item Calculez la vitesse de la balle juste avant et juste après le rebond.
+    \item Déterminez le coefficient de restitution de la balle.
+    \item Quel pourcentage de l'énergie cinétique est perdu à chaque rebond?
+    \item Après combien de rebonds la balle sera-t-elle sous $\SI{0,5}{m}$?
+\end{enumerate}
+
+\espaceresolution[7cm]
+\reponsepratique{a) $v_{avant} = \sqrt{2 \times 9{,}81 \times 2} = \SI{6,26}{m/s}$, $v_{après} = \sqrt{2 \times 9{,}81 \times 1{,}5} = \SI{5,42}{m/s}$ \quad b) $e = 5{,}42/6{,}26 = 0{,}866$ \quad c) $1 - e^2 = 25\%$ \quad d) $h_n = 2 \times e^{2n} < 0{,}5 \Rightarrow n \geq 5$ rebonds}
+\end{pratiqueautonome}
+
+% =============================================================================
+\subsection{Collisions en deux dimensions}
+\label{subsec:collisions-2d}
+% =============================================================================
+
+Dans la réalité, les collisions ne sont pas toujours frontales. Lorsque les objets se frappent en biais, il faut traiter la conservation de la quantité de mouvement \textbf{séparément selon chaque axe} :
+
+\begin{definition}[title=Conservation de $\vect{p}$ en 2D]
+Pour un système isolé dans le plan, la quantité de mouvement est conservée composante par composante :
+
+\begin{equationimportante}
+\begin{align}
+\text{Axe } x : \quad m_1 v_{1ix} + m_2 v_{2ix} &= m_1 v_{1fx} + m_2 v_{2fx} \label{eq:cons_px} \\[0.3em]
+\text{Axe } y : \quad m_1 v_{1iy} + m_2 v_{2iy} &= m_1 v_{1fy} + m_2 v_{2fy} \label{eq:cons_py}
+\end{align}
+\end{equationimportante}
+
+Rappel des décompositions :
+\[ v_x = v \cos\theta \qquad v_y = v \sin\theta \]
+\end{definition}
+
+\begin{exemple}{Collision en T entre deux navires}{collision-2d}
+Un cargo ($m_1 = \SI{20000}{tonnes}$, $v_1 = \SI{4}{m/s}$ vers l'est) est percuté par un traversier ($m_2 = \SI{5000}{tonnes}$, $v_2 = \SI{6}{m/s}$ vers le nord) dans une collision parfaitement inélastique.
+
+% --- DIAGRAMME À CRÉER ---
+% TikZ : Vue de dessus avec axes x (est) et y (nord)
+% Avant : Cargo (rectangle bleu) se déplaçant vers l'est (axe x positif)
+%   avec flèche v₁ = 4 m/s horizontale
+%   Traversier (rectangle rouge) se déplaçant vers le nord (axe y positif)
+%   avec flèche v₂ = 6 m/s verticale
+% Après : Un seul rectangle (violet) se déplaçant vers le nord-est
+%   avec flèche v_f à un angle θ, décomposée en v_fx et v_fy
+% Boussole dans le coin
+
+Trouvez la vitesse (module et direction) de l'ensemble après la collision.
+
+\textbf{Choix d'axes :} $x$ vers l'est, $y$ vers le nord.
+
+\textbf{Conservation de $p_x$ :}
+\begin{align*}
+m_1 v_{1x} + m_2 v_{2x} &= (m_1 + m_2) v_{fx} \\
+\SI{20e6}{} \times 4 + \SI{5e6}{} \times 0 &= \SI{25e6}{} \times v_{fx} \\
+v_{fx} &= \SI{3,2}{m/s}
+\end{align*}
+
+\textbf{Conservation de $p_y$ :}
+\begin{align*}
+m_1 v_{1y} + m_2 v_{2y} &= (m_1 + m_2) v_{fy} \\
+\SI{20e6}{} \times 0 + \SI{5e6}{} \times 6 &= \SI{25e6}{} \times v_{fy} \\
+v_{fy} &= \SI{1,2}{m/s}
+\end{align*}
+
+\textbf{Module et direction :}
+\begin{align*}
+v_f &= \sqrt{v_{fx}^2 + v_{fy}^2} = \sqrt{3{,}2^2 + 1{,}2^2} = \SI{3,4}{m/s} \approx \SI{6,6}{n\oe uds} \\
+\theta &= \arctan\left(\frac{v_{fy}}{v_{fx}}\right) = \arctan\left(\frac{1{,}2}{3{,}2}\right) = 20{,}6° \text{ nord de l'est}
+\end{align*}
+
+L'ensemble se déplace à $\SI{3,4}{m/s}$ dans la direction $\text{N}69°\text{E}$ (cap $\approx 069°$).
+\end{exemple}
+
+\begin{pratiqueautonome}
+Deux bateaux de pêche entrent en collision en eau libre :
+\begin{itemize}
+    \item Bateau A : $m_A = \SI{15}{tonnes}$, vitesse $\SI{5}{m/s}$ vers le nord (cap 000°)
+    \item Bateau B : $m_B = \SI{10}{tonnes}$, vitesse $\SI{8}{m/s}$ vers l'est (cap 090°)
+\end{itemize}
+
+Les bateaux restent enchevêtrés après la collision.
+
+\begin{enumerate}[label=\alph*)]
+    \item Calculez les composantes $v_{fx}$ et $v_{fy}$ de la vitesse finale.
+    \item Calculez le module de la vitesse finale.
+    \item Calculez le cap (direction) de l'ensemble après la collision.
+    \item Calculez l'énergie cinétique perdue et le pourcentage de perte.
+\end{enumerate}
+
+\espaceresolution[8cm]
+\reponsepratique{a) $v_{fx} = \SI{3,2}{m/s}$, $v_{fy} = \SI{3,0}{m/s}$ \quad b) $v_f = \SI{4,4}{m/s}$ \quad c) $\theta = 43°$ est du nord, cap $\approx 043°$ \quad d) $K_i = \SI{508}{kJ}$, $K_f = \SI{242}{kJ}$, perte $\approx 52\%$}
+\end{pratiqueautonome}
+
+% =============================================================================
+\subsection{Algorithme de résolution des problèmes de collision}
+\label{subsec:algorithme-collisions}
+% =============================================================================
+
+\begin{definition}[title=Méthode systématique pour les problèmes de collision]
+
+\textbf{Étape 1 --- IDENTIFIER}
+\begin{enumerate}[label=\alph*)]
+    \item Définir le \textbf{système} (quels objets?)
+    \item Vérifier que le système est \textbf{isolé} (forces externes négligeables)
+    \item Identifier le \textbf{type} de collision (parfaitement inélastique, inélastique, élastique)
+\end{enumerate}
+
+\vspace{0.5em}
+\textbf{Étape 2 --- ORGANISER}
+\begin{enumerate}[label=\alph*)]
+    \item Dessiner un schéma « avant / après »
+    \item Choisir un axe (ou deux axes en 2D) avec une direction positive
+    \item Lister les données : $m_1$, $m_2$, $v_{1i}$, $v_{2i}$ (attention aux signes!)
+\end{enumerate}
+
+\vspace{0.5em}
+\textbf{Étape 3 --- ÉQUATIONS}
+\begin{enumerate}[label=\alph*)]
+    \item Écrire la conservation de $\vect{p}$ (toujours!)
+    \item Si collision élastique : ajouter l'équation des vitesses relatives
+    \item Si collision parfaitement inélastique : poser $v_{1f} = v_{2f} = v_f$
+    \item Si collision inélastique : utiliser l'information supplémentaire
+\end{enumerate}
+
+\vspace{0.5em}
+\textbf{Étape 4 --- RÉSOUDRE et VÉRIFIER}
+\begin{enumerate}[label=\alph*)]
+    \item Résoudre algébriquement, puis substituer les valeurs
+    \item Vérifier les signes : la direction est-elle physiquement cohérente?
+    \item Calculer $K_i$ et $K_f$ : vérifier que $K_f \leq K_i$ (et $K_f = K_i$ si élastique)
+\end{enumerate}
+\end{definition}
+
+\begin{remarque}[title=Erreurs fréquentes dans les problèmes de collision]
+\begin{itemize}
+    \item \textbf{Oublier les signes des vitesses :} si les objets se déplacent en sens opposés, leurs vitesses ont des signes \textbf{contraires}
+    \item \textbf{Confondre masse en tonnes et en kg :} toujours convertir en kg avant de calculer
+    \item \textbf{Supposer que $K$ est conservée :} la conservation de $K$ n'est valide que pour les collisions \textbf{élastiques}
+    \item \textbf{Appliquer la conservation de $\vect{p}$ composante par composante} en 2D, pas sur les modules
+\end{itemize}
+\end{remarque}
