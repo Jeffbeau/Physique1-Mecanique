@@ -1,0 +1,419 @@
+% =============================================================================
+% SECTION - QUANTITÉ DE MOUVEMENT ET IMPULSION
+% Chapitre 3 - Énergie, travail et quantité de mouvement
+% Semaines 10-11
+% =============================================================================
+
+\section{Quantité de mouvement et impulsion}
+\label{sec:quantite-mvt}
+
+% =============================================================================
+\subsection{Introduction : pourquoi une nouvelle grandeur?}
+\label{subsec:intro-qdm}
+% =============================================================================
+
+Au chapitre précédent, nous avons vu que l'énergie est une grandeur conservée --- un outil puissant pour résoudre des problèmes. Mais l'énergie est une grandeur \textbf{scalaire} : elle ne contient aucune information sur la \textbf{direction} du mouvement. Or, dans de nombreuses situations, la direction est cruciale.
+
+Considérons l'exemple suivant : un vraquier de 80\,000 tonnes naviguant à 12 nœuds vers l'est et un porte-conteneurs de 40\,000 tonnes naviguant à 24 nœuds vers l'ouest possèdent la \textbf{même énergie cinétique}. Pourtant, si ces deux navires entrent en collision, le résultat dépendra clairement de la direction de chaque navire --- pas seulement de l'énergie.
+
+Nous avons besoin d'une grandeur qui combine la masse, la vitesse \textbf{et} la direction du mouvement. Cette grandeur, c'est la \textbf{quantité de mouvement}.
+
+% =============================================================================
+\subsection{Définition de la quantité de mouvement}
+\label{subsec:def-qdm}
+% =============================================================================
+
+\begin{definition}[title=Quantité de mouvement]
+La \textbf{quantité de mouvement} $\vect{p}$ d'un objet de masse $m$ se déplaçant à la vitesse $\vect{v}$ est définie par :
+
+\begin{equationimportante}
+\begin{equation}
+\vect{p} = m\vect{v}
+\label{eq:quantite_mvt}
+\end{equation}
+\end{equationimportante}
+
+\begin{itemize}
+    \item C'est une grandeur \textbf{vectorielle} : elle a un module, une direction et un sens
+    \item Sa direction est la même que celle de la vitesse $\vect{v}$
+    \item L'unité SI est le $\SI{}{kg \cdot m/s}$ (il n'y a pas de nom spécial)
+\end{itemize}
+\end{definition}
+
+\begin{remarque}[title=Quantité de mouvement et inertie en mouvement]
+La quantité de mouvement représente la « difficulté à arrêter un objet en mouvement ». Un objet massif et rapide possède une grande quantité de mouvement et est donc très difficile à arrêter. C'est pourquoi on l'appelle parfois \textbf{momentum} (terme anglais couramment utilisé en sciences).
+
+En notation scalaire (1D), si l'on choisit un axe, la quantité de mouvement s'écrit simplement :
+\[ p = mv \]
+où $v$ peut être positif ou négatif selon le sens du mouvement.
+\end{remarque}
+
+\begin{exemple}{Quantité de mouvement de différents navires}{qdm-navires}
+Comparons la quantité de mouvement de trois navires :
+
+\begin{center}
+\renewcommand{\arraystretch}{1.4}
+\begin{tabular}{|l|c|c|c|}
+\hline
+\rowcolor{bleuclair}
+\textbf{Navire} & \textbf{Masse} & \textbf{Vitesse} & \textbf{$|\vect{p}| = mv$} \\
+\hline
+Canot de sauvetage & $\SI{300}{kg}$ & $\SI{8}{m/s}$ & $\SI{2400}{kg \cdot m/s}$ \\
+\hline
+Traversier & $\SI{5000}{tonnes}$ & $\SI{8}{m/s}$ & $\SI{4,0e7}{kg \cdot m/s}$ \\
+\hline
+Pétrolier (VLCC) & $\SI{300000}{tonnes}$ & $\SI{8}{m/s}$ & $\SI{2,4e9}{kg \cdot m/s}$ \\
+\hline
+\end{tabular}
+\end{center}
+
+À la même vitesse, le pétrolier a une quantité de mouvement \textbf{un million de fois} plus grande que le canot. C'est pourquoi le pétrolier a besoin de plusieurs kilomètres pour s'arrêter, tandis que le canot s'arrête en quelques mètres.
+\end{exemple}
+
+\begin{pratiqueautonome}
+Un porte-conteneurs de masse $m = \SI{60000}{tonnes}$ navigue à $\SI{14}{n\oe uds}$ ($\approx \SI{7,2}{m/s}$) vers le nord. Un vraquier de masse $m = \SI{80000}{tonnes}$ navigue à $\SI{10}{n\oe uds}$ ($\approx \SI{5,1}{m/s}$) vers l'est.
+
+\begin{enumerate}[label=\alph*)]
+    \item Calculez la quantité de mouvement de chaque navire.
+    \item Lequel des deux navires sera le plus difficile à arrêter? Justifiez.
+\end{enumerate}
+
+\espaceresolution[5cm]
+\reponsepratique{a) $p_1 = \SI{4,32e8}{kg \cdot m/s}$ (nord), $p_2 = \SI{4,08e8}{kg \cdot m/s}$ (est) \quad b) Le porte-conteneurs ($|\vect{p}_1| > |\vect{p}_2|$)}
+\end{pratiqueautonome}
+
+% =============================================================================
+\subsection{L'impulsion}
+\label{subsec:impulsion}
+% =============================================================================
+
+En pratique, les forces agissent pendant un certain \textbf{temps}. L'effet d'une force sur un objet dépend non seulement de son intensité, mais aussi de sa \textbf{durée d'application}. C'est la notion d'impulsion.
+
+\begin{definition}[title=Impulsion]
+L'\textbf{impulsion} $\vect{J}$ est le produit d'une force par l'intervalle de temps pendant lequel elle agit :
+
+\begin{equationimportante}
+\begin{equation}
+\vect{J} = \vect{F} \cdot \Delta t
+\label{eq:impulsion}
+\end{equation}
+\end{equationimportante}
+
+\begin{itemize}
+    \item C'est une grandeur \textbf{vectorielle}
+    \item Sa direction est la même que celle de la force $\vect{F}$
+    \item L'unité SI est le $\SI{}{N \cdot s}$, qui est équivalent au $\SI{}{kg \cdot m/s}$
+\end{itemize}
+\end{definition}
+
+\begin{remarque}[title=Force moyenne]
+En réalité, la force n'est pas toujours constante pendant la collision. L'impulsion est alors définie avec la \textbf{force moyenne} $\vect{F}_{moy}$ :
+\[ \vect{J} = \vect{F}_{moy} \cdot \Delta t \]
+
+Graphiquement, l'impulsion correspond à l'\textbf{aire sous la courbe} $F(t)$.
+
+% --- DIAGRAMME À CRÉER ---
+% TikZ : Graphique F(t) montrant une force variable typique d'une collision.
+% - Axe horizontal : t (temps), de 0 à ~0,15 s
+% - Axe vertical : F (force), de 0 à ~F_max
+% - Courbe en cloche asymétrique (montée rapide, descente plus lente) représentant
+%   la force durant une collision (ex. : navire frappant un quai)
+% - Aire sous la courbe hachurée en bleu clair avec label "J = aire"
+% - Ligne pointillée horizontale à F_moy avec label "F_moy"
+% - Rectangle pointillé de hauteur F_moy et largeur Δt, même aire que la courbe
+% - Annotations : Δt entre les points d'intersection avec l'axe t
+\end{remarque}
+
+% =============================================================================
+\subsection{Le théorème de l'impulsion et de la quantité de mouvement}
+\label{subsec:theoreme-impulsion}
+% =============================================================================
+
+Le lien fondamental entre l'impulsion et la quantité de mouvement s'obtient directement à partir de la deuxième loi de Newton.
+
+\begin{definition}[title=Théorème de l'impulsion et de la quantité de mouvement]
+L'impulsion totale exercée sur un objet est égale à la \textbf{variation de sa quantité de mouvement} :
+
+\begin{equationimportante}
+\begin{equation}
+\vect{J} = \Delta \vect{p} = \vect{p}_f - \vect{p}_i = m\vect{v}_f - m\vect{v}_i
+\label{eq:theoreme_impulsion}
+\end{equation}
+\end{equationimportante}
+
+En notation scalaire (1D) :
+\[ F_{moy} \cdot \Delta t = mv_f - mv_i \]
+\end{definition}
+
+\begin{remarque}[title=Démonstration]
+Par la deuxième loi de Newton : $\vect{F} = m\vect{a}$
+
+En remplaçant $\vect{a}$ par $\dfrac{\Delta \vect{v}}{\Delta t}$ :
+\[ \vect{F} = m \cdot \frac{\Delta \vect{v}}{\Delta t} = \frac{m\vect{v}_f - m\vect{v}_i}{\Delta t} = \frac{\Delta \vect{p}}{\Delta t} \]
+
+En multipliant les deux côtés par $\Delta t$ :
+\[ \vect{F} \cdot \Delta t = \Delta \vect{p} \]
+
+C'est la forme originale de la deuxième loi de Newton, telle que formulée par Newton lui-même!
+\end{remarque}
+
+\begin{remarque}[title=Pourquoi ce théorème est-il utile?]
+Le théorème de l'impulsion est particulièrement utile pour analyser les \textbf{collisions} et les \textbf{interactions brèves}, car :
+\begin{itemize}
+    \item On connaît souvent les vitesses \textbf{avant} et \textbf{après} l'interaction
+    \item On peut calculer la force moyenne même si la force réelle varie de façon complexe
+    \item Il fait le lien entre le \textbf{temps} de contact et la \textbf{force} subie
+\end{itemize}
+\end{remarque}
+
+\begin{exemple}{Accostage d'un traversier}{accostage}
+Un traversier de masse $m = \SI{5000}{tonnes} = \SI{5,0e6}{kg}$ s'approche du quai à une vitesse de $\SI{0,5}{m/s}$. Le système d'amortissement (défenses de quai) immobilise le traversier en $\SI{4}{s}$.
+
+Quelle est la force moyenne exercée par les défenses sur le traversier?
+
+\textbf{Données :} $m = \SI{5,0e6}{kg}$, $v_i = \SI{0,5}{m/s}$, $v_f = \SI{0}{m/s}$, $\Delta t = \SI{4}{s}$
+
+\textbf{Théorème de l'impulsion :}
+\begin{align*}
+F_{moy} \cdot \Delta t &= mv_f - mv_i \\
+F_{moy} \cdot 4 &= \SI{5,0e6}{} \times 0 - \SI{5,0e6}{} \times 0{,}5 \\
+F_{moy} &= \frac{-\SI{2,5e6}{}}{\SI{4}{}} = \SI{-625}{kN}
+\end{align*}
+
+Le signe négatif indique que la force s'oppose au mouvement du traversier. La force moyenne est de $\SI{625}{kN}$, soit l'équivalent du poids d'environ 64 tonnes!
+
+% --- DIAGRAMME À CRÉER ---
+% TikZ : Schéma en 3 étapes montrant l'accostage
+% Panneau gauche : Traversier (rectangle gris) s'approchant du quai (mur hachuré)
+%   avec vecteur v_i vers la droite et label "État initial"
+% Panneau central : Contact — traversier contre défenses (ressorts stylisés)
+%   avec F_moy vers la gauche et label "Pendant Δt = 4 s"
+% Panneau droite : Traversier immobile contre le quai
+%   avec v_f = 0 et label "État final"
+\end{exemple}
+
+\begin{exemple}{Temps de contact et force d'impact}{temps-contact}
+Un conteneur de $\SI{8000}{kg}$ tombe de $\SI{5}{m}$ et frappe le pont du navire.
+
+Comparez la force d'impact si le conteneur s'arrête en :
+\begin{enumerate}[label=\alph*)]
+    \item $\Delta t_1 = \SI{0,5}{s}$ (pont avec amortisseurs)
+    \item $\Delta t_2 = \SI{0,02}{s}$ (pont rigide en acier)
+\end{enumerate}
+
+\textbf{Vitesse juste avant l'impact} (conservation de l'énergie ou chute libre) :
+\[ v = \sqrt{2gh} = \sqrt{2 \times 9{,}81 \times 5} = \SI{9,9}{m/s} \]
+
+\textbf{Quantité de mouvement avant l'impact :}
+\[ p_i = mv = 8000 \times 9{,}9 = \SI{79200}{kg \cdot m/s} \]
+
+\textbf{Impulsion nécessaire} (identique dans les deux cas) :
+\[ |\Delta p| = |0 - 79200| = \SI{79200}{kg \cdot m/s} \]
+
+\textbf{Force moyenne :}
+\begin{enumerate}[label=\alph*)]
+    \item Avec amortisseurs : $F_1 = \dfrac{79200}{0{,}5} = \SI{158}{kN}$
+    \item Sans amortisseurs : $F_2 = \dfrac{79200}{0{,}02} = \SI{3960}{kN} \approx \SI{4,0}{MN}$
+\end{enumerate}
+
+\textbf{Conclusion :} En augmentant le temps de contact d'un facteur 25, la force est réduite d'un facteur 25. C'est le principe fondamental de \textbf{tous} les systèmes d'amortissement : airbags, défenses de quai, pare-chocs, zones de déformation.
+\end{exemple}
+
+\begin{attention}[title=La grande leçon de l'impulsion]
+Pour une même variation de quantité de mouvement ($\Delta p$ fixé), il y a un compromis :
+\begin{itemize}
+    \item \textbf{Grand $\Delta t$} $\rightarrow$ \textbf{petite force} (atterrissage en parachute, défenses de quai)
+    \item \textbf{Petit $\Delta t$} $\rightarrow$ \textbf{grande force} (coup de marteau, collision rigide)
+\end{itemize}
+
+Ce compromis est au cœur de la conception des systèmes de sécurité maritime et automobile.
+\end{attention}
+
+\begin{pratiqueautonome}
+Un remorqueur de $\SI{500}{tonnes}$ se déplaçant à $\SI{3}{m/s}$ heurte une bouée d'amarrage qui l'immobilise en $\SI{2}{s}$.
+
+\begin{enumerate}[label=\alph*)]
+    \item Calculez la quantité de mouvement initiale du remorqueur.
+    \item Calculez l'impulsion reçue par le remorqueur.
+    \item Calculez la force moyenne exercée par la bouée sur le remorqueur.
+    \item Si la bouée était rigide et que l'arrêt se faisait en $\SI{0,1}{s}$, quelle serait la force?
+\end{enumerate}
+
+\espaceresolution[6cm]
+\reponsepratique{a) $p_i = \SI{1,5e6}{kg \cdot m/s}$ \quad b) $J = \SI{-1,5e6}{N \cdot s}$ \quad c) $F = \SI{-750}{kN}$ \quad d) $F = \SI{-15}{MN}$}
+\end{pratiqueautonome}
+
+% =============================================================================
+\subsection{Conservation de la quantité de mouvement}
+\label{subsec:conservation-qdm}
+% =============================================================================
+
+Le théorème de l'impulsion mène directement à l'un des principes les plus fondamentaux de la physique : la \textbf{conservation de la quantité de mouvement}.
+
+\subsubsection{Système isolé et forces internes}
+
+\begin{definition}[title=Système isolé]
+Un \textbf{système} est un ensemble d'objets que l'on choisit d'étudier ensemble. Un système est dit \textbf{isolé} si la somme des forces \textbf{extérieures} agissant sur lui est nulle :
+\[ \sum \vect{F}_{ext} = \vect{0} \]
+
+Les forces que les objets du système exercent \textbf{entre eux} sont des forces \textbf{internes} --- elles ne changent pas la quantité de mouvement totale du système.
+\end{definition}
+
+\begin{remarque}[title=Forces internes vs externes]
+Lors d'une collision entre deux navires :
+\begin{itemize}
+    \item Les forces de contact entre les deux navires sont des forces \textbf{internes} au système (navire A + navire B). Par la 3\textsuperscript{e} loi de Newton, elles sont égales et opposées : $\vect{F}_{A \to B} = -\vect{F}_{B \to A}$. Leur somme est nulle.
+    \item La gravité, la poussée d'Archimède et la résistance de l'eau sont des forces \textbf{externes}. Si elles s'annulent (ou sont négligeables par rapport aux forces de collision), le système est isolé.
+\end{itemize}
+\end{remarque}
+
+\subsubsection{Principe de conservation}
+
+\begin{definition}[title=Conservation de la quantité de mouvement]
+Si la résultante des forces extérieures sur un système est nulle ($\sum \vect{F}_{ext} = \vect{0}$), alors la quantité de mouvement totale du système est \textbf{conservée} :
+
+\begin{equationimportante}
+\begin{equation}
+\vect{p}_{total,i} = \vect{p}_{total,f}
+\label{eq:conservation_qdm}
+\end{equation}
+\end{equationimportante}
+
+Pour un système de deux objets (en 1D) :
+\begin{equation}
+m_1 v_{1i} + m_2 v_{2i} = m_1 v_{1f} + m_2 v_{2f}
+\label{eq:conservation_qdm_2corps}
+\end{equation}
+\end{definition}
+
+\begin{remarque}[title=Démonstration pour deux objets]
+Considérons deux objets qui interagissent. Par la 3\textsuperscript{e} loi de Newton :
+\[ \vect{F}_{1 \to 2} = -\vect{F}_{2 \to 1} \]
+
+Par le théorème de l'impulsion, appliqué à chaque objet pendant le temps $\Delta t$ de l'interaction :
+\begin{align*}
+\vect{F}_{2 \to 1} \cdot \Delta t &= \Delta \vect{p}_1 = m_1\vect{v}_{1f} - m_1\vect{v}_{1i} \\
+\vect{F}_{1 \to 2} \cdot \Delta t &= \Delta \vect{p}_2 = m_2\vect{v}_{2f} - m_2\vect{v}_{2i}
+\end{align*}
+
+En additionnant ces deux équations et en utilisant $\vect{F}_{1 \to 2} = -\vect{F}_{2 \to 1}$ :
+\[ \Delta \vect{p}_1 + \Delta \vect{p}_2 = \vect{0} \]
+
+Donc : $\vect{p}_{1i} + \vect{p}_{2i} = \vect{p}_{1f} + \vect{p}_{2f}$
+\end{remarque}
+
+\begin{remarque}[title=Conditions d'application]
+La conservation de la quantité de mouvement est \textbf{exacte} si le système est parfaitement isolé. En pratique, on peut l'appliquer de façon approximative lorsque :
+\begin{itemize}
+    \item Les forces \textbf{internes} (collision) sont beaucoup plus grandes que les forces \textbf{externes} (frottement, résistance)
+    \item L'interaction est \textbf{brève} (le temps de la collision est si court que les forces externes n'ont pas le temps d'agir significativement)
+\end{itemize}
+
+Dans le cas d'une collision entre navires, les forces d'impact (millions de newtons) sont largement supérieures à la résistance de l'eau (milliers de newtons). La conservation s'applique donc très bien pendant la collision elle-même.
+\end{remarque}
+
+\begin{exemple}{Recul d'un canon naval}{recul-canon}
+Un canon naval de masse $M = \SI{12000}{kg}$ tire un obus de masse $m = \SI{50}{kg}$ à une vitesse de $\SI{800}{m/s}$.
+
+Quelle est la vitesse de recul du canon?
+
+\textbf{Système :} Canon + obus (isolé dans la direction horizontale, car la force d'explosion est interne)
+
+\textbf{État initial :} Tout est au repos $\rightarrow$ $p_i = 0$
+
+\textbf{Conservation de $\vect{p}$ :}
+\begin{align*}
+p_i &= p_f \\
+0 &= m \cdot v_{obus} + M \cdot v_{canon} \\
+0 &= 50 \times 800 + 12000 \times v_{canon} \\
+v_{canon} &= \frac{-50 \times 800}{12000} = \SI{-3,3}{m/s}
+\end{align*}
+
+Le signe négatif confirme que le canon recule dans la direction \textbf{opposée} à celle de l'obus. La vitesse de recul est relativement faible grâce à la grande masse du canon.
+
+% --- DIAGRAMME À CRÉER ---
+% TikZ : Deux panneaux (avant/après le tir)
+% Panneau gauche "Avant" : Canon (grand rectangle gris) avec obus (petit rectangle
+%   rouge) à l'intérieur. Label p_total = 0. Tout est au repos.
+% Panneau droite "Après" : Canon reculant vers la gauche (vecteur v_canon, court)
+%   et obus se déplaçant vers la droite (vecteur v_obus, long).
+%   Labels : Mv_canon (gauche) et mv_obus (droite).
+%   Annotation : "p_total = Mv_canon + mv_obus = 0" en dessous
+\end{exemple}
+
+\begin{exemple}{Largage de cargaison en mouvement}{largage}
+Un navire de masse $M = \SI{20000}{tonnes}$ navigue à $\SI{6}{m/s}$ vers l'est. Il largue une ancre de masse $m = \SI{2000}{kg}$ verticalement (la composante horizontale de la vitesse de l'ancre au moment du largage est la même que celle du navire).
+
+La vitesse du navire change-t-elle?
+
+\textbf{Attention!} Au moment du largage, l'ancre conserve la même vitesse horizontale que le navire ($v_{ancre} = \SI{6}{m/s}$ vers l'est). Le largage est \textbf{vertical}, pas horizontal.
+
+\textbf{Conservation de $p_x$ :}
+\begin{align*}
+p_{xi} &= p_{xf} \\
+(M + m) \times 6 &= M \times v_{navire,f} + m \times 6
+\end{align*}
+
+Puisque $v_{ancre,x} = \SI{6}{m/s}$ (inchangé au moment du largage) :
+\[ (M + m) \times 6 = M \times v_{navire,f} + m \times 6 \]
+\[ v_{navire,f} = 6 \text{ m/s} \]
+
+La vitesse horizontale du navire ne change \textbf{pas} immédiatement! C'est seulement lorsque l'ancre touchera le fond et exercera une force de freinage que le navire ralentira.
+\end{exemple}
+
+\begin{pratiqueautonome}
+Un marin de $\SI{80}{kg}$ se tient debout à la poupe d'un canot de $\SI{120}{kg}$ initialement au repos sur l'eau (sans frottement). Le marin marche vers la proue à $\SI{2}{m/s}$ par rapport au sol.
+
+\begin{enumerate}[label=\alph*)]
+    \item Quelle est la vitesse du canot par rapport au sol?
+    \item Quelle est la vitesse du marin par rapport au canot?
+\end{enumerate}
+
+\espaceresolution[6cm]
+\reponsepratique{a) $v_{canot} = \SI{-1,33}{m/s}$ (vers la poupe) \quad b) $v_{rel} = 2 - (-1{,}33) = \SI{3,33}{m/s}$}
+\end{pratiqueautonome}
+
+\begin{pratiqueautonome}
+Deux barges naviguent sur le même cap. La barge A ($m_A = \SI{500}{tonnes}$, $v_A = \SI{4}{m/s}$) rattrape la barge B ($m_B = \SI{300}{tonnes}$, $v_B = \SI{1}{m/s}$). Après le contact, les deux barges restent accrochées et se déplacent ensemble.
+
+Quelle est leur vitesse commune après la collision?
+
+\espaceresolution[5cm]
+\reponsepratique{$v_f = \dfrac{m_A v_A + m_B v_B}{m_A + m_B} = \dfrac{500 \times 4 + 300 \times 1}{800} = \SI{2,9}{m/s}$}
+\end{pratiqueautonome}
+
+% =============================================================================
+\subsection{Comparaison : énergie vs quantité de mouvement}
+\label{subsec:comparaison-E-p}
+% =============================================================================
+
+Il est important de comprendre les différences entre ces deux grandeurs conservées :
+
+\begin{center}
+\renewcommand{\arraystretch}{1.5}
+\begin{tabular}{|L{4.5cm}|C{4.5cm}|C{4.5cm}|}
+\hline
+\rowcolor{bleuclair}
+& \textbf{Énergie cinétique} & \textbf{Quantité de mouvement} \\
+\hline
+\textbf{Formule} & $K = \frac{1}{2}mv^2$ & $\vect{p} = m\vect{v}$ \\
+\hline
+\textbf{Type de grandeur} & Scalaire & Vectorielle \\
+\hline
+\textbf{Toujours conservée?} & Non (dissipation possible) & Oui (si système isolé) \\
+\hline
+\textbf{Dépendance en $v$} & Quadratique ($v^2$) & Linéaire ($v$) \\
+\hline
+\textbf{Peut être négative?} & Non (toujours $\geq 0$) & Oui (signe = direction) \\
+\hline
+\textbf{Liée à...} & Travail ($W = \Delta K$) & Impulsion ($J = \Delta p$) \\
+\hline
+\end{tabular}
+\end{center}
+
+\begin{remarque}[title=Relation entre $K$ et $p$]
+On peut exprimer l'énergie cinétique en fonction de la quantité de mouvement :
+\[ K = \frac{1}{2}mv^2 = \frac{(mv)^2}{2m} = \frac{p^2}{2m} \]
+
+Cette relation est utile pour analyser les collisions : si $\vect{p}$ est conservée, cela ne signifie \textbf{pas} que $K$ l'est aussi (puisque $K$ dépend de $p^2$ et de $m$ différemment pour chaque objet).
+\end{remarque}

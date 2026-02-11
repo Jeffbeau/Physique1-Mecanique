@@ -1,0 +1,152 @@
+% =============================================================================
+% SECTION - THÉORÈME DE L'ÉNERGIE CINÉTIQUE
+% Chapitre 3 - Énergie et travail
+% =============================================================================
+
+\section{Théorème de l'énergie cinétique}
+\label{sec:theoreme_energie_cinetique}
+% =============================================================================
+
+Le lien fondamental entre le travail et l'énergie cinétique est exprimé par le \textbf{théorème de l'énergie cinétique}, l'un des résultats les plus importants de la mécanique.
+
+\subsection{Énoncé du théorème}
+
+\begin{definition}[title=Théorème de l'énergie cinétique]
+Le travail total (ou résultant) effectué sur un objet est égal à la variation de son énergie cinétique :
+
+\begin{equationimportante}
+\begin{equation}
+W_{\text{total}} = \Delta K = K_f - K_i = \frac{1}{2}mv_f^2 - \frac{1}{2}mv_i^2
+\label{eq:theoreme_energie_cinetique}
+\end{equation}
+\end{equationimportante}
+
+où :
+\begin{itemize}
+    \item $K_i = \frac{1}{2}mv_i^2$ est l'énergie cinétique initiale
+    \item $K_f = \frac{1}{2}mv_f^2$ est l'énergie cinétique finale
+    \item $\Delta K = K_f - K_i$ est la variation d'énergie cinétique
+\end{itemize}
+\end{definition}
+
+\begin{remarque}[title=Interprétation physique]
+Ce théorème nous dit que :
+\begin{itemize}
+    \item Si $W_{\text{total}} > 0$ : l'objet \textbf{accélère} ($v_f > v_i$)
+    \item Si $W_{\text{total}} < 0$ : l'objet \textbf{ralentit} ($v_f < v_i$)
+    \item Si $W_{\text{total}} = 0$ : la vitesse reste \textbf{constante} ($v_f = v_i$)
+\end{itemize}
+\end{remarque}
+
+\begin{attention}[title=L'énergie cinétique comme travail accumulé]
+L'énergie cinétique d'un corps peut être interprétée comme :
+\begin{itemize}
+    \item Le travail qu'il a \textbf{fallu effectuer} sur ce corps pour l'accélérer depuis le repos jusqu'à sa vitesse actuelle
+    \item Le travail que ce corps \textbf{peut effectuer} sur son environnement en s'arrêtant
+\end{itemize}
+Cette interprétation concorde avec la définition de l'énergie comme « capacité à effectuer un travail ».
+\end{attention}
+
+\subsection{Démonstration du théorème}
+
+Considérons une force constante $\vect{F}$ qui agit sur un corps de masse $m$ le long d'un déplacement $d$, dans la même direction que ce déplacement.
+
+Le travail effectué est :
+\[ W = Fd \]
+
+Par la 2\textsuperscript{e} loi de Newton, $F = ma$, donc :
+\[ W = mad \]
+
+En utilisant l'équation cinématique $v_f^2 = v_i^2 + 2ad$, on peut isoler $ad$ :
+\[ ad = \frac{v_f^2 - v_i^2}{2} \]
+
+En substituant dans l'expression du travail :
+\[ W = m \cdot \frac{v_f^2 - v_i^2}{2} = \frac{1}{2}mv_f^2 - \frac{1}{2}mv_i^2 = K_f - K_i = \Delta K \]
+
+Ce résultat est général et s'applique même lorsque la force n'est pas dans la direction du mouvement.
+
+\subsection{Applications du théorème de l'énergie cinétique}
+
+\begin{exemple}{Distance de freinage d'un navire}{}
+Un navire de masse $m = \SI{25000}{tonnes} = \SI{25e6}{kg}$ navigue à $v_i = \SI{10}{n\oe uds} \approx \SI{5,14}{m/s}$. Les moteurs sont inversés et exercent une force de freinage constante de $F = \SI{800}{kN}$. Quelle distance le navire parcourt-il avant de s'arrêter?
+
+\textbf{Données :}
+\begin{itemize}
+    \item Masse : $m = \SI{25e6}{kg}$
+    \item Vitesse initiale : $v_i = \SI{5,14}{m/s}$
+    \item Vitesse finale : $v_f = 0$ (arrêt)
+    \item Force de freinage : $F = \SI{800e3}{N}$
+\end{itemize}
+
+\textbf{Énergie cinétique initiale :}
+\[ K_i = \frac{1}{2}mv_i^2 = \frac{1}{2} \times \SI{25e6}{kg} \times (\SI{5,14}{m/s})^2 = \SI{330e6}{J} \]
+
+\textbf{Énergie cinétique finale :}
+\[ K_f = 0 \text{ (le navire est arrêté)} \]
+
+\textbf{Variation d'énergie cinétique :}
+\[ \Delta K = K_f - K_i = 0 - \SI{330e6}{J} = -\SI{330e6}{J} \]
+
+\textbf{Application du théorème :}
+\[ W_{\text{total}} = \Delta K \]
+\[ -Fd = -\SI{330e6}{J} \]
+\[ d = \frac{\SI{330e6}{J}}{\SI{800e3}{N}} = \SI{413}{m} \]
+
+Le navire parcourt environ \textbf{\SI{413}{m}} (ou \SI{0,22}{NM}) avant de s'arrêter.
+
+\begin{remarque}
+Cette distance ne tient pas compte du temps de réaction ni de la résistance de l'eau. En pratique, la distance de freinage serait légèrement différente, mais l'ordre de grandeur est correct : les grands navires ont besoin de \textbf{plusieurs centaines de mètres} pour s'arrêter!
+\end{remarque}
+\end{exemple}
+
+\begin{exemple}{Vitesse d'un conteneur après chute}{}
+Un conteneur de $m = \SI{5000}{kg}$ tombe accidentellement d'une hauteur de $h = \SI{8}{m}$. En négligeant la résistance de l'air, quelle est sa vitesse juste avant l'impact?
+
+\textbf{Méthode énergétique :}
+
+La seule force qui effectue un travail est la gravité (la résistance de l'air est négligée).
+
+\textbf{Travail de la gravité :}
+\[ W_g = -mg\Delta y = -mg(y_f - y_i) = -mg(0 - h) = mgh \]
+\[ W_g = \SI{5000}{kg} \times \SI{9,8}{m/s^2} \times \SI{8}{m} = \SI{392000}{J} \]
+
+\textbf{Application du théorème de l'énergie cinétique :}
+\[ W_{\text{total}} = \Delta K = K_f - K_i \]
+
+Puisque le conteneur part du repos ($v_i = 0$, donc $K_i = 0$) :
+\[ \SI{392000}{J} = \frac{1}{2}mv_f^2 - 0 \]
+\[ v_f^2 = \frac{2 \times \SI{392000}{J}}{\SI{5000}{kg}} = \SI{156,8}{m^2/s^2} \]
+\[ v_f = \sqrt{156,8} = \SI{12,5}{m/s} \approx \SI{45}{km/h} \]
+
+\begin{remarque}
+Notez que la masse s'annule dans le calcul! La vitesse finale ne dépend que de la hauteur de chute :
+\[ v_f = \sqrt{2gh} \]
+C'est le même résultat que celui obtenu par les équations cinématiques, mais la méthode énergétique est souvent plus simple.
+\end{remarque}
+\end{exemple}
+
+\begin{pratiqueautonome}
+Un canot de sauvetage de masse $m = \SI{300}{kg}$ est lancé d'un navire le long d'une glissière inclinée. Il part du repos et atteint une vitesse de $\SI{8}{m/s}$ après avoir parcouru $\SI{12}{m}$ le long de la glissière.
+
+\begin{enumerate}[label=\alph*)]
+    \item Calculez l'énergie cinétique initiale et finale du canot.
+    \item Calculez le travail total effectué sur le canot.
+    \item Si la glissière fait un angle de $30°$ avec l'horizontale, calculez le travail effectué par la gravité.
+    \item Déduisez-en le travail effectué par le frottement.
+\end{enumerate}
+
+\espaceresolution[8cm]
+\reponsepratique{a) $K_i = 0$, $K_f = \SI{9600}{J}$ \quad b) $W_{\text{total}} = \SI{9600}{J}$ \quad c) $W_g = mgh = 300 \times 9,8 \times 6 = \SI{17640}{J}$ \quad d) $W_f = W_{\text{total}} - W_g = 9600 - 17640 = -\SI{8040}{J}$}
+\end{pratiqueautonome}
+
+\begin{pratiqueautonome}
+Un remorqueur doit accélérer un pétrolier de $m = \SI{100000}{tonnes}$ du repos jusqu'à une vitesse de $\SI{2}{m/s}$.
+
+\begin{enumerate}[label=\alph*)]
+    \item Quelle quantité de travail le remorqueur doit-il effectuer (en négligeant les frottements)?
+    \item Si le remorqueur exerce une force constante de $\SI{500}{kN}$, quelle distance sera nécessaire?
+\end{enumerate}
+
+\espaceresolution[5cm]
+\reponsepratique{a) $W = \Delta K = \frac{1}{2}mv_f^2 = \SI{200}{MJ}$ \quad b) $d = W/F = \SI{400}{m}$}
+\end{pratiqueautonome}

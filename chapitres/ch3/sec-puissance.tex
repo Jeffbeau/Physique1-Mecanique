@@ -1,0 +1,166 @@
+% =============================================================================
+% SECTION - LA PUISSANCE
+% Chapitre 3 - Énergie et travail
+% =============================================================================
+
+\section{La puissance}
+\label{sec:puissance}
+% =============================================================================
+
+En pratique, lorsqu'on essaye d'accomplir un travail physique, il est pertinent de se questionner non seulement sur la \textbf{quantité} de travail accomplie, mais aussi sur le \textbf{temps} requis pour l'accomplir. C'est la notion de puissance.
+
+\subsection{Définition de la puissance}
+
+\begin{definition}[title=Puissance moyenne]
+La \textbf{puissance moyenne} est la quantité de travail effectué par unité de temps :
+
+\begin{equationimportante}
+\begin{equation}
+P_{\text{moy}} = \frac{W}{\Delta t}
+\label{eq:puissance_moyenne}
+\end{equation}
+\end{equationimportante}
+
+où :
+\begin{itemize}
+    \item $W$ est le travail effectué (en J)
+    \item $\Delta t$ est l'intervalle de temps (en s)
+\end{itemize}
+
+L'unité SI de la puissance est le \textbf{watt} (W) : $\SI{1}{W} = \SI{1}{J/s}$
+\end{definition}
+
+\begin{remarque}[title=Autres unités de puissance]
+\begin{center}
+\renewcommand{\arraystretch}{1.3}
+\begin{tabular}{|l|c|l|}
+\hline
+\rowcolor{bleuclair}
+\textbf{Unité} & \textbf{Symbole} & \textbf{Équivalence} \\
+\hline
+Watt & W & $\SI{1}{W} = \SI{1}{J/s}$ \\
+Kilowatt & kW & $\SI{1}{kW} = \SI{1000}{W}$ \\
+Mégawatt & MW & $\SI{1}{MW} = \SI{e6}{W}$ \\
+Cheval-vapeur (métrique) & ch ou cv & $\SI{1}{ch} = \SI{735,5}{W}$ \\
+Horsepower (impérial) & hp & $\SI{1}{hp} = \SI{745,7}{W}$ \\
+\hline
+\end{tabular}
+\end{center}
+\end{remarque}
+
+\subsection{Puissance instantanée}
+
+\begin{definition}[title=Puissance instantanée]
+La puissance instantanée peut s'exprimer en fonction de la force et de la vitesse :
+
+\begin{equationimportante}
+\begin{equation}
+P = Fv\cos\theta
+\label{eq:puissance_instantanee}
+\end{equation}
+\end{equationimportante}
+
+Lorsque la force est dans la direction du mouvement ($\theta = 0$) :
+\begin{equation}
+P = Fv
+\label{eq:puissance_simple}
+\end{equation}
+\end{definition}
+
+\begin{remarque}[title=Démonstration]
+Pour une force constante dans la direction du mouvement :
+\[ P = \frac{W}{\Delta t} = \frac{Fd}{\Delta t} = F \times \frac{d}{\Delta t} = Fv \]
+\end{remarque}
+
+\subsection{Applications maritimes de la puissance}
+
+\begin{exemple}{Puissance des moteurs d'un navire}{}
+Un cargo de \SI{30000}{tonnes} navigue à vitesse constante de $v = \SI{12}{n\oe uds} \approx \SI{6,2}{m/s}$. La force de résistance totale (eau + air) est estimée à $F_r = \SI{800}{kN}$.
+
+Quelle puissance les moteurs doivent-ils fournir?
+
+\textbf{Analyse :} À vitesse constante, la force de propulsion doit exactement compenser la résistance : $F_{\text{prop}} = F_r = \SI{800}{kN}$.
+
+\textbf{Puissance requise :}
+\[ P = F_{\text{prop}} \times v = \SI{800e3}{N} \times \SI{6,2}{m/s} = \SI{4,96e6}{W} \approx \SI{5}{MW} \]
+
+En chevaux-vapeur : $P = \dfrac{\SI{5e6}{W}}{\SI{735,5}{W/ch}} \approx \SI{6800}{ch}$
+
+\begin{remarque}
+Cette puissance est nécessaire juste pour maintenir la vitesse. Pour accélérer, il faudrait encore plus de puissance!
+\end{remarque}
+\end{exemple}
+
+\begin{exemple}{Grue de chargement}{}
+Une grue portuaire soulève un conteneur de $m = \SI{20000}{kg}$ à une vitesse constante de $v = \SI{0,5}{m/s}$. Quelle puissance la grue doit-elle fournir?
+
+\textbf{Force requise :} Pour soulever à vitesse constante, la tension du câble doit égaler le poids :
+\[ T = mg = \SI{20000}{kg} \times \SI{9,8}{m/s^2} = \SI{196000}{N} \]
+
+\textbf{Puissance :}
+\[ P = Tv = \SI{196000}{N} \times \SI{0,5}{m/s} = \SI{98000}{W} = \SI{98}{kW} \]
+
+En chevaux-vapeur : $P \approx \SI{133}{ch}$
+\end{exemple}
+
+\begin{pratiqueautonome}
+Un treuil électrique hisse une chaloupe de sauvetage de $m = \SI{400}{kg}$ sur une hauteur de $h = \SI{8}{m}$ en $t = \SI{20}{s}$.
+
+\begin{enumerate}[label=\alph*)]
+    \item Quel travail le treuil effectue-t-il contre la gravité?
+    \item Quelle est la puissance moyenne du treuil?
+    \item Si le rendement du système est de 75\%, quelle puissance électrique le treuil consomme-t-il?
+\end{enumerate}
+
+\espaceresolution[5cm]
+\reponsepratique{a) $W = mgh = \SI{31360}{J}$ \quad b) $P = W/t = \SI{1568}{W}$ \quad c) $P_{\text{élec}} = P/0,75 = \SI{2091}{W}$}
+\end{pratiqueautonome}
+
+\subsection{Relation entre puissance et énergie}
+
+Puisque la puissance est le taux de transfert d'énergie, on peut aussi écrire :
+
+\begin{equation}
+P = \frac{\Delta E}{\Delta t}
+\label{eq:puissance_energie}
+\end{equation}
+
+Cette relation est utile pour calculer l'énergie consommée ou produite pendant un certain temps :
+
+\begin{equation}
+E = P \times \Delta t
+\label{eq:energie_puissance_temps}
+\end{equation}
+
+\begin{remarque}[title=Le kilowattheure (kWh)]
+En pratique, l'énergie est souvent mesurée en \textbf{kilowattheures} (kWh), particulièrement pour la facturation de l'électricité :
+\[ \SI{1}{kWh} = \SI{1000}{W} \times \SI{3600}{s} = \SI{3,6e6}{J} = \SI{3,6}{MJ} \]
+\end{remarque}
+
+\begin{exemple}{Consommation énergétique d'un navire}{}
+Un ferry consomme une puissance moyenne de \SI{8}{MW} pour ses moteurs pendant une traversée de 2 heures.
+
+\textbf{Énergie consommée :}
+\[ E = P \times t = \SI{8}{MW} \times \SI{2}{h} = \SI{16}{MWh} \]
+
+En joules : $E = \SI{16e6}{Wh} \times \SI{3600}{s/h} = \SI{57,6e9}{J} = \SI{57,6}{GJ}$
+
+Si le carburant fournit environ \SI{45}{MJ/kg}, la masse de carburant consommée est :
+\[ m_{\text{carb}} = \frac{\SI{57,6e9}{J}}{\SI{45e6}{J/kg}} \approx \SI{1280}{kg} \]
+
+(En pratique, le rendement des moteurs réduit cette efficacité.)
+\end{exemple}
+
+\begin{pratiqueautonome}
+Un navire utilise un groupe électrogène de \SI{500}{kW} pendant 8 heures pour alimenter les systèmes de bord.
+
+\begin{enumerate}[label=\alph*)]
+    \item Quelle énergie est produite (en kWh et en MJ)?
+    \item Si le diesel marin fournit \SI{42}{MJ} par litre, combien de litres sont consommés (en supposant un rendement de 40\%)?
+\end{enumerate}
+
+\espaceresolution[5cm]
+\reponsepratique{a) $E = \SI{4000}{kWh} = \SI{14400}{MJ}$ \quad b) Énergie du carburant nécessaire $= 14400/0,4 = \SI{36000}{MJ}$, donc $V = 36000/42 \approx \SI{857}{L}$}
+\end{pratiqueautonome}
+
+% =============================================================================

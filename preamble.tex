@@ -105,6 +105,7 @@
     vecteur/.style={-{Stealth[length=3mm, width=2mm]}, thick, blue},
     vecteur rouge/.style={-{Stealth[length=3mm, width=2mm]}, thick, red},
     vecteur vert/.style={-{Stealth[length=3mm, width=2mm]}, thick, green!60!black},
+    vecteur orange/.style={-{Stealth[length=3mm, width=2mm]}, thick, orange},
     axe/.style={-{Stealth[length=2mm]}, thin},
     pointille/.style={dashed, gray},
     angle mark/.style={draw, thick, blue!50},
@@ -250,6 +251,8 @@
 % -----------------------------------------------------------------------------
 \usepackage{lipsum} % Pour le texte de remplissage (Ã  retirer en production)
 \usepackage{cancel} % Pour barrer des termes dans les Ã©quations
+\usepackage{pifont} % Symboles spÃ©ciaux (checkmark, etc.)
+\newcommand{\cmark}{\ding{51}} % Checkmark compatible pdfLaTeX
 
 % Espacement des paragraphes
 \setlength{\parindent}{0pt}

@@ -56,7 +56,7 @@ où :
 \textbf{Direction :} Le poids est \textbf{toujours dirigé vers le centre de la Terre}, c'est-à-dire verticalement vers le bas.
 \end{definition}
 
-\begin{remarque}[title=D'où vient $g = \SI{9,81}{m/s^2}$?]
+\begin{remarque}[title={D'où vient $g = \SI{9,81}{m/s^2}$?}]
 En combinant la loi de la gravitation universelle avec $F_g = mg$, on obtient :
 \[
     g = \frac{G M_T}{R_T^2} = \frac{(\SI{6,674e-11}{}) \times (\SI{5,972e24}{kg})}{(\SI{6,371e6}{m})^2} \approx \SI{9,81}{m/s^2}
@@ -445,6 +445,38 @@ Un navire effectue un virage à vitesse constante. Une caisse mal arrimée sur l
 \textbf{Leçon :} La cargaison doit être correctement arrimée pour que les forces de friction puissent fournir la force centripète nécessaire lors des manœuvres!
 \end{exemple}
 
+\begin{remarque}[title=Pour aller plus loin]
+Les applications détaillées de la force centripète (virage de navire, inclinaison en virage, mouvement circulaire vertical) sont présentées à la section~\ref{sec:circulaire}.
+\end{remarque}
+
+% =============================================================================
+\subsection{La force de rappel (loi de Hooke)}
+\label{subsec:force-rappel}
+% =============================================================================
+
+Lorsqu'on comprime ou étire un ressort (ou tout objet élastique), celui-ci exerce une force qui tend à le ramener à sa position naturelle. C'est la \textbf{force de rappel}.
+
+\begin{definition}[title=Loi de Hooke]
+La force exercée par un ressort est proportionnelle à son allongement (ou sa compression) :
+\[
+    F_{\text{ressort}} = -k \Delta x
+\]
+où $k$ est la \textbf{constante de raideur} du ressort (\si{N/m}) et $\Delta x$ est le déplacement par rapport à la position d'équilibre.
+
+Le signe négatif indique que la force s'oppose toujours au déplacement : si on étire le ressort ($\Delta x > 0$), la force tire vers l'arrière ($F < 0$), et inversement.
+\end{definition}
+
+\begin{exemple}{Ressort d'amortissement d'un quai}{ressort-quai}
+Un navire accoste et comprime un amortisseur de quai (pare-battage à ressort) de $\Delta x = \SI{15}{cm}$. La constante de raideur de l'amortisseur est $k = \SI{8000}{N/m}$. Quelle force l'amortisseur exerce-t-il sur le navire?
+
+\tcblower
+La compression vaut $\Delta x = \SI{0{,}15}{m}$. En module :
+\[
+    F = k |\Delta x| = 8000 \times 0{,}15 = \boxed{\SI{1200}{N}}
+\]
+La force est dirigée vers l'extérieur du quai (elle repousse le navire), ce qui est cohérent : le ressort comprimé pousse pour revenir à sa longueur naturelle.
+\end{exemple}
+
 % =============================================================================
 \subsection{Tableau récapitulatif des forces}
 \label{subsec:tableau-forces}
@@ -467,6 +499,8 @@ Un navire effectue un virage à vitesse constante. Une caisse mal arrimée sur l
 \textbf{Frottement cinétique} & $f_c = \mu_c N$ & Parallèle à la surface, oppose le mouvement \\
 \hline
 \textbf{Force centripète} & $F_c = \dfrac{mv^2}{r}$ & Vers le centre de la trajectoire circulaire \\
+\hline
+\textbf{Force de rappel} & $F = -k\Delta x$ & Oppose le déplacement par rapport à la position d'équilibre \\
 \hline
 \end{tabular}
 \end{center}

@@ -1,0 +1,425 @@
+% =============================================================================
+% SECTION - LE TRAVAIL
+% Chapitre 3 - Énergie et travail
+% =============================================================================
+
+% =============================================================================
+\section{Le travail}
+\label{sec:travail}
+% =============================================================================
+
+On sait maintenant qu'un corps en mouvement possède de l'énergie cinétique. Or, en vertu de la première loi de Newton, les corps ne se mettent pas en mouvement d'eux-mêmes : une modification du mouvement nécessite l'intervention d'une \textbf{force}. Il doit donc y avoir un lien entre l'action d'une force et l'énergie. Ce lien, c'est le \textbf{travail}.
+
+\subsection{Définition du travail}
+
+\begin{definition}[title=Travail d'une force]
+Le \textbf{travail} ($W$) est l'énergie transférée à un système (ou retirée d'un système) par l'action d'une force dont le point d'application se déplace.
+
+Pour une force \textbf{constante} $\vect{F}$ appliquée sur un objet qui se déplace d'une distance $d$ :
+
+\begin{equationimportante}
+\begin{equation}
+W = Fd\cos\theta
+\label{eq:travail}
+\end{equation}
+\end{equationimportante}
+
+où :
+\begin{itemize}
+    \item $F$ est le module de la force (en N)
+    \item $d$ est la distance parcourue (en m)
+    \item $\theta$ est l'angle entre la force et le déplacement
+\end{itemize}
+
+L'unité SI du travail est le \textbf{joule} (J), la même que pour l'énergie.
+\end{definition}
+
+\begin{center}
+\begin{tikzpicture}[scale=1.2]
+    % Sol
+    \fill[gray!20] (-0.5,-0.3) rectangle (7,0);
+    \draw[thick] (-0.5,0) -- (7,0);
+    
+    % Boîte position initiale (fantôme)
+    \draw[dashed, gray] (0.5,0) rectangle (1.5,1);
+    
+    % Boîte position finale
+    \fill[blue!20] (4.5,0) rectangle (5.5,1);
+    \draw[thick, blue!70!black] (4.5,0) rectangle (5.5,1);
+    \node at (5,0.5) {$m$};
+    
+    % Vecteur déplacement
+    \draw[very thick, ->, green!60!black] (1,0.5) -- (4.5,0.5);
+    \node[green!60!black, below] at (2.75,0.5) {$\vect{d}$};
+    
+    % Vecteur force (angle)
+    \draw[vecteur rouge, very thick] (5,0.5) -- ++(35:2) node[above right] {$\vect{F}$};
+    
+    % Angle
+    \draw[thick] (5,0.5) -- ++(1.5,0);
+    \draw[thick, ->] (6,0.5) arc (0:35:1) node[midway, right] {$\theta$};
+    
+    % Annotation
+    \node[below] at (3.5,-0.5) {Déplacement $d$};
+\end{tikzpicture}
+\end{center}
+
+\subsection{Interprétation du travail}
+
+Le travail peut être positif, négatif ou nul selon l'orientation de la force par rapport au déplacement :
+
+\begin{attention}[title=Signe du travail]
+\renewcommand{\arraystretch}{1.5}
+\begin{center}
+\begin{tabular}{|c|c|c|p{5cm}|}
+\hline
+\rowcolor{bleuclair}
+\textbf{Angle $\theta$} & \textbf{$\cos\theta$} & \textbf{Travail} & \textbf{Interprétation} \\
+\hline
+$0°$ & $+1$ & $W = +Fd$ & Force dans le sens du mouvement $\rightarrow$ \textbf{énergie ajoutée} \\
+\hline
+$90°$ & $0$ & $W = 0$ & Force perpendiculaire $\rightarrow$ \textbf{aucun transfert d'énergie} \\
+\hline
+$180°$ & $-1$ & $W = -Fd$ & Force opposée au mouvement $\rightarrow$ \textbf{énergie retirée} \\
+\hline
+\end{tabular}
+\end{center}
+\end{attention}
+
+\begin{remarque}[title=Le travail ne crée pas d'énergie]
+Le travail fait sur un système ne \textbf{crée} pas de nouvelle énergie : il ne fait que \textbf{transférer} l'énergie d'un endroit à un autre ou d'une forme à une autre. Le travail est le \textbf{mécanisme} par lequel l'énergie est échangée entre un système et son environnement.
+\end{remarque}
+
+\subsection{Cas particuliers importants}
+
+\subsubsection{Force dans le sens du mouvement ($\theta = 0°$)}
+
+Lorsque la force est appliquée dans la \textbf{même direction} que le déplacement, le travail est \textbf{maximal et positif} :
+\[ W = Fd\cos(0°) = Fd \]
+
+\begin{exemple}{Remorqueur poussant un navire}{}
+Un remorqueur exerce une force de poussée de $F = \SI{150}{kN}$ sur un navire, dans la direction du mouvement. Le navire se déplace de $d = \SI{200}{m}$.
+
+\begin{center}
+\begin{tikzpicture}[scale=0.8]
+    % Eau
+    \fill[blue!10] (-1,-0.5) rectangle (10,2);
+    \draw[blue!50, thick, decorate, decoration={snake, amplitude=1mm, segment length=5mm}] (-1,0) -- (10,0);
+    
+    % Navire (simplifié)
+    \fill[gray!50] (5,0.2) -- (8,0.2) -- (8.5,0.7) -- (8,1.2) -- (5,1.2) -- (4.5,0.7) -- cycle;
+    \node at (6.5,0.7) {Navire};
+    
+    % Remorqueur
+    \fill[orange!70] (1,0.3) -- (3,0.3) -- (3.2,0.6) -- (3,0.9) -- (1,0.9) -- (0.8,0.6) -- cycle;
+    \node[below] at (2,-0.3) {Remorqueur};
+    
+    % Force
+    \draw[vecteur rouge, very thick] (3.2,0.6) -- (4.5,0.6) node[above, midway] {$\vect{F}$};
+    
+    % Déplacement
+    \draw[very thick, ->, green!60!black] (1,1.5) -- (5,1.5) node[midway, above] {$\vect{d} = \SI{200}{m}$};
+\end{tikzpicture}
+\end{center}
+
+\textbf{Travail effectué par le remorqueur :}
+\[ W = Fd = \SI{150e3}{N} \times \SI{200}{m} = \SI{30e6}{J} = \SI{30}{MJ} \]
+
+Ce travail positif signifie que le remorqueur \textbf{ajoute} de l'énergie au navire (augmentation de l'énergie cinétique ou compensation des pertes par frottement).
+\end{exemple}
+
+\subsubsection{Force perpendiculaire au mouvement ($\theta = 90°$)}
+
+Lorsque la force est \textbf{perpendiculaire} au déplacement, le travail est \textbf{nul} :
+\[ W = Fd\cos(90°) = 0 \]
+
+\begin{remarque}[title=Travail nul $\neq$ force inutile]
+Une force perpendiculaire au mouvement n'effectue aucun travail, mais elle n'est pas sans effet! Elle peut modifier la \textbf{direction} du mouvement sans changer sa \textbf{vitesse}.
+
+Exemples :
+\begin{itemize}
+    \item La force centripète dans un virage (change la direction, pas la vitesse)
+    \item La force normale sur un objet glissant sur une surface horizontale
+    \item La tension d'une corde retenant un pendule au point le plus bas de sa trajectoire
+\end{itemize}
+\end{remarque}
+
+\subsubsection{Force opposée au mouvement ($\theta = 180°$)}
+
+Lorsque la force est dans la direction \textbf{opposée} au déplacement, le travail est \textbf{négatif} :
+\[ W = Fd\cos(180°) = -Fd \]
+
+\begin{exemple}{Freinage d'un navire par inversion des moteurs}{}
+Un cargo de \SI{20000}{tonnes} navigue à \SI{8}{m/s}. Pour freiner, on inverse les moteurs qui exercent une force de résistance de $F = \SI{400}{kN}$ pendant que le navire parcourt encore $d = \SI{500}{m}$.
+
+\textbf{Travail effectué par la force de freinage :}
+\[ W = Fd\cos(180°) = \SI{400e3}{N} \times \SI{500}{m} \times (-1) = -\SI{200}{MJ} \]
+
+Ce travail \textbf{négatif} signifie que de l'énergie est \textbf{retirée} au navire (diminution de l'énergie cinétique).
+\end{exemple}
+
+\begin{pratiqueautonome}
+Un matelot tire une caisse de matériel sur le pont d'un navire. La corde fait un angle de $30°$ avec l'horizontale et exerce une tension de $\SI{250}{N}$. La caisse se déplace horizontalement de $\SI{8}{m}$.
+
+\begin{center}
+\begin{tikzpicture}[scale=0.9]
+    % Pont
+    \fill[brown!30] (-0.5,-0.2) rectangle (8,0);
+    \draw[thick] (-0.5,0) -- (8,0);
+    
+    % Caisse
+    \fill[blue!20] (2,0) rectangle (3.5,1);
+    \draw[thick] (2,0) rectangle (3.5,1);
+    \node at (2.75,0.5) {Caisse};
+    
+    % Corde et force
+    \draw[thick, brown] (3.5,0.8) -- ++(30:2);
+    \draw[vecteur rouge] (3.5,0.8) -- ++(30:1.5) node[above right] {$\vect{T} = \SI{250}{N}$};
+    
+    % Angle
+    \draw[thick] (3.5,0.8) -- ++(1,0);
+    \draw[->] (4.2,0.8) arc (0:30:0.7) node[midway, right] {$30°$};
+    
+    % Déplacement
+    \draw[very thick, ->, green!60!black] (2,1.5) -- (6,1.5) node[midway, above] {$d = \SI{8}{m}$};
+\end{tikzpicture}
+\end{center}
+
+Calculez le travail effectué par la tension de la corde sur la caisse.
+
+\espaceresolution[4cm]
+\reponsepratique{$W = Td\cos\theta = 250 \times 8 \times \cos(30°) = 250 \times 8 \times 0,866 \approx \SI{1730}{J}$}
+\end{pratiqueautonome}
+
+\subsection{Travail effectué par plusieurs forces}
+
+Lorsque plusieurs forces agissent simultanément sur un objet, le \textbf{travail total} (ou travail résultant) est la somme des travaux effectués par chacune des forces :
+
+\begin{equationimportante}
+\begin{equation}
+W_{\text{total}} = W_1 + W_2 + W_3 + \ldots = \sum_i W_i
+\label{eq:travail_total}
+\end{equation}
+\end{equationimportante}
+
+\begin{exemple}{Chargement d'un conteneur sur un plan incliné}{}
+Un conteneur de masse $m = \SI{2000}{kg}$ est tiré vers le haut d'une rampe inclinée à $\theta = 20°$ par un câble parallèle à la rampe. Le conteneur monte de $d = \SI{15}{m}$ le long de la rampe. La tension dans le câble est $T = \SI{12000}{N}$ et la force de frottement est $f = \SI{2000}{N}$.
+
+\begin{center}
+\begin{tikzpicture}[scale=0.7]
+    % Plan incliné
+    \fill[gray!20] (0,0) -- (10,0) -- (10,3.64) -- cycle;
+    \draw[very thick] (0,0) -- (10,3.64);
+    \draw[thick] (0,0) -- (10,0);
+    
+    % Angle
+    \draw[thick] (2,0) arc (0:20:2) node[midway, right] {$20°$};
+    
+    % Conteneur
+    \begin{scope}[shift={(4,1.456)}, rotate=20]
+        \fill[blue!30] (0,0) rectangle (1.5,1);
+        \draw[thick] (0,0) rectangle (1.5,1);
+        \node at (0.75,0.5) {$m$};
+        
+        % Force de tension (parallèle à la rampe, vers le haut)
+        \draw[vecteur rouge, very thick] (1.5,0.5) -- ++(2,0) node[above] {$\vect{T}$};
+        
+        % Force de frottement (parallèle à la rampe, vers le bas)
+        \draw[vecteur, very thick] (0,0.5) -- ++(-1.2,0) node[above] {$\vect{f}$};
+        
+        % Poids (vertical vers le bas)
+        \draw[vecteur vert, very thick] (0.75,0) -- ++(0,-1.5);
+    \end{scope}
+    
+    % Annotation poids
+    \node[green!60!black] at (6.5,-0.5) {$\vect{F}_g$};
+    
+    % Déplacement
+    \draw[very thick, ->, green!60!black] (1,0.8) -- ++(20:4) node[midway, above left] {$d = \SI{15}{m}$};
+    
+    % Hauteur
+    \draw[dashed] (10,0) -- (10,3.64);
+    \node[right] at (10,1.8) {$h$};
+\end{tikzpicture}
+\end{center}
+
+Calculons le travail effectué par chaque force :
+
+\textbf{1. Travail de la tension} (parallèle au déplacement, $\theta = 0°$) :
+\[ W_T = Td\cos(0°) = \SI{12000}{N} \times \SI{15}{m} \times 1 = +\SI{180000}{J} \]
+
+\textbf{2. Travail du frottement} (opposé au déplacement, $\theta = 180°$) :
+\[ W_f = fd\cos(180°) = \SI{2000}{N} \times \SI{15}{m} \times (-1) = -\SI{30000}{J} \]
+
+\textbf{3. Travail de la gravité} (angle de $90° + 20° = 110°$ avec le déplacement) :
+\[ W_g = F_g d\cos(110°) = mg \cdot d\cos(110°) \]
+\[ W_g = \SI{2000}{kg} \times \SI{9,8}{m/s^2} \times \SI{15}{m} \times \cos(110°) \]
+\[ W_g = \SI{294000}{N \cdot m} \times (-0,342) = -\SI{100500}{J} \]
+
+\textbf{4. Travail de la normale} (perpendiculaire au déplacement, $\theta = 90°$) :
+\[ W_N = Nd\cos(90°) = 0 \]
+
+\textbf{Travail total :}
+\[ W_{\text{total}} = W_T + W_f + W_g + W_N = 180000 - 30000 - 100500 + 0 = +\SI{49500}{J} \]
+
+Le travail total est positif, ce qui signifie que le conteneur \textbf{gagne} de l'énergie (il accélère en montant).
+\end{exemple}
+
+\begin{pratiqueautonome}
+Une chaloupe de sauvetage de masse $m = \SI{500}{kg}$ est hissée verticalement de $h = \SI{6}{m}$ à l'aide d'un treuil. La tension dans le câble est $T = \SI{5500}{N}$.
+
+\begin{enumerate}[label=\alph*)]
+    \item Calculez le travail effectué par la tension.
+    \item Calculez le travail effectué par la gravité.
+    \item Calculez le travail total sur la chaloupe.
+    \item La chaloupe accélère-t-elle, ralentit-elle ou se déplace-t-elle à vitesse constante?
+\end{enumerate}
+
+\espaceresolution[6cm]
+\reponsepratique{a) $W_T = +\SI{33000}{J}$ \quad b) $W_g = -\SI{29400}{J}$ \quad c) $W_{\text{total}} = +\SI{3600}{J}$ \quad d) Elle accélère (travail total positif)}
+\end{pratiqueautonome}
+\subsection{Travail effectué par la gravité}
+
+La force gravitationnelle est une force particulièrement importante en physique. Son travail dépend uniquement de la \textbf{variation de hauteur} de l'objet, et non du chemin parcouru.
+
+\begin{definition}[title=Travail de la gravité]
+Le travail effectué par la force gravitationnelle sur un objet dont la hauteur varie de $y_i$ (position initiale) à $y_f$ (position finale) est :
+
+\begin{equationimportante}
+\begin{equation}
+W_g = -mg(y_f - y_i) = -mg\Delta y
+\label{eq:travail_gravite}
+\end{equation}
+\end{equationimportante}
+
+où :
+\begin{itemize}
+    \item $m$ est la masse de l'objet (en kg)
+    \item $g = \SI{9,8}{m/s^2}$ est l'accélération gravitationnelle
+    \item $\Delta y = y_f - y_i$ est le changement de hauteur (positif vers le haut)
+\end{itemize}
+\end{definition}
+
+\begin{remarque}[title=Interprétation du signe]
+\begin{itemize}
+    \item Si l'objet \textbf{monte} ($\Delta y > 0$) : $W_g < 0$ (la gravité s'oppose au mouvement)
+    \item Si l'objet \textbf{descend} ($\Delta y < 0$) : $W_g > 0$ (la gravité aide le mouvement)
+\end{itemize}
+Le travail de la gravité est \textbf{indépendant du chemin} parcouru : seule la différence de hauteur compte!
+\end{remarque}
+
+\begin{center}
+\begin{tikzpicture}[scale=0.8]
+    % Axes
+    \draw[axe, thick, ->] (-0.5,0) -- (8,0) node[right] {$x$};
+    \draw[axe, thick, ->] (0,-0.5) -- (0,5) node[above] {$y$};
+    
+    % Point initial
+    \fill[blue] (1,4) circle (4pt) node[above left] {Position initiale};
+    \node[left] at (0,4) {$y_i$};
+    \draw[dashed, gray] (0,4) -- (1,4);
+    
+    % Point final
+    \fill[red] (6,1) circle (4pt) node[below right] {Position finale};
+    \node[left] at (0,1) {$y_f$};
+    \draw[dashed, gray] (0,1) -- (6,1);
+    
+    % Différents chemins
+    \draw[thick, blue!60, ->] (1,4) -- (1,1) -- (6,1);
+    \draw[thick, green!60!black, ->] (1,4) to[out=-30, in=150] (6,1);
+    \draw[thick, orange, ->] (1,4) -- (6,4) -- (6,1);
+    
+    % Annotation
+    \draw[<->, thick, red] (7,1) -- (7,4) node[midway, right] {$\Delta y = y_f - y_i$};
+    
+    % Légende
+    \node[below] at (4,-0.8) {Peu importe le chemin, $W_g = -mg\Delta y$};
+\end{tikzpicture}
+\end{center}
+
+\begin{exemple}{Conteneur descendu par une grue}{}
+Une grue de port descend un conteneur de masse $m = \SI{15000}{kg}$ d'une hauteur de $h = \SI{12}{m}$ jusqu'au pont d'un navire.
+
+\begin{center}
+\begin{tikzpicture}[scale=0.6]
+    % Quai
+    \fill[gray!30] (-1,0) rectangle (3,6);
+    \draw[thick] (3,0) -- (3,6);
+    
+    % Navire
+    \fill[blue!20] (4,0) -- (4,2) -- (10,2) -- (10,0) -- cycle;
+    \draw[thick] (4,0) -- (4,2) -- (10,2) -- (10,0);
+    \node at (7,1) {Navire};
+    
+    % Eau
+    \fill[blue!10] (3,-0.5) rectangle (11,0);
+    
+    % Grue (simplifiée)
+    \draw[very thick, gray!70] (2,6) -- (2,8) -- (7,8);
+    
+    % Conteneur position haute
+    \draw[dashed, blue!50] (6,6) rectangle (7.5,7);
+    \node[blue!50, right] at (7.5,6.5) {$y_i = \SI{12}{m}$};
+    
+    % Conteneur position basse
+    \fill[orange!70] (6,2) rectangle (7.5,3);
+    \draw[thick] (6,2) rectangle (7.5,3);
+    \node[right] at (7.5,2.5) {$y_f = \SI{0}{m}$};
+    
+    % Câble
+    \draw[thick] (6.75,8) -- (6.75,3);
+    
+    % Flèche déplacement
+    \draw[very thick, ->, red] (5,6.5) -- (5,2.5) node[midway, left] {$\Delta y = -\SI{12}{m}$};
+    
+    % Poids
+    \draw[vecteur vert] (6.75,2) -- (6.75,0.5) node[right] {$\vect{F}_g$};
+\end{tikzpicture}
+\end{center}
+
+\textbf{Changement de hauteur :}
+\[ \Delta y = y_f - y_i = 0 - 12 = -\SI{12}{m} \]
+
+\textbf{Travail de la gravité :}
+\[ W_g = -mg\Delta y = -(\SI{15000}{kg})(\SI{9,8}{m/s^2})(-\SI{12}{m}) \]
+\[ W_g = +\SI{1764000}{J} = +\SI{1,76}{MJ} \]
+
+Le travail est \textbf{positif} car la gravité aide à descendre le conteneur (la force et le déplacement sont dans le même sens).
+\end{exemple}
+
+\begin{pratiqueautonome}
+Un ascenseur de navire de croisière transporte des passagers ($m_{\text{total}} = \SI{800}{kg}$) entre deux ponts séparés de $\SI{4}{m}$.
+
+\begin{enumerate}[label=\alph*)]
+    \item Calculez le travail effectué par la gravité lorsque l'ascenseur monte.
+    \item Calculez le travail effectué par la gravité lorsque l'ascenseur descend.
+\end{enumerate}
+
+\espaceresolution[4cm]
+\reponsepratique{a) $W_g = -\SI{31360}{J}$ \quad b) $W_g = +\SI{31360}{J}$}
+\end{pratiqueautonome}
+
+\subsection{Travail effectué par un ressort}
+
+La force de rappel d'un ressort ($\vect{F}_R = -k\vect{x}$) est une force \textbf{variable} : son module dépend de la déformation du ressort. Le calcul du travail nécessite donc une approche différente.
+
+\begin{definition}[title=Travail d'un ressort]
+Le travail effectué par la force de rappel d'un ressort lorsque sa déformation passe de $x_i$ à $x_f$ est :
+
+\begin{equationimportante}
+\begin{equation}
+W_{\text{ressort}} = \frac{1}{2}kx_i^2 - \frac{1}{2}kx_f^2
+\label{eq:travail_ressort}
+\end{equation}
+\end{equationimportante}
+
+où $k$ est la constante de rappel du ressort (en N/m) et $x$ est la déformation par rapport à la position d'équilibre.
+\end{definition}
+
+\begin{remarque}[title=Interprétation]
+\begin{itemize}
+    \item Si le ressort \textbf{se détend} ($|x_f| < |x_i|$) : $W_{\text{ressort}} > 0$ (le ressort fournit de l'énergie)
+    \item Si le ressort \textbf{se comprime davantage} ($|x_f| > |x_i|$) : $W_{\text{ressort}} < 0$ (le ressort absorbe de l'énergie)
+\end{itemize}
+\end{remarque}
+
