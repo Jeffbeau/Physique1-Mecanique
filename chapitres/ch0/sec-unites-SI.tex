@@ -124,8 +124,7 @@ déca  & da & $10^{1}$  & déci  & d & $10^{-1}$ \\
 \label{tab:prefixes}
 \end{table}
 
-\begin{exemple}
-\textbf{Passage entre notation scientifique et préfixes SI}
+\begin{exemple}{Passage entre notation scientifique et préfixes SI}{notation-prefixes}
 
 \begin{enumerate}
     \item \textbf{De la notation scientifique vers le préfixe :}
@@ -241,7 +240,7 @@ Afin de convertir les unités d'une grandeur, il faut multiplier par le \textbf{
 \end{enumerate}
 \end{equationimportante}
 
-\begin{exemple}
+\begin{exemple}{Conversion de milles marins en kilomètres}{conv-nm-km}
 La distance entre Rimouski et Sept-Îles est de \SI{150}{NM}. Convertir en kilomètres.
 
 \textbf{Étape 1 :} Écrire la grandeur
@@ -271,7 +270,7 @@ La distance entre Rimouski et Sept-Îles est de \SI{150}{NM}. Convertir en kilom
 
 Lorsque l'unité à convertir est composée de plusieurs unités (comme une vitesse), il faut convertir \textbf{chaque unité séparément}.
 
-\begin{exemple}
+\begin{exemple}{Conversion km/h en m/s}{conv-kmh-ms}
 Convertir une vitesse de $v = \SI{90}{\kilo\meter/\hour}$ en \si{\meter/\second}.
 
 \textbf{Étape 1 :} Écrire la grandeur
@@ -296,7 +295,7 @@ Convertir une vitesse de $v = \SI{90}{\kilo\meter/\hour}$ en \si{\meter/\second}
 \]
 \end{exemple}
 
-\begin{exemple}
+\begin{exemple}{Conversion de nœuds en km/h}{conv-kn-kmh}
 Convertir une vitesse de \SI{25}{kn} en \si{\kilo\meter/\hour}.
 
 \textbf{Étape 1 :} Écrire la grandeur (rappel : $\SI{1}{kn} = \SI{1}{NM/h}$)
@@ -320,7 +319,7 @@ Convertir une vitesse de \SI{25}{kn} en \si{\kilo\meter/\hour}.
 \]
 \end{exemple}
 
-\begin{exemple}
+\begin{exemple}{Conversion de psi en kilopascals}{conv-psi-kpa}
 Convertir une pression de $p = \SI{32,0}{psi}$ en kilopascals (\si{\kilo\pascal}).
 
 \textbf{Étape 1 :} Écrire la grandeur (rappel : $\SI{1}{psi} = \SI{1}{lbf/po^2}$)
@@ -360,7 +359,7 @@ Lorsqu'une unité porte un exposant (aires, volumes), il faut se rappeler que ce
 Par conséquent, le facteur de conversion doit aussi être élevé à la même puissance !
 \end{equationimportante}
 
-\begin{exemple}
+\begin{exemple}{Conversion de cm² en m²}{conv-cm2-m2}
 L'aire d'une écoutille est de $A = \SI{1500}{\centi\meter^2}$. Convertir en \si{\meter^2}.
 
 Puisque $\si{\centi\meter^2} = \si{\centi\meter} \times \si{\centi\meter}$, on doit appliquer le facteur de conversion \textbf{deux fois} :
@@ -376,7 +375,7 @@ Puisque $\si{\centi\meter^2} = \si{\centi\meter} \times \si{\centi\meter}$, on d
 \]
 \end{exemple}
 
-\begin{exemple}
+\begin{exemple}{Conversion de pieds cubes en m³}{conv-pi3-m3}
 Convertir un volume de $V = \SI{8,50}{pi^3}$ (pieds cubes) en \si{\meter^3}.
 
 Sachant que $\SI{1}{pi} = \SI{0,3048}{\meter}$ (Tableau~\ref{tab:equivalences}) :
@@ -461,7 +460,7 @@ Vérifier l'homogénéité d'une équation est un outil puissant pour :
 
 Pour vérifier l'homogénéité d'une équation, on remplace chaque grandeur par ses \textbf{unités de base} (m, kg, s) et on simplifie.
 
-\begin{exemple}
+\begin{exemple}{Vérification d'homogénéité -- énergie cinétique}{homogeneite-ec}
 Vérifions que l'équation de l'énergie cinétique $E_c = \frac{1}{2}mv^2$ est homogène.
 
 \textbf{Côté gauche :} L'énergie se mesure en joules.
@@ -477,7 +476,7 @@ Vérifions que l'équation de l'énergie cinétique $E_c = \frac{1}{2}mv^2$ est 
 Les deux côtés ont les mêmes unités $\rightarrow$ \textbf{l'équation est homogène} $\checkmark$
 \end{exemple}
 
-\begin{exemple}
+\begin{exemple}{Détection d'une formule non homogène}{formule-non-homogene}
 Un étudiant propose la formule $v = \frac{1}{2}at^2$ pour la vitesse. Est-elle homogène?
 
 \textbf{Côté gauche :} $[v] = \si{\meter\per\second}$
