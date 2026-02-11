@@ -367,7 +367,7 @@ Appliquons maintenant l'algorithme à des problèmes de statique, où $\vect{a} 
 % -----------------------------------------------------------------------------
 \begin{exemple}{Conteneur suspendu par deux câbles}{conteneur-cables}
 
-Un conteneur de masse $m = \SI{2000}{kg}$ est suspendu dans la cale d'un navire par deux câbles. Le câble de bâbord fait un angle de $\alpha = 30°$ avec l'horizontale, celui de tribord fait un angle de $\beta = 45°$ avec l'horizontale. Déterminer les tensions $T_1$ et $T_2$ dans chaque câble.
+Un conteneur de masse $m = \SI{2000}{kg}$ est suspendu dans la cale d'un navire par deux câbles. Le câble de bâbord fait un angle de $\alpha = 30^\circ$ avec l'horizontale, celui de tribord fait un angle de $\beta = 45^\circ$ avec l'horizontale. Déterminer les tensions $T_1$ et $T_2$ dans chaque câble.
 
 \tcblower
 
@@ -468,23 +468,23 @@ Cela signifie que si on place les trois vecteurs bout à bout, ils forment un \t
     \node[green!60!black, above right] at (1.6, 2.1) {$\vect{T}_2$};
     
     % Angles dans le triangle
-    % Angle au sommet bas (entre Fg et T1) = 90° - alpha
+    % Angle au sommet bas (entre Fg et T1) = 90$^\circ$ - alpha
     \draw[thick] (0, 0.6) arc (90:30:0.6);
-    \node at (0.5, 0.8) {\small $90°{-}\alpha$};
+    \node at (0.5, 0.8) {\small $90^\circ{-}\alpha$};
     
-    % Angle au sommet droit (entre T1 et T2) = 180° - alpha - beta
+    % Angle au sommet droit (entre T1 et T2) = 180$^\circ$ - alpha - beta
     \draw[thick] ({3*cos(30) - 0.5*cos(30+60)}, {3*sin(30) + 0.5*sin(30+60)}) arc (120:180-15:0.5);
     
-    % Angle au sommet haut (entre T2 et Fg) = 90° - beta
+    % Angle au sommet haut (entre T2 et Fg) = 90$^\circ$ - beta
     \draw[thick] (0, 1.9) arc (270:270+45:0.6);
-    \node at (0.45, 1.65) {\small $90°{-}\beta$};
+    \node at (0.45, 1.65) {\small $90^\circ{-}\beta$};
     
     % Annotation
     \node[text width=5cm, align=left] at (6.5, 1.25) {
         Les angles du triangle sont :
         \begin{itemize}
-            \item En bas : $90° - \alpha$
-            \item En haut : $90° - \beta$
+            \item En bas : $90^\circ - \alpha$
+            \item En haut : $90^\circ - \beta$
             \item À droite : $\alpha + \beta$
         \end{itemize}
     };
@@ -495,10 +495,10 @@ Cela signifie que si on place les trois vecteurs bout à bout, ils forment un \t
 
 Dans un triangle, la loi des sinus stipule que le rapport entre un côté et le sinus de l'angle opposé est constant :
 \[
-    \frac{T_1}{\sin(90° - \beta)} = \frac{T_2}{\sin(90° - \alpha)} = \frac{mg}{\sin(\alpha + \beta)}
+    \frac{T_1}{\sin(90^\circ - \beta)} = \frac{T_2}{\sin(90^\circ - \alpha)} = \frac{mg}{\sin(\alpha + \beta)}
 \]
 
-En utilisant $\sin(90° - \theta) = \cos\theta$ :
+En utilisant $\sin(90^\circ - \theta) = \cos\theta$ :
 \[
     \frac{T_1}{\cos\beta} = \frac{T_2}{\cos\alpha} = \frac{mg}{\sin(\alpha + \beta)}
 \]
@@ -507,23 +507,23 @@ En utilisant $\sin(90° - \theta) = \cos\theta$ :
 
 \textbf{Application numérique :}
 
-Avec $m = \SI{2000}{kg}$, $\alpha = 30°$, $\beta = 45°$ :
+Avec $m = \SI{2000}{kg}$, $\alpha = 30^\circ$, $\beta = 45^\circ$ :
 
 \[
-    \sin(\alpha + \beta) = \sin(75°) = 0{,}966
+    \sin(\alpha + \beta) = \sin(75^\circ) = 0{,}966
 \]
 
 \[
-    T_1 = \frac{mg \cos\beta}{\sin(\alpha + \beta)} = \frac{2000 \times 9{,}81 \times \cos 45°}{\sin 75°} = \frac{19\,620 \times 0{,}707}{0{,}966} = \boxed{\SI{14{,}4}{kN}}
+    T_1 = \frac{mg \cos\beta}{\sin(\alpha + \beta)} = \frac{2000 \times 9{,}81 \times \cos 45^\circ}{\sin 75^\circ} = \frac{19\,620 \times 0{,}707}{0{,}966} = \boxed{\SI{14{,}4}{kN}}
 \]
 
 \[
-    T_2 = \frac{mg \cos\alpha}{\sin(\alpha + \beta)} = \frac{2000 \times 9{,}81 \times \cos 30°}{\sin 75°} = \frac{19\,620 \times 0{,}866}{0{,}966} = \boxed{\SI{17{,}6}{kN}}
+    T_2 = \frac{mg \cos\alpha}{\sin(\alpha + \beta)} = \frac{2000 \times 9{,}81 \times \cos 30^\circ}{\sin 75^\circ} = \frac{19\,620 \times 0{,}866}{0{,}966} = \boxed{\SI{17{,}6}{kN}}
 \]
 
 \textbf{Vérification :}
 \begin{itemize}
-    \item $T_2 > T_1$ : logique car le câble de tribord est plus vertical ($45° > 30°$), il supporte une plus grande partie du poids.
+    \item $T_2 > T_1$ : logique car le câble de tribord est plus vertical ($45^\circ > 30^\circ$), il supporte une plus grande partie du poids.
     \item On peut vérifier : $T_1 \sin\alpha + T_2 \sin\beta = 14\,400 \times 0{,}5 + 17\,600 \times 0{,}707 = 7\,200 + 12\,440 \approx mg$ \cmark
 \end{itemize}
 
@@ -534,7 +534,7 @@ La méthode du triangle de forces avec la loi des sinus donne directement les te
 
 \begin{pratiqueautonome}[title=Feu de navigation suspendu]
 
-Un feu de navigation de masse $m = \SI{15}{kg}$ est suspendu entre deux mâts par deux câbles. Le câble de bâbord fait un angle de $\alpha = 35°$ avec l'horizontale, celui de tribord fait un angle de $\beta = 50°$ avec l'horizontale.
+Un feu de navigation de masse $m = \SI{15}{kg}$ est suspendu entre deux mâts par deux câbles. Le câble de bâbord fait un angle de $\alpha = 35^\circ$ avec l'horizontale, celui de tribord fait un angle de $\beta = 50^\circ$ avec l'horizontale.
 
 \begin{enumerate}
     \item Dessinez le DCL du feu de navigation.
@@ -547,9 +547,9 @@ Un feu de navigation de masse $m = \SI{15}{kg}$ est suspendu entre deux mâts pa
 \tcblower
 \textbf{Réponses :}
 
-Équation (1) : $-T_1\cos 35° + T_2\cos 50° = 0$
+Équation (1) : $-T_1\cos 35^\circ + T_2\cos 50^\circ = 0$
 
-Équation (2) : $T_1\sin 35° + T_2\sin 50° - mg = 0$
+Équation (2) : $T_1\sin 35^\circ + T_2\sin 50^\circ - mg = 0$
 
 $T_1 = \SI{106}{N}$ ; $T_2 = \SI{135}{N}$
 \end{pratiqueautonome}
@@ -557,7 +557,7 @@ $T_1 = \SI{106}{N}$ ; $T_2 = \SI{135}{N}$
 % -----------------------------------------------------------------------------
 \begin{exemple}{Bloc sur plan incliné à l'équilibre}{bloc-plan-equilibre}
 
-Un bloc de masse $m = \SI{20}{kg}$ est posé sur un plan incliné à $\theta = 20°$ par rapport à l'horizontale. Le bloc reste immobile. Le coefficient de frottement statique est $\mu_s = 0{,}5$.
+Un bloc de masse $m = \SI{20}{kg}$ est posé sur un plan incliné à $\theta = 20^\circ$ par rapport à l'horizontale. Le bloc reste immobile. Le coefficient de frottement statique est $\mu_s = 0{,}5$.
 
 a) Calculer la force de frottement statique qui maintient le bloc en équilibre.
 
@@ -571,14 +571,14 @@ b) Quel est l'angle maximal avant que le bloc ne commence à glisser?
 \begin{tikzpicture}[scale=0.85]
     % Schéma de situation (gauche)
     \begin{scope}[xshift=-4.5cm]
-        % Plan incliné (20°)
+        % Plan incliné (20$^\circ$)
         \fill[gray!20] (0, 0) -- (4, 0) -- (4, 1.46) -- cycle;
         \draw[thick] (0, 0) -- (4, 1.46);
         \draw[thick] (0, 0) -- (4, 0);
         
         % Angle
         \draw[thick] (1, 0) arc (0:20:1);
-        \node at (1.4, 0.2) {\small $20°$};
+        \node at (1.4, 0.2) {\small $20^\circ$};
         
         % Bloc
         \begin{scope}[rotate=20, shift={(1.5, 0)}]
@@ -656,14 +656,14 @@ Ce choix est stratégique : seul le poids doit être décomposé.
 
 \textbf{a) Force de frottement :}
 \[
-    f_s = mg\sin\theta = 20 \times 9{,}81 \times \sin 20° = 196{,}2 \times 0{,}342 = \boxed{\SI{67{,}1}{N}}
+    f_s = mg\sin\theta = 20 \times 9{,}81 \times \sin 20^\circ = 196{,}2 \times 0{,}342 = \boxed{\SI{67{,}1}{N}}
 \]
 
 \textbf{Vérification que le bloc peut rester en équilibre :}
 
 Le frottement maximal possible est :
 \[
-    f_{s,max} = \mu_s N = \mu_s mg\cos\theta = 0{,}5 \times 20 \times 9{,}81 \times \cos 20° = 0{,}5 \times 196{,}2 \times 0{,}940 = \SI{92{,}2}{N}
+    f_{s,max} = \mu_s N = \mu_s mg\cos\theta = 0{,}5 \times 20 \times 9{,}81 \times \cos 20^\circ = 0{,}5 \times 196{,}2 \times 0{,}940 = \SI{92{,}2}{N}
 \]
 
 Comme $f_s = \SI{67{,}1}{N} < f_{s,max} = \SI{92{,}2}{N}$, le bloc reste bien en équilibre. \cmark
@@ -678,7 +678,7 @@ Le bloc commence à glisser quand $f_s = f_{s,max}$, c'est-à-dire quand :
     \tan\theta_{max} = \mu_s
 \]
 \[
-    \theta_{max} = \arctan(\mu_s) = \arctan(0{,}5) = \boxed{26{,}6°}
+    \theta_{max} = \arctan(\mu_s) = \arctan(0{,}5) = \boxed{26{,}6^\circ}
 \]
 
 \textbf{Remarque :} L'angle limite de glissement ne dépend que de $\mu_s$, pas de la masse!
@@ -686,7 +686,7 @@ Le bloc commence à glisser quand $f_s = f_{s,max}$, c'est-à-dire quand :
 
 \begin{pratiqueautonome}[title=Caisse sur rampe de chargement]
 
-Une caisse de $\SI{150}{kg}$ est posée sur une rampe de chargement inclinée à $25°$. Le coefficient de frottement statique entre la caisse et la rampe est $\mu_s = 0{,}6$.
+Une caisse de $\SI{150}{kg}$ est posée sur une rampe de chargement inclinée à $25^\circ$. Le coefficient de frottement statique entre la caisse et la rampe est $\mu_s = 0{,}6$.
 
 \begin{enumerate}
     \item La caisse reste-t-elle en place ou glisse-t-elle?
@@ -699,8 +699,8 @@ Une caisse de $\SI{150}{kg}$ est posée sur une rampe de chargement inclinée à
 \tcblower
 \textbf{Réponses :}
 \begin{enumerate}
-    \item $\tan 25° = 0{,}466 < \mu_s = 0{,}6$, donc la caisse \textbf{reste en place}.
-    \item $f_s = mg\sin 25° = 150 \times 9{,}81 \times 0{,}423 = \SI{622}{N}$
-    \item $\theta_{max} = \arctan(0{,}6) = 31{,}0°$
+    \item $\tan 25^\circ = 0{,}466 < \mu_s = 0{,}6$, donc la caisse \textbf{reste en place}.
+    \item $f_s = mg\sin 25^\circ = 150 \times 9{,}81 \times 0{,}423 = \SI{622}{N}$
+    \item $\theta_{max} = \arctan(0{,}6) = 31{,}0^\circ$
 \end{enumerate}
 \end{pratiqueautonome}

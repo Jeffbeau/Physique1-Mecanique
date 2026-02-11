@@ -25,7 +25,7 @@ La relation fondamentale est :
 \end{equation}
 \end{remarque}
 
-\begin{exemple}{Navire contre le courant}{}
+\begin{exemple}{Navire contre le courant}{navire-contre-courant}
 Un cargo navigue vers l'est \`a $\SI{12}{n\oe{}uds}$ (vitesse surface). Le courant porte vers l'ouest \`a $\SI{3}{n\oe{}uds}$.
 
 Quelle est la vitesse fond du cargo?
@@ -43,7 +43,7 @@ En prenant l'est comme direction positive :
 Le navire avance effectivement \`a $\SI{9}{n\oe{}uds}$ par rapport au fond.
 \end{exemple}
 
-\begin{exemple}{Travers\'ee avec courant lat\'eral --- Décomposition vectorielle}{}
+\begin{exemple}{Travers\'ee avec courant lat\'eral --- Décomposition vectorielle}{traversee-courant-lateral}
 Un traversier doit rejoindre un quai situ\'e exactement au nord, \`a $\SI{2}{km}$. Sa vitesse propre (surface) est de $\SI{10}{n\oe{}uds}$, mais un courant de $\SI{3}{n\oe{}uds}$ porte vers l'est.
 
 \textbf{Problème :} Si le capitaine pointe directement vers le nord, le navire dérivera vers l'est. Pour atteindre le quai, il doit \textbf{compenser} en pointant légèrement vers l'ouest.
@@ -58,7 +58,7 @@ Un traversier doit rejoindre un quai situ\'e exactement au nord, \`a $\SI{2}{km}
 \node[blue, below] at (0.9,-0.1) {$\vec{v}_{courant}$};
 \node[blue, below] at (0.9,-0.5) {\small $\SI{3}{nd}$};
 % Vitesse surface (inclinée pour compenser) - angle θ ouest du nord
-% sin(17.46°) = 0.3, cos(17.46°) = 0.954
+% sin(17.46$^\circ$) = 0.3, cos(17.46$^\circ$) = 0.954
 \draw[very thick, red, ->] (0,0) -- ({-3*sin(17.46)},{3*cos(17.46)}) node[left] {$\vec{v}_{surface}$};
 \node[red, left] at (-0.7,1.8) {\small $\SI{10}{nd}$};
 % Composantes de la vitesse surface (en pointillés)
@@ -90,10 +90,10 @@ v_{fond,x} &= v_{surface,x} + v_{courant,x} = 0 \\
 \end{align*}
 
 D'où l'\textbf{angle de compensation} :
-\[ \sin\theta = \frac{v_{courant}}{v_{surface}} = \frac{3}{10} = 0{,}3 \quad \Rightarrow \quad \boxed{\theta = 17{,}5° \text{ ouest du nord}} \]
+\[ \sin\theta = \frac{v_{courant}}{v_{surface}} = \frac{3}{10} = 0{,}3 \quad \Rightarrow \quad \boxed{\theta = 17{,}5^\circ \text{ ouest du nord}} \]
 
 \textbf{Vitesse fond r\'esultante} (composante $y$) :
-\[ v_{fond} = v_{fond,y} = v_{surface}\cos\theta = 10 \times \cos(17{,}5°) = \boxed{\SI{9{,}5}{n\oe{}uds}} \]
+\[ v_{fond} = v_{fond,y} = v_{surface}\cos\theta = 10 \times \cos(17{,}5^\circ) = \boxed{\SI{9{,}5}{n\oe{}uds}} \]
 
 \textbf{Vérification} par le théorème de Pythagore :
 \[ v_{surface}^2 = v_{fond}^2 + v_{courant}^2 \quad \Rightarrow \quad 10^2 = 9{,}5^2 + 3^2 = 90{,}25 + 9 = 99{,}25 \approx 100 \quad \checkmark \]

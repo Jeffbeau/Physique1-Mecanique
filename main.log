@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.2.2)  11 FEB 2026 12:36
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.2.2)  11 FEB 2026 13:49
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -784,7 +784,38 @@ File: upzd.fd 2001/06/04 font definitions for U/pzd.
 LaTeX Font Info:    Trying to load font information for U+psy on input line 64.
  (C:\Users\jfbeaudo\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\upsy.fd
 File: upsy.fd 2001/06/04 font definitions for U/psy.
-))) (main.aux)
+))) (main.aux
+
+LaTeX Warning: Label `subsec:force-centripete' multiply defined.
+
+
+LaTeX Warning: Label `subsec:force-centripete@cref' multiply defined.
+
+
+LaTeX Warning: Label `subsec:resume-formules' multiply defined.
+
+
+LaTeX Warning: Label `subsec:resume-formules@cref' multiply defined.
+
+
+LaTeX Warning: Label `subsec:resume-algorithme' multiply defined.
+
+
+LaTeX Warning: Label `subsec:resume-algorithme@cref' multiply defined.
+
+
+LaTeX Warning: Label `subsec:resume-competences' multiply defined.
+
+
+LaTeX Warning: Label `subsec:resume-competences@cref' multiply defined.
+
+
+LaTeX Warning: Label `subsec:resume-essentiel' multiply defined.
+
+
+LaTeX Warning: Label `subsec:resume-essentiel@cref' multiply defined.
+
+)
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 10.
@@ -863,27 +894,1212 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
 Package hyperref Info: Link coloring ON on input line 10.
+ (main.out) (main.out)
 \@outlinefile=\write4
 \openout4 = `main.out'.
 
+LaTeX Font Info:    Trying to load font information for U+msa on input line 14.
+ (C:\Users\jfbeaudo\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 14.
+ (C:\Users\jfbeaudo\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+) [1
 
-c:/Users/jfbeaudo/OneDrive - CollÃ¨ge de Rimouski/Hiver-2026/Materiel_JFB/Notes de cours/Notes_git/Physique1-Mecanique/main.tex:10: I can't write on file `main.pdf'.
-(Press Enter to retry, or Control-C to exit; default file extension is `.pdf')
-Please type another file name for output
-c:/Users/jfbeaudo/OneDrive - CollÃ¨ge de Rimouski/Hiver-2026/Materiel_JFB/Notes de cours/Notes_git/Physique1-Mecanique/main.tex:10: Emergency stop.
+
+{C:/Users/jfbeaudo/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}] [2
+
+] (main.toc
+Underfull \vbox (badness 1019) has occurred while \output is active []
+
+ [3] [4]
+Underfull \vbox (badness 2799) has occurred while \output is active []
+
+ [5] [6] [7]
+Underfull \vbox (badness 2799) has occurred while \output is active []
+
+ [8])
+\tf@toc=\write5
+\openout5 = `main.toc'.
+
+ [9] (chapitres/ch0/ch0-main.tex (chapitres/ch0/sec-unites-SI.tex [10
+
+]
+\bbl@ensure@french {Chapitre} 0.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [11]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [12] [13]
+Underfull \vbox (badness 3354) has occurred while \output is active []
+
+ [14] [15] [16]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [17]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [18]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [19] [20]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [21]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [22]) (chapitres/ch0/sec-conversions.tex [23]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [24]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [25] [26]) (chapitres/ch0/sec-chiffres-sig.tex [27] [28] [29]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [30] [31]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [32]
+Overfull \hbox (12.97536pt too wide) in paragraph at lines 379--386
+[][] 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [33]
+Underfull \vbox (badness 4792) has occurred while \output is active []
+
+ [34]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [35]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [36] [37] [38]
+Underfull \vbox (badness 1924) has occurred while \output is active []
+
+ [39]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [40] [41]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [42]) (chapitres/ch0/sec-vecteurs.tex
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [43])) (chapitres/ch1/ch1-main.tex (chapitres/ch1/sec-position.tex [44]
+\bbl@ensure@french {Chapitre} 1.
+
+LaTeX Warning: Command \oe invalid in math mode on input line 17.
+
+Missing character: There is no ÷ in font cmr10!
+
+Underfull \vbox (badness 2111) has occurred while \output is active []
+
+ [45
+
+]
+
+LaTeX Warning: Command \oe invalid in math mode on input line 61.
+
+Missing character: There is no ÷ in font cmr10!
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [46]
+Underfull \vbox (badness 4353) has occurred while \output is active []
+
+ [47] [48]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [49]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [50]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [51] [52]) (chapitres/ch1/sec-vitesse.tex
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [53]
+
+LaTeX Warning: Command \oe invalid in math mode on input line 74.
+
+Missing character: There is no ÷ in font cmr10!
+
+LaTeX Warning: Command \oe invalid in math mode on input line 79.
+
+Missing character: There is no ÷ in font cmr10!
+
+LaTeX Warning: Command \oe invalid in math mode on input line 95.
+
+
+LaTeX Warning: Command \oe invalid in math mode on input line 95.
+
+Missing character: There is no ÷ in font cmr10!
+Missing character: There is no ÷ in font cmr10!
+[54]
+
+LaTeX Warning: Command \oe invalid in math mode on input line 138.
+
+Missing character: There is no ÷ in font cmr10!
+[55]
+
+LaTeX Warning: Command \oe invalid in math mode on input line 149.
+
+Missing character: There is no ÷ in font cmr10!
+[56]
+
+LaTeX Warning: Command \oe invalid in math mode on input line 212.
+
+Missing character: There is no ÷ in font cmr10!
+
+LaTeX Warning: Command \oe invalid in math mode on input line 212.
+
+Missing character: There is no ÷ in font cmr10!
+
+LaTeX Warning: Command \oe invalid in math mode on input line 218.
+
+
+LaTeX Warning: Command \oe invalid in math mode on input line 218.
+
+Missing character: There is no ÷ in font cmr10!
+Missing character: There is no ÷ in font cmr10!
+
+LaTeX Warning: Command \oe invalid in math mode on input line 218.
+
+
+LaTeX Warning: Command \oe invalid in math mode on input line 218.
+
+Missing character: There is no ÷ in font cmr10!
+Missing character: There is no ÷ in font cmr10!
+
+LaTeX Warning: Command \oe invalid in math mode on input line 218.
+
+
+LaTeX Warning: Command \oe invalid in math mode on input line 218.
+
+Missing character: There is no ÷ in font cmr10!
+Missing character: There is no ÷ in font cmr10!
+
+LaTeX Warning: Command \oe invalid in math mode on input line 218.
+
+
+LaTeX Warning: Command \oe invalid in math mode on input line 218.
+
+Missing character: There is no ÷ in font cmr10!
+Missing character: There is no ÷ in font cmr10!
+
+LaTeX Warning: Command \oe invalid in math mode on input line 229.
+
+
+LaTeX Warning: Command \oe invalid in math mode on input line 229.
+
+Missing character: There is no ÷ in font cmr10!
+Missing character: There is no ÷ in font cmr10!
+
+LaTeX Warning: Command \oe invalid in math mode on input line 232.
+
+Missing character: There is no ÷ in font cmr10!
+
+LaTeX Warning: Command \oe invalid in math mode on input line 232.
+
+Missing character: There is no ÷ in font cmr10!
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [57]
+
+LaTeX Warning: Command \oe invalid in math mode on input line 239.
+
+Missing character: There is no ÷ in font cmr10!
+
+LaTeX Warning: Command \oe invalid in math mode on input line 239.
+
+Missing character: There is no ÷ in font cmr10!
+
+LaTeX Warning: Command \oe invalid in math mode on input line 247.
+
+Missing character: There is no ÷ in font cmr10!
+
+LaTeX Warning: Command \oe invalid in math mode on input line 247.
+
+Missing character: There is no ÷ in font cmr10!
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [58]
+
+LaTeX Warning: Command \' invalid in math mode on input line 271.
+
+Missing character: There is no é in font cmr8!
+
+LaTeX Warning: Command \oe invalid in math mode on input line 278.
+
+Missing character: There is no ÷ in font cmr10!
+
+LaTeX Warning: Command \oe invalid in math mode on input line 279.
+
+Missing character: There is no ÷ in font cmr10!
+
+LaTeX Warning: Command \oe invalid in math mode on input line 280.
+
+Missing character: There is no ÷ in font cmr10!
+
+LaTeX Warning: Command \oe invalid in math mode on input line 281.
+
+Missing character: There is no ÷ in font cmr10!
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [59]
+
+LaTeX Warning: Command \oe invalid in math mode on input line 319.
+
+Missing character: There is no ÷ in font cmr10!
+
+LaTeX Warning: Command \oe invalid in math mode on input line 319.
+
+Missing character: There is no ÷ in font cmr10!
+
+LaTeX Warning: Command \oe invalid in math mode on input line 319.
+
+Missing character: There is no ÷ in font cmr10!
+
+LaTeX Warning: Command \oe invalid in math mode on input line 324.
+
+Missing character: There is no ÷ in font cmr10!
+
+LaTeX Warning: Command \oe invalid in math mode on input line 324.
+
+Missing character: There is no ÷ in font cmr10!
+
+LaTeX Warning: Command \oe invalid in math mode on input line 327.
+
+Missing character: There is no ÷ in font cmr10!
+
+LaTeX Warning: Command \oe invalid in math mode on input line 330.
+
+Missing character: There is no ÷ in font cmr10!
+) (chapitres/ch1/sec-acceleration.tex
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [60]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [61]
+
+LaTeX Warning: Command \oe invalid in math mode on input line 113.
+
+Missing character: There is no ÷ in font cmr10!
+
+Underfull \vbox (badness 3128) has occurred while \output is active []
+
+ [62]
+
+LaTeX Warning: Command \oe invalid in math mode on input line 142.
+
+Missing character: There is no ÷ in font cmr10!
+
+LaTeX Warning: Command \oe invalid in math mode on input line 142.
+
+Missing character: There is no ÷ in font cmr10!
+
+LaTeX Warning: Command \oe invalid in math mode on input line 149.
+
+
+LaTeX Warning: Command \oe invalid in math mode on input line 149.
+
+Missing character: There is no ÷ in font cmr10!
+Missing character: There is no ÷ in font cmr10!
+
+LaTeX Warning: Command \oe invalid in math mode on input line 149.
+
+
+LaTeX Warning: Command \oe invalid in math mode on input line 149.
+
+Missing character: There is no ÷ in font cmr10!
+Missing character: There is no ÷ in font cmr10!
+[63]
+
+LaTeX Warning: Command \oe invalid in math mode on input line 158.
+
+Missing character: There is no ÷ in font cmr10!
+
+LaTeX Warning: Command \oe invalid in math mode on input line 165.
+
+
+LaTeX Warning: Command \oe invalid in math mode on input line 165.
+
+Missing character: There is no ÷ in font cmr10!
+Missing character: There is no ÷ in font cmr10!
+
+LaTeX Warning: Command \oe invalid in math mode on input line 165.
+
+
+LaTeX Warning: Command \oe invalid in math mode on input line 165.
+
+Missing character: There is no ÷ in font cmr10!
+Missing character: There is no ÷ in font cmr10!
+
+LaTeX Warning: Command \oe invalid in math mode on input line 174.
+
+Missing character: There is no ÷ in font cmr10!
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [64]
+Underfull \vbox (badness 7558) has occurred while \output is active []
+
+ [65]) (chapitres/ch1/sec-graphiques.tex
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [66] [67]
+
+LaTeX Warning: Command \oe invalid in math mode on input line 100.
+
+Missing character: There is no ÷ in font cmr10!
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [68]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [69]
+Overfull \hbox (13.4784pt too wide) in paragraph at lines 215--216
+ [] 
+ []
+
+
+Overfull \hbox (27.5636pt too wide) in paragraph at lines 222--232
+ [] 
+ []
+
+
+Overfull \hbox (10.78392pt too wide) in paragraph at lines 309--310
+ [] 
+ []
+
+[70]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [71]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [72] [73]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [74]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [75]
+
+LaTeX Warning: Command \oe invalid in math mode on input line 547.
+
+Missing character: There is no ÷ in font cmr10!
+) (chapitres/ch1/sec-equations.tex
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [76] [77]
+
+LaTeX Warning: Command \oe invalid in math mode on input line 74.
+
+Missing character: There is no ÷ in font cmr10!
+
+LaTeX Warning: Command \oe invalid in math mode on input line 118.
+
+Missing character: There is no ÷ in font cmr10!
+
+LaTeX Warning: Command \oe invalid in math mode on input line 118.
+
+Missing character: There is no ÷ in font cmr10!
+[78]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [79]
+Underfull \vbox (badness 2261) has occurred while \output is active []
+
+ [80] [81]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [82]
+
+LaTeX Warning: Command \oe invalid in math mode on input line 367.
+
+Missing character: There is no ÷ in font cmr10!
+
+LaTeX Warning: Command \oe invalid in math mode on input line 371.
+
+
+LaTeX Warning: Command \oe invalid in math mode on input line 371.
+
+Missing character: There is no ÷ in font cmr10!
+Missing character: There is no ÷ in font cmr10!
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [83]
+
+LaTeX Warning: Command \oe invalid in math mode on input line 398.
+
+Missing character: There is no ÷ in font cmr10!
+
+LaTeX Warning: Command \oe invalid in math mode on input line 433.
+
+Missing character: There is no ÷ in font cmr10!
+
+LaTeX Warning: Command \oe invalid in math mode on input line 442.
+
+
+LaTeX Warning: Command \oe invalid in math mode on input line 442.
+
+Missing character: There is no ÷ in font cmr10!
+Missing character: There is no ÷ in font cmr10!
+[84] [85]
+
+LaTeX Warning: Command \oe invalid in math mode on input line 539.
+
+Missing character: There is no ÷ in font cmr10!
+
+LaTeX Warning: Command \oe invalid in math mode on input line 572.
+
+Missing character: There is no ÷ in font cmr10!
+[86]
+
+LaTeX Warning: Command \oe invalid in math mode on input line 619.
+
+Missing character: There is no ÷ in font cmr10!
+
+LaTeX Warning: Command \oe invalid in math mode on input line 619.
+
+Missing character: There is no ÷ in font cmr10!
+
+LaTeX Warning: Command \oe invalid in math mode on input line 639.
+
+
+LaTeX Warning: Command \oe invalid in math mode on input line 639.
+
+Missing character: There is no ÷ in font cmr10!
+Missing character: There is no ÷ in font cmr10!
+
+LaTeX Warning: Command \oe invalid in math mode on input line 639.
+
+
+LaTeX Warning: Command \oe invalid in math mode on input line 639.
+
+Missing character: There is no ÷ in font cmr10!
+Missing character: There is no ÷ in font cmr10!
+
+LaTeX Warning: Command \oe invalid in math mode on input line 639.
+
+
+LaTeX Warning: Command \oe invalid in math mode on input line 639.
+
+Missing character: There is no ÷ in font cmr10!
+Missing character: There is no ÷ in font cmr10!
+
+LaTeX Warning: Command \oe invalid in math mode on input line 639.
+
+
+LaTeX Warning: Command \oe invalid in math mode on input line 639.
+
+Missing character: There is no ÷ in font cmr10!
+Missing character: There is no ÷ in font cmr10!
+
+LaTeX Warning: Command \oe invalid in math mode on input line 702.
+
+
+LaTeX Warning: Command \oe invalid in math mode on input line 702.
+
+Missing character: There is no ÷ in font cmr10!
+Missing character: There is no ÷ in font cmr10!
+
+LaTeX Warning: Command \oe invalid in math mode on input line 702.
+
+
+LaTeX Warning: Command \oe invalid in math mode on input line 702.
+
+Missing character: There is no ÷ in font cmr10!
+Missing character: There is no ÷ in font cmr10!
+
+LaTeX Warning: Command \oe invalid in math mode on input line 702.
+
+
+LaTeX Warning: Command \oe invalid in math mode on input line 702.
+
+Missing character: There is no ÷ in font cmr10!
+Missing character: There is no ÷ in font cmr10!
+
+LaTeX Warning: Command \oe invalid in math mode on input line 702.
+
+
+LaTeX Warning: Command \oe invalid in math mode on input line 702.
+
+Missing character: There is no ÷ in font cmr10!
+Missing character: There is no ÷ in font cmr10!
+
+LaTeX Warning: Command \oe invalid in math mode on input line 705.
+
+Missing character: There is no ÷ in font cmr10!
+
+LaTeX Warning: Command \oe invalid in math mode on input line 708.
+
+Missing character: There is no ÷ in font cmr10!
+[87] [88]) (chapitres/ch1/sec-chute-libre.tex [89] [90]
+Underfull \vbox (badness 8189) has occurred while \output is active []
+
+ [91]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [92] [93]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [94]) (chapitres/ch1/sec-mouvement-2D.tex [95] [96]
+
+LaTeX Warning: Command \oe invalid in math mode on input line 142.
+
+Missing character: There is no ÷ in font cmr10!
+
+LaTeX Warning: Command \oe invalid in math mode on input line 154.
+
+Missing character: There is no ÷ in font cmr10!
+
+LaTeX Warning: Command \oe invalid in math mode on input line 167.
+
+Missing character: There is no ÷ in font cmr10!
+
+LaTeX Warning: Command \oe invalid in math mode on input line 170.
+
+Missing character: There is no ÷ in font cmr10!
+
+LaTeX Warning: Command \oe invalid in math mode on input line 172.
+
+Missing character: There is no ÷ in font cmr10!
+
+LaTeX Warning: Command \oe invalid in math mode on input line 172.
+
+Missing character: There is no ÷ in font cmr10!
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [97]) (chapitres/ch1/sec-projectile.tex
+Underfull \vbox (badness 2662) has occurred while \output is active []
+
+ [98]
+Underfull \vbox (badness 1152) has occurred while \output is active []
+
+ [99] [100]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [101]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [102] [103] [104]
+
+LaTeX Warning: Command \oe invalid in math mode on input line 350.
+
+Missing character: There is no ÷ in font cmr10!
+
+LaTeX Warning: Command \oe invalid in math mode on input line 355.
+
+
+LaTeX Warning: Command \oe invalid in math mode on input line 355.
+
+Missing character: There is no ÷ in font cmr10!
+Missing character: There is no ÷ in font cmr10!
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [105]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [106] [107] [108]) (chapitres/ch1/sec-rotation.tex [109] [110] [111]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [112] [113] [114]
+Underfull \vbox (badness 5260) has occurred while \output is active []
+
+ [115] [116]
+Underfull \vbox (badness 2035) has occurred while \output is active []
+
+ [117]) (chapitres/ch1/sec-vitesse-relative.tex
+
+LaTeX Warning: Command \oe invalid in math mode on input line 29.
+
+Missing character: There is no ÷ in font cmr10!
+
+LaTeX Warning: Command \oe invalid in math mode on input line 29.
+
+Missing character: There is no ÷ in font cmr10!
+
+LaTeX Warning: Command \oe invalid in math mode on input line 37.
+
+Missing character: There is no ÷ in font cmr10!
+
+LaTeX Warning: Command \oe invalid in math mode on input line 38.
+
+Missing character: There is no ÷ in font cmr10!
+
+LaTeX Warning: Command \oe invalid in math mode on input line 41.
+
+Missing character: There is no ÷ in font cmr10!
+
+LaTeX Warning: Command \oe invalid in math mode on input line 43.
+
+Missing character: There is no ÷ in font cmr10!
+
+LaTeX Warning: Command \oe invalid in math mode on input line 47.
+
+Missing character: There is no ÷ in font cmr10!
+
+LaTeX Warning: Command \oe invalid in math mode on input line 47.
+
+Missing character: There is no ÷ in font cmr10!
+
+LaTeX Warning: Command \oe invalid in math mode on input line 96.
+
+Missing character: There is no ÷ in font cmr10!
+[118]) (chapitres/ch1/sec-resume.tex
+
+LaTeX Warning: Command \oe invalid in math mode on input line 58.
+
+Missing character: There is no ÷ in font cmr10!
+[119]
+chapitres/ch1/sec-resume.tex:85: ignored error: Infinite glue shrinkage found in box being split [120]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [121])) (chapitres/ch2/ch2-main.tex [122]
+\bbl@ensure@french {Chapitre} 2.
+(chapitres/ch2/sec-fondements.tex
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [123
+
+] [124]
+Underfull \vbox (badness 2310) has occurred while \output is active []
+
+ [125] [126]
+Underfull \vbox (badness 3826) has occurred while \output is active []
+
+ [127] [128] [129] [130] [131]) (chapitres/ch2/sec-forces.tex
+Underfull \vbox (badness 6063) has occurred while \output is active []
+
+ [132]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [133]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [134]
+Underfull \vbox (badness 5637) has occurred while \output is active []
+
+ [135] [136]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [137]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [138] [139]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [140] [141]) (chapitres/ch2/sec-dcl-equilibre.tex [142] [143] [144]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [145]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [146] [147] [148]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [149] [150
+pdfTeX warning (ext4): destination with the same identifier (name{equation.2.12}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.685 \end{exemple}
+                   ]) (chapitres/ch2/sec-dynamique.tex
+Underfull \vbox (badness 5217) has occurred while \output is active []
+
+ [151] [152] [153]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [154]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [155]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [156] [157]
+pdfTeX warning (ext4): destination with the same identifier (name{equation.2.12}) has been already used, duplicate ignored
 <to be read again> 
-                   \edef 
-l.10 \begin{document}
-                     
-*** (job aborted, file error in nonstop mode)
+                   \relax 
+l.637 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.2.12}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.637 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.2.12}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.637 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.2.12}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.637 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.2.12}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.642 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.2.12}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.642 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.2.12}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.642 \begin{equation}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{equation.2.12}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.642 \begin{equation}
+                       [158]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
- 
+ [159]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [160]) (chapitres/ch2/sec-circulaire.tex
+pdfTeX warning (ext4): destination with the same identifier (name{equation.2.12}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.20 \begin{equation}
+                     
+pdfTeX warning (ext4): destination with the same identifier (name{equation.2.12}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.20 \begin{equation}
+                     
+pdfTeX warning (ext4): destination with the same identifier (name{equation.2.12}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.20 \begin{equation}
+                     
+pdfTeX warning (ext4): destination with the same identifier (name{equation.2.12}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.20 \begin{equation}
+                     
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [161]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [162]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [163] [164]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [165] [166]
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 516.
+
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 516.
+
+Missing character: There is no ° in font cmr10!
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 521.
+
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 521.
+
+Missing character: There is no ° in font cmr10!
+[167]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [168]) (chapitres/ch2/sec-resume.tex
+Overfull \hbox (3.05823pt too wide) in paragraph at lines 16--36
+ [] 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [169]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [170] [171]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [172]
+Overfull \hbox (21.28337pt too wide) in paragraph at lines 250--273
+ [] 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [173])) (chapitres/ch3/ch3-main.tex [174]
+\bbl@ensure@french {Chapitre} 3.
+(chapitres/ch3/sec-energie-intro.tex [175
+
+]
+
+LaTeX Warning: Command \oe invalid in math mode on input line 34.
+
+Missing character: There is no ÷ in font cmr10!
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [176]) (chapitres/ch3/sec-travail.tex [177] [178] [179] [180]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [181] [182]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [183]) (chapitres/ch3/sec-theoreme-ec.tex
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [184] [185]
+
+LaTeX Warning: Command \oe invalid in math mode on input line 71.
+
+Missing character: There is no ÷ in font cmr10!
+[186]
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 134.
+
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 134.
+
+Missing character: There is no ° in font cmr10!
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [187]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [188]) (chapitres/ch3/sec-energie-potentielle.tex
+Underfull \vbox (badness 4378) has occurred while \output is active []
+
+ [189]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [190]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [191]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [192]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [193]) (chapitres/ch3/sec-conservation.tex
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [194]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [195]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [196]
+Underfull \vbox (badness 6204) has occurred while \output is active []
+
+ [197]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [198]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [199]
+
+LaTeX Warning: Command \oe invalid in math mode on input line 359.
+
+Missing character: There is no ÷ in font cmr10!
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [200]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [201]
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 378.
+
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 378.
+
+Missing character: There is no ° in font cmr10!
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 420.
+
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 420.
+
+Missing character: There is no ° in font cmr10!
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 437.
+
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 437.
+
+Missing character: There is no ° in font cmr10!
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [202] [203]
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 500.
+
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 500.
+
+Missing character: There is no ° in font cmr10!
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 510.
+
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 510.
+
+Missing character: There is no ° in font cmr10!
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 535.
+
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 535.
+
+Missing character: There is no ° in font cmr10!
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 538.
+
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 538.
+
+Missing character: There is no ° in font cmr10!
+
+Underfull \vbox (badness 6758) has occurred while \output is active []
+
+ [204]) (chapitres/ch3/sec-puissance.tex
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [205] [206]
+
+LaTeX Warning: Command \oe invalid in math mode on input line 78.
+
+Missing character: There is no ÷ in font cmr10!
+[207] [208]) (chapitres/ch3/sec-quantite-mvt.tex [209]
+
+LaTeX Warning: Command \oe invalid in math mode on input line 74.
+
+Missing character: There is no ÷ in font cmr10!
+
+LaTeX Warning: Command \oe invalid in math mode on input line 74.
+
+Missing character: There is no ÷ in font cmr10!
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [210]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [211] [212]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [213]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [214]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [215]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [216]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [217])
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [218] (chapitres/ch3/sec-collisions.tex
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [219]
+
+LaTeX Warning: Command \oe invalid in math mode on input line 138.
+
+Missing character: There is no ÷ in font cmr10!
+[220]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [221]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [222]
+Underfull \vbox (badness 6493) has occurred while \output is active []
+
+ [223]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [224]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [225] [226]
+
+LaTeX Warning: Command \` invalid in math mode on input line 389.
+
+Missing character: There is no è in font cmr7!
+[227]
+
+LaTeX Warning: Command \oe invalid in math mode on input line 448.
+
+Missing character: There is no ÷ in font cmr10!
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 448.
+
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 448.
+
+Missing character: There is no ° in font cmr10!
+
+LaTeX Warning: Command \oe invalid in math mode on input line 448.
+
+Missing character: There is no ÷ in font cmr10!
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 448.
+
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 448.
+
+Missing character: There is no ° in font cmr10!
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 450.
+
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 450.
+
+Missing character: There is no ° in font cmr10!
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 450.
+
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 450.
+
+Missing character: There is no ° in font cmr10!
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 470.
+
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 470.
+
+Missing character: There is no ° in font cmr10!
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 470.
+
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 470.
+
+Missing character: There is no ° in font cmr10!
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [228]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [229]) (chapitres/ch3/sec-resume.tex
+Underfull \hbox (badness 10000) in paragraph at lines 22--22
+[]|\T1/cmr/m/n/10.95 Travail d'une force
+ []
+
+
+Underfull \hbox (badness 1609) in paragraph at lines 34--34
+[]|\T1/cmr/m/n/10.95 Théorème de l'éner-gie
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 40--40
+[]|\T1/cmr/m/n/10.95 Avec forces non-
+ []
+
+
+Underfull \hbox (badness 3250) in paragraph at lines 52--52
+[]|\T1/cmr/m/n/10.95 Théorème de l'im-pul-
+ []
+
+
+Underfull \hbox (badness 4556) in paragraph at lines 56--56
+[]|\T1/cmr/m/n/10.95 Collision parf. in-élas-
+ []
+
+
+Underfull \hbox (badness 2717) in paragraph at lines 60--60
+[]|\T1/cmr/m/n/10.95 Coefficient de res-ti-tu-
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [230]
+Underfull \vbox (badness 3547) has occurred while \output is active []
+
+ [231]
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 144.
+
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 144.
+
+Missing character: There is no ° in font cmr10!
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [232]
+Overfull \hbox (21.28337pt too wide) in paragraph at lines 181--268
+ [] 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [233]
+Overfull \vbox (325.71587pt too high) has occurred while \output is active []
+
+ [234])) [235] (main.aux)
+ ***********
+LaTeX2e <2025-11-01>
+L3 programming layer <2025-12-24>
+ ***********
+
+
+LaTeX Warning: There were multiply-defined labels.
+
+Package rerunfilecheck Info: File `main.out' has not changed.
+(rerunfilecheck)             Checksum: ED70CD68853F890605E81815D8C32C7C;40453.
+ ) 
 Here is how much of TeX's memory you used:
- 35291 strings out of 467871
- 753089 string characters out of 5416925
- 1288809 words of memory out of 5000000
- 63664 multiletter control sequences out of 15000+600000
- 629480 words of font info for 44 fonts, out of 8000000 for 9000
+ 40859 strings out of 467871
+ 871381 string characters out of 5416925
+ 1322809 words of memory out of 5000000
+ 67987 multiletter control sequences out of 15000+600000
+ 658714 words of font info for 111 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 89i,1n,107p,539b,547s stack positions out of 10000i,1000n,20000p,200000b,200000s
-c:/Users/jfbeaudo/OneDrive - CollÃ¨ge de Rimouski/Hiver-2026/Materiel_JFB/Notes de cours/Notes_git/Physique1-Mecanique/main.tex:10:  ==> Fatal error occurred, no output PDF file produced!
+ 89i,25n,107p,722b,1492s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ <C:\Users\jfbeaudo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx0800.pk> <C:\Users\jfbeaudo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1095.pk> <C:\Users\jfbeaudo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti0600.pk> <C:\Users\jfbeaudo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti0800.pk> <C:\Users\jfbeaudo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti0900.pk> <C:\Users\jfbeaudo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0600.pk> <C:\Users\jfbeaudo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0700.pk> <C:\Users\jfbeaudo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0800.pk> <C:\Users\jfbeaudo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1000.pk> <C:\Users\jfbeaudo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0900.pk> <C:\Users\jfbeaudo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcbx1095.pk> <C:\Users\jfbeaudo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1000.pk> <C:\Users\jfbeaudo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1000.pk> <C:\Users\jfbeaudo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1000.pk> <C:\Users\jfbeaudo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1095.pk> <C:\Users\jfbeaudo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1095.pk> <C:\Users\jfbeaudo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1200.pk> <C:\Users\jfbeaudo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1440.pk> <C:\Users\jfbeaudo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx2074.pk> <C:\Users\jfbeaudo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1095.pk> <C:\Users\jfbeaudo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1095.pk> <C:\Users\jfbeaudo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx2488.pk> <C:\Users\jfbeaudo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1200.pk> <C:\Users\jfbeaudo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1440.pk> <C:\Users\jfbeaudo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1728.pk><C:/Users/jfbeaudo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/jfbeaudo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/jfbeaudo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/jfbeaudo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/jfbeaudo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/jfbeaudo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/jfbeaudo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi9.pfb><C:/Users/jfbeaudo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/jfbeaudo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/jfbeaudo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/jfbeaudo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/jfbeaudo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/jfbeaudo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/jfbeaudo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Users/jfbeaudo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/jfbeaudo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/jfbeaudo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy9.pfb><C:/Users/jfbeaudo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Users/jfbeaudo/AppData/Local/Programs/MiKTeX/fonts/type1/urw/zapfding/uzdr.pfb>
+Output written on main.pdf (235 pages, 1537179 bytes).
+PDF statistics:
+ 3798 PDF objects out of 4296 (max. 8388607)
+ 1069 named destinations out of 1200 (max. 500000)
+ 1533 words of extra memory for PDF output out of 10000 (max. 10000000)
+

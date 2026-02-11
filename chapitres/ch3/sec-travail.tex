@@ -76,11 +76,11 @@ Le travail peut être positif, négatif ou nul selon l'orientation de la force p
 \rowcolor{bleuclair}
 \textbf{Angle $\theta$} & \textbf{$\cos\theta$} & \textbf{Travail} & \textbf{Interprétation} \\
 \hline
-$0°$ & $+1$ & $W = +Fd$ & Force dans le sens du mouvement $\rightarrow$ \textbf{énergie ajoutée} \\
+$0^\circ$ & $+1$ & $W = +Fd$ & Force dans le sens du mouvement $\rightarrow$ \textbf{énergie ajoutée} \\
 \hline
-$90°$ & $0$ & $W = 0$ & Force perpendiculaire $\rightarrow$ \textbf{aucun transfert d'énergie} \\
+$90^\circ$ & $0$ & $W = 0$ & Force perpendiculaire $\rightarrow$ \textbf{aucun transfert d'énergie} \\
 \hline
-$180°$ & $-1$ & $W = -Fd$ & Force opposée au mouvement $\rightarrow$ \textbf{énergie retirée} \\
+$180^\circ$ & $-1$ & $W = -Fd$ & Force opposée au mouvement $\rightarrow$ \textbf{énergie retirée} \\
 \hline
 \end{tabular}
 \end{center}
@@ -92,12 +92,12 @@ Le travail fait sur un système ne \textbf{crée} pas de nouvelle énergie : il 
 
 \subsection{Cas particuliers importants}
 
-\subsubsection{Force dans le sens du mouvement ($\theta = 0°$)}
+\subsubsection{Force dans le sens du mouvement ($\theta = 0^\circ$)}
 
 Lorsque la force est appliquée dans la \textbf{même direction} que le déplacement, le travail est \textbf{maximal et positif} :
-\[ W = Fd\cos(0°) = Fd \]
+\[ W = Fd\cos(0^\circ) = Fd \]
 
-\begin{exemple}{Remorqueur poussant un navire}{}
+\begin{exemple}{Remorqueur poussant un navire}{remorqueur-navire}
 Un remorqueur exerce une force de poussée de $F = \SI{150}{kN}$ sur un navire, dans la direction du mouvement. Le navire se déplace de $d = \SI{200}{m}$.
 
 \begin{center}
@@ -128,10 +128,10 @@ Un remorqueur exerce une force de poussée de $F = \SI{150}{kN}$ sur un navire, 
 Ce travail positif signifie que le remorqueur \textbf{ajoute} de l'énergie au navire (augmentation de l'énergie cinétique ou compensation des pertes par frottement).
 \end{exemple}
 
-\subsubsection{Force perpendiculaire au mouvement ($\theta = 90°$)}
+\subsubsection{Force perpendiculaire au mouvement ($\theta = 90^\circ$)}
 
 Lorsque la force est \textbf{perpendiculaire} au déplacement, le travail est \textbf{nul} :
-\[ W = Fd\cos(90°) = 0 \]
+\[ W = Fd\cos(90^\circ) = 0 \]
 
 \begin{remarque}[title=Travail nul $\neq$ force inutile]
 Une force perpendiculaire au mouvement n'effectue aucun travail, mais elle n'est pas sans effet! Elle peut modifier la \textbf{direction} du mouvement sans changer sa \textbf{vitesse}.
@@ -144,22 +144,22 @@ Exemples :
 \end{itemize}
 \end{remarque}
 
-\subsubsection{Force opposée au mouvement ($\theta = 180°$)}
+\subsubsection{Force opposée au mouvement ($\theta = 180^\circ$)}
 
 Lorsque la force est dans la direction \textbf{opposée} au déplacement, le travail est \textbf{négatif} :
-\[ W = Fd\cos(180°) = -Fd \]
+\[ W = Fd\cos(180^\circ) = -Fd \]
 
-\begin{exemple}{Freinage d'un navire par inversion des moteurs}{}
+\begin{exemple}{Freinage d'un navire par inversion des moteurs}{freinage-inversion}
 Un cargo de \SI{20000}{tonnes} navigue à \SI{8}{m/s}. Pour freiner, on inverse les moteurs qui exercent une force de résistance de $F = \SI{400}{kN}$ pendant que le navire parcourt encore $d = \SI{500}{m}$.
 
 \textbf{Travail effectué par la force de freinage :}
-\[ W = Fd\cos(180°) = \SI{400e3}{N} \times \SI{500}{m} \times (-1) = -\SI{200}{MJ} \]
+\[ W = Fd\cos(180^\circ) = \SI{400e3}{N} \times \SI{500}{m} \times (-1) = -\SI{200}{MJ} \]
 
 Ce travail \textbf{négatif} signifie que de l'énergie est \textbf{retirée} au navire (diminution de l'énergie cinétique).
 \end{exemple}
 
 \begin{pratiqueautonome}
-Un matelot tire une caisse de matériel sur le pont d'un navire. La corde fait un angle de $30°$ avec l'horizontale et exerce une tension de $\SI{250}{N}$. La caisse se déplace horizontalement de $\SI{8}{m}$.
+Un matelot tire une caisse de matériel sur le pont d'un navire. La corde fait un angle de $30^\circ$ avec l'horizontale et exerce une tension de $\SI{250}{N}$. La caisse se déplace horizontalement de $\SI{8}{m}$.
 
 \begin{center}
 \begin{tikzpicture}[scale=0.9]
@@ -178,7 +178,7 @@ Un matelot tire une caisse de matériel sur le pont d'un navire. La corde fait u
     
     % Angle
     \draw[thick] (3.5,0.8) -- ++(1,0);
-    \draw[->] (4.2,0.8) arc (0:30:0.7) node[midway, right] {$30°$};
+    \draw[->] (4.2,0.8) arc (0:30:0.7) node[midway, right] {$30^\circ$};
     
     % Déplacement
     \draw[very thick, ->, green!60!black] (2,1.5) -- (6,1.5) node[midway, above] {$d = \SI{8}{m}$};
@@ -188,7 +188,7 @@ Un matelot tire une caisse de matériel sur le pont d'un navire. La corde fait u
 Calculez le travail effectué par la tension de la corde sur la caisse.
 
 \espaceresolution[4cm]
-\reponsepratique{$W = Td\cos\theta = 250 \times 8 \times \cos(30°) = 250 \times 8 \times 0,866 \approx \SI{1730}{J}$}
+\reponsepratique{$W = Td\cos\theta = 250 \times 8 \times \cos(30^\circ) = 250 \times 8 \times 0,866 \approx \SI{1730}{J}$}
 \end{pratiqueautonome}
 
 \subsection{Travail effectué par plusieurs forces}
@@ -202,8 +202,8 @@ W_{\text{total}} = W_1 + W_2 + W_3 + \ldots = \sum_i W_i
 \end{equation}
 \end{equationimportante}
 
-\begin{exemple}{Chargement d'un conteneur sur un plan incliné}{}
-Un conteneur de masse $m = \SI{2000}{kg}$ est tiré vers le haut d'une rampe inclinée à $\theta = 20°$ par un câble parallèle à la rampe. Le conteneur monte de $d = \SI{15}{m}$ le long de la rampe. La tension dans le câble est $T = \SI{12000}{N}$ et la force de frottement est $f = \SI{2000}{N}$.
+\begin{exemple}{Chargement d'un conteneur sur un plan incliné}{conteneur-plan-incline}
+Un conteneur de masse $m = \SI{2000}{kg}$ est tiré vers le haut d'une rampe inclinée à $\theta = 20^\circ$ par un câble parallèle à la rampe. Le conteneur monte de $d = \SI{15}{m}$ le long de la rampe. La tension dans le câble est $T = \SI{12000}{N}$ et la force de frottement est $f = \SI{2000}{N}$.
 
 \begin{center}
 \begin{tikzpicture}[scale=0.7]
@@ -213,7 +213,7 @@ Un conteneur de masse $m = \SI{2000}{kg}$ est tiré vers le haut d'une rampe inc
     \draw[thick] (0,0) -- (10,0);
     
     % Angle
-    \draw[thick] (2,0) arc (0:20:2) node[midway, right] {$20°$};
+    \draw[thick] (2,0) arc (0:20:2) node[midway, right] {$20^\circ$};
     
     % Conteneur
     \begin{scope}[shift={(4,1.456)}, rotate=20]
@@ -245,19 +245,19 @@ Un conteneur de masse $m = \SI{2000}{kg}$ est tiré vers le haut d'une rampe inc
 
 Calculons le travail effectué par chaque force :
 
-\textbf{1. Travail de la tension} (parallèle au déplacement, $\theta = 0°$) :
-\[ W_T = Td\cos(0°) = \SI{12000}{N} \times \SI{15}{m} \times 1 = +\SI{180000}{J} \]
+\textbf{1. Travail de la tension} (parallèle au déplacement, $\theta = 0^\circ$) :
+\[ W_T = Td\cos(0^\circ) = \SI{12000}{N} \times \SI{15}{m} \times 1 = +\SI{180000}{J} \]
 
-\textbf{2. Travail du frottement} (opposé au déplacement, $\theta = 180°$) :
-\[ W_f = fd\cos(180°) = \SI{2000}{N} \times \SI{15}{m} \times (-1) = -\SI{30000}{J} \]
+\textbf{2. Travail du frottement} (opposé au déplacement, $\theta = 180^\circ$) :
+\[ W_f = fd\cos(180^\circ) = \SI{2000}{N} \times \SI{15}{m} \times (-1) = -\SI{30000}{J} \]
 
-\textbf{3. Travail de la gravité} (angle de $90° + 20° = 110°$ avec le déplacement) :
-\[ W_g = F_g d\cos(110°) = mg \cdot d\cos(110°) \]
-\[ W_g = \SI{2000}{kg} \times \SI{9,8}{m/s^2} \times \SI{15}{m} \times \cos(110°) \]
+\textbf{3. Travail de la gravité} (angle de $90^\circ + 20^\circ = 110^\circ$ avec le déplacement) :
+\[ W_g = F_g d\cos(110^\circ) = mg \cdot d\cos(110^\circ) \]
+\[ W_g = \SI{2000}{kg} \times \SI{9,8}{m/s^2} \times \SI{15}{m} \times \cos(110^\circ) \]
 \[ W_g = \SI{294000}{N \cdot m} \times (-0,342) = -\SI{100500}{J} \]
 
-\textbf{4. Travail de la normale} (perpendiculaire au déplacement, $\theta = 90°$) :
-\[ W_N = Nd\cos(90°) = 0 \]
+\textbf{4. Travail de la normale} (perpendiculaire au déplacement, $\theta = 90^\circ$) :
+\[ W_N = Nd\cos(90^\circ) = 0 \]
 
 \textbf{Travail total :}
 \[ W_{\text{total}} = W_T + W_f + W_g + W_N = 180000 - 30000 - 100500 + 0 = +\SI{49500}{J} \]
@@ -337,7 +337,7 @@ Le travail de la gravité est \textbf{indépendant du chemin} parcouru : seule l
 \end{tikzpicture}
 \end{center}
 
-\begin{exemple}{Conteneur descendu par une grue}{}
+\begin{exemple}{Conteneur descendu par une grue}{conteneur-grue}
 Une grue de port descend un conteneur de masse $m = \SI{15000}{kg}$ d'une hauteur de $h = \SI{12}{m}$ jusqu'au pont d'un navire.
 
 \begin{center}
@@ -422,4 +422,3 @@ où $k$ est la constante de rappel du ressort (en N/m) et $x$ est la déformatio
     \item Si le ressort \textbf{se comprime davantage} ($|x_f| > |x_i|$) : $W_{\text{ressort}} < 0$ (le ressort absorbe de l'énergie)
 \end{itemize}
 \end{remarque}
-

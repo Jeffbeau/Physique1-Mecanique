@@ -68,19 +68,19 @@ Un angle de 1 radian correspond à un arc de longueur égale au rayon.
 \rowcolor{bleuclair}
 \textbf{Degrés} & \textbf{Radians} & \textbf{Tours} \\
 \hline
-$360°$ & $2\pi$ rad & 1 tour \\
+$360^\circ$ & $2\pi$ rad & 1 tour \\
 \hline
-$180°$ & $\pi$ rad & $\frac{1}{2}$ tour \\
+$180^\circ$ & $\pi$ rad & $\frac{1}{2}$ tour \\
 \hline
-$90°$ & $\frac{\pi}{2}$ rad & $\frac{1}{4}$ tour \\
+$90^\circ$ & $\frac{\pi}{2}$ rad & $\frac{1}{4}$ tour \\
 \hline
-$60°$ & $\frac{\pi}{3}$ rad & $\frac{1}{6}$ tour \\
+$60^\circ$ & $\frac{\pi}{3}$ rad & $\frac{1}{6}$ tour \\
 \hline
-$45°$ & $\frac{\pi}{4}$ rad & $\frac{1}{8}$ tour \\
+$45^\circ$ & $\frac{\pi}{4}$ rad & $\frac{1}{8}$ tour \\
 \hline
-$1°$ & $\frac{\pi}{180}$ rad $\approx 0,0175$ rad & -- \\
+$1^\circ$ & $\frac{\pi}{180}$ rad $\approx 0,0175$ rad & -- \\
 \hline
-$57,3°$ & $1$ rad & -- \\
+$57,3^\circ$ & $1$ rad & -- \\
 \hline
 \end{tabular}
 \end{center}
@@ -115,7 +115,7 @@ s = r\theta \quad \text{($\theta$ en radians)}
 \end{equation}
 \end{equationimportante}
 
-\begin{exemple}{Câble enroulé sur un treuil}{}
+\begin{exemple}{Câble enroulé sur un treuil}{cable-treuil}
 Un treuil de rayon $\SI{15}{cm}$ effectue 5 tours complets. Quelle longueur de câble est enroulée?
 
 \textbf{Déplacement angulaire :}
@@ -154,7 +154,7 @@ L'unité SI est le \textbf{radian par seconde} (rad/s).
 \begin{itemize}
     \item \textbf{Tours par minute} (tr/min ou RPM) : très utilisé en pratique
     \item \textbf{Tours par seconde} (tr/s)
-    \item \textbf{Degrés par seconde} (°/s)
+    \item \textbf{Degrés par seconde} ($^\circ$/s)
 \end{itemize}
 
 \textbf{Conversions :}
@@ -197,7 +197,7 @@ v = r\omega \quad \text{($\omega$ en rad/s)}
 Plus un point est \textbf{éloigné} de l'axe de rotation, plus sa vitesse linéaire est \textbf{grande}, même si tous les points ont la même vitesse angulaire.
 \end{attention}
 
-\begin{exemple}{Vitesse en bout de pale d'hélice}{}
+\begin{exemple}{Vitesse en bout de pale d'hélice}{vitesse-pale-helice}
 L'hélice d'un navire a un diamètre de $\SI{4}{m}$ et tourne à $\SI{120}{RPM}$ (tours par minute).
 \begin{enumerate}[label=\alph*)]
     \item Quelle est la vitesse angulaire en rad/s?
@@ -252,7 +252,7 @@ a_t = r\alpha
 \end{equation}
 \end{equationimportante}
 
-\begin{exemple}{Démarrage d'un treuil}{}
+\begin{exemple}{Démarrage d'un treuil}{demarrage-treuil}
 Un treuil de rayon $\SI{20}{cm}$ part du repos et atteint une vitesse de $\SI{60}{RPM}$ en $\SI{5}{s}$.
 \begin{enumerate}[label=\alph*)]
     \item Quelle est son accélération angulaire?
@@ -332,7 +332,7 @@ Si vous maîtrisez les équations du MRUA en translation, vous maîtrisez automa
 
 \subsection{Applications maritimes}
 
-\begin{exemple}{Freinage d'une hélice}{}
+\begin{exemple}{Freinage d'une hélice}{freinage-helice}
 L'hélice d'un navire tourne à $\SI{150}{RPM}$. Lors de l'arrêt des machines, elle décélère uniformément et s'arrête après avoir effectué 20 tours.
 \begin{enumerate}[label=\alph*)]
     \item Quelle est la décélération angulaire?
@@ -357,7 +357,7 @@ L'hélice d'un navire tourne à $\SI{150}{RPM}$. Lors de l'arrêt des machines, 
 \[ \Delta t = \frac{\omega_f - \omega_i}{\alpha} = \frac{0 - 15,7}{-0,98} = \SI{16,0}{s} \]
 \end{exemple}
 
-\begin{exemple}{Radar rotatif}{}
+\begin{exemple}{Radar rotatif}{radar-rotatif}
 Un radar de navigation effectue un balayage complet toutes les $\SI{3}{s}$.
 \begin{enumerate}[label=\alph*)]
     \item Quelle est sa vitesse angulaire en rad/s et en RPM?
@@ -371,7 +371,7 @@ Un radar de navigation effectue un balayage complet toutes les $\SI{3}{s}$.
 \[ v = r\omega = 1,5 \times 2,09 = \SI{3,14}{m/s} \]
 \end{exemple}
 
-\begin{exemple}{Cabestan (exemple de calcul complet)}{}
+\begin{exemple}{Cabestan (exemple de calcul complet)}{cabestan-complet}
 Un cabestan de rayon $\SI{25}{cm}$ est utilisé pour haler un câble. Il démarre du repos et accélère à $\SI{0,5}{rad/s^2}$ pendant $\SI{4}{s}$, puis maintient une vitesse constante.
 \begin{enumerate}[label=\alph*)]
     \item Quelle vitesse angulaire atteint-il?
