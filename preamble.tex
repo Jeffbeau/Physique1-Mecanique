@@ -123,6 +123,11 @@
 \definecolor{bleuclair}{RGB}{230, 242, 255}
 \definecolor{grisclair}{RGB}{245, 245, 245}
 
+% --- Commande de difficulté ---
+\newcommand{\dif}[1]{%
+  \ifcase#1\or$\bigstar$\or$\bigstar\bigstar$\or$\bigstar\bigstar\bigstar$\or\textbf{Synthèse}\fi
+}
+
 % -----------------------------------------------------------------------------
 % ENCADRÃ‰S ET ENVIRONNEMENTS PERSONNALISÃ‰S
 % -----------------------------------------------------------------------------
@@ -220,6 +225,25 @@
 \newcommand{\reponsepratique}[1]{%
     \par\vspace{0.3em}
     \hfill{\small\textcolor{grisimq}{Rép. : #1}}
+}
+
+% --- Environnement exercice ---
+\newcounter{exercice}[chapter]
+\renewcommand{\theexercice}{\thechapter.\arabic{exercice}}
+
+\newtcolorbox{exercice}[1][]{
+    enhanced,
+    colback=white,
+    colframe=bleuimq,
+    fonttitle=\bfseries,
+    title={Exercice~\stepcounter{exercice}\theexercice\hfill #1},
+    breakable,
+    before skip=1em,
+    after skip=1em,
+    boxrule=0.8pt,
+    arc=2pt,
+    left=8pt,
+    right=8pt
 }
 
 % -----------------------------------------------------------------------------

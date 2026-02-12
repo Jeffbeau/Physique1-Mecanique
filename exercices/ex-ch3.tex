@@ -1,263 +1,565 @@
 % =============================================================================
-% EXERCICES - CHAPITRE 3 : ÉNERGIE ET TRAVAIL
+% EXERCICES - CHAPITRE 3
+% Énergie, travail, quantité de mouvement et collisions
+% 203-20B-QM  Physique 1 — Mécanique
+% Institut Maritime du Québec
 % =============================================================================
 
-\section{Exercices}
-\label{sec:exercices_ch3}
+\section*{Exercices}
+\addcontentsline{toc}{section}{Exercices}
+
+\begin{remarque}[title=Niveaux de difficulté]
+\begin{itemize}
+    \item[$\star$] Application directe d'une formule
+    \item[$\star\star$] Problème à plusieurs étapes ou avec conversion
+    \item[$\star\star\star$] Problème complexe ou piège conceptuel
+    \item[$\star\star\star\star$] Problème de synthèse intégrateur
+\end{itemize}
+\end{remarque}
+
 % =============================================================================
+% SECTION A — TRAVAIL ET THÉORÈME DE L'ÉNERGIE CINÉTIQUE
+% =============================================================================
+\subsection*{A — Travail et théorème de l'énergie cinétique}
 
-\subsection{Travail}
+% ---- EXERCICE 1 ----
+\begin{enumerate}
 
-\begin{enumerate}[label=\textbf{3.\arabic*}]
+\item[$\star$] \textbf{1.} Un remorqueur exerce une force de poussée de $F = \SI{150}{kN}$ sur un pétrolier, dans la direction du mouvement. Le pétrolier se déplace de $d = \SI{250}{m}$ sous l'effet de cette poussée.
 
-\item Un matelot pousse une caisse de $\SI{40}{kg}$ sur le pont avec une force horizontale de $\SI{120}{N}$ sur une distance de $\SI{5}{m}$. Calculez le travail effectué par :
 \begin{enumerate}[label=\alph*)]
-    \item la force de poussée
-    \item la gravité
-    \item la force normale
+    \item Calculez le travail effectué par le remorqueur sur le pétrolier.
+    \item Ce travail est-il positif ou négatif? Qu'est-ce que cela signifie physiquement?
 \end{enumerate}
 
-\item Une grue exerce une tension de $\SI{25000}{N}$ sur un câble incliné à $15°$ par rapport à la verticale pour soulever un conteneur de $\SI{6}{m}$. Quel travail la tension effectue-t-elle?
 
-\item Un remorqueur tire un chaland avec une force de $\SI{80}{kN}$. Le câble fait un angle de $25°$ avec la direction du mouvement. Quel travail est effectué sur une distance de $\SI{500}{m}$?
+% ---- EXERCICE 2 ----
+\item[$\star$] \textbf{2.} Pour chacune des situations suivantes, déterminez si le travail effectué par la force mentionnée est \textbf{positif}, \textbf{négatif} ou \textbf{nul}. Justifiez brièvement.
 
-\item Un navire avance de $\SI{2}{km}$ sous l'effet d'une force de propulsion de $\SI{600}{kN}$. Pendant ce temps, la force de résistance de l'eau est de $\SI{550}{kN}$. Calculez :
 \begin{enumerate}[label=\alph*)]
-    \item le travail de la force de propulsion
-    \item le travail de la résistance
-    \item le travail total
+    \item La force de propulsion d'un moteur sur un navire qui avance en ligne droite.
+    \item La résistance de l'eau sur un navire qui avance.
+    \item La force normale du pont sur un conteneur qui glisse horizontalement.
+    \item La force gravitationnelle sur une ancre qu'on remonte vers le navire.
+    \item La tension d'un câble de remorquage qui fait un angle de $20°$ avec la direction du mouvement du navire remorqué.
 \end{enumerate}
 
-\item Un conteneur de $\SI{10000}{kg}$ est soulevé de $\SI{8}{m}$ par une grue, puis déplacé horizontalement de $\SI{15}{m}$, et finalement descendu de $\SI{3}{m}$. Quel est le travail total effectué par la gravité?
 
-\end{enumerate}
+% ---- EXERCICE 3 ----
+\item[$\star\star$] \textbf{3.} Un matelot tire une caisse de matériel ($m = \SI{40}{kg}$) sur le pont d'un navire à l'aide d'une corde qui fait un angle de $\theta = 30°$ avec l'horizontale. La tension dans la corde est $T = \SI{200}{N}$. La caisse se déplace horizontalement sur une distance de $d = \SI{12}{m}$. Le coefficient de frottement cinétique entre la caisse et le pont est $\mu_c = 0{,}20$.
 
-\subsection{Énergie cinétique et théorème de l'énergie cinétique}
-
-\begin{enumerate}[label=\textbf{3.\arabic*}]
-\setcounter{enumi}{5}
-
-\item Calculez l'énergie cinétique de :
 \begin{enumerate}[label=\alph*)]
-    \item un canot de sauvetage de $\SI{250}{kg}$ se déplaçant à $\SI{8}{m/s}$
-    \item un pétrolier de $\SI{200000}{tonnes}$ naviguant à $\SI{8}{n\oe uds}$ ($\approx \SI{4,1}{m/s}$)
-    \item un matelot de $\SI{75}{kg}$ courant à $\SI{5}{m/s}$
-\end{enumerate}
-
-\item Un navire de $\SI{50000}{tonnes}$ navigue à $\SI{12}{n\oe uds}$ ($\approx \SI{6,2}{m/s}$). Les moteurs sont coupés et le navire s'arrête après avoir parcouru $\SI{1,5}{km}$. Quelle est la force moyenne de résistance?
-
-\item Une voiture de $\SI{1200}{kg}$ roule à $\SI{25}{m/s}$ sur une route horizontale. Le conducteur freine et la voiture s'arrête après $\SI{50}{m}$. Quelle est la force de freinage moyenne?
-
-\item Un projectile de masse $\SI{0,02}{kg}$ est lancé avec une vitesse initiale de $\SI{300}{m/s}$. Il pénètre dans une cible et s'arrête après $\SI{0,15}{m}$. Quelle est la force moyenne exercée par la cible sur le projectile?
-
-\item Un ascenseur de navire ($m = \SI{2000}{kg}$ avec passagers) accélère vers le haut de $v_i = 0$ à $v_f = \SI{3}{m/s}$ sur une distance de $\SI{4}{m}$. Le câble exerce une tension de $\SI{24000}{N}$. Vérifiez ce résultat à l'aide du théorème de l'énergie cinétique.
-
-\end{enumerate}
-
-\subsection{Énergie potentielle}
-
-\begin{enumerate}[label=\textbf{3.\arabic*}]
-\setcounter{enumi}{10}
-
-\item Une ancre de $\SI{1500}{kg}$ est suspendue à $\SI{20}{m}$ au-dessus du fond marin. Calculez son énergie potentielle gravitationnelle par rapport au fond.
-
-\item Un ressort de constante $k = \SI{2000}{N/m}$ est comprimé de $\SI{0,08}{m}$. Calculez :
-\begin{enumerate}[label=\alph*)]
-    \item l'énergie potentielle élastique stockée
-    \item la force exercée par le ressort à cette compression
-\end{enumerate}
-
-\item Un conteneur de $\SI{8000}{kg}$ est déplacé par une grue de la position A (hauteur $\SI{2}{m}$) à la position B (hauteur $\SI{10}{m}$). Calculez la variation d'énergie potentielle gravitationnelle.
-
-\item L'eau d'un réservoir de navire ($\SI{5000}{kg}$) est située à $\SI{12}{m}$ au-dessus du niveau de la mer. Calculez l'énergie potentielle gravitationnelle de cette eau. Si cette eau s'écoulait jusqu'au niveau de la mer, quelle serait l'énergie cinétique maximale qu'elle pourrait acquérir (en négligeant les pertes)?
-
-\end{enumerate}
-
-\subsection{Conservation de l'énergie mécanique}
-
-\begin{enumerate}[label=\textbf{3.\arabic*}]
-\setcounter{enumi}{14}
-
-\item Un conteneur de $\SI{6000}{kg}$ tombe d'une hauteur de $\SI{5}{m}$. En négligeant la résistance de l'air :
-\begin{enumerate}[label=\alph*)]
-    \item Quelle est sa vitesse juste avant l'impact?
-    \item Quelle est son énergie cinétique à ce moment?
-\end{enumerate}
-
-\item Une bille de $\SI{0,2}{kg}$ est lâchée du sommet d'une rampe sans frottement de hauteur $\SI{1,5}{m}$. La rampe se termine par une section horizontale.
-\begin{enumerate}[label=\alph*)]
-    \item Quelle est la vitesse de la bille au bas de la rampe?
-    \item Si la bille remonte ensuite une autre rampe, quelle hauteur maximale atteindra-t-elle?
-\end{enumerate}
-
-\item Un pendule de longueur $\SI{0,8}{m}$ est écarté de $45°$ puis lâché. Calculez :
-\begin{enumerate}[label=\alph*)]
-    \item la hauteur initiale au-dessus du point le plus bas
-    \item la vitesse au point le plus bas
-\end{enumerate}
-
-\item Un skieur nautique de $\SI{70}{kg}$ est tracté à $\SI{15}{m/s}$ lorsqu'il atteint une rampe inclinée à $20°$. S'il lâche la corde au bas de la rampe et monte sans frottement, quelle hauteur maximale atteindra-t-il?
-
-\item Un bloc de $\SI{2}{kg}$ est projeté vers le haut d'un plan incliné sans frottement ($30°$) avec une vitesse initiale de $\SI{6}{m/s}$. Quelle distance parcourt-il le long du plan avant de s'arrêter momentanément?
-
-\end{enumerate}
-
-\subsection{Énergie avec forces non-conservatives}
-
-\begin{enumerate}[label=\textbf{3.\arabic*}]
-\setcounter{enumi}{19}
-
-\item Une caisse de $\SI{30}{kg}$ glisse sur $\SI{6}{m}$ le long d'un plan incliné à $25°$. Le coefficient de frottement cinétique est $\mu_c = 0,20$. Si la caisse part du repos, quelle est sa vitesse au bas?
-
-\item Un navire de $\SI{20000}{tonnes}$ ralentit de $\SI{8}{m/s}$ à $\SI{4}{m/s}$ sur une distance de $\SI{400}{m}$. Calculez :
-\begin{enumerate}[label=\alph*)]
-    \item la variation d'énergie cinétique
-    \item la force moyenne de résistance
-\end{enumerate}
-
-\item Un traîneau de $\SI{50}{kg}$ est tiré sur $\SI{20}{m}$ sur une surface horizontale avec une force de $\SI{150}{N}$ (parallèle au sol). Le coefficient de frottement est $\mu_c = 0,25$. Si le traîneau part du repos, quelle est sa vitesse finale?
-
-\item Un skieur de $\SI{75}{kg}$ descend une pente de $\SI{100}{m}$ de long inclinée à $15°$. Sa vitesse passe de $\SI{5}{m/s}$ à $\SI{18}{m/s}$. Calculez :
-\begin{enumerate}[label=\alph*)]
-    \item le travail effectué par la gravité
-    \item le travail effectué par le frottement
-    \item le coefficient de frottement cinétique
-\end{enumerate}
-
-\item Une balle de $\SI{0,5}{kg}$ est lancée verticalement vers le haut avec une vitesse de $\SI{20}{m/s}$. Elle atteint une hauteur maximale de $\SI{18}{m}$ (au lieu des $\SI{20,4}{m}$ théoriques sans résistance de l'air). Calculez le travail effectué par la résistance de l'air pendant la montée.
-
-\end{enumerate}
-
-\subsection{Puissance}
-
-\begin{enumerate}[label=\textbf{3.\arabic*}]
-\setcounter{enumi}{24}
-
-\item Une grue soulève un conteneur de $\SI{15000}{kg}$ de $\SI{10}{m}$ en $\SI{30}{s}$. Calculez :
-\begin{enumerate}[label=\alph*)]
-    \item le travail effectué
-    \item la puissance moyenne en watts et en chevaux-vapeur
-\end{enumerate}
-
-\item Un remorqueur exerce une force de $\SI{200}{kN}$ sur un navire qu'il pousse à $\SI{3}{m/s}$. Quelle puissance le remorqueur fournit-il?
-
-\item Les moteurs d'un ferry ont une puissance de $\SI{12}{MW}$. Si le ferry navigue à $\SI{20}{n\oe uds}$ ($\approx \SI{10,3}{m/s}$), quelle est la force de propulsion?
-
-\item Un cycliste de $\SI{80}{kg}$ (vélo inclus) monte une côte à $15°$ à vitesse constante de $\SI{4}{m/s}$. Quelle puissance développe-t-il?
-
-\item Un ascenseur de $\SI{1500}{kg}$ (avec passagers) monte à $\SI{2}{m/s}$. Le moteur a une puissance de $\SI{40}{kW}$. Quel est le rendement du système?
-
-\item Un navire consomme une puissance de $\SI{15}{MW}$ pendant une traversée de 6 heures.
-\begin{enumerate}[label=\alph*)]
-    \item Quelle énergie est consommée (en kWh et en GJ)?
-    \item Si le carburant fournit $\SI{40}{MJ/L}$ et que le rendement est de 35\%, combien de litres sont consommés?
-\end{enumerate}
-
-\end{enumerate}
-
-\subsection{Problèmes de synthèse}
-
-\begin{enumerate}[label=\textbf{3.\arabic*}]
-\setcounter{enumi}{30}
-
-\item \textbf{(Problème de synthèse)} Un système de lancement de canot de sauvetage utilise un ressort ($k = \SI{15000}{N/m}$) comprimé de $\SI{0,4}{m}$. Le canot de $\SI{300}{kg}$ glisse ensuite le long d'une rampe inclinée à $20°$ sur $\SI{8}{m}$ avant d'atteindre l'eau. Le coefficient de frottement sur la rampe est $\mu_c = 0,10$.
-\begin{enumerate}[label=\alph*)]
-    \item Calculez l'énergie potentielle élastique initiale.
-    \item Calculez le travail effectué par la gravité sur la rampe.
+    \item Calculez le travail effectué par la tension de la corde.
+    \item Calculez la force normale, puis la force de frottement.
     \item Calculez le travail effectué par le frottement.
-    \item Quelle est la vitesse du canot lorsqu'il atteint l'eau?
+    \item Calculez le travail total effectué sur la caisse.
 \end{enumerate}
 
-\item \textbf{(Problème de synthèse)} Un vraquier de $\SI{40000}{tonnes}$ doit s'arrêter en urgence. Sa vitesse initiale est de $\SI{10}{n\oe uds}$ ($\approx \SI{5,1}{m/s}$). Les moteurs peuvent fournir une force de freinage (marche arrière) de $\SI{600}{kN}$, et la résistance de l'eau à cette vitesse est d'environ $\SI{400}{kN}$.
+
+% ---- EXERCICE 4 ----
+\item[$\star\star$] \textbf{4.} Un conteneur de masse $m = \SI{500}{kg}$ est tiré vers le haut d'une rampe inclinée à $\theta = 25°$ par un câble parallèle à la rampe exercant une tension $T = \SI{4000}{N}$. Le conteneur parcourt une distance $d = \SI{8}{m}$ le long de la rampe. Le coefficient de frottement cinétique est $\mu_c = 0{,}15$.
+
 \begin{enumerate}[label=\alph*)]
-    \item Quelle est l'énergie cinétique initiale du navire?
-    \item Quelle est la force totale de freinage?
-    \item Quelle distance le navire parcourt-il avant de s'arrêter?
-    \item Combien de temps dure le freinage? (Supposez une décélération constante.)
+    \item Calculez le travail effectué par la tension.
+    \item Calculez la variation de hauteur $\Delta y$ et le travail effectué par la gravité.
+    \item Calculez le travail effectué par le frottement.
+    \item Calculez le travail total effectué sur le conteneur. Le conteneur accélère-t-il?
 \end{enumerate}
 
-\item \textbf{(Problème de synthèse)} Une pompe de cale doit évacuer $\SI{500}{L}$ d'eau par minute d'une cale située $\SI{4}{m}$ sous le niveau de rejet.
+
+% ---- EXERCICE 5 ----
+\item[$\star\star$] \textbf{5.} Un cargo de masse $m = \SI{20000}{tonnes}$ navigue à $v_i = \SI{10}{n\oe uds}$ ($\approx \SI{5{,}14}{m/s}$). Le capitaine ordonne l'inversion des moteurs, qui exercent une force de freinage constante de $F = \SI{400}{kN}$.
+
 \begin{enumerate}[label=\alph*)]
-    \item Quelle masse d'eau est pompée par minute?
-    \item Quel travail contre la gravité la pompe effectue-t-elle par minute?
-    \item Quelle est la puissance minimale requise pour la pompe?
-    \item Si le rendement de la pompe est de 60\%, quelle puissance électrique consomme-t-elle?
+    \item Calculez l'énergie cinétique initiale du cargo.
+    \item En utilisant le théorème de l'énergie cinétique, déterminez la distance de freinage.
+    \item Exprimez cette distance en milles nautiques.
 \end{enumerate}
+
 
 \end{enumerate}
 
 % =============================================================================
-% RÉPONSES AUX EXERCICES (à placer en annexe ou feuille séparée)
+% SECTION B — ÉNERGIE POTENTIELLE ET CONSERVATION DE L'ÉNERGIE
 % =============================================================================
+\subsection*{B — Énergie potentielle et conservation de l'énergie}
 
+% ---- EXERCICE 6 ----
+\begin{enumerate}[resume]
+
+\item[$\star$] \textbf{6.}
+\begin{enumerate}[label=\alph*)]
+    \item Une ancre de masse $m = \SI{1500}{kg}$ est suspendue à $\SI{20}{m}$ au-dessus du fond marin. Calculez son énergie potentielle gravitationnelle par rapport au fond marin.
+    \item Un conteneur de masse $m = \SI{10000}{kg}$ est suspendu par une grue à $\SI{15}{m}$ au-dessus du quai. Calculez son énergie potentielle gravitationnelle par rapport au quai.
+    \item La grue dépose le conteneur sur le pont du navire, à $\SI{5}{m}$ au-dessus du quai. Calculez la variation d'énergie potentielle $\Delta U_g$ et le travail effectué par la gravité lors de cette descente.
+\end{enumerate}
+
+
+% ---- EXERCICE 7 ----
+\item[$\star\star$] \textbf{7.} Un outil de $m = \SI{2}{kg}$ tombe accidentellement du sommet d'un mât situé à $h = \SI{25}{m}$ au-dessus du pont. En négligeant la résistance de l'air :
+
+\begin{enumerate}[label=\alph*)]
+    \item Calculez la vitesse de l'outil juste avant qu'il ne touche le pont, en utilisant la conservation de l'énergie mécanique.
+    \item Convertissez cette vitesse en km/h.
+    \item La masse de l'outil influence-t-elle la vitesse d'impact? Justifiez.
+\end{enumerate}
+
+
+% ---- EXERCICE 8 ----
+\item[$\star\star$] \textbf{8.} Un canot de sauvetage de masse $m = \SI{350}{kg}$ est lancé le long d'une glissière inclinée à $30°$ par rapport à l'horizontale. La glissière mesure $L = \SI{10}{m}$ de long. Le canot part du repos. En négligeant le frottement :
+
+\begin{enumerate}[label=\alph*)]
+    \item Calculez la hauteur $h$ du point de départ par rapport au point d'arrivée.
+    \item En utilisant la conservation de l'énergie, déterminez la vitesse du canot au bas de la glissière.
+    \item Si on veut que le canot atteigne une vitesse de $\SI{12}{m/s}$, quelle doit être la longueur minimale de la glissière?
+\end{enumerate}
+
+
+% ---- EXERCICE 9 ----
+\item[$\star\star$] \textbf{9.} Un système de lancement de canot de sauvetage utilise un ressort de constante $k = \SI{5000}{N/m}$ comprimé de $x = \SI{0{,}40}{m}$.
+
+\begin{enumerate}[label=\alph*)]
+    \item Calculez l'énergie potentielle élastique emmagasinée dans le ressort.
+    \item Si toute cette énergie est transférée à un chariot de $m = \SI{2}{kg}$, quelle sera sa vitesse?
+    \item Quelle compression serait nécessaire pour doubler cette vitesse de lancement?
+\end{enumerate}
+
+
+% ---- EXERCICE 10 ----
+\item[$\star\star\star$] \textbf{10.} Une caisse de matériel de masse $m = \SI{100}{kg}$ glisse du repos le long d'une rampe de chargement inclinée à $\theta = 30°$, sur une distance de $d = \SI{6}{m}$ le long de la rampe. Le coefficient de frottement cinétique est $\mu_c = 0{,}20$.
+
+\begin{enumerate}[label=\alph*)]
+    \item Calculez la hauteur de descente $h$.
+    \item Calculez la force de frottement et le travail effectué par le frottement.
+    \item En utilisant le bilan énergétique ($E_i + W_{nc} = E_f$), déterminez la vitesse au bas de la rampe.
+    \item Quelle serait la vitesse sans frottement? Comparez.
+\end{enumerate}
+
+
+\end{enumerate}
+
+% =============================================================================
+% SECTION C — PUISSANCE
+% =============================================================================
+\subsection*{C — Puissance}
+
+% ---- EXERCICE 11 ----
+\begin{enumerate}[resume]
+
+\item[$\star$] \textbf{11.} Une grue portuaire soulève un conteneur de masse $m = \SI{8000}{kg}$ sur une hauteur de $h = \SI{10}{m}$ en $t = \SI{25}{s}$.
+
+\begin{enumerate}[label=\alph*)]
+    \item Calculez le travail effectué contre la gravité.
+    \item Calculez la puissance mécanique moyenne de la grue.
+    \item Exprimez cette puissance en chevaux-vapeur ($\SI{1}{ch} = \SI{735{,}5}{W}$).
+\end{enumerate}
+
+
+% ---- EXERCICE 12 ----
+\item[$\star\star$] \textbf{12.} Un cargo de \SI{25000}{tonnes} navigue à vitesse constante de $v = \SI{14}{n\oe uds}$ ($\approx \SI{7{,}20}{m/s}$). La résistance totale (eau + air) est estimée à $F_r = \SI{650}{kN}$.
+
+\begin{enumerate}[label=\alph*)]
+    \item Quelle puissance les moteurs doivent-ils fournir pour maintenir cette vitesse?
+    \item Exprimez cette puissance en MW et en chevaux-vapeur.
+    \item Si le navire réduit sa vitesse à $\SI{10}{n\oe uds}$ ($\approx \SI{5{,}14}{m/s}$) et que la résistance diminue à $\SI{350}{kN}$, quelle est la nouvelle puissance requise? Comparez avec la réponse en a).
+\end{enumerate}
+
+
+% ---- EXERCICE 13 ----
+\item[$\star\star$] \textbf{13.} Un ferry consomme une puissance motrice moyenne de $P = \SI{6}{MW}$ pendant une traversée de $t = \SI{1{,}5}{h}$.
+
+\begin{enumerate}[label=\alph*)]
+    \item Calculez l'énergie consommée en MWh, en kWh et en MJ.
+    \item Si le diesel marin fournit $\SI{42}{MJ}$ par litre et que le rendement global des moteurs est de $\eta = 38\%$, combien de litres de carburant sont consommés pendant la traversée?
+    \item Si le ferry effectue 4 traversées par jour, quel est le coût quotidien en carburant si le diesel marin coûte $\SI{1{,}20}{\$/L}$?
+\end{enumerate}
+
+
+\end{enumerate}
+
+% =============================================================================
+% SECTION D — QUANTITÉ DE MOUVEMENT ET IMPULSION
+% =============================================================================
+\subsection*{D — Quantité de mouvement et impulsion}
+
+% ---- EXERCICE 14 ----
+\begin{enumerate}[resume]
+
+\item[$\star$] \textbf{14.} Calculez la quantité de mouvement de chacun des navires suivants et classez-les par ordre décroissant de difficulté à les arrêter.
+
+\begin{center}
+\renewcommand{\arraystretch}{1.3}
+\begin{tabular}{|l|c|c|}
+\hline
+\rowcolor{bleuclair}
+\textbf{Navire} & \textbf{Masse} & \textbf{Vitesse} \\
+\hline
+Chalutier & $\SI{200}{tonnes}$ & $\SI{3}{m/s}$ \\
+\hline
+Traversier & $\SI{5000}{tonnes}$ & $\SI{8}{m/s}$ \\
+\hline
+Pétrolier (VLCC) & $\SI{150000}{tonnes}$ & $\SI{7}{m/s}$ \\
+\hline
+\end{tabular}
+\end{center}
+
+
+% ---- EXERCICE 15 ----
+\item[$\star\star$] \textbf{15.} Un traversier de masse $m = \SI{10000}{tonnes}$ accoste un quai à une vitesse de $v_i = \SI{0{,}5}{m/s}$. Les défenses du quai l'immobilisent en $\Delta t = \SI{8}{s}$.
+
+\begin{enumerate}[label=\alph*)]
+    \item Calculez la variation de quantité de mouvement du traversier.
+    \item Calculez la force moyenne exercée par les défenses sur le traversier.
+    \item Si un accostage brutal réduit le temps de contact à $\SI{2}{s}$, quelle serait la force moyenne? Commentez.
+\end{enumerate}
+
+
+% ---- EXERCICE 16 ----
+\item[$\star\star$] \textbf{16.} Un canon naval de masse $M = \SI{8000}{kg}$ tire un obus de masse $m = \SI{30}{kg}$ à une vitesse de $\SI{600}{m/s}$.
+
+\begin{enumerate}[label=\alph*)]
+    \item En utilisant la conservation de la quantité de mouvement, calculez la vitesse de recul du canon.
+    \item Calculez l'énergie cinétique de l'obus et celle du canon. Comparez et expliquez la différence.
+\end{enumerate}
+
+
+% ---- EXERCICE 17 ----
+\item[$\star\star$] \textbf{17.} Un marin de $\SI{75}{kg}$ se tient debout à la poupe d'un canot de $\SI{150}{kg}$, initialement au repos sur l'eau (frottement négligeable). Le marin marche vers la proue à $\SI{1{,}5}{m/s}$ par rapport au sol.
+
+\begin{enumerate}[label=\alph*)]
+    \item Quelle est la vitesse du canot par rapport au sol?
+    \item Quelle est la vitesse du marin par rapport au canot?
+\end{enumerate}
+
+
+\end{enumerate}
+
+% =============================================================================
+% SECTION E — COLLISIONS
+% =============================================================================
+\subsection*{E — Collisions}
+
+% ---- EXERCICE 18 ----
+\begin{enumerate}[resume]
+
+\item[$\star\star$] \textbf{18.} Une barge chargée ($m_A = \SI{400}{tonnes}$, $v_A = \SI{3}{m/s}$) rattrape une barge plus lourde ($m_B = \SI{600}{tonnes}$, $v_B = \SI{1}{m/s}$) se déplaçant dans la même direction. Les deux barges restent accrochées après le contact (collision parfaitement inélastique).
+
+\begin{enumerate}[label=\alph*)]
+    \item Calculez la vitesse commune après la collision.
+    \item Calculez l'énergie cinétique avant et après la collision.
+    \item Quel pourcentage de l'énergie cinétique a été perdu? Où est passée cette énergie?
+\end{enumerate}
+
+
+% ---- EXERCICE 19 ----
+\item[$\star\star$] \textbf{19.} Un cargo ($m_1 = \SI{25000}{tonnes}$, $v_1 = \SI{4}{m/s}$ vers l'est) entre en collision frontale avec un vraquier ($m_2 = \SI{15000}{tonnes}$, $v_2 = \SI{2}{m/s}$ vers l'ouest). Les navires restent soudés après l'impact.
+
+\begin{enumerate}[label=\alph*)]
+    \item Définissez un axe et attribuez les signes appropriés aux vitesses.
+    \item Calculez la vitesse de l'ensemble après la collision.
+    \item Calculez le pourcentage d'énergie cinétique perdue.
+    \item Si la collision dure $\Delta t = \SI{3}{s}$, calculez la force moyenne subie par le vraquier.
+\end{enumerate}
+
+
+% ---- EXERCICE 20 ----
+\item[$\star\star\star$] \textbf{20.} Deux chariots sur rail se déplacent sur le pont d'un navire. Le chariot A ($m_A = \SI{200}{kg}$, $v_A = \SI{4}{m/s}$) frappe le chariot B ($m_B = \SI{100}{kg}$) initialement au repos. La collision est parfaitement \textbf{élastique}.
+
+\begin{enumerate}[label=\alph*)]
+    \item Calculez les vitesses des deux chariots après la collision en utilisant la conservation de $\vect{p}$ et la relation des vitesses relatives ($v_{1i} - v_{2i} = -(v_{1f} - v_{2f})$).
+    \item Vérifiez que l'énergie cinétique est effectivement conservée.
+\end{enumerate}
+
+
+% ---- EXERCICE 21 ----
+\item[$\star\star\star$] \textbf{21.} Un traversier de masse $m = \SI{5000}{tonnes}$ heurte un quai (considéré comme infiniment massif) à une vitesse de $v_i = \SI{0{,}8}{m/s}$. Le coefficient de restitution des défenses est $e = 0{,}40$.
+
+\begin{enumerate}[label=\alph*)]
+    \item Calculez la vitesse du traversier après le rebond.
+    \item Calculez l'énergie cinétique avant et après le rebond.
+    \item Quel pourcentage de l'énergie cinétique est absorbé par les défenses?
+    \item Montrez que la fraction d'énergie conservée est $e^2$.
+\end{enumerate}
+
+
+% ---- EXERCICE 22 ----
+\item[$\star\star\star$] \textbf{22.} Deux navires entrent en collision en pleine mer (collision parfaitement inélastique en 2D) :
+\begin{itemize}
+    \item Cargo : $m_1 = \SI{15000}{tonnes}$, $v_1 = \SI{5}{m/s}$, cap $090°$ (vers l'est)
+    \item Traversier : $m_2 = \SI{5000}{tonnes}$, $v_2 = \SI{8}{m/s}$, cap $000°$ (vers le nord)
+\end{itemize}
+
+\begin{enumerate}[label=\alph*)]
+    \item Choisissez un système d'axes et décomposez les quantités de mouvement initiales selon $x$ et $y$.
+    \item Calculez les composantes $v_{fx}$ et $v_{fy}$ de la vitesse finale de l'ensemble.
+    \item Calculez le module et la direction (cap) de la vitesse finale.
+    \item Calculez le pourcentage d'énergie cinétique perdue lors de la collision.
+\end{enumerate}
+
+
+\end{enumerate}
+
+% =============================================================================
+% SECTION F — PROBLÈMES DE SYNTHÈSE (niveau examen)
+% =============================================================================
+\subsection*{F — Problèmes de synthèse}
+
+% ---- EXERCICE 23 ----
+\begin{enumerate}[resume]
+
+\item[$\star\star\star\star$] \textbf{23.} \textbf{Opération de chargement au port}
+
+Une grue portuaire soulève un conteneur de masse $m = \SI{10000}{kg}$ d'une hauteur de $h = \SI{12}{m}$ à vitesse constante de $v = \SI{0{,}3}{m/s}$. Le rendement mécanique de la grue est de $\eta = 70\%$.
+
+\begin{enumerate}[label=\alph*)]
+    \item Calculez le travail mécanique minimal effectué contre la gravité.
+    \item Calculez l'énergie totale consommée par la grue, en tenant compte du rendement.
+    \item Calculez la puissance mécanique fournie par la grue et la puissance électrique consommée.
+    \item Le câble cède lorsque le conteneur est au sommet ($h = \SI{12}{m}$). Calculez la vitesse d'impact sur le quai.
+    \item Si le conteneur s'immobilise en s'enfonçant de $d = \SI{0{,}50}{m}$ dans le quai, calculez la force moyenne d'impact. Combien de fois le poids du conteneur cela représente-t-il?
+\end{enumerate}
+
+
+% ---- EXERCICE 24 ----
+\item[$\star\star\star\star$] \textbf{24.} \textbf{Accostage et amarrage}
+
+Un traversier de masse $m = \SI{8000}{tonnes}$ approche un quai à $v_i = \SI{0{,}6}{m/s}$.
+
+\begin{enumerate}[label=\alph*)]
+    \item Calculez l'énergie cinétique du traversier à l'approche.
+    \item Les défenses du quai ont un coefficient de restitution $e = 0{,}30$. Calculez la vitesse du traversier après le rebond et l'énergie absorbée par les défenses.
+    \item Si la durée du contact avec les défenses est $\Delta t = \SI{4}{s}$, calculez la force moyenne exercée sur le traversier.
+    \item Après le rebond, le traversier s'éloigne du quai. La résistance de l'eau exerce une force moyenne de $F_r = \SI{20}{kN}$. Quelle distance parcourt-il avant de s'immobiliser?
+    \item Quelle puissance les moteurs du traversier devraient-ils fournir pour maintenir une vitesse de $\SI{0{,}6}{m/s}$ contre cette même résistance de $\SI{20}{kN}$?
+\end{enumerate}
+
+
+% ---- EXERCICE 25 ----
+\item[$\star\star\star\star$] \textbf{25.} \textbf{Scénario d'abordage}
+
+Un cargo ($m_1 = \SI{15000}{tonnes}$, cap $090°$, vitesse $\SI{5}{m/s}$) et un traversier ($m_2 = \SI{5000}{tonnes}$, cap $000°$, vitesse $\SI{8}{m/s}$) entrent en collision. Les navires restent enchevêtrés (collision parfaitement inélastique).
+
+\begin{enumerate}[label=\alph*)]
+    \item Calculez la vitesse (module et cap) de l'ensemble après la collision.
+    \item Calculez l'énergie cinétique perdue. Identifiez les formes sous lesquelles cette énergie s'est transformée.
+    \item Si la collision dure $\Delta t = \SI{2}{s}$, calculez le module de la force moyenne subie par le traversier pendant l'impact.
+    \item Après la collision, la résistance de l'eau exerce une force de $F_r = \SI{100}{kN}$ sur l'ensemble. En utilisant le théorème de l'énergie cinétique, calculez la distance parcourue avant l'arrêt complet.
+    \item Convertissez cette distance en milles nautiques et commentez les implications pour les opérations de sauvetage.
+\end{enumerate}
+
+
+\end{enumerate}
+
+% =============================================================================
+% RÉPONSES
+% =============================================================================
 \newpage
-\subsection*{Réponses aux exercices}
+\subsection*{Réponses}
 
-\begin{multicols}{2}
-\footnotesize
-\textbf{3.1} a) 600 J, b) 0, c) 0
+\textbf{Section A — Travail et théorème de l'énergie cinétique}
 
-\textbf{3.2} 145 000 J
 
-\textbf{3.3} 36,3 MJ
+\textbf{1.} a) $W = Fd = \SI{150e3}{N} \times \SI{250}{m} = \SI{37{,}5}{MJ}$ \quad b) Positif : le remorqueur ajoute de l'énergie au pétrolier.
 
-\textbf{3.4} a) 1200 MJ, b) $-1100$ MJ, c) 100 MJ
+\textbf{2.} a) Positif ($\theta = 0°$). \quad b) Négatif ($\theta = 180°$). \quad c) Nul ($\theta = 90°$). \quad d) Négatif (force vers le bas, déplacement vers le haut, $\theta = 180°$). \quad e) Positif ($\cos 20° > 0$).
 
-\textbf{3.5} $-490$ kJ
+\textbf{3.} a) $W_T = Td\cos\theta = 200 \times 12 \times \cos 30° = 200 \times 12 \times 0{,}866 \approx \SI{2078}{J}$
+    
+    b) $N = mg - T\sin\theta = 40 \times 9{,}8 - 200 \times 0{,}5 = 392 - 100 = \SI{292}{N}$; \quad $f = \mu_c N = 0{,}20 \times 292 = \SI{58{,}4}{N}$
+    
+    c) $W_f = -fd = -58{,}4 \times 12 = \SI{-701}{J}$
+    
+    d) $W_{total} = 2078 - 701 = \SI{+1377}{J}$ (la caisse accélère)
 
-\textbf{3.6} a) 8000 J, b) 1,68 GJ, c) 937,5 J
+\textbf{4.} a) $W_T = Td = 4000 \times 8 = \SI{32\,000}{J}$
+    
+    b) $\Delta y = d\sin 25° = 8 \times 0{,}4226 = \SI{3{,}38}{m}$; \quad $W_g = -mg\Delta y = -500 \times 9{,}8 \times 3{,}38 = \SI{-16\,562}{J}$
+    
+    c) $N = mg\cos 25° = 500 \times 9{,}8 \times 0{,}9063 = \SI{4441}{N}$; \quad $f = 0{,}15 \times 4441 = \SI{666}{N}$; \quad $W_f = -666 \times 8 = \SI{-5330}{J}$
+    
+    d) $W_{total} = 32\,000 - 16\,562 - 5330 = \SI{+10\,108}{J}$ (le conteneur accélère)
 
-\textbf{3.7} 64 kN
+\textbf{5.} a) $K_i = \frac{1}{2}mv_i^2 = \frac{1}{2} \times \SI{20e6}{kg} \times (5{,}14)^2 = \SI{264}{MJ}$
+    
+    b) $W_{total} = \Delta K \Rightarrow -Fd = 0 - K_i \Rightarrow d = \dfrac{K_i}{F} = \dfrac{\SI{264e6}{}}{\SI{400e3}{}} = \SI{660}{m}$
+    
+    c) $d = \SI{660}{m} \div 1852 \approx \SI{0{,}36}{NM}$
 
-\textbf{3.8} 7500 N
 
-\textbf{3.9} 6000 N
+\medskip
+\textbf{Section B — Énergie potentielle et conservation de l'énergie}
 
-\textbf{3.10} $W_T = 96$ kJ, $\Delta K = 9$ kJ, vérifié
 
-\textbf{3.11} 294 kJ
+\textbf{6.} a) $U_g = mgy = 1500 \times 9{,}8 \times 20 = \SI{294}{kJ}$
+    
+    b) $U_g = 10\,000 \times 9{,}8 \times 15 = \SI{1{,}47}{MJ}$
+    
+    c) $\Delta U_g = mg(y_f - y_i) = 10\,000 \times 9{,}8 \times (5 - 15) = \SI{-980}{kJ}$; \quad $W_g = -\Delta U_g = \SI{+980}{kJ}$
 
-\textbf{3.12} a) 6,4 J, b) 160 N
+\textbf{7.} a) $\frac{1}{2}mv^2 = mgh \Rightarrow v = \sqrt{2gh} = \sqrt{2 \times 9{,}8 \times 25} = \sqrt{490} = \SI{22{,}1}{m/s}$
+    
+    b) $v = 22{,}1 \times 3{,}6 = \SI{79{,}6}{km/h}$
+    
+    c) Non, la masse s'annule dans $v = \sqrt{2gh}$.
 
-\textbf{3.13} 627 kJ
+\textbf{8.} a) $h = L\sin 30° = 10 \times 0{,}5 = \SI{5}{m}$
+    
+    b) $v = \sqrt{2gh} = \sqrt{2 \times 9{,}8 \times 5} = \sqrt{98} = \SI{9{,}9}{m/s}$
+    
+    c) $\frac{1}{2}mv^2 = mg L\sin 30° \Rightarrow L = \dfrac{v^2}{2g\sin 30°} = \dfrac{144}{2 \times 9{,}8 \times 0{,}5} = \SI{14{,}7}{m}$
 
-\textbf{3.14} 588 kJ pour les deux
+\textbf{9.} a) $U_e = \frac{1}{2}kx^2 = \frac{1}{2} \times 5000 \times (0{,}40)^2 = \SI{400}{J}$
+    
+    b) $\frac{1}{2}mv^2 = U_e \Rightarrow v = \sqrt{2U_e/m} = \sqrt{2 \times 400 / 2} = \sqrt{400} = \SI{20}{m/s}$
+    
+    c) $v \propto x$, donc pour doubler $v$, il faut doubler $x$ : $x = \SI{0{,}80}{m}$.
 
-\textbf{3.15} a) 9,9 m/s, b) 294 kJ
+\textbf{10.} a) $h = d\sin 30° = 6 \times 0{,}5 = \SI{3}{m}$
+    
+    b) $N = mg\cos 30° = 100 \times 9{,}8 \times 0{,}866 = \SI{849}{N}$; \quad $f = 0{,}20 \times 849 = \SI{170}{N}$; \quad $W_f = -170 \times 6 = \SI{-1020}{J}$
+    
+    c) $mgh + W_f = \frac{1}{2}mv^2 \Rightarrow 100 \times 9{,}8 \times 3 - 1020 = 50\,v^2 \Rightarrow 1920 = 50\,v^2 \Rightarrow v = \SI{6{,}2}{m/s}$
+    
+    d) $v = \sqrt{2gh} = \sqrt{58{,}8} = \SI{7{,}7}{m/s}$. Le frottement réduit la vitesse d'environ 19\%.
 
-\textbf{3.16} a) 5,4 m/s, b) 1,5 m
 
-\textbf{3.17} a) 0,234 m, b) 2,1 m/s
+\medskip
+\textbf{Section C — Puissance}
 
-\textbf{3.18} 11,5 m
 
-\textbf{3.19} 3,67 m
+\textbf{11.} a) $W = mgh = 8000 \times 9{,}8 \times 10 = \SI{784\,000}{J} = \SI{784}{kJ}$
+    
+    b) $P = W/t = 784\,000/25 = \SI{31{,}4}{kW}$
+    
+    c) $P = 31\,360/735{,}5 \approx \SI{42{,}6}{ch}$
 
-\textbf{3.20} 5,6 m/s
+\textbf{12.} a) $P = F_r \times v = \SI{650e3}{} \times 7{,}20 = \SI{4{,}68}{MW}$
+    
+    b) $\SI{4{,}68}{MW} \approx \SI{6360}{ch}$
+    
+    c) $P' = 350\,000 \times 5{,}14 = \SI{1{,}80}{MW} \approx \SI{2450}{ch}$. Réduire la vitesse de 30\% diminue la puissance requise de 62\%.
 
-\textbf{3.21} a) $-960$ MJ, b) 2,4 MN
+\textbf{13.} a) $E = 6 \times 1{,}5 = \SI{9}{MWh} = \SI{9000}{kWh} = 9000 \times 3{,}6 = \SI{32\,400}{MJ}$
+    
+    b) Énergie carburant nécessaire $= 32\,400/0{,}38 = \SI{85\,263}{MJ}$; \quad $V = 85\,263/42 \approx \SI{2030}{L}$
+    
+    c) Coût quotidien $= 4 \times 2030 \times 1{,}20 = \SI{9744}{\$}$
 
-\textbf{3.22} 6,6 m/s
 
-\textbf{3.23} a) 19 kJ, b) $-6,4$ kJ, c) $\mu_c \approx 0,09$
+\medskip
+\textbf{Section D — Quantité de mouvement et impulsion}
 
-\textbf{3.24} $-11,8$ J
 
-\textbf{3.25} a) 1,47 MJ, b) 49 kW $\approx$ 67 ch
+\textbf{14.} Chalutier : $p = 200\,000 \times 3 = \SI{6{,}0e5}{kg \cdot m/s}$; \quad Traversier : $p = \SI{5e6}{} \times 8 = \SI{4{,}0e7}{kg \cdot m/s}$; \quad Pétrolier : $p = \SI{150e6}{} \times 7 = \SI{1{,}05e9}{kg \cdot m/s}$. 
+    
+    Ordre : Pétrolier $\gg$ Traversier $\gg$ Chalutier.
 
-\textbf{3.26} 600 kW
+\textbf{15.} a) $\Delta p = mv_f - mv_i = 0 - \SI{10e6}{} \times 0{,}5 = \SI{-5{,}0e6}{kg \cdot m/s}$
+    
+    b) $F_{moy} = \Delta p / \Delta t = -5{,}0 \times 10^6 / 8 = \SI{-625}{kN}$; $|\vect{F}| = \SI{625}{kN}$
+    
+    c) $F_{moy} = -5{,}0 \times 10^6 / 2 = \SI{-2{,}5}{MN}$. La force est 4 fois plus grande! L'amortissement réduit les forces d'impact.
 
-\textbf{3.27} 1,17 MN
+\textbf{16.} a) $0 = m v_{obus} + M v_{canon} \Rightarrow v_{canon} = -\dfrac{30 \times 600}{8000} = \SI{-2{,}25}{m/s}$ (recul)
+    
+    b) $K_{obus} = \frac{1}{2}(30)(600)^2 = \SI{5{,}40}{MJ}$; \quad $K_{canon} = \frac{1}{2}(8000)(2{,}25)^2 = \SI{20{,}3}{kJ}$. 
+    
+    L'obus reçoit 99{,}6\% de l'énergie : à quantité de mouvement égale, l'objet le plus léger a la plus grande énergie cinétique ($K = p^2/2m$).
 
-\textbf{3.28} 810 W
+\textbf{17.} a) $0 = 75 \times 1{,}5 + 150 \times v_{canot} \Rightarrow v_{canot} = \SI{-0{,}75}{m/s}$ (vers la poupe)
+    
+    b) $v_{rel} = 1{,}5 - (-0{,}75) = \SI{2{,}25}{m/s}$
 
-\textbf{3.29} 73,5\%
 
-\textbf{3.30} a) 90 000 kWh = 324 GJ, b) 23 100 L
+\medskip
+\textbf{Section E — Collisions}
 
-\textbf{3.31} a) 1200 J, b) 8000 J, c) $-277$ J, d) 7,6 m/s
 
-\textbf{3.32} a) 520 MJ, b) 1 MN, c) 520 m, d) 204 s
+\textbf{18.} a) $v_f = \dfrac{m_A v_A + m_B v_B}{m_A + m_B} = \dfrac{400\,000 \times 3 + 600\,000 \times 1}{1\,000\,000} = \SI{1{,}8}{m/s}$
+    
+    b) $K_i = \frac{1}{2}(400\,000)(9) + \frac{1}{2}(600\,000)(1) = 1800 + 300 = \SI{2100}{kJ}$; \quad $K_f = \frac{1}{2}(1\,000\,000)(1{,}8)^2 = \SI{1620}{kJ}$
+    
+    c) $\%_{\text{perdu}} = \dfrac{2100 - 1620}{2100} \times 100 = 22{,}9\%$. Énergie transformée en déformation des structures et chaleur.
 
-\textbf{3.33} a) 500 kg/min, b) 19,6 kJ/min, c) 327 W, d) 545 W
-\end{multicols}
+\textbf{19.} a) Axe $x$ positif vers l'est : $v_1 = +\SI{4}{m/s}$, $v_2 = \SI{-2}{m/s}$.
+    
+    b) $v_f = \dfrac{25 \times 10^6 \times 4 + 15 \times 10^6 \times (-2)}{40 \times 10^6} = \dfrac{100 - 30}{40} = \SI{+1{,}75}{m/s}$ (vers l'est)
+    
+    c) $K_i = \frac{1}{2}(25 \times 10^6)(16) + \frac{1}{2}(15 \times 10^6)(4) = 200 + 30 = \SI{230}{MJ}$
+
+    $K_f = \frac{1}{2}(40 \times 10^6)(1{,}75)^2 = \SI{61{,}3}{MJ}$; \quad $\%_{\text{perdu}} = \dfrac{230 - 61{,}3}{230} \times 100 = 73{,}3\%$
+    
+    d) $\Delta p_{vr} = m_2(v_f - v_{2i}) = 15 \times 10^6 \times (1{,}75 - (-2)) = 15 \times 10^6 \times 3{,}75 = \SI{56{,}3 \times 10^6}{N \cdot s}$
+    
+    $F_{moy} = 56{,}3 \times 10^6 / 3 = \SI{18{,}8}{MN}$
+
+\textbf{20.} a) Conservation de $\vect{p}$ : $200 \times 4 + 100 \times 0 = 200\,v_{Af} + 100\,v_{Bf}$ \quad $\Rightarrow 800 = 200\,v_{Af} + 100\,v_{Bf}$ \quad (1)
+    
+    Vitesses relatives : $v_{Ai} - v_{Bi} = -(v_{Af} - v_{Bf}) \Rightarrow 4 - 0 = -(v_{Af} - v_{Bf}) \Rightarrow v_{Bf} - v_{Af} = 4$ \quad (2)
+    
+    De (2) : $v_{Bf} = v_{Af} + 4$. Dans (1) : $800 = 200\,v_{Af} + 100(v_{Af} + 4) = 300\,v_{Af} + 400$
+    
+    $v_{Af} = 400/300 = \SI{1{,}33}{m/s}$; \quad $v_{Bf} = 1{,}33 + 4 = \SI{5{,}33}{m/s}$
+    
+    b) $K_i = \frac{1}{2}(200)(16) = \SI{1600}{J}$; \quad $K_f = \frac{1}{2}(200)(1{,}33)^2 + \frac{1}{2}(100)(5{,}33)^2 = 177 + 1420 = \SI{1597}{J} \approx \SI{1600}{J}$ \checkmark
+
+\textbf{21.} a) Contre un quai ($M \to \infty$) : $v_f = -e \cdot v_i = -0{,}40 \times 0{,}8 = \SI{-0{,}32}{m/s}$ (rebond)
+    
+    b) $K_i = \frac{1}{2}(5 \times 10^6)(0{,}8)^2 = \SI{1600}{kJ}$; \quad $K_f = \frac{1}{2}(5 \times 10^6)(0{,}32)^2 = \SI{256}{kJ}$
+    
+    c) $\%_{\text{absorbé}} = \dfrac{1600 - 256}{1600} \times 100 = 84\%$
+    
+    d) $\dfrac{K_f}{K_i} = \dfrac{\frac{1}{2}m(ev_i)^2}{\frac{1}{2}mv_i^2} = e^2 = (0{,}40)^2 = 0{,}16$. Donc fraction conservée $= e^2$, fraction perdue $= 1 - e^2 = 84\%$ \checkmark
+
+\textbf{22.} Axe $x$ vers l'est, axe $y$ vers le nord.
+    
+    a) $p_{xi} = 15 \times 10^6 \times 5 = \SI{75 \times 10^6}{kg \cdot m/s}$; \quad $p_{yi} = 5 \times 10^6 \times 8 = \SI{40 \times 10^6}{kg \cdot m/s}$
+    
+    b) $v_{fx} = \dfrac{75 \times 10^6}{20 \times 10^6} = \SI{3{,}75}{m/s}$; \quad $v_{fy} = \dfrac{40 \times 10^6}{20 \times 10^6} = \SI{2{,}0}{m/s}$
+    
+    c) $v_f = \sqrt{3{,}75^2 + 2{,}0^2} = \sqrt{18{,}06} = \SI{4{,}25}{m/s}$; \quad $\theta = \arctan(2{,}0 / 3{,}75) = 28{,}1°$ nord de l'est; \quad Cap $\approx 062°$
+    
+    d) $K_i = \frac{1}{2}(15 \times 10^6)(25) + \frac{1}{2}(5 \times 10^6)(64) = 187{,}5 + 160 = \SI{347{,}5}{MJ}$
+    
+    $K_f = \frac{1}{2}(20 \times 10^6)(18{,}06) = \SI{180{,}6}{MJ}$; \quad $\%_{\text{perdu}} = \dfrac{347{,}5 - 180{,}6}{347{,}5} \times 100 \approx 48\%$
+
+
+\medskip
+\textbf{Section F — Problèmes de synthèse}
+
+
+\textbf{23.} a) $W = mgh = 10\,000 \times 9{,}8 \times 12 = \SI{1{,}18}{MJ}$
+    
+    b) $E_{total} = W/\eta = 1{,}18/0{,}70 = \SI{1{,}68}{MJ}$
+    
+    c) $t = h/v = 12/0{,}3 = \SI{40}{s}$; \quad $P_{m\acute{e}c} = mgh/t = 1\,176\,000/40 = \SI{29{,}4}{kW}$; \quad $P_{\acute{e}lec} = 29{,}4/0{,}70 = \SI{42{,}0}{kW}$
+    
+    d) $v = \sqrt{2gh} = \sqrt{2 \times 9{,}8 \times 12} = \sqrt{235{,}2} = \SI{15{,}3}{m/s}$ ($\approx \SI{55}{km/h}$)
+    
+    e) $Fd = \frac{1}{2}mv^2 = mgh \Rightarrow F = mgh/d = 10\,000 \times 9{,}8 \times 12 / 0{,}50 = \SI{2{,}35}{MN}$. Ratio : $F/(mg) = 2\,352\,000/98\,000 = 24$ fois le poids.
+
+\textbf{24.} a) $K_i = \frac{1}{2}mv_i^2 = \frac{1}{2}(8 \times 10^6)(0{,}6)^2 = \SI{1{,}44}{MJ}$
+    
+    b) $v_f = -e \cdot v_i = -0{,}30 \times 0{,}6 = \SI{-0{,}18}{m/s}$; \quad $K_f = \frac{1}{2}(8 \times 10^6)(0{,}18)^2 = \SI{129{,}6}{kJ}$
+    
+    Énergie absorbée $= 1440 - 129{,}6 = \SI{1310}{kJ} \approx \SI{1{,}31}{MJ}$
+    
+    c) $\Delta p = m(v_f - v_i) = 8 \times 10^6 \times (-0{,}18 - 0{,}6) = \SI{-6{,}24 \times 10^6}{N \cdot s}$; \quad $F_{moy} = \dfrac{6{,}24 \times 10^6}{4} = \SI{1{,}56}{MN}$
+    
+    d) $\frac{1}{2}mv_f^2 = F_r \times d \Rightarrow d = \dfrac{129\,600}{20\,000} = \SI{6{,}5}{m}$
+    
+    e) $P = F_r \times v = 20\,000 \times 0{,}6 = \SI{12}{kW}$
+
+\textbf{25.} a) $v_{fx} = \dfrac{15 \times 10^6 \times 5}{20 \times 10^6} = \SI{3{,}75}{m/s}$; \quad $v_{fy} = \dfrac{5 \times 10^6 \times 8}{20 \times 10^6} = \SI{2{,}0}{m/s}$
+    
+    $v_f = \sqrt{3{,}75^2 + 2{,}0^2} = \SI{4{,}25}{m/s} \approx \SI{8{,}3}{n\oe uds}$; \quad Cap $\approx 062°$
+    
+    b) $K_i = \SI{347{,}5}{MJ}$, $K_f = \SI{180{,}6}{MJ}$. Perte $= \SI{166{,}9}{MJ}$ (48\%). Transformée en déformation des coques, chaleur et son.
+    
+    c) $\Delta p_x = 5 \times 10^6 \times (3{,}75 - 0) = \SI{18{,}75 \times 10^6}{}$; \quad $\Delta p_y = 5 \times 10^6 \times (2{,}0 - 8) = \SI{-30 \times 10^6}{}$
+    
+    $|\Delta \vect{p}| = \sqrt{(18{,}75)^2 + (30)^2} \times 10^6 = \SI{35{,}4 \times 10^6}{N \cdot s}$; \quad $F_{moy} = 35{,}4 \times 10^6 / 2 = \SI{17{,}7}{MN}$
+    
+    d) $d = K_f / F_r = 180{,}6 \times 10^6 / 100\,000 = \SI{1806}{m}$
+    
+    e) $d = 1806/1852 \approx \SI{0{,}98}{NM}$. Les épaves dérivent près d'un mille nautique, ce qui définit le périmètre initial de recherche pour les opérations de sauvetage.

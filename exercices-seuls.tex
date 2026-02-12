@@ -1,23 +1,57 @@
+% =============================================================================
+% RECUEIL D'EXERCICES — Physique 1 (203-20B-QM)
+% Institut Maritime du Québec
+% =============================================================================
 \documentclass[11pt, letterpaper, twoside, openright]{book}
 \input{preamble}
 
-\title{\textbf{Physique 1 -- Mecanique}\par\Large Exercices}
-\author{Institut Maritime du Quebec}
-\date{Hiver 2026}
-
 \begin{document}
 
-\maketitle
-\thispagestyle{empty}
-\newpage
+% ---- Page titre -------------------------------------------------------------
+\begin{titlepage}
+\centering
+\vspace*{3cm}
 
+{\Huge\bfseries Physique 1 --- Mécanique\par}
+\vspace{1cm}
+{\LARGE Recueil d'exercices\par}
+\vspace{2cm}
+{\Large 203-20B-QM\par}
+\vspace{0.5cm}
+{\large Institut Maritime du Québec\par}
+\vspace{1cm}
+{\large Hiver 2026\par}
+
+\vfill
+\end{titlepage}
+
+% ---- Table des matières -----------------------------------------------------
 \tableofcontents
 \newpage
 
-\chapter{Exercices - Chapitre 1 : Cinematique}
+% =============================================================================
+% CHAPITRE 0 — NOTIONS FONDAMENTALES
+% =============================================================================
+\setcounter{chapter}{-1}
+\chapter{Notions fondamentales}
+\input{exercices/ex-ch0}
+
+% =============================================================================
+% CHAPITRE 1 — CINÉMATIQUE
+% =============================================================================
+\chapter{Cinématique}
 \input{exercices/ex-ch1}
 
-\chapter{Exercices - Chapitre 2 : Dynamique et statique}
+% =============================================================================
+% CHAPITRE 2 — DYNAMIQUE ET STATIQUE
+% =============================================================================
+\chapter{Dynamique et statique}
 \input{exercices/ex-ch2}
+
+% =============================================================================
+% CHAPITRE 3 — ÉNERGIE, TRAVAIL, QUANTITÉ DE MOUVEMENT
+% =============================================================================
+\chapter{Énergie, travail et quantité de mouvement}
+\input{exercices/ex-ch3}
 
 \end{document}
