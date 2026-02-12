@@ -223,7 +223,7 @@ La \textbf{port\'ee} est la distance horizontale totale parcourue par le project
 \end{enumerate}
 
 \begin{remarque}
-Pour un projectile lanc\'e et retombant au m\^eme niveau, la port\'ee est maximale lorsque l'angle de lancement est de $45°$.
+Pour un projectile lanc\'e et retombant au m\^eme niveau, la port\'ee est maximale lorsque l'angle de lancement est de $45^\circ$.
 \end{remarque}
 
 \subsubsection{Hauteur maximale}
@@ -258,8 +258,8 @@ Cette approche fonctionne pour \textbf{tous} les probl\`emes de projectile, m\^e
 
 \subsection{Exemples}
 
-\begin{exemple}{Ballon de soccer (exemple terrestre)}{}
-Un joueur botte un ballon avec une vitesse initiale de $\SI{20}{m/s}$ \`a un angle de $30°$ par rapport au sol.
+\begin{exemple}{Ballon de soccer (exemple terrestre)}{ballon-soccer}
+Un joueur botte un ballon avec une vitesse initiale de $\SI{20}{m/s}$ \`a un angle de $30^\circ$ par rapport au sol.
 \begin{enumerate}[label=\alph*)]
     \item Quelle est la port\'ee du tir?
     \item Quelle hauteur maximale atteint le ballon?
@@ -268,9 +268,9 @@ Un joueur botte un ballon avec une vitesse initiale de $\SI{20}{m/s}$ \`a un ang
 
 \textbf{Donn\'ees :}
 \begin{itemize}
-    \item $v_0 = \SI{20}{m/s}$, $\theta = 30°$
-    \item $v_{0x} = 20 \cos 30° = \SI{17,3}{m/s}$
-    \item $v_{0y} = 20 \sin 30° = \SI{10}{m/s}$
+    \item $v_0 = \SI{20}{m/s}$, $\theta = 30^\circ$
+    \item $v_{0x} = 20 \cos 30^\circ = \SI{17,3}{m/s}$
+    \item $v_{0y} = 20 \sin 30^\circ = \SI{10}{m/s}$
 \end{itemize}
 
 \textbf{b) Hauteur maximale :} (on commence par celle-ci car elle ne n\'ecessite pas le temps)
@@ -297,17 +297,17 @@ Maintenant qu'on conna\^it le temps de vol :
 \[ \text{Port\'ee} = v_{0x} \cdot \Delta t = 17,3 \times 2,04 = \SI{35,3}{m} \]
 \end{exemple}
 
-\begin{exemple}{Lance-amarre (exemple maritime)}{}
-Un marin utilise un lance-amarre pour envoyer une ligne vers un quai. L'appareil lance le projectile à $\SI{25}{m/s}$ avec un angle de $40°$. Le marin se trouve sur le pont à $\SI{6}{m}$ au-dessus du niveau du quai.
+\begin{exemple}{Lance-amarre (exemple maritime)}{lance-amarre}
+Un marin utilise un lance-amarre pour envoyer une ligne vers un quai. L'appareil lance le projectile à $\SI{25}{m/s}$ avec un angle de $40^\circ$. Le marin se trouve sur le pont à $\SI{6}{m}$ au-dessus du niveau du quai.
 
 Quelle est la portée horizontale du tir?
 
 \textbf{Données :}
 \begin{itemize}
-    \item $v_0 = \SI{25}{m/s}$, $\theta = 40°$
+    \item $v_0 = \SI{25}{m/s}$, $\theta = 40^\circ$
     \item $y_i = \SI{6}{m}$, $y_f = \SI{0}{m}$ (niveau du quai)
-    \item $v_{0x} = 25 \cos 40° = \SI{19,2}{m/s}$
-    \item $v_{0y} = 25 \sin 40° = \SI{16,1}{m/s}$
+    \item $v_{0x} = 25 \cos 40^\circ = \SI{19,2}{m/s}$
+    \item $v_{0y} = 25 \sin 40^\circ = \SI{16,1}{m/s}$
 \end{itemize}
 
 \textbf{Étape 1 : Trouver le temps de vol}
@@ -333,7 +333,7 @@ Le fait de lancer depuis une position surélevée augmente significativement la 
 \end{exemple}
 
 \begin{pratiqueautonome}
-Un lance-amarre tire une ligne avec une vitesse initiale de $\SI{30}{m/s}$ à un angle de $40°$ au-dessus de l'horizontale, depuis une hauteur de $\SI{4}{m}$ au-dessus de l'eau.
+Un lance-amarre tire une ligne avec une vitesse initiale de $\SI{30}{m/s}$ à un angle de $40^\circ$ au-dessus de l'horizontale, depuis une hauteur de $\SI{4}{m}$ au-dessus de l'eau.
 
 \begin{enumerate}[label=\alph*)]
     \item Décomposez la vitesse initiale en ses composantes $v_{0x}$ et $v_{0y}$.
@@ -346,10 +346,10 @@ Un lance-amarre tire une ligne avec une vitesse initiale de $\SI{30}{m/s}$ à un
 \reponsepratique{a) $v_{0x} \approx \SI{23,0}{m/s}$, $v_{0y} \approx \SI{19,3}{m/s}$ \quad b) Portée $\approx \SI{97}{m}$}
 \end{pratiqueautonome}
 
-\begin{exemple}{Homme à la mer depuis un navire en mouvement}{}
+\begin{exemple}{Homme à la mer depuis un navire en mouvement}{homme-a-la-mer}
 Un marin tombe d'un navire qui avance à $\SI{8}{n\oe{}uds}$. Il tombe d'une hauteur de $\SI{10}{m}$. À quelle distance horizontale du point de chute le marin entre-t-il dans l'eau?
 
-\textbf{Analyse :} Au moment de la chute, le marin a la même vitesse horizontale que le navire. C'est un projectile lancé horizontalement ($\theta = 0°$).
+\textbf{Analyse :} Au moment de la chute, le marin a la même vitesse horizontale que le navire. C'est un projectile lancé horizontalement ($\theta = 0^\circ$).
 
 \textbf{Conversion de la vitesse :}
 \[ v_{0x} = \SI{8}{n\oe{}uds} \times \frac{\SI{0,5144}{m/s}}{\SI{1}{n\oe{}ud}} = \SI{4,1}{m/s} \]
@@ -379,7 +379,7 @@ Pendant ce temps, le navire a aussi avancé de $\SI{5,9}{m}$. Du point de vue d'
 \end{attention}
 \end{exemple}
 
-\begin{exemple}{Probl\`eme inverse : trouver l'angle de lancement}{}
+\begin{exemple}{Probl\`eme inverse : trouver l'angle de lancement}{probleme-inverse-angle}
 Un canon lance-amarre doit atteindre un quai situ\'e \`a $\SI{50}{m}$ de distance horizontale. La vitesse de sortie du projectile est de $\SI{30}{m/s}$. Le canon et le quai sont au m\^eme niveau.
 
 \`A quel angle faut-il r\'egler le canon?
@@ -418,12 +418,12 @@ Solutions : $\Delta t = 0$ (d\'epart) ou $\Delta t = \dfrac{2 v_0 \sin\theta}{g}
 \sin(2\theta) &= \frac{g \cdot \Delta x}{v_0^2} = \frac{9,81 \times 50}{30^2} = \frac{490,5}{900} = 0,545
 \end{align*}
 
-\[ 2\theta = \arcsin(0,545) = 33,0° \quad \Rightarrow \quad \theta = 16,5° \]
+\[ 2\theta = \arcsin(0,545) = 33,0^\circ \quad \Rightarrow \quad \theta = 16,5^\circ \]
 
-\textbf{Attention!} L'\'equation $\sin(2\theta) = 0,545$ a \textbf{deux solutions} entre $0°$ et $90°$ :
+\textbf{Attention!} L'\'equation $\sin(2\theta) = 0,545$ a \textbf{deux solutions} entre $0^\circ$ et $90^\circ$ :
 \begin{itemize}
-    \item $2\theta = 33,0°$ $\Rightarrow$ $\theta_1 = 16,5°$ (tir tendu)
-    \item $2\theta = 180° - 33,0° = 147°$ $\Rightarrow$ $\theta_2 = 73,5°$ (tir en cloche)
+    \item $2\theta = 33,0^\circ$ $\Rightarrow$ $\theta_1 = 16,5^\circ$ (tir tendu)
+    \item $2\theta = 180^\circ - 33,0^\circ = 147^\circ$ $\Rightarrow$ $\theta_2 = 73,5^\circ$ (tir en cloche)
 \end{itemize}
 
 \begin{center}
@@ -432,13 +432,13 @@ Solutions : $\Delta t = 0$ (d\'epart) ou $\Delta t = \dfrac{2 v_0 \sin\theta}{g}
 \draw[axe, thick, ->] (0,0) -- (8,0) node[right] {$x$};
 \draw[axe, thick, ->] (0,0) -- (0,5) node[above] {$y$};
 
-% Trajectoire basse (16.5°)
+% Trajectoire basse (16.5$^\circ$)
 \draw[very thick, blue, domain=0:7, samples=50] plot (\x, {0.42*\x - 0.03*\x*\x});
-\draw[thick, blue, ->] (0,0) -- (1.4,0.42) node[above left] {\small $\theta_1 = 16,5°$};
+\draw[thick, blue, ->] (0,0) -- (1.4,0.42) node[above left] {\small $\theta_1 = 16,5^\circ$};
 
-% Trajectoire haute (73.5°)
+% Trajectoire haute (73.5$^\circ$)
 \draw[very thick, red, domain=0:7, samples=50] plot (\x, {2.38*\x - 0.17*\x*\x});
-\draw[thick, red, ->] (0,0) -- (0.42,1.4) node[above left] {\small $\theta_2 = 73,5°$};
+\draw[thick, red, ->] (0,0) -- (0.42,1.4) node[above left] {\small $\theta_2 = 73,5^\circ$};
 
 % Point cible
 \fill[green!60!black] (7,0) circle (5pt);
@@ -450,10 +450,10 @@ Solutions : $\Delta t = 0$ (d\'epart) ou $\Delta t = \dfrac{2 v_0 \sin\theta}{g}
 \end{tikzpicture}
 \end{center}
 
-\textbf{R\'eponse :} Deux angles sont possibles : $\theta_1 = 16,5°$ ou $\theta_2 = 73,5°$.
+\textbf{R\'eponse :} Deux angles sont possibles : $\theta_1 = 16,5^\circ$ ou $\theta_2 = 73,5^\circ$.
 
 \begin{remarque}[title=Choix pratique]
-En pratique, le tir tendu ($16,5°$) est souvent pr\'ef\'er\'e car :
+En pratique, le tir tendu ($16,5^\circ$) est souvent pr\'ef\'er\'e car :
 \begin{itemize}
     \item Le temps de vol est plus court (la ligne reste tendue)
     \item Le tir est moins affect\'e par le vent
@@ -463,7 +463,7 @@ Le tir en cloche peut \^etre utile pour passer par-dessus un obstacle.
 \end{remarque}
 \end{exemple}
 
-\begin{exemple}{Port\'ee maximale impossible}{}
+\begin{exemple}{Port\'ee maximale impossible}{portee-maximale-impossible}
 Avec le m\^eme canon ($v_0 = \SI{30}{m/s}$), peut-on atteindre une cible \`a $\SI{100}{m}$?
 
 \textbf{V\'erification :}
@@ -471,7 +471,7 @@ Avec le m\^eme canon ($v_0 = \SI{30}{m/s}$), peut-on atteindre une cible \`a $\S
 
 Puisque $\sin(2\theta)$ ne peut jamais d\'epasser 1, \textbf{aucun angle} ne permet d'atteindre cette cible!
 
-\textbf{Port\'ee maximale :} Elle est atteinte quand $\sin(2\theta) = 1$, soit $\theta = 45°$ :
+\textbf{Port\'ee maximale :} Elle est atteinte quand $\sin(2\theta) = 1$, soit $\theta = 45^\circ$ :
 \[ \Delta x_{max} = \frac{v_0^2}{g} = \frac{900}{9,81} = \SI{91,7}{m} \]
 
 La cible \`a $\SI{100}{m}$ est hors de port\'ee.
@@ -479,7 +479,7 @@ La cible \`a $\SI{100}{m}$ est hors de port\'ee.
 
 \subsection{Projectile lanc\'e horizontalement}
 
-Un cas particulier important est le projectile lancé \textbf{horizontalement} (angle $\theta = 0°$).
+Un cas particulier important est le projectile lancé \textbf{horizontalement} (angle $\theta = 0^\circ$).
 
 \begin{center}
 \begin{tikzpicture}[scale=0.8]
@@ -515,7 +515,7 @@ Le temps de chute s'obtient à partir de l'équation de position verticale. Avec
 La portée s'obtient ensuite par le MRU horizontal :
 \[ \text{Portée} = v_0 \cdot \Delta t \]
 
-\begin{exemple}{Conteneur tombant d'une grue}{}
+\begin{exemple}{Conteneur tombant d'une grue}{conteneur-chute-grue}
 Un conteneur se détache d'une grue portuaire en mouvement. La grue se déplace horizontalement à $\SI{2}{m/s}$ et le conteneur est à $\SI{15}{m}$ de hauteur.
 
 À quelle distance horizontale (par rapport au point de largage) le conteneur touche-t-il le sol?

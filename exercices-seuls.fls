@@ -1,7 +1,7 @@
 PWD c:\Users\jfbeaudo\OneDrive - Collège de Rimouski\Hiver-2026\Materiel_JFB\Notes de cours\Notes_git\Physique1-Mecanique
 INPUT C:\Users\jfbeaudo\AppData\Local\MiKTeX\miktex\data\le\pdftex\pdflatex.fmt
-INPUT c:\Users\jfbeaudo\OneDrive - Collège de Rimouski\Hiver-2026\Materiel_JFB\Notes de cours\Notes_git\Physique1-Mecanique\main.tex
-OUTPUT main.log
+INPUT c:\Users\jfbeaudo\OneDrive - Collège de Rimouski\Hiver-2026\Materiel_JFB\Notes de cours\Notes_git\Physique1-Mecanique\exercices-seuls.tex
+OUTPUT exercices-seuls.log
 INPUT C:\Users\jfbeaudo\AppData\Local\Programs\MiKTeX\tex\latex\base\book.cls
 INPUT C:\Users\jfbeaudo\AppData\Local\Programs\MiKTeX\tex\latex\base\book.cls
 INPUT C:\Users\jfbeaudo\AppData\Local\Programs\MiKTeX\tex\latex\base\bk11.clo
@@ -335,10 +335,10 @@ INPUT C:\Users\jfbeaudo\AppData\Local\Programs\MiKTeX\tex\latex\psnfss\upsy.fd
 INPUT C:\Users\jfbeaudo\AppData\Local\Programs\MiKTeX\tex\latex\psnfss\upsy.fd
 INPUT C:\Users\jfbeaudo\AppData\Local\Programs\MiKTeX\tex\latex\psnfss\upsy.fd
 INPUT C:\Users\jfbeaudo\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\symbol\psyr.tfm
-INPUT .\main.aux
-INPUT .\main.aux
-INPUT main.aux
-OUTPUT main.aux
+INPUT .\exercices-seuls.aux
+INPUT .\exercices-seuls.aux
+INPUT exercices-seuls.aux
+OUTPUT exercices-seuls.aux
 INPUT C:\Users\jfbeaudo\AppData\Local\Programs\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
 INPUT C:\Users\jfbeaudo\AppData\Local\Programs\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
 INPUT C:\Users\jfbeaudo\AppData\Local\Programs\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
@@ -347,4 +347,7 @@ INPUT C:\Users\jfbeaudo\AppData\Local\Programs\MiKTeX\tex\latex\epstopdf-pkg\eps
 INPUT C:\Users\jfbeaudo\AppData\Local\Programs\MiKTeX\tex\latex\00miktex\epstopdf-sys.cfg
 INPUT C:\Users\jfbeaudo\AppData\Local\Programs\MiKTeX\tex\latex\00miktex\epstopdf-sys.cfg
 INPUT C:\Users\jfbeaudo\AppData\Local\Programs\MiKTeX\tex\latex\00miktex\epstopdf-sys.cfg
-OUTPUT main.out
+INPUT .\exercices-seuls.out
+INPUT .\exercices-seuls.out
+INPUT exercices-seuls.out
+INPUT exercices-seuls.out
