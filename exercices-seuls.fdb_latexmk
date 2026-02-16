@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1770933853.50676 "c:/Users/jfbeaudo/OneDrive - Collège de Rimouski/Hiver-2026/Materiel_JFB/Notes de cours/Notes_git/Physique1-Mecanique/exercices-seuls.tex" "exercices-seuls.pdf" "exercices-seuls" 1770933861.27834 2
+["pdflatex"] 1771255298.71463 "c:/Users/jfbeaudo/OneDrive - Collège de Rimouski/Hiver-2026/Materiel_JFB/Notes de cours/Notes_git/Physique1-Mecanique/exercices-seuls.tex" "exercices-seuls.pdf" "exercices-seuls" 1771255305.2175 2
   "C:/Users/jfbeaudo/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1770735179 82507 a9eef8696c92627b87e9975edea03b2a ""
   "C:/Users/jfbeaudo/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/ecbi1095.pk" 1770049834 38336 d06e22c5274573bfa1d1e4251a0f0120 ""
   "C:/Users/jfbeaudo/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/ecbx0800.pk" 1770049823 19872 619c0ef0718d7cd4580b10676c3a0a22 ""
@@ -261,15 +261,15 @@
   "C:/Users/jfbeaudo/AppData/Local/Programs/MiKTeX/tex/latex/wrapfig/wrapfig.sty" 1044403200 26220 3701aebf80ccdef248c0c20dd062fea9 ""
   "C:/Users/jfbeaudo/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1729265222 55384 b454dec21c2d9f45ec0b793f0995b992 ""
   "c:/Users/jfbeaudo/OneDrive - Collège de Rimouski/Hiver-2026/Materiel_JFB/Notes de cours/Notes_git/Physique1-Mecanique/exercices-seuls.tex" 1770933823 1965 5f8434fa4c7312ca4d66827b7440e6c1 ""
-  "exercices-seuls.aux" 1770933860 1446 8ef88a2ac5d50222346ffeb601e082ba "pdflatex"
-  "exercices-seuls.out" 1770933860 1070 5b0e559aedd0983331f50970926f4a5d "pdflatex"
+  "exercices-seuls.aux" 1771255304 1446 8ef88a2ac5d50222346ffeb601e082ba "pdflatex"
+  "exercices-seuls.out" 1771255304 1070 5b0e559aedd0983331f50970926f4a5d "pdflatex"
   "exercices-seuls.tex" 1770933823 1965 5f8434fa4c7312ca4d66827b7440e6c1 ""
-  "exercices-seuls.toc" 1770933860 563 6df455f6b695f7e18f91aeb401eaa3b3 "pdflatex"
-  "exercices/ex-ch0.tex" 1770932611 16521 79905e4e3eef34e269745d9221b89b28 ""
-  "exercices/ex-ch1.tex" 1770932611 48178 a96c26de21546fded9b8242f5a4a31e9 ""
-  "exercices/ex-ch2.tex" 1770932611 32833 238c82485e06f7fb7ff64f34aea513a8 ""
-  "exercices/ex-ch3.tex" 1770932611 30351 2753e802973aaaa47a9f6fa4dd5694ac ""
-  "preamble.tex" 1770931579 9642 f0af2c0929b13ebfaf40facf07146aa8 ""
+  "exercices-seuls.toc" 1771255304 563 6df455f6b695f7e18f91aeb401eaa3b3 "pdflatex"
+  "exercices/ex-ch0.tex" 1771255286 16541 b781430aafdfa47b9238e3b114c667ca ""
+  "exercices/ex-ch1.tex" 1771255286 48212 622619c01bc1eaba6a0573c702cac1b9 ""
+  "exercices/ex-ch2.tex" 1771255286 33013 83b1b114ffcf4ab40fd3d812e9b5c96b ""
+  "exercices/ex-ch3.tex" 1771255286 30593 3070c3f75007136d6f09d830976e7951 ""
+  "preamble.tex" 1771253205 9670 988f6670703e0f5e62717b72933701b4 ""
   (generated)
   "exercices-seuls.aux"
   "exercices-seuls.log"

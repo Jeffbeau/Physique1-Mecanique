@@ -139,7 +139,7 @@ v &= \sqrt{v_x^2 + v_y^2} \\
 \subsection{Exemple : navigation d'un navire}
 
 \begin{exemple}{Cap et vitesse d'un navire}{cap-vitesse-navire}
-Un navire navigue \`a $\SI{15}{n\oe{}uds}$ avec un cap de $30^\circ$ par rapport \`a l'est (c'est-\`a-dire $30^\circ$ nord de l'est).
+Un navire navigue \`a $\SI{15}{\knots}$ avec un cap de $30^\circ$ par rapport \`a l'est (c'est-\`a-dire $30^\circ$ nord de l'est).
 
 Quelles sont les composantes est-ouest et nord-sud de sa vitesse?
 
@@ -151,7 +151,7 @@ Quelles sont les composantes est-ouest et nord-sud de sa vitesse?
 \draw[gray, ->] (0,0) -- (-2,0) node[left] {Ouest};
 \draw[gray, ->] (0,0) -- (0,-2) node[below] {Sud};
 % Vecteur vitesse
-\draw[very thick, blue, ->] (0,0) -- (2.6,1.5) node[above right] {$\vec{v} = \SI{15}{n\oe{}uds}$};
+\draw[very thick, blue, ->] (0,0) -- (2.6,1.5) node[above right] {$\vec{v} = \SI{15}{\knots}$};
 % Composantes
 \draw[thick, red, ->] (0,0) -- (2.6,0) node[below] {$v_x$};
 \draw[thick, red, ->] (2.6,0) -- (2.6,1.5) node[right] {$v_y$};
@@ -164,12 +164,12 @@ Quelles sont les composantes est-ouest et nord-sud de sa vitesse?
 \end{center}
 
 \textbf{Composante est-ouest :}
-\[ v_x = v \cos\theta = 15 \cos 30^\circ = 15 \times 0,866 = \SI{13,0}{n\oe{}uds} \]
+\[ v_x = v \cos\theta = 15 \cos 30^\circ = 15 \times 0,866 = \SI{13,0}{\knots} \]
 
 \textbf{Composante nord-sud :}
-\[ v_y = v \sin\theta = 15 \sin 30^\circ = 15 \times 0,5 = \SI{7,5}{n\oe{}uds} \]
+\[ v_y = v \sin\theta = 15 \sin 30^\circ = 15 \times 0,5 = \SI{7,5}{\knots} \]
 
-Le navire se d\'eplace donc \`a $\SI{13,0}{n\oe{}uds}$ vers l'est et $\SI{7,5}{n\oe{}uds}$ vers le nord.
+Le navire se d\'eplace donc \`a $\SI{13,0}{\knots}$ vers l'est et $\SI{7,5}{\knots}$ vers le nord.
 \end{exemple}
 
 \subsection{Application au projectile}

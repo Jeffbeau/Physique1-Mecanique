@@ -98,21 +98,21 @@
 
 \begin{enumerate}[label=\alph*)]
     \item Un moteur de \SI{250}{kg} est suspendu au plafond de la salle des machines par un câble vertical unique.
-    \item Une caisse de \SI{100}{kg} est immobile sur une rampe de chargement inclinée à $30°$, retenue par le frottement statique.
-    \item Un conteneur est retenu en l'air par deux câbles : le premier fait un angle de $20°$ avec la verticale et le second fait un angle de $45°$ avec la verticale.
+    \item Une caisse de \SI{100}{kg} est immobile sur une rampe de chargement inclinée à $30\si{\degree}$, retenue par le frottement statique.
+    \item Un conteneur est retenu en l'air par deux câbles : le premier fait un angle de $20\si{\degree}$ avec la verticale et le second fait un angle de $45\si{\degree}$ avec la verticale.
 \end{enumerate}
 
 \textit{Réponses :}
 \begin{enumerate}[label=\alph*)]
     \item Deux forces : poids $\vect{F}_g$ (vers le bas) et tension $\vect{T}$ (vers le haut). Le point d'application est le centre de masse du moteur.
     \item Trois forces : poids $\vect{F}_g$ (verticalement vers le bas, au centre de masse), force normale $\vect{N}$ (perpendiculaire à la rampe, vers l'extérieur de la surface) et frottement statique $\vect{f}_s$ (parallèle à la rampe, vers le haut de la pente).
-    \item Trois forces : poids $\vect{F}_g$ (vers le bas) et deux tensions $\vect{T}_1$ (le long du premier câble, à $20°$ de la verticale) et $\vect{T}_2$ (le long du second câble, à $45°$ de la verticale).
+    \item Trois forces : poids $\vect{F}_g$ (vers le bas) et deux tensions $\vect{T}_1$ (le long du premier câble, à $20\si{\degree}$ de la verticale) et $\vect{T}_2$ (le long du second câble, à $45\si{\degree}$ de la verticale).
 \end{enumerate}
 
 % ---- EXERCICE 5 — Câbles dans la salle des machines ★★ ---------------------
 \item[$\star\star$] \textbf{5. (Maritime)} Un moteur diesel de \SI{300}{kg} est suspendu au point de jonction A par un câble vertical dans la salle des machines d'un navire. Au point A, deux câbles maintiennent le système en équilibre :
 \begin{itemize}
-    \item le câble AB est fixé au plafond et fait un angle de $40°$ avec l'horizontale;
+    \item le câble AB est fixé au plafond et fait un angle de $40\si{\degree}$ avec l'horizontale;
     \item le câble AD est horizontal et fixé à une cloison.
 \end{itemize}
 
@@ -147,7 +147,7 @@
     \node[below left=2pt, font=\small] at (B) {B};
     \filldraw[black] (D) circle (2pt);
     \node[above left=2pt, font=\small] at (D) {D};
-    % --- Angle 40° ---
+    % --- Angle 40\si{\degree} ---
     \draw[dashed, gray] (A) -- +(-2.8, 0);
     \draw[thick, blue!70] ($(A) + (180:0.9)$) arc (180:140:0.9);
     \node[blue!70, font=\small] at ($(A) + (160:1.25)$) {$40^\circ$};
@@ -167,7 +167,7 @@
 \textit{Réponses : b) $T_{AB} = \SI{4,58}{kN}$ \quad c) $T_{AD} = \SI{3,51}{kN}$}
 
 % ---- EXERCICE 6 — Grue de chargement ★★ ------------------------------------
-\item[$\star\star$] \textbf{6. (Maritime)} Un conteneur de \SI{2500}{kg} est soulevé par la grue d'un navire. Le câble de la grue fait un angle de $20°$ avec la verticale. Une amarre horizontale est attachée au conteneur pour l'empêcher de balancer.
+\item[$\star\star$] \textbf{6. (Maritime)} Un conteneur de \SI{2500}{kg} est soulevé par la grue d'un navire. Le câble de la grue fait un angle de $20\si{\degree}$ avec la verticale. Une amarre horizontale est attachée au conteneur pour l'empêcher de balancer.
 
 \begin{center}
 \begin{tikzpicture}[scale=1.0, >=Stealth]
@@ -192,7 +192,7 @@
     \draw[thick] (-3.8, -0.4) -- (-3.8, 0.4);
     % --- Référence verticale ---
     \draw[dashed, gray] (P) -- (0, 4.0);
-    % --- Angle 20° ---
+    % --- Angle 20\si{\degree} ---
     \draw[thick, blue!70] ($(P) + (90:1.8)$) arc (90:70:1.8);
     \node[left=1pt, blue!70, font=\small] at ($(P) + (82:2.15)$) {$20^\circ$};
     % --- Point d'attache ---
@@ -212,7 +212,7 @@
 \textit{Réponses : b) $T = \SI{26,1}{kN}$ \quad c) $T_h = \SI{8,93}{kN}$}
 
 % ---- EXERCICE 7 — Système poulie sur quai ★★ -------------------------------
-\item[$\star\star$] \textbf{7. (Maritime)} Sur un quai, une caisse de \SI{40}{kg} est posée sur une surface sans frottement. Un câble attaché à la caisse passe par une poulie fixée en hauteur au bord du quai, puis descend verticalement pour supporter un fût de \SI{25}{kg} au-dessus de l'eau. Le segment de câble entre la caisse et la poulie fait un angle de $30°$ avec l'horizontale. Un câble de retenue horizontal, attaché à un bollard, maintient le système en équilibre.
+\item[$\star\star$] \textbf{7. (Maritime)} Sur un quai, une caisse de \SI{40}{kg} est posée sur une surface sans frottement. Un câble attaché à la caisse passe par une poulie fixée en hauteur au bord du quai, puis descend verticalement pour supporter un fût de \SI{25}{kg} au-dessus de l'eau. Le segment de câble entre la caisse et la poulie fait un angle de $30\si{\degree}$ avec l'horizontale. Un câble de retenue horizontal, attaché à un bollard, maintient le système en équilibre.
 
 \begin{center}
 \begin{tikzpicture}[scale=0.85, >=Stealth]
@@ -257,7 +257,7 @@
     % --- Fût ---
     \draw[thick, fill=orange!12] ({\xF - 0.5}, -1.7) rectangle ({\xF + 0.5}, -0.5);
     \node[font=\small] at (\xF, -1.1) {\SI{25}{kg}};
-    % --- Angle 30° ---
+    % --- Angle 30\si{\degree} ---
     \draw[dashed, gray] (attC) -- +(2.2, 0);
     \draw[thick, blue!70] ($(attC) + (0:0.8)$) arc (0:30:0.8);
     \node[right=2pt, blue!70, font=\small] at ($(attC) + (15:1.15)$) {$30^\circ$};
@@ -279,7 +279,7 @@
 \textit{Réponses : a) $T_{\text{ret}} = \SI{212}{N}$ \quad b) $N = \SI{270}{N}$}
 
 % ---- EXERCICE 8 — Cargaison sur rampe (statique) ★★ ------------------------
-\item[$\star\star$] \textbf{8. (Maritime)} Une caisse de \SI{500}{kg} est immobile sur la passerelle de chargement d'un navire, inclinée à $25°$ par rapport à l'horizontale.
+\item[$\star\star$] \textbf{8. (Maritime)} Une caisse de \SI{500}{kg} est immobile sur la passerelle de chargement d'un navire, inclinée à $25\si{\degree}$ par rapport à l'horizontale.
 
 \begin{enumerate}[label=\alph*)]
     \item Quel est le coefficient de frottement statique minimal $\mu_{s,\text{min}}$ entre la caisse et la passerelle pour que la caisse ne glisse pas?
@@ -327,7 +327,7 @@
 \textit{Réponses : a) $a = \SI{0,106}{m/s^2}$ \quad b) $F = \SI{528}{kN}$}
 
 % ---- EXERCICE 12 — Treuil à angle sur quai ★★ ------------------------------
-\item[$\star\star$] \textbf{12. (Maritime)} Un treuil tire une caisse de \SI{80}{kg} sur un quai à l'aide d'un câble faisant un angle de $25°$ au-dessus de l'horizontale. Le coefficient de frottement cinétique entre la caisse et le quai est $\mu_c = 0{,}30$. La tension dans le câble est de \SI{350}{N}.
+\item[$\star\star$] \textbf{12. (Maritime)} Un treuil tire une caisse de \SI{80}{kg} sur un quai à l'aide d'un câble faisant un angle de $25\si{\degree}$ au-dessus de l'horizontale. Le coefficient de frottement cinétique entre la caisse et le quai est $\mu_c = 0{,}30$. La tension dans le câble est de \SI{350}{N}.
 
 \begin{enumerate}[label=\alph*)]
     \item Calculez la force normale.
@@ -338,7 +338,7 @@
 \textit{Réponses : a) $N = \SI{637}{N}$ \quad b) $f_c = \SI{191}{N}$ \quad c) $a = \SI{1,58}{m/s^2}$}
 
 % ---- EXERCICE 13 — Descente de rampe ★★ ------------------------------------
-\item[$\star\star$] \textbf{13. (Maritime)} Une palette de \SI{200}{kg} est relâchée du repos au sommet d'une rampe de chargement inclinée à $30°$ et longue de \SI{4}{m}. Le coefficient de frottement cinétique est $\mu_c = 0{,}20$.
+\item[$\star\star$] \textbf{13. (Maritime)} Une palette de \SI{200}{kg} est relâchée du repos au sommet d'une rampe de chargement inclinée à $30\si{\degree}$ et longue de \SI{4}{m}. Le coefficient de frottement cinétique est $\mu_c = 0{,}20$.
 
 \begin{enumerate}[label=\alph*)]
     \item Calculez l'accélération de la palette sur la rampe.
@@ -348,14 +348,14 @@
 \textit{Réponses : a) $a = \SI{3,21}{m/s^2}$ \quad b) $v = \SI{5,06}{m/s}$}
 
 % ---- EXERCICE 14 — Rampe puis plancher ★★ -----------------------------------
-\item[$\star\star$] \textbf{14. (Maritime)} Un baril de \SI{40}{kg} part du repos et descend une rampe inclinée à $25°$, longue de \SI{2}{m}, avec un coefficient de frottement cinétique $\mu_c = 0{,}15$. Au bas de la rampe, le baril continue sur le plancher horizontal de la cale, où le coefficient de frottement cinétique est $\mu_c = 0{,}20$. À quelle distance du bas de la rampe le baril s'immobilise-t-il?
+\item[$\star\star$] \textbf{14. (Maritime)} Un baril de \SI{40}{kg} part du repos et descend une rampe inclinée à $25\si{\degree}$, longue de \SI{2}{m}, avec un coefficient de frottement cinétique $\mu_c = 0{,}15$. Au bas de la rampe, le baril continue sur le plancher horizontal de la cale, où le coefficient de frottement cinétique est $\mu_c = 0{,}20$. À quelle distance du bas de la rampe le baril s'immobilise-t-il?
 
 \textit{Indice : Ce problème se résout en deux étapes. Trouvez d'abord la vitesse au bas de la rampe, puis utilisez-la comme vitesse initiale sur le plancher.}
 
 \textit{Réponse : $d = \SI{2,87}{m}$}
 
 % ---- EXERCICE 15 — Système poulie avec rampe ★★★ ----------------------------
-\item[$\star\star\star$] \textbf{15. (Maritime)} Lors du chargement d'un navire, une caisse de \SI{50}{kg} est posée sur une rampe inclinée à $30°$ avec un coefficient de frottement cinétique $\mu_c = 0{,}15$. Elle est reliée par un câble passant par une poulie sans frottement au sommet de la rampe à un contrepoids de \SI{40}{kg} suspendu dans le vide. Le système est relâché du repos.
+\item[$\star\star\star$] \textbf{15. (Maritime)} Lors du chargement d'un navire, une caisse de \SI{50}{kg} est posée sur une rampe inclinée à $30\si{\degree}$ avec un coefficient de frottement cinétique $\mu_c = 0{,}15$. Elle est reliée par un câble passant par une poulie sans frottement au sommet de la rampe à un contrepoids de \SI{40}{kg} suspendu dans le vide. Le système est relâché du repos.
 
 \begin{center}
 \begin{tikzpicture}[scale=0.85, >=Stealth]
@@ -458,7 +458,7 @@
 
 \begin{enumerate}[label=\alph*)]
     \item Calculez la force centripète nécessaire pour maintenir ce virage.
-    \item En combien de temps le navire effectue-t-il un demi-tour ($180°$)?
+    \item En combien de temps le navire effectue-t-il un demi-tour ($180\si{\degree}$)?
     \item Si le capitaine réduit la vitesse à 8 nœuds, quelle est la nouvelle force centripète?
 \end{enumerate}
 
@@ -528,7 +528,7 @@ Ces résultats montrent que, pour les vitesses typiques de navigation, le frotte
 % ---- EXERCICE 22 — Opération de chargement ★★★ ------------------------------
 \item[$\star\star\star$] \textbf{22. (Maritime — Opération de chargement)} Une caisse de \SI{2000}{kg} doit être chargée sur un navire.
 
-\textbf{Étape 1 :} La caisse est soulevée par une grue. Le câble fait un angle de $15°$ avec la verticale et une amarre horizontale empêche la caisse de balancer.
+\textbf{Étape 1 :} La caisse est soulevée par une grue. Le câble fait un angle de $15\si{\degree}$ avec la verticale et une amarre horizontale empêche la caisse de balancer.
 
 \textbf{Étape 2 :} La caisse est déposée sur le pont, puis poussée horizontalement par un chariot élévateur avec une force de \SI{5000}{N}. Le coefficient de frottement cinétique entre la caisse et le pont est $\mu_c = 0{,}20$.
 

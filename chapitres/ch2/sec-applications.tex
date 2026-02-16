@@ -19,7 +19,7 @@ Cette section présente des exemples résolus en suivant rigoureusement l'\textb
 % -----------------------------------------------------------------------------
 
 \begin{exemple}[title=Statique 1 : Moteur suspendu dans une salle des machines (Maritime)]
-Un moteur diesel auxiliaire de masse $m = 200$~kg est suspendu dans la salle des machines d'un navire par deux câbles. Le câble de bâbord fait un angle de 30° avec l'horizontale, celui de tribord fait un angle de 45° avec l'horizontale. Déterminer les tensions $T_1$ et $T_2$ dans chaque câble.
+Un moteur diesel auxiliaire de masse $m = 200$~kg est suspendu dans la salle des machines d'un navire par deux câbles. Le câble de bâbord fait un angle de 30\si{\degree} avec l'horizontale, celui de tribord fait un angle de 45\si{\degree} avec l'horizontale. Déterminer les tensions $T_1$ et $T_2$ dans chaque câble.
 
 \tcblower
 
@@ -33,10 +33,10 @@ Un moteur diesel auxiliaire de masse $m = 200$~kg est suspendu dans la salle des
         \fill[pattern=north east lines] (-3,3) rectangle (2,3.3);
         \draw[thick] (-3,3) -- (2,3);
         
-        % Câbles - géométrie correcte pour 30° et 45°
-        % T1: angle 30° → tan(30°)=0.577, si Δy=1.5, Δx=1.5/0.577=2.6
+        % Câbles - géométrie correcte pour 30\si{\degree} et 45\si{\degree}
+        % T1: angle 30\si{\degree} → tan(30\si{\degree})=0.577, si Δy=1.5, Δx=1.5/0.577=2.6
         \draw[thick] (-2.6,3) -- (0,1.5) node[midway, above left] {$T_1$};
-        % T2: angle 45° → tan(45°)=1, si Δy=1.5, Δx=1.5
+        % T2: angle 45\si{\degree} → tan(45\si{\degree})=1, si Δy=1.5, Δx=1.5
         \draw[thick] (1.5,3) -- (0,1.5) node[midway, above right] {$T_2$};
         
         % Moteur
@@ -46,11 +46,11 @@ Un moteur diesel auxiliaire de masse $m = 200$~kg est suspendu dans la salle des
         % Angles - lignes horizontales de référence
         \draw[dashed, gray] (-2.6,3) -- (-2.6,1.5) -- (0,1.5);
         \draw (-2.6,2.4) arc (270:330:0.6);
-        \node at (-2.1,2.2) {\small $30°$};
+        \node at (-2.1,2.2) {\small $30\si{\degree}$};
         
         \draw[dashed, gray] (1.5,3) -- (1.5,1.5);
         \draw (1.5,2.4) arc (270:225:0.6);
-        \node at (1.1,2.2) {\small $45°$};
+        \node at (1.1,2.2) {\small $45\si{\degree}$};
         
         \node[below] at (-0.5,-0.2) {\textit{Schéma de situation}};
     \end{scope}
@@ -69,18 +69,18 @@ Un moteur diesel auxiliaire de masse $m = 200$~kg est suspendu dans la salle des
         % Poids
         \draw[->, very thick, red] (0,0) -- (0,-1.5) node[right] {$\vect{F}_g$};
         
-        % Tension T1 (30° au-dessus de l'horizontale, vers la gauche)
-        % cos(30°)=0.866, sin(30°)=0.5
+        % Tension T1 (30\si{\degree} au-dessus de l'horizontale, vers la gauche)
+        % cos(30\si{\degree})=0.866, sin(30\si{\degree})=0.5
         \draw[->, very thick, blue] (0,0) -- ({-1.5*cos(30)},{1.5*sin(30)}) node[above left] {$\vect{T}_1$};
         \draw[dashed, gray] (0,0) -- (-1.5,0);
         \draw (-0.5,0) arc (180:150:0.5);
-        \node at (-0.75,0.25) {\small $30°$};
+        \node at (-0.75,0.25) {\small $30\si{\degree}$};
         
-        % Tension T2 (45° au-dessus de l'horizontale, vers la droite)
-        % cos(45°)=0.707, sin(45°)=0.707
+        % Tension T2 (45\si{\degree} au-dessus de l'horizontale, vers la droite)
+        % cos(45\si{\degree})=0.707, sin(45\si{\degree})=0.707
         \draw[->, very thick, blue] (0,0) -- ({1.3*cos(45)},{1.3*sin(45)}) node[above right] {$\vect{T}_2$};
         \draw (0.5,0) arc (0:45:0.5);
-        \node at (0.7,0.3) {\small $45°$};
+        \node at (0.7,0.3) {\small $45\si{\degree}$};
         
         \node[below] at (0,-2.2) {\textit{Diagramme de corps libre}};
     \end{scope}
@@ -90,8 +90,8 @@ Un moteur diesel auxiliaire de masse $m = 200$~kg est suspendu dans la salle des
 Forces sur le moteur :
 \begin{itemize}
     \item Poids : $F_g = mg = 200 \times 9{,}81 = 1962$~N (vers le bas)
-    \item Tension $T_1$ : inconnue (vers le haut-gauche, à 30° de l'horizontale)
-    \item Tension $T_2$ : inconnue (vers le haut-droite, à 45° de l'horizontale)
+    \item Tension $T_1$ : inconnue (vers le haut-gauche, à 30\si{\degree} de l'horizontale)
+    \item Tension $T_2$ : inconnue (vers le haut-droite, à 45\si{\degree} de l'horizontale)
 \end{itemize}
 
 \textbf{\underline{Étape 2 — AXES}}
@@ -106,27 +106,27 @@ Le moteur est en équilibre : $\sum F_x = 0$ et $\sum F_y = 0$.
 
 Décomposition des tensions :
 \begin{align*}
-    T_{1x} &= -T_1\cos 30° & T_{1y} &= T_1\sin 30° \\
-    T_{2x} &= T_2\cos 45° & T_{2y} &= T_2\sin 45°
+    T_{1x} &= -T_1\cos 30\si{\degree} & T_{1y} &= T_1\sin 30\si{\degree} \\
+    T_{2x} &= T_2\cos 45\si{\degree} & T_{2y} &= T_2\sin 45\si{\degree}
 \end{align*}
 
 Selon $x$ :
 \begin{equation}
-    -T_1\cos 30° + T_2\cos 45° = 0 \tag{1}
+    -T_1\cos 30\si{\degree} + T_2\cos 45\si{\degree} = 0 \tag{1}
 \end{equation}
 
 Selon $y$ :
 \begin{equation}
-    T_1\sin 30° + T_2\sin 45° - mg = 0 \tag{2}
+    T_1\sin 30\si{\degree} + T_2\sin 45\si{\degree} - mg = 0 \tag{2}
 \end{equation}
 
 \textbf{\underline{Étape 4 — ALGÈBRE}}
 
 De l'équation (1) :
-\[ T_2 = T_1 \frac{\cos 30°}{\cos 45°} = T_1 \times \frac{0{,}866}{0{,}707} = 1{,}225 \, T_1 \]
+\[ T_2 = T_1 \frac{\cos 30\si{\degree}}{\cos 45\si{\degree}} = T_1 \times \frac{0{,}866}{0{,}707} = 1{,}225 \, T_1 \]
 
 Substituons dans l'équation (2) :
-\[ T_1\sin 30° + 1{,}225 \, T_1 \sin 45° = mg \]
+\[ T_1\sin 30\si{\degree} + 1{,}225 \, T_1 \sin 45\si{\degree} = mg \]
 \[ T_1 (0{,}5 + 1{,}225 \times 0{,}707) = 1962 \]
 \[ T_1 \times 1{,}366 = 1962 \]
 
@@ -134,14 +134,14 @@ Substituons dans l'équation (2) :
 
 \[ \boxed{T_2 = 1{,}225 \times 1436 = 1760~\text{N}} \]
 
-\textbf{Vérification :} $T_2 > T_1$ car le câble de droite est plus vertical (45° > 30°), il supporte donc une plus grande partie du poids. 
+\textbf{Vérification :} $T_2 > T_1$ car le câble de droite est plus vertical (45\si{\degree} > 30\si{\degree}), il supporte donc une plus grande partie du poids. 
 
 Vérifions $\sum F_y$ : $1436 \times 0{,}5 + 1760 \times 0{,}707 = 718 + 1244 = 1962$~N $\checkmark$
 
 \end{exemple}
 
 \begin{pratiqueautonome}[title=Pratique autonome 2.3 — Feu de navigation suspendu (Maritime)]
-Un feu de navigation de masse $m = 12$~kg est suspendu entre deux mâts d'un navire par deux câbles. Le câble de bâbord fait un angle de 40° avec l'horizontale, celui de tribord fait un angle de 55° avec l'horizontale.
+Un feu de navigation de masse $m = 12$~kg est suspendu entre deux mâts d'un navire par deux câbles. Le câble de bâbord fait un angle de 40\si{\degree} avec l'horizontale, celui de tribord fait un angle de 55\si{\degree} avec l'horizontale.
 
 \begin{enumerate}
     \item Dessinez le DCL du feu de navigation.
@@ -159,7 +159,7 @@ Un feu de navigation de masse $m = 12$~kg est suspendu entre deux mâts d'un nav
 % -----------------------------------------------------------------------------
 
 \begin{exemple}[title=Statique 2 : Bloc sur plan incliné à l'équilibre]
-Un bloc de masse $m = 15$~kg est posé sur un plan incliné à $\theta = 25°$ par rapport à l'horizontale. Le bloc reste immobile. Le coefficient de frottement statique entre le bloc et le plan est $\mu_s = 0{,}5$.
+Un bloc de masse $m = 15$~kg est posé sur un plan incliné à $\theta = 25\si{\degree}$ par rapport à l'horizontale. Le bloc reste immobile. Le coefficient de frottement statique entre le bloc et le plan est $\mu_s = 0{,}5$.
 
 a) Calculer la force de frottement statique qui maintient le bloc en équilibre.
 
@@ -208,9 +208,9 @@ b) Quel est l'angle maximal avant que le bloc ne commence à glisser?
         
         % Forces
         % Poids VERTICAL vers le bas = dans repère incliné: (+x, -y)
-        % θ=25°: Fg fait angle θ avec l'axe -y
-        % Fg_x = mg·sin(25°) ≈ 0.42·mg (positif, vers bas pente)
-        % Fg_y = -mg·cos(25°) ≈ -0.91·mg (négatif, vers la pente)
+        % θ=25\si{\degree}: Fg fait angle θ avec l'axe -y
+        % Fg_x = mg·sin(25\si{\degree}) ≈ 0.42·mg (positif, vers bas pente)
+        % Fg_y = -mg·cos(25\si{\degree}) ≈ -0.91·mg (négatif, vers la pente)
         \draw[->, very thick, red] (0,0) -- ({1.8*sin(25)},{-1.8*cos(25)}) node[below right] {$\vect{F}_g$};
         
         % Composantes du poids (en pointillés)
@@ -268,11 +268,11 @@ Décomposition du poids :
 \textbf{\underline{Étape 4 — ALGÈBRE}}
 
 \textbf{a) Force de frottement :}
-\[ f_s = mg\sin\theta = 15 \times 9{,}81 \times \sin 25° = 147{,}2 \times 0{,}423 \]
+\[ f_s = mg\sin\theta = 15 \times 9{,}81 \times \sin 25\si{\degree} = 147{,}2 \times 0{,}423 \]
 \[ \boxed{f_s = 62{,}2~\text{N}} \]
 
 Vérifions que le bloc peut rester en équilibre. La normale vaut :
-\[ N = mg\cos\theta = 15 \times 9{,}81 \times \cos 25° = 133{,}4~\text{N} \]
+\[ N = mg\cos\theta = 15 \times 9{,}81 \times \cos 25\si{\degree} = 133{,}4~\text{N} \]
 
 Le frottement statique maximal est :
 \[ f_{s,\max} = \mu_s N = 0{,}5 \times 133{,}4 = 66{,}7~\text{N} \]
@@ -285,14 +285,14 @@ Comme $f_s = 62{,}2~\text{N} < f_{s,\max} = 66{,}7~\text{N}$, le bloc reste bien
 \[ mg\sin\theta_{\max} = \mu_s \cdot mg\cos\theta_{\max} \]
 \[ \tan\theta_{\max} = \mu_s \]
 \[ \theta_{\max} = \arctan(\mu_s) = \arctan(0{,}5) \]
-\[ \boxed{\theta_{\max} = 26{,}6°} \]
+\[ \boxed{\theta_{\max} = 26{,}6\si{\degree}} \]
 
 Au-delà de cet angle, le bloc commencera à glisser.
 
 \end{exemple}
 
 \begin{pratiqueautonome}[title=Pratique autonome 2.4 — Caisse sur rampe de navire (Maritime)]
-Une caisse de marchandise de 80~kg est posée sur une rampe de chargement d'un cargo, inclinée à 22°. Le coefficient de frottement statique est $\mu_s = 0{,}45$.
+Une caisse de marchandise de 80~kg est posée sur une rampe de chargement d'un cargo, inclinée à 22\si{\degree}. Le coefficient de frottement statique est $\mu_s = 0{,}45$.
 
 \begin{enumerate}
     \item La caisse reste-t-elle en équilibre? (Calculez la force de frottement nécessaire vs disponible)
@@ -441,7 +441,7 @@ On est exactement à la limite : $f_s = f_{s,\max}$ $\checkmark$
 \end{exemple}
 
 \begin{pratiqueautonome}[title=Pratique autonome 2.5 — Système de déchargement portuaire (Maritime)]
-Sur un quai, une caisse A de masse $m_A = 80$~kg est posée sur une rampe inclinée à 30° (sans frottement). Elle est reliée par un câble passant par une poulie à un contrepoids B suspendu au-dessus de l'eau.
+Sur un quai, une caisse A de masse $m_A = 80$~kg est posée sur une rampe inclinée à 30\si{\degree} (sans frottement). Elle est reliée par un câble passant par une poulie à un contrepoids B suspendu au-dessus de l'eau.
 
 \begin{enumerate}
     \item Dessinez les DCL de la caisse A et du contrepoids B.
@@ -451,7 +451,7 @@ Sur un quai, une caisse A de masse $m_A = 80$~kg est posée sur une rampe inclin
 \vspace{4cm}
 
 \tcblower
-\textit{Réponse :} $m_B = m_A \sin 30° = 40$~kg
+\textit{Réponse :} $m_B = m_A \sin 30\si{\degree} = 40$~kg
 \end{pratiqueautonome}
 
 % =============================================================================
@@ -666,7 +666,7 @@ Module de l'accélération :
 \[ a = \sqrt{a_x^2 + a_y^2} = \sqrt{0{,}01^2 + 0{,}0075^2} = \sqrt{0{,}000156} = \boxed{0{,}0125~\text{m/s}^2} \]
 
 Direction (angle par rapport à l'est) :
-\[ \theta = \arctan\left(\frac{a_y}{a_x}\right) = \arctan\left(\frac{0{,}0075}{0{,}01}\right) = \arctan(0{,}75) = \boxed{36{,}9°~\text{nord de l'est}} \]
+\[ \theta = \arctan\left(\frac{a_y}{a_x}\right) = \arctan\left(\frac{0{,}0075}{0{,}01}\right) = \arctan(0{,}75) = \boxed{36{,}9\si{\degree}~\text{nord de l'est}} \]
 
 \textbf{Vérification :} On peut aussi calculer via la force résultante :
 \[ F_{\text{rés}} = \sqrt{60^2 + 80^2} = \sqrt{3600 + 6400} = 100~\text{kN} \]
@@ -675,14 +675,14 @@ Direction (angle par rapport à l'est) :
 \end{exemple}
 
 \begin{pratiqueautonome}[title=Pratique autonome 2.7 — Positionnement de bouée (Maritime)]
-Trois câbles tirent sur un anneau au sol pour positionner une bouée de navigation. Le câble 1 exerce une force de 500~N vers le nord. Le câble 2 exerce une force de 400~N à 60° est du nord. Le câble 3 exerce une force de 300~N à 45° ouest du sud.
+Trois câbles tirent sur un anneau au sol pour positionner une bouée de navigation. Le câble 1 exerce une force de 500~N vers le nord. Le câble 2 exerce une force de 400~N à 60\si{\degree} est du nord. Le câble 3 exerce une force de 300~N à 45\si{\degree} ouest du sud.
 
 Déterminez la force résultante (module et direction) agissant sur l'anneau.
 
 \vspace{4cm}
 
 \tcblower
-\textit{Réponse :} $F_{\text{rés}} = 538$~N à $30{,}5°$ est du nord
+\textit{Réponse :} $F_{\text{rés}} = 538$~N à $30{,}5\si{\degree}$ est du nord
 \end{pratiqueautonome}
 
 % -----------------------------------------------------------------------------
@@ -690,7 +690,7 @@ Déterminez la force résultante (module et direction) agissant sur l'anneau.
 % -----------------------------------------------------------------------------
 
 \begin{exemple}[title=Dynamique 3 : Skieur sur une pente]
-Un skieur de masse $m = 75$~kg descend une pente inclinée à $\theta = 20°$ par rapport à l'horizontale. Le coefficient de frottement cinétique entre les skis et la neige est $\mu_c = 0{,}08$. Calculer l'accélération du skieur.
+Un skieur de masse $m = 75$~kg descend une pente inclinée à $\theta = 20\si{\degree}$ par rapport à l'horizontale. Le coefficient de frottement cinétique entre les skis et la neige est $\mu_c = 0{,}08$. Calculer l'accélération du skieur.
 
 \tcblower
 
@@ -747,8 +747,8 @@ Un skieur de masse $m = 75$~kg descend une pente inclinée à $\theta = 20°$ pa
         \draw[gray, dashed] (-0.8,-0.15) -- (2.3,-0.15);
         
         % Poids VERTICAL: dans le repère incliné, il a des composantes (+x, -y)
-        % θ=20°: sin(20°)=0.342, cos(20°)=0.940
-        % Fg = (mg·sin20°, -mg·cos20°) en repère incliné
+        % θ=20\si{\degree}: sin(20\si{\degree})=0.342, cos(20\si{\degree})=0.940
+        % Fg = (mg·sin20\si{\degree}, -mg·cos20\si{\degree}) en repère incliné
         \draw[->, very thick, red] (0,0) -- ({2*sin(20)},{-2*cos(20)}) node[right] {$\vect{F}_g$};
         
         % Composantes du poids (en pointillés)
@@ -804,7 +804,7 @@ Avec $f_c = \mu_c N = \mu_c mg\cos\theta$ :
 
 \textbf{\underline{Étape 4 — ALGÈBRE}}
 
-\[ a_x = 9{,}81 \times (\sin 20° - 0{,}08 \times \cos 20°) \]
+\[ a_x = 9{,}81 \times (\sin 20\si{\degree} - 0{,}08 \times \cos 20\si{\degree}) \]
 \[ a_x = 9{,}81 \times (0{,}342 - 0{,}08 \times 0{,}940) \]
 \[ a_x = 9{,}81 \times (0{,}342 - 0{,}075) \]
 \[ a_x = 9{,}81 \times 0{,}267 \]
@@ -812,7 +812,7 @@ Avec $f_c = \mu_c N = \mu_c mg\cos\theta$ :
 
 \textbf{Vérification :} 
 \begin{itemize}
-    \item Sans frottement ($\mu_c = 0$), on aurait $a = g\sin 20° = 3{,}35$~m/s². Le frottement réduit bien l'accélération.
+    \item Sans frottement ($\mu_c = 0$), on aurait $a = g\sin 20\si{\degree} = 3{,}35$~m/s². Le frottement réduit bien l'accélération.
     \item L'accélération est positive, donc le skieur accélère bien vers le bas.
     \item La formule $a = g(\sin\theta - \mu_c\cos\theta)$ ne dépend pas de la masse! Tous les skieurs accélèrent de la même façon sur cette pente (en négligeant la résistance de l'air).
 \end{itemize}
@@ -820,7 +820,7 @@ Avec $f_c = \mu_c N = \mu_c mg\cos\theta$ :
 \end{exemple}
 
 \begin{pratiqueautonome}[title=Pratique autonome 2.8 — Conteneur sur rampe]
-Un conteneur de 500~kg glisse vers le bas d'une rampe de déchargement inclinée à 15°. Le coefficient de frottement cinétique est $\mu_c = 0{,}12$.
+Un conteneur de 500~kg glisse vers le bas d'une rampe de déchargement inclinée à 15\si{\degree}. Le coefficient de frottement cinétique est $\mu_c = 0{,}12$.
 
 \begin{enumerate}
     \item Calculez l'accélération du conteneur.
@@ -831,7 +831,7 @@ Un conteneur de 500~kg glisse vers le bas d'une rampe de déchargement inclinée
 \vspace{3.5cm}
 
 \tcblower
-\textit{Réponses :} 1) $a = 1{,}40$~m/s² \quad 2) $v = 4{,}10$~m/s \quad 3) $\theta = 6{,}8°$
+\textit{Réponses :} 1) $a = 1{,}40$~m/s² \quad 2) $v = 4{,}10$~m/s \quad 3) $\theta = 6{,}8\si{\degree}$
 \end{pratiqueautonome}
 
 % =============================================================================

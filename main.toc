@@ -1,0 +1,233 @@
+\babel@toc {french}{}\relax 
+\contentsline {chapter}{\numberline {0}Notions fondamentales}{11}{chapter.0}%
+\contentsline {section}{\numberline {0.1}Système international d'unités}{11}{section.0.1}%
+\contentsline {subsection}{\numberline {0.1.1}Pourquoi un système d'unités universel?}{11}{subsection.0.1.1}%
+\contentsline {subsection}{\numberline {0.1.2}Grandeur, valeur et unité}{12}{subsection.0.1.2}%
+\contentsline {subsection}{\numberline {0.1.3}Unités de base du SI}{12}{subsection.0.1.3}%
+\contentsline {subsection}{\numberline {0.1.4}La notation scientifique}{13}{subsection.0.1.4}%
+\contentsline {subsection}{\numberline {0.1.5}Les préfixes SI}{13}{subsection.0.1.5}%
+\contentsline {subsection}{\numberline {0.1.6}Équivalences utiles}{14}{subsection.0.1.6}%
+\contentsline {subsection}{\numberline {0.1.7}Unités dérivées du SI}{15}{subsection.0.1.7}%
+\contentsline {section}{\numberline {0.2}Conversions d'unités}{15}{section.0.2}%
+\contentsline {subsection}{\numberline {0.2.1}Les facteurs de conversion}{15}{subsection.0.2.1}%
+\contentsline {subsection}{\numberline {0.2.2}Conversion d'unités composées}{16}{subsection.0.2.2}%
+\contentsline {subsection}{\numberline {0.2.3}Unités avec exposant}{17}{subsection.0.2.3}%
+\contentsline {section}{\numberline {0.3}Homogénéité des équations}{20}{section.0.3}%
+\contentsline {subsection}{\numberline {0.3.1}Pourquoi vérifier l'homogénéité?}{20}{subsection.0.3.1}%
+\contentsline {subsection}{\numberline {0.3.2}Comment vérifier l'homogénéité}{20}{subsection.0.3.2}%
+\contentsline {section}{\numberline {0.4}Précision et chiffres significatifs}{23}{section.0.4}%
+\contentsline {section}{\numberline {0.5}Trigonométrie}{25}{section.0.5}%
+\contentsline {subsection}{\numberline {0.5.1}Le triangle quelconque}{26}{subsection.0.5.1}%
+\contentsline {subsection}{\numberline {0.5.2}Le triangle rectangle}{26}{subsection.0.5.2}%
+\contentsline {section}{\numberline {0.6}Scalaires et vecteurs}{27}{section.0.6}%
+\contentsline {subsection}{\numberline {0.6.1}Représentation d'un vecteur}{28}{subsection.0.6.1}%
+\contentsline {subsection}{\numberline {0.6.2}Caractéristiques d'un vecteur}{28}{subsection.0.6.2}%
+\contentsline {subsection}{\numberline {0.6.3}Notation module-orientation}{29}{subsection.0.6.3}%
+\contentsline {subsection}{\numberline {0.6.4}Notation en composantes}{29}{subsection.0.6.4}%
+\contentsline {subsection}{\numberline {0.6.5}Opérations sur les vecteurs}{35}{subsection.0.6.5}%
+\contentsline {paragraph}{Méthode géométrique (triangle)}{37}{section*.24}%
+\contentsline {paragraph}{Méthode des composantes (algébrique)}{39}{section*.25}%
+\contentsline {subsection}{\numberline {0.6.6}Vecteurs dans les problèmes en une dimension}{43}{subsection.0.6.6}%
+\contentsline {section}{Compétences}{44}{section*.28}%
+\contentsline {chapter}{\numberline {1}Cinématique}{45}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Introduction : qu'est-ce que la cinématique?}{45}{section.1.1}%
+\contentsline {subsection}{\numberline {1.1.1}Le modèle de la particule}{46}{subsection.1.1.1}%
+\contentsline {section}{\numberline {1.2}Position et déplacement}{47}{section.1.2}%
+\contentsline {subsection}{\numberline {1.2.1}Système de référence}{47}{subsection.1.2.1}%
+\contentsline {subsection}{\numberline {1.2.2}Vecteur position}{48}{subsection.1.2.2}%
+\contentsline {subsection}{\numberline {1.2.3}Cas particulier : mouvement en une dimension}{48}{subsection.1.2.3}%
+\contentsline {subsection}{\numberline {1.2.4}Vecteur déplacement}{49}{subsection.1.2.4}%
+\contentsline {subsection}{\numberline {1.2.5}Déplacement vs distance parcourue}{51}{subsection.1.2.5}%
+\contentsline {section}{\numberline {1.3}La vitesse}{53}{section.1.3}%
+\contentsline {subsection}{\numberline {1.3.1}Importance de la vitesse}{53}{subsection.1.3.1}%
+\contentsline {subsection}{\numberline {1.3.2}Plusieurs d\'efinitions de la vitesse}{54}{subsection.1.3.2}%
+\contentsline {subsection}{\numberline {1.3.3}Vitesse scalaire moyenne}{54}{subsection.1.3.3}%
+\contentsline {subsection}{\numberline {1.3.4}Vitesse moyenne}{55}{subsection.1.3.4}%
+\contentsline {subsection}{\numberline {1.3.5}Pourquoi les deux sont importantes?}{56}{subsection.1.3.5}%
+\contentsline {subsection}{\numberline {1.3.6}Vitesse instantan\'ee}{58}{subsection.1.3.6}%
+\contentsline {subsection}{\numberline {1.3.7}Vitesse surface et vitesse fond}{59}{subsection.1.3.7}%
+\contentsline {section}{\numberline {1.4}Acc\'el\'eration}{61}{section.1.4}%
+\contentsline {subsection}{\numberline {1.4.1}Introduction : la vitesse peut varier}{61}{subsection.1.4.1}%
+\contentsline {subsection}{\numberline {1.4.2}Le signe de l'acc\'el\'eration : attention aux pi\`eges!}{61}{subsection.1.4.2}%
+\contentsline {subsection}{\numberline {1.4.3}Acc\'el\'eration moyenne}{63}{subsection.1.4.3}%
+\contentsline {subsection}{\numberline {1.4.4}Acc\'el\'eration instantan\'ee}{65}{subsection.1.4.4}%
+\contentsline {subsection}{\numberline {1.4.5}Interpr\'etation graphique de l'acc\'el\'eration}{65}{subsection.1.4.5}%
+\contentsline {section}{\numberline {1.5}Description graphique du mouvement}{66}{section.1.5}%
+\contentsline {subsection}{\numberline {1.5.1}Le graphique position-temps}{67}{subsection.1.5.1}%
+\contentsline {subsection}{\numberline {1.5.2}Calcul de la vitesse moyenne à partir du graphique}{68}{subsection.1.5.2}%
+\contentsline {subsection}{\numberline {1.5.3}Interprétation de la forme de la courbe}{69}{subsection.1.5.3}%
+\contentsline {subsection}{\numberline {1.5.4}Le graphique vitesse-temps}{71}{subsection.1.5.4}%
+\contentsline {subsection}{\numberline {1.5.5}L'aire sous la courbe}{72}{subsection.1.5.5}%
+\contentsline {subsubsection}{Aire sous la courbe $v(t)$ : le d\'eplacement}{73}{section*.30}%
+\contentsline {subsubsection}{Aire sous la courbe $a(t)$ : la variation de vitesse}{75}{section*.31}%
+\contentsline {subsection}{\numberline {1.5.6}R\'esum\'e : pente et aire}{76}{subsection.1.5.6}%
+\contentsline {section}{\numberline {1.6}Description math\'ematique du mouvement}{77}{section.1.6}%
+\contentsline {subsection}{\numberline {1.6.1}Introduction : la puissance des \'equations}{77}{subsection.1.6.1}%
+\contentsline {subsection}{\numberline {1.6.2}Mouvement Rectiligne Uniforme (MRU)}{77}{subsection.1.6.2}%
+\contentsline {subsubsection}{D\'erivation de l'\'equation du MRU}{78}{section*.32}%
+\contentsline {subsection}{\numberline {1.6.3}Mouvement Rectiligne Uniform\'ement Acc\'el\'er\'e (MRUA)}{79}{subsection.1.6.3}%
+\contentsline {subsubsection}{D\'erivation des \'equations du MRUA}{80}{section*.33}%
+\contentsline {subsubsection}{Tableau r\'ecapitulatif}{82}{section*.34}%
+\contentsline {subsection}{\numberline {1.6.4}Applications du MRUA}{83}{subsection.1.6.4}%
+\contentsline {section}{\numberline {1.7}Corps en chute libre}{89}{section.1.7}%
+\contentsline {subsection}{\numberline {1.7.1}D\'efinition et hypoth\`eses}{89}{subsection.1.7.1}%
+\contentsline {subsection}{\numberline {1.7.2}L'acc\'el\'eration gravitationnelle}{90}{subsection.1.7.2}%
+\contentsline {subsection}{\numberline {1.7.3}Convention de signes}{90}{subsection.1.7.3}%
+\contentsline {subsection}{\numberline {1.7.4}Équations de la chute libre}{91}{subsection.1.7.4}%
+\contentsline {subsection}{\numberline {1.7.5}Cas particuliers}{91}{subsection.1.7.5}%
+\contentsline {subsubsection}{Objet lâché (sans vitesse initiale)}{91}{section*.35}%
+\contentsline {subsubsection}{Objet lancé vers le haut}{93}{section*.36}%
+\contentsline {subsection}{\numberline {1.7.6}Application maritime : homme à la mer}{94}{subsection.1.7.6}%
+\contentsline {section}{\numberline {1.8}Mouvement en deux dimensions}{95}{section.1.8}%
+\contentsline {subsection}{\numberline {1.8.1}Le principe de d\'ecomposition}{96}{subsection.1.8.1}%
+\contentsline {subsection}{\numberline {1.8.2}D\'ecomposition d'un vecteur}{97}{subsection.1.8.2}%
+\contentsline {subsection}{\numberline {1.8.3}Exemple : navigation d'un navire}{98}{subsection.1.8.3}%
+\contentsline {subsection}{\numberline {1.8.4}Application au projectile}{98}{subsection.1.8.4}%
+\contentsline {section}{\numberline {1.9}Mouvement d'un projectile}{99}{section.1.9}%
+\contentsline {subsection}{\numberline {1.9.1}Strat\'egie de r\'esolution}{100}{subsection.1.9.1}%
+\contentsline {subsection}{\numberline {1.9.2}Décomposition de la vitesse initiale}{101}{subsection.1.9.2}%
+\contentsline {subsection}{\numberline {1.9.3}Équations du mouvement}{102}{subsection.1.9.3}%
+\contentsline {subsection}{\numberline {1.9.4}Caract\'eristiques de la trajectoire}{102}{subsection.1.9.4}%
+\contentsline {subsubsection}{Port\'ee horizontale}{103}{section*.38}%
+\contentsline {subsubsection}{Hauteur maximale}{103}{section*.39}%
+\contentsline {subsubsection}{Temps de vol}{103}{section*.40}%
+\contentsline {subsection}{\numberline {1.9.5}Exemples}{104}{subsection.1.9.5}%
+\contentsline {subsection}{\numberline {1.9.6}Projectile lanc\'e horizontalement}{109}{subsection.1.9.6}%
+\contentsline {subsection}{\numberline {1.9.7}Résumé : stratégie de résolution}{110}{subsection.1.9.7}%
+\contentsline {section}{\numberline {1.10}Cinématique de rotation}{110}{section.1.10}%
+\contentsline {subsection}{\numberline {1.10.1}Position angulaire et déplacement angulaire}{110}{subsection.1.10.1}%
+\contentsline {subsubsection}{Le radian}{111}{section*.41}%
+\contentsline {subsection}{\numberline {1.10.2}Relation entre grandeurs linéaires et angulaires}{112}{subsection.1.10.2}%
+\contentsline {subsection}{\numberline {1.10.3}Vitesse angulaire}{113}{subsection.1.10.3}%
+\contentsline {subsubsection}{Relation entre vitesse linéaire et vitesse angulaire}{113}{section*.42}%
+\contentsline {subsection}{\numberline {1.10.4}Accélération angulaire}{115}{subsection.1.10.4}%
+\contentsline {subsubsection}{Accélération tangentielle}{115}{section*.43}%
+\contentsline {subsection}{\numberline {1.10.5}Équations du mouvement circulaire uniformément accéléré}{116}{subsection.1.10.5}%
+\contentsline {subsection}{\numberline {1.10.6}Analogie translation-rotation}{116}{subsection.1.10.6}%
+\contentsline {subsection}{\numberline {1.10.7}Applications maritimes}{117}{subsection.1.10.7}%
+\contentsline {section}{Compl\'ement : Vitesse relative}{118}{section*.44}%
+\contentsline {section}{Résumé}{120}{section*.45}%
+\contentsline {section}{Compétences}{121}{section*.46}%
+\contentsline {chapter}{\numberline {2}Dynamique et statique}{123}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Les fondements de la dynamique}{123}{section.2.1}%
+\contentsline {subsection}{\numberline {2.1.1}Introduction : pourquoi étudier la dynamique?}{123}{subsection.2.1.1}%
+\contentsline {subsection}{\numberline {2.1.2}D'Aristote à Newton : une révolution de la pensée}{124}{subsection.2.1.2}%
+\contentsline {subsection}{\numberline {2.1.3}L'inertie}{125}{subsection.2.1.3}%
+\contentsline {subsection}{\numberline {2.1.4}La masse : mesure de l'inertie}{127}{subsection.2.1.4}%
+\contentsline {subsection}{\numberline {2.1.5}Les trois lois de Newton}{127}{subsection.2.1.5}%
+\contentsline {subsubsection}{Première loi de Newton (principe d'inertie)}{128}{section*.51}%
+\contentsline {subsubsection}{Deuxième loi de Newton (loi fondamentale)}{128}{section*.52}%
+\contentsline {subsubsection}{Troisième loi de Newton (action-réaction)}{129}{section*.53}%
+\contentsline {subsection}{\numberline {2.1.6}L'équilibre : un cas particulier de la première loi}{131}{subsection.2.1.6}%
+\contentsline {section}{\numberline {2.2}Les forces}{132}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}Le poids et la gravitation}{132}{subsection.2.2.1}%
+\contentsline {subsubsection}{La gravitation universelle}{132}{section*.54}%
+\contentsline {subsubsection}{Le poids : cas particulier près de la Terre}{133}{section*.55}%
+\contentsline {subsection}{\numberline {2.2.2}La force normale}{134}{subsection.2.2.2}%
+\contentsline {subsection}{\numberline {2.2.3}La tension}{135}{subsection.2.2.3}%
+\contentsline {subsection}{\numberline {2.2.4}Le frottement}{136}{subsection.2.2.4}%
+\contentsline {subsubsection}{Le frottement statique}{136}{section*.58}%
+\contentsline {subsubsection}{Le frottement cinétique}{137}{section*.59}%
+\contentsline {subsection}{\numberline {2.2.5}La force centripète}{138}{subsection.2.2.5}%
+\contentsline {subsection}{\numberline {2.2.6}La force de rappel (loi de Hooke)}{140}{subsection.2.2.6}%
+\contentsline {subsection}{\numberline {2.2.7}Tableau récapitulatif des forces}{141}{subsection.2.2.7}%
+\contentsline {section}{\numberline {2.3}Le diagramme de corps libre et l'équilibre}{142}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}Le diagramme de corps libre (DCL)}{142}{subsection.2.3.1}%
+\contentsline {subsubsection}{Les cinq règles d'or du DCL}{142}{section*.62}%
+\contentsline {subsubsection}{Construction d'un DCL : progression guidée}{143}{section*.63}%
+\contentsline {paragraph}{Niveau 1 : Objet au repos sur surface horizontale}{144}{section*.64}%
+\contentsline {paragraph}{Niveau 2 : Objet tiré par une corde}{144}{section*.65}%
+\contentsline {paragraph}{Niveau 3 : Objet sur plan incliné}{145}{section*.66}%
+\contentsline {subsection}{\numberline {2.3.2}L'algorithme de résolution}{145}{subsection.2.3.2}%
+\contentsline {subsubsection}{Conseils pour le choix des axes}{147}{section*.67}%
+\contentsline {subsection}{\numberline {2.3.3}Applications : problèmes d'équilibre (statique)}{147}{subsection.2.3.3}%
+\contentsline {section}{\numberline {2.4}Dynamique : la deuxième loi en action}{151}{section.2.4}%
+\contentsline {subsection}{\numberline {2.4.1}De l'équilibre à l'accélération}{151}{subsection.2.4.1}%
+\contentsline {subsection}{\numberline {2.4.2}Problèmes à une dimension}{152}{subsection.2.4.2}%
+\contentsline {subsubsection}{Une seule force}{152}{section*.70}%
+\contentsline {subsubsection}{Deux forces opposées : introduction du frottement}{153}{section*.71}%
+\contentsline {subsection}{\numberline {2.4.3}Problèmes à deux dimensions}{154}{subsection.2.4.3}%
+\contentsline {subsubsection}{Force appliquée à un angle}{154}{section*.72}%
+\contentsline {subsubsection}{Plan incliné avec mouvement}{155}{section*.73}%
+\contentsline {subsection}{\numberline {2.4.4}Systèmes à plusieurs objets}{157}{subsection.2.4.4}%
+\contentsline {subsubsection}{Objets reliés sur surface horizontale}{157}{section*.74}%
+\contentsline {subsubsection}{La machine d'Atwood}{158}{section*.75}%
+\contentsline {subsubsection}{Poulie avec plan incliné}{159}{section*.78}%
+\contentsline {section}{\numberline {2.5}Dynamique du mouvement circulaire}{161}{section.2.5}%
+\contentsline {subsection}{\numberline {2.5.1}Retour sur l'accélération centripète}{161}{subsection.2.5.1}%
+\contentsline {subsection}{\numberline {2.5.2}La force centripète : cause de l'accélération}{162}{subsection.2.5.2}%
+\contentsline {subsection}{\numberline {2.5.3}La « force centrifuge » : un mirage}{163}{subsection.2.5.3}%
+\contentsline {subsection}{\numberline {2.5.4}Méthode de résolution}{164}{subsection.2.5.4}%
+\contentsline {subsubsection}{Application maritime : cargaison dans un virage}{166}{section*.81}%
+\contentsline {subsubsection}{Câble de grue en rotation}{167}{section*.82}%
+\contentsline {subsection}{\numberline {2.5.5}Résumé : mouvement circulaire}{169}{subsection.2.5.5}%
+\contentsline {section}{\numberline {2.6}Résumé du chapitre}{169}{section.2.6}%
+\contentsline {subsection}{\numberline {2.6.1}Les trois lois de Newton}{169}{subsection.2.6.1}%
+\contentsline {subsection}{\numberline {2.6.2}Catalogue des forces}{170}{subsection.2.6.2}%
+\contentsline {subsection}{\numberline {2.6.3}L'algorithme de résolution}{171}{subsection.2.6.3}%
+\contentsline {subsection}{\numberline {2.6.4}Formules essentielles}{171}{subsection.2.6.4}%
+\contentsline {subsection}{\numberline {2.6.5}Pièges à éviter}{173}{subsection.2.6.5}%
+\contentsline {subsection}{\numberline {2.6.6}Auto-évaluation des compétences}{173}{subsection.2.6.6}%
+\contentsline {subsection}{\numberline {2.6.7}Ce qu'il faut retenir}{174}{subsection.2.6.7}%
+\contentsline {chapter}{\numberline {3}Énergie et travail}{175}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Introduction : qu'est-ce que l'énergie?}{175}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}L'énergie dans le contexte maritime}{175}{subsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.1.2}Les deux formes d'énergie mécanique}{176}{subsection.3.1.2}%
+\contentsline {section}{\numberline {3.2}Le travail}{177}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Définition du travail}{177}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}Interprétation du travail}{178}{subsection.3.2.2}%
+\contentsline {subsection}{\numberline {3.2.3}Cas particuliers importants}{178}{subsection.3.2.3}%
+\contentsline {subsubsection}{Force dans le sens du mouvement ($\theta = 0^\circ $)}{178}{section*.88}%
+\contentsline {subsubsection}{Force perpendiculaire au mouvement ($\theta = 90^\circ $)}{179}{section*.89}%
+\contentsline {subsubsection}{Force opposée au mouvement ($\theta = 180^\circ $)}{179}{section*.90}%
+\contentsline {subsection}{\numberline {3.2.4}Travail effectué par plusieurs forces}{180}{subsection.3.2.4}%
+\contentsline {subsection}{\numberline {3.2.5}Travail effectué par la gravité}{182}{subsection.3.2.5}%
+\contentsline {subsection}{\numberline {3.2.6}Travail effectué par un ressort}{184}{subsection.3.2.6}%
+\contentsline {section}{\numberline {3.3}Théorème de l'énergie cinétique}{184}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}Énoncé du théorème}{185}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.3.2}Démonstration du théorème}{185}{subsection.3.3.2}%
+\contentsline {subsection}{\numberline {3.3.3}Applications du théorème de l'énergie cinétique}{186}{subsection.3.3.3}%
+\contentsline {section}{\numberline {3.4}Énergie potentielle}{189}{section.3.4}%
+\contentsline {subsection}{\numberline {3.4.1}Le concept d'énergie potentielle}{189}{subsection.3.4.1}%
+\contentsline {subsection}{\numberline {3.4.2}Énergie potentielle gravitationnelle}{189}{subsection.3.4.2}%
+\contentsline {subsection}{\numberline {3.4.3}Énergie potentielle élastique}{192}{subsection.3.4.3}%
+\contentsline {subsection}{\numberline {3.4.4}Lien entre travail et énergie potentielle}{194}{subsection.3.4.4}%
+\contentsline {section}{\numberline {3.5}Forces conservatives et non-conservatives}{195}{section.3.5}%
+\contentsline {subsection}{\numberline {3.5.1}Définition et propriétés}{195}{subsection.3.5.1}%
+\contentsline {subsection}{\numberline {3.5.2}Pourquoi cette distinction est-elle importante?}{196}{subsection.3.5.2}%
+\contentsline {section}{\numberline {3.6}Conservation de l'énergie mécanique}{197}{section.3.6}%
+\contentsline {subsection}{\numberline {3.6.1}Énergie mécanique}{197}{subsection.3.6.1}%
+\contentsline {subsection}{\numberline {3.6.2}Principe de conservation}{197}{subsection.3.6.2}%
+\contentsline {subsection}{\numberline {3.6.3}L'algorithme de résolution par méthode énergétique}{198}{subsection.3.6.3}%
+\contentsline {subsection}{\numberline {3.6.4}Applications de la conservation de l'énergie}{200}{subsection.3.6.4}%
+\contentsline {subsection}{\numberline {3.6.5}Conservation de l'énergie avec forces non-conservatives}{203}{subsection.3.6.5}%
+\contentsline {section}{\numberline {3.7}La puissance}{206}{section.3.7}%
+\contentsline {subsection}{\numberline {3.7.1}Définition de la puissance}{206}{subsection.3.7.1}%
+\contentsline {subsection}{\numberline {3.7.2}Puissance instantanée}{206}{subsection.3.7.2}%
+\contentsline {subsection}{\numberline {3.7.3}Applications maritimes de la puissance}{207}{subsection.3.7.3}%
+\contentsline {subsection}{\numberline {3.7.4}Relation entre puissance et énergie}{208}{subsection.3.7.4}%
+\contentsline {section}{\numberline {3.8}Quantité de mouvement et impulsion}{209}{section.3.8}%
+\contentsline {subsection}{\numberline {3.8.1}Introduction : pourquoi une nouvelle grandeur?}{209}{subsection.3.8.1}%
+\contentsline {subsection}{\numberline {3.8.2}Définition de la quantité de mouvement}{210}{subsection.3.8.2}%
+\contentsline {subsection}{\numberline {3.8.3}L'impulsion}{211}{subsection.3.8.3}%
+\contentsline {subsection}{\numberline {3.8.4}Le théorème de l'impulsion et de la quantité de mouvement}{212}{subsection.3.8.4}%
+\contentsline {subsection}{\numberline {3.8.5}Conservation de la quantité de mouvement}{214}{subsection.3.8.5}%
+\contentsline {subsubsection}{Système isolé et forces internes}{215}{section*.91}%
+\contentsline {subsubsection}{Principe de conservation}{215}{section*.92}%
+\contentsline {subsection}{\numberline {3.8.6}Comparaison : énergie vs quantité de mouvement}{218}{subsection.3.8.6}%
+\contentsline {section}{\numberline {3.9}Les collisions}{219}{section.3.9}%
+\contentsline {subsection}{\numberline {3.9.1}Introduction : qu'est-ce qu'une collision?}{219}{subsection.3.9.1}%
+\contentsline {subsection}{\numberline {3.9.2}Classification des collisions}{219}{subsection.3.9.2}%
+\contentsline {subsection}{\numberline {3.9.3}Collision parfaitement inélastique}{220}{subsection.3.9.3}%
+\contentsline {subsection}{\numberline {3.9.4}Collision élastique}{222}{subsection.3.9.4}%
+\contentsline {subsubsection}{Méthode de résolution pour une collision élastique}{223}{section*.93}%
+\contentsline {subsubsection}{Cas particuliers importants}{223}{section*.94}%
+\contentsline {subsection}{\numberline {3.9.5}Collision inélastique}{225}{subsection.3.9.5}%
+\contentsline {subsection}{\numberline {3.9.6}Collisions en deux dimensions}{227}{subsection.3.9.6}%
+\contentsline {subsection}{\numberline {3.9.7}Algorithme de résolution des problèmes de collision}{230}{subsection.3.9.7}%
+\contentsline {section}{\numberline {3.10}Résumé du chapitre}{231}{section.3.10}%
+\contentsline {subsection}{\numberline {3.10.1}Tableau récapitulatif des formules}{231}{subsection.3.10.1}%
+\contentsline {subsection}{\numberline {3.10.2}L'algorithme de résolution}{232}{subsection.3.10.2}%
+\contentsline {subsection}{\numberline {3.10.3}Erreurs fréquentes}{233}{subsection.3.10.3}%
+\contentsline {subsection}{\numberline {3.10.4}Auto-évaluation des compétences}{233}{subsection.3.10.4}%
+\contentsline {subsection}{\numberline {3.10.5}Ce qu'il faut retenir}{235}{subsection.3.10.5}%

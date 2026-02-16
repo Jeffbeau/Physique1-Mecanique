@@ -356,7 +356,7 @@ Hypothèses : On néglige la résistance de l'eau et on traite le bateau comme u
 
 En prenant le creux (point B) comme niveau de référence ($y_B = 0$) :
 \[ 0 + mgh = \frac{1}{2}mv_B^2 + 0 \]
-\[ v_B = \sqrt{2gh} = \sqrt{2 \times 9,8 \times 3} = \SI{7,7}{m/s} \approx \SI{15}{n\oe uds} \]
+\[ v_B = \sqrt{2gh} = \sqrt{2 \times 9,8 \times 3} = \SI{7,7}{m/s} \approx \SI{15}{\knots} \]
 
 Le bateau atteint une vitesse de près de 15 nœuds au bas de la vague!
 \end{exemple}
@@ -375,7 +375,7 @@ Une bille de masse $m = \SI{0,5}{kg}$ est lâchée du repos au sommet d'une glis
 \end{pratiqueautonome}
 
 \begin{exemple}{Pendule simple}{}
-Un pendule de longueur $L = \SI{1,5}{m}$ est écarté de $\theta = 30°$ de la verticale, puis lâché. Quelle est sa vitesse au point le plus bas de sa trajectoire?
+Un pendule de longueur $L = \SI{1,5}{m}$ est écarté de $\theta = 30\si{\degree}$ de la verticale, puis lâché. Quelle est sa vitesse au point le plus bas de sa trajectoire?
 
 \begin{center}
 \begin{tikzpicture}[scale=1]
@@ -417,7 +417,7 @@ Un pendule de longueur $L = \SI{1,5}{m}$ est écarté de $\theta = 30°$ de la v
 
 Par géométrie, la hauteur du point A au-dessus du point B est :
 \[ h = L - L\cos\theta = L(1 - \cos\theta) \]
-\[ h = 1,5 \times (1 - \cos 30°) = 1,5 \times (1 - 0,866) = 1,5 \times 0,134 = \SI{0,201}{m} \]
+\[ h = 1,5 \times (1 - \cos 30\si{\degree}) = 1,5 \times (1 - 0,866) = 1,5 \times 0,134 = \SI{0,201}{m} \]
 
 \textbf{Conservation de l'énergie :}
 \[ E_A = E_B \]
@@ -434,7 +434,7 @@ Un pendule de longueur $L = \SI{2}{m}$ passe par sa position d'équilibre (point
 \end{enumerate}
 
 \espaceresolution[5cm]
-\reponsepratique{a) $h = v^2/(2g) = \SI{0,459}{m}$ \quad b) $\theta = \arccos(1 - h/L) = \arccos(0,770) \approx 39,6°$}
+\reponsepratique{a) $h = v^2/(2g) = \SI{0,459}{m}$ \quad b) $\theta = \arccos(1 - h/L) = \arccos(0,770) \approx 39,6\si{\degree}$}
 \end{pratiqueautonome}
 \subsection{Conservation de l'énergie avec forces non-conservatives}
 
@@ -497,7 +497,7 @@ La force moyenne de résistance de l'eau est d'environ \textbf{\SI{300}{kN}}.
 \end{exemple}
 
 \begin{exemple}{Descente d'une rampe avec frottement}{}
-Une caisse de $m = \SI{50}{kg}$ glisse sur une rampe inclinée à $30°$, parcourant une distance de $d = \SI{4}{m}$ le long de la rampe. Le coefficient de frottement cinétique est $\mu_c = 0,25$. Si la caisse part du repos, quelle est sa vitesse au bas de la rampe?
+Une caisse de $m = \SI{50}{kg}$ glisse sur une rampe inclinée à $30\si{\degree}$, parcourant une distance de $d = \SI{4}{m}$ le long de la rampe. Le coefficient de frottement cinétique est $\mu_c = 0,25$. Si la caisse part du repos, quelle est sa vitesse au bas de la rampe?
 
 \begin{center}
 \begin{tikzpicture}[scale=0.7]
@@ -507,7 +507,7 @@ Une caisse de $m = \SI{50}{kg}$ glisse sur une rampe inclinée à $30°$, parcou
     \draw[thick] (0,0) -- (8,0);
     
     % Angle
-    \draw[thick] (1.5,0) arc (0:30:1.5) node[midway, right] {$30°$};
+    \draw[thick] (1.5,0) arc (0:30:1.5) node[midway, right] {$30\si{\degree}$};
     
     % Caisse position initiale
     \begin{scope}[shift={(5.5,3.2)}, rotate=30]
@@ -532,10 +532,10 @@ Une caisse de $m = \SI{50}{kg}$ glisse sur une rampe inclinée à $30°$, parcou
 \end{center}
 
 \textbf{Calcul de la hauteur :}
-\[ h = d\sin(30°) = 4 \times 0,5 = \SI{2}{m} \]
+\[ h = d\sin(30\si{\degree}) = 4 \times 0,5 = \SI{2}{m} \]
 
 \textbf{Calcul de la force de frottement :}
-\[ N = mg\cos(30°) = 50 \times 9,8 \times 0,866 = \SI{424}{N} \]
+\[ N = mg\cos(30\si{\degree}) = 50 \times 9,8 \times 0,866 = \SI{424}{N} \]
 \[ f = \mu_c N = 0,25 \times 424 = \SI{106}{N} \]
 
 \textbf{Travail du frottement :} (opposé au déplacement)
