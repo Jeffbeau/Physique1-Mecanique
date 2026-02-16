@@ -335,9 +335,6 @@ INPUT C:\Users\jfbeaudo\AppData\Local\Programs\MiKTeX\tex\latex\psnfss\upsy.fd
 INPUT C:\Users\jfbeaudo\AppData\Local\Programs\MiKTeX\tex\latex\psnfss\upsy.fd
 INPUT C:\Users\jfbeaudo\AppData\Local\Programs\MiKTeX\tex\latex\psnfss\upsy.fd
 INPUT C:\Users\jfbeaudo\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\symbol\psyr.tfm
-INPUT .\exercices-seuls.aux
-INPUT .\exercices-seuls.aux
-INPUT exercices-seuls.aux
 OUTPUT exercices-seuls.aux
 INPUT C:\Users\jfbeaudo\AppData\Local\Programs\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
 INPUT C:\Users\jfbeaudo\AppData\Local\Programs\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
@@ -347,14 +344,8 @@ INPUT C:\Users\jfbeaudo\AppData\Local\Programs\MiKTeX\tex\latex\epstopdf-pkg\eps
 INPUT C:\Users\jfbeaudo\AppData\Local\Programs\MiKTeX\tex\latex\00miktex\epstopdf-sys.cfg
 INPUT C:\Users\jfbeaudo\AppData\Local\Programs\MiKTeX\tex\latex\00miktex\epstopdf-sys.cfg
 INPUT C:\Users\jfbeaudo\AppData\Local\Programs\MiKTeX\tex\latex\00miktex\epstopdf-sys.cfg
-INPUT .\exercices-seuls.out
-INPUT .\exercices-seuls.out
-INPUT exercices-seuls.out
-INPUT exercices-seuls.out
-OUTPUT exercices-seuls.pdf
-INPUT .\exercices-seuls.out
-INPUT .\exercices-seuls.out
 OUTPUT exercices-seuls.out
+OUTPUT exercices-seuls.pdf
 INPUT C:\Users\jfbeaudo\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ecrm2488.tfm
 INPUT C:\Users\jfbeaudo\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ecbx2488.tfm
 INPUT C:\Users\jfbeaudo\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ecrm1728.tfm
