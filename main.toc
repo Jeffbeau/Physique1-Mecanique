@@ -160,12 +160,12 @@
 \contentsline {subsection}{\numberline {2.5.4}Méthode de résolution}{164}{subsection.2.5.4}%
 \contentsline {subsubsection}{Application maritime : cargaison dans un virage}{166}{section*.81}%
 \contentsline {subsubsection}{Câble de grue en rotation}{167}{section*.82}%
-\contentsline {subsection}{\numberline {2.5.5}Résumé : mouvement circulaire}{169}{subsection.2.5.5}%
-\contentsline {section}{\numberline {2.6}Résumé du chapitre}{169}{section.2.6}%
-\contentsline {subsection}{\numberline {2.6.1}Les trois lois de Newton}{169}{subsection.2.6.1}%
-\contentsline {subsection}{\numberline {2.6.2}Catalogue des forces}{170}{subsection.2.6.2}%
+\contentsline {subsection}{\numberline {2.5.5}Résumé : mouvement circulaire}{170}{subsection.2.5.5}%
+\contentsline {section}{\numberline {2.6}Résumé du chapitre}{170}{section.2.6}%
+\contentsline {subsection}{\numberline {2.6.1}Les trois lois de Newton}{170}{subsection.2.6.1}%
+\contentsline {subsection}{\numberline {2.6.2}Catalogue des forces}{171}{subsection.2.6.2}%
 \contentsline {subsection}{\numberline {2.6.3}L'algorithme de résolution}{171}{subsection.2.6.3}%
-\contentsline {subsection}{\numberline {2.6.4}Formules essentielles}{171}{subsection.2.6.4}%
+\contentsline {subsection}{\numberline {2.6.4}Formules essentielles}{172}{subsection.2.6.4}%
 \contentsline {subsection}{\numberline {2.6.5}Pièges à éviter}{173}{subsection.2.6.5}%
 \contentsline {subsection}{\numberline {2.6.6}Auto-évaluation des compétences}{173}{subsection.2.6.6}%
 \contentsline {subsection}{\numberline {2.6.7}Ce qu'il faut retenir}{174}{subsection.2.6.7}%

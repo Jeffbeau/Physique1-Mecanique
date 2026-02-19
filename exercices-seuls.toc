@@ -5,5 +5,5 @@
 \contentsline {section}{Exercices}{11}{section*.10}%
 \contentsline {chapter}{\numberline {2}Dynamique et statique}{29}{chapter.2}%
 \contentsline {section}{Exercices}{29}{section*.21}%
-\contentsline {chapter}{\numberline {3}Énergie, travail et quantité de mouvement}{39}{chapter.3}%
-\contentsline {section}{Exercices}{39}{section*.27}%
+\contentsline {chapter}{\numberline {3}Énergie, travail et quantité de mouvement}{41}{chapter.3}%
+\contentsline {section}{Exercices}{41}{section*.27}%

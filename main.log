@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.2.2)  16 FEB 2026 10:21
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.2.2)  16 FEB 2026 14:43
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1674,17 +1674,25 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [162]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 2980) has occurred while \output is active []
 
  [163]
 [164]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [165]
-[166] [167]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [168])
+ [166]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [167]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [168]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [169])
 (chapitres/ch2/sec-resume.tex
 Overfull \hbox (3.05823pt too wide) in paragraph at lines 16--36
  [] 
@@ -1693,12 +1701,9 @@ Overfull \hbox (3.05823pt too wide) in paragraph at lines 16--36
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [169]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
  [170]
 [171]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 1248) has occurred while \output is active []
 
  [172]
 Overfull \hbox (21.28337pt too wide) in paragraph at lines 250--273
@@ -1910,10 +1915,10 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: ED70CD68853F890605E81815D8C32C7C;40453.
  ) 
 Here is how much of TeX's memory you used:
- 40868 strings out of 467871
- 871152 string characters out of 5416925
+ 40890 strings out of 467871
+ 871516 string characters out of 5416925
  1322995 words of memory out of 5000000
- 67998 multiletter control sequences out of 15000+600000
+ 68018 multiletter control sequences out of 15000+600000
  658714 words of font info for 111 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  89i,25n,107p,603b,1497s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1967,9 +1972,9 @@ sy8.pfb><C:/Users/jfbeaudo/AppData/Local/Programs/MiKTeX/fonts/type1/public/ams
 fonts/cm/cmsy9.pfb><C:/Users/jfbeaudo/AppData/Local/Programs/MiKTeX/fonts/type1
 /public/amsfonts/symbols/msam10.pfb><C:/Users/jfbeaudo/AppData/Local/Programs/M
 iKTeX/fonts/type1/urw/zapfding/uzdr.pfb>
-Output written on main.pdf (235 pages, 1537302 bytes).
+Output written on main.pdf (235 pages, 1537794 bytes).
 PDF statistics:
- 3796 PDF objects out of 4296 (max. 8388607)
- 1069 named destinations out of 1200 (max. 500000)
+ 3797 PDF objects out of 4296 (max. 8388607)
+ 1071 named destinations out of 1200 (max. 500000)
  1533 words of extra memory for PDF output out of 10000 (max. 10000000)
 

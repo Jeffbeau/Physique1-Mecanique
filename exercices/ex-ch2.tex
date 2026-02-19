@@ -502,53 +502,121 @@ Ces résultats montrent que, pour les vitesses typiques de navigation, le frotte
 \end{enumerate}
 
 % =============================================================================
-\subsection*{E — Synthèse et intégration}
+% SECTION E — SYNTHÈSE ET INTÉGRATION (version révisée)
 % =============================================================================
+% Changements par rapport à la version précédente :
+%   - Ex 21 : Remplacé. Nouveau scénario de chargement en 4 étapes chaînées
+%             (rampe + statique grue + levage + déplacement sur pont).
+%   - Ex 22 : Remplacé. Scénario de stabilité en mer combinant mouvement
+%             circulaire, gîte (plan incliné) et frottement (sec vs mouillé).
+%   - Ex 23 : Remplacé. Manutention d'un moteur en 3 étapes indépendantes
+%             mais dans un récit cohérent (quai + descente + roulis).
+%   - L'ancien ex 23 (estimation distance de freinage) est déplacé vers
+%     la section C (dynamique) où il est mieux classé (★★, un seul concept).
+% =============================================================================
+
+\subsection*{E — Synthèse et intégration}
+
+\begin{remarque}[title=Ce que signifie « synthèse »]
+Ces exercices combinent \textbf{plusieurs concepts du chapitre} dans un scénario maritime réaliste. Contrairement aux exercices précédents, vous devrez :
+\begin{itemize}
+    \item identifier \textbf{vous-même} quels principes appliquer à chaque étape;
+    \item \textbf{réutiliser} les résultats d'une étape dans les suivantes;
+    \item porter un \textbf{jugement} sur la sécurité d'une situation.
+\end{itemize}
+\end{remarque}
 
 \begin{enumerate}[resume]
 
-% ---- EXERCICE 21 — Manœuvre complète ★★★ ------------------------------------
-\item[$\star\star\star$] \textbf{21. (Maritime — Manœuvre complète)} Le traversier \textit{F.A. Gauthier} ($m = \SI{5000}{tonnes}$) quitte le port de Matane.
+% ---- EXERCICE 21 — Chargement par rampe et grue ★★★ -------------------------
+\item[$\star\star\star$] \textbf{21. (Maritime — Chargement par rampe et grue)} Une caisse de \SI{500}{kg} doit être chargée dans la cale d'un navire. L'opération se déroule en quatre étapes.
 
-\textbf{Phase 1 :} Le navire accélère de 0 à 14 nœuds en 2 minutes.
+\textbf{Étape 1 — Montée de la rampe.} La caisse est tirée \textit{depuis le repos} jusqu'au sommet d'une rampe de \SI{4}{m} inclinée à $30\si{\degree}$ par un câble parallèle à la rampe. Le coefficient de frottement cinétique entre la caisse et la rampe est $\mu_c = 0{,}20$. La caisse doit atteindre le sommet avec une vitesse de \SI{1,5}{m/s}.
 
-\textbf{Phase 2 :} À vitesse constante de 14 nœuds, le navire effectue un virage de rayon \SI{500}{m}.
+\textbf{Étape 2 — Suspension par la grue.} Au sommet, le câble de la rampe est détaché et la grue du navire saisit la caisse. Le câble de la grue fait un angle de $25\si{\degree}$ avec la verticale. Un hauban horizontal empêche la caisse de balancer. La caisse est en équilibre.
 
-\textbf{Phase 3 :} Sur le pont du navire, un véhicule de \SI{2000}{kg} n'est pas arrimé. Le coefficient de frottement statique entre les pneus et le pont est $\mu_s = 0{,}40$.
+\textbf{Étape 3 — Levage.} La grue soulève la caisse \textit{verticalement} avec une accélération de \SI{0,50}{m/s^2}.
 
-\begin{enumerate}[label=\alph*)]
-    \item Calculez la force de poussée des moteurs pendant la phase 1. (Négligez la résistance de l'eau.)
-    \item Calculez la force centripète nécessaire pendant le virage.
-    \item Le véhicule glisse-t-il pendant le virage? Justifiez par un calcul.
-    \item Quelle serait la vitesse maximale du traversier pour que le véhicule ne glisse pas dans un virage de ce rayon?
-\end{enumerate}
-
-\textit{Réponses : a) $F = \SI{300}{kN}$ \quad b) $F_c = \SI{518}{kN}$ \quad c) Force centripète requise sur le véhicule : \SI{207}{N}; frottement statique maximal disponible : \SI{7850}{N}. Non, le véhicule ne glisse pas. \quad d) $v_{\text{max}} = \SI{44,3}{m/s}$ (86 nœuds, bien au-delà des vitesses de navigation).}
-
-% ---- EXERCICE 22 — Opération de chargement ★★★ ------------------------------
-\item[$\star\star\star$] \textbf{22. (Maritime — Opération de chargement)} Une caisse de \SI{2000}{kg} doit être chargée sur un navire.
-
-\textbf{Étape 1 :} La caisse est soulevée par une grue. Le câble fait un angle de $15\si{\degree}$ avec la verticale et une amarre horizontale empêche la caisse de balancer.
-
-\textbf{Étape 2 :} La caisse est déposée sur le pont, puis poussée horizontalement par un chariot élévateur avec une force de \SI{5000}{N}. Le coefficient de frottement cinétique entre la caisse et le pont est $\mu_c = 0{,}20$.
+\textbf{Étape 4 — Déplacement sur le pont.} La caisse est déposée sur le pont du navire. Un chariot élévateur la pousse horizontalement avec une force de \SI{1800}{N}. Le coefficient de frottement cinétique entre la caisse et le pont est $\mu_c = 0{,}25$.
 
 \begin{enumerate}[label=\alph*)]
-    \item Calculez les tensions dans le câble de la grue et dans l'amarre horizontale (étape 1).
-    \item Calculez l'accélération de la caisse sur le pont (étape 2).
-    \item Si la caisse part du repos et est poussée sur une distance de \SI{10}{m}, quelle est sa vitesse finale?
+    \item Calculez l'accélération requise sur la rampe (étape 1), puis la tension dans le câble.
+    \item Calculez la tension dans le câble de la grue et dans le hauban (étape 2).
+    \item Calculez la tension dans le câble de la grue pendant le levage (étape 3). Comparez avec le poids de la caisse.
+    \item Calculez l'accélération de la caisse sur le pont (étape 4) et sa vitesse après \SI{4}{m}.
 \end{enumerate}
 
-\textit{Réponses : a) $T_{\text{câble}} = \SI{20,3}{kN}$; $T_{\text{amarre}} = \SI{5,26}{kN}$ \quad b) $a = \SI{0,538}{m/s^2}$ \quad c) $v = \SI{3,28}{m/s}$}
+\textit{Réponses :}
 
-% ---- EXERCICE 23 — Estimation : distance de freinage ★★ ---------------------
-\item[$\star\star$] \textbf{23. (Maritime — Estimation)} Un porte-conteneurs de \SI{100\,000}{tonnes} navigue à 20 nœuds. La force de freinage maximale (inversion des moteurs et résistance de l'eau) est estimée à \SI{2000}{kN}.
+\textit{a) Cinématique : $a = v_f^2 / (2d) = \SI{0,281}{m/s^2}$. Sur le plan incliné :}
+
+\textit{$T = m(a + g\sin 30\si{\degree} + \mu_c \, g\cos 30\si{\degree}) = \SI{500}{}(0{,}281 + 4{,}905 + 1{,}699) = \SI{3440}{N} \approx \SI{3,44}{kN}$}
+
+\textit{b) $T_{\text{câble}} = mg / \cos 25\si{\degree} = \SI{5,41}{kN}$ \quad $T_{\text{hauban}} = T_{\text{câble}} \sin 25\si{\degree} = \SI{2,29}{kN}$}
+
+\textit{c) $T = m(g + a) = \SI{500}{}(9{,}81 + 0{,}50) = \SI{5160}{N} \approx \SI{5,16}{kN}$. C'est $105\%$ du poids : le câble doit supporter plus que le poids de la caisse pour l'accélérer vers le haut.}
+
+\textit{d) $f_c = \mu_c \, mg = \SI{1230}{N}$; \quad $F_{\text{net}} = 1800 - 1230 = \SI{574}{N}$; \quad $a = \SI{1,15}{m/s^2}$; \quad $v = \sqrt{2 \times 1{,}15 \times 4} = \SI{3,03}{m/s}$}
+
+\bigskip
+
+% ---- EXERCICE 22 — Stabilité de la cargaison en mer ★★★ ---------------------
+\item[$\star\star\star$] \textbf{22. (Maritime — Stabilité de la cargaison en mer)} Un conteneur de \SI{10\,000}{kg} est posé sur le pont d'un vraquier.
+
+\textbf{Situation 1 — Virage en eau calme.} Le navire effectue un virage de rayon \SI{500}{m} à une vitesse de 12 nœuds. Le coefficient de frottement statique entre le conteneur et le pont est $\mu_s = 0{,}40$.
+
+\textbf{Situation 2 — Tempête.} Le navire est frappé par une vague et gîte (s'incline) de $15\si{\degree}$. Le pont devient un plan incliné.
+
+\textbf{Situation 3 — Pont mouillé.} De l'eau de mer inonde le pont pendant la tempête. Le coefficient de frottement statique chute à $\mu_s = 0{,}20$ et le coefficient de frottement cinétique est $\mu_c = 0{,}12$.
 
 \begin{enumerate}[label=\alph*)]
-    \item Estimez la distance de freinage.
-    \item Estimez le temps d'arrêt.
-    \item Comparez avec une automobile de \SI{1500}{kg} roulant à \SI{100}{km/h} et freinant avec une force de \SI{10\,000}{N}. Commentez les implications pour la navigation maritime.
+    \item Calculez l'accélération centripète du navire en virage (situation 1). Le conteneur risque-t-il de glisser? Justifiez par un calcul.
+    \item Tracez le DCL du conteneur sur le pont incliné à $15\si{\degree}$ (situation 2). Calculez le coefficient de frottement statique \textbf{minimum} requis pour que le conteneur ne glisse pas.
+    \item Avec le pont mouillé (situation 3), le conteneur glisse-t-il? Si oui, calculez son accélération et sa vitesse après avoir glissé de \SI{2}{m}.
+    \item Quel est l'angle de gîte maximal sécuritaire avec un pont mouillé ($\mu_s = 0{,}20$)?
 \end{enumerate}
 
-\textit{Réponses : a) $d \approx \SI{2,6}{km}$ \quad b) $t \approx $ 8~min~34~s \quad c) Pour l'automobile : $d \approx \SI{58}{m}$, $t \approx \SI{4}{s}$. La distance de freinage du navire est environ 46 fois plus grande. Cela explique pourquoi les règles d'anticollision en mer exigent des manœuvres préventives bien à l'avance et pourquoi la veille maritime est si importante.}
+\textit{Réponses :}
+
+\textit{a) $v = 12 \times 0{,}514 = \SI{6,17}{m/s}$; \quad $a_c = v^2/R = \SI{0,0761}{m/s^2}$. Force centripète sur le conteneur : $F_c = \SI{761}{N}$. Frottement maximal : $f_{s,\text{max}} = \mu_s \, mg = \SI{39\,200}{N}$. Le conteneur ne risque absolument pas de glisser en virage (facteur de sécurité $\approx 52$).}
+
+\textit{b) $\mu_{s,\text{min}} = \tan 15\si{\degree} = 0{,}268$. Avec un pont sec ($\mu_s = 0{,}40$), le conteneur tient.}
+
+\textit{c) Pont mouillé : $\mu_s = 0{,}20 < 0{,}268$ $\Rightarrow$ \textbf{le conteneur glisse!}}
+
+\textit{$a = g(\sin 15\si{\degree} - \mu_c \cos 15\si{\degree}) = 9{,}81(0{,}259 - 0{,}116) = \SI{1,40}{m/s^2}$}
+
+\textit{$v = \sqrt{2 \times 1{,}40 \times 2} = \SI{2,37}{m/s}$ (\SI{8,5}{km/h}) — un conteneur de 10 tonnes en mouvement est extrêmement dangereux.}
+
+\textit{d) $\theta_{\text{max}} = \arctan(\mu_s) = \arctan(0{,}20) = 11{,}3\si{\degree}$}
+
+\begin{remarque}[title=Pertinence maritime]
+Ce problème illustre pourquoi l'arrimage de la cargaison est l'une des responsabilités les plus critiques de l'officier de navigation. Le vrai danger ne vient pas des virages (les accélérations centripètes sont négligeables aux vitesses de navigation), mais de la gîte causée par les vagues et le vent. Un pont mouillé ou glacé réduit drastiquement les marges de sécurité. Des conteneurs mal arrimés qui glissent en tempête ont causé de nombreux accidents maritimes.
+\end{remarque}
+
+\bigskip
+
+% ---- EXERCICE 23 — Manutention d'un moteur ★★★ ------------------------------
+\item[$\star\star\star$] \textbf{23. (Maritime — Manutention d'un moteur)} Un moteur diesel de \SI{600}{kg} doit être installé dans la salle des machines d'un navire. L'opération se déroule en trois étapes.
+
+\textbf{Étape 1 — Transport sur le quai.} Le moteur est posé sur un chariot à roues (frottement de roulement négligeable). Un débardeur pousse le chariot horizontalement avec une force de \SI{200}{N}. Simultanément, un câble attaché au treuil du navire tire le chariot avec une tension de \SI{800}{N} à un angle de $35\si{\degree}$ au-dessus de l'horizontale.
+
+\textbf{Étape 2 — Descente dans la salle des machines.} Le moteur est détaché du chariot et suspendu à une corde qui passe par une poulie. L'opérateur doit le descendre de \SI{3}{m}. La corde a une résistance maximale de \SI{7000}{N}.
+
+\textbf{Étape 3 — Roulis du navire.} Une fois posé sur une étagère de la salle des machines, le navire subit du roulis et l'étagère s'incline momentanément de $10\si{\degree}$. Le coefficient de frottement statique entre le moteur et l'étagère est $\mu_s = 0{,}15$ et le coefficient cinétique est $\mu_c = 0{,}10$.
+
+\begin{enumerate}[label=\alph*)]
+    \item Calculez l'accélération du chariot sur le quai (étape 1). N'oubliez pas de considérer la composante verticale du câble.
+    \item Le moteur descend dans la salle des machines. Quelle est la décélération maximale que l'opérateur peut appliquer sans que la corde casse (étape 2)? À quelle vitesse maximale peut-il amorcer la descente s'il doit s'arrêter en \SI{3}{m}?
+    \item Lors du roulis (étape 3), le moteur glisse-t-il? Si oui, calculez son accélération et sa vitesse après avoir glissé de \SI{1,5}{m}. Quel serait l'angle de roulis maximal sécuritaire?
+\end{enumerate}
+
+\textit{Réponses :}
+
+\textit{a) Horizontale : $F_x = 200 + 800 \cos 35\si{\degree} = \SI{855}{N}$. Verticale : la composante $T \sin 35\si{\degree} = \SI{459}{N}$ allège le chariot mais celui-ci reste au sol ($N = mg - T\sin 35\si{\degree} = \SI{5430}{N} > 0$). \quad $a = F_x / m = 855/600 = \SI{1,43}{m/s^2}$}
+
+\textit{b) Descente avec freinage : $T - mg = ma$ (en prenant vers le haut comme positif). \quad $a_{\text{max}} = T_{\text{max}}/m - g = 7000/600 - 9{,}81 = \SI{1,86}{m/s^2}$. \quad Vitesse initiale max : $v = \sqrt{2 \times 1{,}86 \times 3} = \SI{3,34}{m/s}$}
+
+\textit{c) $\tan 10\si{\degree} = 0{,}176 > \mu_s = 0{,}15$ $\Rightarrow$ \textbf{le moteur glisse!} \quad $a = g(\sin 10\si{\degree} - \mu_c \cos 10\si{\degree}) = \SI{0,737}{m/s^2}$. \quad Après \SI{1,5}{m} : $v = \SI{1,49}{m/s}$ (\SI{5,4}{km/h}). \quad Angle maximal sécuritaire : $\theta_{\text{max}} = \arctan(0{,}15) = 8{,}5\si{\degree}$.}
 
 \end{enumerate}

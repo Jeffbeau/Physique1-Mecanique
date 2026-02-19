@@ -91,76 +91,82 @@ Lune autour de la Terre & Attraction gravitationnelle \\
 \end{attention}
 
 \begin{center}
-\begin{tikzpicture}[scale=1.0]
+\begin{tikzpicture}[scale=1.1]
     % Titre
-    \node[font=\bfseries] at (0, 3.5) {Trois situations, même principe};
+    \node[font=\bfseries] at (0, 3.8) {Trois situations, même principe};
     
     % Situation 1 : Balle sur ficelle
-    \begin{scope}[xshift=-4cm]
+    \begin{scope}[xshift=-4.5cm]
         % Trajectoire
         \draw[dashed, gray] (0, 0) circle (1.5);
         \fill (0, 0) circle (2pt);
         
-        % Ficelle et balle
+        % Ficelle et balle (position à 45°)
         \draw[thick, brown] (0, 0) -- (1.06, 1.06);
         \shade[ball color=blue!50] (1.06, 1.06) circle (0.15);
         
         % Tension (vers le centre)
         \draw[-{Stealth[length=3mm]}, very thick, orange] (1.06, 1.06) -- (0.35, 0.35);
-        \node[orange, below left] at (0.6, 0.6) {$\vec{T}$};
+        \node[orange, below right] at (0.5, 0.5) {$\vec{T}$};
         
-        % Vitesse (tangente)
+        % Vitesse (tangente, perpendiculaire à la ficelle)
         \draw[-{Stealth[length=2.5mm]}, thick, purple] (1.06, 1.06) -- (0.36, 1.76);
-        \node[purple, above] at (0.6, 1.5) {$\vec{v}$};
+        \node[purple, left] at (0.3, 1.7) {$\vec{v}$};
         
         \node[below, text width=2.5cm, align=center] at (0, -2) {\small Balle sur ficelle \\ $F_c = T$};
     \end{scope}
     
     % Situation 2 : Voiture dans virage
     \begin{scope}[xshift=0cm]
-        % Route (arc)
-        \draw[thick, gray, fill=gray!20] (-1.8, -0.3) arc (180:90:1.8) -- (0.3, 1.5) arc (90:180:2.1) -- cycle;
+        % Trajectoire circulaire (même style que les autres)
+        \draw[dashed, gray] (0, 0) circle (1.5);
         
         % Centre du virage
         \fill (0, 0) circle (2pt);
-        \node[below] at (0, -0.2) {\tiny centre};
+        \node[below] at (0, -0.2) {\scriptsize centre};
         
-        % Voiture (rectangle)
-        \begin{scope}[rotate=135, shift={(1.5, 0)}]
-            \draw[thick, fill=blue!30, rounded corners=1pt] (-0.2, -0.1) rectangle (0.2, 0.1);
+        % Voiture (rectangle plus grand, à 135°)
+        \begin{scope}[shift={(-1.06, 1.06)}, rotate=-45]
+            \draw[thick, fill=blue!30, rounded corners=2pt] (-0.3, -0.15) rectangle (0.3, 0.15);
+            % Roues
+            \fill[gray!70] (-0.25, -0.18) rectangle (-0.15, -0.12);
+            \fill[gray!70] (0.15, -0.18) rectangle (0.25, -0.12);
+            \fill[gray!70] (-0.25, 0.12) rectangle (-0.15, 0.18);
+            \fill[gray!70] (0.15, 0.12) rectangle (0.25, 0.18);
         \end{scope}
         
         % Frottement (vers le centre)
         \draw[-{Stealth[length=3mm]}, very thick, green!60!black] (-1.06, 1.06) -- (-0.35, 0.35);
-        \node[green!60!black, above right] at (-0.6, 0.6) {$\vec{f}$};
+        \node[green!60!black, right] at (-0.3, 0.7) {$\vec{f}$};
         
-        % Vitesse
+        % Vitesse (tangente)
         \draw[-{Stealth[length=2.5mm]}, thick, purple] (-1.06, 1.06) -- (-1.76, 0.36);
-        \node[purple, left] at (-1.5, 0.6) {$\vec{v}$};
+        \node[purple, below left] at (-1.6, 0.5) {$\vec{v}$};
         
         \node[below, text width=2.5cm, align=center] at (0, -2) {\small Voiture en virage \\ $F_c = f$};
     \end{scope}
     
     % Situation 3 : Satellite
-    \begin{scope}[xshift=4cm]
+    \begin{scope}[xshift=4.5cm]
         % Terre
         \shade[ball color=blue!40] (0, 0) circle (0.5);
+        \node[font=\tiny, white] at (0, 0) {Terre};
         
         % Orbite
         \draw[dashed, gray] (0, 0) circle (1.5);
         
-        % Satellite
-        \draw[thick, fill=gray!50] (0, 1.4) rectangle (0.3, 1.6);
-        \draw[thick, fill=blue!30] (-0.3, 1.45) rectangle (0, 1.55);
-        \draw[thick, fill=blue!30] (0.3, 1.45) rectangle (0.6, 1.55);
+        % Satellite (plus grand et reconnaissable)
+        \draw[thick, fill=gray!50] (-0.1, 1.35) rectangle (0.4, 1.65); % corps
+        \draw[thick, fill=blue!30] (-0.45, 1.42) rectangle (-0.1, 1.58); % panneau gauche
+        \draw[thick, fill=blue!30] (0.4, 1.42) rectangle (0.75, 1.58); % panneau droit
         
         % Gravité (vers le centre)
         \draw[-{Stealth[length=3mm]}, very thick, red] (0.15, 1.5) -- (0.15, 0.7);
-        \node[red, right] at (0.2, 1.1) {$\vec{F}_g$};
+        \node[red, left] at (0.1, 1.0) {$\vec{F}_g$};
         
         % Vitesse
-        \draw[-{Stealth[length=2.5mm]}, thick, purple] (0.15, 1.5) -- (0.85, 1.5);
-        \node[purple, above] at (0.5, 1.6) {$\vec{v}$};
+        \draw[-{Stealth[length=2.5mm]}, thick, purple] (0.15, 1.5) -- (0.95, 1.5);
+        \node[purple, above] at (0.6, 1.55) {$\vec{v}$};
         
         \node[below, text width=2.5cm, align=center] at (0, -2) {\small Satellite en orbite \\ $F_c = F_g$};
     \end{scope}
@@ -234,40 +240,40 @@ Si la voiture va trop vite, le frottement nécessaire dépasse le frottement max
 \textbf{\underline{DCL (vue de derrière la voiture)}}
 
 \begin{center}
-\begin{tikzpicture}[scale=0.9]
+\begin{tikzpicture}[scale=1.3]
     % Route
     \fill[gray!30] (-2.5, 0) rectangle (2.5, -0.2);
     \draw[thick] (-2.5, 0) -- (2.5, 0);
     
     % Voiture (vue de derrière, simplifiée)
-    \draw[thick, fill=blue!20, rounded corners=2pt] (-0.8, 0) rectangle (0.8, 0.8);
-    \draw[thick, fill=gray!50] (-0.7, -0.05) rectangle (-0.4, 0.15); % roue gauche
-    \draw[thick, fill=gray!50] (0.4, -0.05) rectangle (0.7, 0.15); % roue droite
+    \draw[thick, fill=blue!20, rounded corners=2pt] (-0.8, 0.05) rectangle (0.8, 0.85);
+    \draw[thick, fill=gray!50] (-0.75, -0.05) rectangle (-0.45, 0.1); % roue gauche
+    \draw[thick, fill=gray!50] (0.45, -0.05) rectangle (0.75, 0.1); % roue droite
     
     % Centre de masse
-    \fill[blue!50] (0, 0.4) circle (3pt);
+    \fill[blue!50] (0, 0.45) circle (3pt);
     
     % Forces
-    % Poids
-    \draw[-{Stealth[length=3mm]}, very thick, red] (0, 0.4) -- (0, -0.8);
-    \node[red, right] at (0.1, -0.2) {$\vec{F}_g$};
+    % Poids (vers le bas)
+    \draw[-{Stealth[length=3mm]}, very thick, red] (0, 0.45) -- (0, -0.9);
+    \node[red, left] at (-0.1, -0.3) {$\vec{F}_g$};
     
-    % Normale
-    \draw[-{Stealth[length=3mm]}, very thick, green!60!black] (0, 0.4) -- (0, 1.6);
-    \node[green!60!black, right] at (0.1, 1.0) {$\vec{N}$};
+    % Normale (vers le haut)
+    \draw[-{Stealth[length=3mm]}, very thick, green!60!black] (0, 0.45) -- (0, 1.8);
+    \node[green!60!black, left] at (-0.1, 1.2) {$\vec{N}$};
     
     % Frottement (vers le centre = vers la gauche sur ce schéma)
-    \draw[-{Stealth[length=3mm]}, very thick, orange] (0, 0.4) -- (-1.5, 0.4);
-    \node[orange, above] at (-0.75, 0.5) {$\vec{f}_s$};
+    \draw[-{Stealth[length=3mm]}, very thick, orange] (0, 0.45) -- (-1.8, 0.45);
+    \node[orange, above] at (-1.0, 0.55) {$\vec{f}_s$};
     
     % Indication du centre
-    \draw[dashed] (-2.5, 0.4) -- (-1.8, 0.4);
-    \node[left] at (-2.5, 0.4) {\small Centre du virage};
+    \draw[dashed, gray] (-2.8, 0.45) -- (-2.1, 0.45);
+    \node[left, font=\small] at (-2.8, 0.45) {Centre du virage};
     
-    % Axes
-    \draw[-{Stealth}, thick] (1.5, 0.4) -- (1.5, 1.5) node[right] {$y$};
-    \draw[-{Stealth}, thick] (1.5, 0.4) -- (0.5, 0.4) node[below] {$x$};
-    \node[font=\scriptsize] at (0.8, 0.15) {(vers centre)};
+    % Axes (déplacés à droite, bien séparés)
+    \draw[-{Stealth}, thick] (2.0, 0.45) -- (2.0, 1.5) node[right] {$y$};
+    \draw[-{Stealth}, thick] (2.0, 0.45) -- (1.0, 0.45) node[below right] {$x$};
+    \node[font=\scriptsize, below] at (1.5, 0.3) {(vers centre)};
 \end{tikzpicture}
 \end{center}
 
@@ -317,40 +323,55 @@ Les masses s'annulent (la vitesse maximale ne dépend pas de la masse!) :
 Lorsqu'un navire effectue un virage, une force centripète doit être exercée pour le maintenir sur sa trajectoire circulaire. D'où vient cette force?
 
 \begin{remarque}[title=Origine de la force centripète sur un navire]
-Contrairement à une voiture qui utilise le frottement des pneus, un navire utilise principalement le \textbf{safran} (gouvernail) pour virer :
+Contrairement à une voiture qui utilise le frottement des pneus, un navire vire en \textbf{deux étapes} :
+
+\begin{enumerate}
+    \item Le \textbf{safran} (gouvernail), braqué à l'arrière, crée un \textbf{couple de lacet} qui fait pivoter le navire.
+    \item Ce pivotement donne à la coque un \textbf{angle de dérive} par rapport à l'écoulement. La coque agit alors comme un profil hydrodynamique et génère une \textbf{force latérale vers l'intérieur du virage} : c'est la force centripète.
+\end{enumerate}
 
 \begin{center}
-\begin{tikzpicture}[scale=0.7]
-    % Vue de dessus du navire
-    \draw[thick, fill=gray!20] (-0.5, -2) -- (0.5, -2) -- (0.6, 0) -- (0.3, 1.5) -- (0, 1.8) -- (-0.3, 1.5) -- (-0.6, 0) -- cycle;
-    \node at (0, -0.5) {\small Navire};
+\begin{tikzpicture}[scale=1.0]
+    % Navire pivoté (proue vers tribord = droite, angle de dérive ~ 12°)
+    \begin{scope}[rotate=-12]
+        \draw[thick, fill=gray!20] (-0.5, -2) -- (0.5, -2) -- (0.6, 0) 
+            -- (0.3, 1.5) -- (0, 1.8) -- (-0.3, 1.5) -- (-0.6, 0) -- cycle;
+        \node at (0, -0.5) {\small Navire};
+        
+        % Safran (braqué vers tribord)
+        \draw[very thick, blue!70] (0, -2) -- (0.6, -2.6);
+        \node[blue!70, below right] at (0.5, -2.5) {\small Safran};
+        
+        % Force sur le safran (vers bâbord = gauche = extérieur du virage)
+        \draw[-{Stealth}, thick, orange] (0.3, -2.3) -- (-1.5, -2.3);
+        \node[orange, above] at (-0.8, -2.2) {\small $\vec{F}_{\text{safran}}$};
+    \end{scope}
     
-    % Safran (à l'arrière, incliné)
-    \draw[very thick, blue!70] (0, -2) -- (0.5, -2.5);
-    \node[blue!70, right] at (0.5, -2.3) {\small Safran};
+    % Direction de la trajectoire (verticale = direction du mouvement du CdM)
+    \draw[-{Stealth}, very thick, purple] (0, 2.0) -- (0, 3.8);
+    \node[purple, left] at (-0.15, 3.0) {$\vec{v}$ (trajectoire)};
     
-    % Vitesse du navire (vers l'avant)
-    \draw[-{Stealth}, very thick, purple] (0, 1.8) -- (0, 3);
-    \node[purple, above] at (0, 3) {$\vec{v}$};
+    % Ligne de l'axe du navire (prolongée au-delà de la proue, pour montrer β)
+    \draw[thin, gray, dashed] (0, 2.0) -- ({2.5*sin(12)}, {2.0+2.5*cos(12)});
     
-    % Force de l'eau sur le safran
-    \draw[-{Stealth}, very thick, orange] (0.25, -2.25) -- (1.5, -2.25);
-    \node[orange, right] at (1.5, -2.25) {\small Force de l'eau};
+    % Angle de dérive β (entre trajectoire verticale et axe du navire)
+    \draw[thick, <->] (0, 3.5) arc (90:78:1.5);
+    \node[font=\small, right] at (0.35, 3.5) {$\beta$};
     
-    % Résultante : force centripète sur le navire (vers le centre du virage)
-    \draw[-{Stealth}, very thick, red] (0, 0) -- (2, 0);
-    \node[red, above] at (1.5, 0.1) {$\vec{F}_c$};
+    % Force centripète (force latérale de la coque, vers le centre = vers la droite)
+    \draw[-{Stealth}, very thick, red] (0, 0) -- (3.0, 0);
+    \node[red, above] at (2.2, 0.15) {$\vec{F}_c$ (coque)};
     
     % Centre du virage
-    \node at (4, 0) {$\bullet$};
-    \node[below] at (4, -0.2) {\small Centre};
+    \fill (5.5, 0) circle (3pt);
+    \node[below] at (5.5, -0.2) {\small Centre du virage};
     
     % Trajectoire courbée
-    \draw[dashed, gray] (0, 1.8) arc (90:60:4);
+    \draw[dashed, gray] (0, 2.0) arc (90:40:5.5);
 \end{tikzpicture}
 \end{center}
 
-Quand le safran est braqué, il dévie l'écoulement de l'eau. Par réaction (3\textsuperscript{e} loi de Newton), l'eau exerce une force latérale sur le safran, qui se transmet à tout le navire. Cette force, combinée à la pression latérale de l'eau sur la coque, fournit la force centripète nécessaire au virage.
+Le safran ne fournit donc \textbf{pas} la force centripète : il initie la rotation. C'est la \textbf{coque en dérive}, présentant un angle d'attaque $\beta$ à l'écoulement, qui génère par pression hydrodynamique la force centripète nécessaire au mouvement circulaire.
 \end{remarque}
 
 \begin{exemple}{Cargaison sur le pont d'un navire virant}{navire-virage}
@@ -365,26 +386,29 @@ b) Une caisse de $\SI{200}{kg}$ est posée sur le pont. Le coefficient de frotte
 \textbf{\underline{Schéma de situation}}
 
 \begin{center}
-\begin{tikzpicture}[scale=0.7]
+\begin{tikzpicture}[scale=0.9]
     % Vue de dessus - trajectoire courbe
-    \draw[dashed, gray] (0, 0) arc (180:120:4);
-    \node[gray] at (-0.5, 2) {\small trajectoire};
+    \draw[dashed, gray, thick] (0, 0) arc (180:100:4);
+    \node[gray] at (-0.8, 2) {\small trajectoire};
     
-    % Navire (rectangle simplifié, vu de dessus)
+    % Navire (forme de navire vu de dessus, plus grand)
     \begin{scope}[rotate=30, shift={(2.5, 2)}]
-        \draw[thick, fill=gray!20, rounded corners=2pt] (-0.4, -1) rectangle (0.4, 1);
+        \draw[thick, fill=gray!20, rounded corners=2pt] (-0.5, -1.2) -- (0.5, -1.2) 
+            -- (0.5, 0.6) -- (0.2, 1.1) -- (0, 1.3) -- (-0.2, 1.1) -- (-0.5, 0.6) -- cycle;
         % Caisse sur le pont
-        \draw[thick, fill=blue!30] (-0.15, 0.2) rectangle (0.15, 0.5);
-        \node[font=\tiny] at (0, 0.35) {$m$};
+        \draw[thick, fill=blue!30] (-0.2, 0) rectangle (0.2, 0.4);
+        \node[font=\scriptsize] at (0, 0.2) {$m$};
+        % Direction proue
+        \node[font=\scriptsize, above] at (0, 1.3) {\rotatebox{30}{proue}};
     \end{scope}
     
     % Centre du virage
-    \fill (4, 0) circle (2pt);
-    \node[below] at (4, -0.2) {\small Centre};
+    \fill (4, 0) circle (3pt);
+    \node[below] at (4, -0.3) {\small Centre};
     
     % Rayon
     \draw[thick, <->] (4, 0) -- (2.3, 2.3);
-    \node at (3.5, 1.4) {$r$};
+    \node at (3.5, 1.5) {$r$};
 \end{tikzpicture}
 \end{center}
 
@@ -393,7 +417,7 @@ b) Une caisse de $\SI{200}{kg}$ est posée sur le pont. Le coefficient de frotte
     F_c = m\frac{v^2}{r} = \SI{5e6}{kg} \times \frac{(10)^2}{500} = \SI{5e6}{kg} \times \SI{0{,}2}{m/s^2} = \boxed{\SI{1e6}{N} = \SI{1}{MN}}
 \]
 
-Cette force est fournie par l'action du safran et la pression latérale de l'eau sur la coque.
+Cette force est fournie principalement par la pression latérale de l'eau sur la coque en dérive (voir l'encadré précédent).
 
 \textbf{b) Glissement de la caisse}
 
@@ -435,52 +459,57 @@ Pendant la rotation, la charge décrit un cercle horizontal. La tension dans le 
 \end{itemize}
 
 \begin{center}
-\begin{tikzpicture}[scale=0.9]
+\begin{tikzpicture}[scale=1.0]
     % Axe de rotation (mât de grue)
-    \draw[very thick, gray] (0, 3) -- (0, 0);
-    \fill[gray] (0, 3) circle (3pt);
-    
-    % Câble (à angle theta)
-    \draw[thick, brown] (0, 3) -- (2, 0.5);
+    \draw[very thick, gray] (0, 3.5) -- (0, 0);
+    \fill[gray] (0, 3.5) circle (3pt);
+    \node[gray, above] at (0, 3.6) {\small Mât};
     
     % Verticale de référence
-    \draw[dashed, gray] (0, 3) -- (0, 0.5);
+    \draw[dashed, gray] (0, 3.5) -- (0, 0.5);
     
-    % Angle
-    \draw[thick] (0, 2.2) arc (270:255:0.8);
-    \node at (-0.4, 2.0) {$\theta$};
+    % Câble (à angle theta ~ 25° par rapport à la verticale)
+    \draw[thick, brown] (0, 3.5) -- ({2.5*sin(25)}, {3.5-2.5*cos(25)});
+    
+    % Angle theta (arc entre la verticale et le câble)
+    \draw[thick, ->] (0, 2.5) arc (270:{270+25}:1.0);
+    \node at ({0.6*sin(12)}, 2.2) {$\theta$};
     
     % Charge
-    \draw[thick, fill=blue!30] (1.7, 0.1) rectangle (2.3, 0.5);
-    \node at (2, 0.3) {\small $m$};
+    \draw[thick, fill=blue!30] ({2.5*sin(25)-0.35}, {3.5-2.5*cos(25)-0.35}) 
+        rectangle ({2.5*sin(25)+0.35}, {3.5-2.5*cos(25)+0.05});
+    \node at ({2.5*sin(25)}, {3.5-2.5*cos(25)-0.15}) {\small $m$};
     
-    % DCL (à droite)
-    \begin{scope}[xshift=5cm, yshift=1cm]
+    % DCL (à droite, bien séparé)
+    \begin{scope}[xshift=6cm, yshift=1.5cm]
+        \node[font=\bfseries\small, above] at (0, 2.2) {DCL};
         \fill[blue!50] (0, 0) circle (4pt);
         
-        % Tension
-        \draw[-{Stealth[length=3mm]}, very thick, orange] (0, 0) -- ({-1.5*sin(25)}, {1.5*cos(25)});
-        \node[orange, above left] at (-0.4, 1.2) {$\vec{T}$};
+        % Tension (vers le haut-gauche, le long du câble)
+        \draw[-{Stealth[length=3mm]}, very thick, orange] (0, 0) -- ({-2.0*sin(25)}, {2.0*cos(25)});
+        \node[orange, above left] at ({-1.0*sin(25)}, {1.0*cos(25)+0.3}) {$\vec{T}$};
         
-        % Composantes de T
-        \draw[dashed, orange] ({-1.5*sin(25)}, {1.5*cos(25)}) -- (0, {1.5*cos(25)});
-        \draw[dashed, orange] ({-1.5*sin(25)}, {1.5*cos(25)}) -- ({-1.5*sin(25)}, 0);
-        \node[orange, font=\scriptsize, right] at (0, 0.9) {$T\cos\theta$};
-        \node[orange, font=\scriptsize, below] at (-0.45, 0) {$T\sin\theta$};
+        % Composante verticale de T
+        \draw[dashed, orange, thin] ({-2.0*sin(25)}, {2.0*cos(25)}) -- (0, {2.0*cos(25)});
+        \node[orange, font=\scriptsize, right] at (0.1, {2.0*cos(25)-0.15}) {$T\cos\theta$};
         
-        % Poids
-        \draw[-{Stealth[length=3mm]}, very thick, red] (0, 0) -- (0, -1.2);
-        \node[red, right] at (0.1, -0.6) {$m\vec{g}$};
+        % Composante horizontale de T
+        \draw[dashed, orange, thin] ({-2.0*sin(25)}, {2.0*cos(25)}) -- ({-2.0*sin(25)}, 0);
+        \node[orange, font=\scriptsize, left] at ({-2.0*sin(25)-0.1}, 0.5) {$T\sin\theta$};
         
-        % Axes
-        \draw[-{Stealth}, thick] (1.5, 0) -- (1.5, 1.2) node[right] {$y$};
-        \draw[-{Stealth}, thick] (1.5, 0) -- (0.5, 0) node[below] {$x$};
-        \node[font=\scriptsize] at (0.8, -0.3) {(vers centre)};
+        % Poids (vers le bas)
+        \draw[-{Stealth[length=3mm]}, very thick, red] (0, 0) -- (0, -1.5);
+        \node[red, left] at (-0.15, -0.8) {$m\vec{g}$};
+        
+        % Axes (bien séparés à droite)
+        \draw[-{Stealth}, thick] (2.0, 0) -- (2.0, 1.5) node[right] {$y$};
+        \draw[-{Stealth}, thick] (2.0, 0) -- (0.8, 0) node[below right] {$x$};
+        \node[font=\scriptsize, below] at (1.4, -0.15) {(vers centre)};
     \end{scope}
     
     % Trajectoire circulaire (vue de dessus, schématique)
-    \draw[dashed, gray] (0, 0.3) ellipse (2cm and 0.3cm);
-    \node[gray, font=\scriptsize] at (0, -0.3) {trajectoire};
+    \draw[dashed, gray] (0, {3.5-2.5*cos(25)-0.15}) ellipse (1.6cm and 0.3cm);
+    \node[gray, font=\scriptsize, below] at (0, {3.5-2.5*cos(25)-0.55}) {trajectoire circulaire};
 \end{tikzpicture}
 \end{center}
 
@@ -569,4 +598,3 @@ Un traversier effectue un virage de rayon $r = \SI{300}{m}$ à une vitesse de $v
     };
 \end{tikzpicture}
 \end{center}
-
